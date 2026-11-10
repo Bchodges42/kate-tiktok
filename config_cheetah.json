@@ -1,10 +1,10 @@
 {
  "_comment": "Gallery-build edit for gallery.py. One edit = one config.",
  "name": "cheetah-print",
- "version": "burgundy_gallery",
+ "version": "burgundy_gallery_rock_music",
  "vibe": "cheetah print, fur, vintage-maximalist fashion",
- "song": "audio/song.mp3",
- "_song_comment": "PREVIEW sound: the take me home TikTok clip (117.5 BPM). Swap in the real sound and re-run.",
+ "song": "audio/rock-music-charli-xcx.wav",
+ "_song_comment": "Rock Music (Charli XCX) TikTok sound, from your screen recording. Music runs 0.00-8.94 s, then outro silence.",
  "song_start": 0,
  "fallback_bpm": 120,
  "fps": 30,
@@ -101,7 +101,6 @@
   "leopard-coat-scarf": {
    "hero": true
   },
-  "print-swatch-collage": {},
   "leopard-wall-shoe-shelf": {},
   "fur-hat-red-coat": {},
   "leopard-tights-boots": {},
@@ -111,38 +110,49 @@
   "leopard-skirt-mirror": {},
   "friends-leopard-pants": {},
   "cheetah-coat-rack": {},
-  "pink-fur-leopard-heels": {}
+  "pink-fur-leopard-heels": {},
+  "pink-leopard-pants": {
+   "_note": "new pin; replaces the texture/pattern collage"
+  }
  },
  "timeline": [
   {
    "image": "leopard-coat-scarf",
-   "slot": "top"
+   "slot": "top",
+   "beats": 2
   },
   {
-   "image": "print-swatch-collage",
-   "slot": "middle"
+   "image": "pink-leopard-pants",
+   "slot": "middle",
+   "beats": 2
   },
   {
    "image": "leopard-wall-shoe-shelf",
-   "slot": "bottom"
+   "slot": "bottom",
+   "beats": 2
   },
   {
-   "clear": true
+   "clear": true,
+   "beats": 2
   },
   {
    "image": "fur-hat-red-coat",
-   "slot": "bottom_r"
+   "slot": "bottom_r",
+   "beats": 2
   },
   {
    "image": "leopard-tights-boots",
-   "slot": "top_r"
+   "slot": "top_r",
+   "beats": 2
   },
   {
    "image": "fur-closet",
-   "slot": "middle_l"
+   "slot": "middle_l",
+   "beats": 2
   },
   {
-   "clear": true
+   "clear": true,
+   "beats": 2
   },
   {
    "image": "sunglasses-leopard-floor",
@@ -167,7 +177,10 @@
   {
    "image": "pink-fur-leopard-heels",
    "slot": "zig6",
-   "beats": 3
+   "_note": "lands on the big hit after the silent break (attack measured from the waveform: 8.094 s)",
+   "at": 8.094
   }
- ]
+ ],
+ "start_beat_index": 0,
+ "end_at": 8.9
 }

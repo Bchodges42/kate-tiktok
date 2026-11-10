@@ -44,14 +44,28 @@ def main():
     if au["placeholder"]:
         sys.exit(f"song not found: {cfg['song']}")
     beats = au["beats"]
-    start = min(range(au["phase"], len(beats), 4), key=lambda i: abs(beats[i] - cfg.get("song_start", 0)))
+    if "start_beat_index" in cfg:
+        start = cfg["start_beat_index"]
+    else:
+        start = min(range(au["phase"], len(beats), 4), key=lambda i: abs(beats[i] - cfg.get("song_start", 0)))
+
+    def onset_near(t, win=0.15):
+        """Strongest onset within +-win seconds of t (for a hit that sits off the beat grid)."""
+        ot, ov = au["onset_t"], au["onset"]
+        m = np.where(np.abs(ot - t) <= win)[0]
+        return float(ot[m[np.argmax(ov[m])]])
+
     steps = cfg["timeline"]
     pos, shots = 0, []
     for st in steps:
         t = 0.0 if pos == 0 else beat_time(beats, start + pos)
+        if "at_onset_near" in st:
+            t = onset_near(st["at_onset_near"])
+        if "at" in st:  # exact time in seconds (e.g. a hit measured from the waveform)
+            t = float(st["at"])
         shots.append(dict(st, t=t, start_frame=int(round(t * fps))))
         pos += st.get("beats", 1)
-    t_end = beat_time(beats, start + pos)
+    t_end = cfg.get("end_at") or beat_time(beats, start + pos)
     N = int(round(t_end * fps))
     for a, b in zip(shots, shots[1:] + [dict(start_frame=N)]):
         a["end_frame"] = b["start_frame"]
