@@ -162,10 +162,16 @@ def timeline_from_groups(cfg, W, H):
         cfg["_group_boxes"].append(boxes)
         holds = grp.get("holds", {})
         order = grp.get("order", list(range(len(boxes))))  # appearance order (indices into images)
-        for k, b in ((grp["images"][j], boxes[j]) for j in order):
-            steps.append({"image": k, "slot": f"g{n + 1}-{grp.get('name', grp.get('flow'))}", "box": list(b), "beats": holds.get(k, cfg["step_beats"])})
+        for m, (k, b) in enumerate((grp["images"][j], boxes[j]) for j in order):
+            st = {"image": k, "slot": f"g{n + 1}-{grp.get('name', grp.get('flow'))}", "box": list(b), "beats": holds.get(k, cfg["step_beats"])}
+            if "at" in grp:  # exact hit times (seconds), one per photo in appearance order
+                st["at"] = grp["at"][m]
+            steps.append(st)
         if n < len(cfg["groups"]) - 1:
-            steps.append({"clear": True, "beats": cfg["step_beats"]})
+            st = {"clear": True, "beats": cfg["step_beats"]}
+            if "clear_at" in grp:
+                st["at"] = grp["clear_at"]
+            steps.append(st)
     return steps
 
 
@@ -293,6 +299,16 @@ def main():
         bad = spacing_check(boxes, gap)
         if bad:
             errs.append(f"group {n + 1}: uneven spacing {bad}")
+        # no two photos of the same kind (cfg["categories"]) may sit next to each other
+        kind = {k: c for c, ks in cfg.get("categories", {}).items() for k in ks}
+        imgs = cfg["groups"][n]["images"]
+        for i in range(len(boxes)):
+            for j in range(i + 1, len(boxes)):
+                (ax, ay, aw, ah), (bx, by, bw, bh) = boxes[i], boxes[j]
+                side = min(ay + ah, by + bh) > max(ay, by) and max(bx - ax - aw, ax - bx - bw) <= gap
+                above = min(ax + aw, bx + bw) > max(ax, bx) and max(by - ay - ah, ay - by - bh) <= gap
+                if (side or above) and kind.get(imgs[i]) and kind.get(imgs[i]) == kind.get(imgs[j]):
+                    errs.append(f"group {n + 1}: two {kind[imgs[i]]} photos next to each other ({imgs[i]}, {imgs[j]})")
     if errs:
         sys.exit("layout errors:\n  " + "\n  ".join(errs))
     used = [s["image"] for s in shots if not s.get("clear")]
@@ -339,6 +355,8 @@ def main():
            f"layout: no photo overlaps or comes within {gap}px of another, none cropped" + ("" if cfg.get("allow_repeats") else ", none repeated")]
     if "_coverage" in cfg:
         rep.append(f"spacing: exactly {gap}px between every pair of neighbouring photos -> PASS")
+        if cfg.get("categories"):
+            rep.append("variety: no two photos of the same kind next to each other -> PASS")
         rep.append("screen filled per group: " + ", ".join(f"{c:.0%}" for c in cfg["_coverage"]))
     rep.append("")
     for i, sh in enumerate(shots):

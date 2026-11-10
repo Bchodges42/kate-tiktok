@@ -24,13 +24,73 @@
  "step_beats": 1,
  "start_beat_index": 0,
  "end_at": 18.86,
- "_sync_comment": "a photo on every beat (0.62 s, twice as slow as Sunshine). Groups start on the brass hits: 0.00, 5.27, 7.73 (big hit), 12.07, 15.77 (big hit); the last photo lands on the final hit at 18.25 and holds to the end of the sound.",
- "_layout_comment": "exactly 20 px between every pair of neighbouring photos; each group uses a different arrangement (h = side by side, v = stacked)",
+ "_sync_comment": "slow intro (0, 0.91, 1.86 s); from 3.39 s, when the full band comes in, photos land on the brass hits measured from the percussive onsets, including the half-beat runs (4.95-5.25, 10.19-10.82, 11.45-12.05). Finale unchanged: one per beat from 15.77, wings on the final hit at 18.25.",
+ "_layout_comment": "exactly 20 px between every pair of neighbouring photos; each group uses a different arrangement (h = side by side, v = stacked). No two photos of the same kind (dresses, party scenes, Capitol people, beauty close-ups) sit next to each other.",
  "images_dir": "images",
  "images": {},
  "groups": [
   {
-   "name": "zigzag",
+   "name": "intro",
+   "tree": [
+    "v",
+    0,
+    [
+     "h",
+     1,
+     2
+    ]
+   ],
+   "images": [
+    "mckenna-lavender-gown",
+    "capitol-pink-cakes",
+    "daisy-petal-lashes"
+   ],
+   "at": [
+    0.0,
+    0.91,
+    1.86
+   ],
+   "clear_at": 2.76,
+   "_note": "slow intro: McKenna Grace first, big across the top"
+  },
+  {
+   "name": "columns",
+   "tree": [
+    "h",
+    [
+     "v",
+     0,
+     1,
+     2
+    ],
+    [
+     "v",
+     3,
+     4,
+     5
+    ]
+   ],
+   "images": [
+    "katniss-chainmail-dress",
+    "confetti-party-runway",
+    "antler-headpiece-gown",
+    "backstage-tulle-hair",
+    "crystal-skirt-red-heels",
+    "baroque-party-crowd"
+   ],
+   "at": [
+    3.39,
+    4.04,
+    4.95,
+    5.25,
+    5.85,
+    6.5
+   ],
+   "clear_at": 7.11,
+   "_note": "full band comes in at 3.39"
+  },
+  {
+   "name": "T",
    "tree": [
     "v",
     [
@@ -44,49 +104,6 @@
     ],
     [
      "h",
-     [
-      "v",
-      3,
-      4
-     ],
-     5
-    ]
-   ],
-   "images": [
-    "mckenna-lavender-gown",
-    "katniss-chainmail-dress",
-    "silver-lace-shoulder-gown",
-    "gold-feather-bodice",
-    "capitol-pink-cakes",
-    "phoenix-feather-gown"
-   ],
-   "holds": {
-    "phoenix-feather-gown": 2
-   },
-   "_note": "McKenna Grace first"
-  },
-  {
-   "name": "column",
-   "flow": "ttb",
-   "images": [
-    "capitol-crowd-wigs",
-    "daisy-petal-lashes",
-    "capitol-audience-colour"
-   ],
-   "_note": "the three wide photos, top to bottom"
-  },
-  {
-   "name": "sidebar",
-   "tree": [
-    "h",
-    [
-     "v",
-     0,
-     1
-    ],
-    [
-     "v",
-     2,
      3,
      4,
      5
@@ -94,36 +111,57 @@
    ],
    "images": [
     "capitol-staircase-party",
+    "silver-lace-shoulder-gown",
     "capitol-lion-mask",
-    "confetti-party-runway",
-    "baroque-party-crowd",
-    "capitol-men-pink-gold",
-    "backstage-tulle-hair"
-   ]
+    "dior-runway-blue-fur",
+    "mckenna-daisies-hair",
+    "gold-feather-bodice"
+   ],
+   "at": [
+    7.73,
+    8.36,
+    9.59,
+    10.19,
+    10.52,
+    10.82
+   ],
+   "clear_at": 11.15,
+   "_note": "starts on the big hit"
   },
   {
-   "name": "columns",
+   "name": "pair-over-L",
    "tree": [
-    "h",
+    "v",
     [
-     "v",
+     "h",
      0,
      1
     ],
     [
-     "v",
-     2,
-     3,
+     "h",
+     [
+      "v",
+      2,
+      3
+     ],
      4
     ]
    ],
    "images": [
-    "dior-runway-blue-fur",
-    "antler-headpiece-gown",
     "costume-rack-gowns",
-    "mckenna-daisies-hair",
-    "crystal-skirt-red-heels"
-   ]
+    "capitol-audience-colour",
+    "capitol-men-pink-gold",
+    "capitol-crowd-wigs",
+    "phoenix-feather-gown"
+   ],
+   "at": [
+    11.45,
+    11.75,
+    12.05,
+    12.68,
+    13.93
+   ],
+   "clear_at": 15.16
   },
   {
    "name": "finale",
@@ -155,7 +193,46 @@
     3,
     4,
     2
+   ],
+   "at": [
+    15.77,
+    16.39,
+    17.02,
+    17.62,
+    18.25
    ]
   }
- ]
+ ],
+ "categories": {
+  "dress": [
+   "mckenna-lavender-gown",
+   "katniss-chainmail-dress",
+   "silver-lace-shoulder-gown",
+   "phoenix-feather-gown",
+   "antler-headpiece-gown",
+   "dior-runway-blue-fur",
+   "crystal-skirt-red-heels",
+   "gold-feather-bodice",
+   "costume-rack-gowns",
+   "katniss-wedding-dress-bw"
+  ],
+  "party": [
+   "capitol-staircase-party",
+   "confetti-party-runway",
+   "baroque-party-crowd",
+   "capitol-crowd-wigs",
+   "capitol-audience-colour",
+   "backstage-tulle-hair"
+  ],
+  "people": [
+   "capitol-lion-mask",
+   "capitol-men-pink-gold",
+   "effie-purple-tour"
+  ],
+  "beauty": [
+   "daisy-petal-lashes",
+   "mckenna-daisies-hair",
+   "silver-eyeshadow"
+  ]
+ }
 }
