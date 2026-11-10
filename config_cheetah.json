@@ -20,80 +20,74 @@
   "grain": 2.5,
   "grain_seed": 7
  },
- "min_gap_px": 40,
+ "min_gap_px": 16,
  "slots": {
-  "_comment": "cx, cy = slot center; w, h = box a photo is fitted into (whole, never cropped). Groups stagger left/right; group 2 mirrors group 1.",
+  "_comment": "anchor pins a photo to a screen corner/side (t/b/l/r) and it grows from there; otherwise it grows around (cx, cy)",
   "top": {
-   "cx": 280,
-   "cy": 400,
-   "w": 480,
-   "h": 700
+   "cx": 274,
+   "cy": 370,
+   "anchor": "tl",
+   "max_w": 516
   },
   "middle": {
-   "cx": 800,
+   "cx": 806,
    "cy": 960,
-   "w": 480,
-   "h": 700
+   "anchor": "r",
+   "max_w": 516
   },
   "bottom": {
-   "cx": 280,
-   "cy": 1520,
-   "w": 480,
-   "h": 700
+   "cx": 274,
+   "cy": 1550,
+   "anchor": "bl",
+   "max_w": 516
   },
   "top_r": {
-   "cx": 800,
-   "cy": 400,
-   "w": 480,
-   "h": 700
+   "cx": 806,
+   "cy": 370,
+   "anchor": "tr",
+   "max_w": 516
   },
   "middle_l": {
-   "cx": 280,
+   "cx": 274,
    "cy": 960,
-   "w": 480,
-   "h": 700
+   "anchor": "l",
+   "max_w": 516
   },
   "bottom_r": {
-   "cx": 800,
-   "cy": 1520,
-   "w": 480,
-   "h": 700
+   "cx": 806,
+   "cy": 1550,
+   "anchor": "br",
+   "max_w": 516
   },
   "zig1": {
-   "cx": 280,
-   "cy": 290,
-   "w": 480,
-   "h": 490
+   "cx": 274,
+   "cy": 280,
+   "anchor": "tl"
   },
   "zig2": {
-   "cx": 800,
-   "cy": 558,
-   "w": 480,
-   "h": 490
+   "cx": 806,
+   "cy": 552,
+   "anchor": "r"
   },
   "zig3": {
-   "cx": 280,
-   "cy": 826,
-   "w": 480,
-   "h": 490
+   "cx": 274,
+   "cy": 824,
+   "anchor": "l"
   },
   "zig4": {
-   "cx": 800,
-   "cy": 1094,
-   "w": 480,
-   "h": 490
+   "cx": 806,
+   "cy": 1096,
+   "anchor": "r"
   },
   "zig5": {
-   "cx": 280,
-   "cy": 1362,
-   "w": 480,
-   "h": 490
+   "cx": 274,
+   "cy": 1368,
+   "anchor": "l"
   },
   "zig6": {
-   "cx": 800,
-   "cy": 1630,
-   "w": 480,
-   "h": 490
+   "cx": 806,
+   "cy": 1640,
+   "anchor": "br"
   }
  },
  "images_dir": "images",
@@ -199,5 +193,9 @@
  ],
  "start_beat_index": 0,
  "end_at": 7.62,
- "_sync_comment": "0-3.25 s on the beat; 3.25-6.44 s the held 'Rooooock' (cuts on every 3rd vibrato crest, measured from her overtones); 'Music' at 6.44 s; ends with the song at 7.62 s (after that the screen recording has TikTok's outro jingle, not the song)"
+ "_sync_comment": "0-3.25 s on the beat; 3.25-6.44 s the held 'Rooooock' (cuts on every 3rd vibrato crest, measured from her overtones); 'Music' at 6.44 s; ends with the song at 7.62 s (after that the screen recording has TikTok's outro jingle, not the song)",
+ "auto_grow": {
+  "margin_px": 16,
+  "_note": "photos in a group grow together until 16 px from a neighbour or the screen edge"
+ }
 }

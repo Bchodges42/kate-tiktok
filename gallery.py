@@ -70,20 +70,66 @@ def main():
     for a, b in zip(shots, shots[1:] + [dict(start_frame=N)]):
         a["end_frame"] = b["start_frame"]
 
-    # ---- build each canvas state once
+    # ---- sizes: either fitted into each slot's w x h box, or (auto_grow) every photo in a
+    # group grows together, in small steps, until it is `gap` px from a neighbour or the edge
     srcs, layers, plates, errs = {}, [], [], []
     gap = cfg.get("min_gap_px", 40)
+    for sh in shots:
+        if not sh.get("clear") and sh["image"] not in srcs:
+            srcs[sh["image"]] = load_source(cfg, sh["image"])[0]
+    grown = {}
+    if cfg.get("auto_grow"):
+        margin = cfg["auto_grow"].get("margin_px", gap)
+        groups, cur = [], []
+        for i, sh in enumerate(shots):
+            if sh.get("clear"):
+                groups.append(cur); cur = []
+            else:
+                cur.append(i)
+        groups.append(cur)
+
+        def box_of(i, hgt):
+            """Box for photo i at height hgt. 'anchor' pins a side/corner to the screen margin
+            (e.g. "tl" = top-left corner, "r" = right edge at the slot's cy) so the photo grows
+            from there into open space; without it the photo grows around (cx, cy)."""
+            im, sl = srcs[shots[i]["image"]], slots[shots[i]["slot"]]
+            w = hgt * im.width / im.height
+            a = sl.get("anchor", "")
+            x = margin if "l" in a else (W - margin - w if "r" in a else sl["cx"] - w / 2)
+            y = margin if "t" in a else (H - margin - hgt if "b" in a else sl["cy"] - hgt / 2)
+            return (int(round(x)), int(round(y)), int(round(w)), int(round(hgt)))
+
+        for g in groups:
+            hs = {i: 60.0 for i in g}
+            changed = True
+            while changed:
+                changed = False
+                for i in g:
+                    b = box_of(i, hs[i] * 1.01)
+                    sl = slots[shots[i]["slot"]]
+                    if b[2] > sl.get("max_w", W) or b[3] > sl.get("max_h", H):
+                        continue
+                    if b[0] < margin or b[1] < margin or b[0] + b[2] > W - margin or b[1] + b[3] > H - margin:
+                        continue
+                    if any(boxes_overlap(b, box_of(j, hs[j]), gap) for j in g if j != i):
+                        continue
+                    hs[i] *= 1.01
+                    changed = True
+            for i in g:
+                grown[i] = box_of(i, hs[i])
     for i, sh in enumerate(shots):
         if sh.get("clear"):
             layers = []
         else:
             key, slot = sh["image"], slots[sh["slot"]]
-            if key not in srcs:
-                srcs[key] = load_source(cfg, key)[0]
             im = srcs[key]
-            s = min(slot["w"] / im.width, slot["h"] / im.height)
-            w, h = int(round(im.width * s)), int(round(im.height * s))
-            box = (int(slot["cx"] - w / 2), int(slot["cy"] - h / 2), w, h)
+            if i in grown:
+                box = grown[i]
+                w, h = box[2], box[3]
+            else:
+                s = min(slot["w"] / im.width, slot["h"] / im.height)
+                w, h = int(round(im.width * s)), int(round(im.height * s))
+                box = (int(slot["cx"] - w / 2), int(slot["cy"] - h / 2), w, h)
             for k, b in layers:
                 if boxes_overlap(box, b, gap):
                     errs.append(f"step {i + 1}: {key} would sit closer than {gap}px to {k}")

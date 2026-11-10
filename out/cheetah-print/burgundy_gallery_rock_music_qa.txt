@@ -1,7 +1,7 @@
 tempo 161.5 BPM, 14 beats-steps, 12 photos, 7.63 s
 beat sync: mean |offset| 0.28 frames, worst 0.50 -> PASS
-stillness: max held-frame diff 0.029 -> PASS
-layout: no photo overlaps or comes within 40px of another, none cropped, none repeated
+stillness: max held-frame diff 0.030 -> PASS
+layout: no photo overlaps or comes within 16px of another, none cropped, none repeated
 
  1.   0.00s  top           leopard-coat-scarf
  2.   0.84s  middle        pink-leopard-pants
