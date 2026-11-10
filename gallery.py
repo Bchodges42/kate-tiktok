@@ -7,6 +7,9 @@ spaced apart (never overlapping), then the canvas clears and the next pattern st
 The config's "timeline" is a list of steps, one per beat (or "beats": n):
     {"image": "<key>", "slot": "<slot name>"}   add a photo to the canvas
     {"clear": true}                              back to the plain background
+Optional per group: "background" (that slide's colour; the clear before it already shows it),
+"clear_at": "cut" (no clear: the next slide's first photo replaces this one in a single frame),
+"flashes": [[t, "#hex"], ...] (the background changes colour on those hits; photos stay still).
 Photos keep their own shape (never cropped), fit inside their slot box, never move.
 """
 import argparse
@@ -166,11 +169,20 @@ def timeline_from_groups(cfg, W, H):
             st = {"image": k, "slot": f"g{n + 1}-{grp.get('name', grp.get('flow'))}", "box": list(b), "beats": holds.get(k, cfg["step_beats"])}
             if "at" in grp:  # exact hit times (seconds), one per photo in appearance order
                 st["at"] = grp["at"][m]
+            if "background" in grp:
+                st["bg"] = grp["background"]
+            if m == 0 and n > 0 and cfg["groups"][n - 1].get("clear_at") == "cut":
+                st["new_slide"] = True
             steps.append(st)
-        if n < len(cfg["groups"]) - 1:
+        for t, col in grp.get("flashes", []):
+            steps.append({"flash": True, "bg": col, "at": t, "slot": "flash"})
+        if n < len(cfg["groups"]) - 1 and grp.get("clear_at") != "cut":
             st = {"clear": True, "beats": cfg["step_beats"]}
             if "clear_at" in grp:
                 st["at"] = grp["clear_at"]
+            nxt = cfg["groups"][n + 1].get("background")
+            if nxt:
+                st["bg"] = nxt
             steps.append(st)
     return steps
 
@@ -225,7 +237,7 @@ def main():
     srcs, layers, plates, errs = {}, [], [], []
     gap = cfg.get("min_gap_px", 40)
     for sh in shots:
-        if not sh.get("clear") and sh["image"] not in srcs:
+        if "image" in sh and sh["image"] not in srcs:
             srcs[sh["image"]] = load_source(cfg, sh["image"])[0]
     grown = {}
     if cfg.get("auto_grow"):
@@ -267,9 +279,13 @@ def main():
                     changed = True
             for i in g:
                 grown[i] = box_of(i, hs[i])
+    cur_bg = cfg["background"]
     for i, sh in enumerate(shots):
+        cur_bg = sh.get("bg", cur_bg)
         if sh.get("clear"):
             layers = []
+        elif sh.get("flash"):
+            pass  # same photos, new background colour
         else:
             key, slot = sh["image"], slots.get(sh["slot"], {})
             im = srcs[key]
@@ -285,6 +301,8 @@ def main():
                 s = min(slot["w"] / im.width, slot["h"] / im.height)
                 w, h = int(round(im.width * s)), int(round(im.height * s))
                 box = (int(slot["cx"] - w / 2), int(slot["cy"] - h / 2), w, h)
+            if sh.get("new_slide"):  # hard cut from the previous slide, no clear in between
+                layers = []
             for k, b in layers:
                 if boxes_overlap(box, b, gap):
                     errs.append(f"step {i + 1}: {key} would sit closer than {gap}px to {k}")
@@ -292,6 +310,7 @@ def main():
                 errs.append(f"step {i + 1}: {key} runs off the canvas")
             layers = layers + [(key, box)]
         canvas = bg.copy()
+        canvas[:] = hex_rgb(cur_bg)
         for key, (x, y, w, h) in layers:
             canvas[y:y + h, x:x + w] = grade(np.asarray(srcs[key].resize((w, h), Image.LANCZOS)), cfg["grade"])
         plates.append(canvas)
@@ -311,7 +330,7 @@ def main():
                     errs.append(f"group {n + 1}: two {kind[imgs[i]]} photos next to each other ({imgs[i]}, {imgs[j]})")
     if errs:
         sys.exit("layout errors:\n  " + "\n  ".join(errs))
-    used = [s["image"] for s in shots if not s.get("clear")]
+    used = [s["image"] for s in shots if "image" in s]
     if len(set(used)) != len(used) and not cfg.get("allow_repeats"):
         sys.exit("a photo is used twice")
 
@@ -360,7 +379,9 @@ def main():
         rep.append("screen filled per group: " + ", ".join(f"{c:.0%}" for c in cfg["_coverage"]))
     rep.append("")
     for i, sh in enumerate(shots):
-        rep.append(f"{i + 1:2d}. {sh['t']:6.2f}s  " + ("(clear to background)" if sh.get("clear") else f"{sh['slot']:<13} {sh['image']}"))
+        rep.append(f"{i + 1:2d}. {sh['t']:6.2f}s  " + ("(clear to background" + (f" {sh['bg']})" if "bg" in sh else ")") if sh.get("clear")
+                                                  else f"(background flashes to {sh['bg']})" if sh.get("flash")
+                                                  else f"{sh['slot']:<13} {sh['image']}"))
     open(os.path.join(outdir, f"{cfg['version']}_qa.txt"), "w").write("\n".join(rep) + "\n")
 
     tw, th = 180, 320
@@ -371,7 +392,7 @@ def main():
     for i, (fr, sh) in enumerate(zip(frames8, shots)):
         x, y = 10 + (i % cols) * (tw + 10), 10 + (i // cols) * (th + 28)
         sheet.paste(Image.fromarray(fr).resize((tw, th)), (x, y))
-        dr.text((x, y + th + 4), f"{i + 1}. {sh['t']:.2f}s " + ("clear" if sh.get("clear") else sh["slot"]),
+        dr.text((x, y + th + 4), f"{i + 1}. {sh['t']:.2f}s " + ("clear" if sh.get("clear") else "flash" if sh.get("flash") else sh["slot"]),
                 fill=(235, 225, 225), font=font(12))
     sheet.save(os.path.join(outdir, f"{cfg['version']}_sequence.jpg"), quality=88)
     print("\n".join(rep))

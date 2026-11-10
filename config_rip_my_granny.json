@@ -1,0 +1,66 @@
+{
+ "_comment": "Gallery-build edit for gallery.py: python3 gallery.py --config config_rip_my_granny.json",
+ "name": "rip-my-granny",
+ "version": "bazooka_colour_gallery",
+ "vibe": "funny, chaotic: badass grandmas on loud colour backgrounds that switch every slide",
+ "song": "audio/rip-my-granny-bazooka.wav",
+ "_song_comment": "'Rip my granny she got hit by a bazooka', extracted from the user's screen recording (ffmpeg -i ScreenRecording_11-09-2026_23-49-48_1.mov -vn -ac 2 -ar 44100). 80 BPM, beat every 0.75 s from 0.13 s. Quiet intro 0-3.1 s, full drop at 3.13 s, strongest later hit 11.38 s, last hit 14.33 s; the music cuts out at 14.58 s (the recording carries on with another video's sound).",
+ "song_start": 0,
+ "fallback_bpm": 80,
+ "fps": 30,
+ "size": [1080, 1920],
+ "background": "#FF4FA3",
+ "grade": {"warmth": 0.0, "lift": 4, "saturation": 1.06, "grain": 2.0, "grain_seed": 11},
+ "min_gap_px": 24,
+ "step_beats": 1,
+ "start_beat_index": 0,
+ "end_at": 14.58,
+ "_sync_comment": "Intro: one photo per kick (0, 0.93, 1.69, 2.34). Drop 3.13: hard cut to a new colour and a half-beat burst (3.13, 3.50, 3.88). Mid: one per beat from 5.38. Build: 9.13, 10.25, then the skateboard jump lands on the big hit at 11.38. The background flashes on the last three hits (12.88 yellow, 13.60 orange, not blue because the hero photo is blue sky, 14.33 pink) and ends pink so the loop goes straight back into slide 1.",
+ "_layout_comment": "24 px between every neighbouring photo. Slide 1 = two staggered columns (balanced, largest 1.5x smallest). Slide 2 = big photo over a pair. Slide 3 = big photo beside a stacked pair, wide-ish photo along the bottom. Slide 4 = pair over the hero. No two photos of the same kind touch.",
+ "images_dir": "images",
+ "images": {},
+ "categories": {
+  "granny-squad": ["granny-gang-guns-cash", "grannies-cocktails-headscarf", "grannies-mirror-selfie", "grannies-fur-sunglasses-street"],
+  "close-up": ["granny-tongue-sunglasses", "granny-cigar-wine-rings", "granny-gold-grills-smile"],
+  "action": ["granny-skateboard-jump", "granny-skateboard-floral-suit"],
+  "street-look": ["granny-cigar-doorstep", "granny-leopard-coat-shopping", "granny-leopard-bus-stop"],
+  "nature": ["granny-bluebonnet-field", "granny-smelling-roses"]
+ },
+ "groups": [
+  {
+   "name": "hook",
+   "background": "#FF4FA3",
+   "tree": ["h", ["v", 0, 1], ["v", 2, 3]],
+   "images": ["granny-gang-guns-cash", "granny-cigar-doorstep", "granny-tongue-sunglasses", "granny-bluebonnet-field"],
+   "order": [0, 2, 1, 3],
+   "at": [0.0, 0.93, 1.69, 2.34],
+   "clear_at": "cut",
+   "_note": "gun-toting granny gang first (the hook); straight cut into the drop, no clear"
+  },
+  {
+   "name": "drop",
+   "background": "#EAFF3B",
+   "tree": ["v", 0, ["h", 1, 2]],
+   "images": ["granny-skateboard-floral-suit", "granny-cigar-wine-rings", "grannies-fur-sunglasses-street"],
+   "at": [3.13, 3.50, 3.88],
+   "clear_at": 5.01
+  },
+  {
+   "name": "side",
+   "background": "#3D6BFF",
+   "tree": ["v", ["h", 0, ["v", 1, 2]], 3],
+   "images": ["granny-gold-grills-smile", "granny-smelling-roses", "grannies-cocktails-headscarf", "granny-leopard-coat-shopping"],
+   "at": [5.38, 6.14, 6.88, 7.60],
+   "clear_at": 8.76
+  },
+  {
+   "name": "bazooka",
+   "background": "#2EE88A",
+   "tree": ["v", ["h", 0, 1], 2],
+   "images": ["granny-leopard-bus-stop", "grannies-mirror-selfie", "granny-skateboard-jump"],
+   "at": [9.13, 10.25, 11.38],
+   "flashes": [[12.88, "#EAFF3B"], [13.60, "#FF7A1A"], [14.33, "#FF4FA3"]],
+   "_note": "the airborne skateboard granny is the showstopper on the biggest late hit"
+  }
+ ]
+}

@@ -1,0 +1,27 @@
+tempo 161.5 BPM, 19 beats-steps, 14 photos, 14.57 s
+beat sync: mean |offset| 0.23 frames, worst 0.50 -> PASS
+stillness: max held-frame diff 0.038 -> PASS
+layout: no photo overlaps or comes within 24px of another, none cropped, none repeated
+spacing: exactly 24px between every pair of neighbouring photos -> PASS
+variety: no two photos of the same kind next to each other -> PASS
+screen filled per group: 63%, 78%, 84%, 77%
+
+ 1.   0.00s  g1-hook       granny-gang-guns-cash
+ 2.   0.93s  g1-hook       granny-tongue-sunglasses
+ 3.   1.69s  g1-hook       granny-cigar-doorstep
+ 4.   2.34s  g1-hook       granny-bluebonnet-field
+ 5.   3.13s  g2-drop       granny-skateboard-floral-suit
+ 6.   3.50s  g2-drop       granny-cigar-wine-rings
+ 7.   3.88s  g2-drop       grannies-fur-sunglasses-street
+ 8.   5.01s  (clear to background #3D6BFF)
+ 9.   5.38s  g3-side       granny-gold-grills-smile
+10.   6.14s  g3-side       granny-smelling-roses
+11.   6.88s  g3-side       grannies-cocktails-headscarf
+12.   7.60s  g3-side       granny-leopard-coat-shopping
+13.   8.76s  (clear to background #2EE88A)
+14.   9.13s  g4-bazooka    granny-leopard-bus-stop
+15.  10.25s  g4-bazooka    grannies-mirror-selfie
+16.  11.38s  g4-bazooka    granny-skateboard-jump
+17.  12.88s  (background flashes to #EAFF3B)
+18.  13.60s  (background flashes to #FF7A1A)
+19.  14.33s  (background flashes to #FF4FA3)
