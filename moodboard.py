@@ -62,7 +62,7 @@ def beat_time(beats, pos):
 def choose_window(cfg, au, total_beats):
     """Pick start beat index (a downbeat) for a window of total_beats beats."""
     beats = au["beats"]
-    downbeats = list(range(au["phase"], len(beats) - int(np.ceil(total_beats)) - 1, 4))
+    downbeats = list(range(au["phase"], len(beats) - int(np.ceil(total_beats)) - 1, 4)) or [au["phase"]]
     if au["placeholder"]:
         return 0, "placeholder grid (no song file): starts at 0"
     if cfg.get("song_start") is not None:
@@ -171,6 +171,8 @@ def build_timeline(cfg, ver, au):
     fits = [s for s in cands if lo <= total_units * s * period <= hi]
     sub = min(fits, key=lambda s: (abs(total_units * s * period - 10), cands.index(s))) if fits else \
         min(cands, key=lambda s: abs(total_units * s * period - 10))
+    if ver.get("subdivision"):
+        sub = ver["subdivision"]
     total_beats = total_units * sub
     start_beat, why = choose_window(cfg, au, total_beats)
     beats = au["beats"]
@@ -180,6 +182,11 @@ def build_timeline(cfg, ver, au):
         t0 = 0.0
     t_end = beat_time(beats, start_beat + total_beats)
     N = int(round((t_end - t0) * fps))
+    if ver.get("full_sound") and not au["placeholder"]:
+        # run exactly as long as the sound so video and sound loop together on TikTok
+        N = int(np.floor((au["duration"] - t0) * fps))
+        t_end = t0 + N / fps
+        why += f"; full-sound length, ends with the clip at {au['duration']:.2f} s"
 
     shots, pos = [], 0.0
     for s, u in zip(seq, units):
@@ -187,6 +194,9 @@ def build_timeline(cfg, ver, au):
         shots.append(dict(image=s["image"], units=u, hold=s["beats"] > hold_beats,
                           t_ideal=t_ideal, start_frame=int(round(t_ideal * fps))))
         pos += u
+    # drop shots that would start too close to the end (clip ends mid-phrase)
+    while len(shots) > 1 and N - shots[-1]["start_frame"] < 8:
+        shots.pop()
     for i, sh in enumerate(shots):
         sh["end_frame"] = shots[i + 1]["start_frame"] if i + 1 < len(shots) else N
     # dissolve into shot i (finishes exactly on its start frame); i==0 handled as loop point

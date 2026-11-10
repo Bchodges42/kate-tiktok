@@ -189,6 +189,59 @@
      "beats": 4
     }
    ]
+  },
+  "A_framed_full24": {
+   "preset": "A",
+   "passes": 2,
+   "beat_scale": 1,
+   "background": "#F7F4EE",
+   "frame_width": 0.8,
+   "shadow": true,
+   "_note": "A_framed played twice to cover the whole 24.6 s sound; the last candle hold is cut short where the clip ends, then dissolves back to image 1",
+   "sequence": [
+    {
+     "image": "pink-party-table",
+     "beats": 4
+    },
+    {
+     "image": "wrapped-gifts-gingham",
+     "beats": 2
+    },
+    {
+     "image": "pink-scarf-road",
+     "beats": 2
+    },
+    {
+     "image": "mantel-garland",
+     "beats": 4
+    },
+    {
+     "image": "snowy-window-star",
+     "beats": 2
+    },
+    {
+     "image": "plaid-skirt-tulle",
+     "beats": 2
+    },
+    {
+     "image": "family-tree-overhead",
+     "beats": 4
+    },
+    {
+     "image": "candle-mantel-girl",
+     "beats": 4
+    }
+   ],
+   "subdivision": 1,
+   "full_sound": true
+  },
+  "C_pov_loop_full24": {
+   "preset": "C",
+   "passes": 6,
+   "beat_scale": 1,
+   "_note": "C pass (one 8-beat phrase) x6 to cover the whole 24.6 s sound",
+   "subdivision": 1,
+   "full_sound": true
   }
  },
  "align_to_sound_start": true,
