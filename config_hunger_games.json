@@ -41,9 +41,9 @@
     ]
    ],
    "images": [
-    "mckenna-lavender-gown",
-    "capitol-pink-cakes",
-    "daisy-petal-lashes"
+    "mckenna-daisies-hair",
+    "antler-headpiece-gown",
+    "capitol-crowd-wigs"
    ],
    "at": [
     0.0,
@@ -51,7 +51,46 @@
     1.86
    ],
    "clear_at": 2.76,
-   "_note": "slow intro: McKenna Grace first, big across the top"
+   "_note": "slow intro: McKenna Grace (daisy hair) first, big across the top"
+  },
+  {
+   "name": "invT",
+   "tree": [
+    "v",
+    [
+     "h",
+     0,
+     1,
+     2
+    ],
+    [
+     "h",
+     [
+      "v",
+      3,
+      4
+     ],
+     5
+    ]
+   ],
+   "images": [
+    "mckenna-lavender-gown",
+    "silver-eyeshadow",
+    "katniss-chainmail-dress",
+    "confetti-party-runway",
+    "dior-runway-blue-fur",
+    "capitol-men-pink-gold"
+   ],
+   "at": [
+    3.39,
+    4.04,
+    4.95,
+    5.25,
+    5.85,
+    6.5
+   ],
+   "clear_at": 7.11,
+   "_note": "full band comes in at 3.39"
   },
   {
    "name": "columns",
@@ -71,51 +110,12 @@
     ]
    ],
    "images": [
-    "katniss-chainmail-dress",
-    "confetti-party-runway",
-    "antler-headpiece-gown",
-    "backstage-tulle-hair",
-    "crystal-skirt-red-heels",
-    "baroque-party-crowd"
-   ],
-   "at": [
-    3.39,
-    4.04,
-    4.95,
-    5.25,
-    5.85,
-    6.5
-   ],
-   "clear_at": 7.11,
-   "_note": "full band comes in at 3.39"
-  },
-  {
-   "name": "T",
-   "tree": [
-    "v",
-    [
-     "h",
-     0,
-     [
-      "v",
-      1,
-      2
-     ]
-    ],
-    [
-     "h",
-     3,
-     4,
-     5
-    ]
-   ],
-   "images": [
-    "capitol-staircase-party",
-    "silver-lace-shoulder-gown",
+    "phoenix-feather-gown",
     "capitol-lion-mask",
-    "dior-runway-blue-fur",
-    "mckenna-daisies-hair",
-    "gold-feather-bodice"
+    "katniss-wedding-dress-bw",
+    "gold-fireworks",
+    "crystal-skirt-red-heels",
+    "daisy-petal-lashes"
    ],
    "at": [
     7.73,
@@ -129,30 +129,27 @@
    "_note": "starts on the big hit"
   },
   {
-   "name": "pair-over-L",
+   "name": "cols32",
    "tree": [
-    "v",
+    "h",
     [
-     "h",
+     "v",
      0,
-     1
+     1,
+     2
     ],
     [
-     "h",
-     [
-      "v",
-      2,
-      3
-     ],
+     "v",
+     3,
      4
     ]
    ],
    "images": [
-    "costume-rack-gowns",
-    "capitol-audience-colour",
-    "capitol-men-pink-gold",
-    "capitol-crowd-wigs",
-    "phoenix-feather-gown"
+    "capitol-pink-cakes",
+    "effie-purple-tour",
+    "backstage-tulle-hair",
+    "capitol-staircase-party",
+    "silver-lace-shoulder-gown"
    ],
    "at": [
     11.45,
@@ -180,13 +177,13 @@
     ]
    ],
    "images": [
-    "effie-purple-tour",
-    "katniss-wedding-dress-bw",
+    "gold-feather-bodice",
+    "baroque-party-crowd",
     "mockingjay-wings-stage",
-    "silver-eyeshadow",
-    "gold-fireworks"
+    "costume-rack-gowns",
+    "capitol-audience-colour"
    ],
-   "_note": "Mockingjay wings fill the big middle spot and land last, on the final hit",
+   "_note": "Katniss's Mockingjay wings stay big in the middle and land last, on the final hit",
    "order": [
     0,
     1,
@@ -233,6 +230,10 @@
    "daisy-petal-lashes",
    "mckenna-daisies-hair",
    "silver-eyeshadow"
+  ],
+  "other": [
+   "capitol-pink-cakes",
+   "gold-fireworks"
   ]
  }
 }

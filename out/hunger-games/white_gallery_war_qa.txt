@@ -1,37 +1,37 @@
 tempo 95.7 BPM, 29 beats-steps, 25 photos, 18.87 s
 beat sync: mean |offset| 0.32 frames, worst 0.50 -> PASS
-stillness: max held-frame diff 0.027 -> PASS
+stillness: max held-frame diff 0.034 -> PASS
 layout: no photo overlaps or comes within 20px of another, none cropped, none repeated
 spacing: exactly 20px between every pair of neighbouring photos -> PASS
 variety: no two photos of the same kind next to each other -> PASS
-screen filled per group: 92%, 90%, 70%, 68%, 70%
+screen filled per group: 92%, 72%, 84%, 80%, 76%
 
- 1.   0.00s  g1-intro      mckenna-lavender-gown
- 2.   0.91s  g1-intro      capitol-pink-cakes
- 3.   1.86s  g1-intro      daisy-petal-lashes
+ 1.   0.00s  g1-intro      mckenna-daisies-hair
+ 2.   0.91s  g1-intro      antler-headpiece-gown
+ 3.   1.86s  g1-intro      capitol-crowd-wigs
  4.   2.76s  (clear to background)
- 5.   3.39s  g2-columns    katniss-chainmail-dress
- 6.   4.04s  g2-columns    confetti-party-runway
- 7.   4.95s  g2-columns    antler-headpiece-gown
- 8.   5.25s  g2-columns    backstage-tulle-hair
- 9.   5.85s  g2-columns    crystal-skirt-red-heels
-10.   6.50s  g2-columns    baroque-party-crowd
+ 5.   3.39s  g2-invT       mckenna-lavender-gown
+ 6.   4.04s  g2-invT       silver-eyeshadow
+ 7.   4.95s  g2-invT       katniss-chainmail-dress
+ 8.   5.25s  g2-invT       confetti-party-runway
+ 9.   5.85s  g2-invT       dior-runway-blue-fur
+10.   6.50s  g2-invT       capitol-men-pink-gold
 11.   7.11s  (clear to background)
-12.   7.73s  g3-T          capitol-staircase-party
-13.   8.36s  g3-T          silver-lace-shoulder-gown
-14.   9.59s  g3-T          capitol-lion-mask
-15.  10.19s  g3-T          dior-runway-blue-fur
-16.  10.52s  g3-T          mckenna-daisies-hair
-17.  10.82s  g3-T          gold-feather-bodice
+12.   7.73s  g3-columns    phoenix-feather-gown
+13.   8.36s  g3-columns    capitol-lion-mask
+14.   9.59s  g3-columns    katniss-wedding-dress-bw
+15.  10.19s  g3-columns    gold-fireworks
+16.  10.52s  g3-columns    crystal-skirt-red-heels
+17.  10.82s  g3-columns    daisy-petal-lashes
 18.  11.15s  (clear to background)
-19.  11.45s  g4-pair-over-L costume-rack-gowns
-20.  11.75s  g4-pair-over-L capitol-audience-colour
-21.  12.05s  g4-pair-over-L capitol-men-pink-gold
-22.  12.68s  g4-pair-over-L capitol-crowd-wigs
-23.  13.93s  g4-pair-over-L phoenix-feather-gown
+19.  11.45s  g4-cols32     capitol-pink-cakes
+20.  11.75s  g4-cols32     effie-purple-tour
+21.  12.05s  g4-cols32     backstage-tulle-hair
+22.  12.68s  g4-cols32     capitol-staircase-party
+23.  13.93s  g4-cols32     silver-lace-shoulder-gown
 24.  15.16s  (clear to background)
-25.  15.77s  g5-finale     effie-purple-tour
-26.  16.39s  g5-finale     katniss-wedding-dress-bw
-27.  17.02s  g5-finale     silver-eyeshadow
-28.  17.62s  g5-finale     gold-fireworks
+25.  15.77s  g5-finale     gold-feather-bodice
+26.  16.39s  g5-finale     baroque-party-crowd
+27.  17.02s  g5-finale     costume-rack-gowns
+28.  17.62s  g5-finale     capitol-audience-colour
 29.  18.25s  g5-finale     mockingjay-wings-stage
