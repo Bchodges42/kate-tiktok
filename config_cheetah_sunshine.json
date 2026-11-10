@@ -107,6 +107,9 @@
   "pink-fur-leopard-heels": {},
   "pink-leopard-pants": {
    "_note": "new pin; replaces the texture/pattern collage"
+  },
+  "hunter-schafer-leopard-coat": {
+   "_note": "your upload"
   }
  },
  "timeline": [
@@ -183,7 +186,7 @@
    "beats": 0.5
   },
   {
-   "image": "leopard-tights-boots",
+   "image": "hunter-schafer-leopard-coat",
    "slot": "top",
    "beats": 0.5
   },

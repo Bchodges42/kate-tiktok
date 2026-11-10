@@ -1,6 +1,6 @@
 tempo 92.3 BPM, 29 beats-steps, 24 photos, 10.30 s
 beat sync: mean |offset| 0.25 frames, worst 0.50 -> PASS
-stillness: max held-frame diff 0.040 -> PASS
+stillness: max held-frame diff 0.037 -> PASS
 layout: no photo overlaps or comes within 16px of another, none cropped
 
  1.   0.00s  top           leopard-coat-scarf
@@ -18,7 +18,7 @@ layout: no photo overlaps or comes within 16px of another, none cropped
 13.   3.88s  zig5          cheetah-coat-rack
 14.   4.19s  zig6          pink-fur-leopard-heels
 15.   4.83s  (clear to background)
-16.   5.15s  top           leopard-tights-boots
+16.   5.15s  top           hunter-schafer-leopard-coat
 17.   5.48s  middle        fur-closet
 18.   5.80s  bottom        friends-leopard-pants
 19.   6.13s  (clear to background)
