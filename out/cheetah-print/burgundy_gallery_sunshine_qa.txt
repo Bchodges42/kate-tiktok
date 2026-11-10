@@ -1,7 +1,7 @@
 tempo 92.3 BPM, 29 beats-steps, 24 photos, 10.30 s
 beat sync: mean |offset| 0.25 frames, worst 0.50 -> PASS
-stillness: max held-frame diff 0.037 -> PASS
-layout: no photo overlaps or comes within 16px of another, none cropped
+stillness: max held-frame diff 0.036 -> PASS
+layout: no photo overlaps or comes within 16px of another, none cropped, none repeated
 
  1.   0.00s  top           leopard-coat-scarf
  2.   0.36s  middle        pink-leopard-pants
@@ -19,16 +19,16 @@ layout: no photo overlaps or comes within 16px of another, none cropped
 14.   4.19s  zig6          pink-fur-leopard-heels
 15.   4.83s  (clear to background)
 16.   5.15s  top           hunter-schafer-leopard-coat
-17.   5.48s  middle        fur-closet
-18.   5.80s  bottom        friends-leopard-pants
+17.   5.48s  middle        cheetah-coat-orange-bag
+18.   5.80s  bottom        leopard-tights-red-flats
 19.   6.13s  (clear to background)
-20.   6.46s  bottom_r      leopard-coat-scarf
-21.   6.77s  top_r         teal-fur-canal
-22.   7.08s  middle_l      leopard-wall-shoe-shelf
+20.   6.46s  bottom_r      leopard-coat-selfie-room
+21.   6.77s  top_r         tigris-snow
+22.   7.08s  middle_l      leopard-coat-kick
 23.   7.41s  (clear to background)
-24.   7.73s  zig1          fur-hat-red-coat
-25.   8.06s  zig2          pink-leopard-pants
-26.   8.38s  zig3          leopard-skirt-mirror
-27.   8.71s  zig4          cheetah-coat-rack
-28.   9.03s  zig5          pink-fur-leopard-heels
-29.   9.36s  zig6          sunglasses-leopard-floor
+24.   7.73s  zig1          leopard-sweater-staircase
+25.   8.06s  zig2          leopard-coat-umbrella
+26.   8.38s  zig3          fur-coat-backseat
+27.   8.71s  zig4          leopard-coat-taxi
+28.   9.03s  zig5          leopard-coat-street-back
+29.   9.36s  zig6          newsstand-leopard-bag

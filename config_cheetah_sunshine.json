@@ -110,7 +110,26 @@
   },
   "hunter-schafer-leopard-coat": {
    "_note": "your upload"
-  }
+  },
+  "tigris-snow": {
+   "crop": [
+    0,
+    0,
+    736,
+    640
+   ],
+   "_crop": "trims the bottom edge to remove the '@foggymaster' watermark"
+  },
+  "cheetah-coat-orange-bag": {},
+  "leopard-tights-red-flats": {},
+  "leopard-coat-selfie-room": {},
+  "leopard-coat-kick": {},
+  "leopard-sweater-staircase": {},
+  "leopard-coat-umbrella": {},
+  "fur-coat-backseat": {},
+  "leopard-coat-taxi": {},
+  "leopard-coat-street-back": {},
+  "newsstand-leopard-bag": {}
  },
  "timeline": [
   {
@@ -191,12 +210,12 @@
    "beats": 0.5
   },
   {
-   "image": "fur-closet",
+   "image": "cheetah-coat-orange-bag",
    "slot": "middle",
    "beats": 0.5
   },
   {
-   "image": "friends-leopard-pants",
+   "image": "leopard-tights-red-flats",
    "slot": "bottom",
    "beats": 0.5
   },
@@ -205,17 +224,17 @@
    "beats": 0.5
   },
   {
-   "image": "leopard-coat-scarf",
+   "image": "leopard-coat-selfie-room",
    "slot": "bottom_r",
    "beats": 0.5
   },
   {
-   "image": "teal-fur-canal",
+   "image": "tigris-snow",
    "slot": "top_r",
    "beats": 0.5
   },
   {
-   "image": "leopard-wall-shoe-shelf",
+   "image": "leopard-coat-kick",
    "slot": "middle_l",
    "beats": 0.5
   },
@@ -224,32 +243,32 @@
    "beats": 0.5
   },
   {
-   "image": "fur-hat-red-coat",
+   "image": "leopard-sweater-staircase",
    "slot": "zig1",
    "beats": 0.5
   },
   {
-   "image": "pink-leopard-pants",
+   "image": "leopard-coat-umbrella",
    "slot": "zig2",
    "beats": 0.5
   },
   {
-   "image": "leopard-skirt-mirror",
+   "image": "fur-coat-backseat",
    "slot": "zig3",
    "beats": 0.5
   },
   {
-   "image": "cheetah-coat-rack",
+   "image": "leopard-coat-taxi",
    "slot": "zig4",
    "beats": 0.5
   },
   {
-   "image": "pink-fur-leopard-heels",
+   "image": "leopard-coat-street-back",
    "slot": "zig5",
    "beats": 0.5
   },
   {
-   "image": "sunglasses-leopard-floor",
+   "image": "newsstand-leopard-bag",
    "slot": "zig6",
    "beats": 1.5
   }
@@ -260,6 +279,9 @@
   "margin_px": 16,
   "_note": "photos in a group grow together until 16 px from a neighbour or the screen edge"
  },
- "_sync_comment": "a photo every half beat (0.32 s at 92 BPM); pass 1 = 8 beats (2 bars) incl. a 1-beat hold on the finished zigzag; pass 2 reshuffles which photo goes where; the final zigzag holds to the end of bar 4 (10.31 s) and loops",
- "allow_repeats": true
+ "_sync_comment": "a photo every half beat (0.32 s at 92 BPM); pass 1 = the original 12 (8 beats incl. a 1-beat hold on the finished zigzag); pass 2 = 12 different photos; final zigzag holds to the end of bar 4 (10.31 s) and loops. No photo repeats.",
+ "not_used": {
+  "leopard-trousers-legs-up": "busiest composition; only 10 of the 12 new pins were needed",
+  "leopard-mirror-elevator": "same reason"
+ }
 }
