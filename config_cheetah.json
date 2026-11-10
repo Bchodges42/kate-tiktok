@@ -1,0 +1,173 @@
+{
+ "_comment": "Gallery-build edit for gallery.py. One edit = one config.",
+ "name": "cheetah-print",
+ "version": "burgundy_gallery",
+ "vibe": "cheetah print, fur, vintage-maximalist fashion",
+ "song": "audio/song.mp3",
+ "_song_comment": "PREVIEW sound: the take me home TikTok clip (117.5 BPM). Swap in the real sound and re-run.",
+ "song_start": 0,
+ "fallback_bpm": 120,
+ "fps": 30,
+ "size": [
+  1080,
+  1920
+ ],
+ "background": "#570B28",
+ "grade": {
+  "warmth": 0.02,
+  "lift": 8,
+  "saturation": 1.0,
+  "grain": 2.5,
+  "grain_seed": 7
+ },
+ "min_gap_px": 40,
+ "slots": {
+  "_comment": "cx, cy = slot center; w, h = box a photo is fitted into (whole, never cropped). Groups stagger left/right; group 2 mirrors group 1.",
+  "top": {
+   "cx": 280,
+   "cy": 400,
+   "w": 480,
+   "h": 700
+  },
+  "middle": {
+   "cx": 800,
+   "cy": 960,
+   "w": 480,
+   "h": 700
+  },
+  "bottom": {
+   "cx": 280,
+   "cy": 1520,
+   "w": 480,
+   "h": 700
+  },
+  "top_r": {
+   "cx": 800,
+   "cy": 400,
+   "w": 480,
+   "h": 700
+  },
+  "middle_l": {
+   "cx": 280,
+   "cy": 960,
+   "w": 480,
+   "h": 700
+  },
+  "bottom_r": {
+   "cx": 800,
+   "cy": 1520,
+   "w": 480,
+   "h": 700
+  },
+  "zig1": {
+   "cx": 280,
+   "cy": 290,
+   "w": 480,
+   "h": 490
+  },
+  "zig2": {
+   "cx": 800,
+   "cy": 558,
+   "w": 480,
+   "h": 490
+  },
+  "zig3": {
+   "cx": 280,
+   "cy": 826,
+   "w": 480,
+   "h": 490
+  },
+  "zig4": {
+   "cx": 800,
+   "cy": 1094,
+   "w": 480,
+   "h": 490
+  },
+  "zig5": {
+   "cx": 280,
+   "cy": 1362,
+   "w": 480,
+   "h": 490
+  },
+  "zig6": {
+   "cx": 800,
+   "cy": 1630,
+   "w": 480,
+   "h": 490
+  }
+ },
+ "images_dir": "images",
+ "images": {
+  "leopard-coat-scarf": {
+   "hero": true
+  },
+  "print-swatch-collage": {},
+  "leopard-wall-shoe-shelf": {},
+  "fur-hat-red-coat": {},
+  "leopard-tights-boots": {},
+  "fur-closet": {},
+  "sunglasses-leopard-floor": {},
+  "teal-fur-canal": {},
+  "leopard-skirt-mirror": {},
+  "friends-leopard-pants": {},
+  "cheetah-coat-rack": {},
+  "pink-fur-leopard-heels": {}
+ },
+ "timeline": [
+  {
+   "image": "leopard-coat-scarf",
+   "slot": "top"
+  },
+  {
+   "image": "print-swatch-collage",
+   "slot": "middle"
+  },
+  {
+   "image": "leopard-wall-shoe-shelf",
+   "slot": "bottom"
+  },
+  {
+   "clear": true
+  },
+  {
+   "image": "fur-hat-red-coat",
+   "slot": "bottom_r"
+  },
+  {
+   "image": "leopard-tights-boots",
+   "slot": "top_r"
+  },
+  {
+   "image": "fur-closet",
+   "slot": "middle_l"
+  },
+  {
+   "clear": true
+  },
+  {
+   "image": "sunglasses-leopard-floor",
+   "slot": "zig1"
+  },
+  {
+   "image": "teal-fur-canal",
+   "slot": "zig2"
+  },
+  {
+   "image": "leopard-skirt-mirror",
+   "slot": "zig3"
+  },
+  {
+   "image": "friends-leopard-pants",
+   "slot": "zig4"
+  },
+  {
+   "image": "cheetah-coat-rack",
+   "slot": "zig5"
+  },
+  {
+   "image": "pink-fur-leopard-heels",
+   "slot": "zig6",
+   "beats": 3
+  }
+ ]
+}
