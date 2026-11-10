@@ -49,7 +49,7 @@
    "end_frame": 59
   },
   {
-   "image": "candle-mantel-girl",
+   "image": "kids-disney-tv",
    "type": "cover",
    "t": 1.974,
    "start_frame": 59,
@@ -189,8 +189,8 @@
    "end_frame": 577
   },
   {
-   "image": "kids-disney-tv",
-   "type": "cover",
+   "image": "santa-hat-blue-carpet",
+   "type": "swap",
    "t": 19.238,
    "start_frame": 577,
    "end_frame": 618

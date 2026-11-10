@@ -86,9 +86,6 @@
   "ornament-pile": {
    "tree": false
   },
-  "candle-mantel-girl": {
-   "tree": false
-  },
   "cocoa-mugs": {
    "tree": false
   },
@@ -120,12 +117,17 @@
   },
   "kids-disney-tv": {
    "tree": false
+  },
+  "santa-hat-blue-carpet": {
+   "tree": false,
+   "_note": "554 px source; added to keep tree/no-tree alternating through the loop"
   }
  },
  "not_used": {
   "family-tree-overhead": "one tree photo too many for a strict tree/no-tree alternation (board has 12 tree, 9 no-tree; 3 originals fill the no-tree side)",
   "mantel-garland": "ambiguous small trees",
-  "others": "earlier originals off the night-lights look"
+  "others": "earlier originals off the night-lights look",
+  "candle-mantel-girl": "removed at your request (replaced by the Disney TV photo in slot 4)"
  },
  "shots": [
   {
@@ -141,7 +143,7 @@
    "type": "swap"
   },
   {
-   "image": "candle-mantel-girl",
+   "image": "kids-disney-tv",
    "type": "cover"
   },
   {
@@ -221,8 +223,8 @@
    "type": "swap"
   },
   {
-   "image": "kids-disney-tv",
-   "type": "cover"
+   "image": "santa-hat-blue-carpet",
+   "type": "swap"
   }
  ]
 }
