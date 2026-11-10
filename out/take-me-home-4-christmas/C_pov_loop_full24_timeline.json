@@ -1,0 +1,429 @@
+{
+ "version": "C_pov_loop_full24",
+ "preset": "C",
+ "fps": 30,
+ "info": {
+  "tempo": 117.45383522727273,
+  "subdivision_beats": 1,
+  "total_beats": 48,
+  "window_start": 0.0,
+  "window_end": 24.566666666666666,
+  "frames": 737,
+  "why": "forced near song_start=0s -> nearest downbeat 0.07s; frame 0 = sound 0.00 s (first downbeat at 0.070 s rides inside shot 1); full-sound length, ends with the clip at 24.58 s",
+  "shot_seconds": 0.5108390022675736,
+  "base_units": 1,
+  "placeholder": false
+ },
+ "shots": [
+  {
+   "image": "pink-party-table",
+   "start": 0.0,
+   "end": 1.0667,
+   "start_frame": 0,
+   "end_frame": 32,
+   "dissolve": 8,
+   "hold": true,
+   "t_ideal": 0.0
+  },
+  {
+   "image": "wrapped-gifts-gingham",
+   "start": 1.0667,
+   "end": 1.6,
+   "start_frame": 32,
+   "end_frame": 48,
+   "dissolve": 8,
+   "hold": false,
+   "t_ideal": 1.0681179138321995
+  },
+  {
+   "image": "pink-scarf-road",
+   "start": 1.6,
+   "end": 2.1,
+   "start_frame": 48,
+   "end_frame": 63,
+   "dissolve": 5,
+   "hold": false,
+   "t_ideal": 1.6021768707482993
+  },
+  {
+   "image": "mantel-garland",
+   "start": 2.1,
+   "end": 2.6333,
+   "start_frame": 63,
+   "end_frame": 79,
+   "dissolve": 4,
+   "hold": false,
+   "t_ideal": 2.1130158730158732
+  },
+  {
+   "image": "snowy-window-star",
+   "start": 2.6333,
+   "end": 3.1333,
+   "start_frame": 79,
+   "end_frame": 94,
+   "dissolve": 5,
+   "hold": false,
+   "t_ideal": 2.6238548752834467
+  },
+  {
+   "image": "family-tree-overhead",
+   "start": 3.1333,
+   "end": 3.6667,
+   "start_frame": 94,
+   "end_frame": 110,
+   "dissolve": 4,
+   "hold": false,
+   "t_ideal": 3.1346938775510202
+  },
+  {
+   "image": "candle-mantel-girl",
+   "start": 3.6667,
+   "end": 4.2,
+   "start_frame": 110,
+   "end_frame": 126,
+   "dissolve": 5,
+   "hold": false,
+   "t_ideal": 3.6687528344671203
+  },
+  {
+   "image": "pink-party-table",
+   "start": 4.2,
+   "end": 5.2333,
+   "start_frame": 126,
+   "end_frame": 157,
+   "dissolve": 8,
+   "hold": true,
+   "t_ideal": 4.20281179138322
+  },
+  {
+   "image": "wrapped-gifts-gingham",
+   "start": 5.2333,
+   "end": 5.7667,
+   "start_frame": 157,
+   "end_frame": 173,
+   "dissolve": 8,
+   "hold": false,
+   "t_ideal": 5.224489795918367
+  },
+  {
+   "image": "pink-scarf-road",
+   "start": 5.7667,
+   "end": 6.3,
+   "start_frame": 173,
+   "end_frame": 189,
+   "dissolve": 5,
+   "hold": false,
+   "t_ideal": 5.758548752834467
+  },
+  {
+   "image": "mantel-garland",
+   "start": 6.3,
+   "end": 6.8,
+   "start_frame": 189,
+   "end_frame": 204,
+   "dissolve": 5,
+   "hold": false,
+   "t_ideal": 6.292607709750567
+  },
+  {
+   "image": "snowy-window-star",
+   "start": 6.8,
+   "end": 7.3333,
+   "start_frame": 204,
+   "end_frame": 220,
+   "dissolve": 4,
+   "hold": false,
+   "t_ideal": 6.8034467120181406
+  },
+  {
+   "image": "family-tree-overhead",
+   "start": 7.3333,
+   "end": 7.8333,
+   "start_frame": 220,
+   "end_frame": 235,
+   "dissolve": 5,
+   "hold": false,
+   "t_ideal": 7.337505668934241
+  },
+  {
+   "image": "candle-mantel-girl",
+   "start": 7.8333,
+   "end": 8.3667,
+   "start_frame": 235,
+   "end_frame": 251,
+   "dissolve": 4,
+   "hold": false,
+   "t_ideal": 7.848344671201814
+  },
+  {
+   "image": "pink-party-table",
+   "start": 8.3667,
+   "end": 9.4,
+   "start_frame": 251,
+   "end_frame": 282,
+   "dissolve": 8,
+   "hold": true,
+   "t_ideal": 8.382403628117913
+  },
+  {
+   "image": "wrapped-gifts-gingham",
+   "start": 9.4,
+   "end": 9.9333,
+   "start_frame": 282,
+   "end_frame": 298,
+   "dissolve": 8,
+   "hold": false,
+   "t_ideal": 9.404081632653062
+  },
+  {
+   "image": "pink-scarf-road",
+   "start": 9.9333,
+   "end": 10.4333,
+   "start_frame": 298,
+   "end_frame": 313,
+   "dissolve": 5,
+   "hold": false,
+   "t_ideal": 9.93814058956916
+  },
+  {
+   "image": "mantel-garland",
+   "start": 10.4333,
+   "end": 10.9667,
+   "start_frame": 313,
+   "end_frame": 329,
+   "dissolve": 4,
+   "hold": false,
+   "t_ideal": 10.448979591836734
+  },
+  {
+   "image": "snowy-window-star",
+   "start": 10.9667,
+   "end": 11.5,
+   "start_frame": 329,
+   "end_frame": 345,
+   "dissolve": 5,
+   "hold": false,
+   "t_ideal": 10.95981859410431
+  },
+  {
+   "image": "family-tree-overhead",
+   "start": 11.5,
+   "end": 12.0333,
+   "start_frame": 345,
+   "end_frame": 361,
+   "dissolve": 5,
+   "hold": false,
+   "t_ideal": 11.493877551020407
+  },
+  {
+   "image": "candle-mantel-girl",
+   "start": 12.0333,
+   "end": 12.5333,
+   "start_frame": 361,
+   "end_frame": 376,
+   "dissolve": 5,
+   "hold": false,
+   "t_ideal": 12.027936507936507
+  },
+  {
+   "image": "pink-party-table",
+   "start": 12.5333,
+   "end": 13.6,
+   "start_frame": 376,
+   "end_frame": 408,
+   "dissolve": 8,
+   "hold": true,
+   "t_ideal": 12.538775510204081
+  },
+  {
+   "image": "wrapped-gifts-gingham",
+   "start": 13.6,
+   "end": 14.1333,
+   "start_frame": 408,
+   "end_frame": 424,
+   "dissolve": 8,
+   "hold": false,
+   "t_ideal": 13.583673469387755
+  },
+  {
+   "image": "pink-scarf-road",
+   "start": 14.1333,
+   "end": 14.6333,
+   "start_frame": 424,
+   "end_frame": 439,
+   "dissolve": 5,
+   "hold": false,
+   "t_ideal": 14.117732426303855
+  },
+  {
+   "image": "mantel-garland",
+   "start": 14.6333,
+   "end": 15.1667,
+   "start_frame": 439,
+   "end_frame": 455,
+   "dissolve": 4,
+   "hold": false,
+   "t_ideal": 14.628571428571428
+  },
+  {
+   "image": "snowy-window-star",
+   "start": 15.1667,
+   "end": 15.6667,
+   "start_frame": 455,
+   "end_frame": 470,
+   "dissolve": 5,
+   "hold": false,
+   "t_ideal": 15.162630385487528
+  },
+  {
+   "image": "family-tree-overhead",
+   "start": 15.6667,
+   "end": 16.2,
+   "start_frame": 470,
+   "end_frame": 486,
+   "dissolve": 4,
+   "hold": false,
+   "t_ideal": 15.673469387755102
+  },
+  {
+   "image": "candle-mantel-girl",
+   "start": 16.2,
+   "end": 16.7333,
+   "start_frame": 486,
+   "end_frame": 502,
+   "dissolve": 5,
+   "hold": false,
+   "t_ideal": 16.184308390022675
+  },
+  {
+   "image": "pink-party-table",
+   "start": 16.7333,
+   "end": 17.7667,
+   "start_frame": 502,
+   "end_frame": 533,
+   "dissolve": 8,
+   "hold": true,
+   "t_ideal": 16.718367346938777
+  },
+  {
+   "image": "wrapped-gifts-gingham",
+   "start": 17.7667,
+   "end": 18.2667,
+   "start_frame": 533,
+   "end_frame": 548,
+   "dissolve": 8,
+   "hold": false,
+   "t_ideal": 17.76326530612245
+  },
+  {
+   "image": "pink-scarf-road",
+   "start": 18.2667,
+   "end": 18.8,
+   "start_frame": 548,
+   "end_frame": 564,
+   "dissolve": 4,
+   "hold": false,
+   "t_ideal": 18.274104308390022
+  },
+  {
+   "image": "mantel-garland",
+   "start": 18.8,
+   "end": 19.3333,
+   "start_frame": 564,
+   "end_frame": 580,
+   "dissolve": 5,
+   "hold": false,
+   "t_ideal": 18.808163265306124
+  },
+  {
+   "image": "snowy-window-star",
+   "start": 19.3333,
+   "end": 19.8667,
+   "start_frame": 580,
+   "end_frame": 596,
+   "dissolve": 5,
+   "hold": false,
+   "t_ideal": 19.319002267573698
+  },
+  {
+   "image": "family-tree-overhead",
+   "start": 19.8667,
+   "end": 20.3667,
+   "start_frame": 596,
+   "end_frame": 611,
+   "dissolve": 5,
+   "hold": false,
+   "t_ideal": 19.853061224489796
+  },
+  {
+   "image": "candle-mantel-girl",
+   "start": 20.3667,
+   "end": 20.9,
+   "start_frame": 611,
+   "end_frame": 627,
+   "dissolve": 4,
+   "hold": false,
+   "t_ideal": 20.36390022675737
+  },
+  {
+   "image": "pink-party-table",
+   "start": 20.9,
+   "end": 21.9333,
+   "start_frame": 627,
+   "end_frame": 658,
+   "dissolve": 8,
+   "hold": true,
+   "t_ideal": 20.897959183673468
+  },
+  {
+   "image": "wrapped-gifts-gingham",
+   "start": 21.9333,
+   "end": 22.4667,
+   "start_frame": 658,
+   "end_frame": 674,
+   "dissolve": 8,
+   "hold": false,
+   "t_ideal": 21.942857142857143
+  },
+  {
+   "image": "pink-scarf-road",
+   "start": 22.4667,
+   "end": 23.0,
+   "start_frame": 674,
+   "end_frame": 690,
+   "dissolve": 5,
+   "hold": false,
+   "t_ideal": 22.453696145124717
+  },
+  {
+   "image": "mantel-garland",
+   "start": 23.0,
+   "end": 23.5,
+   "start_frame": 690,
+   "end_frame": 705,
+   "dissolve": 5,
+   "hold": false,
+   "t_ideal": 22.987755102040815
+  },
+  {
+   "image": "snowy-window-star",
+   "start": 23.5,
+   "end": 24.0333,
+   "start_frame": 705,
+   "end_frame": 721,
+   "dissolve": 4,
+   "hold": false,
+   "t_ideal": 23.49859410430839
+  },
+  {
+   "image": "family-tree-overhead",
+   "start": 24.0333,
+   "end": 24.5667,
+   "start_frame": 721,
+   "end_frame": 737,
+   "dissolve": 5,
+   "hold": false,
+   "t_ideal": 24.03265306122449
+  }
+ ]
+}

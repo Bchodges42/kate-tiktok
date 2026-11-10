@@ -1,0 +1,35 @@
+tempo 92.3 BPM, 28 beats-steps, 24 photos, 10.30 s
+beat sync: mean |offset| 0.24 frames, worst 0.50 -> PASS
+stillness: max held-frame diff 0.041 -> PASS
+layout: no photo overlaps or comes within 20px of another, none cropped, none repeated
+spacing: exactly 20px between every pair of neighbouring photos -> PASS
+screen filled per group: 84%, 78%, 89%, 73%, 81%
+
+ 1.   0.00s  g1-zigzag     leopard-coat-taxi
+ 2.   0.36s  g1-zigzag     leopard-trousers-legs-up
+ 3.   0.65s  g1-zigzag     fur-coat-backseat
+ 4.   0.98s  g1-zigzag     fur-hat-red-coat
+ 5.   1.30s  g1-zigzag     leopard-coat-umbrella
+ 6.   1.61s  g1-zigzag     leopard-coat-scarf
+ 7.   1.93s  (clear to background)
+ 8.   2.25s  g2-T          leopard-coat-selfie-room
+ 9.   2.58s  g2-T          leopard-tights-red-flats
+10.   2.90s  g2-T          cheetah-coat-rack
+11.   3.23s  g2-T          leopard-skirt-mirror
+12.   3.55s  g2-T          pink-fur-leopard-heels
+13.   3.88s  g2-T          sunglasses-leopard-floor
+14.   4.19s  (clear to background)
+15.   4.50s  g3-ttb        leopard-tights-boots
+16.   4.83s  g3-ttb        leopard-mirror-elevator
+17.   5.48s  (clear to background)
+18.   5.80s  g4-ltr        leopard-coat-kick
+19.   6.13s  g4-ltr        leopard-wall-shoe-shelf
+20.   6.46s  g4-ltr        fur-closet
+21.   6.77s  g4-ltr        leopard-coat-street-back
+22.   7.08s  (clear to background)
+23.   7.41s  g5-rtl        leopard-sweater-staircase
+24.   7.73s  g5-rtl        teal-fur-canal
+25.   8.06s  g5-rtl        pink-leopard-pants
+26.   8.38s  g5-rtl        cheetah-coat-orange-bag
+27.   8.71s  g5-rtl        newsstand-leopard-bag
+28.   9.03s  g5-rtl        friends-leopard-pants

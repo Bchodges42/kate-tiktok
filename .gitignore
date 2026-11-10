@@ -1,0 +1,4 @@
+# keep songs out of git (copyrighted); drop them in audio/ locally
+audio/*
+!audio/.gitkeep
+__pycache__/

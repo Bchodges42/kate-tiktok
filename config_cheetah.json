@@ -1,0 +1,201 @@
+{
+ "_comment": "Gallery-build edit for gallery.py. One edit = one config.",
+ "name": "cheetah-print",
+ "version": "burgundy_gallery_rock_music",
+ "vibe": "cheetah print, fur, vintage-maximalist fashion",
+ "song": "audio/rock-music-charli-xcx.wav",
+ "_song_comment": "Rock Music (Charli XCX) TikTok sound, from your screen recording. Music runs 0.00-8.94 s, then outro silence.",
+ "song_start": 0,
+ "fallback_bpm": 120,
+ "fps": 30,
+ "size": [
+  1080,
+  1920
+ ],
+ "background": "#570B28",
+ "grade": {
+  "warmth": 0.02,
+  "lift": 8,
+  "saturation": 1.0,
+  "grain": 2.5,
+  "grain_seed": 7
+ },
+ "min_gap_px": 16,
+ "slots": {
+  "_comment": "anchor pins a photo to a screen corner/side (t/b/l/r) and it grows from there; otherwise it grows around (cx, cy)",
+  "top": {
+   "cx": 274,
+   "cy": 370,
+   "anchor": "tl",
+   "max_w": 516
+  },
+  "middle": {
+   "cx": 806,
+   "cy": 960,
+   "anchor": "r",
+   "max_w": 516
+  },
+  "bottom": {
+   "cx": 274,
+   "cy": 1550,
+   "anchor": "bl",
+   "max_w": 516
+  },
+  "top_r": {
+   "cx": 806,
+   "cy": 370,
+   "anchor": "tr",
+   "max_w": 516
+  },
+  "middle_l": {
+   "cx": 274,
+   "cy": 960,
+   "anchor": "l",
+   "max_w": 516
+  },
+  "bottom_r": {
+   "cx": 806,
+   "cy": 1550,
+   "anchor": "br",
+   "max_w": 516
+  },
+  "zig1": {
+   "cx": 274,
+   "cy": 280,
+   "anchor": "tl"
+  },
+  "zig2": {
+   "cx": 806,
+   "cy": 552,
+   "anchor": "r"
+  },
+  "zig3": {
+   "cx": 274,
+   "cy": 824,
+   "anchor": "l"
+  },
+  "zig4": {
+   "cx": 806,
+   "cy": 1096,
+   "anchor": "r"
+  },
+  "zig5": {
+   "cx": 274,
+   "cy": 1368,
+   "anchor": "l"
+  },
+  "zig6": {
+   "cx": 806,
+   "cy": 1640,
+   "anchor": "br"
+  }
+ },
+ "images_dir": "images",
+ "images": {
+  "leopard-coat-scarf": {
+   "hero": true
+  },
+  "leopard-wall-shoe-shelf": {},
+  "fur-hat-red-coat": {},
+  "leopard-tights-boots": {},
+  "fur-closet": {},
+  "sunglasses-leopard-floor": {},
+  "teal-fur-canal": {},
+  "leopard-skirt-mirror": {},
+  "friends-leopard-pants": {},
+  "cheetah-coat-rack": {},
+  "pink-fur-leopard-heels": {},
+  "pink-leopard-pants": {
+   "_note": "new pin; replaces the texture/pattern collage"
+  }
+ },
+ "timeline": [
+  {
+   "image": "leopard-coat-scarf",
+   "slot": "top",
+   "beats": 2,
+   "_note": "'Now we're making': on the beat"
+  },
+  {
+   "image": "pink-leopard-pants",
+   "slot": "middle",
+   "beats": 2
+  },
+  {
+   "image": "leopard-wall-shoe-shelf",
+   "slot": "bottom",
+   "beats": 3
+  },
+  {
+   "clear": true,
+   "beats": 1,
+   "_note": "beat 7, short pause before 'Rooock'"
+  },
+  {
+   "image": "fur-hat-red-coat",
+   "slot": "bottom_r",
+   "_note": "'Rooooock' starts: from here cuts follow her vibrato (every 3rd pitch crest)",
+   "at": 3.253
+  },
+  {
+   "image": "leopard-tights-boots",
+   "slot": "top_r",
+   "_note": "vibrato crest",
+   "at": 3.612
+  },
+  {
+   "image": "fur-closet",
+   "slot": "middle_l",
+   "_note": "vibrato crest",
+   "at": 4.033
+  },
+  {
+   "clear": true,
+   "_note": "vibrato crest",
+   "at": 4.37
+  },
+  {
+   "image": "sunglasses-leopard-floor",
+   "slot": "zig1",
+   "_note": "vibrato crest",
+   "at": 4.741
+  },
+  {
+   "image": "teal-fur-canal",
+   "slot": "zig2",
+   "_note": "vibrato crest",
+   "at": 5.113
+  },
+  {
+   "image": "leopard-skirt-mirror",
+   "slot": "zig3",
+   "_note": "vibrato crest",
+   "at": 5.487
+  },
+  {
+   "image": "friends-leopard-pants",
+   "slot": "zig4",
+   "_note": "vibrato crest",
+   "at": 5.85
+  },
+  {
+   "image": "cheetah-coat-rack",
+   "slot": "zig5",
+   "_note": "vibrato crest",
+   "at": 6.114
+  },
+  {
+   "image": "pink-fur-leopard-heels",
+   "slot": "zig6",
+   "_note": "'Music': the held note ends and the word starts",
+   "at": 6.44
+  }
+ ],
+ "start_beat_index": 0,
+ "end_at": 7.62,
+ "_sync_comment": "0-3.25 s on the beat; 3.25-6.44 s the held 'Rooooock' (cuts on every 3rd vibrato crest, measured from her overtones); 'Music' at 6.44 s; ends with the song at 7.62 s (after that the screen recording has TikTok's outro jingle, not the song)",
+ "auto_grow": {
+  "margin_px": 16,
+  "_note": "photos in a group grow together until 16 px from a neighbour or the screen edge"
+ }
+}

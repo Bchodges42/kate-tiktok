@@ -1,0 +1,164 @@
+{
+ "_comment": "Gallery-build edit for gallery.py. One edit = one config.",
+ "name": "cheetah-print",
+ "version": "burgundy_gallery_sunshine_rows",
+ "vibe": "cheetah print, fur, vintage-maximalist fashion",
+ "song": "audio/sunshine-steve-lacy.wav",
+ "_song_comment": "Sunshine (Steve Lacy) TikTok sound from your screen recording. Song runs 0.00-11.29 s; after that it's TikTok's outro jingle.",
+ "song_start": 0,
+ "fallback_bpm": 120,
+ "fps": 30,
+ "size": [
+  1080,
+  1920
+ ],
+ "background": "#570B28",
+ "grade": {
+  "warmth": 0.02,
+  "lift": 8,
+  "saturation": 1.0,
+  "grain": 2.5,
+  "grain_seed": 7
+ },
+ "min_gap_px": 20,
+ "images_dir": "images",
+ "images": {
+  "leopard-coat-scarf": {
+   "hero": true
+  },
+  "leopard-wall-shoe-shelf": {},
+  "fur-hat-red-coat": {},
+  "leopard-tights-boots": {},
+  "fur-closet": {},
+  "sunglasses-leopard-floor": {},
+  "teal-fur-canal": {},
+  "leopard-skirt-mirror": {},
+  "friends-leopard-pants": {},
+  "cheetah-coat-rack": {},
+  "pink-fur-leopard-heels": {},
+  "pink-leopard-pants": {
+   "_note": "new pin; replaces the texture/pattern collage"
+  },
+  "cheetah-coat-orange-bag": {},
+  "leopard-tights-red-flats": {},
+  "leopard-coat-selfie-room": {},
+  "leopard-coat-kick": {},
+  "leopard-sweater-staircase": {},
+  "leopard-coat-umbrella": {},
+  "fur-coat-backseat": {},
+  "leopard-coat-taxi": {},
+  "leopard-coat-street-back": {},
+  "newsstand-leopard-bag": {},
+  "leopard-mirror-elevator": {},
+  "leopard-trousers-legs-up": {}
+ },
+ "start_beat_index": 0,
+ "end_at": null,
+ "not_used": {
+  "tigris-snow": "left out of this alternative at your request",
+  "hunter-schafer-leopard-coat": "removed from this alternative at your request"
+ },
+ "step_beats": 0.5,
+ "_layout_comment": "Equal spacing: exactly 20 px between every pair of neighbouring photos. Portrait photos go in rows (2 side by side, filling left to right or right to left); the wide photos go in a column (top to bottom). Every photo in a row shares a height, so the gaps stay even; gallery.py picks the row split that makes the photos biggest. Groups with a 'tree' use a nested arrangement instead (h = side by side, v = stacked), still exactly 20 px between neighbours.",
+ "groups": [
+  {
+   "name": "zigzag",
+   "tree": [
+    "v",
+    [
+     "h",
+     0,
+     [
+      "v",
+      1,
+      2
+     ]
+    ],
+    [
+     "h",
+     [
+      "v",
+      3,
+      4
+     ],
+     5
+    ]
+   ],
+   "images": [
+    "leopard-coat-taxi",
+    "leopard-trousers-legs-up",
+    "fur-coat-backseat",
+    "fur-hat-red-coat",
+    "leopard-coat-umbrella",
+    "leopard-coat-scarf"
+   ],
+   "_note": "big photo with a stacked pair beside it, then mirrored: stacked pair with a big photo beside it"
+  },
+  {
+   "name": "T",
+   "tree": [
+    "v",
+    [
+     "h",
+     0,
+     [
+      "v",
+      1,
+      2
+     ]
+    ],
+    [
+     "h",
+     3,
+     4,
+     5
+    ]
+   ],
+   "images": [
+    "leopard-coat-selfie-room",
+    "leopard-tights-red-flats",
+    "cheetah-coat-rack",
+    "leopard-skirt-mirror",
+    "pink-fur-leopard-heels",
+    "sunglasses-leopard-floor"
+   ],
+   "_note": "tall hero with a stacked pair beside it, then a row of three across the bottom"
+  },
+  {
+   "flow": "ttb",
+   "images": [
+    "leopard-tights-boots",
+    "leopard-mirror-elevator"
+   ],
+   "holds": {
+    "leopard-mirror-elevator": 1.0
+   }
+  },
+  {
+   "flow": "ltr",
+   "min_per_line": 2,
+   "images": [
+    "leopard-coat-kick",
+    "leopard-wall-shoe-shelf",
+    "fur-closet",
+    "leopard-coat-street-back"
+   ]
+  },
+  {
+   "flow": "rtl",
+   "min_per_line": 2,
+   "images": [
+    "leopard-sweater-staircase",
+    "teal-fur-canal",
+    "pink-leopard-pants",
+    "cheetah-coat-orange-bag",
+    "newsstand-leopard-bag",
+    "friends-leopard-pants"
+   ],
+   "holds": {
+    "friends-leopard-pants": 2.0
+   }
+  }
+ ],
+ "_sync_comment": "a photo every half beat, a half-beat clear between groups; 32 half beats = 16 beats, ends on bar 4 (10.30 s)"
+}

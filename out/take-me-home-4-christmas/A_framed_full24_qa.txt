@@ -1,0 +1,4 @@
+QA A_framed_full24: 737 frames decoded (expected 737)
+stillness: 609 held-frame pairs, mean diff 0.017, max 0.366 (0-255 scale; <1 = codec noise only) -> PASS
+beat sync: 15 cuts, mean |offset| 0.26 frames, worst 0.47 frames -> PASS
+loop: last->first frame diff 2.08 (last frame is 88%+ into the dissolve back to image 1)

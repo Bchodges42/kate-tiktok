@@ -1,0 +1,278 @@
+{
+ "_comment": "Gallery-build edit for gallery.py. One edit = one config.",
+ "name": "cheetah-print",
+ "version": "burgundy_gallery_sunshine_alt",
+ "vibe": "cheetah print, fur, vintage-maximalist fashion",
+ "song": "audio/sunshine-steve-lacy.wav",
+ "_song_comment": "Sunshine (Steve Lacy) TikTok sound from your screen recording. Song runs 0.00-11.29 s; after that it's TikTok's outro jingle.",
+ "song_start": 0,
+ "fallback_bpm": 120,
+ "fps": 30,
+ "size": [
+  1080,
+  1920
+ ],
+ "background": "#570B28",
+ "grade": {
+  "warmth": 0.02,
+  "lift": 8,
+  "saturation": 1.0,
+  "grain": 2.5,
+  "grain_seed": 7
+ },
+ "min_gap_px": 16,
+ "slots": {
+  "_comment": "anchor pins a photo to a screen corner/side (t/b/l/r) and it grows from there; otherwise it grows around (cx, cy)",
+  "top": {
+   "cx": 274,
+   "cy": 370,
+   "anchor": "tl",
+   "max_w": 516
+  },
+  "middle": {
+   "cx": 806,
+   "cy": 960,
+   "anchor": "r",
+   "max_w": 516
+  },
+  "bottom": {
+   "cx": 274,
+   "cy": 1550,
+   "anchor": "bl",
+   "max_w": 516
+  },
+  "top_r": {
+   "cx": 806,
+   "cy": 370,
+   "anchor": "tr",
+   "max_w": 516
+  },
+  "middle_l": {
+   "cx": 274,
+   "cy": 960,
+   "anchor": "l",
+   "max_w": 516
+  },
+  "bottom_r": {
+   "cx": 806,
+   "cy": 1550,
+   "anchor": "br",
+   "max_w": 516
+  },
+  "zig1": {
+   "cx": 318,
+   "cy": 280,
+   "anchor": "t"
+  },
+  "zig2": {
+   "cx": 762,
+   "cy": 552,
+   "anchor": ""
+  },
+  "zig3": {
+   "cx": 318,
+   "cy": 824,
+   "anchor": ""
+  },
+  "zig4": {
+   "cx": 762,
+   "cy": 1096,
+   "anchor": ""
+  },
+  "zig5": {
+   "cx": 318,
+   "cy": 1368,
+   "anchor": ""
+  },
+  "zig6": {
+   "cx": 762,
+   "cy": 1640,
+   "anchor": "b"
+  }
+ },
+ "images_dir": "images",
+ "images": {
+  "leopard-coat-scarf": {
+   "hero": true
+  },
+  "leopard-wall-shoe-shelf": {},
+  "fur-hat-red-coat": {},
+  "leopard-tights-boots": {},
+  "fur-closet": {},
+  "sunglasses-leopard-floor": {},
+  "teal-fur-canal": {},
+  "leopard-skirt-mirror": {},
+  "friends-leopard-pants": {},
+  "cheetah-coat-rack": {},
+  "pink-fur-leopard-heels": {},
+  "pink-leopard-pants": {
+   "_note": "new pin; replaces the texture/pattern collage"
+  },
+  "cheetah-coat-orange-bag": {},
+  "leopard-tights-red-flats": {},
+  "leopard-coat-selfie-room": {},
+  "leopard-coat-kick": {},
+  "leopard-sweater-staircase": {},
+  "leopard-coat-umbrella": {},
+  "fur-coat-backseat": {},
+  "leopard-coat-taxi": {},
+  "leopard-coat-street-back": {},
+  "newsstand-leopard-bag": {},
+  "leopard-mirror-elevator": {},
+  "leopard-trousers-legs-up": {}
+ },
+ "timeline": [
+  {
+   "image": "leopard-coat-scarf",
+   "slot": "top",
+   "beats": 0.5
+  },
+  {
+   "image": "pink-leopard-pants",
+   "slot": "middle",
+   "beats": 0.5
+  },
+  {
+   "image": "leopard-wall-shoe-shelf",
+   "slot": "bottom",
+   "beats": 0.5
+  },
+  {
+   "clear": true,
+   "beats": 0.5
+  },
+  {
+   "image": "fur-hat-red-coat",
+   "slot": "bottom_r",
+   "beats": 0.5
+  },
+  {
+   "image": "leopard-tights-boots",
+   "slot": "top_r",
+   "beats": 0.5
+  },
+  {
+   "image": "fur-closet",
+   "slot": "middle_l",
+   "beats": 0.5
+  },
+  {
+   "clear": true,
+   "beats": 0.5
+  },
+  {
+   "image": "sunglasses-leopard-floor",
+   "slot": "zig1",
+   "beats": 0.5
+  },
+  {
+   "image": "teal-fur-canal",
+   "slot": "zig2",
+   "beats": 0.5
+  },
+  {
+   "image": "leopard-skirt-mirror",
+   "slot": "zig3",
+   "beats": 0.5
+  },
+  {
+   "image": "friends-leopard-pants",
+   "slot": "zig4",
+   "beats": 0.5
+  },
+  {
+   "image": "cheetah-coat-rack",
+   "slot": "zig5",
+   "beats": 0.5
+  },
+  {
+   "image": "pink-fur-leopard-heels",
+   "slot": "zig6",
+   "beats": 1.0
+  },
+  {
+   "clear": true,
+   "beats": 0.5
+  },
+  {
+   "image": "leopard-trousers-legs-up",
+   "slot": "top",
+   "beats": 0.5,
+   "_note": "replaces Hunter Schafer; moved here from the 4-photo group"
+  },
+  {
+   "image": "cheetah-coat-orange-bag",
+   "slot": "middle",
+   "beats": 0.5
+  },
+  {
+   "image": "leopard-tights-red-flats",
+   "slot": "bottom",
+   "beats": 0.5
+  },
+  {
+   "clear": true,
+   "beats": 0.5
+  },
+  {
+   "image": "leopard-coat-selfie-room",
+   "slot": "bottom_r",
+   "beats": 0.5
+  },
+  {
+   "image": "leopard-mirror-elevator",
+   "slot": "top_r",
+   "beats": 0.5
+  },
+  {
+   "image": "leopard-coat-kick",
+   "slot": "middle_l",
+   "beats": 0.5
+  },
+  {
+   "clear": true,
+   "beats": 0.5
+  },
+  {
+   "image": "leopard-sweater-staircase",
+   "slot": "zig1",
+   "beats": 0.5
+  },
+  {
+   "image": "leopard-coat-umbrella",
+   "slot": "zig2",
+   "beats": 0.5
+  },
+  {
+   "image": "fur-coat-backseat",
+   "slot": "zig3",
+   "beats": 0.5
+  },
+  {
+   "image": "leopard-coat-taxi",
+   "slot": "zig4",
+   "beats": 0.5
+  },
+  {
+   "image": "leopard-coat-street-back",
+   "slot": "zig5",
+   "beats": 0.5
+  },
+  {
+   "image": "newsstand-leopard-bag",
+   "slot": "zig6",
+   "beats": 1.5
+  }
+ ],
+ "start_beat_index": 0,
+ "end_at": null,
+ "auto_grow": {
+  "margin_px": 16,
+  "_note": "photos in a group grow together until 16 px from a neighbour or the screen edge"
+ },
+ "_sync_comment": "alternative: no Tigris, no Hunter Schafer. Elevator mirror takes Tigris's spot; the legs-up trousers take Hunter Schafer's spot (top, pass 2). 24 different photos, ends on bar 4.",
+ "not_used": {
+  "tigris-snow": "left out of this alternative at your request",
+  "hunter-schafer-leopard-coat": "removed from this alternative at your request"
+ }
+}

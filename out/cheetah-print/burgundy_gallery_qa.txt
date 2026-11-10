@@ -1,0 +1,19 @@
+tempo 117.5 BPM, 14 beats-steps, 12 photos, 8.37 s
+beat sync: mean |offset| 0.19 frames, worst 0.41 -> PASS
+stillness: max held-frame diff 0.882 -> PASS
+layout: no photo overlaps or comes within 40px of another, none cropped, none repeated
+
+ 1.   0.00s  top           leopard-coat-scarf
+ 2.   0.56s  middle        print-swatch-collage
+ 3.   1.07s  bottom        leopard-wall-shoe-shelf
+ 4.   1.60s  (clear to background)
+ 5.   2.11s  bottom_r      fur-hat-red-coat
+ 6.   2.62s  top_r         leopard-tights-boots
+ 7.   3.13s  middle_l      fur-closet
+ 8.   3.67s  (clear to background)
+ 9.   4.20s  zig1          sunglasses-leopard-floor
+10.   4.71s  zig2          teal-fur-canal
+11.   5.22s  zig3          leopard-skirt-mirror
+12.   5.76s  zig4          friends-leopard-pants
+13.   6.29s  zig5          cheetah-coat-rack
+14.   6.80s  zig6          pink-fur-leopard-heels

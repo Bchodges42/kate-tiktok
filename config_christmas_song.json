@@ -1,0 +1,230 @@
+{
+ "_comment": "Stacked collage edit for collage.py. One edit = one config.",
+ "name": "the-christmas-song",
+ "version": "cream_collage",
+ "vibe": "nostalgic christmas at home: night lights, trees, film-photo childhood, warm amber + red + green",
+ "song": "audio/the-christmas-song-tiktok.wav",
+ "_song_comment": "Audio of the TikTok sound (from the inspo screen recording). Music runs 0.00-20.43 s; after that it's the TikTok outro silence.",
+ "audio": {
+  "music_end": 20.6,
+  "video_end": 20.6,
+  "pulse_bpm": 158,
+  "snap": 0.13,
+  "min_gap": 0.37
+ },
+ "fps": 30,
+ "size": [
+  1080,
+  1920
+ ],
+ "grade": {
+  "warmth": 0.035,
+  "lift": 12,
+  "saturation": 0.97,
+  "grain": 3.0,
+  "grain_seed": 7
+ },
+ "layout": {
+  "background": "#F7F4EE",
+  "center_y": 0.46,
+  "max_width": 0.92,
+  "max_height": 0.72,
+  "_note": "every photo centered, whole, at full size for its shape; covers are never smaller than what they cover"
+ },
+ "no_repeat_images": true,
+ "images_dir": "images",
+ "images": {
+  "nineties-couple-tree": {
+   "tree": true,
+   "hero": true
+  },
+  "sleeping-under-tree": {
+   "tree": true
+  },
+  "rockefeller-rink": {
+   "tree": true
+  },
+  "cat-in-tree-vintage": {
+   "tree": true,
+   "crop": [
+    50,
+    53,
+    670,
+    670
+   ],
+   "_crop": "keeps only the photo, inside its white print border"
+  },
+  "pink-girl-tree": {
+   "tree": true
+  },
+  "gifts-under-tree-night": {
+   "tree": true
+  },
+  "garland-doorway-night": {
+   "tree": true,
+   "_note": "small lit tree through the doorway"
+  },
+  "seventies-tree-decorating": {
+   "tree": true
+  },
+  "window-tree-woman": {
+   "tree": true,
+   "_note": "540 px source, a little soft at full size"
+  },
+  "candlelit-table": {
+   "tree": true,
+   "_note": "lit tree on the right"
+  },
+  "wrapped-gifts-pile": {
+   "tree": true,
+   "_note": "tree at the top"
+  },
+  "charlie-brown-record": {
+   "tree": true,
+   "_note": "album art is the Charlie Brown tree; 300 px source, soft at full size"
+  },
+  "ornament-pile": {
+   "tree": false
+  },
+  "cocoa-mugs": {
+   "tree": false
+  },
+  "iced-cookies": {
+   "tree": false
+  },
+  "porch-lights-night": {
+   "tree": false
+  },
+  "family-dinner-chandelier": {
+   "tree": false
+  },
+  "kids-snow-night": {
+   "tree": false
+  },
+  "pink-party-table": {
+   "tree": false
+  },
+  "tree-cookies-tray": {
+   "tree": false,
+   "_note": "tree-shaped cookies, no real tree: counted as no-tree"
+  },
+  "wrapped-gifts-gingham": {
+   "tree": false
+  },
+  "snow-angels": {
+   "tree": false,
+   "_note": "512 px source, soft at full size"
+  },
+  "kids-disney-tv": {
+   "tree": false
+  },
+  "santa-hat-blue-carpet": {
+   "tree": false,
+   "_note": "554 px source; added to keep tree/no-tree alternating through the loop"
+  }
+ },
+ "not_used": {
+  "family-tree-overhead": "one tree photo too many for a strict tree/no-tree alternation (board has 12 tree, 9 no-tree; 3 originals fill the no-tree side)",
+  "mantel-garland": "ambiguous small trees",
+  "others": "earlier originals off the night-lights look",
+  "candle-mantel-girl": "removed at your request (replaced by the Disney TV photo in slot 4)"
+ },
+ "shots": [
+  {
+   "image": "nineties-couple-tree",
+   "type": "swap"
+  },
+  {
+   "image": "ornament-pile",
+   "type": "swap"
+  },
+  {
+   "image": "sleeping-under-tree",
+   "type": "swap"
+  },
+  {
+   "image": "kids-disney-tv",
+   "type": "cover"
+  },
+  {
+   "image": "rockefeller-rink",
+   "type": "swap"
+  },
+  {
+   "image": "cocoa-mugs",
+   "type": "swap"
+  },
+  {
+   "image": "cat-in-tree-vintage",
+   "type": "swap"
+  },
+  {
+   "image": "iced-cookies",
+   "type": "cover"
+  },
+  {
+   "image": "pink-girl-tree",
+   "type": "swap"
+  },
+  {
+   "image": "porch-lights-night",
+   "type": "swap"
+  },
+  {
+   "image": "gifts-under-tree-night",
+   "type": "swap"
+  },
+  {
+   "image": "family-dinner-chandelier",
+   "type": "cover"
+  },
+  {
+   "image": "garland-doorway-night",
+   "type": "swap"
+  },
+  {
+   "image": "kids-snow-night",
+   "type": "swap"
+  },
+  {
+   "image": "seventies-tree-decorating",
+   "type": "swap"
+  },
+  {
+   "image": "pink-party-table",
+   "type": "cover"
+  },
+  {
+   "image": "window-tree-woman",
+   "type": "swap"
+  },
+  {
+   "image": "tree-cookies-tray",
+   "type": "swap"
+  },
+  {
+   "image": "candlelit-table",
+   "type": "swap"
+  },
+  {
+   "image": "wrapped-gifts-gingham",
+   "type": "cover"
+  },
+  {
+   "image": "wrapped-gifts-pile",
+   "type": "swap"
+  },
+  {
+   "image": "snow-angels",
+   "type": "swap"
+  },
+  {
+   "image": "charlie-brown-record",
+   "type": "swap"
+  },
+  {
+   "image": "santa-hat-blue-carpet",
+   "type": "swap"
+  }
+ ]
+}

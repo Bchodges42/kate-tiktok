@@ -1,0 +1,37 @@
+tempo 95.7 BPM, 29 beats-steps, 25 photos, 18.87 s
+beat sync: mean |offset| 0.33 frames, worst 0.50 -> PASS
+stillness: max held-frame diff 0.050 -> PASS
+layout: no photo overlaps or comes within 20px of another, none cropped, none repeated
+spacing: exactly 20px between every pair of neighbouring photos -> PASS
+variety: no two photos of the same kind next to each other -> PASS
+screen filled per group: 66%, 67%, 66%, 63%, 79%
+
+ 1.   0.00s  g1-intro-grid mckenna-daisies-hair
+ 2.   0.91s  g1-intro-grid capitol-lion-mask
+ 3.   1.58s  g1-intro-grid antler-headpiece-gown
+ 4.   2.18s  g1-intro-grid backstage-tulle-hair
+ 5.   2.76s  (clear to background)
+ 6.   3.39s  g2-invT       mckenna-lavender-gown
+ 7.   4.04s  g2-invT       capitol-pink-cakes
+ 8.   4.95s  g2-invT       katniss-wedding-dress-bw
+ 9.   5.25s  g2-invT       silver-eyeshadow
+10.   5.85s  g2-invT       katniss-chainmail-dress
+11.   6.50s  g2-invT       capitol-staircase-party
+12.   7.11s  (clear to background)
+13.   7.73s  g3-T          confetti-party-runway
+14.   8.36s  g3-T          silver-lace-shoulder-gown
+15.   9.59s  g3-T          daisy-petal-lashes
+16.  10.19s  g3-T          costume-rack-gowns
+17.  10.52s  g3-T          effie-purple-tour
+18.  10.82s  g3-T          gold-feather-bodice
+19.  11.15s  (clear to background)
+20.  11.45s  g4-two-rows   phoenix-feather-gown
+21.  12.05s  g4-two-rows   capitol-men-pink-gold
+22.  12.68s  g4-two-rows   baroque-party-crowd
+23.  13.93s  g4-two-rows   gold-fireworks
+24.  15.16s  (clear to background)
+25.  15.77s  g5-finale     crystal-skirt-red-heels
+26.  16.39s  g5-finale     capitol-audience-colour
+27.  17.02s  g5-finale     dior-runway-blue-fur
+28.  17.62s  g5-finale     capitol-crowd-wigs
+29.  18.25s  g5-finale     mockingjay-wings-stage
