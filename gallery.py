@@ -27,15 +27,109 @@ def boxes_overlap(a, b, gap):
     return not (ax + aw + gap <= bx or bx + bw + gap <= ax or ay + ah + gap <= by or by + bh + gap <= ay)
 
 
+def compositions(n, kmax, kmin=1):
+    """Every way to split n photos (kept in order) into lines of kmin..kmax photos."""
+    if n == 0:
+        yield []
+        return
+    for k in range(kmin, min(kmax, n) + 1):
+        for rest in compositions(n - k, kmax, kmin):
+            yield [k] + rest
+
+
+def justified(sizes, flow, W, H, g, kmax=3, kmin=1):
+    """Lay photos out in lines with exactly `g` px between every neighbour (and at least g to
+    the screen edge). flow ltr/rtl: rows of photos side by side, all photos in a row the same
+    height; ttb/btt: columns stacked top to bottom, all photos in a column the same width.
+    Every line spans the same length, so the block is a clean rectangle; the line split that
+    gives the biggest photos wins, and the block is centred. Returns boxes in appearance order."""
+    horiz = flow in ("ltr", "rtl")
+    M, C = (W, H) if horiz else (H, W)  # main axis (along a line) and cross axis
+    M, C = M - 2 * g, C - 2 * g
+    r = [w / h if horiz else h / w for w, h in sizes]  # main length per unit of cross length
+    best = None
+    for comp in compositions(len(sizes), kmax, kmin):
+        lines, i = [], 0
+        for k in comp:
+            lines.append(list(range(i, i + k))); i += k
+        R = [sum(r[j] for j in ln) for ln in lines]
+        m = M
+        cross = sum((m - g * (len(ln) - 1)) / Rl for ln, Rl in zip(lines, R)) + g * (len(lines) - 1)
+        if cross > C:  # too tall: shorten every line until it fits
+            m = (C - g * (len(lines) - 1) + g * sum((len(ln) - 1) / Rl for ln, Rl in zip(lines, R))) / sum(1 / Rl for Rl in R)
+            cross = C
+        area = sum((m - g * (len(ln) - 1)) / Rl * (m - g * (len(ln) - 1)) / Rl * r[j]
+                   for ln, Rl in zip(lines, R) for j in ln)
+        if best is None or area > best[0] + 1e-6:
+            best = (area, lines, R, m, cross)
+    _, lines, R, m, cross = best
+    m0 = g + round((M - m) / 2)
+    c = g + round((C - cross) / 2)
+    boxes = [None] * len(sizes)
+    rev = flow in ("rtl", "btt")
+    for ln, Rl in zip(lines, R):
+        cs = (m - g * (len(ln) - 1)) / Rl
+        p = 0.0
+        for j in ln:
+            ln_len = cs * r[j]
+            a0, a1 = m0 + round(p), m0 + round(p + ln_len)
+            if rev:  # start from the right / bottom
+                a0, a1 = 2 * m0 + round(m) - a1, 2 * m0 + round(m) - a0
+            b0, b1 = c, c + round(cs)
+            boxes[j] = (a0, b0, a1 - a0, b1 - b0) if horiz else (b0, a0, b1 - b0, a1 - a0)
+            p += ln_len + g
+        c += round(cs) + g
+    return boxes, best[0] / ((M + 2 * g) * (C + 2 * g))
+
+
+def spacing_check(boxes, g):
+    """Every pair of neighbouring photos (sharing a row or column band) must be exactly g apart."""
+    bad = []
+    for i, a in enumerate(boxes):
+        for b in boxes[i + 1:]:
+            ax, ay, aw, ah = a
+            bx, by, bw, bh = b
+            if min(ay + ah, by + bh) > max(ay, by):  # side by side
+                gx = max(bx - (ax + aw), ax - (bx + bw))
+                if gx != g and not any(o not in (a, b) and min(o[1] + o[3], ay + ah) > max(o[1], ay)
+                                       and min(ax, bx) < o[0] < max(ax, bx) for o in boxes):
+                    bad.append(gx)
+            if min(ax + aw, bx + bw) > max(ax, bx):  # one above the other
+                gy = max(by - (ay + ah), ay - (by + bh))
+                if gy != g and not any(o not in (a, b) and min(o[0] + o[2], ax + aw) > max(o[0], ax)
+                                       and min(ay, by) < o[1] < max(ay, by) for o in boxes):
+                    bad.append(gy)
+    return bad
+
+
+def timeline_from_groups(cfg, W, H):
+    """Turn cfg["groups"] into timeline steps with fixed boxes (one photo per step, clear between groups)."""
+    g, steps = cfg["min_gap_px"], []
+    cfg["_coverage"], cfg["_group_boxes"] = [], []
+    for n, grp in enumerate(cfg["groups"]):
+        sizes = [load_source(cfg, k)[0].size for k in grp["images"]]
+        boxes, cov = justified(sizes, grp["flow"], W, H, g, grp.get("max_per_line", 3), grp.get("min_per_line", 1))
+        cfg["_coverage"].append(cov)
+        cfg["_group_boxes"].append(boxes)
+        holds = grp.get("holds", {})
+        for k, b in zip(grp["images"], boxes):
+            steps.append({"image": k, "slot": f"g{n + 1}-{grp['flow']}", "box": list(b), "beats": holds.get(k, cfg["step_beats"])})
+        if n < len(cfg["groups"]) - 1:
+            steps.append({"clear": True, "beats": cfg["step_beats"]})
+    return steps
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--config", required=True)
     cfg = json.load(open(ap.parse_args().config))
+    if "groups" in cfg:
+        cfg["timeline"] = timeline_from_groups(cfg, *cfg["size"])
     fps = cfg["fps"]
     W, H = cfg["size"]
     outdir = os.path.join(ROOT, "out", cfg["name"])
     os.makedirs(outdir, exist_ok=True)
-    slots = cfg["slots"]
+    slots = cfg.get("slots", {})
     bg = np.empty((H, W, 3), np.float32)
     bg[:] = hex_rgb(cfg["background"])
 
@@ -121,9 +215,14 @@ def main():
         if sh.get("clear"):
             layers = []
         else:
-            key, slot = sh["image"], slots[sh["slot"]]
+            key, slot = sh["image"], slots.get(sh["slot"], {})
             im = srcs[key]
-            if i in grown:
+            if "box" in sh:
+                box = tuple(sh["box"])
+                w, h = box[2], box[3]
+                if abs(w / h - im.width / im.height) > 0.01:
+                    errs.append(f"step {i + 1}: {key} box changes the photo's shape")
+            elif i in grown:
                 box = grown[i]
                 w, h = box[2], box[3]
             else:
@@ -140,6 +239,10 @@ def main():
         for key, (x, y, w, h) in layers:
             canvas[y:y + h, x:x + w] = grade(np.asarray(srcs[key].resize((w, h), Image.LANCZOS)), cfg["grade"])
         plates.append(canvas)
+    for n, boxes in enumerate(cfg.get("_group_boxes", [])):
+        bad = spacing_check(boxes, gap)
+        if bad:
+            errs.append(f"group {n + 1}: uneven spacing {bad}")
     if errs:
         sys.exit("layout errors:\n  " + "\n  ".join(errs))
     used = [s["image"] for s in shots if not s.get("clear")]
@@ -183,7 +286,11 @@ def main():
     rep = [f"tempo {au['tempo']:.1f} BPM, {len(shots)} beats-steps, {len(used)} photos, {N / fps:.2f} s",
            f"beat sync: mean |offset| {offs.mean():.2f} frames, worst {offs.max():.2f} -> {'PASS' if offs.max() <= 1 else 'FAIL'}",
            f"stillness: max held-frame diff {max(still):.3f} -> {'PASS' if max(still) < 1 else 'FAIL'}",
-           f"layout: no photo overlaps or comes within {gap}px of another, none cropped" + ("" if cfg.get("allow_repeats") else ", none repeated"), ""]
+           f"layout: no photo overlaps or comes within {gap}px of another, none cropped" + ("" if cfg.get("allow_repeats") else ", none repeated")]
+    if "_coverage" in cfg:
+        rep.append(f"spacing: exactly {gap}px between every pair of neighbouring photos -> PASS")
+        rep.append("screen filled per group: " + ", ".join(f"{c:.0%}" for c in cfg["_coverage"]))
+    rep.append("")
     for i, sh in enumerate(shots):
         rep.append(f"{i + 1:2d}. {sh['t']:6.2f}s  " + ("(clear to background)" if sh.get("clear") else f"{sh['slot']:<13} {sh['image']}"))
     open(os.path.join(outdir, f"{cfg['version']}_qa.txt"), "w").write("\n".join(rep) + "\n")
