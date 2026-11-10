@@ -1,0 +1,316 @@
+{
+ "name": "take-a-chance-on-me",
+ "song": "audio/take-a-chance-on-me.wav",
+ "_song_comment": "Take a Chance on Me (Mamma Mia! Here We Go Again), extracted from the user's screen recording ScreenRecording_11-10-2026_13-58-14_1.MP4 with ffmpeg -vn. 106 BPM (beat 0.566 s, first beat 0.52 s). Each bar is a sung line on beats 1-3 and a 'take a chance' echo on beat 4. Bar lines: 1.65, 3.92, 6.18, 8.45, 10.71, 12.97, 15.24, 17.50, 19.77 s. The recording stops at 19.9 s mid-line, so every version ends on the 19.77 s bar line.",
+ "song_start": 0,
+ "fallback_bpm": 106,
+ "fps": 30,
+ "size": [
+  1080,
+  1920
+ ],
+ "grade": {
+  "warmth": 0.02,
+  "lift": 4,
+  "saturation": 1.0,
+  "grain": 2.0,
+  "grain_seed": 5
+ },
+ "step_beats": 1,
+ "start_beat_index": 0,
+ "end_at": 19.765,
+ "images_dir": "images",
+ "images": {},
+ "categories": {
+  "people": [
+   "mm-donna-and-the-dynamos",
+   "mm-donna-dancing",
+   "mm-courtyard-dance",
+   "mm-bridesmaids-running",
+   "mm-dock-jump",
+   "mm-pool-party",
+   "mm-finale-cast"
+  ],
+  "fashion": [
+   "mm-sequin-skirts",
+   "mm-boho-lace-dress",
+   "mm-feather-boa-pile",
+   "mm-feather-trim-sleeves"
+  ],
+  "object": [
+   "mm-fruit-cocktails",
+   "mm-disco-balls",
+   "mm-dancing-figures-art"
+  ],
+  "street": [
+   "mm-greek-alley",
+   "mm-positano-street"
+  ],
+  "door": [
+   "mm-pink-door",
+   "mm-blue-door"
+  ],
+  "facade": [
+   "mm-colourful-village",
+   "mm-flower-balcony",
+   "mm-bougainvillea-tower"
+  ],
+  "sea": [
+   "mm-laundry-sea-view",
+   "mm-sailboat-cove"
+  ]
+ },
+ "version": "one_at_a_time_teal",
+ "background": "#0F8B8D",
+ "min_gap_px": 40,
+ "_sync_comment": "One photo at a time, hard cuts that follow the vocal: a new photo on each sung line (bar line) and on the 'take a chance' echoes, a quicker cut inside some lines ('on me', 'let me know', 'place to go'). Last photo holds from 'if you're all alone' to the bar line.",
+ "_layout_comment": "Each photo is shown whole, centred, as big as fits with a 40 px margin. Wide photos (finale cast, pool party, dock jump, dancing-figures art) are left out of the one-at-a-time versions because on their own they would fill under 40% of the screen. The pink door (480 px) is left out too: shown alone it would be enlarged over 2x and look soft.",
+ "groups": [
+  {
+   "name": "01",
+   "background": "#0F8B8D",
+   "tree": 0,
+   "images": [
+    "mm-donna-and-the-dynamos"
+   ],
+   "at": [
+    0.0
+   ],
+   "clear_at": "cut",
+   "_note": "If you change your mind"
+  },
+  {
+   "name": "02",
+   "background": "#0F8B8D",
+   "tree": 0,
+   "images": [
+    "mm-positano-street"
+   ],
+   "at": [
+    1.083
+   ],
+   "clear_at": "cut",
+   "_note": "take a chance (echo)"
+  },
+  {
+   "name": "03",
+   "background": "#0F8B8D",
+   "tree": 0,
+   "images": [
+    "mm-donna-dancing"
+   ],
+   "at": [
+    1.657
+   ],
+   "clear_at": "cut",
+   "_note": "I'm the first in line (held line)"
+  },
+  {
+   "name": "04",
+   "background": "#0F8B8D",
+   "tree": 0,
+   "images": [
+    "mm-sequin-skirts"
+   ],
+   "at": [
+    3.907
+   ],
+   "clear_at": "cut",
+   "_note": "honey"
+  },
+  {
+   "name": "05",
+   "background": "#0F8B8D",
+   "tree": 0,
+   "images": [
+    "mm-blue-door"
+   ],
+   "at": [
+    4.481
+   ],
+   "clear_at": "cut",
+   "_note": "I'm still free"
+  },
+  {
+   "name": "06",
+   "background": "#0F8B8D",
+   "tree": 0,
+   "images": [
+    "mm-flower-balcony"
+   ],
+   "at": [
+    5.909
+   ],
+   "clear_at": "cut",
+   "_note": "take a chance (echo)"
+  },
+  {
+   "name": "07",
+   "background": "#0F8B8D",
+   "tree": 0,
+   "images": [
+    "mm-courtyard-dance"
+   ],
+   "at": [
+    6.179
+   ],
+   "clear_at": "cut",
+   "_note": "take a chance on me"
+  },
+  {
+   "name": "08",
+   "background": "#0F8B8D",
+   "tree": 0,
+   "images": [
+    "mm-fruit-cocktails"
+   ],
+   "at": [
+    6.777
+   ],
+   "clear_at": "cut",
+   "_note": "on me"
+  },
+  {
+   "name": "09",
+   "background": "#0F8B8D",
+   "tree": 0,
+   "images": [
+    "mm-bougainvillea-tower"
+   ],
+   "at": [
+    7.909
+   ],
+   "clear_at": "cut",
+   "_note": "take a chance (echo)"
+  },
+  {
+   "name": "10",
+   "background": "#0F8B8D",
+   "tree": 0,
+   "images": [
+    "mm-bridesmaids-running"
+   ],
+   "at": [
+    8.458
+   ],
+   "clear_at": "cut",
+   "_note": "if you need me"
+  },
+  {
+   "name": "11",
+   "background": "#0F8B8D",
+   "tree": 0,
+   "images": [
+    "mm-feather-trim-sleeves"
+   ],
+   "at": [
+    9.57
+   ],
+   "clear_at": "cut",
+   "_note": "let me know"
+  },
+  {
+   "name": "12",
+   "background": "#0F8B8D",
+   "tree": 0,
+   "images": [
+    "mm-laundry-sea-view"
+   ],
+   "at": [
+    10.739
+   ],
+   "clear_at": "cut",
+   "_note": "gonna be around"
+  },
+  {
+   "name": "13",
+   "background": "#0F8B8D",
+   "tree": 0,
+   "images": [
+    "mm-boho-lace-dress"
+   ],
+   "at": [
+    11.842
+   ],
+   "clear_at": "cut",
+   "_note": "take a chance"
+  },
+  {
+   "name": "14",
+   "background": "#0F8B8D",
+   "tree": 0,
+   "images": [
+    "mm-greek-alley"
+   ],
+   "at": [
+    12.963
+   ],
+   "clear_at": "cut",
+   "_note": "if you got no"
+  },
+  {
+   "name": "15",
+   "background": "#0F8B8D",
+   "tree": 0,
+   "images": [
+    "mm-disco-balls"
+   ],
+   "at": [
+    14.115
+   ],
+   "clear_at": "cut",
+   "_note": "place to go"
+  },
+  {
+   "name": "16",
+   "background": "#0F8B8D",
+   "tree": 0,
+   "images": [
+    "mm-colourful-village"
+   ],
+   "at": [
+    15.241
+   ],
+   "clear_at": "cut",
+   "_note": "when you're"
+  },
+  {
+   "name": "17",
+   "background": "#0F8B8D",
+   "tree": 0,
+   "images": [
+    "mm-feather-boa-pile"
+   ],
+   "at": [
+    16.332
+   ],
+   "clear_at": "cut",
+   "_note": "feeling down"
+  },
+  {
+   "name": "18",
+   "background": "#0F8B8D",
+   "tree": 0,
+   "images": [
+    "mm-finale-cast"
+   ],
+   "at": [
+    17.488
+   ],
+   "clear_at": "cut",
+   "_note": "last bar line: the finale cast is the showstopper"
+  },
+  {
+   "name": "19",
+   "background": "#0F8B8D",
+   "tree": 0,
+   "images": [
+    "mm-sailboat-cove"
+   ],
+   "at": [
+    18.64
+   ],
+   "_note": "if you're all alone"
+  }
+ ]
+}

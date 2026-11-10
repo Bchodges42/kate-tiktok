@@ -1,0 +1,27 @@
+tempo 103.4 BPM, 19 beats-steps, 19 photos, 19.77 s
+beat sync: mean |offset| 0.27 frames, worst 0.49 -> PASS
+stillness: max held-frame diff 0.059 -> PASS
+layout: no photo overlaps or comes within 40px of another, none cropped, none repeated
+spacing: exactly 40px between every pair of neighbouring photos -> PASS
+variety: no two photos of the same kind next to each other -> PASS
+screen filled per group: 48%, 64%, 48%, 68%, 64%, 70%, 70%, 64%, 78%, 39%, 64%, 68%, 72%, 73%, 48%, 72%, 64%, 36%, 59%
+
+ 1.   0.00s  g1-01         mm-donna-and-the-dynamos
+ 2.   1.08s  g2-02         mm-positano-street
+ 3.   1.66s  g3-03         mm-donna-dancing
+ 4.   3.91s  g4-04         mm-sequin-skirts
+ 5.   4.48s  g5-05         mm-blue-door
+ 6.   5.91s  g6-06         mm-flower-balcony
+ 7.   6.18s  g7-07         mm-courtyard-dance
+ 8.   6.78s  g8-08         mm-fruit-cocktails
+ 9.   7.91s  g9-09         mm-bougainvillea-tower
+10.   8.46s  g10-10        mm-bridesmaids-running
+11.   9.57s  g11-11        mm-feather-trim-sleeves
+12.  10.74s  g12-12        mm-laundry-sea-view
+13.  11.84s  g13-13        mm-boho-lace-dress
+14.  12.96s  g14-14        mm-greek-alley
+15.  14.12s  g15-15        mm-disco-balls
+16.  15.24s  g16-16        mm-colourful-village
+17.  16.33s  g17-17        mm-feather-boa-pile
+18.  17.49s  g18-18        mm-finale-cast
+19.  18.64s  g19-19        mm-sailboat-cove
