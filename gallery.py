@@ -161,7 +161,8 @@ def timeline_from_groups(cfg, W, H):
         cfg["_coverage"].append(cov)
         cfg["_group_boxes"].append(boxes)
         holds = grp.get("holds", {})
-        for k, b in zip(grp["images"], boxes):
+        order = grp.get("order", list(range(len(boxes))))  # appearance order (indices into images)
+        for k, b in ((grp["images"][j], boxes[j]) for j in order):
             steps.append({"image": k, "slot": f"g{n + 1}-{grp.get('name', grp.get('flow'))}", "box": list(b), "beats": holds.get(k, cfg["step_beats"])})
         if n < len(cfg["groups"]) - 1:
             steps.append({"clear": True, "beats": cfg["step_beats"]})

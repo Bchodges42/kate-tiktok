@@ -1,0 +1,36 @@
+tempo 95.7 BPM, 29 beats-steps, 25 photos, 18.87 s
+beat sync: mean |offset| 0.23 frames, worst 0.48 -> PASS
+stillness: max held-frame diff 0.024 -> PASS
+layout: no photo overlaps or comes within 20px of another, none cropped, none repeated
+spacing: exactly 20px between every pair of neighbouring photos -> PASS
+screen filled per group: 90%, 74%, 91%, 84%, 70%
+
+ 1.   0.00s  g1-zigzag     mckenna-lavender-gown
+ 2.   0.91s  g1-zigzag     katniss-chainmail-dress
+ 3.   1.58s  g1-zigzag     silver-lace-shoulder-gown
+ 4.   2.18s  g1-zigzag     gold-feather-bodice
+ 5.   2.76s  g1-zigzag     capitol-pink-cakes
+ 6.   3.39s  g1-zigzag     phoenix-feather-gown
+ 7.   4.67s  (clear to background)
+ 8.   5.27s  g2-column     capitol-crowd-wigs
+ 9.   5.87s  g2-column     daisy-petal-lashes
+10.   6.50s  g2-column     capitol-audience-colour
+11.   7.11s  (clear to background)
+12.   7.73s  g3-sidebar    capitol-staircase-party
+13.   8.36s  g3-sidebar    capitol-lion-mask
+14.   8.99s  g3-sidebar    confetti-party-runway
+15.   9.59s  g3-sidebar    baroque-party-crowd
+16.  10.19s  g3-sidebar    capitol-men-pink-gold
+17.  10.84s  g3-sidebar    backstage-tulle-hair
+18.  11.45s  (clear to background)
+19.  12.07s  g4-columns    dior-runway-blue-fur
+20.  12.68s  g4-columns    antler-headpiece-gown
+21.  13.31s  g4-columns    costume-rack-gowns
+22.  13.93s  g4-columns    mckenna-daisies-hair
+23.  14.56s  g4-columns    crystal-skirt-red-heels
+24.  15.16s  (clear to background)
+25.  15.77s  g5-finale     effie-purple-tour
+26.  16.39s  g5-finale     katniss-wedding-dress-bw
+27.  17.02s  g5-finale     silver-eyeshadow
+28.  17.62s  g5-finale     gold-fireworks
+29.  18.25s  g5-finale     mockingjay-wings-stage

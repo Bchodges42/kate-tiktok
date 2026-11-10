@@ -1,0 +1,161 @@
+{
+ "_comment": "Gallery-build edit for gallery.py. One edit = one config.",
+ "name": "hunger-games",
+ "version": "white_gallery_war",
+ "vibe": "Capitol fashion, Hunger Games stills, runway couture",
+ "song": "audio/war-hunger-games.wav",
+ "_song_comment": "War (Hypnotic Brass Ensemble, Caesar Flickerman's theme), from your screen recording. Music runs 0.00-18.88 s; the recording then cuts to control centre.",
+ "song_start": 0,
+ "fallback_bpm": 96,
+ "fps": 30,
+ "size": [
+  1080,
+  1920
+ ],
+ "background": "#FFFFFF",
+ "grade": {
+  "warmth": 0.0,
+  "lift": 4,
+  "saturation": 1.0,
+  "grain": 2.0,
+  "grain_seed": 7
+ },
+ "min_gap_px": 20,
+ "step_beats": 1,
+ "start_beat_index": 0,
+ "end_at": 18.86,
+ "_sync_comment": "a photo on every beat (0.62 s, twice as slow as Sunshine). Groups start on the brass hits: 0.00, 5.27, 7.73 (big hit), 12.07, 15.77 (big hit); the last photo lands on the final hit at 18.25 and holds to the end of the sound.",
+ "_layout_comment": "exactly 20 px between every pair of neighbouring photos; each group uses a different arrangement (h = side by side, v = stacked)",
+ "images_dir": "images",
+ "images": {},
+ "groups": [
+  {
+   "name": "zigzag",
+   "tree": [
+    "v",
+    [
+     "h",
+     0,
+     [
+      "v",
+      1,
+      2
+     ]
+    ],
+    [
+     "h",
+     [
+      "v",
+      3,
+      4
+     ],
+     5
+    ]
+   ],
+   "images": [
+    "mckenna-lavender-gown",
+    "katniss-chainmail-dress",
+    "silver-lace-shoulder-gown",
+    "gold-feather-bodice",
+    "capitol-pink-cakes",
+    "phoenix-feather-gown"
+   ],
+   "holds": {
+    "phoenix-feather-gown": 2
+   },
+   "_note": "McKenna Grace first"
+  },
+  {
+   "name": "column",
+   "flow": "ttb",
+   "images": [
+    "capitol-crowd-wigs",
+    "daisy-petal-lashes",
+    "capitol-audience-colour"
+   ],
+   "_note": "the three wide photos, top to bottom"
+  },
+  {
+   "name": "sidebar",
+   "tree": [
+    "h",
+    [
+     "v",
+     0,
+     1
+    ],
+    [
+     "v",
+     2,
+     3,
+     4,
+     5
+    ]
+   ],
+   "images": [
+    "capitol-staircase-party",
+    "capitol-lion-mask",
+    "confetti-party-runway",
+    "baroque-party-crowd",
+    "capitol-men-pink-gold",
+    "backstage-tulle-hair"
+   ]
+  },
+  {
+   "name": "columns",
+   "tree": [
+    "h",
+    [
+     "v",
+     0,
+     1
+    ],
+    [
+     "v",
+     2,
+     3,
+     4
+    ]
+   ],
+   "images": [
+    "dior-runway-blue-fur",
+    "antler-headpiece-gown",
+    "costume-rack-gowns",
+    "mckenna-daisies-hair",
+    "crystal-skirt-red-heels"
+   ]
+  },
+  {
+   "name": "finale",
+   "tree": [
+    "v",
+    [
+     "h",
+     0,
+     1
+    ],
+    2,
+    [
+     "h",
+     3,
+     4
+    ]
+   ],
+   "images": [
+    "effie-purple-tour",
+    "katniss-wedding-dress-bw",
+    "mockingjay-wings-stage",
+    "silver-eyeshadow",
+    "gold-fireworks"
+   ],
+   "_note": "Mockingjay wings fill the big middle spot and land last, on the final hit",
+   "order": [
+    0,
+    1,
+    3,
+    4,
+    2
+   ]
+  }
+ ]
+}
