@@ -1,4 +1,4 @@
-QA A_framed: 300 frames decoded (expected 300)
-stillness: 236 held-frame pairs, mean diff 0.024, max 0.633 (0-255 scale; <1 = codec noise only) -> PASS
-beat sync: 7 cuts, mean |offset| 0.00 frames, worst 0.00 frames -> PASS
-loop: last->first frame diff 2.01 (last frame is 88%+ into the dissolve back to image 1)
+QA A_framed: 376 frames decoded (expected 376)
+stillness: 312 held-frame pairs, mean diff 0.016, max 0.366 (0-255 scale; <1 = codec noise only) -> PASS
+beat sync: 7 cuts, mean |offset| 0.26 frames, worst 0.47 frames -> PASS
+loop: last->first frame diff 2.02 (last frame is 88%+ into the dissolve back to image 1)

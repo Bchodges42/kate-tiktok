@@ -3,176 +3,157 @@
  "preset": "C",
  "fps": 30,
  "info": {
-  "tempo": 120.0,
+  "tempo": 117.45383522727273,
   "subdivision_beats": 1,
-  "total_beats": 20,
+  "total_beats": 16,
   "window_start": 0.0,
-  "window_end": 10.0,
-  "frames": 300,
-  "why": "placeholder grid (no song file): starts at 0",
-  "shot_seconds": 0.5,
-  "placeholder": true
+  "window_end": 8.382403628117913,
+  "frames": 251,
+  "why": "forced near song_start=0s -> nearest downbeat 0.07s; frame 0 = sound 0.00 s (first downbeat at 0.070 s rides inside shot 1)",
+  "shot_seconds": 0.5108390022675736,
+  "base_units": 1,
+  "placeholder": false
  },
  "shots": [
   {
    "image": "pink-party-table",
    "start": 0.0,
-   "end": 1.0,
+   "end": 1.0667,
    "start_frame": 0,
-   "end_frame": 30,
+   "end_frame": 32,
    "dissolve": 8,
    "hold": true,
    "t_ideal": 0.0
   },
   {
    "image": "wrapped-gifts-gingham",
-   "start": 1.0,
-   "end": 1.5,
-   "start_frame": 30,
-   "end_frame": 45,
+   "start": 1.0667,
+   "end": 1.6,
+   "start_frame": 32,
+   "end_frame": 48,
    "dissolve": 8,
    "hold": false,
-   "t_ideal": 1.0
+   "t_ideal": 1.0681179138321995
   },
   {
    "image": "pink-scarf-road",
-   "start": 1.5,
-   "end": 2.0,
-   "start_frame": 45,
-   "end_frame": 60,
-   "dissolve": 4,
+   "start": 1.6,
+   "end": 2.1,
+   "start_frame": 48,
+   "end_frame": 63,
+   "dissolve": 5,
    "hold": false,
-   "t_ideal": 1.5
+   "t_ideal": 1.6021768707482993
   },
   {
    "image": "mantel-garland",
-   "start": 2.0,
-   "end": 2.5,
-   "start_frame": 60,
-   "end_frame": 75,
+   "start": 2.1,
+   "end": 2.6333,
+   "start_frame": 63,
+   "end_frame": 79,
    "dissolve": 4,
    "hold": false,
-   "t_ideal": 2.0
+   "t_ideal": 2.1130158730158732
   },
   {
    "image": "snowy-window-star",
-   "start": 2.5,
-   "end": 3.0,
-   "start_frame": 75,
-   "end_frame": 90,
-   "dissolve": 4,
+   "start": 2.6333,
+   "end": 3.1333,
+   "start_frame": 79,
+   "end_frame": 94,
+   "dissolve": 5,
    "hold": false,
-   "t_ideal": 2.5
-  },
-  {
-   "image": "plaid-skirt-tulle",
-   "start": 3.0,
-   "end": 3.5,
-   "start_frame": 90,
-   "end_frame": 105,
-   "dissolve": 4,
-   "hold": false,
-   "t_ideal": 3.0
+   "t_ideal": 2.6238548752834467
   },
   {
    "image": "family-tree-overhead",
-   "start": 3.5,
-   "end": 4.0,
-   "start_frame": 105,
-   "end_frame": 120,
+   "start": 3.1333,
+   "end": 3.6667,
+   "start_frame": 94,
+   "end_frame": 110,
    "dissolve": 4,
    "hold": false,
-   "t_ideal": 3.5
+   "t_ideal": 3.1346938775510202
   },
   {
    "image": "candle-mantel-girl",
-   "start": 4.0,
-   "end": 5.0,
-   "start_frame": 120,
-   "end_frame": 150,
-   "dissolve": 8,
-   "hold": true,
-   "t_ideal": 4.0
+   "start": 3.6667,
+   "end": 4.2,
+   "start_frame": 110,
+   "end_frame": 126,
+   "dissolve": 5,
+   "hold": false,
+   "t_ideal": 3.6687528344671203
   },
   {
    "image": "pink-party-table",
-   "start": 5.0,
-   "end": 6.0,
-   "start_frame": 150,
-   "end_frame": 180,
+   "start": 4.2,
+   "end": 5.2333,
+   "start_frame": 126,
+   "end_frame": 157,
    "dissolve": 8,
    "hold": true,
-   "t_ideal": 5.0
+   "t_ideal": 4.20281179138322
   },
   {
    "image": "wrapped-gifts-gingham",
-   "start": 6.0,
-   "end": 6.5,
-   "start_frame": 180,
-   "end_frame": 195,
+   "start": 5.2333,
+   "end": 5.7667,
+   "start_frame": 157,
+   "end_frame": 173,
    "dissolve": 8,
    "hold": false,
-   "t_ideal": 6.0
+   "t_ideal": 5.224489795918367
   },
   {
    "image": "pink-scarf-road",
-   "start": 6.5,
-   "end": 7.0,
-   "start_frame": 195,
-   "end_frame": 210,
-   "dissolve": 4,
+   "start": 5.7667,
+   "end": 6.3,
+   "start_frame": 173,
+   "end_frame": 189,
+   "dissolve": 5,
    "hold": false,
-   "t_ideal": 6.5
+   "t_ideal": 5.758548752834467
   },
   {
    "image": "mantel-garland",
-   "start": 7.0,
-   "end": 7.5,
-   "start_frame": 210,
-   "end_frame": 225,
-   "dissolve": 4,
+   "start": 6.3,
+   "end": 6.8,
+   "start_frame": 189,
+   "end_frame": 204,
+   "dissolve": 5,
    "hold": false,
-   "t_ideal": 7.0
+   "t_ideal": 6.292607709750567
   },
   {
    "image": "snowy-window-star",
-   "start": 7.5,
-   "end": 8.0,
-   "start_frame": 225,
-   "end_frame": 240,
+   "start": 6.8,
+   "end": 7.3333,
+   "start_frame": 204,
+   "end_frame": 220,
    "dissolve": 4,
    "hold": false,
-   "t_ideal": 7.5
-  },
-  {
-   "image": "plaid-skirt-tulle",
-   "start": 8.0,
-   "end": 8.5,
-   "start_frame": 240,
-   "end_frame": 255,
-   "dissolve": 4,
-   "hold": false,
-   "t_ideal": 8.0
+   "t_ideal": 6.8034467120181406
   },
   {
    "image": "family-tree-overhead",
-   "start": 8.5,
-   "end": 9.0,
-   "start_frame": 255,
-   "end_frame": 270,
-   "dissolve": 4,
+   "start": 7.3333,
+   "end": 7.8333,
+   "start_frame": 220,
+   "end_frame": 235,
+   "dissolve": 5,
    "hold": false,
-   "t_ideal": 8.5
+   "t_ideal": 7.337505668934241
   },
   {
    "image": "candle-mantel-girl",
-   "start": 9.0,
-   "end": 10.0,
-   "start_frame": 270,
-   "end_frame": 300,
-   "dissolve": 8,
-   "hold": true,
-   "t_ideal": 9.0
+   "start": 7.8333,
+   "end": 8.3667,
+   "start_frame": 235,
+   "end_frame": 251,
+   "dissolve": 4,
+   "hold": false,
+   "t_ideal": 7.848344671201814
   }
  ]
 }

@@ -159,9 +159,10 @@ def build_plates(cfg, ver, keys):
 # --------------------------------------------------------------------------- timeline
 def build_timeline(cfg, ver, au):
     fps = cfg["fps"]
-    seq = cfg["sequence"] * ver.get("passes", 1)
+    seq = ver.get("sequence", cfg["sequence"]) * ver.get("passes", 1)
     scale = ver.get("beat_scale", 1)
     units = [s["beats"] * scale for s in seq]
+    hold_beats = min(s["beats"] for s in seq)
     total_units = sum(units)
     period = 60.0 / au["tempo"]
     lo, hi = cfg["target_seconds"]
@@ -174,13 +175,16 @@ def build_timeline(cfg, ver, au):
     start_beat, why = choose_window(cfg, au, total_beats)
     beats = au["beats"]
     t0 = beat_time(beats, start_beat)
+    if cfg.get("align_to_sound_start") and not au["placeholder"]:
+        why += f"; frame 0 = sound 0.00 s (first downbeat at {t0:.3f} s rides inside shot 1)"
+        t0 = 0.0
     t_end = beat_time(beats, start_beat + total_beats)
     N = int(round((t_end - t0) * fps))
 
     shots, pos = [], 0.0
     for s, u in zip(seq, units):
-        t_ideal = beat_time(beats, start_beat + pos * sub) - t0  # absolute, never accumulated
-        shots.append(dict(image=s["image"], units=u, hold=s["beats"] > 1,
+        t_ideal = 0.0 if pos == 0 else beat_time(beats, start_beat + pos * sub) - t0  # absolute, never accumulated
+        shots.append(dict(image=s["image"], units=u, hold=s["beats"] > hold_beats,
                           t_ideal=t_ideal, start_frame=int(round(t_ideal * fps))))
         pos += u
     for i, sh in enumerate(shots):
@@ -199,7 +203,7 @@ def build_timeline(cfg, ver, au):
         sh["end"] = round(sh["end_frame"] / fps, 4)
     info = dict(tempo=au["tempo"], subdivision_beats=sub, total_beats=total_beats,
                 window_start=t0, window_end=t_end, frames=N, why=why,
-                shot_seconds=sub * period, placeholder=au["placeholder"])
+                shot_seconds=sub * period, base_units=hold_beats * scale, placeholder=au["placeholder"])
     return shots, info
 
 
@@ -444,8 +448,8 @@ def main():
         strip(F, [shots[i]["start_frame"] for i in (1, 2, 7) if i < len(shots)] + [len(F)],
               os.path.join(outdir, f"{name}_transition_strip.jpg"))
         s = (f"\n== {name} (preset {ver['preset']}) -> {os.path.relpath(mp4, ROOT)}\n"
-             f"tempo {info['tempo']:.1f} BPM, base shot {info['subdivision_beats'] * ver.get('beat_scale', 1):g} beat(s) "
-             f"({info['shot_seconds'] * ver.get('beat_scale', 1):.3f} s, holds 2x), {len(shots)} shots, {info['frames'] / cfg['fps']:.2f} s\n"
+             f"tempo {info['tempo']:.1f} BPM, base shot {info['subdivision_beats'] * info['base_units']:g} beat(s) "
+             f"({info['shot_seconds'] * info['base_units']:.3f} s, holds 2x), {len(shots)} shots, {info['frames'] / cfg['fps']:.2f} s\n"
              f"window {info['window_start']:.2f}-{info['window_end']:.2f}s: {info['why']}\n" + "\n".join(rep))
         print(s)
         summary.append(s)

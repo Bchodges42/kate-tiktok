@@ -1,4 +1,4 @@
-QA C_pov_loop: 300 frames decoded (expected 300)
-stillness: 212 held-frame pairs, mean diff 0.031, max 0.641 (0-255 scale; <1 = codec noise only) -> PASS
-beat sync: 15 cuts, mean |offset| 0.00 frames, worst 0.00 frames -> PASS
+QA C_pov_loop: 251 frames decoded (expected 251)
+stillness: 173 held-frame pairs, mean diff 0.019, max 0.222 (0-255 scale; <1 = codec noise only) -> PASS
+beat sync: 13 cuts, mean |offset| 0.18 frames, worst 0.45 frames -> PASS
 loop: last->first frame diff 3.70 (last frame is 88%+ into the dissolve back to image 1)
