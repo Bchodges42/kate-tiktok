@@ -88,12 +88,6 @@
    "cx": 762,
    "cy": 1640,
    "anchor": "b"
-  },
-  "top_l": {
-   "cx": 274,
-   "cy": 370,
-   "anchor": "tl",
-   "max_w": 516
   }
  },
  "images_dir": "images",
@@ -113,9 +107,6 @@
   "pink-fur-leopard-heels": {},
   "pink-leopard-pants": {
    "_note": "new pin; replaces the texture/pattern collage"
-  },
-  "hunter-schafer-leopard-coat": {
-   "_note": "your upload"
   },
   "cheetah-coat-orange-bag": {},
   "leopard-tights-red-flats": {},
@@ -204,9 +195,10 @@
    "beats": 0.5
   },
   {
-   "image": "hunter-schafer-leopard-coat",
+   "image": "leopard-trousers-legs-up",
    "slot": "top",
-   "beats": 0.5
+   "beats": 0.5,
+   "_note": "replaces Hunter Schafer; moved here from the 4-photo group"
   },
   {
    "image": "cheetah-coat-orange-bag",
@@ -236,12 +228,6 @@
    "image": "leopard-coat-kick",
    "slot": "middle_l",
    "beats": 0.5
-  },
-  {
-   "image": "leopard-trousers-legs-up",
-   "slot": "top_l",
-   "beats": 0.5,
-   "_note": "4th photo in pass 2's second group (alternative only)"
   },
   {
    "clear": true,
@@ -275,7 +261,7 @@
   {
    "image": "newsstand-leopard-bag",
    "slot": "zig6",
-   "beats": 1.0
+   "beats": 1.5
   }
  ],
  "start_beat_index": 0,
@@ -284,8 +270,9 @@
   "margin_px": 16,
   "_note": "photos in a group grow together until 16 px from a neighbour or the screen edge"
  },
- "_sync_comment": "alternative: no Tigris; elevator mirror takes its spot and the legs-up trousers add a 4th photo to pass 2's second group (top-left), so the final hold is half a beat shorter. 25 different photos, ends on bar 4.",
+ "_sync_comment": "alternative: no Tigris, no Hunter Schafer. Elevator mirror takes Tigris's spot; the legs-up trousers take Hunter Schafer's spot (top, pass 2). 24 different photos, ends on bar 4.",
  "not_used": {
-  "tigris-snow": "left out of this alternative at your request"
+  "tigris-snow": "left out of this alternative at your request",
+  "hunter-schafer-leopard-coat": "removed from this alternative at your request"
  }
 }
