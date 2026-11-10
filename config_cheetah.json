@@ -156,31 +156,39 @@
   },
   {
    "image": "sunglasses-leopard-floor",
-   "slot": "zig1"
+   "slot": "zig1",
+   "beats": 2
   },
   {
    "image": "teal-fur-canal",
-   "slot": "zig2"
+   "slot": "zig2",
+   "beats": 2
   },
   {
    "image": "leopard-skirt-mirror",
-   "slot": "zig3"
+   "slot": "zig3",
+   "beats": 2
   },
   {
    "image": "friends-leopard-pants",
-   "slot": "zig4"
+   "slot": "zig4",
+   "at": 8.094,
+   "_note": "big hit after the silent break (attack measured from the waveform)"
   },
   {
    "image": "cheetah-coat-rack",
-   "slot": "zig5"
+   "slot": "zig5",
+   "at": 8.749,
+   "_note": "vocal: first pitch peak of her vibrato"
   },
   {
    "image": "pink-fur-leopard-heels",
    "slot": "zig6",
-   "_note": "lands on the big hit after the silent break (attack measured from the waveform: 8.094 s)",
-   "at": 8.094
+   "at": 9.138,
+   "_note": "vocal: second pitch peak"
   }
  ],
  "start_beat_index": 0,
- "end_at": 8.9
+ "end_at": 9.56,
+ "_sync_comment": "0-7.4 s cuts on the beat (every 2 beats); from the hit on, cuts follow the vocal (pitch peaks measured with pYIN); ends as her voice fades"
 }
