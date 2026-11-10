@@ -119,7 +119,8 @@
   {
    "image": "leopard-coat-scarf",
    "slot": "top",
-   "beats": 2
+   "beats": 2,
+   "_note": "'Now we're making': on the beat"
   },
   {
    "image": "pink-leopard-pants",
@@ -129,66 +130,74 @@
   {
    "image": "leopard-wall-shoe-shelf",
    "slot": "bottom",
-   "beats": 2
+   "beats": 3
   },
   {
    "clear": true,
-   "beats": 2
+   "beats": 1,
+   "_note": "beat 7, short pause before 'Rooock'"
   },
   {
    "image": "fur-hat-red-coat",
    "slot": "bottom_r",
-   "beats": 2
+   "_note": "'Rooooock' starts: from here cuts follow her vibrato (every 3rd pitch crest)",
+   "at": 3.253
   },
   {
    "image": "leopard-tights-boots",
    "slot": "top_r",
-   "beats": 2
+   "_note": "vibrato crest",
+   "at": 3.612
   },
   {
    "image": "fur-closet",
    "slot": "middle_l",
-   "beats": 2
+   "_note": "vibrato crest",
+   "at": 4.033
   },
   {
    "clear": true,
-   "beats": 2
+   "_note": "vibrato crest",
+   "at": 4.37
   },
   {
    "image": "sunglasses-leopard-floor",
    "slot": "zig1",
-   "beats": 2
+   "_note": "vibrato crest",
+   "at": 4.741
   },
   {
    "image": "teal-fur-canal",
    "slot": "zig2",
-   "beats": 2
+   "_note": "vibrato crest",
+   "at": 5.113
   },
   {
    "image": "leopard-skirt-mirror",
    "slot": "zig3",
-   "beats": 2
+   "_note": "vibrato crest",
+   "at": 5.487
   },
   {
    "image": "friends-leopard-pants",
    "slot": "zig4",
-   "at": 8.094,
-   "_note": "big hit after the silent break (attack measured from the waveform)"
+   "_note": "vibrato crest",
+   "at": 5.85
   },
   {
    "image": "cheetah-coat-rack",
    "slot": "zig5",
-   "at": 8.749,
-   "_note": "vocal: first pitch peak of her vibrato"
+   "_note": "vibrato crest",
+   "at": 6.114
   },
   {
    "image": "pink-fur-leopard-heels",
    "slot": "zig6",
-   "at": 9.138,
-   "_note": "vocal: second pitch peak"
+   "_note": "'Music': the held note ends and the word starts",
+   "at": 6.44
   }
  ],
  "start_beat_index": 0,
- "end_at": 9.56,
- "_sync_comment": "0-7.4 s cuts on the beat (every 2 beats); from the hit on, cuts follow the vocal (pitch peaks measured with pYIN); ends as her voice fades"
+ "end_at": 7.62,
+ "_sync_comment": "0-3.25 s on the beat; 3.25-6.44 s the held 'Rooooock' (cuts on every 3rd vibrato crest, measured from her overtones); 'Music' at 6.44 s; ends with the song at 7.62 s (after that the screen recording has TikTok's outro jingle, not the song)"
 }
