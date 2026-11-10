@@ -1,19 +1,34 @@
-tempo 92.3 BPM, 14 beats-steps, 12 photos, 11.30 s
-beat sync: mean |offset| 0.26 frames, worst 0.50 -> PASS
-stillness: max held-frame diff 0.484 -> PASS
-layout: no photo overlaps or comes within 16px of another, none cropped, none repeated
+tempo 92.3 BPM, 29 beats-steps, 24 photos, 10.30 s
+beat sync: mean |offset| 0.25 frames, worst 0.50 -> PASS
+stillness: max held-frame diff 0.040 -> PASS
+layout: no photo overlaps or comes within 16px of another, none cropped
 
  1.   0.00s  top           leopard-coat-scarf
- 2.   0.65s  middle        pink-leopard-pants
- 3.   1.30s  bottom        leopard-wall-shoe-shelf
- 4.   2.58s  (clear to background)
- 5.   3.23s  bottom_r      fur-hat-red-coat
- 6.   3.88s  top_r         leopard-tights-boots
- 7.   4.50s  middle_l      fur-closet
- 8.   5.80s  (clear to background)
- 9.   6.46s  zig1          sunglasses-leopard-floor
-10.   7.08s  zig2          teal-fur-canal
-11.   7.73s  zig3          leopard-skirt-mirror
-12.   8.38s  zig4          friends-leopard-pants
-13.   9.03s  zig5          cheetah-coat-rack
-14.   9.68s  zig6          pink-fur-leopard-heels
+ 2.   0.36s  middle        pink-leopard-pants
+ 3.   0.65s  bottom        leopard-wall-shoe-shelf
+ 4.   0.98s  (clear to background)
+ 5.   1.30s  bottom_r      fur-hat-red-coat
+ 6.   1.61s  top_r         leopard-tights-boots
+ 7.   1.93s  middle_l      fur-closet
+ 8.   2.25s  (clear to background)
+ 9.   2.58s  zig1          sunglasses-leopard-floor
+10.   2.90s  zig2          teal-fur-canal
+11.   3.23s  zig3          leopard-skirt-mirror
+12.   3.55s  zig4          friends-leopard-pants
+13.   3.88s  zig5          cheetah-coat-rack
+14.   4.19s  zig6          pink-fur-leopard-heels
+15.   4.83s  (clear to background)
+16.   5.15s  top           leopard-tights-boots
+17.   5.48s  middle        fur-closet
+18.   5.80s  bottom        friends-leopard-pants
+19.   6.13s  (clear to background)
+20.   6.46s  bottom_r      leopard-coat-scarf
+21.   6.77s  top_r         teal-fur-canal
+22.   7.08s  middle_l      leopard-wall-shoe-shelf
+23.   7.41s  (clear to background)
+24.   7.73s  zig1          fur-hat-red-coat
+25.   8.06s  zig2          pink-leopard-pants
+26.   8.38s  zig3          leopard-skirt-mirror
+27.   8.71s  zig4          cheetah-coat-rack
+28.   9.03s  zig5          pink-fur-leopard-heels
+29.   9.36s  zig6          sunglasses-leopard-floor

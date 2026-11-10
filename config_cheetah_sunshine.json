@@ -60,34 +60,34 @@
    "max_w": 516
   },
   "zig1": {
-   "cx": 274,
+   "cx": 318,
    "cy": 280,
-   "anchor": "tl"
+   "anchor": "t"
   },
   "zig2": {
-   "cx": 806,
+   "cx": 762,
    "cy": 552,
-   "anchor": "r"
+   "anchor": ""
   },
   "zig3": {
-   "cx": 274,
+   "cx": 318,
    "cy": 824,
-   "anchor": "l"
+   "anchor": ""
   },
   "zig4": {
-   "cx": 806,
+   "cx": 762,
    "cy": 1096,
-   "anchor": "r"
+   "anchor": ""
   },
   "zig5": {
-   "cx": 274,
+   "cx": 318,
    "cy": 1368,
-   "anchor": "l"
+   "anchor": ""
   },
   "zig6": {
-   "cx": 806,
+   "cx": 762,
    "cy": 1640,
-   "anchor": "br"
+   "anchor": "b"
   }
  },
  "images_dir": "images",
@@ -112,68 +112,151 @@
  "timeline": [
   {
    "image": "leopard-coat-scarf",
-   "slot": "top"
+   "slot": "top",
+   "beats": 0.5
   },
   {
    "image": "pink-leopard-pants",
-   "slot": "middle"
+   "slot": "middle",
+   "beats": 0.5
   },
   {
    "image": "leopard-wall-shoe-shelf",
    "slot": "bottom",
-   "beats": 2,
-   "_note": "completed group holds 2 beats before the clear"
+   "beats": 0.5
   },
   {
-   "clear": true
+   "clear": true,
+   "beats": 0.5
   },
   {
    "image": "fur-hat-red-coat",
-   "slot": "bottom_r"
+   "slot": "bottom_r",
+   "beats": 0.5
   },
   {
    "image": "leopard-tights-boots",
-   "slot": "top_r"
+   "slot": "top_r",
+   "beats": 0.5
   },
   {
    "image": "fur-closet",
    "slot": "middle_l",
-   "beats": 2,
-   "_note": "completed group holds 2 beats before the clear"
+   "beats": 0.5
   },
   {
-   "clear": true
+   "clear": true,
+   "beats": 0.5
   },
   {
    "image": "sunglasses-leopard-floor",
-   "slot": "zig1"
+   "slot": "zig1",
+   "beats": 0.5
   },
   {
    "image": "teal-fur-canal",
-   "slot": "zig2"
+   "slot": "zig2",
+   "beats": 0.5
   },
   {
    "image": "leopard-skirt-mirror",
-   "slot": "zig3"
+   "slot": "zig3",
+   "beats": 0.5
   },
   {
    "image": "friends-leopard-pants",
-   "slot": "zig4"
+   "slot": "zig4",
+   "beats": 0.5
   },
   {
    "image": "cheetah-coat-rack",
-   "slot": "zig5"
+   "slot": "zig5",
+   "beats": 0.5
   },
   {
    "image": "pink-fur-leopard-heels",
-   "slot": "zig6"
+   "slot": "zig6",
+   "beats": 1.0
+  },
+  {
+   "clear": true,
+   "beats": 0.5
+  },
+  {
+   "image": "leopard-tights-boots",
+   "slot": "top",
+   "beats": 0.5
+  },
+  {
+   "image": "fur-closet",
+   "slot": "middle",
+   "beats": 0.5
+  },
+  {
+   "image": "friends-leopard-pants",
+   "slot": "bottom",
+   "beats": 0.5
+  },
+  {
+   "clear": true,
+   "beats": 0.5
+  },
+  {
+   "image": "leopard-coat-scarf",
+   "slot": "bottom_r",
+   "beats": 0.5
+  },
+  {
+   "image": "teal-fur-canal",
+   "slot": "top_r",
+   "beats": 0.5
+  },
+  {
+   "image": "leopard-wall-shoe-shelf",
+   "slot": "middle_l",
+   "beats": 0.5
+  },
+  {
+   "clear": true,
+   "beats": 0.5
+  },
+  {
+   "image": "fur-hat-red-coat",
+   "slot": "zig1",
+   "beats": 0.5
+  },
+  {
+   "image": "pink-leopard-pants",
+   "slot": "zig2",
+   "beats": 0.5
+  },
+  {
+   "image": "leopard-skirt-mirror",
+   "slot": "zig3",
+   "beats": 0.5
+  },
+  {
+   "image": "cheetah-coat-rack",
+   "slot": "zig4",
+   "beats": 0.5
+  },
+  {
+   "image": "pink-fur-leopard-heels",
+   "slot": "zig5",
+   "beats": 0.5
+  },
+  {
+   "image": "sunglasses-leopard-floor",
+   "slot": "zig6",
+   "beats": 1.5
   }
  ],
  "start_beat_index": 0,
- "end_at": 11.286,
+ "end_at": null,
  "auto_grow": {
   "margin_px": 16,
   "_note": "photos in a group grow together until 16 px from a neighbour or the screen edge"
  },
- "_sync_comment": "one step per beat (92 BPM, 0.645 s); each completed group holds an extra beat before its clear; the zigzag runs one photo per beat and the finished zigzag holds to the song's end"
+ "_sync_comment": "a photo every half beat (0.32 s at 92 BPM); pass 1 = 8 beats (2 bars) incl. a 1-beat hold on the finished zigzag; pass 2 reshuffles which photo goes where; the final zigzag holds to the end of bar 4 (10.31 s) and loops",
+ "allow_repeats": true
 }

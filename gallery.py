@@ -143,7 +143,7 @@ def main():
     if errs:
         sys.exit("layout errors:\n  " + "\n  ".join(errs))
     used = [s["image"] for s in shots if not s.get("clear")]
-    if len(set(used)) != len(used):
+    if len(set(used)) != len(used) and not cfg.get("allow_repeats"):
         sys.exit("a photo is used twice")
 
     grain = np.random.default_rng(cfg["grade"].get("grain_seed", 0)).normal(0, cfg["grade"]["grain"], (H, W, 1)).astype(np.float32)
@@ -183,7 +183,7 @@ def main():
     rep = [f"tempo {au['tempo']:.1f} BPM, {len(shots)} beats-steps, {len(used)} photos, {N / fps:.2f} s",
            f"beat sync: mean |offset| {offs.mean():.2f} frames, worst {offs.max():.2f} -> {'PASS' if offs.max() <= 1 else 'FAIL'}",
            f"stillness: max held-frame diff {max(still):.3f} -> {'PASS' if max(still) < 1 else 'FAIL'}",
-           f"layout: no photo overlaps or comes within {gap}px of another, none cropped, none repeated", ""]
+           f"layout: no photo overlaps or comes within {gap}px of another, none cropped" + ("" if cfg.get("allow_repeats") else ", none repeated"), ""]
     for i, sh in enumerate(shots):
         rep.append(f"{i + 1:2d}. {sh['t']:6.2f}s  " + ("(clear to background)" if sh.get("clear") else f"{sh['slot']:<13} {sh['image']}"))
     open(os.path.join(outdir, f"{cfg['version']}_qa.txt"), "w").write("\n".join(rep) + "\n")
