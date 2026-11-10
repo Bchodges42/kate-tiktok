@@ -24,34 +24,40 @@
  "step_beats": 1,
  "start_beat_index": 0,
  "end_at": 18.86,
- "_sync_comment": "slow intro (0, 0.91, 1.86 s); from 3.39 s, when the full band comes in, photos land on the brass hits measured from the percussive onsets, including the half-beat runs (4.95-5.25, 10.19-10.82, 11.45-12.05). Finale unchanged: one per beat from 15.77, wings on the final hit at 18.25.",
+ "_sync_comment": "slow intro (0, 0.91, 1.58, 2.18 s); from 3.39 s, when the full band comes in, photos land on the brass hits measured from the percussive onsets, including the half-beat runs (4.95-5.25, 10.19-10.82, 11.45-12.05). Finale unchanged: one per beat from 15.77, wings on the final hit at 18.25.",
  "_layout_comment": "exactly 20 px between every pair of neighbouring photos; each group uses a different arrangement (h = side by side, v = stacked). No two photos of the same kind (dresses, party scenes, Capitol people, beauty close-ups) sit next to each other.",
  "images_dir": "images",
  "images": {},
  "groups": [
   {
-   "name": "intro",
+   "name": "intro-grid",
    "tree": [
-    "v",
-    0,
+    "h",
     [
-     "h",
-     1,
-     2
+     "v",
+     0,
+     1
+    ],
+    [
+     "v",
+     2,
+     3
     ]
    ],
    "images": [
     "mckenna-daisies-hair",
+    "capitol-lion-mask",
     "antler-headpiece-gown",
-    "capitol-crowd-wigs"
+    "backstage-tulle-hair"
    ],
    "at": [
     0.0,
     0.91,
-    1.86
+    1.58,
+    2.18
    ],
    "clear_at": 2.76,
-   "_note": "slow intro: McKenna Grace (daisy hair) first, big across the top"
+   "_note": "McKenna Grace first; four photos of similar size (largest within 1.6x of the smallest)"
   },
   {
    "name": "invT",
@@ -75,11 +81,11 @@
    ],
    "images": [
     "mckenna-lavender-gown",
+    "capitol-pink-cakes",
+    "katniss-wedding-dress-bw",
     "silver-eyeshadow",
     "katniss-chainmail-dress",
-    "confetti-party-runway",
-    "dior-runway-blue-fur",
-    "capitol-men-pink-gold"
+    "capitol-staircase-party"
    ],
    "at": [
     3.39,
@@ -93,29 +99,32 @@
    "_note": "full band comes in at 3.39"
   },
   {
-   "name": "columns",
+   "name": "T",
    "tree": [
-    "h",
+    "v",
     [
-     "v",
+     "h",
      0,
-     1,
-     2
+     [
+      "v",
+      1,
+      2
+     ]
     ],
     [
-     "v",
+     "h",
      3,
      4,
      5
     ]
    ],
    "images": [
-    "phoenix-feather-gown",
-    "capitol-lion-mask",
-    "katniss-wedding-dress-bw",
-    "gold-fireworks",
-    "crystal-skirt-red-heels",
-    "daisy-petal-lashes"
+    "confetti-party-runway",
+    "silver-lace-shoulder-gown",
+    "daisy-petal-lashes",
+    "costume-rack-gowns",
+    "effie-purple-tour",
+    "gold-feather-bodice"
    ],
    "at": [
     7.73,
@@ -129,31 +138,28 @@
    "_note": "starts on the big hit"
   },
   {
-   "name": "cols32",
+   "name": "two-rows",
    "tree": [
-    "h",
+    "v",
     [
-     "v",
+     "h",
      0,
-     1,
-     2
+     1
     ],
     [
-     "v",
-     3,
-     4
+     "h",
+     2,
+     3
     ]
    ],
    "images": [
-    "capitol-pink-cakes",
-    "effie-purple-tour",
-    "backstage-tulle-hair",
-    "capitol-staircase-party",
-    "silver-lace-shoulder-gown"
+    "phoenix-feather-gown",
+    "capitol-men-pink-gold",
+    "baroque-party-crowd",
+    "gold-fireworks"
    ],
    "at": [
     11.45,
-    11.75,
     12.05,
     12.68,
     13.93
@@ -177,11 +183,11 @@
     ]
    ],
    "images": [
-    "gold-feather-bodice",
-    "baroque-party-crowd",
+    "crystal-skirt-red-heels",
+    "capitol-audience-colour",
     "mockingjay-wings-stage",
-    "costume-rack-gowns",
-    "capitol-audience-colour"
+    "dior-runway-blue-fur",
+    "capitol-crowd-wigs"
    ],
    "_note": "Katniss's Mockingjay wings stay big in the middle and land last, on the final hit",
    "order": [
