@@ -20,7 +20,7 @@ from PIL import Image, ImageDraw
 
 from moodboard import ROOT, cover, decode_small, font, grade, hex_rgb, load_source
 
-OVERLAYS = {"inset", "cover"}
+OVERLAYS = {"cover"}
 
 
 # --------------------------------------------------------------------------- audio events
@@ -72,46 +72,37 @@ def fit(im, box_w, box_h):
 
 
 def place(cfg, shots):
-    """Turn the shot list into per-shot layer stacks. Every photo is centered and shown whole.
+    """Turn the shot list into per-shot layer stacks. Every photo appears once, centered,
+    whole, and already at its full size (as large as it fits the max box: tall photos
+    fill the height, wide photos the width).
 
-    swap  - clear the canvas, photo at ~70% of its full size if a pop follows, else full size
-    pop   - the same photo cut back in at full size
-    inset - a smaller photo centered on top of the current one
-    cover - a near-full-size photo centered on top; the one underneath peeks out around it
-    'Full size' = as large as the photo fits in the max box (tall photos fill the height,
-    wide photos fill the width).
+    swap  - back to the clean cream canvas with this one photo
+    cover - this photo lands on top of the previous one; it is never smaller (in area)
+            than the photo it covers, so the one underneath only peeks out where the
+            shapes differ
     """
     W, H = cfg["size"]
     lay = cfg["layout"]
     cx, cy = W // 2, int(H * lay.get("center_y", 0.46))
     max_w, max_h = W * lay.get("max_width", 0.92), H * lay.get("max_height", 0.72)
     srcs, states, layers = {}, [], []
-
-    def centered(w, h):
-        return (cx - w // 2, cy - h // 2, w, h)
-
     for i, sh in enumerate(shots):
         typ, key = sh["type"], sh["image"]
         if key not in srcs:
             srcs[key] = load_source(cfg, key)[0]
-        im = srcs[key]
+        w, h = fit(srcs[key], max_w, max_h)
+        box = (cx - w // 2, cy - h // 2, w, h)
         if typ == "swap":
-            f = lay.get("pre_pop", 0.7) if i + 1 < len(shots) and shots[i + 1]["type"] == "pop" else 1.0
-            layers = [(key, centered(*fit(im, max_w * f, max_h * f)))]
-        elif typ == "pop":
-            k0 = layers[-1][0]
-            layers = [(k0, centered(*fit(srcs[k0], max_w, max_h)))]
-        elif typ == "inset":
-            _, (_, _, pw, ph) = layers[-1]
-            s = lay.get("inset_scale", 0.68)
-            layers = layers + [(key, centered(*fit(im, pw * s, ph * s)))]
+            layers = [(key, box)]
         elif typ == "cover":
-            s = lay.get("cover_scale", 0.88)
-            layers = layers + [(key, centered(*fit(im, max_w * s, max_h * s)))]
+            if not layers or len(layers) > 1:
+                sys.exit(f"shot {i + 1}: cover must follow a single photo (no cover on cover)")
+            _, (_, _, pw, ph) = layers[-1]
+            if w * h < pw * ph:
+                sys.exit(f"shot {i + 1}: {key} would be smaller than the photo it covers; use a swap")
+            layers = layers + [(key, box)]
         else:
-            sys.exit(f"shot {i}: unknown transition type {typ!r} (swap, pop, inset, cover)")
-        if len(layers) > 3:
-            sys.exit(f"shot {i}: more than 3 stacked photos; put a swap before it")
+            sys.exit(f"shot {i + 1}: unknown transition type {typ!r} (swap or cover)")
         states.append(list(layers))
     return states, srcs
 
@@ -137,13 +128,12 @@ def plate_for(cfg, state, srcs, cache):
 def check_plan(cfg, shots):
     errs = []
     tree = {k for k, m in cfg["images"].items() if m.get("tree")}
-    new = [s for s in shots if s["type"] != "pop"]
+    new = shots
     for a, b in zip(new, new[1:] + new[:1]):  # includes the loop back to image 1
         if (a["image"] in tree) == (b["image"] in tree):
             errs.append(f"tree/no-tree not alternating: {a['image']} -> {b['image']}")
-    for a, b in zip(shots, shots[1:]):
-        if a["type"] == b["type"]:
-            errs.append(f"same transition twice in a row: {a['type']} ({a['image']} -> {b['image']})")
+    if len({s["image"] for s in shots}) != len(shots):
+        errs.append("a photo appears in more than one shot (each photo gets exactly one cut)")
     if cfg.get("no_repeat_images", True):
         imgs = [s["image"] for s in new]
         if len(set(imgs)) != len(imgs):
@@ -222,7 +212,7 @@ def main():
                f"-> {'PASS' if np.abs(offs).max() <= 1 else 'FAIL'}")
     rep.append(f"stillness: {len(still)} held-frame pairs, max diff {still.max():.3f} -> "
                f"{'PASS' if still.max() < 1 else 'FAIL'}")
-    rep.append("plan: tree/no-tree alternates (incl. loop), no transition type twice in a row, no image repeated")
+    rep.append("plan: tree/no-tree alternates (incl. loop), each photo shown once at full size, covers never smaller than what they cover")
     rep.append("")
     for i, sh in enumerate(shots):
         tag = "TREE" if cfg["images"][sh["image"]].get("tree") else "    "

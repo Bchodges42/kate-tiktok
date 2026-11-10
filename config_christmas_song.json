@@ -10,7 +10,7 @@
   "video_end": 20.6,
   "pulse_bpm": 158,
   "snap": 0.13,
-  "min_gap": 0.42
+  "min_gap": 0.37
  },
  "fps": 30,
  "size": [
@@ -29,10 +29,7 @@
   "center_y": 0.46,
   "max_width": 0.92,
   "max_height": 0.72,
-  "pre_pop": 0.7,
-  "inset_scale": 0.68,
-  "cover_scale": 0.88,
-  "_note": "every photo centered and shown whole at its own aspect ratio; tall photos fill the height, wide photos the width"
+  "_note": "every photo centered, whole, at full size for its shape; covers are never smaller than what they cover"
  },
  "no_repeat_images": true,
  "images_dir": "images",
@@ -41,10 +38,10 @@
    "tree": true,
    "hero": true
   },
-  "rockefeller-rink": {
+  "sleeping-under-tree": {
    "tree": true
   },
-  "pink-girl-tree": {
+  "rockefeller-rink": {
    "tree": true
   },
   "cat-in-tree-vintage": {
@@ -57,23 +54,45 @@
    ],
    "_crop": "keeps only the photo, inside its white print border"
   },
-  "sleeping-under-tree": {
+  "pink-girl-tree": {
    "tree": true
+  },
+  "gifts-under-tree-night": {
+   "tree": true
+  },
+  "garland-doorway-night": {
+   "tree": true,
+   "_note": "small lit tree through the doorway"
   },
   "seventies-tree-decorating": {
    "tree": true
   },
-  "family-tree-overhead": {
-   "tree": true
+  "window-tree-woman": {
+   "tree": true,
+   "_note": "540 px source, a little soft at full size"
   },
   "candlelit-table": {
    "tree": true,
    "_note": "lit tree on the right"
   },
+  "wrapped-gifts-pile": {
+   "tree": true,
+   "_note": "tree at the top"
+  },
+  "charlie-brown-record": {
+   "tree": true,
+   "_note": "album art is the Charlie Brown tree; 300 px source, soft at full size"
+  },
   "ornament-pile": {
    "tree": false
   },
+  "candle-mantel-girl": {
+   "tree": false
+  },
   "cocoa-mugs": {
+   "tree": false
+  },
+  "iced-cookies": {
    "tree": false
   },
   "porch-lights-night": {
@@ -82,36 +101,31 @@
   "family-dinner-chandelier": {
    "tree": false
   },
-  "iced-cookies": {
+  "kids-snow-night": {
    "tree": false
   },
   "pink-party-table": {
    "tree": false
   },
+  "tree-cookies-tray": {
+   "tree": false,
+   "_note": "tree-shaped cookies, no real tree: counted as no-tree"
+  },
   "wrapped-gifts-gingham": {
    "tree": false
   },
-  "candle-mantel-girl": {
+  "snow-angels": {
+   "tree": false,
+   "_note": "512 px source, soft at full size"
+  },
+  "kids-disney-tv": {
    "tree": false
   }
  },
  "not_used": {
-  "garland-doorway-night": "small lit tree in the back room: reads as both tree and no-tree, breaks the alternation",
-  "mantel-garland": "small bottle-brush and tinsel trees at the edge: ambiguous",
-  "gifts-under-tree-night": "tree image; only 8 no-tree images to alternate with",
-  "wrapped-gifts-pile": "tree image; only 8 no-tree images to alternate with",
-  "window-tree-woman": "540 px wide, soft at this size",
-  "tree-cookies-tray": "tree-shaped cookies would muddy the tree/no-tree pattern; near-duplicate of iced-cookies",
-  "kids-disney-tv": "Walt Disney logo is the main subject",
-  "kids-snow-night": "cold blue-grey, off-palette",
-  "snow-angels": "512 px, cold grey daylight",
-  "charlie-brown-record": "300 px, readable album title",
-  "pink-scarf-road": "daytime outdoor, off the night-lights look",
-  "snowy-window-star": "bright daylight, off the night-lights look",
-  "plaid-skirt-tulle": "street outfit, off-theme",
-  "striped-culottes-summer": "summer",
-  "santa-hat-blue-carpet": "blue carpet off-palette",
-  "sixties-tv-christmas": "370 px, staged TV still"
+  "family-tree-overhead": "one tree photo too many for a strict tree/no-tree alternation (board has 12 tree, 9 no-tree; 3 originals fill the no-tree side)",
+  "mantel-garland": "ambiguous small trees",
+  "others": "earlier originals off the night-lights look"
  },
  "shots": [
   {
@@ -119,80 +133,96 @@
    "type": "swap"
   },
   {
-   "image": "nineties-couple-tree",
-   "type": "pop"
-  },
-  {
    "image": "ornament-pile",
    "type": "swap"
-  },
-  {
-   "image": "rockefeller-rink",
-   "type": "inset"
-  },
-  {
-   "image": "cocoa-mugs",
-   "type": "swap"
-  },
-  {
-   "image": "pink-girl-tree",
-   "type": "cover"
-  },
-  {
-   "image": "porch-lights-night",
-   "type": "swap"
-  },
-  {
-   "image": "porch-lights-night",
-   "type": "pop"
-  },
-  {
-   "image": "cat-in-tree-vintage",
-   "type": "cover"
-  },
-  {
-   "image": "family-dinner-chandelier",
-   "type": "inset"
   },
   {
    "image": "sleeping-under-tree",
    "type": "swap"
   },
   {
-   "image": "iced-cookies",
-   "type": "inset"
+   "image": "candle-mantel-girl",
+   "type": "cover"
   },
   {
-   "image": "seventies-tree-decorating",
+   "image": "rockefeller-rink",
+   "type": "swap"
+  },
+  {
+   "image": "cocoa-mugs",
+   "type": "swap"
+  },
+  {
+   "image": "cat-in-tree-vintage",
+   "type": "swap"
+  },
+  {
+   "image": "iced-cookies",
+   "type": "cover"
+  },
+  {
+   "image": "pink-girl-tree",
+   "type": "swap"
+  },
+  {
+   "image": "porch-lights-night",
+   "type": "swap"
+  },
+  {
+   "image": "gifts-under-tree-night",
+   "type": "swap"
+  },
+  {
+   "image": "family-dinner-chandelier",
+   "type": "cover"
+  },
+  {
+   "image": "garland-doorway-night",
+   "type": "swap"
+  },
+  {
+   "image": "kids-snow-night",
    "type": "swap"
   },
   {
    "image": "seventies-tree-decorating",
-   "type": "pop"
+   "type": "swap"
   },
   {
    "image": "pink-party-table",
    "type": "cover"
   },
   {
-   "image": "family-tree-overhead",
+   "image": "window-tree-woman",
+   "type": "swap"
+  },
+  {
+   "image": "tree-cookies-tray",
+   "type": "swap"
+  },
+  {
+   "image": "candlelit-table",
    "type": "swap"
   },
   {
    "image": "wrapped-gifts-gingham",
-   "type": "inset"
-  },
-  {
-   "image": "candlelit-table",
    "type": "cover"
   },
   {
-   "image": "candle-mantel-girl",
+   "image": "wrapped-gifts-pile",
    "type": "swap"
   },
   {
-   "image": "candle-mantel-girl",
-   "type": "pop"
+   "image": "snow-angels",
+   "type": "swap"
+  },
+  {
+   "image": "charlie-brown-record",
+   "type": "swap"
+  },
+  {
+   "image": "kids-disney-tv",
+   "type": "cover"
   }
  ]
 }

@@ -4,8 +4,10 @@
   0.0,
   0.4295691609977324,
   1.4396371882086167,
+  1.9736961451247166,
   2.345215419501134,
   3.8545124716553287,
+  4.992290249433107,
   5.375419501133787,
   5.874648526077097,
   6.455147392290249,
@@ -15,11 +17,13 @@
   11.900226757369614,
   12.399455782312925,
   12.956734693877552,
+  13.978412698412699,
   14.349931972789115,
   15.104580498866213,
   16.056598639455782,
   17.368526077097506,
   18.11156462585034,
+  18.866213151927436,
   19.237732426303854
  ],
  "shots": [
@@ -31,22 +35,29 @@
    "end_frame": 13
   },
   {
-   "image": "nineties-couple-tree",
-   "type": "pop",
+   "image": "ornament-pile",
+   "type": "swap",
    "t": 0.43,
    "start_frame": 13,
    "end_frame": 43
   },
   {
-   "image": "ornament-pile",
+   "image": "sleeping-under-tree",
    "type": "swap",
    "t": 1.44,
    "start_frame": 43,
+   "end_frame": 59
+  },
+  {
+   "image": "candle-mantel-girl",
+   "type": "cover",
+   "t": 1.974,
+   "start_frame": 59,
    "end_frame": 70
   },
   {
    "image": "rockefeller-rink",
-   "type": "inset",
+   "type": "swap",
    "t": 2.345,
    "start_frame": 70,
    "end_frame": 116
@@ -56,17 +67,24 @@
    "type": "swap",
    "t": 3.855,
    "start_frame": 116,
+   "end_frame": 150
+  },
+  {
+   "image": "cat-in-tree-vintage",
+   "type": "swap",
+   "t": 4.992,
+   "start_frame": 150,
    "end_frame": 161
   },
   {
-   "image": "pink-girl-tree",
+   "image": "iced-cookies",
    "type": "cover",
    "t": 5.375,
    "start_frame": 161,
    "end_frame": 176
   },
   {
-   "image": "porch-lights-night",
+   "image": "pink-girl-tree",
    "type": "swap",
    "t": 5.875,
    "start_frame": 176,
@@ -74,35 +92,35 @@
   },
   {
    "image": "porch-lights-night",
-   "type": "pop",
+   "type": "swap",
    "t": 6.455,
    "start_frame": 194,
    "end_frame": 248
   },
   {
-   "image": "cat-in-tree-vintage",
-   "type": "cover",
+   "image": "gifts-under-tree-night",
+   "type": "swap",
    "t": 8.266,
    "start_frame": 248,
    "end_frame": 281
   },
   {
    "image": "family-dinner-chandelier",
-   "type": "inset",
+   "type": "cover",
    "t": 9.358,
    "start_frame": 281,
    "end_frame": 308
   },
   {
-   "image": "sleeping-under-tree",
+   "image": "garland-doorway-night",
    "type": "swap",
    "t": 10.263,
    "start_frame": 308,
    "end_frame": 357
   },
   {
-   "image": "iced-cookies",
-   "type": "inset",
+   "image": "kids-snow-night",
+   "type": "swap",
    "t": 11.9,
    "start_frame": 357,
    "end_frame": 372
@@ -115,21 +133,28 @@
    "end_frame": 389
   },
   {
-   "image": "seventies-tree-decorating",
-   "type": "pop",
+   "image": "pink-party-table",
+   "type": "cover",
    "t": 12.957,
    "start_frame": 389,
+   "end_frame": 419
+  },
+  {
+   "image": "window-tree-woman",
+   "type": "swap",
+   "t": 13.978,
+   "start_frame": 419,
    "end_frame": 430
   },
   {
-   "image": "pink-party-table",
-   "type": "cover",
+   "image": "tree-cookies-tray",
+   "type": "swap",
    "t": 14.35,
    "start_frame": 430,
    "end_frame": 453
   },
   {
-   "image": "family-tree-overhead",
+   "image": "candlelit-table",
    "type": "swap",
    "t": 15.105,
    "start_frame": 453,
@@ -137,28 +162,35 @@
   },
   {
    "image": "wrapped-gifts-gingham",
-   "type": "inset",
+   "type": "cover",
    "t": 16.057,
    "start_frame": 482,
    "end_frame": 521
   },
   {
-   "image": "candlelit-table",
-   "type": "cover",
+   "image": "wrapped-gifts-pile",
+   "type": "swap",
    "t": 17.369,
    "start_frame": 521,
    "end_frame": 543
   },
   {
-   "image": "candle-mantel-girl",
+   "image": "snow-angels",
    "type": "swap",
    "t": 18.112,
    "start_frame": 543,
+   "end_frame": 566
+  },
+  {
+   "image": "charlie-brown-record",
+   "type": "swap",
+   "t": 18.866,
+   "start_frame": 566,
    "end_frame": 577
   },
   {
-   "image": "candle-mantel-girl",
-   "type": "pop",
+   "image": "kids-disney-tv",
+   "type": "cover",
    "t": 19.238,
    "start_frame": 577,
    "end_frame": 618
