@@ -82,6 +82,52 @@ def justified(sizes, flow, W, H, g, kmax=3, kmin=1):
     return boxes, best[0] / ((M + 2 * g) * (C + 2 * g))
 
 
+def tree_layout(tree, sizes, W, H, g):
+    """Nested layout with exactly g px between neighbours. A tree is a photo index or
+    ["h", child, child, ...] (side by side, same height) / ["v", child, ...] (stacked, same width).
+    Every block's width is an exact affine function of its height (w = a*h + b), so the whole
+    arrangement scales to the biggest size that fits the screen with all gaps kept at g."""
+    def ab(t):
+        if isinstance(t, int):
+            return sizes[t][0] / sizes[t][1], 0.0
+        kids = [ab(c) for c in t[1:]]
+        n = len(kids) - 1
+        if t[0] == "h":
+            return sum(a for a, _ in kids), sum(b for _, b in kids) + g * n
+        a = 1 / sum(1 / a for a, _ in kids)
+        return a, a * (sum(b / a for a, b in kids) - g * n)
+
+    def place(t, x, y, h, out):
+        a, b = ab(t)
+        w = a * h + b
+        if isinstance(t, int):
+            out[t] = (x, y, w, h)
+            return
+        for c in t[1:]:
+            ca, cb = ab(c)
+            if t[0] == "h":
+                cw = ca * h + cb
+                place(c, x, y, h, out); x += cw + g
+            else:
+                ch = (w - cb) / ca
+                place(c, x, y, ch, out); y += ch + g
+
+    a, b = ab(tree)
+    Mw, Mh = W - 2 * g, H - 2 * g
+    h = min(Mh, (Mw - b) / a)
+    w = a * h + b
+    out = {}
+    place(tree, g + (Mw - w) / 2, g + (Mh - h) / 2, h, out)
+    # round edges (not sizes) so every gap stays exactly g px
+    boxes = []
+    for i in range(len(sizes)):
+        x, y, bw, bh = out[i]
+        x0, y0 = round(x), round(y)
+        boxes.append((x0, y0, round(x + bw) - x0, round(y + bh) - y0))
+    cov = sum(bw * bh for _, _, bw, bh in boxes) / (W * H)
+    return boxes, cov
+
+
 def spacing_check(boxes, g):
     """Every pair of neighbouring photos (sharing a row or column band) must be exactly g apart."""
     bad = []
@@ -108,12 +154,15 @@ def timeline_from_groups(cfg, W, H):
     cfg["_coverage"], cfg["_group_boxes"] = [], []
     for n, grp in enumerate(cfg["groups"]):
         sizes = [load_source(cfg, k)[0].size for k in grp["images"]]
-        boxes, cov = justified(sizes, grp["flow"], W, H, g, grp.get("max_per_line", 3), grp.get("min_per_line", 1))
+        if "tree" in grp:  # nested arrangement; photos appear in the order they're listed
+            boxes, cov = tree_layout(grp["tree"], sizes, W, H, g)
+        else:
+            boxes, cov = justified(sizes, grp["flow"], W, H, g, grp.get("max_per_line", 3), grp.get("min_per_line", 1))
         cfg["_coverage"].append(cov)
         cfg["_group_boxes"].append(boxes)
         holds = grp.get("holds", {})
         for k, b in zip(grp["images"], boxes):
-            steps.append({"image": k, "slot": f"g{n + 1}-{grp['flow']}", "box": list(b), "beats": holds.get(k, cfg["step_beats"])})
+            steps.append({"image": k, "slot": f"g{n + 1}-{grp.get('name', grp.get('flow'))}", "box": list(b), "beats": holds.get(k, cfg["step_beats"])})
         if n < len(cfg["groups"]) - 1:
             steps.append({"clear": True, "beats": cfg["step_beats"]})
     return steps

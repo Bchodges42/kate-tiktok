@@ -59,31 +59,70 @@
   "hunter-schafer-leopard-coat": "removed from this alternative at your request"
  },
  "step_beats": 0.5,
- "_layout_comment": "Equal spacing: exactly 20 px between every pair of neighbouring photos. Portrait photos go in rows (2 side by side, filling left to right or right to left); the wide photos go in a column (top to bottom). Every photo in a row shares a height, so the gaps stay even; gallery.py picks the row split that makes the photos biggest.",
+ "_layout_comment": "Equal spacing: exactly 20 px between every pair of neighbouring photos. Portrait photos go in rows (2 side by side, filling left to right or right to left); the wide photos go in a column (top to bottom). Every photo in a row shares a height, so the gaps stay even; gallery.py picks the row split that makes the photos biggest. Groups with a 'tree' use a nested arrangement instead (h = side by side, v = stacked), still exactly 20 px between neighbours.",
  "groups": [
   {
-   "flow": "ltr",
-   "min_per_line": 2,
+   "name": "zigzag",
+   "tree": [
+    "v",
+    [
+     "h",
+     0,
+     [
+      "v",
+      1,
+      2
+     ]
+    ],
+    [
+     "h",
+     [
+      "v",
+      3,
+      4
+     ],
+     5
+    ]
+   ],
    "images": [
-    "leopard-skirt-mirror",
-    "pink-fur-leopard-heels",
-    "leopard-coat-selfie-room",
-    "leopard-tights-red-flats",
+    "leopard-coat-taxi",
     "leopard-trousers-legs-up",
-    "fur-coat-backseat"
-   ]
+    "fur-coat-backseat",
+    "fur-hat-red-coat",
+    "leopard-coat-umbrella",
+    "leopard-coat-scarf"
+   ],
+   "_note": "big photo with a stacked pair beside it, then mirrored: stacked pair with a big photo beside it"
   },
   {
-   "flow": "rtl",
-   "min_per_line": 2,
+   "name": "T",
+   "tree": [
+    "v",
+    [
+     "h",
+     0,
+     [
+      "v",
+      1,
+      2
+     ]
+    ],
+    [
+     "h",
+     3,
+     4,
+     5
+    ]
+   ],
    "images": [
-    "fur-hat-red-coat",
-    "leopard-coat-taxi",
+    "leopard-coat-selfie-room",
+    "leopard-tights-red-flats",
     "cheetah-coat-rack",
-    "sunglasses-leopard-floor",
-    "leopard-coat-scarf",
-    "leopard-coat-umbrella"
-   ]
+    "leopard-skirt-mirror",
+    "pink-fur-leopard-heels",
+    "sunglasses-leopard-floor"
+   ],
+   "_note": "tall hero with a stacked pair beside it, then a row of three across the bottom"
   },
   {
    "flow": "ttb",

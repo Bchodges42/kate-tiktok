@@ -1,23 +1,23 @@
 tempo 92.3 BPM, 28 beats-steps, 24 photos, 10.30 s
 beat sync: mean |offset| 0.24 frames, worst 0.50 -> PASS
-stillness: max held-frame diff 0.049 -> PASS
+stillness: max held-frame diff 0.041 -> PASS
 layout: no photo overlaps or comes within 20px of another, none cropped, none repeated
 spacing: exactly 20px between every pair of neighbouring photos -> PASS
-screen filled per group: 76%, 84%, 89%, 73%, 81%
+screen filled per group: 84%, 78%, 89%, 73%, 81%
 
- 1.   0.00s  g1-ltr        leopard-skirt-mirror
- 2.   0.36s  g1-ltr        pink-fur-leopard-heels
- 3.   0.65s  g1-ltr        leopard-coat-selfie-room
- 4.   0.98s  g1-ltr        leopard-tights-red-flats
- 5.   1.30s  g1-ltr        leopard-trousers-legs-up
- 6.   1.61s  g1-ltr        fur-coat-backseat
+ 1.   0.00s  g1-zigzag     leopard-coat-taxi
+ 2.   0.36s  g1-zigzag     leopard-trousers-legs-up
+ 3.   0.65s  g1-zigzag     fur-coat-backseat
+ 4.   0.98s  g1-zigzag     fur-hat-red-coat
+ 5.   1.30s  g1-zigzag     leopard-coat-umbrella
+ 6.   1.61s  g1-zigzag     leopard-coat-scarf
  7.   1.93s  (clear to background)
- 8.   2.25s  g2-rtl        fur-hat-red-coat
- 9.   2.58s  g2-rtl        leopard-coat-taxi
-10.   2.90s  g2-rtl        cheetah-coat-rack
-11.   3.23s  g2-rtl        sunglasses-leopard-floor
-12.   3.55s  g2-rtl        leopard-coat-scarf
-13.   3.88s  g2-rtl        leopard-coat-umbrella
+ 8.   2.25s  g2-T          leopard-coat-selfie-room
+ 9.   2.58s  g2-T          leopard-tights-red-flats
+10.   2.90s  g2-T          cheetah-coat-rack
+11.   3.23s  g2-T          leopard-skirt-mirror
+12.   3.55s  g2-T          pink-fur-leopard-heels
+13.   3.88s  g2-T          sunglasses-leopard-floor
 14.   4.19s  (clear to background)
 15.   4.50s  g3-ttb        leopard-tights-boots
 16.   4.83s  g3-ttb        leopard-mirror-elevator
