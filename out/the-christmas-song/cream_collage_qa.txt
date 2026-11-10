@@ -1,6 +1,6 @@
 pulse 161.5 BPM (half-beats of a ~81 BPM ballad), 30 musical events, 20 shots / 16 images, 20.60 s
 cut sync: mean |offset| 0.21 frames, worst 0.50 -> PASS
-stillness: 598 held-frame pairs, max diff 0.327 -> PASS
+stillness: 598 held-frame pairs, max diff 0.046 -> PASS
 plan: tree/no-tree alternates (incl. loop), no transition type twice in a row, no image repeated
 
  1.   0.00s  swap         TREE  nineties-couple-tree  (start)
@@ -8,18 +8,18 @@ plan: tree/no-tree alternates (incl. loop), no transition type twice in a row, n
  3.   1.44s  swap               ornament-pile  (change strength 0.29)
  4.   2.35s  inset        TREE  rockefeller-rink  (change strength 0.47)
  5.   3.85s  swap               cocoa-mugs  (change strength 0.68)
- 6.   5.38s  offset       TREE  pink-girl-tree  (change strength 0.89)
+ 6.   5.38s  cover        TREE  pink-girl-tree  (change strength 0.89)
  7.   5.88s  swap               porch-lights-night  (change strength 0.71)
  8.   6.46s  pop                porch-lights-night  (change strength 0.68)
- 9.   8.27s  split-top    TREE  cat-in-tree-vintage  (change strength 0.92)
-10.   9.36s  split-bottom       family-dinner-chandelier  (change strength 0.26)
+ 9.   8.27s  cover        TREE  cat-in-tree-vintage  (change strength 0.92)
+10.   9.36s  inset              family-dinner-chandelier  (change strength 0.26)
 11.  10.26s  swap         TREE  sleeping-under-tree  (change strength 0.78)
 12.  11.90s  inset              iced-cookies  (change strength 0.77)
 13.  12.40s  swap         TREE  seventies-tree-decorating  (change strength 0.36)
 14.  12.96s  pop          TREE  seventies-tree-decorating  (change strength 0.47)
-15.  14.35s  offset             pink-party-table  (change strength 0.71)
+15.  14.35s  cover              pink-party-table  (change strength 0.71)
 16.  15.11s  swap         TREE  family-tree-overhead  (change strength 0.65)
-17.  16.06s  split-top          wrapped-gifts-gingham  (change strength 0.37)
-18.  17.37s  split-bottom TREE  candlelit-table  (change strength 0.45)
+17.  16.06s  inset              wrapped-gifts-gingham  (change strength 0.37)
+18.  17.37s  cover        TREE  candlelit-table  (change strength 0.45)
 19.  18.11s  swap               candle-mantel-girl  (change strength 0.31)
 20.  19.24s  pop                candle-mantel-girl  (change strength 0.88)

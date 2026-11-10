@@ -13,34 +13,87 @@
   "min_gap": 0.42
  },
  "fps": 30,
- "size": [1080, 1920],
- "grade": {"warmth": 0.035, "lift": 12, "saturation": 0.97, "grain": 3.0, "grain_seed": 7},
+ "size": [
+  1080,
+  1920
+ ],
+ "grade": {
+  "warmth": 0.035,
+  "lift": 12,
+  "saturation": 0.97,
+  "grain": 3.0,
+  "grain_seed": 7
+ },
  "layout": {
   "background": "#F7F4EE",
   "center_y": 0.46,
-  "long_side": [1000, 880, 1080, 940, 1040, 860],
-  "pop_scale": 1.22,
-  "_note": "no shadow and no border, like the inspo; photos keep their own aspect ratio"
+  "max_width": 0.92,
+  "max_height": 0.72,
+  "pre_pop": 0.7,
+  "inset_scale": 0.68,
+  "cover_scale": 0.88,
+  "_note": "every photo centered and shown whole at its own aspect ratio; tall photos fill the height, wide photos the width"
  },
  "no_repeat_images": true,
  "images_dir": "images",
  "images": {
-  "nineties-couple-tree":      {"tree": true, "hero": true},
-  "rockefeller-rink":          {"tree": true},
-  "pink-girl-tree":            {"tree": true},
-  "cat-in-tree-vintage":       {"tree": true, "crop": [16, 16, 706, 700], "_crop": "trims the white photo-print border"},
-  "sleeping-under-tree":       {"tree": true},
-  "seventies-tree-decorating": {"tree": true},
-  "family-tree-overhead":      {"tree": true},
-  "candlelit-table":           {"tree": true, "_note": "lit tree on the right"},
-  "ornament-pile":             {"tree": false},
-  "cocoa-mugs":                {"tree": false},
-  "porch-lights-night":        {"tree": false},
-  "family-dinner-chandelier":  {"tree": false},
-  "iced-cookies":              {"tree": false},
-  "pink-party-table":          {"tree": false},
-  "wrapped-gifts-gingham":     {"tree": false},
-  "candle-mantel-girl":        {"tree": false}
+  "nineties-couple-tree": {
+   "tree": true,
+   "hero": true
+  },
+  "rockefeller-rink": {
+   "tree": true
+  },
+  "pink-girl-tree": {
+   "tree": true
+  },
+  "cat-in-tree-vintage": {
+   "tree": true,
+   "crop": [
+    50,
+    53,
+    670,
+    670
+   ],
+   "_crop": "keeps only the photo, inside its white print border"
+  },
+  "sleeping-under-tree": {
+   "tree": true
+  },
+  "seventies-tree-decorating": {
+   "tree": true
+  },
+  "family-tree-overhead": {
+   "tree": true
+  },
+  "candlelit-table": {
+   "tree": true,
+   "_note": "lit tree on the right"
+  },
+  "ornament-pile": {
+   "tree": false
+  },
+  "cocoa-mugs": {
+   "tree": false
+  },
+  "porch-lights-night": {
+   "tree": false
+  },
+  "family-dinner-chandelier": {
+   "tree": false
+  },
+  "iced-cookies": {
+   "tree": false
+  },
+  "pink-party-table": {
+   "tree": false
+  },
+  "wrapped-gifts-gingham": {
+   "tree": false
+  },
+  "candle-mantel-girl": {
+   "tree": false
+  }
  },
  "not_used": {
   "garland-doorway-night": "small lit tree in the back room: reads as both tree and no-tree, breaks the alternation",
@@ -61,25 +114,85 @@
   "sixties-tv-christmas": "370 px, staged TV still"
  },
  "shots": [
-  {"image": "nineties-couple-tree",      "type": "swap"},
-  {"image": "nineties-couple-tree",      "type": "pop"},
-  {"image": "ornament-pile",             "type": "swap"},
-  {"image": "rockefeller-rink",          "type": "inset"},
-  {"image": "cocoa-mugs",                "type": "swap"},
-  {"image": "pink-girl-tree",            "type": "offset", "shift": [80, -110]},
-  {"image": "porch-lights-night",        "type": "swap"},
-  {"image": "porch-lights-night",        "type": "pop"},
-  {"image": "cat-in-tree-vintage",       "type": "split-top"},
-  {"image": "family-dinner-chandelier",  "type": "split-bottom"},
-  {"image": "sleeping-under-tree",       "type": "swap"},
-  {"image": "iced-cookies",              "type": "inset"},
-  {"image": "seventies-tree-decorating", "type": "swap"},
-  {"image": "seventies-tree-decorating", "type": "pop"},
-  {"image": "pink-party-table",          "type": "offset", "shift": [-70, 120]},
-  {"image": "family-tree-overhead",      "type": "swap"},
-  {"image": "wrapped-gifts-gingham",     "type": "split-top"},
-  {"image": "candlelit-table",           "type": "split-bottom"},
-  {"image": "candle-mantel-girl",        "type": "swap"},
-  {"image": "candle-mantel-girl",        "type": "pop"}
+  {
+   "image": "nineties-couple-tree",
+   "type": "swap"
+  },
+  {
+   "image": "nineties-couple-tree",
+   "type": "pop"
+  },
+  {
+   "image": "ornament-pile",
+   "type": "swap"
+  },
+  {
+   "image": "rockefeller-rink",
+   "type": "inset"
+  },
+  {
+   "image": "cocoa-mugs",
+   "type": "swap"
+  },
+  {
+   "image": "pink-girl-tree",
+   "type": "cover"
+  },
+  {
+   "image": "porch-lights-night",
+   "type": "swap"
+  },
+  {
+   "image": "porch-lights-night",
+   "type": "pop"
+  },
+  {
+   "image": "cat-in-tree-vintage",
+   "type": "cover"
+  },
+  {
+   "image": "family-dinner-chandelier",
+   "type": "inset"
+  },
+  {
+   "image": "sleeping-under-tree",
+   "type": "swap"
+  },
+  {
+   "image": "iced-cookies",
+   "type": "inset"
+  },
+  {
+   "image": "seventies-tree-decorating",
+   "type": "swap"
+  },
+  {
+   "image": "seventies-tree-decorating",
+   "type": "pop"
+  },
+  {
+   "image": "pink-party-table",
+   "type": "cover"
+  },
+  {
+   "image": "family-tree-overhead",
+   "type": "swap"
+  },
+  {
+   "image": "wrapped-gifts-gingham",
+   "type": "inset"
+  },
+  {
+   "image": "candlelit-table",
+   "type": "cover"
+  },
+  {
+   "image": "candle-mantel-girl",
+   "type": "swap"
+  },
+  {
+   "image": "candle-mantel-girl",
+   "type": "pop"
+  }
  ]
 }

@@ -60,11 +60,7 @@
   },
   {
    "image": "pink-girl-tree",
-   "type": "offset",
-   "shift": [
-    80,
-    -110
-   ],
+   "type": "cover",
    "t": 5.375,
    "start_frame": 161,
    "end_frame": 176
@@ -85,14 +81,14 @@
   },
   {
    "image": "cat-in-tree-vintage",
-   "type": "split-top",
+   "type": "cover",
    "t": 8.266,
    "start_frame": 248,
    "end_frame": 281
   },
   {
    "image": "family-dinner-chandelier",
-   "type": "split-bottom",
+   "type": "inset",
    "t": 9.358,
    "start_frame": 281,
    "end_frame": 308
@@ -127,11 +123,7 @@
   },
   {
    "image": "pink-party-table",
-   "type": "offset",
-   "shift": [
-    -70,
-    120
-   ],
+   "type": "cover",
    "t": 14.35,
    "start_frame": 430,
    "end_frame": 453
@@ -145,14 +137,14 @@
   },
   {
    "image": "wrapped-gifts-gingham",
-   "type": "split-top",
+   "type": "inset",
    "t": 16.057,
    "start_frame": 482,
    "end_frame": 521
   },
   {
    "image": "candlelit-table",
-   "type": "split-bottom",
+   "type": "cover",
    "t": 17.369,
    "start_frame": 521,
    "end_frame": 543

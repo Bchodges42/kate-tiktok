@@ -5,7 +5,7 @@
 
 Each photo keeps its own shape and sits on a cream canvas. On every cut a new
 photo either replaces the canvas (swap), is re-cut bigger (pop), or lands on top
-of the previous photo (inset / offset / split-top -> split-bottom). Images never
+of the previous photo, centered (inset / cover). Photos are never cropped and never
 move while on screen. Cuts land on musical events (pulse points where the
 harmony changes), which suits slow songs with no drum beat.
 """
@@ -20,7 +20,7 @@ from PIL import Image, ImageDraw
 
 from moodboard import ROOT, cover, decode_small, font, grade, hex_rgb, load_source
 
-OVERLAYS = {"inset", "offset", "split-top", "split-bottom"}
+OVERLAYS = {"inset", "cover"}
 
 
 # --------------------------------------------------------------------------- audio events
@@ -65,59 +65,53 @@ def pick_cuts(events, n_cuts, min_gap, end):
 
 
 # --------------------------------------------------------------------------- layout
-def natural(im, long_side, max_w=None, max_h=None):
-    """Size at the image's own aspect ratio, inside the cream margins."""
-    s = long_side / max(im.width, im.height)
-    if max_w:
-        s = min(s, max_w / im.width)
-    if max_h:
-        s = min(s, max_h / im.height)
+def fit(im, box_w, box_h):
+    """Largest size at the image's exact aspect ratio that fits the box (never cropped)."""
+    s = min(box_w / im.width, box_h / im.height)
     return int(round(im.width * s)), int(round(im.height * s))
 
 
 def place(cfg, shots):
-    """Turn the shot list into frames of layers: each shot = list of (image_key, box, crop_mode)."""
+    """Turn the shot list into per-shot layer stacks. Every photo is centered and shown whole.
+
+    swap  - clear the canvas, photo at ~70% of its full size if a pop follows, else full size
+    pop   - the same photo cut back in at full size
+    inset - a smaller photo centered on top of the current one
+    cover - a near-full-size photo centered on top; the one underneath peeks out around it
+    'Full size' = as large as the photo fits in the max box (tall photos fill the height,
+    wide photos fill the width).
+    """
     W, H = cfg["size"]
     lay = cfg["layout"]
     cx, cy = W // 2, int(H * lay.get("center_y", 0.46))
-    sizes = lay["long_side"]  # cycled so photos vary in size like the inspo
-    max_w, max_h = int(W * lay.get("max_width", 0.86)), int(H * lay.get("max_height", 0.6))
-    srcs = {}
-    states, layers = [], []
+    max_w, max_h = W * lay.get("max_width", 0.92), H * lay.get("max_height", 0.72)
+    srcs, states, layers = {}, [], []
+
+    def centered(w, h):
+        return (cx - w // 2, cy - h // 2, w, h)
+
     for i, sh in enumerate(shots):
         typ, key = sh["type"], sh["image"]
         if key not in srcs:
             srcs[key] = load_source(cfg, key)[0]
         im = srcs[key]
         if typ == "swap":
-            small = i + 1 < len(shots) and shots[i + 1]["type"] == "pop"  # leave room to pop bigger
-            f = lay.get("pre_pop", 0.74) if small else 1.0
-            w, h = natural(im, sizes[i % len(sizes)] * f, max_w * f, max_h * f)
-            layers = [(key, (cx - w // 2, cy - h // 2, w, h))]
+            f = lay.get("pre_pop", 0.7) if i + 1 < len(shots) and shots[i + 1]["type"] == "pop" else 1.0
+            layers = [(key, centered(*fit(im, max_w * f, max_h * f)))]
         elif typ == "pop":
-            k0, (x, y, w, h) = layers[-1]
-            s = lay.get("pop_scale", 1.22)
-            nw, nh = natural(srcs[k0], max(w, h) * s, max_w, max_h)
-            layers = [(k0, (cx - nw // 2, cy - nh // 2, nw, nh))]
+            k0 = layers[-1][0]
+            layers = [(k0, centered(*fit(srcs[k0], max_w, max_h)))]
+        elif typ == "inset":
+            _, (_, _, pw, ph) = layers[-1]
+            s = lay.get("inset_scale", 0.68)
+            layers = layers + [(key, centered(*fit(im, pw * s, ph * s)))]
+        elif typ == "cover":
+            s = lay.get("cover_scale", 0.88)
+            layers = layers + [(key, centered(*fit(im, max_w * s, max_h * s)))]
         else:
-            _, (px, py, pw, ph) = layers[-1] if typ != "split-bottom" else layers[-2]
-            if typ == "inset":
-                w, h = natural(im, int(max(pw, ph) * 0.72))
-                w, h = min(w, int(pw * 0.86)), min(h, int(ph * 0.86))
-                box = (px + (pw - w) // 2, py + (ph - h) // 2, w, h)
-            elif typ == "offset":
-                w, h = natural(im, int(max(pw, ph) * 0.9), max_w, max_h)
-                dx, dy = sh.get("shift", (70, -90))
-                box = (int(np.clip(px + (pw - w) // 2 + dx, 30, W - w - 30)),
-                       int(np.clip(py + (ph - h) // 2 + dy, 120, H - h - 260)), w, h)
-            elif typ == "split-top":
-                box = (px, py, pw, int(ph * 0.52))
-            elif typ == "split-bottom":
-                top = layers[-1][1]
-                box = (px, top[1] + top[3], pw, py + ph - (top[1] + top[3]))
-            layers = layers + [(key, box)]
-            if len(layers) > 3:
-                sys.exit(f"shot {i}: too many stacked layers; put a swap before it")
+            sys.exit(f"shot {i}: unknown transition type {typ!r} (swap, pop, inset, cover)")
+        if len(layers) > 3:
+            sys.exit(f"shot {i}: more than 3 stacked photos; put a swap before it")
         states.append(list(layers))
     return states, srcs
 
@@ -131,7 +125,7 @@ def plate_for(cfg, state, srcs, cache):
         ck = (key, w, h)
         if ck not in cache:
             meta = cfg["images"].get(key, {})
-            cache[ck] = grade(np.asarray(cover(srcs[key], w, h, tuple(meta.get("focus", (0.5, 0.5))))), cfg["grade"])
+            cache[ck] = grade(np.asarray(srcs[key].resize((w, h), Image.LANCZOS)), cfg["grade"])  # whole photo, no crop
         img = cache[ck]
         x0, y0 = max(x, 0), max(y, 0)
         x1, y1 = min(x + w, W), min(y + h, H)
@@ -154,9 +148,6 @@ def check_plan(cfg, shots):
         imgs = [s["image"] for s in new]
         if len(set(imgs)) != len(imgs):
             errs.append("an image is used twice")
-    for s in shots:
-        if s["type"] == "split-bottom" and shots[shots.index(s) - 1]["type"] != "split-top":
-            errs.append("split-bottom must follow split-top")
     return errs
 
 
