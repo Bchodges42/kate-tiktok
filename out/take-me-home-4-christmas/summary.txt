@@ -1,0 +1,16 @@
+
+== C_pov_loop (preset C) -> out/take-me-home-4-christmas/C_pov_loop_PREVIEW-click.mp4
+tempo 120.0 BPM, base shot 1 beat(s) (0.500 s, holds 2x), 16 shots, 10.00 s
+window 0.00-10.00s: placeholder grid (no song file): starts at 0
+QA C_pov_loop: 300 frames decoded (expected 300)
+stillness: 212 held-frame pairs, mean diff 0.031, max 0.641 (0-255 scale; <1 = codec noise only) -> PASS
+beat sync: 15 cuts, mean |offset| 0.00 frames, worst 0.00 frames -> PASS
+loop: last->first frame diff 3.70 (last frame is 88%+ into the dissolve back to image 1)
+
+== A_framed (preset A) -> out/take-me-home-4-christmas/A_framed_PREVIEW-click.mp4
+tempo 120.0 BPM, base shot 2 beat(s) (1.000 s, holds 2x), 8 shots, 10.00 s
+window 0.00-10.00s: placeholder grid (no song file): starts at 0
+QA A_framed: 300 frames decoded (expected 300)
+stillness: 236 held-frame pairs, mean diff 0.024, max 0.633 (0-255 scale; <1 = codec noise only) -> PASS
+beat sync: 7 cuts, mean |offset| 0.00 frames, worst 0.00 frames -> PASS
+loop: last->first frame diff 2.01 (last frame is 88%+ into the dissolve back to image 1)

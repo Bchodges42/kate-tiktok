@@ -1,0 +1,98 @@
+{
+ "version": "A_framed",
+ "preset": "A",
+ "fps": 30,
+ "info": {
+  "tempo": 120.0,
+  "subdivision_beats": 1,
+  "total_beats": 20,
+  "window_start": 0.0,
+  "window_end": 10.0,
+  "frames": 300,
+  "why": "placeholder grid (no song file): starts at 0",
+  "shot_seconds": 0.5,
+  "placeholder": true
+ },
+ "shots": [
+  {
+   "image": "pink-party-table",
+   "start": 0.0,
+   "end": 2.0,
+   "start_frame": 0,
+   "end_frame": 60,
+   "dissolve": 8,
+   "hold": true,
+   "t_ideal": 0.0
+  },
+  {
+   "image": "wrapped-gifts-gingham",
+   "start": 2.0,
+   "end": 3.0,
+   "start_frame": 60,
+   "end_frame": 90,
+   "dissolve": 8,
+   "hold": false,
+   "t_ideal": 2.0
+  },
+  {
+   "image": "pink-scarf-road",
+   "start": 3.0,
+   "end": 4.0,
+   "start_frame": 90,
+   "end_frame": 120,
+   "dissolve": 8,
+   "hold": false,
+   "t_ideal": 3.0
+  },
+  {
+   "image": "mantel-garland",
+   "start": 4.0,
+   "end": 5.0,
+   "start_frame": 120,
+   "end_frame": 150,
+   "dissolve": 8,
+   "hold": false,
+   "t_ideal": 4.0
+  },
+  {
+   "image": "snowy-window-star",
+   "start": 5.0,
+   "end": 6.0,
+   "start_frame": 150,
+   "end_frame": 180,
+   "dissolve": 8,
+   "hold": false,
+   "t_ideal": 5.0
+  },
+  {
+   "image": "plaid-skirt-tulle",
+   "start": 6.0,
+   "end": 7.0,
+   "start_frame": 180,
+   "end_frame": 210,
+   "dissolve": 8,
+   "hold": false,
+   "t_ideal": 6.0
+  },
+  {
+   "image": "family-tree-overhead",
+   "start": 7.0,
+   "end": 8.0,
+   "start_frame": 210,
+   "end_frame": 240,
+   "dissolve": 8,
+   "hold": false,
+   "t_ideal": 7.0
+  },
+  {
+   "image": "candle-mantel-girl",
+   "start": 8.0,
+   "end": 10.0,
+   "start_frame": 240,
+   "end_frame": 300,
+   "dissolve": 8,
+   "hold": true,
+   "t_ideal": 8.0
+  }
+ ]
+}

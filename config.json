@@ -1,0 +1,59 @@
+{
+  "_comment": "One edit = one config. Swap song/images/sequence for the next video. Times in seconds.",
+  "name": "take-me-home-4-christmas",
+  "vibe": "colorful vintage christmas at home: pink + red + pine green, candlelight, paper garlands",
+
+  "song": "audio/song.mp3",
+  "_song_comment": "Drop the track (or the trending TikTok clip) here. If missing, the script renders a PREVIEW on a placeholder beat grid at fallback_bpm.",
+  "song_start": null,
+  "_song_start_comment": "Set to the trending-section timestamp (s) to force it; null = auto-pick the strongest 8-12 s window starting on a downbeat.",
+  "fallback_bpm": 120,
+
+  "fps": 30,
+  "size": [1080, 1920],
+  "target_seconds": [8, 12],
+  "shot_seconds": [0.2, 0.6],
+
+  "grade": {"warmth": 0.035, "lift": 14, "saturation": 0.96, "grain": 3.5, "grain_seed": 7},
+
+  "images_dir": "images",
+  "images": {
+    "pink-party-table":      {"tags": ["wide", "pink", "candles"], "hero": true},
+    "wrapped-gifts-gingham": {"tags": ["object", "red", "green"]},
+    "pink-scarf-road":       {"tags": ["person", "pink", "olive"]},
+    "mantel-garland":        {"tags": ["detail", "pink", "red", "green"]},
+    "snowy-window-star":     {"tags": ["wide", "snow", "red-stripe"], "crop": [0, 0, 610, 736],
+                              "_crop": "removes Pinterest '1/5' counter, profile pic, + and heart on the right edge"},
+    "plaid-skirt-tulle":     {"tags": ["outfit", "burgundy", "pink"], "focus": [0.5, 0.55]},
+    "family-tree-overhead":  {"tags": ["wide", "amber", "tree"], "focus": [0.58, 0.5]},
+    "candle-mantel-girl":    {"tags": ["person", "candles", "warm"], "hero": true}
+  },
+  "rejected": {
+    "striped-culottes-summer": "summer lake + sage green: wrong season, breaks the christmas world",
+    "santa-hat-blue-carpet":   "saturated royal-blue carpet fights the pink/red/green palette; posed editorial, not candid",
+    "sixties-tv-christmas":    "370 px wide (blurs at 1080), staged TV-studio still with full faces: different era/feel from the candid home shots"
+  },
+
+  "sequence": [
+    {"image": "pink-party-table",      "beats": 2},
+    {"image": "wrapped-gifts-gingham", "beats": 1},
+    {"image": "pink-scarf-road",       "beats": 1},
+    {"image": "mantel-garland",        "beats": 1},
+    {"image": "snowy-window-star",     "beats": 1},
+    {"image": "plaid-skirt-tulle",     "beats": 1},
+    {"image": "family-tree-overhead",  "beats": 1},
+    {"image": "candle-mantel-girl",    "beats": 2}
+  ],
+
+  "versions": {
+    "C_pov_loop": {
+      "preset": "C", "passes": 2, "beat_scale": 1,
+      "_note": "full-bleed 9:16, 8 images played twice in the same order, holds on the two candlelight heroes"
+    },
+    "A_framed": {
+      "preset": "A", "passes": 1, "beat_scale": 2,
+      "background": "#F7F4EE", "frame_width": 0.8, "shadow": true,
+      "_note": "alternate: cream canvas, uncropped photos in a fixed box, one pass at half the cut rate"
+    }
+  }
+}
