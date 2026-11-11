@@ -73,7 +73,30 @@ def main():
     def make_bg(spec):
         """A solid colour ("#RRGGBB") or {"checker": [c1, c2], "size": px}."""
         b = np.empty((H, W, 3), np.float32)
-        if isinstance(spec, dict) and "checker" in spec:
+        if isinstance(spec, dict) and "spotlight" in spec:
+            # a glow in the middle of the screen fading out to the edges, with optional static
+            # mirror-ball sparkles (fixed seed, so every frame is identical)
+            cols = [np.array(hex_rgb(c), np.float32) for c in spec["spotlight"]]
+            cx, cy = spec.get("center", [0.5, 0.45])
+            yy, xx = np.mgrid[0:H, 0:W].astype(np.float32)
+            r = np.sqrt(((xx - cx * W) / W) ** 2 + ((yy - cy * H) / W) ** 2) / spec.get("radius", 0.9)
+            r = np.clip(r, 0, 1)[..., None]
+            seg = r * (len(cols) - 1)
+            i0 = np.clip(np.floor(seg).astype(int), 0, len(cols) - 2)
+            f = seg - i0
+            stack = np.stack(cols)
+            b[:] = stack[i0[..., 0]] * (1 - f) + stack[i0[..., 0] + 1] * f
+            n = spec.get("sparkle", 0)
+            if n:
+                rng = np.random.default_rng(spec.get("seed", 3))
+                sp = Image.new("L", (W, H), 0)
+                d = ImageDraw.Draw(sp)
+                for _ in range(n):
+                    x, y, rad = rng.uniform(0, W), rng.uniform(0, H), rng.choice([1.5, 2, 2.5, 3.5])
+                    d.ellipse([x - rad, y - rad, x + rad, y + rad], fill=int(rng.uniform(120, 255)))
+                a = np.asarray(sp.filter(ImageFilter.GaussianBlur(0.8)), np.float32)[..., None] / 255
+                b[:] = b * (1 - a) + np.array(hex_rgb(spec.get("sparkle_color", "#FFF4DC")), np.float32) * a
+        elif isinstance(spec, dict) and "checker" in spec:
             c1, c2 = (np.array(hex_rgb(c), np.float32) for c in spec["checker"])
             sz = spec.get("size", 90)
             yy, xx = np.mgrid[0:H, 0:W]

@@ -1,6 +1,6 @@
 120 BPM steady, one photo per 1/2 beat (0.250 s), 25 photos, 16 beats = 8.00 s, ends on a bar line
 beat sync: worst offset 0.50 frames -> PASS
-stillness: max held-frame diff 0.042 -> PASS
+stillness: max held-frame diff 0.041 -> PASS
 photos: whole (no cropping), own shape (no stretching), none repeated -> PASS
 variety: no two photos of the same kind back to back -> PASS
 overlap: every photo lands at the same area as the one it covers, never smaller -> PASS
