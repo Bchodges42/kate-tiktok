@@ -66,14 +66,34 @@ def main():
     spb = 60.0 / bpm / ppb  # seconds per photo step
     bar = 4 * ppb
     total_beats = int(math.ceil(len(order) / bar) * bar) if cfg.get("end_on_bar", True) else len(order)  # in steps
-    starts = [int(round(i * spb * fps)) for i in range(len(order))]
+    # optional phrases: a burst of photos, the finished pile holds, then a clear to the background
+    # before the next phrase starts on a fresh bar ("phrases": {"sizes": [6, 6, 7], "steps": 16, "clear_steps": 2})
+    ph = cfg.get("phrases")
+    if ph:
+        assert sum(ph["sizes"]) == len(order), "phrase sizes must add up to the number of photos"
+        step_of, first, clears, i = [], set(), [], 0
+        for n, size in enumerate(ph["sizes"]):
+            first.add(i)
+            for j in range(size):
+                step_of.append(n * ph["steps"] + j); i += 1
+            if n < len(ph["sizes"]) - 1:
+                clears.append((n + 1) * ph["steps"] - ph["clear_steps"])
+        total_beats = len(ph["sizes"]) * ph["steps"]
+    else:
+        step_of, first, clears = list(range(len(order))), {0}, []
     N = int(round(total_beats * spb * fps))
-    ends = starts[1:] + [N]
+    starts = [int(round(st * spb * fps)) for st in step_of]
 
     def make_bg(spec):
-        """A solid colour ("#RRGGBB") or {"checker": [c1, c2], "size": px}."""
+        """A solid colour ("#RRGGBB"), {"checker": [c1, c2], "size": px}, {"spotlight": [...]} or
+        {"image": "images/<file>"} (a 9:16 picture the user gave, scaled to the screen, never cropped)."""
         b = np.empty((H, W, 3), np.float32)
-        if isinstance(spec, dict) and "spotlight" in spec:
+        if isinstance(spec, dict) and "image" in spec:
+            im = Image.open(os.path.join(ROOT, spec["image"])).convert("RGB")
+            if abs(im.width / im.height - W / H) > 0.01:
+                sys.exit(f"background image is {im.width}x{im.height}, not {W}:{H}; it would have to be cropped")
+            b[:] = np.asarray(im.resize((W, H), Image.LANCZOS), np.float32)
+        elif isinstance(spec, dict) and "spotlight" in spec:
             # a glow in the middle of the screen fading out to the edges, with optional static
             # mirror-ball sparkles (fixed seed, so every frame is identical)
             cols = [np.array(hex_rgb(c), np.float32) for c in spec["spotlight"]]
@@ -127,8 +147,9 @@ def main():
     else:  # pile
         p = cfg["pile"]
         bord = p.get("border_px", 14)
+        bot = p.get("bottom_px", H - m)  # keep photos above this line (e.g. stickers on the background)
         # one area for every photo, capped so even the widest/tallest photo fits on screen at it
-        fit = min(min((W - 2 * m - 2 * bord) ** 2 * im.height / im.width, (H - 2 * m - 2 * bord) ** 2 * im.width / im.height)
+        fit = min(min((W - 2 * m - 2 * bord) ** 2 * im.height / im.width, (bot - m - 2 * bord) ** 2 * im.width / im.height)
                   for im in srcs.values())
         area = min(p["area_frac"] * W * H, fit)
         bl = p.get("border", "#FFFFFF")
@@ -136,23 +157,27 @@ def main():
         spots = p["spots"]
         canvas = bg.copy()
         for i, k in enumerate(order):
+            if i in first and i:
+                canvas, boxes_ph = bg.copy(), []  # new phrase: start again from the clean background
+            if i == 0:
+                boxes_ph = []
             im = srcs[k]
             r = im.width / im.height
             h = math.sqrt(area / r); w = h * r
             w = min(w, W - 2 * m - 2 * bord); h = w / r  # a wide photo never runs off the sides
-            if h > H - 2 * m - 2 * bord:
-                h = H - 2 * m - 2 * bord; w = h * r
+            if h > bot - m - 2 * bord:
+                h = bot - m - 2 * bord; w = h * r
             w, h = int(round(w)), int(round(h))
-            cx, cy = spots[i % len(spots)]
+            cx, cy = spots[(i - max(f for f in first if f <= i)) % len(spots)]
             if p.get("final_center") and i == len(order) - 1:
                 # finale: dead centre of the screen, a little bigger than the rest (never smaller)
                 g = p.get("final_scale", 1.0)
-                g = min(g, (W - 2 * m - 2 * bord) / w, (H - 2 * m - 2 * bord) / h)
+                g = min(g, (W - 2 * m - 2 * bord) / w, (bot - m - 2 * bord) / h)
                 w, h = int(round(w * g)), int(round(h * g))
                 cx, cy = W / 2, H / 2
             fw, fh = w + 2 * bord, h + 2 * bord
             x = int(min(max(cx - fw / 2, m), W - m - fw))
-            y = int(min(max(cy - fh / 2, m), H - m - fh))
+            y = int(min(max(cy - fh / 2, m), bot - fh))
             # soft shadow (static), then the bordered photo
             sh = Image.new("L", (W, H), 0)
             ImageDraw.Draw(sh).rectangle([x + 6, y + 10, x + fw + 6, y + fh + 10], fill=int(255 * p.get("shadow", 0.35)))
@@ -160,14 +185,14 @@ def main():
             canvas = canvas * (1 - a)
             canvas[y:y + fh, x:x + fw] = bcols[i % len(bcols)]
             canvas[y + bord:y + bord + h, x + bord:x + bord + w] = grade(np.asarray(im.resize((w, h), Image.LANCZOS)), cfg["grade"])
-            plates.append(canvas.copy()); boxes.append((x, y, fw, fh))
+            plates.append(canvas.copy()); boxes.append((x, y, fw, fh)); boxes_ph.append((x, y, fw, fh))
             cov = np.zeros((H, W), bool)
-            for bx, by, bw, bh in boxes:
+            for bx, by, bw, bh in boxes_ph:
                 cov[by:by + bh, bx:bx + bw] = True
             cover.append(cov.mean())
         areas = [b[2] * b[3] for b in boxes]
         for i in range(1, len(areas)):
-            if areas[i] < 0.97 * areas[i - 1]:
+            if i not in first and areas[i] < 0.97 * areas[i - 1]:
                 errs.append(f"{order[i]} is smaller than the photo it covers")
     for k, (x, y, w, h) in zip(order, boxes):
         if x < 0 or y < 0 or x + w > W or y + h > H:
@@ -189,10 +214,13 @@ def main():
            "-pix_fmt", "yuv420p", "-crf", "18", "-preset", "veryfast", "-c:a", "aac", "-b:a", "192k",
            "-movflags", "+faststart", "-t", f"{N / fps:.4f}", mp4]
     pr = subprocess.Popen(cmd, stdin=subprocess.PIPE)
-    frames8 = []
-    for pl, s0, s1 in zip(plates, starts, ends):
+    segs = sorted([(s0, pl, i) for i, (s0, pl) in enumerate(zip(starts, plates))] +
+                  [(int(round(c * spb * fps)), bg, None) for c in clears], key=lambda t: t[0])
+    frames8, sheet_lbl, hold = [], [], []
+    for n, (s0, pl, i) in enumerate(segs):
+        s1 = segs[n + 1][0] if n + 1 < len(segs) else N
         fr = np.clip(pl + grain, 0, 255).astype(np.uint8)
-        frames8.append(fr)
+        frames8.append(fr); sheet_lbl.append((s0, i)); hold.append((s0, s1))
         for _ in range(s0, s1):
             pr.stdin.write(fr.tobytes())
     pr.stdin.close()
@@ -206,18 +234,22 @@ def main():
     F = decode_small(mp4)
     d = np.abs(np.diff(F, axis=0)).mean((1, 2, 3))
     offs = []
-    for i, f in enumerate(starts[1:], 1):
+    cut_steps = sorted(step_of[1:] + clears)
+    for st in cut_steps:
+        f = int(round(st * spb * fps))
         hit = max(range(max(f - 3, 1), min(f + 4, len(F))), key=lambda j: d[j - 1])
-        offs.append(abs(hit - i * spb * fps))
-    still = [d[f - 1] for s0, s1 in zip(starts, ends) for f in range(s0 + 1, s1) if f < len(F)]
-    rep = [f"{bpm} BPM steady, one photo per {'beat' if ppb == 1 else f'1/{ppb} beat'} ({spb:.3f} s), {len(order)} photos, {total_beats / ppb:g} beats = {N / fps:.2f} s, ends on a bar line",
+        offs.append(abs(hit - st * spb * fps))
+    still = [d[f - 1] for s0, s1 in hold for f in range(s0 + 1, s1) if f < len(F)]
+    rep = [f"{bpm} BPM steady, one photo per {'beat' if ppb == 1 else f'1/{ppb} beat'} ({spb:.3f} s), {len(order)} photos, {total_beats / ppb:g} beats = {N / fps:.2f} s, ends on a bar line"
+           + (f"; {len(ph['sizes'])} phrases of {'/'.join(map(str, ph['sizes']))} photos, each clearing to the background" if ph else ""),
            f"beat sync: worst offset {max(offs):.2f} frames -> {'PASS' if max(offs) <= 1 else 'FAIL'}",
            f"stillness: max held-frame diff {max(still):.3f} -> {'PASS' if max(still) < 1 else 'FAIL'}",
            "photos: whole (no cropping), own shape (no stretching), none repeated -> PASS",
            "variety: no two photos of the same kind back to back -> PASS"]
     if cfg["style"] == "pile":
         rep.append("overlap: every photo lands at the same area as the one it covers, never smaller -> PASS")
-        rep.append(f"screen filled: {cover[3]:.0%} after 4 photos, {cover[-1]:.0%} at the end")
+        rep.append(f"screen filled: {cover[3]:.0%} after 4 photos, {cover[-1]:.0%} at the end"
+                   + (f" (photos stay above y={bot} so the background's stickers show)" if "bottom_px" in p else ""))
         if p.get("final_center"):
             x, y, fw, fh = boxes[-1]
             rep.append(f"finale: {order[-1]} centred (box centre {x + fw / 2:.0f}, {y + fh / 2:.0f} on a {W} x {H} screen)")
@@ -234,10 +266,11 @@ def main():
     rows = (len(frames8) + cols - 1) // cols
     sheet = Image.new("RGB", (cols * (tw + 10) + 10, rows * (th + 28) + 10), (30, 26, 26))
     dr = ImageDraw.Draw(sheet)
-    for i, fr in enumerate(frames8):
-        x, y = 10 + (i % cols) * (tw + 10), 10 + (i // cols) * (th + 28)
+    for n, fr in enumerate(frames8):
+        x, y = 10 + (n % cols) * (tw + 10), 10 + (n // cols) * (th + 28)
         sheet.paste(Image.fromarray(fr).resize((tw, th)), (x, y))
-        dr.text((x, y + th + 4), f"{i + 1}. {starts[i] / fps:.2f}s {kinds.get(order[i], '')}", fill=(235, 225, 225), font=font(12))
+        s0, i = sheet_lbl[n]
+        dr.text((x, y + th + 4), f"{n + 1}. {s0 / fps:.2f}s " + ("clear" if i is None else kinds.get(order[i], "")), fill=(235, 225, 225), font=font(12))
     sheet.save(os.path.join(outdir, f"{cfg['version']}_sequence.jpg"), quality=88)
     print("\n".join(rep[:8]))
 
