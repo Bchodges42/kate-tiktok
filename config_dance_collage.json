@@ -1,0 +1,181 @@
+{
+ "name": "dance",
+ "version": "dance_disco_collage",
+ "vibe": "70s disco, Studio 54, sequins, glitter",
+ "fps": 30,
+ "size": [
+  1080,
+  1920
+ ],
+ "bpm": 120,
+ "photos_per_beat": 2,
+ "_tempo_comment": "120 BPM (disco tempo), a photo on every half beat (0.25 s); ends on a bar line. No song: main MP4 has a kick + hi-hat beat guide, _silent.mp4 is for posting with any TikTok sound.",
+ "style": "pile",
+ "background": {
+  "checker": [
+   "#1B0E2B",
+   "#2C1647"
+  ],
+  "size": 120
+ },
+ "margin_px": 30,
+ "grade": {
+  "warmth": 0.01,
+  "lift": 4,
+  "saturation": 1.03,
+  "grain": 2.0,
+  "grain_seed": 7
+ },
+ "pile": {
+  "area_frac": 0.3,
+  "border_px": 20,
+  "border": [
+   "#D4AF37",
+   "#C9CCD3",
+   "#E8A39A"
+  ],
+  "shadow": 0.45,
+  "spots": [
+   [
+    330,
+    430
+   ],
+   [
+    760,
+    620
+   ],
+   [
+    320,
+    1020
+   ],
+   [
+    770,
+    1200
+   ],
+   [
+    340,
+    1520
+   ],
+   [
+    740,
+    1480
+   ],
+   [
+    560,
+    860
+   ],
+   [
+    540,
+    1300
+   ]
+  ],
+  "final_center": true,
+  "final_scale": 1.3,
+  "_look": "dark light-up dance-floor checker (midnight purple and black); metallic borders rotating gold, silver, rose gold; the last photo lands dead centre, 1.3x bigger"
+ },
+ "images_dir": "images",
+ "images": {
+  "dance-studio-54-crowd": {
+   "kind": "crowd"
+  },
+  "dance-boombox-glitter-hand": {
+   "kind": "object"
+  },
+  "dance-blurred-dancers-dark": {
+   "kind": "dancers"
+  },
+  "dance-red-lights-club": {
+   "kind": "crowd"
+  },
+  "dance-star-eye-makeup": {
+   "kind": "beauty"
+  },
+  "dance-window-silhouettes": {
+   "kind": "silhouette"
+  },
+  "dance-platform-boots": {
+   "kind": "legs"
+  },
+  "dance-champagne-toast": {
+   "kind": "object"
+  },
+  "dance-sequin-dress-blur": {
+   "kind": "outfit"
+  },
+  "dance-motion-blur-dancers": {
+   "kind": "dancers"
+  },
+  "dance-light-up-floor": {
+   "kind": "place"
+  },
+  "dance-disco-ball-dancers": {
+   "kind": "crowd"
+  },
+  "dance-peace-prints": {
+   "kind": "art"
+  },
+  "dance-gold-fringe-dancer": {
+   "kind": "outfit"
+  },
+  "dance-headphones-dancing": {
+   "kind": "portrait"
+  },
+  "dance-chandelier-glam": {
+   "kind": "place"
+  },
+  "dance-go-go-girls-red": {
+   "kind": "retro"
+  },
+  "dance-hair-flip-heels": {
+   "kind": "dancers"
+  },
+  "dance-spinning-record": {
+   "kind": "object"
+  },
+  "dance-disco-dancers-group": {
+   "kind": "crowd"
+  },
+  "dance-glitter-palette": {
+   "kind": "beauty"
+  },
+  "dance-sequin-singers": {
+   "kind": "performers"
+  },
+  "dance-tinsel-silhouette": {
+   "kind": "silhouette"
+  },
+  "dance-sequin-flares-row": {
+   "kind": "legs"
+  },
+  "dance-studio-54-dancer": {
+   "kind": "dancers"
+  }
+ },
+ "order": [
+  "dance-studio-54-crowd",
+  "dance-boombox-glitter-hand",
+  "dance-blurred-dancers-dark",
+  "dance-red-lights-club",
+  "dance-star-eye-makeup",
+  "dance-window-silhouettes",
+  "dance-platform-boots",
+  "dance-champagne-toast",
+  "dance-sequin-dress-blur",
+  "dance-motion-blur-dancers",
+  "dance-light-up-floor",
+  "dance-disco-ball-dancers",
+  "dance-peace-prints",
+  "dance-gold-fringe-dancer",
+  "dance-headphones-dancing",
+  "dance-chandelier-glam",
+  "dance-go-go-girls-red",
+  "dance-hair-flip-heels",
+  "dance-spinning-record",
+  "dance-disco-dancers-group",
+  "dance-glitter-palette",
+  "dance-sequin-singers",
+  "dance-tinsel-silhouette",
+  "dance-sequin-flares-row",
+  "dance-studio-54-dancer"
+ ]
+}

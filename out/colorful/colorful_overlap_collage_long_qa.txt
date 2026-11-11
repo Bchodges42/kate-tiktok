@@ -1,0 +1,49 @@
+150 BPM steady, one photo per beat (0.400 s), 39 photos, 40 beats = 16.00 s, ends on a bar line
+beat sync: worst offset 0.00 frames -> PASS
+stillness: max held-frame diff 0.905 -> PASS
+photos: whole (no cropping), own shape (no stretching), none repeated -> PASS
+variety: no two photos of the same kind back to back -> PASS
+overlap: every photo lands at the same area as the one it covers, never smaller -> PASS
+screen filled: 77% after 4 photos, 91% at the end
+finale: colorful-pop-art-tigers centred (box centre 540, 960 on a 1080 x 1920 screen)
+soft sources (under 500 px): colorful-horse-swim-lake
+
+ 1.   0.00s  eye       colorful-pink-eye-teal-lashes
+ 2.   0.40s  legs      colorful-red-tights-heels
+ 3.   0.80s  shoes     colorful-floral-mules
+ 4.   1.20s  outfit    colorful-pink-tweed-staircase
+ 5.   1.60s  legs      colorful-red-tights-triptych
+ 6.   2.00s  scene     colorful-horse-swim-lake
+ 7.   2.40s  legs      colorful-monsters-colour-legs
+ 8.   2.80s  shoes     colorful-polka-dot-boots
+ 9.   3.20s  beauty    colorful-gem-hair-clip
+10.   3.60s  outfit    colorful-pink-tights-polka-skirt
+11.   4.00s  texture   colorful-jewelled-boxes
+12.   4.40s  beauty    colorful-glitter-lips
+13.   4.80s  scene     colorful-disco-floor
+14.   5.20s  shoes     colorful-brocade-boots-bed
+15.   5.60s  legs      colorful-coloured-tights-bench
+16.   6.00s  outfit    colorful-runway-graphic-tee
+17.   6.40s  texture   colorful-sari-fabrics
+18.   6.80s  rack      colorful-sequin-rack
+19.   7.20s  beauty    colorful-eyeshadow-palette
+20.   7.60s  legs      colorful-sitting-legs-polka
+21.   8.00s  shoes     colorful-embroidered-boots-box
+22.   8.40s  outfit    colorful-beetle-cardigan-plaid
+23.   8.80s  scene     colorful-street-trio-tights
+24.   9.20s  art       colorful-polka-dot-chair-girl
+25.   9.60s  texture   colorful-sequin-paillettes
+26.  10.00s  portrait  colorful-yellow-sunglasses
+27.  10.40s  clothes   colorful-embroidered-pink-jeans
+28.  10.80s  still-life colorful-tulips-garden-books
+29.  11.20s  beauty    colorful-glitter-fingertips
+30.  11.60s  scene     colorful-bathroom-getting-ready
+31.  12.00s  shoes     colorful-embroidered-denim-boots
+32.  12.40s  legs      colorful-painted-tights-legs
+33.  12.80s  outfit    colorful-mirror-selfie-fur
+34.  13.20s  object    colorful-striped-vespa
+35.  13.60s  art       colorful-painted-pink-horses
+36.  14.00s  texture   colorful-jewelled-bangles
+37.  14.40s  eye       colorful-red-lash-eye
+38.  14.80s  rack      colorful-fur-rack-heels
+39.  15.20s  art       colorful-pop-art-tigers

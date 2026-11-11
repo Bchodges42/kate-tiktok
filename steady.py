@@ -60,9 +60,12 @@ def main():
         if kinds.get(a) and kinds.get(a) == kinds.get(b):
             errs.append(f"two {kinds[a]} photos back to back: {a}, {b}")
 
-    # ---- beat grid: photo i lands on beat i; the last photo holds to the end of the bar
-    spb = 60.0 / bpm
-    total_beats = int(math.ceil(len(order) / 4.0) * 4) if cfg.get("end_on_bar", True) else len(order)
+    # ---- beat grid: photo i lands on step i (a beat, or a half beat with "photos_per_beat": 2);
+    # the last photo holds to the end of the bar
+    ppb = cfg.get("photos_per_beat", 1)
+    spb = 60.0 / bpm / ppb  # seconds per photo step
+    bar = 4 * ppb
+    total_beats = int(math.ceil(len(order) / bar) * bar) if cfg.get("end_on_bar", True) else len(order)  # in steps
     starts = [int(round(i * spb * fps)) for i in range(len(order))]
     N = int(round(total_beats * spb * fps))
     ends = starts[1:] + [N]
@@ -118,6 +121,12 @@ def main():
                 h = H - 2 * m - 2 * bord; w = h * r
             w, h = int(round(w)), int(round(h))
             cx, cy = spots[i % len(spots)]
+            if p.get("final_center") and i == len(order) - 1:
+                # finale: dead centre of the screen, a little bigger than the rest (never smaller)
+                g = p.get("final_scale", 1.0)
+                g = min(g, (W - 2 * m - 2 * bord) / w, (H - 2 * m - 2 * bord) / h)
+                w, h = int(round(w * g)), int(round(h * g))
+                cx, cy = W / 2, H / 2
             fw, fh = w + 2 * bord, h + 2 * bord
             x = int(min(max(cx - fw / 2, m), W - m - fw))
             y = int(min(max(cy - fh / 2, m), H - m - fh))
@@ -151,7 +160,7 @@ def main():
         audio = os.path.join(ROOT, cfg["song"])
     else:
         audio = os.path.join(outdir, f"{cfg['version']}_beat.wav")
-        beat_guide(audio, bpm, total_beats)
+        beat_guide(audio, bpm, total_beats // ppb)
     cmd = ["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(fps),
            "-i", "-", "-i", audio, "-map", "0:v", "-map", "1:a", "-c:v", "libx264", "-profile:v", "high",
            "-pix_fmt", "yuv420p", "-crf", "18", "-preset", "veryfast", "-c:a", "aac", "-b:a", "192k",
@@ -178,7 +187,7 @@ def main():
         hit = max(range(max(f - 3, 1), min(f + 4, len(F))), key=lambda j: d[j - 1])
         offs.append(abs(hit - i * spb * fps))
     still = [d[f - 1] for s0, s1 in zip(starts, ends) for f in range(s0 + 1, s1) if f < len(F)]
-    rep = [f"{bpm} BPM steady, one photo per beat ({spb:.3f} s), {len(order)} photos, {total_beats} beats = {N / fps:.2f} s, ends on a bar line",
+    rep = [f"{bpm} BPM steady, one photo per {'beat' if ppb == 1 else f'1/{ppb} beat'} ({spb:.3f} s), {len(order)} photos, {total_beats / ppb:g} beats = {N / fps:.2f} s, ends on a bar line",
            f"beat sync: worst offset {max(offs):.2f} frames -> {'PASS' if max(offs) <= 1 else 'FAIL'}",
            f"stillness: max held-frame diff {max(still):.3f} -> {'PASS' if max(still) < 1 else 'FAIL'}",
            "photos: whole (no cropping), own shape (no stretching), none repeated -> PASS",
@@ -186,6 +195,9 @@ def main():
     if cfg["style"] == "pile":
         rep.append("overlap: every photo lands at the same area as the one it covers, never smaller -> PASS")
         rep.append(f"screen filled: {cover[3]:.0%} after 4 photos, {cover[-1]:.0%} at the end")
+        if p.get("final_center"):
+            x, y, fw, fh = boxes[-1]
+            rep.append(f"finale: {order[-1]} centred (box centre {x + fw / 2:.0f}, {y + fh / 2:.0f} on a {W} x {H} screen)")
     else:
         rep.append(f"screen filled per photo: {min(cover):.0%}-{max(cover):.0%} (whole photos; wide ones are shorter)")
     if lowres:
