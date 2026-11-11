@@ -1,0 +1,120 @@
+{
+ "name": "peace",
+ "vibe": "peace, yoga, meditation, soft affirmations",
+ "fps": 30,
+ "size": [
+  1080,
+  1920
+ ],
+ "bpm": 150,
+ "background": "#F4EEE3",
+ "grade": {
+  "warmth": 0.01,
+  "lift": 5,
+  "saturation": 1.0,
+  "grain": 2.0,
+  "grain_seed": 7
+ },
+ "_tempo_comment": "steady 150 BPM, one photo per beat (0.40 s = exactly 12 frames); ends on a bar line so it loops. No song given: the main MP4 has a plain kick-drum beat guide, the _silent.mp4 is for posting with a TikTok sound at this tempo. Add \"song\": \"audio/<file>.wav\" to cut to a real track.",
+ "images_dir": "images",
+ "images": {
+  "peace-friends-praying": {
+   "kind": "people"
+  },
+  "peace-body-mind-yoga": {
+   "kind": "text"
+  },
+  "peace-painted-backbend": {
+   "kind": "art"
+  },
+  "peace-gratitude-abundance": {
+   "kind": "text"
+  },
+  "peace-lotus-silhouette-art": {
+   "kind": "art"
+  },
+  "peace-people-for-peace-sign": {
+   "kind": "text"
+  },
+  "peace-dancer-pose-drawing": {
+   "kind": "art"
+  },
+  "peace-river-headstand": {
+   "kind": "yoga"
+  },
+  "peace-choose-peace-text": {
+   "kind": "text"
+  },
+  "peace-lake-warrior-pose": {
+   "kind": "yoga"
+  },
+  "peace-om-painting": {
+   "kind": "art"
+  },
+  "peace-lakeside-meditation": {
+   "kind": "nature"
+  },
+  "peace-everything-will-work-out": {
+   "kind": "text"
+  },
+  "peace-temple-silhouette-pose": {
+   "kind": "yoga"
+  },
+  "peace-glowing-hands": {
+   "kind": "nature"
+  },
+  "peace-i-am-lucky-text": {
+   "kind": "text"
+  },
+  "peace-rainbow-aura": {
+   "kind": "art"
+  },
+  "peace-sunset-prayer": {
+   "kind": "people"
+  },
+  "peace-lotus-glow": {
+   "kind": "art"
+  },
+  "peace-shadow-poses": {
+   "kind": "yoga"
+  },
+  "peace-sunbeam-blossoms": {
+   "kind": "nature"
+  },
+  "peace-actually-i-can": {
+   "kind": "text"
+  },
+  "peace-peace-sign-green": {
+   "kind": "art"
+  }
+ },
+ "order": [
+  "peace-friends-praying",
+  "peace-body-mind-yoga",
+  "peace-painted-backbend",
+  "peace-gratitude-abundance",
+  "peace-lotus-silhouette-art",
+  "peace-people-for-peace-sign",
+  "peace-dancer-pose-drawing",
+  "peace-river-headstand",
+  "peace-choose-peace-text",
+  "peace-lake-warrior-pose",
+  "peace-om-painting",
+  "peace-lakeside-meditation",
+  "peace-everything-will-work-out",
+  "peace-temple-silhouette-pose",
+  "peace-glowing-hands",
+  "peace-i-am-lucky-text",
+  "peace-rainbow-aura",
+  "peace-sunset-prayer",
+  "peace-lotus-glow",
+  "peace-shadow-poses",
+  "peace-sunbeam-blossoms",
+  "peace-actually-i-can",
+  "peace-peace-sign-green"
+ ],
+ "version": "peace_one_at_a_time",
+ "style": "single",
+ "margin_px": 40,
+ "center_y": 0.5
+}

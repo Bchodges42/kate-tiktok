@@ -1,0 +1,32 @@
+150 BPM steady, one photo per beat (0.400 s), 24 photos, 24 beats = 9.60 s, ends on a bar line
+beat sync: worst offset 0.00 frames -> PASS
+stillness: max held-frame diff 0.042 -> PASS
+photos: whole (no cropping), own shape (no stretching), none repeated -> PASS
+variety: no two photos of the same kind back to back -> PASS
+screen filled per photo: 27%-72% (whole photos; wide ones are shorter)
+soft sources (under 500 px): tbm-ukulele-water, tbm-slumber-party-dance, tbm-surf-wave-closeup
+
+ 1.   0.00s  portrait  tbm-singer-red-lips
+ 2.   0.40s  beach     tbm-surfboard-boys-shore
+ 3.   0.80s  scene     tbm-curlers-lipstick
+ 4.   1.20s  beach     tbm-newspaper-beach-chairs
+ 5.   1.60s  scene     tbm-diner-dance-number
+ 6.   2.00s  object    tbm-pastel-nighties-rack
+ 7.   2.40s  beach     tbm-palm-surf-path
+ 8.   2.80s  scene     tbm-greaser-crowd
+ 9.   3.20s  beach     tbm-sunset-beach-dancing
+10.   3.60s  surf      tbm-surfers-from-above
+11.   4.00s  beach     tbm-beach-dance-silhouettes
+12.   4.40s  object    tbm-wet-side-story-poster
+13.   4.80s  scene     tbm-curlers-mirror-girls
+14.   5.20s  object    tbm-ukulele-water
+15.   5.60s  surf      tbm-vintage-surfer-wave
+16.   6.00s  beach     tbm-surfboard-car-70s
+17.   6.40s  place     tbm-disco-ball-surf-shack
+18.   6.80s  portrait  tbm-pink-bedroom-teddy
+19.   7.20s  place     tbm-beach-signpost
+20.   7.60s  scene     tbm-slumber-party-dance
+21.   8.00s  surf      tbm-surf-wave-closeup
+22.   8.40s  object    tbm-motorbike-beach
+23.   8.80s  place     tbm-surf-shop-hut
+24.   9.20s  beach     tbm-convertible-surf-beach

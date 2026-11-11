@@ -1,0 +1,32 @@
+150 BPM steady, one photo per beat (0.400 s), 23 photos, 24 beats = 9.60 s, ends on a bar line
+beat sync: worst offset 0.00 frames -> PASS
+stillness: max held-frame diff 0.827 -> PASS
+photos: whole (no cropping), own shape (no stretching), none repeated -> PASS
+variety: no two photos of the same kind back to back -> PASS
+overlap: every photo lands at the same area as the one it covers, never smaller -> PASS
+screen filled: 73% after 4 photos, 90% at the end
+soft sources (under 500 px): peace-om-painting
+
+ 1.   0.00s  people    peace-friends-praying
+ 2.   0.40s  text      peace-body-mind-yoga
+ 3.   0.80s  art       peace-painted-backbend
+ 4.   1.20s  text      peace-gratitude-abundance
+ 5.   1.60s  art       peace-lotus-silhouette-art
+ 6.   2.00s  text      peace-people-for-peace-sign
+ 7.   2.40s  art       peace-dancer-pose-drawing
+ 8.   2.80s  yoga      peace-river-headstand
+ 9.   3.20s  text      peace-choose-peace-text
+10.   3.60s  yoga      peace-lake-warrior-pose
+11.   4.00s  art       peace-om-painting
+12.   4.40s  nature    peace-lakeside-meditation
+13.   4.80s  text      peace-everything-will-work-out
+14.   5.20s  yoga      peace-temple-silhouette-pose
+15.   5.60s  nature    peace-glowing-hands
+16.   6.00s  text      peace-i-am-lucky-text
+17.   6.40s  art       peace-rainbow-aura
+18.   6.80s  people    peace-sunset-prayer
+19.   7.20s  art       peace-lotus-glow
+20.   7.60s  yoga      peace-shadow-poses
+21.   8.00s  nature    peace-sunbeam-blossoms
+22.   8.40s  text      peace-actually-i-can
+23.   8.80s  art       peace-peace-sign-green
