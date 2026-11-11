@@ -67,22 +67,37 @@ def main():
     N = int(round(total_beats * spb * fps))
     ends = starts[1:] + [N]
 
-    bg = np.empty((H, W, 3), np.float32)
-    bg[:] = hex_rgb(cfg["background"])
+    def make_bg(spec):
+        """A solid colour ("#RRGGBB") or {"checker": [c1, c2], "size": px}."""
+        b = np.empty((H, W, 3), np.float32)
+        if isinstance(spec, dict) and "checker" in spec:
+            c1, c2 = (np.array(hex_rgb(c), np.float32) for c in spec["checker"])
+            sz = spec.get("size", 90)
+            yy, xx = np.mgrid[0:H, 0:W]
+            b[:] = np.where((((xx // sz) + (yy // sz)) % 2 == 0)[..., None], c1, c2)
+        else:
+            b[:] = hex_rgb(spec)
+        return b
+    bg = make_bg(cfg["background"])
     srcs = {k: load_source(cfg, k)[0] for k in order}
     lowres = [k for k in order if max(srcs[k].size) < 500]
     plates, boxes, cover = [], [], []
     m = cfg.get("margin_px", 40)
 
     if cfg["style"] == "single":
-        for k in order:
+        bord = cfg.get("border_px", 0)
+        bcol = np.array(hex_rgb(cfg.get("border", "#FFFFFF")), np.float32)
+        cyc, every = cfg.get("bg_cycle"), cfg.get("bg_every", 4)  # e.g. a new background colour every bar
+        for i, k in enumerate(order):
             im = srcs[k]
-            s = min((W - 2 * m) / im.width, (H - 2 * m) / im.height)
+            s = min((W - 2 * m - 2 * bord) / im.width, (H - 2 * m - 2 * bord) / im.height)
             w, h = int(round(im.width * s)), int(round(im.height * s))
-            x, y = (W - w) // 2, int(round((H - h) * cfg.get("center_y", 0.5)))
-            c = bg.copy()
-            c[y:y + h, x:x + w] = grade(np.asarray(im.resize((w, h), Image.LANCZOS)), cfg["grade"])
-            plates.append(c); boxes.append((x, y, w, h)); cover.append(w * h / (W * H))
+            fw, fh = w + 2 * bord, h + 2 * bord
+            x, y = (W - fw) // 2, int(round((H - fh) * cfg.get("center_y", 0.5)))
+            c = make_bg(cyc[(i // every) % len(cyc)]) if cyc else bg.copy()
+            c[y:y + fh, x:x + fw] = bcol
+            c[y + bord:y + bord + h, x + bord:x + bord + w] = grade(np.asarray(im.resize((w, h), Image.LANCZOS)), cfg["grade"])
+            plates.append(c); boxes.append((x, y, fw, fh)); cover.append(fw * fh / (W * H))
     else:  # pile
         p = cfg["pile"]
         bord = p.get("border_px", 14)
@@ -90,7 +105,8 @@ def main():
         fit = min(min((W - 2 * m - 2 * bord) ** 2 * im.height / im.width, (H - 2 * m - 2 * bord) ** 2 * im.width / im.height)
                   for im in srcs.values())
         area = min(p["area_frac"] * W * H, fit)
-        bcol = np.array(hex_rgb(p.get("border", "#FFFFFF")), np.float32)
+        bl = p.get("border", "#FFFFFF")
+        bcols = [np.array(hex_rgb(c), np.float32) for c in (bl if isinstance(bl, list) else [bl])]
         spots = p["spots"]
         canvas = bg.copy()
         for i, k in enumerate(order):
@@ -110,7 +126,7 @@ def main():
             ImageDraw.Draw(sh).rectangle([x + 6, y + 10, x + fw + 6, y + fh + 10], fill=int(255 * p.get("shadow", 0.35)))
             a = np.asarray(sh.filter(ImageFilter.GaussianBlur(14)), np.float32)[..., None] / 255
             canvas = canvas * (1 - a)
-            canvas[y:y + fh, x:x + fw] = bcol
+            canvas[y:y + fh, x:x + fw] = bcols[i % len(bcols)]
             canvas[y + bord:y + bord + h, x + bord:x + bord + w] = grade(np.asarray(im.resize((w, h), Image.LANCZOS)), cfg["grade"])
             plates.append(canvas.copy()); boxes.append((x, y, fw, fh))
             cov = np.zeros((H, W), bool)
