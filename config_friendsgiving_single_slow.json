@@ -1,0 +1,250 @@
+{
+ "name": "friendsgiving",
+ "vibe": "Friendsgiving: parade morning, autumn outfits, candlelit tables, pies, cheers, card games",
+ "fps": 30,
+ "size": [
+  1080,
+  1920
+ ],
+ "grade": {
+  "warmth": 0.03,
+  "lift": 4,
+  "saturation": 1.0,
+  "grain": 2.0,
+  "grain_seed": 7
+ },
+ "images_dir": "images",
+ "version": "toile_one_at_a_time_dissolve_slow",
+ "bpm": 120,
+ "style": "single",
+ "_tempo_comment": "steady 120 BPM (slowed from 150), one photo per beat (0.50 s = 15 frames). Each photo dissolves in over 6 frames (0.20 s) and is fully in place exactly on its beat, then holds still for 9 frames. No song: main MP4 has a plain kick beat guide, _silent.mp4 is for posting with any TikTok sound around 120 BPM.",
+ "background": {
+  "image": "images/fg-bg-turkey-toile.jpg"
+ },
+ "_background": "the user's brown turkey-and-pumpkin toile (1080x1920, used as is)",
+ "margin_px": 80,
+ "border_px": 6,
+ "border": "#F4E8D6",
+ "dissolve_frames": 6,
+ "_look": "each photo centred with a thin 6 px cream border on the toile (was 14 px)",
+ "_order": "hook: Macy's parade turkey float; story runs parade morning -> outfits -> food and drinks -> candlelit tables -> games -> party night; ends on the candlelit fireplace dinner. No two photos of the same kind back to back (including around the loop). 49 of the board's 50 pins: scarf-denim-autumn-walk left out because it carries another creator's TikTok watermark.",
+ "_crops": "card-game-dark: trims a flat black scan border (35 px left, 18 px right, 3 px top); candlelit-dinner-crowd: trims a black border (2 px left, 10 px right). No picture content removed. candle-fireplace-dinner: trims the bottom 82 px, which carry Instagram's profile and mute icons from a screenshot.",
+ "images": {
+  "fg-macys-parade-turkey-float": {
+   "kind": "parade"
+  },
+  "fg-red-cape-autumn-road": {
+   "kind": "outfit"
+  },
+  "fg-macys-parade-snoopy": {
+   "kind": "parade"
+  },
+  "fg-plaid-maxi-skirt-leather-jacket": {
+   "kind": "outfit"
+  },
+  "fg-parade-aerial-autumn-park": {
+   "kind": "parade"
+  },
+  "fg-autumn-moon-hills": {
+   "kind": "place"
+  },
+  "fg-brown-jacket-flare-jeans": {
+   "kind": "outfit"
+  },
+  "fg-marshmallow-bonfire": {
+   "kind": "party"
+  },
+  "fg-plaid-skirt-black-knit": {
+   "kind": "outfit"
+  },
+  "fg-dried-orange-garland-decor": {
+   "kind": "decor"
+  },
+  "fg-roast-turkey-oranges": {
+   "kind": "food"
+  },
+  "fg-paper-chain-kitchen": {
+   "kind": "party"
+  },
+  "fg-pumpkin-soup-bread": {
+   "kind": "food"
+  },
+  "fg-garland-fireplace-candles": {
+   "kind": "decor"
+  },
+  "fg-grape-cheese-board": {
+   "kind": "food"
+  },
+  "fg-pink-cocktail-cheers": {
+   "kind": "drinks"
+  },
+  "fg-roast-chicken-table-overhead": {
+   "kind": "food"
+  },
+  "fg-long-table-friends": {
+   "kind": "table"
+  },
+  "fg-mac-and-cheese": {
+   "kind": "food"
+  },
+  "fg-orange-slice-cheers": {
+   "kind": "drinks"
+  },
+  "fg-potluck-kitchen-spread": {
+   "kind": "food"
+  },
+  "fg-candlelit-turkey-dinner": {
+   "kind": "table"
+  },
+  "fg-pomegranate-fig-board": {
+   "kind": "food"
+  },
+  "fg-cranberry-martini-cheers": {
+   "kind": "drinks"
+  },
+  "fg-harvest-buffet-candles": {
+   "kind": "food"
+  },
+  "fg-red-candles-pumpkin-table": {
+   "kind": "table"
+  },
+  "fg-appetizer-spread-cake": {
+   "kind": "food"
+  },
+  "fg-library-dinner-party": {
+   "kind": "table"
+  },
+  "fg-pecan-pie-pasta-buffet": {
+   "kind": "food"
+  },
+  "fg-candlelit-toast-blur": {
+   "kind": "drinks"
+  },
+  "fg-lamp-buffet-datestamp": {
+   "kind": "food"
+  },
+  "fg-candlelit-dinner-crowd": {
+   "kind": "table",
+   "crop": [
+    2,
+    0,
+    725,
+    526
+   ]
+  },
+  "fg-pie-table": {
+   "kind": "food"
+  },
+  "fg-pink-lantern-party": {
+   "kind": "party"
+  },
+  "fg-pie-slice-serve": {
+   "kind": "food"
+  },
+  "fg-whipped-cream-mugs": {
+   "kind": "drinks"
+  },
+  "fg-popcorn-candy-bar": {
+   "kind": "food"
+  },
+  "fg-cards-on-table": {
+   "kind": "games"
+  },
+  "fg-cocoa-whipped-cream-bar": {
+   "kind": "drinks"
+  },
+  "fg-board-game-friends": {
+   "kind": "games"
+  },
+  "fg-candlelit-table-wine": {
+   "kind": "table"
+  },
+  "fg-card-game-dark": {
+   "kind": "games",
+   "crop": [
+    35,
+    3,
+    717,
+    548
+   ]
+  },
+  "fg-party-garland-crowd": {
+   "kind": "party"
+  },
+  "fg-cards-pumpkin-coffee-table": {
+   "kind": "games"
+  },
+  "fg-orange-glow-dance": {
+   "kind": "party"
+  },
+  "fg-porch-dinner-night": {
+   "kind": "table"
+  },
+  "fg-cozy-living-room-candles": {
+   "kind": "party"
+  },
+  "fg-tablecloth-signatures": {
+   "kind": "decor"
+  },
+  "fg-candle-fireplace-dinner": {
+   "kind": "table",
+   "crop": [
+    0,
+    0,
+    736,
+    796
+   ]
+  }
+ },
+ "order": [
+  "fg-macys-parade-turkey-float",
+  "fg-red-cape-autumn-road",
+  "fg-macys-parade-snoopy",
+  "fg-plaid-maxi-skirt-leather-jacket",
+  "fg-parade-aerial-autumn-park",
+  "fg-autumn-moon-hills",
+  "fg-brown-jacket-flare-jeans",
+  "fg-marshmallow-bonfire",
+  "fg-plaid-skirt-black-knit",
+  "fg-dried-orange-garland-decor",
+  "fg-roast-turkey-oranges",
+  "fg-paper-chain-kitchen",
+  "fg-pumpkin-soup-bread",
+  "fg-garland-fireplace-candles",
+  "fg-grape-cheese-board",
+  "fg-pink-cocktail-cheers",
+  "fg-roast-chicken-table-overhead",
+  "fg-long-table-friends",
+  "fg-mac-and-cheese",
+  "fg-orange-slice-cheers",
+  "fg-potluck-kitchen-spread",
+  "fg-candlelit-turkey-dinner",
+  "fg-pomegranate-fig-board",
+  "fg-cranberry-martini-cheers",
+  "fg-harvest-buffet-candles",
+  "fg-red-candles-pumpkin-table",
+  "fg-appetizer-spread-cake",
+  "fg-library-dinner-party",
+  "fg-pecan-pie-pasta-buffet",
+  "fg-candlelit-toast-blur",
+  "fg-lamp-buffet-datestamp",
+  "fg-candlelit-dinner-crowd",
+  "fg-pie-table",
+  "fg-pink-lantern-party",
+  "fg-pie-slice-serve",
+  "fg-whipped-cream-mugs",
+  "fg-popcorn-candy-bar",
+  "fg-cards-on-table",
+  "fg-cocoa-whipped-cream-bar",
+  "fg-board-game-friends",
+  "fg-candlelit-table-wine",
+  "fg-card-game-dark",
+  "fg-party-garland-crowd",
+  "fg-cards-pumpkin-coffee-table",
+  "fg-orange-glow-dance",
+  "fg-porch-dinner-night",
+  "fg-cozy-living-room-candles",
+  "fg-tablecloth-signatures",
+  "fg-candle-fireplace-dinner"
+ ]
+}
