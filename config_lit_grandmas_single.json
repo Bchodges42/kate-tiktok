@@ -1,0 +1,216 @@
+{
+ "name": "lit-grandmas",
+ "vibe": "lit grandmas: dancing, beach days, best friends, fur coats and sunglasses, ending on the user's own porch view",
+ "fps": 30,
+ "size": [
+  1080,
+  1920
+ ],
+ "grade": {
+  "warmth": 0.0,
+  "lift": 4,
+  "saturation": 1.02,
+  "grain": 2.0,
+  "grain_seed": 7
+ },
+ "images_dir": "images",
+ "_order": "hook: sunglasses and tongue out; then dancing, fashion, beach, best friends, cosy home moments; ends on the user's own photo (porch view of the fire pit and mountains), which is in every version as the user asked. No two photos of the same kind back to back, including around the loop. The two pool-lounger shots of the same woman sit far apart.",
+ "_crops": "Trimmed so no white shows: kitchen-dance-striped (3 px white top edge, 2 px right), jump-rope-bw (7 px white top edge), skateboard-floral-suit (2 px left edge), sidewalk-arm-in-arm (bottom 40 px carrying the photographer's copyright watermark). Left out: kitchen-dance-solo, the board's only copy is 249 px and would look blurry.",
+ "images": {
+  "gma-sunglasses-tongue-out": {
+   "kind": "portrait"
+  },
+  "gma-shopping-cart-dance": {
+   "kind": "dance"
+  },
+  "gma-neon-green-subway": {
+   "kind": "fashion"
+  },
+  "gma-surf-trio-beach": {
+   "kind": "beach"
+  },
+  "gma-ice-cream-friends": {
+   "kind": "friends"
+  },
+  "gma-skateboard-floral-suit": {
+   "kind": "play",
+   "crop": [
+    2,
+    0,
+    1168,
+    1752
+   ]
+  },
+  "gma-street-dance-duo": {
+   "kind": "dance"
+  },
+  "gma-baguettes-sunglasses": {
+   "kind": "fashion"
+  },
+  "gma-pool-lounger-stretch": {
+   "kind": "pool"
+  },
+  "gma-crosswalk-arm-in-arm": {
+   "kind": "friends"
+  },
+  "gma-silver-grills-smile": {
+   "kind": "portrait"
+  },
+  "gma-marsh-hug-dance": {
+   "kind": "dance"
+  },
+  "gma-leopard-coat-shopping": {
+   "kind": "fashion"
+  },
+  "gma-plaid-swimsuit-beach": {
+   "kind": "beach"
+  },
+  "gma-mirror-selfie-sunglasses": {
+   "kind": "friends"
+  },
+  "gma-hands-dumplings": {
+   "kind": "closeup"
+  },
+  "gma-rollers-baby-kitchen": {
+   "kind": "family"
+  },
+  "gma-piano-duet": {
+   "kind": "cozy"
+  },
+  "gma-couple-wine-laughing": {
+   "kind": "couple"
+  },
+  "gma-jump-rope-bw": {
+   "kind": "play",
+   "crop": [
+    0,
+    7,
+    338,
+    500
+   ]
+  },
+  "gma-fur-coat-pink-bag": {
+   "kind": "fashion"
+  },
+  "gma-kitchen-dance-striped": {
+   "kind": "dance",
+   "crop": [
+    0,
+    3,
+    343,
+    465
+   ]
+  },
+  "gma-cocktails-ship-painting": {
+   "kind": "friends"
+  },
+  "gma-garden-sniff-roses": {
+   "kind": "outdoors"
+  },
+  "gma-mobility-scooter-furs": {
+   "kind": "fashion"
+  },
+  "gma-beach-waves-grandson": {
+   "kind": "beach"
+  },
+  "gma-silver-rings-wine": {
+   "kind": "portrait"
+  },
+  "gma-doorway-kitchen-dance": {
+   "kind": "dance"
+  },
+  "gma-red-sofa-blankets": {
+   "kind": "cozy"
+  },
+  "gma-reading-tent-grandkids": {
+   "kind": "family"
+  },
+  "gma-leopard-cigarette-bench": {
+   "kind": "fashion"
+  },
+  "gma-pool-lounger-sun": {
+   "kind": "pool"
+  },
+  "gma-hands-holding-close": {
+   "kind": "closeup"
+  },
+  "gma-sidewalk-arm-in-arm": {
+   "kind": "friends",
+   "crop": [
+    0,
+    0,
+    455,
+    600
+   ]
+  },
+  "gma-tree-hug-forest": {
+   "kind": "outdoors"
+  },
+  "gma-doorstep-yellow-cigar": {
+   "kind": "fashion"
+  },
+  "gma-bed-cuddle-laughing": {
+   "kind": "couple"
+  },
+  "gma-knitting-stone-wall": {
+   "kind": "cozy"
+  },
+  "gma-sunset-phone-photo": {
+   "kind": "beach"
+  },
+  "gma-user-porch-mountain-firepit": {
+   "kind": "place"
+  }
+ },
+ "order": [
+  "gma-sunglasses-tongue-out",
+  "gma-shopping-cart-dance",
+  "gma-neon-green-subway",
+  "gma-surf-trio-beach",
+  "gma-ice-cream-friends",
+  "gma-skateboard-floral-suit",
+  "gma-street-dance-duo",
+  "gma-baguettes-sunglasses",
+  "gma-pool-lounger-stretch",
+  "gma-crosswalk-arm-in-arm",
+  "gma-silver-grills-smile",
+  "gma-marsh-hug-dance",
+  "gma-leopard-coat-shopping",
+  "gma-plaid-swimsuit-beach",
+  "gma-mirror-selfie-sunglasses",
+  "gma-hands-dumplings",
+  "gma-rollers-baby-kitchen",
+  "gma-piano-duet",
+  "gma-couple-wine-laughing",
+  "gma-jump-rope-bw",
+  "gma-fur-coat-pink-bag",
+  "gma-kitchen-dance-striped",
+  "gma-cocktails-ship-painting",
+  "gma-garden-sniff-roses",
+  "gma-mobility-scooter-furs",
+  "gma-beach-waves-grandson",
+  "gma-silver-rings-wine",
+  "gma-doorway-kitchen-dance",
+  "gma-red-sofa-blankets",
+  "gma-reading-tent-grandkids",
+  "gma-leopard-cigarette-bench",
+  "gma-pool-lounger-sun",
+  "gma-hands-holding-close",
+  "gma-sidewalk-arm-in-arm",
+  "gma-tree-hug-forest",
+  "gma-doorstep-yellow-cigar",
+  "gma-bed-cuddle-laughing",
+  "gma-knitting-stone-wall",
+  "gma-sunset-phone-photo",
+  "gma-user-porch-mountain-firepit"
+ ],
+ "version": "yellow_one_at_a_time",
+ "bpm": 120,
+ "style": "single",
+ "background": "#FFF1B8",
+ "margin_px": 70,
+ "border_px": 8,
+ "border": "#D9482B",
+ "_look": "light butter-yellow background, each photo centred with a thin 8 px tomato-red border",
+ "_tempo_comment": "steady 120 BPM, one photo per beat (0.50 s = 15 frames), hard cuts, 20 s. No song: main MP4 has a plain kick beat guide; _silent.mp4 is for posting with any ~120 BPM TikTok sound."
+}

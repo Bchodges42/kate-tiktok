@@ -1,0 +1,50 @@
+100 BPM steady, one photo per beat (0.600 s), 40 photos, 48 beats = 28.80 s, ends on a bar line; 4 phrases of 10/10/10/10 photos, each cutting straight to the next (no blank screen)
+hard cuts; beat sync: worst offset 0.00 frames -> PASS
+stillness: max held-frame diff 0.050 -> PASS
+photos: whole (no cropping), own shape (no stretching), none repeated -> PASS
+variety: no two photos of the same kind back to back -> PASS
+overlap: every photo lands at the same area as the one it covers, never smaller -> PASS
+screen filled: 67% after 4 photos, 89% at the end
+finale: gma-user-porch-mountain-firepit centred (box centre 540, 960 on a 1080 x 1920 screen)
+soft sources (under 500 px): gma-jump-rope-bw, gma-kitchen-dance-striped, gma-knitting-stone-wall
+
+ 1.   0.00s  portrait  gma-sunglasses-tongue-out
+ 2.   0.60s  dance     gma-shopping-cart-dance
+ 3.   1.20s  fashion   gma-neon-green-subway
+ 4.   1.80s  beach     gma-surf-trio-beach
+ 5.   2.40s  friends   gma-ice-cream-friends
+ 6.   3.00s  play      gma-skateboard-floral-suit
+ 7.   3.60s  dance     gma-street-dance-duo
+ 8.   4.20s  fashion   gma-baguettes-sunglasses
+ 9.   4.80s  pool      gma-pool-lounger-stretch
+10.   5.40s  friends   gma-crosswalk-arm-in-arm
+11.   7.20s  portrait  gma-silver-grills-smile
+12.   7.80s  dance     gma-marsh-hug-dance
+13.   8.40s  fashion   gma-leopard-coat-shopping
+14.   9.00s  beach     gma-plaid-swimsuit-beach
+15.   9.60s  friends   gma-mirror-selfie-sunglasses
+16.  10.20s  closeup   gma-hands-dumplings
+17.  10.80s  family    gma-rollers-baby-kitchen
+18.  11.40s  cozy      gma-piano-duet
+19.  12.00s  couple    gma-couple-wine-laughing
+20.  12.60s  play      gma-jump-rope-bw
+21.  14.40s  fashion   gma-fur-coat-pink-bag
+22.  15.00s  dance     gma-kitchen-dance-striped
+23.  15.60s  friends   gma-cocktails-ship-painting
+24.  16.20s  outdoors  gma-garden-sniff-roses
+25.  16.80s  fashion   gma-mobility-scooter-furs
+26.  17.40s  beach     gma-beach-waves-grandson
+27.  18.00s  portrait  gma-silver-rings-wine
+28.  18.60s  dance     gma-doorway-kitchen-dance
+29.  19.20s  cozy      gma-red-sofa-blankets
+30.  19.80s  family    gma-reading-tent-grandkids
+31.  21.60s  fashion   gma-leopard-cigarette-bench
+32.  22.20s  pool      gma-pool-lounger-sun
+33.  22.80s  closeup   gma-hands-holding-close
+34.  23.40s  friends   gma-sidewalk-arm-in-arm
+35.  24.00s  outdoors  gma-tree-hug-forest
+36.  24.60s  fashion   gma-doorstep-yellow-cigar
+37.  25.20s  couple    gma-bed-cuddle-laughing
+38.  25.80s  cozy      gma-knitting-stone-wall
+39.  26.40s  beach     gma-sunset-phone-photo
+40.  27.00s  place     gma-user-porch-mountain-firepit
