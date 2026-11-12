@@ -1,0 +1,56 @@
+96 BPM steady, one photo per beat (0.625 s), 48 photos, 48 beats = 30.00 s, ends on a bar line
+dissolve: 6 frames (0.20 s) into each photo, finishing on the beat; beat sync: worst offset 0.50 frames -> PASS
+stillness: max held-frame diff 0.557 -> PASS
+photos: whole (no cropping), own shape (no stretching), none repeated -> PASS
+variety: no two photos of the same kind back to back -> PASS
+screen filled per photo: 25%-59% (whole photos; wide ones are shorter)
+soft sources (under 500 px): uni-unicorns-sunset-beach, uni-my-little-pony-meadow
+
+ 1.   0.00s  unicorn   uni-unicorn-pair-forest
+ 2.   0.63s  tattoo    uni-glitter-unicorn-tattoo
+ 3.   1.27s  fashion   uni-pink-fairy-wings-hooks
+ 4.   1.87s  nature    uni-tree-sunbeams
+ 5.   2.50s  fashion   uni-pajama-pants-kids
+ 6.   3.13s  playground uni-backyard-wooden-swingset
+ 7.   3.73s  place     uni-library-tree-reading-nook
+ 8.   4.37s  hair      uni-glitter-roots-hair
+ 9.   5.00s  toys      uni-trading-cards-floor
+10.   5.63s  fashion   uni-purses-hanging-door
+11.   6.27s  tattoo    uni-belly-glitter-tattoo-belt
+12.   6.87s  playground uni-wooden-castle-playground
+13.   7.50s  unicorn   uni-unicorn-mane-flowers
+14.   8.13s  hair      uni-blonde-hair-tinsel
+15.   8.73s  stickers  uni-door-covered-stickers
+16.   9.37s  crafts    uni-rainbow-loom-bands-crafting
+17.  10.00s  beauty    uni-pink-glitter-eyeshadow
+18.  10.63s  tv        uni-yo-gabba-gabba-cast
+19.  11.27s  toys      uni-heart-paint-pony
+20.  11.87s  playground uni-bubbles-backyard-playset
+21.  12.50s  beauty    uni-nail-polish-vanity
+22.  13.13s  fashion   uni-ladybug-rain-boots
+23.  13.73s  tattoo    uni-butterfly-glitter-tattoo
+24.  14.37s  summer    uni-water-balloons-bucket
+25.  15.00s  unicorn   uni-unicorns-sunset-beach
+26.  15.63s  stickers  uni-sticker-sheets
+27.  16.27s  beauty    uni-glossy-lips
+28.  16.87s  toys      uni-pink-play-tent
+29.  17.50s  hair      uni-glitter-hair-part
+30.  18.13s  party     uni-face-paint-birthday-cake
+31.  18.73s  tv        uni-my-little-pony-meadow
+32.  19.37s  fashion   uni-sparkly-butterfly-slippers
+33.  20.00s  party     uni-rainbow-layer-cake
+34.  20.63s  playground uni-trampoline-leaves
+35.  21.27s  beauty    uni-heart-glitter-lip-gloss
+36.  21.87s  party     uni-birthday-balloons-ceiling
+37.  22.50s  hair      uni-rainbow-hair-clips
+38.  23.13s  tattoo    uni-butterfly-glitter-arm
+39.  23.73s  stickers  uni-sticker-gem-pile
+40.  24.37s  unicorn   uni-white-toy-unicorn
+41.  25.00s  beauty    uni-glitter-pink-nails
+42.  25.63s  toys      uni-ball-pit-balls
+43.  26.27s  hair      uni-tinsel-hair-strands
+44.  26.87s  gadgets   uni-pink-mp3-player-cds
+45.  27.50s  tattoo    uni-glitter-hibiscus-tattoos
+46.  28.13s  unicorn   uni-unicorn-crossing-sign
+47.  28.73s  crafts    uni-silly-bandz-pile
+48.  29.37s  beauty    uni-lip-smacker-collection

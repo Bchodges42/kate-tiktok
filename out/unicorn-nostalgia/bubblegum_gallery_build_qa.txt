@@ -1,0 +1,56 @@
+tempo 110.0 BPM, 48 beats-steps, 48 photos, 34.90 s
+beat sync: mean |offset| 0.26 frames, worst 0.45 -> PASS
+stillness: max held-frame diff 0.044 -> PASS
+layout: no photo overlaps or comes within 12px of another, none cropped, none repeated
+spacing: exactly 12px between every pair of neighbouring photos -> PASS
+variety: no two photos of the same kind next to each other -> PASS
+screen filled per group: 87%, 80%, 80%, 80%, 81%, 79%, 78%, 86%
+
+ 1.   0.00s  g1-slide1     uni-lip-smacker-collection
+ 2.   0.55s  g1-slide1     uni-unicorn-crossing-sign
+ 3.   1.09s  g1-slide1     uni-ball-pit-balls
+ 4.   1.64s  g1-slide1     uni-sticker-gem-pile
+ 5.   2.18s  g1-slide1     uni-silly-bandz-pile
+ 6.   2.73s  g1-slide1     uni-butterfly-glitter-arm
+ 7.   4.36s  g2-slide2     uni-my-little-pony-meadow
+ 8.   4.91s  g2-slide2     uni-sparkly-butterfly-slippers
+ 9.   5.45s  g2-slide2     uni-pink-mp3-player-cds
+10.   6.00s  g2-slide2     uni-glitter-hibiscus-tattoos
+11.   6.55s  g2-slide2     uni-glitter-pink-nails
+12.   7.09s  g2-slide2     uni-birthday-balloons-ceiling
+13.   8.73s  g3-slide3     uni-sticker-sheets
+14.   9.27s  g3-slide3     uni-unicorns-sunset-beach
+15.   9.82s  g3-slide3     uni-rainbow-layer-cake
+16.  10.36s  g3-slide3     uni-trampoline-leaves
+17.  10.91s  g3-slide3     uni-tinsel-hair-strands
+18.  11.45s  g3-slide3     uni-glossy-lips
+19.  13.09s  g4-slide4     uni-heart-paint-pony
+20.  13.64s  g4-slide4     uni-water-balloons-bucket
+21.  14.18s  g4-slide4     uni-ladybug-rain-boots
+22.  14.73s  g4-slide4     uni-nail-polish-vanity
+23.  15.27s  g4-slide4     uni-pink-play-tent
+24.  15.82s  g4-slide4     uni-rainbow-hair-clips
+25.  17.45s  g5-slide5     uni-face-paint-birthday-cake
+26.  18.00s  g5-slide5     uni-butterfly-glitter-tattoo
+27.  18.55s  g5-slide5     uni-pink-glitter-eyeshadow
+28.  19.09s  g5-slide5     uni-yo-gabba-gabba-cast
+29.  19.64s  g5-slide5     uni-unicorn-mane-flowers
+30.  20.18s  g5-slide5     uni-heart-glitter-lip-gloss
+31.  21.82s  g6-slide6     uni-library-tree-reading-nook
+32.  22.36s  g6-slide6     uni-door-covered-stickers
+33.  22.91s  g6-slide6     uni-rainbow-loom-bands-crafting
+34.  23.45s  g6-slide6     uni-wooden-castle-playground
+35.  24.00s  g6-slide6     uni-trading-cards-floor
+36.  24.55s  g6-slide6     uni-bubbles-backyard-playset
+37.  26.18s  g7-slide7     uni-belly-glitter-tattoo-belt
+38.  26.73s  g7-slide7     uni-glitter-roots-hair
+39.  27.27s  g7-slide7     uni-backyard-wooden-swingset
+40.  27.82s  g7-slide7     uni-white-toy-unicorn
+41.  28.36s  g7-slide7     uni-tree-sunbeams
+42.  28.91s  g7-slide7     uni-purses-hanging-door
+43.  30.55s  g8-slide8     uni-glitter-unicorn-tattoo
+44.  31.09s  g8-slide8     uni-pink-fairy-wings-hooks
+45.  31.64s  g8-slide8     uni-glitter-hair-part
+46.  32.18s  g8-slide8     uni-pajama-pants-kids
+47.  32.73s  g8-slide8     uni-blonde-hair-tinsel
+48.  33.27s  g8-slide8     uni-unicorn-pair-forest
