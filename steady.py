@@ -4,6 +4,7 @@
     python3 steady.py --config config_peace_single.json
 
   style "single": one whole photo at a time, centred as big as it fits on a solid background.
+                  "dissolve_frames": D blends each photo into the next, finishing exactly on the beat.
   style "pile":   an overlapping collage. Every photo lands on top of the pile at the same area
                   (so a cover is never smaller than what it covers), with a thin border and a soft
                   shadow, cycling through anchor spots that keep the pile balanced on screen.
@@ -216,13 +217,23 @@ def main():
     pr = subprocess.Popen(cmd, stdin=subprocess.PIPE)
     segs = sorted([(s0, pl, i) for i, (s0, pl) in enumerate(zip(starts, plates))] +
                   [(int(round(c * spb * fps)), bg, None) for c in clears], key=lambda t: t[0])
+    # optional cross-dissolve ("dissolve_frames": D): the next photo fades in over the last D
+    # frames before its beat, so it is fully in place exactly on the beat, then holds still
+    D = cfg.get("dissolve_frames", 0)
     frames8, sheet_lbl, hold = [], [], []
     for n, (s0, pl, i) in enumerate(segs):
         s1 = segs[n + 1][0] if n + 1 < len(segs) else N
         fr = np.clip(pl + grain, 0, 255).astype(np.uint8)
-        frames8.append(fr); sheet_lbl.append((s0, i)); hold.append((s0, s1))
-        for _ in range(s0, s1):
-            pr.stdin.write(fr.tobytes())
+        frames8.append(fr); sheet_lbl.append((s0, i))
+        nxt = np.clip(segs[n + 1][1] + grain, 0, 255) if D and n + 1 < len(segs) else None
+        hold.append((s0, s1 - (D if nxt is not None else 0)))
+        for f in range(s0, s1):
+            j = f - (s1 - D)
+            if nxt is not None and j >= 0:
+                a = (j + 1) / (D + 1)
+                pr.stdin.write((fr * (1 - a) + nxt * a + 0.5).astype(np.uint8).tobytes())
+            else:
+                pr.stdin.write(fr.tobytes())
     pr.stdin.close()
     if pr.wait():
         sys.exit("ffmpeg failed")
@@ -237,12 +248,16 @@ def main():
     cut_steps = sorted(step_of[1:] + clears)
     for st in cut_steps:
         f = int(round(st * spb * fps))
-        hit = max(range(max(f - 3, 1), min(f + 4, len(F))), key=lambda j: d[j - 1])
+        if D:  # the landing frame: the first frame after the dissolve that then holds still
+            hit = next((j for j in range(max(f - 3, 1), min(f + 4, len(F) - 1)) if d[j - 1] > 1 and d[j] < 1), f + 99)
+        else:
+            hit = max(range(max(f - 3, 1), min(f + 4, len(F))), key=lambda j: d[j - 1])
         offs.append(abs(hit - st * spb * fps))
     still = [d[f - 1] for s0, s1 in hold for f in range(s0 + 1, s1) if f < len(F)]
     rep = [f"{bpm} BPM steady, one photo per {'beat' if ppb == 1 else f'1/{ppb} beat'} ({spb:.3f} s), {len(order)} photos, {total_beats / ppb:g} beats = {N / fps:.2f} s, ends on a bar line"
            + (f"; {len(ph['sizes'])} phrases of {'/'.join(map(str, ph['sizes']))} photos, each clearing to the background" if ph else ""),
-           f"beat sync: worst offset {max(offs):.2f} frames -> {'PASS' if max(offs) <= 1 else 'FAIL'}",
+           (f"dissolve: {D} frames ({D / fps:.2f} s) into each photo, finishing on the beat; " if D else "hard cuts; ")
+           + f"beat sync: worst offset {max(offs):.2f} frames -> {'PASS' if max(offs) <= 1 else 'FAIL'}",
            f"stillness: max held-frame diff {max(still):.3f} -> {'PASS' if max(still) < 1 else 'FAIL'}",
            "photos: whole (no cropping), own shape (no stretching), none repeated -> PASS",
            "variety: no two photos of the same kind back to back -> PASS"]
