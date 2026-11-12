@@ -15,7 +15,7 @@
  },
  "images_dir": "images",
  "_order": "hook: sunglasses and tongue out; then dancing, fashion, beach, best friends, cosy home moments; ends on the user's own photo (porch view of the fire pit and mountains), which is in every version as the user asked. No two photos of the same kind back to back, including around the loop. The two pool-lounger shots of the same woman sit far apart.",
- "_crops": "Trimmed so no white shows: kitchen-dance-striped (3 px white top edge, 2 px right), jump-rope-bw (7 px white top edge), skateboard-floral-suit (2 px left edge), sidewalk-arm-in-arm (bottom 40 px carrying the photographer's copyright watermark). Left out: kitchen-dance-solo, the board's only copy is 249 px and would look blurry.",
+ "_crops": "Trimmed so no white shows: kitchen-dance-striped (3 px white top edge, 2 px right), jump-rope-bw (7 px white top edge), skateboard-floral-suit (2 px left edge), sidewalk-arm-in-arm (bottom 40 px carrying the photographer's copyright watermark). Left out: kitchen-dance-solo, the board's only copy is 249 px and would look blurry. user-porch-mountain-firepit: top 350 px cropped off (the dark porch roof beam), at the user's request.",
  "images": {
   "gma-sunglasses-tongue-out": {
    "kind": "portrait"
@@ -160,7 +160,13 @@
    "kind": "beach"
   },
   "gma-user-porch-mountain-firepit": {
-   "kind": "place"
+   "kind": "place",
+   "crop": [
+    0,
+    350,
+    1932,
+    2576
+   ]
   }
  },
  "order": [

@@ -181,9 +181,29 @@ def main():
         bord = p.get("border_px", 14)
         bot = p.get("bottom_px", H - m)  # keep photos above this line (e.g. stickers on the background)
         # one area for every photo, capped so even the widest/tallest photo fits on screen at it
-        fit = min(min((W - 2 * m - 2 * bord) ** 2 * im.height / im.width, (bot - m - 2 * bord) ** 2 * im.width / im.height)
-                  for im in srcs.values())
+        # optional static tilt ("tilt": [-4, 3, ...] degrees, cycling): a scrapbook stack; the cap
+        # then keeps the tilted photo's whole outline on screen
+        tilts = p.get("tilt") or [0]
+        ta = math.radians(max(abs(t) for t in tilts)); tc, ts = math.cos(ta), math.sin(ta)
+
+        def fit_of(im):
+            r = im.width / im.height
+            Wm, Hm = W - 2 * m, bot - m
+            # largest photo area A whose bordered, tilted outline still fits Wm x Hm (2 px spare for rounding)
+            e = 2 * bord * (tc + ts) + 4
+            return min(((Wm - e) / (math.sqrt(r) * tc + ts / math.sqrt(r))) ** 2, ((Hm - e) / (math.sqrt(r) * ts + tc / math.sqrt(r))) ** 2)
+
+        fit = min(fit_of(im) for im in srcs.values())
         area = min(p["area_frac"] * W * H, fit)
+        # optional: each phrase gets its own (bigger) area, capped by that phrase's widest/tallest photo
+        starts_ph = sorted(first) + [len(order)]
+        ph_area = {}
+        if p.get("area_per_phrase"):
+            for a0, a1 in zip(starts_ph, starts_ph[1:]):
+                A = min(p["area_frac"] * W * H, min(fit_of(srcs[k]) for k in order[a0:a1]))
+                for j in range(a0, a1):
+                    ph_area[j] = A
+        pre_areas = []
         bl = p.get("border", "#FFFFFF")
         bcols = [np.array(hex_rgb(c), np.float32) for c in (bl if isinstance(bl, list) else [bl])]
         spots = p["spots"]
@@ -195,7 +215,7 @@ def main():
                 boxes_ph = []
             im = srcs[k]
             r = im.width / im.height
-            h = math.sqrt(area / r); w = h * r
+            h = math.sqrt(ph_area.get(i, area) / r); w = h * r
             w = min(w, W - 2 * m - 2 * bord); h = w / r  # a wide photo never runs off the sides
             if h > bot - m - 2 * bord:
                 h = bot - m - 2 * bord; w = h * r
@@ -208,6 +228,29 @@ def main():
                 w, h = int(round(w * g)), int(round(h * g))
                 cx, cy = W / 2, H / 2
             fw, fh = w + 2 * bord, h + 2 * bord
+            pre_areas.append(fw * fh)
+            t = tilts[i % len(tilts)] if not (p.get("final_center") and i == len(order) - 1) else 0
+            if t:  # tilted: compose the bordered photo, rotate it whole, alpha-blend it centred on (cx, cy)
+                tile = Image.new("RGB", (fw, fh), tuple(int(v) for v in bcols[i % len(bcols)]))
+                tile.paste(Image.fromarray(np.clip(grade(np.asarray(im.resize((w, h), Image.LANCZOS)), cfg["grade"]), 0, 255).astype(np.uint8)), (bord, bord))
+                rt = tile.rotate(t, resample=Image.BICUBIC, expand=True)
+                ma = Image.new("L", (fw, fh), 255).rotate(t, resample=Image.BICUBIC, expand=True)
+                bw, bh = rt.size
+                x, y = int(round(cx - bw / 2)), int(round(cy - bh / 2))
+                if x < m or y < m or x + bw > W - m or y + bh > bot:
+                    errs.append(f"{k} tilted runs past the margin")
+                sh = Image.new("L", (W, H), 0)
+                sh.paste(ma.point(lambda v: int(v * p.get("shadow", 0.35))), (x + 6, y + 10))
+                a = np.asarray(sh.filter(ImageFilter.GaussianBlur(14)), np.float32)[..., None] / 255
+                canvas = canvas * (1 - a)
+                al = np.asarray(ma, np.float32)[..., None] / 255
+                canvas[y:y + bh, x:x + bw] = canvas[y:y + bh, x:x + bw] * (1 - al) + np.asarray(rt, np.float32) * al
+                plates.append(canvas.copy()); boxes.append((x, y, bw, bh)); boxes_ph.append((x, y, bw, bh))
+                cov = np.zeros((H, W), bool)
+                for bx, by, bw2, bh2 in boxes_ph:
+                    cov[by:by + bh2, bx:bx + bw2] = True
+                cover.append(cov.mean())
+                continue
             x = int(min(max(cx - fw / 2, m), W - m - fw))
             y = int(min(max(cy - fh / 2, m), bot - fh))
             # soft shadow (static), then the bordered photo
@@ -227,7 +270,7 @@ def main():
             for bx, by, bw, bh in boxes_ph:
                 cov[by:by + bh, bx:bx + bw] = True
             cover.append(cov.mean())
-        areas = [b[2] * b[3] for b in boxes]
+        areas = pre_areas  # photo + border area before any tilt
         for i in range(1, len(areas)):
             if i not in first and areas[i] < 0.97 * areas[i - 1]:
                 errs.append(f"{order[i]} is smaller than the photo it covers")
