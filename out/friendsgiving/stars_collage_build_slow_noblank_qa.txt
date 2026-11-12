@@ -1,0 +1,50 @@
+tempo 110.0 BPM, 42 beats-steps, 42 photos, 30.53 s
+beat sync: mean |offset| 0.26 frames, worst 0.45 -> PASS
+stillness: max held-frame diff 0.033 -> PASS
+layout: no photo overlaps or comes within 12px of another, none cropped, none repeated
+spacing: exactly 12px between every pair of neighbouring photos -> PASS
+variety: no two photos of the same kind next to each other -> PASS
+screen filled per group: 88%, 90%, 94%, 73%, 92%, 74%, 89%
+
+ 1.   0.00s  g1-pair-over-columns fg-long-table-friends
+ 2.   0.55s  g1-pair-over-columns fg-orange-slice-cheers
+ 3.   1.09s  g1-pair-over-columns fg-roast-turkey-oranges
+ 4.   1.64s  g1-pair-over-columns fg-cards-on-table
+ 5.   2.18s  g1-pair-over-columns fg-macys-parade-snoopy
+ 6.   2.73s  g1-pair-over-columns fg-plaid-maxi-skirt-leather-jacket
+ 7.   4.36s  g2-wide-hero-top fg-pink-lantern-party
+ 8.   4.91s  g2-wide-hero-top fg-red-cape-autumn-road
+ 9.   5.45s  g2-wide-hero-top fg-cranberry-martini-cheers
+10.   6.00s  g2-wide-hero-top fg-porch-dinner-night
+11.   6.55s  g2-wide-hero-top fg-pumpkin-soup-bread
+12.   7.09s  g2-wide-hero-top fg-dried-orange-garland-decor
+13.   8.73s  g3-sidebar    fg-brown-jacket-flare-jeans
+14.   9.27s  g3-sidebar    fg-party-garland-crowd
+15.   9.82s  g3-sidebar    fg-autumn-moon-hills
+16.  10.36s  g3-sidebar    fg-grape-cheese-board
+17.  10.91s  g3-sidebar    fg-candlelit-dinner-crowd
+18.  11.45s  g3-sidebar    fg-whipped-cream-mugs
+19.  13.09s  g4-columns-over-wide-base fg-macys-parade-turkey-float
+20.  13.64s  g4-columns-over-wide-base fg-marshmallow-bonfire
+21.  14.18s  g4-columns-over-wide-base fg-potluck-kitchen-spread
+22.  14.73s  g4-columns-over-wide-base fg-library-dinner-party
+23.  15.27s  g4-columns-over-wide-base fg-pink-cocktail-cheers
+24.  15.82s  g4-columns-over-wide-base fg-lamp-buffet-datestamp
+25.  17.45s  g5-zigzag     fg-mac-and-cheese
+26.  18.00s  g5-zigzag     fg-parade-aerial-autumn-park
+27.  18.55s  g5-zigzag     fg-garland-fireplace-candles
+28.  19.09s  g5-zigzag     fg-card-game-dark
+29.  19.64s  g5-zigzag     fg-red-candles-pumpkin-table
+30.  20.18s  g5-zigzag     fg-candlelit-toast-blur
+31.  21.82s  g6-row-of-three-over-hero fg-candlelit-table-wine
+32.  22.36s  g6-row-of-three-over-hero fg-appetizer-spread-cake
+33.  22.91s  g6-row-of-three-over-hero fg-cards-pumpkin-coffee-table
+34.  23.45s  g6-row-of-three-over-hero fg-orange-glow-dance
+35.  24.00s  g6-row-of-three-over-hero fg-tablecloth-signatures
+36.  24.55s  g6-row-of-three-over-hero fg-pomegranate-fig-board
+37.  26.18s  g7-staggered-columns fg-pie-table
+38.  26.73s  g7-staggered-columns fg-cozy-living-room-candles
+39.  27.27s  g7-staggered-columns fg-plaid-skirt-black-knit
+40.  27.82s  g7-staggered-columns fg-board-game-friends
+41.  28.36s  g7-staggered-columns fg-cocoa-whipped-cream-bar
+42.  28.91s  g7-staggered-columns fg-candle-fireplace-dinner

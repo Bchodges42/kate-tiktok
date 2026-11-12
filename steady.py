@@ -77,7 +77,7 @@ def main():
             first.add(i)
             for j in range(size):
                 step_of.append(n * ph["steps"] + j); i += 1
-            if n < len(ph["sizes"]) - 1:
+            if n < len(ph["sizes"]) - 1 and ph["clear_steps"] > 0:  # 0 = no blank screen, the next phrase cuts straight in
                 clears.append((n + 1) * ph["steps"] - ph["clear_steps"])
         total_beats = len(ph["sizes"]) * ph["steps"]
     else:
@@ -255,7 +255,7 @@ def main():
         offs.append(abs(hit - st * spb * fps))
     still = [d[f - 1] for s0, s1 in hold for f in range(s0 + 1, s1) if f < len(F)]
     rep = [f"{bpm} BPM steady, one photo per {'beat' if ppb == 1 else f'1/{ppb} beat'} ({spb:.3f} s), {len(order)} photos, {total_beats / ppb:g} beats = {N / fps:.2f} s, ends on a bar line"
-           + (f"; {len(ph['sizes'])} phrases of {'/'.join(map(str, ph['sizes']))} photos, each clearing to the background" if ph else ""),
+           + (f"; {len(ph['sizes'])} phrases of {'/'.join(map(str, ph['sizes']))} photos, " + ("each clearing to the background" if ph["clear_steps"] else "each cutting straight to the next (no blank screen)") if ph else ""),
            (f"dissolve: {D} frames ({D / fps:.2f} s) into each photo, finishing on the beat; " if D else "hard cuts; ")
            + f"beat sync: worst offset {max(offs):.2f} frames -> {'PASS' if max(offs) <= 1 else 'FAIL'}",
            f"stillness: max held-frame diff {max(still):.3f} -> {'PASS' if max(still) < 1 else 'FAIL'}",

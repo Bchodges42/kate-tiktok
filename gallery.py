@@ -7,6 +7,7 @@ spaced apart (never overlapping), then the canvas clears and the next pattern st
 The config's "timeline" is a list of steps, one per beat (or "beats": n):
     {"image": "<key>", "slot": "<slot name>"}   add a photo to the canvas
     {"clear": true}                              back to the plain background
+With groups, "clear_between": false skips the blank screen between slides.
 Photos keep their own shape (never cropped), fit inside their slot box, never move.
 
 Background: a colour, or {"image": "images/<file>"} (a 9:16 picture, used whole).
@@ -170,8 +171,10 @@ def timeline_from_groups(cfg, W, H):
             st = {"image": k, "slot": f"g{n + 1}-{grp.get('name', grp.get('flow'))}", "box": list(b), "beats": holds.get(k, cfg["step_beats"])}
             if "at" in grp:  # exact hit times (seconds), one per photo in appearance order
                 st["at"] = grp["at"][m]
+            if m == 0 and n > 0 and not cfg.get("clear_between", True):
+                st["fresh"] = True  # no blank screen: the full slide cuts straight to the next slide's first photo
             steps.append(st)
-        if n < len(cfg["groups"]) - 1:
+        if n < len(cfg["groups"]) - 1 and cfg.get("clear_between", True):
             st = {"clear": True, "beats": cfg["step_beats"]}
             if "clear_at" in grp:
                 st["at"] = grp["clear_at"]
@@ -286,6 +289,8 @@ def main():
         if sh.get("clear"):
             layers = []
         else:
+            if sh.get("fresh"):
+                layers = []
             key, slot = sh["image"], slots.get(sh["slot"], {})
             im = srcs[key]
             if "box" in sh:
