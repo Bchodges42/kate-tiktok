@@ -51,7 +51,8 @@
    "kind": "pool"
   },
   "gma-crosswalk-arm-in-arm": {
-   "kind": "friends"
+   "kind": "friends",
+   "clip": "clips/gma-crosswalk-arm-in-arm.mp4"
   },
   "gma-silver-grills-smile": {
    "kind": "portrait"
@@ -204,7 +205,7 @@
   "gma-sunset-phone-photo",
   "gma-user-porch-mountain-firepit"
  ],
- "version": "yellow_one_at_a_time",
+ "version": "yellow_one_at_a_time_clip",
  "bpm": 120,
  "style": "single",
  "background": "#FFF1B8",
@@ -212,5 +213,6 @@
  "border_px": 8,
  "border": "#D9482B",
  "_look": "light butter-yellow background, each photo centred with a thin 8 px tomato-red border",
- "_tempo_comment": "steady 120 BPM, one photo per beat (0.50 s = 15 frames), hard cuts, 20 s. No song: main MP4 has a plain kick beat guide; _silent.mp4 is for posting with any ~120 BPM TikTok sound."
+ "_tempo_comment": "steady 120 BPM, one photo per beat (0.50 s), hard cuts; the crosswalk clip plays for 13 beats (6.5 s) before the next photo. 26 s. No song: main MP4 has a plain kick beat guide; _silent.mp4 is for posting with any ~120 BPM TikTok sound.",
+ "_clip": "the crosswalk pin is a video on Pinterest (the board's only clip): it plays in full, silent, in its spot, trimmed to end on a beat, and the next photo lands only after it finishes"
 }

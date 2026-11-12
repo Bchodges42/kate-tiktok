@@ -51,7 +51,8 @@
    "kind": "pool"
   },
   "gma-crosswalk-arm-in-arm": {
-   "kind": "friends"
+   "kind": "friends",
+   "clip": "clips/gma-crosswalk-arm-in-arm.mp4"
   },
   "gma-silver-grills-smile": {
    "kind": "portrait"
@@ -204,17 +205,17 @@
   "gma-sunset-phone-photo",
   "gma-user-porch-mountain-firepit"
  ],
- "version": "orange_overlap_collage",
+ "version": "orange_overlap_collage_clip",
  "bpm": 100,
  "style": "pile",
  "background": "#B4471B",
  "margin_px": 40,
  "phrases": {
   "sizes": [
+   12,
    10,
-   10,
-   10,
-   10
+   9,
+   9
   ],
   "steps": 12,
   "clear_steps": 0
@@ -271,5 +272,6 @@
   "_finale": "the user's porch photo lands dead centre, 1.3x bigger, and holds",
   "_look": "deep burnt-orange background, thin 8 px butter-cream borders, soft drop shadow"
  },
- "_tempo_comment": "steady 100 BPM, one photo per beat (0.60 s = 18 frames), hard cuts. 4 piles of 10 photos over 3 bars each: 10 photos land, the full pile holds 2 beats, then the next pile cuts straight in on a bar line (no blank screen). 28.8 s. No song: main MP4 has a kick beat guide; _silent.mp4 for posting with any ~100 BPM TikTok sound."
+ "_tempo_comment": "steady 100 BPM, one photo per beat (0.60 s), hard cuts. Piles of 12/10/9/9 photos; the first pile includes the crosswalk clip, which plays for 10 beats (6.0 s) before the next photo lands. Each full pile holds 2-3 beats, then the next pile cuts straight in on a bar line (no blank screen). 36 s. No song: main MP4 has a kick beat guide; _silent.mp4 for posting with any ~100 BPM TikTok sound.",
+ "_clip": "the crosswalk pin is a video on Pinterest (the board's only clip): it plays in full, silent, in its spot, trimmed to end on a beat, and the next photo lands only after it finishes"
 }

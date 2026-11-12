@@ -5,6 +5,7 @@
 
   style "single": one whole photo at a time, centred as big as it fits on a solid background.
                   "dissolve_frames": D blends each photo into the next, finishing exactly on the beat.
+  Any image can carry "clip": "clips/<file>.mp4": the clip plays in its spot before the next photo lands.
   style "pile":   an overlapping collage. Every photo lands on top of the pile at the same area
                   (so a cover is never smaller than what it covers), with a thin border and a soft
                   shadow, cycling through anchor spots that keep the pile balanced on screen.
@@ -66,22 +67,36 @@ def main():
     ppb = cfg.get("photos_per_beat", 1)
     spb = 60.0 / bpm / ppb  # seconds per photo step
     bar = 4 * ppb
-    total_beats = int(math.ceil(len(order) / bar) * bar) if cfg.get("end_on_bar", True) else len(order)  # in steps
+    # video clips ("clip": "clips/<file>.mp4" on an image): the clip plays in full in its spot and
+    # the next photo only lands after it ends; it is trimmed to end exactly on a beat
+    clips = {k: v for k, v in cfg["images"].items() if v.get("clip") and k in order}
+    clip_len = {}
+    for k, v in clips.items():
+        d = v.get("clip_dur") or float(subprocess.run(
+            ["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries", "format=duration", "-of", "csv=p=0",
+             os.path.join(ROOT, v["clip"])], capture_output=True, text=True).stdout.strip())
+        clip_len[k] = max(1, int(d / spb + 1e-6))  # whole steps that fit inside the clip
+    dur = [clip_len.get(k, 1) for k in order]
+    total_beats = int(math.ceil(sum(dur) / bar) * bar) if cfg.get("end_on_bar", True) else sum(dur)  # in steps
     # optional phrases: a burst of photos, the finished pile holds, then a clear to the background
     # before the next phrase starts on a fresh bar ("phrases": {"sizes": [6, 6, 7], "steps": 16, "clear_steps": 2})
     ph = cfg.get("phrases")
     if ph:
         assert sum(ph["sizes"]) == len(order), "phrase sizes must add up to the number of photos"
-        step_of, first, clears, i = [], set(), [], 0
+        step_of, first, clears, i, p0 = [], set(), [], 0, 0
         for n, size in enumerate(ph["sizes"]):
             first.add(i)
+            cur = p0
             for j in range(size):
-                step_of.append(n * ph["steps"] + j); i += 1
+                step_of.append(cur); cur += dur[i]; i += 1
+            # the finished pile keeps its hold; a phrase with a clip grows to the next bar line
+            L = int(math.ceil((cur - p0 + ph["steps"] - size) / bar) * bar)
             if n < len(ph["sizes"]) - 1 and ph["clear_steps"] > 0:  # 0 = no blank screen, the next phrase cuts straight in
-                clears.append((n + 1) * ph["steps"] - ph["clear_steps"])
-        total_beats = len(ph["sizes"]) * ph["steps"]
+                clears.append(p0 + L - ph["clear_steps"])
+            p0 += L
+        total_beats = p0
     else:
-        step_of, first, clears = list(range(len(order))), {0}, []
+        step_of, first, clears = [int(x) for x in np.cumsum([0] + dur[:-1])], {0}, []
     N = int(round(total_beats * spb * fps))
     starts = [int(round(st * spb * fps)) for st in step_of]
 
@@ -126,6 +141,17 @@ def main():
             b[:] = hex_rgb(spec)
         return b
     bg = make_bg(cfg["background"])
+    clipframes = {}
+
+    def clip_frames(k, w, h):
+        """The clip's frames at w x h, 30 fps, graded like the photos (its own sound is dropped)."""
+        v = clips[k]
+        n = int(round(clip_len[k] * spb * fps))
+        raw = subprocess.run(["ffmpeg", "-v", "error", "-ss", str(v.get("clip_start", 0)), "-i", os.path.join(ROOT, v["clip"]),
+                              "-vf", f"fps={fps},scale={w}:{h}:flags=lanczos", "-frames:v", str(n), "-an",
+                              "-f", "rawvideo", "-pix_fmt", "rgb24", "-"], capture_output=True, check=True).stdout
+        a = np.frombuffer(raw, np.uint8).reshape(-1, h, w, 3)
+        return [grade(f, cfg["grade"]) for f in a]
     srcs = {k: load_source(cfg, k)[0] for k in order}
     lowres = [k for k in order if max(srcs[k].size) < 500]
     plates, boxes, cover = [], [], []
@@ -143,7 +169,12 @@ def main():
             x, y = (W - fw) // 2, int(round((H - fh) * cfg.get("center_y", 0.5)))
             c = make_bg(cyc[(i // every) % len(cyc)]) if cyc else bg.copy()
             c[y:y + fh, x:x + fw] = bcol
-            c[y + bord:y + bord + h, x + bord:x + bord + w] = grade(np.asarray(im.resize((w, h), Image.LANCZOS)), cfg["grade"])
+            if k in clips:
+                cf = clip_frames(k, w, h)
+                clipframes[i] = (c.copy(), (x + bord, y + bord, w, h), cf)
+                c[y + bord:y + bord + h, x + bord:x + bord + w] = cf[-1]
+            else:
+                c[y + bord:y + bord + h, x + bord:x + bord + w] = grade(np.asarray(im.resize((w, h), Image.LANCZOS)), cfg["grade"])
             plates.append(c); boxes.append((x, y, fw, fh)); cover.append(fw * fh / (W * H))
     else:  # pile
         p = cfg["pile"]
@@ -185,7 +216,12 @@ def main():
             a = np.asarray(sh.filter(ImageFilter.GaussianBlur(14)), np.float32)[..., None] / 255
             canvas = canvas * (1 - a)
             canvas[y:y + fh, x:x + fw] = bcols[i % len(bcols)]
-            canvas[y + bord:y + bord + h, x + bord:x + bord + w] = grade(np.asarray(im.resize((w, h), Image.LANCZOS)), cfg["grade"])
+            if k in clips:  # the clip plays here; the pile keeps its last frame once the next photo lands
+                cf = clip_frames(k, w, h)
+                clipframes[i] = (canvas.copy(), (x + bord, y + bord, w, h), cf)
+                canvas[y + bord:y + bord + h, x + bord:x + bord + w] = cf[-1]
+            else:
+                canvas[y + bord:y + bord + h, x + bord:x + bord + w] = grade(np.asarray(im.resize((w, h), Image.LANCZOS)), cfg["grade"])
             plates.append(canvas.copy()); boxes.append((x, y, fw, fh)); boxes_ph.append((x, y, fw, fh))
             cov = np.zeros((H, W), bool)
             for bx, by, bw, bh in boxes_ph:
@@ -226,6 +262,13 @@ def main():
         fr = np.clip(pl + grain, 0, 255).astype(np.uint8)
         frames8.append(fr); sheet_lbl.append((s0, i))
         nxt = np.clip(segs[n + 1][1] + grain, 0, 255) if D and n + 1 < len(segs) else None
+        if i in clipframes:  # a clip: every frame drawn from the clip, last frame held if it runs short
+            base, (cx, cy, cw, ch), cf = clipframes[i]
+            for f in range(s0, s1):
+                cv = base.copy()
+                cv[cy:cy + ch, cx:cx + cw] = cf[min(f - s0, len(cf) - 1)]
+                pr.stdin.write(np.clip(cv + grain, 0, 255).astype(np.uint8).tobytes())
+            continue
         hold.append((s0, s1 - (D if nxt is not None else 0)))
         for f in range(s0, s1):
             j = f - (s1 - D)
@@ -260,6 +303,7 @@ def main():
            + f"beat sync: worst offset {max(offs):.2f} frames -> {'PASS' if max(offs) <= 1 else 'FAIL'}",
            f"stillness: max held-frame diff {max(still):.3f} -> {'PASS' if max(still) < 1 else 'FAIL'}",
            "photos: whole (no cropping), own shape (no stretching), none repeated -> PASS",
+           *[f"clip: {k} plays {clip_len[k] * spb:.2f} s ({clip_len[k]} {'beats' if ppb == 1 else 'steps'}) in full before the next photo lands" for k in clips],
            "variety: no two photos of the same kind back to back -> PASS"]
     if cfg["style"] == "pile":
         rep.append("overlap: every photo lands at the same area as the one it covers, never smaller -> PASS")
