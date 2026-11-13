@@ -1,0 +1,406 @@
+{
+ "name": "coastal-winter",
+ "version": "blue_scrapbook_polaroids_12s",
+ "vibe": "a winter-by-the-sea scrapbook page: blank polaroids overlapping on dusty blue paper with white doodles; no text, nothing animated",
+ "fps": 30,
+ "size": [
+  1080,
+  1920
+ ],
+ "bpm": 120,
+ "grade": {
+  "warmth": 0.0,
+  "lift": 4,
+  "saturation": 1.0,
+  "grain": 1.5,
+  "grain_seed": 7
+ },
+ "images_dir": "images",
+ "images": {
+  "cw-snowy-lighthouse": {
+   "kind": "seascape"
+  },
+  "cw-fair-isle-sweater-mittens": {
+   "kind": "knitwear"
+  },
+  "cw-shingle-houses-full-moon": {
+   "kind": "town"
+  },
+  "cw-sailboat-mug-coffee": {
+   "kind": "tableware"
+  },
+  "cw-cliff-sailboat-black-cat": {
+   "kind": "seascape"
+  },
+  "cw-open-window-rocky-surf": {
+   "kind": "window"
+  },
+  "cw-foggy-harbor-village": {
+   "kind": "town"
+  },
+  "cw-open-shutters-sea-desk": {
+   "kind": "window"
+  },
+  "cw-striped-mitten-shells": {
+   "kind": "hands"
+  },
+  "cw-cottage-white-sofa": {
+   "kind": "interior"
+  },
+  "cw-red-house-snowy-shore": {
+   "kind": "seascape"
+  },
+  "cw-lace-cuff-mohair-cardigan": {
+   "kind": "knitwear"
+  },
+  "cw-deck-chair-blanket-coffee": {
+   "kind": "porch"
+  },
+  "cw-snowy-beach-picnic-sunset": {
+   "kind": "person"
+  },
+  "cw-sunlit-hallway-wood-floor": {
+   "kind": "interior"
+  },
+  "cw-moonrise-snowy-beach": {
+   "kind": "beach"
+  },
+  "cw-yellow-sweater-red-door": {
+   "kind": "knitwear"
+  },
+  "cw-window-seat-dune-view": {
+   "kind": "window"
+  },
+  "cw-adirondack-chair-quilt": {
+   "kind": "porch"
+  },
+  "cw-blue-painted-staircase": {
+   "kind": "interior"
+  },
+  "cw-foggy-beach-fair-isle-set": {
+   "kind": "person"
+  }
+ },
+ "page": {
+  "color": "#93ABBE",
+  "ink": "#FFFFFF",
+  "ink_opacity": 0.78,
+  "seed": 4,
+  "stitch_inset": 34,
+  "doodles": [
+   [
+    "sailboat",
+    170,
+    215,
+    105
+   ],
+   [
+    "snowflake",
+    905,
+    190,
+    95
+   ],
+   [
+    "sparkle",
+    700,
+    120,
+    70
+   ],
+   [
+    "snowflake",
+    420,
+    110,
+    45
+   ],
+   [
+    "sparkle",
+    80,
+    560,
+    60
+   ],
+   [
+    "anchor",
+    985,
+    640,
+    75
+   ],
+   [
+    "starfish",
+    95,
+    1010,
+    80
+   ],
+   [
+    "heart",
+    1000,
+    1040,
+    70
+   ],
+   [
+    "snowflake",
+    985,
+    1350,
+    60
+   ],
+   [
+    "shell",
+    110,
+    1420,
+    75
+   ],
+   [
+    "lighthouse",
+    180,
+    1700,
+    100
+   ],
+   [
+    "waves",
+    560,
+    1790,
+    105
+   ],
+   [
+    "mug",
+    900,
+    1700,
+    90
+   ],
+   [
+    "sparkle",
+    690,
+    1650,
+    60
+   ],
+   [
+    "snowflake",
+    420,
+    1640,
+    50
+   ],
+   [
+    "sparkle",
+    1000,
+    870,
+    45
+   ],
+   [
+    "heart",
+    70,
+    760,
+    50
+   ]
+  ],
+  "_look": "dusty sea-blue paper with a stitched border and white hand-drawn line doodles (sailboat, lighthouse, snowflakes, starfish, shell, anchor, mug, waves), all drawn by the script"
+ },
+ "polaroid": {
+  "paper": "#F6F3EA",
+  "ink": "#34455A",
+  "side": 0.052,
+  "top": 0.062,
+  "bottom": 0.215,
+  "corner_px": 7,
+  "shadow": 0.34,
+  "film_grain": 2.5,
+  "filter": {
+   "saturation": 0.9,
+   "black": 0.06,
+   "white": 0.96,
+   "tint": 0.9,
+   "vignette": 0.14
+  }
+ },
+ "tapes": [
+  {
+   "colors": [
+    "#F4EEDD",
+    "#A9C3D6"
+   ],
+   "pattern": "gingham"
+  },
+  {
+   "colors": [
+    "#E9DFC8",
+    "#F7F2E6"
+   ],
+   "pattern": "stripe"
+  },
+  {
+   "colors": [
+    "#B9C9B4",
+    "#DCE6D6"
+   ],
+   "pattern": "gingham"
+  },
+  {
+   "colors": [
+    "#E8C9C2",
+    "#F4E3DE"
+   ],
+   "pattern": "stripe"
+  },
+  {
+   "colors": [
+    "#F2E6B8",
+    "#FBF5DC"
+   ],
+   "pattern": "gingham"
+  }
+ ],
+ "snow": {
+  "count": 0
+ },
+ "drop_frames": 7,
+ "drop_scale": 0.0,
+ "phrases": [
+  {
+   "_what": "centred tilted stack, one polaroid per beat, holds a beat",
+   "photos": [
+    "cw-snowy-lighthouse",
+    "cw-fair-isle-sweater-mittens",
+    "cw-shingle-houses-full-moon",
+    "cw-sailboat-mug-coffee",
+    "cw-cliff-sailboat-black-cat",
+    "cw-open-window-rocky-surf",
+    "cw-foggy-harbor-village"
+   ],
+   "steps": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10,
+    12
+   ],
+   "length": 16,
+   "area_frac": 0.5,
+   "spots": [
+    [
+     540,
+     880
+    ]
+   ],
+   "tilt": [
+    -4,
+    3,
+    -2,
+    4,
+    -3,
+    2,
+    -5,
+    3
+   ]
+  },
+  {
+   "_what": "scattered pile, one per beat, holds a beat",
+   "photos": [
+    "cw-open-shutters-sea-desk",
+    "cw-striped-mitten-shells",
+    "cw-cottage-white-sofa",
+    "cw-red-house-snowy-shore",
+    "cw-lace-cuff-mohair-cardigan",
+    "cw-deck-chair-blanket-coffee",
+    "cw-snowy-beach-picnic-sunset"
+   ],
+   "steps": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10,
+    12
+   ],
+   "length": 16,
+   "area_frac": 0.27,
+   "spots": [
+    [
+     345,
+     470
+    ],
+    [
+     735,
+     1330
+    ],
+    [
+     740,
+     520
+    ],
+    [
+     340,
+     1290
+    ],
+    [
+     350,
+     880
+    ],
+    [
+     735,
+     925
+    ],
+    [
+     540,
+     700
+    ]
+   ],
+   "tilt": [
+    -5,
+    4,
+    3,
+    -4,
+    5,
+    -3,
+    2
+   ]
+  },
+  {
+   "_what": "centred tilted stack; the last polaroid lands straight, centred and bigger, and holds a beat",
+   "photos": [
+    "cw-sunlit-hallway-wood-floor",
+    "cw-moonrise-snowy-beach",
+    "cw-yellow-sweater-red-door",
+    "cw-window-seat-dune-view",
+    "cw-adirondack-chair-quilt",
+    "cw-blue-painted-staircase",
+    "cw-foggy-beach-fair-isle-set"
+   ],
+   "steps": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10,
+    12
+   ],
+   "length": 16,
+   "area_frac": 0.5,
+   "spots": [
+    [
+     540,
+     880
+    ]
+   ],
+   "tilt": [
+    4,
+    -3,
+    2,
+    -4,
+    3,
+    -2,
+    0
+   ],
+   "final_center": true,
+   "final_scale": 1.1,
+   "center": [
+    540,
+    900
+   ]
+  }
+ ],
+ "_tempo_comment": "120 BPM, one polaroid per beat (0.5 s = 15 frames). 3 piles of 7 polaroids, 2 bars each = 12.0 s. Each polaroid fades in softly in place over 7 frames (0.23 s), fully there on the beat, then never moves; at a new pile the old one fades to the page in the same 7 frames. Each finished pile holds one beat. No song: main MP4 has a kick beat guide; _silent.mp4 for posting with any ~120 BPM TikTok sound (or 60, half time).",
+ "_engagement": "12 s short cut of blue_scrapbook_polaroids, made with the tiktok-edit skill's defaults: lighthouse polaroid on screen at frame 0, four polaroids down by 1.5 s, no hold longer than 1 s, ends on the woman on the foggy beach, centred and bigger, looping back to the lighthouse.",
+ "_order": "21 of the board's 44 pins: piles 1, 2 and 4 of the 19 s version. Left out: the 4 small sources, 12 that repeat a subject, and the 7 of the 19 s version's third pile.",
+ "drop_ease": "smooth"
+}

@@ -1,0 +1,31 @@
+120 BPM, polaroids land on half-beat steps (0.250 s), 21 photos, 24 beats = 12.00 s, ends on a bar line
+soft fade-in: each polaroid fades in over up to 7 frames and is fully in place on its beat; worst offset 0.00 frames -> PASS
+stillness: max held-frame diff 0.181 (between fades) -> PASS
+photos: whole (no cropping), own shape (no stretching), none repeated -> PASS
+variety: no two photos of the same kind back to back, including around the loop -> PASS
+overlap: every polaroid in a pile has the same card area as the one it covers, never smaller -> PASS
+screen filled at the end of each pile: 69%, 82%, 62%
+first frame: cw-snowy-lighthouse on screen at 0.00 s, covering 51%
+no moving effects: nothing on screen moves between cuts
+
+ 1.   0.00s  seascape  cw-snowy-lighthouse  ""
+ 2.   0.50s  knitwear  cw-fair-isle-sweater-mittens  ""
+ 3.   1.00s  town      cw-shingle-houses-full-moon  ""
+ 4.   1.50s  tableware cw-sailboat-mug-coffee  ""
+ 5.   2.00s  seascape  cw-cliff-sailboat-black-cat  ""
+ 6.   2.50s  window    cw-open-window-rocky-surf  ""
+ 7.   3.00s  town      cw-foggy-harbor-village  ""
+ 8.   4.00s  window    cw-open-shutters-sea-desk  ""
+ 9.   4.50s  hands     cw-striped-mitten-shells  ""
+10.   5.00s  interior  cw-cottage-white-sofa  ""
+11.   5.50s  seascape  cw-red-house-snowy-shore  ""
+12.   6.00s  knitwear  cw-lace-cuff-mohair-cardigan  ""
+13.   6.50s  porch     cw-deck-chair-blanket-coffee  ""
+14.   7.00s  person    cw-snowy-beach-picnic-sunset  ""
+15.   8.00s  interior  cw-sunlit-hallway-wood-floor  ""
+16.   8.50s  beach     cw-moonrise-snowy-beach  ""
+17.   9.00s  knitwear  cw-yellow-sweater-red-door  ""
+18.   9.50s  window    cw-window-seat-dune-view  ""
+19.  10.00s  porch     cw-adirondack-chair-quilt  ""
+20.  10.50s  interior  cw-blue-painted-staircase  ""
+21.  11.00s  person    cw-foggy-beach-fair-isle-set  ""
