@@ -1,0 +1,140 @@
+{
+ "name": "colorful",
+ "vibe": "dopamine maximalism: candy colours, sequins, tights, eye close-ups",
+ "fps": 30,
+ "size": [
+  1080,
+  1920
+ ],
+ "bpm": 150,
+ "grade": {
+  "warmth": 0.0,
+  "lift": 4,
+  "saturation": 1.04,
+  "grain": 2.0,
+  "grain_seed": 7
+ },
+ "_tempo_comment": "steady 150 BPM, one photo per beat (0.40 s = 12 frames), ends on a bar line. No song: main MP4 has a plain kick beat guide, _silent.mp4 is for posting with any TikTok sound. Add \"song\" to cut to a real track.",
+ "images_dir": "images",
+ "images": {
+  "colorful-pink-eye-teal-lashes": {
+   "kind": "eye"
+  },
+  "colorful-monsters-colour-legs": {
+   "kind": "legs"
+  },
+  "colorful-pink-tights-polka-skirt": {
+   "kind": "outfit"
+  },
+  "colorful-gem-hair-clip": {
+   "kind": "beauty"
+  },
+  "colorful-street-trio-tights": {
+   "kind": "scene"
+  },
+  "colorful-coloured-tights-bench": {
+   "kind": "legs"
+  },
+  "colorful-sari-fabrics": {
+   "kind": "texture"
+  },
+  "colorful-sequin-rack": {
+   "kind": "rack"
+  },
+  "colorful-eyeshadow-palette": {
+   "kind": "beauty"
+  },
+  "colorful-pink-tweed-staircase": {
+   "kind": "outfit"
+  },
+  "colorful-embroidered-boots-box": {
+   "kind": "shoes"
+  },
+  "colorful-disco-floor": {
+   "kind": "scene"
+  },
+  "colorful-sequin-paillettes": {
+   "kind": "texture"
+  },
+  "colorful-sitting-legs-polka": {
+   "kind": "legs"
+  },
+  "colorful-glitter-fingertips": {
+   "kind": "beauty"
+  },
+  "colorful-yellow-sunglasses": {
+   "kind": "portrait"
+  },
+  "colorful-embroidered-denim-boots": {
+   "kind": "shoes"
+  },
+  "colorful-bathroom-getting-ready": {
+   "kind": "scene"
+  },
+  "colorful-red-lash-eye": {
+   "kind": "eye"
+  },
+  "colorful-beetle-cardigan-plaid": {
+   "kind": "outfit"
+  },
+  "colorful-painted-pink-horses": {
+   "kind": "art"
+  },
+  "colorful-painted-tights-legs": {
+   "kind": "legs"
+  },
+  "colorful-fur-rack-heels": {
+   "kind": "rack"
+  },
+  "colorful-jewelled-bangles": {
+   "kind": "texture"
+  },
+  "colorful-pop-art-tigers": {
+   "kind": "art"
+  }
+ },
+ "order": [
+  "colorful-pink-eye-teal-lashes",
+  "colorful-monsters-colour-legs",
+  "colorful-pink-tights-polka-skirt",
+  "colorful-gem-hair-clip",
+  "colorful-street-trio-tights",
+  "colorful-coloured-tights-bench",
+  "colorful-sari-fabrics",
+  "colorful-sequin-rack",
+  "colorful-eyeshadow-palette",
+  "colorful-pink-tweed-staircase",
+  "colorful-embroidered-boots-box",
+  "colorful-disco-floor",
+  "colorful-sequin-paillettes",
+  "colorful-sitting-legs-polka",
+  "colorful-glitter-fingertips",
+  "colorful-yellow-sunglasses",
+  "colorful-embroidered-denim-boots",
+  "colorful-bathroom-getting-ready",
+  "colorful-red-lash-eye",
+  "colorful-beetle-cardigan-plaid",
+  "colorful-painted-pink-horses",
+  "colorful-painted-tights-legs",
+  "colorful-fur-rack-heels",
+  "colorful-jewelled-bangles",
+  "colorful-pop-art-tigers"
+ ],
+ "version": "colorful_one_at_a_time",
+ "style": "single",
+ "background": "#FF2E93",
+ "bg_cycle": [
+  "#FF2E93",
+  "#FF7A1A",
+  "#B6F03B",
+  "#2B59FF",
+  "#FFD23F",
+  "#19D3C5"
+ ],
+ "bg_every": 4,
+ "border_px": 16,
+ "border": "#FFFFFF",
+ "margin_px": 56,
+ "center_y": 0.5,
+ "_look": "colour-block background: a new candy colour every bar (4 photos), back to hot pink on the last bar so the loop is seamless; thin white border on every photo"
+}

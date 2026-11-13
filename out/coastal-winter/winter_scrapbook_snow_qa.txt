@@ -1,0 +1,42 @@
+120 BPM, polaroids land on half-beat steps (0.250 s), 32 photos, 32 beats = 16.00 s, ends on a bar line
+set-down: each polaroid settles over up to 4 frames and is fully in place on its beat; worst offset 0.00 frames -> PASS
+stillness: once landed a polaroid is never redrawn or moved (only the snow in front of it drifts, by design) -> PASS
+photos: whole (no cropping), own shape (no stretching), none repeated -> PASS
+variety: no two photos of the same kind back to back, including around the loop -> PASS
+overlap: every polaroid in a pile has the same card area as the one it covers, never smaller -> PASS
+screen filled at the end of each pile: 70%, 82%, 64%, 83%
+first frame: cw-snowy-lighthouse on screen at 0.00 s, covering 51%
+snow: 150 flakes, loops seamlessly (frame 480 = frame 0)
+
+ 1.   0.00s  seascape  cw-snowy-lighthouse  "coastal winter"
+ 2.   0.27s  knitwear  cw-fair-isle-sweater-mittens  "fair isle season"
+ 3.   0.50s  town      cw-shingle-houses-full-moon  "full moon"
+ 4.   0.73s  tableware cw-sailboat-mug-coffee  "first coffee"
+ 5.   1.00s  beach     cw-snowfall-dune-grass  "snow day"
+ 6.   1.27s  bedroom   cw-quilt-bedroom-beams  "quilts"
+ 7.   1.50s  seascape  cw-cliff-sailboat-black-cat  "sailboat spotting"
+ 8.   1.73s  craft     cw-mohair-yarn-balls  "mohair"
+ 9.   2.00s  window    cw-open-window-rocky-surf  "window open"
+10.   2.50s  knitwear  cw-cream-wrap-sweater-sea  "cream knits"
+11.   3.00s  town      cw-foggy-harbor-village  "the harbor"
+12.   4.00s  window    cw-open-shutters-sea-desk  "sea air"
+13.   4.50s  hands     cw-striped-mitten-shells  "shell hunting"
+14.   5.00s  interior  cw-cottage-white-sofa  "the cottage"
+15.   5.50s  seascape  cw-red-house-snowy-shore  "snow on the shore"
+16.   6.00s  knitwear  cw-lace-cuff-mohair-cardigan  "lace cuffs"
+17.   6.50s  porch     cw-deck-chair-blanket-coffee  "deck coffee"
+18.   7.00s  person    cw-snowy-beach-picnic-sunset  "beach picnic"
+19.   8.00s  seascape  cw-cliff-house-surf  "the cliff house"
+20.   8.50s  cosy      cw-knit-sweaters-on-bed  "slow mornings"
+21.   9.00s  window    cw-sunset-windows-candles  "golden hour"
+22.   9.50s  tableware cw-floral-teacups-suds  "tea time"
+23.  10.00s  person    cw-sunset-dunes-from-behind  "sunset walk"
+24.  10.50s  bedroom   cw-bed-hydrangea-gingham-pillows  "fresh linens"
+25.  11.00s  landscape cw-frosty-meadow-sunrise  "frosty morning"
+26.  12.00s  interior  cw-sunlit-hallway-wood-floor  "sunlit hall"
+27.  12.50s  beach     cw-moonrise-snowy-beach  "moonrise"
+28.  13.00s  knitwear  cw-yellow-sweater-red-door  "butter yellow"
+29.  13.50s  window    cw-window-seat-dune-view  "window seat"
+30.  14.00s  porch     cw-adirondack-chair-quilt  "porch naps"
+31.  14.50s  interior  cw-blue-painted-staircase  "blue stairs"
+32.  15.00s  person    cw-foggy-beach-fair-isle-set  "meet me by the sea"

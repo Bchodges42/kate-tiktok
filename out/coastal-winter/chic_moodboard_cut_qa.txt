@@ -1,0 +1,42 @@
+120 BPM, polaroids land on half-beat steps (0.250 s), 32 photos, 32 beats = 16.00 s, ends on a bar line
+hard cuts: each photo appears whole on its beat; worst offset 0.00 frames -> PASS
+stillness: max held-frame diff 0.029 -> PASS
+photos: whole (no cropping), own shape (no stretching), none repeated -> PASS
+variety: no two photos of the same kind back to back, including around the loop -> PASS
+overlap: every polaroid in a pile has the same card area as the one it covers, never smaller -> PASS
+screen filled at the end of each pile: 64%, 64%, 64%, 64%
+first frame: cw-snowy-lighthouse on screen at 0.00 s, covering 30%
+no moving effects: nothing on screen moves between cuts
+
+ 1.   0.00s  seascape  cw-snowy-lighthouse  ""
+ 2.   0.27s  knitwear  cw-fair-isle-sweater-mittens  ""
+ 3.   0.50s  town      cw-shingle-houses-full-moon  ""
+ 4.   0.73s  tableware cw-sailboat-mug-coffee  ""
+ 5.   1.00s  beach     cw-snowfall-dune-grass  ""
+ 6.   1.27s  bedroom   cw-quilt-bedroom-beams  ""
+ 7.   1.50s  seascape  cw-cliff-sailboat-black-cat  ""
+ 8.   1.73s  craft     cw-mohair-yarn-balls  ""
+ 9.   2.00s  window    cw-open-window-rocky-surf  ""
+10.   2.50s  knitwear  cw-cream-wrap-sweater-sea  ""
+11.   3.00s  town      cw-foggy-harbor-village  ""
+12.   4.00s  window    cw-open-shutters-sea-desk  ""
+13.   4.50s  hands     cw-striped-mitten-shells  ""
+14.   5.00s  interior  cw-cottage-white-sofa  ""
+15.   5.50s  seascape  cw-red-house-snowy-shore  ""
+16.   6.00s  knitwear  cw-lace-cuff-mohair-cardigan  ""
+17.   6.50s  porch     cw-deck-chair-blanket-coffee  ""
+18.   7.00s  person    cw-snowy-beach-picnic-sunset  ""
+19.   8.00s  seascape  cw-cliff-house-surf  ""
+20.   8.50s  cosy      cw-knit-sweaters-on-bed  ""
+21.   9.00s  window    cw-sunset-windows-candles  ""
+22.   9.50s  tableware cw-floral-teacups-suds  ""
+23.  10.00s  person    cw-sunset-dunes-from-behind  ""
+24.  10.50s  bedroom   cw-bed-hydrangea-gingham-pillows  ""
+25.  11.00s  landscape cw-frosty-meadow-sunrise  ""
+26.  12.00s  interior  cw-sunlit-hallway-wood-floor  ""
+27.  12.50s  beach     cw-moonrise-snowy-beach  ""
+28.  13.00s  knitwear  cw-yellow-sweater-red-door  ""
+29.  13.50s  window    cw-window-seat-dune-view  ""
+30.  14.00s  porch     cw-adirondack-chair-quilt  ""
+31.  14.50s  interior  cw-blue-painted-staircase  ""
+32.  15.00s  person    cw-foggy-beach-fair-isle-set  ""

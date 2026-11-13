@@ -1,0 +1,124 @@
+{
+ "name": "teen-beach-movie",
+ "vibe": "60s surf, beach party, Teen Beach Movie",
+ "fps": 30,
+ "size": [
+  1080,
+  1920
+ ],
+ "bpm": 150,
+ "background": "#F6E7C8",
+ "grade": {
+  "warmth": 0.01,
+  "lift": 5,
+  "saturation": 1.0,
+  "grain": 2.0,
+  "grain_seed": 7
+ },
+ "_tempo_comment": "steady 150 BPM, one photo per beat (0.40 s = exactly 12 frames); ends on a bar line so it loops. No song given: the main MP4 has a plain kick-drum beat guide, the _silent.mp4 is for posting with a TikTok sound at this tempo. Add \"song\": \"audio/<file>.wav\" to cut to a real track.",
+ "images_dir": "images",
+ "images": {
+  "tbm-singer-red-lips": {
+   "kind": "portrait"
+  },
+  "tbm-surfboard-boys-shore": {
+   "kind": "beach"
+  },
+  "tbm-curlers-lipstick": {
+   "kind": "scene"
+  },
+  "tbm-newspaper-beach-chairs": {
+   "kind": "beach"
+  },
+  "tbm-diner-dance-number": {
+   "kind": "scene"
+  },
+  "tbm-pastel-nighties-rack": {
+   "kind": "object"
+  },
+  "tbm-palm-surf-path": {
+   "kind": "beach"
+  },
+  "tbm-greaser-crowd": {
+   "kind": "scene"
+  },
+  "tbm-sunset-beach-dancing": {
+   "kind": "beach"
+  },
+  "tbm-surfers-from-above": {
+   "kind": "surf"
+  },
+  "tbm-surf-shop-hut": {
+   "kind": "place"
+  },
+  "tbm-wet-side-story-poster": {
+   "kind": "object"
+  },
+  "tbm-curlers-mirror-girls": {
+   "kind": "scene"
+  },
+  "tbm-ukulele-water": {
+   "kind": "object"
+  },
+  "tbm-vintage-surfer-wave": {
+   "kind": "surf"
+  },
+  "tbm-surfboard-car-70s": {
+   "kind": "beach"
+  },
+  "tbm-disco-ball-surf-shack": {
+   "kind": "place"
+  },
+  "tbm-pink-bedroom-teddy": {
+   "kind": "portrait"
+  },
+  "tbm-beach-signpost": {
+   "kind": "place"
+  },
+  "tbm-slumber-party-dance": {
+   "kind": "scene"
+  },
+  "tbm-surf-wave-closeup": {
+   "kind": "surf"
+  },
+  "tbm-motorbike-beach": {
+   "kind": "object"
+  },
+  "tbm-beach-dance-silhouettes": {
+   "kind": "beach"
+  },
+  "tbm-convertible-surf-beach": {
+   "kind": "beach"
+  }
+ },
+ "order": [
+  "tbm-singer-red-lips",
+  "tbm-surfboard-boys-shore",
+  "tbm-curlers-lipstick",
+  "tbm-newspaper-beach-chairs",
+  "tbm-diner-dance-number",
+  "tbm-pastel-nighties-rack",
+  "tbm-palm-surf-path",
+  "tbm-greaser-crowd",
+  "tbm-sunset-beach-dancing",
+  "tbm-surfers-from-above",
+  "tbm-beach-dance-silhouettes",
+  "tbm-wet-side-story-poster",
+  "tbm-curlers-mirror-girls",
+  "tbm-ukulele-water",
+  "tbm-vintage-surfer-wave",
+  "tbm-surfboard-car-70s",
+  "tbm-disco-ball-surf-shack",
+  "tbm-pink-bedroom-teddy",
+  "tbm-beach-signpost",
+  "tbm-slumber-party-dance",
+  "tbm-surf-wave-closeup",
+  "tbm-motorbike-beach",
+  "tbm-surf-shop-hut",
+  "tbm-convertible-surf-beach"
+ ],
+ "version": "teen-beach-movie_one_at_a_time",
+ "style": "single",
+ "margin_px": 40,
+ "center_y": 0.5
+}

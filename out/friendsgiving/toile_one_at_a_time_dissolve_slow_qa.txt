@@ -1,0 +1,56 @@
+120 BPM steady, one photo per beat (0.500 s), 49 photos, 52 beats = 26.00 s, ends on a bar line
+dissolve: 6 frames (0.20 s) into each photo, finishing on the beat; beat sync: worst offset 0.00 frames -> PASS
+stillness: max held-frame diff 0.630 -> PASS
+photos: whole (no cropping), own shape (no stretching), none repeated -> PASS
+variety: no two photos of the same kind back to back -> PASS
+screen filled per photo: 27%-72% (whole photos; wide ones are shorter)
+
+ 1.   0.00s  parade    fg-macys-parade-turkey-float
+ 2.   0.50s  outfit    fg-red-cape-autumn-road
+ 3.   1.00s  parade    fg-macys-parade-snoopy
+ 4.   1.50s  outfit    fg-plaid-maxi-skirt-leather-jacket
+ 5.   2.00s  parade    fg-parade-aerial-autumn-park
+ 6.   2.50s  place     fg-autumn-moon-hills
+ 7.   3.00s  outfit    fg-brown-jacket-flare-jeans
+ 8.   3.50s  party     fg-marshmallow-bonfire
+ 9.   4.00s  outfit    fg-plaid-skirt-black-knit
+10.   4.50s  decor     fg-dried-orange-garland-decor
+11.   5.00s  food      fg-roast-turkey-oranges
+12.   5.50s  party     fg-paper-chain-kitchen
+13.   6.00s  food      fg-pumpkin-soup-bread
+14.   6.50s  decor     fg-garland-fireplace-candles
+15.   7.00s  food      fg-grape-cheese-board
+16.   7.50s  drinks    fg-pink-cocktail-cheers
+17.   8.00s  food      fg-roast-chicken-table-overhead
+18.   8.50s  table     fg-long-table-friends
+19.   9.00s  food      fg-mac-and-cheese
+20.   9.50s  drinks    fg-orange-slice-cheers
+21.  10.00s  food      fg-potluck-kitchen-spread
+22.  10.50s  table     fg-candlelit-turkey-dinner
+23.  11.00s  food      fg-pomegranate-fig-board
+24.  11.50s  drinks    fg-cranberry-martini-cheers
+25.  12.00s  food      fg-harvest-buffet-candles
+26.  12.50s  table     fg-red-candles-pumpkin-table
+27.  13.00s  food      fg-appetizer-spread-cake
+28.  13.50s  table     fg-library-dinner-party
+29.  14.00s  food      fg-pecan-pie-pasta-buffet
+30.  14.50s  drinks    fg-candlelit-toast-blur
+31.  15.00s  food      fg-lamp-buffet-datestamp
+32.  15.50s  table     fg-candlelit-dinner-crowd
+33.  16.00s  food      fg-pie-table
+34.  16.50s  party     fg-pink-lantern-party
+35.  17.00s  food      fg-pie-slice-serve
+36.  17.50s  drinks    fg-whipped-cream-mugs
+37.  18.00s  food      fg-popcorn-candy-bar
+38.  18.50s  games     fg-cards-on-table
+39.  19.00s  drinks    fg-cocoa-whipped-cream-bar
+40.  19.50s  games     fg-board-game-friends
+41.  20.00s  table     fg-candlelit-table-wine
+42.  20.50s  games     fg-card-game-dark
+43.  21.00s  party     fg-party-garland-crowd
+44.  21.50s  games     fg-cards-pumpkin-coffee-table
+45.  22.00s  party     fg-orange-glow-dance
+46.  22.50s  table     fg-porch-dinner-night
+47.  23.00s  party     fg-cozy-living-room-candles
+48.  23.50s  decor     fg-tablecloth-signatures
+49.  24.00s  table     fg-candle-fireplace-dinner

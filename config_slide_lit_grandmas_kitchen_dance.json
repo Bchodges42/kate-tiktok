@@ -1,0 +1,11 @@
+{
+ "name": "lit-grandmas",
+ "version": "slide_kitchen_dance_yellow",
+ "_what": "one slide to drop into the yellow lit-grandmas video by hand: the user's two kitchen-dance GIFs, both playing on loop, stacked and centred",
+ "size": [1080, 1920], "fps": 30,
+ "background": "#FFF1B8", "border": "#D9482B", "border_px": 8,
+ "margin_px": 70, "gap_px": 30,
+ "grade": {"lift": 4, "saturation": 1.02, "grain": 2},
+ "max_seconds": 20,
+ "clips": ["clips/gma-kitchen-dance-tan-sweater.gif", "clips/gma-kitchen-dance-chips-striped.gif"]
+}

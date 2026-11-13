@@ -1,0 +1,42 @@
+tempo 128.0 BPM, 34 beats-steps, 30 photos, 18.73 s
+beat sync: mean |offset| 0.24 frames, worst 0.50 -> PASS
+stillness: max held-frame diff 0.032 -> PASS
+layout: no photo overlaps or comes within 20px of another, none cropped, none repeated
+spacing: exactly 20px between every pair of neighbouring photos -> PASS
+variety: no two photos of the same kind next to each other -> PASS
+screen filled per group: 85%, 86%, 91%, 88%, 85%
+
+ 1.   0.00s  g1-pair-over-columns fg-long-table-friends
+ 2.   0.47s  g1-pair-over-columns fg-orange-slice-cheers
+ 3.   0.94s  g1-pair-over-columns fg-roast-turkey-oranges
+ 4.   1.41s  g1-pair-over-columns fg-cards-on-table
+ 5.   1.88s  g1-pair-over-columns fg-macys-parade-snoopy
+ 6.   2.34s  g1-pair-over-columns fg-plaid-maxi-skirt-leather-jacket
+ 7.   3.28s  (clear to background)
+ 8.   3.75s  g2-wide-hero-top fg-pink-lantern-party
+ 9.   4.22s  g2-wide-hero-top fg-red-cape-autumn-road
+10.   4.69s  g2-wide-hero-top fg-cranberry-martini-cheers
+11.   5.16s  g2-wide-hero-top fg-porch-dinner-night
+12.   5.62s  g2-wide-hero-top fg-pumpkin-soup-bread
+13.   6.09s  g2-wide-hero-top fg-dried-orange-garland-decor
+14.   7.03s  (clear to background)
+15.   7.50s  g3-sidebar    fg-brown-jacket-flare-jeans
+16.   7.97s  g3-sidebar    fg-party-garland-crowd
+17.   8.44s  g3-sidebar    fg-autumn-moon-hills
+18.   8.91s  g3-sidebar    fg-grape-cheese-board
+19.   9.38s  g3-sidebar    fg-candlelit-dinner-crowd
+20.   9.84s  g3-sidebar    fg-whipped-cream-mugs
+21.  10.78s  (clear to background)
+22.  11.25s  g4-zigzag     fg-mac-and-cheese
+23.  11.72s  g4-zigzag     fg-parade-aerial-autumn-park
+24.  12.19s  g4-zigzag     fg-garland-fireplace-candles
+25.  12.66s  g4-zigzag     fg-card-game-dark
+26.  13.12s  g4-zigzag     fg-red-candles-pumpkin-table
+27.  13.59s  g4-zigzag     fg-candlelit-toast-blur
+28.  14.53s  (clear to background)
+29.  15.00s  g5-staggered-columns fg-pie-table
+30.  15.47s  g5-staggered-columns fg-cozy-living-room-candles
+31.  15.94s  g5-staggered-columns fg-plaid-skirt-black-knit
+32.  16.41s  g5-staggered-columns fg-board-game-friends
+33.  16.88s  g5-staggered-columns fg-cocoa-whipped-cream-bar
+34.  17.34s  g5-staggered-columns fg-candle-fireplace-dinner

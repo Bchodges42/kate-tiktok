@@ -1,0 +1,51 @@
+60 BPM steady, one photo per beat (1.000 s), 44 photos, 44 beats = 44.00 s, ends on a bar line
+dissolve: 18 frames (0.60 s) into each photo, finishing on the beat; beat sync: worst offset 1.00 frames -> PASS
+stillness: max held-frame diff 0.675 -> PASS
+photos: whole (no cropping), own shape (no stretching), none repeated -> PASS
+variety: no two photos of the same kind back to back -> PASS
+screen filled per photo: 43%-84% (whole photos; wide ones are shorter)
+
+ 1.   0.00s  town      cw-shingle-houses-full-moon
+ 2.   1.00s  keepsake  cw-vintage-sailing-postcards
+ 3.   2.00s  landscape cw-frosty-meadow-sunrise
+ 4.   3.00s  decor     cw-fish-tiles
+ 5.   4.00s  knitwear  cw-fair-isle-sweater-mittens
+ 6.   5.00s  interior  cw-blue-painted-staircase
+ 7.   6.00s  seascape  cw-cliff-sailboat-black-cat
+ 8.   7.00s  craft     cw-mohair-yarn-balls
+ 9.   8.00s  knitwear  cw-cream-wrap-sweater-sea
+10.   9.00s  cosy      cw-knit-sweaters-on-bed
+11.  10.00s  person    cw-snowy-beach-picnic-sunset
+12.  11.00s  bedroom   cw-quilt-bedroom-beams
+13.  12.00s  seascape  cw-cliff-house-surf
+14.  13.00s  window    cw-sunset-windows-candles
+15.  14.00s  porch     cw-deck-chair-blanket-coffee
+16.  15.00s  cosy      cw-sofa-mugs-cream-knits
+17.  16.00s  seascape  cw-snowy-lighthouse
+18.  17.00s  interior  cw-blue-tile-bathroom
+19.  18.00s  person    cw-foggy-beach-fair-isle-set
+20.  19.00s  window    cw-dark-room-lantern-window
+21.  20.00s  beach     cw-snowy-beach-path-fence
+22.  21.00s  bedroom   cw-bed-hydrangea-gingham-pillows
+23.  22.00s  person    cw-sunset-dunes-from-behind
+24.  23.00s  interior  cw-cottage-white-sofa
+25.  24.00s  porch     cw-adirondack-chair-quilt
+26.  25.00s  tableware cw-floral-teacups-suds
+27.  26.00s  town      cw-foggy-harbor-village
+28.  27.00s  window    cw-window-seat-dune-view
+29.  28.00s  beach     cw-snowfall-dune-grass
+30.  29.00s  interior  cw-sunlit-hallway-wood-floor
+31.  30.00s  hands     cw-striped-mitten-shells
+32.  31.00s  knitwear  cw-yellow-sweater-red-door
+33.  32.00s  seascape  cw-red-house-snowy-shore
+34.  33.00s  bag       cw-knit-sweater-straw-bag
+35.  34.00s  window    cw-open-window-rocky-surf
+36.  35.00s  bedroom   cw-floral-striped-bedding
+37.  36.00s  decor     cw-pine-dresser-linens
+38.  37.00s  interior  cw-lace-curtain-doorway
+39.  38.00s  knitwear  cw-lace-cuff-mohair-cardigan
+40.  39.00s  person    cw-woman-at-sink-green-cardigan
+41.  40.00s  window    cw-open-shutters-sea-desk
+42.  41.00s  interior  cw-blue-armoire-sitting-room
+43.  42.00s  tableware cw-sailboat-mug-coffee
+44.  43.00s  beach     cw-moonrise-snowy-beach

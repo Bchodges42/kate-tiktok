@@ -1,0 +1,288 @@
+{
+ "name": "unicorn-nostalgia",
+ "version": "pastel_polaroid_stack",
+ "vibe": "2000s kid nostalgia: Lip Smackers, glitter tattoos, Silly Bandz, tinsel hair, birthday cakes, unicorns",
+ "fps": 30,
+ "size": [
+  1080,
+  1920
+ ],
+ "bpm": 120,
+ "grade": {
+  "warmth": 0.0,
+  "lift": 4,
+  "saturation": 1.04,
+  "grain": 2.0,
+  "grain_seed": 7
+ },
+ "images_dir": "images",
+ "_tempo_comment": "steady 120 BPM, one photo per beat (0.50 s), hard cuts. 8 stacks of 6 photos, 2 bars each: 6 photos land, the finished stack holds 2 beats, then the next stack starts on the bar line (no blank screen). 32 s. No song: main MP4 has a kick beat guide; _silent.mp4 for posting with any ~120 BPM TikTok sound.",
+ "style": "pile",
+ "background": {
+  "spotlight": [
+   "#FFF6FB",
+   "#FBE1F0",
+   "#E9DDFB",
+   "#D7F0EE"
+  ],
+  "center": [
+   0.5,
+   0.5
+  ],
+  "radius": 0.95,
+  "sparkle": 220,
+  "sparkle_color": "#FFFFFF",
+  "seed": 11
+ },
+ "_background": "soft iridescent glow (blush centre fading to lilac and mint) with tiny white sparkles, a nod to holographic 2000s stationery",
+ "margin_px": 28,
+ "phrases": {
+  "sizes": [
+   6,
+   6,
+   6,
+   6,
+   6,
+   6,
+   6,
+   6
+  ],
+  "steps": 8,
+  "clear_steps": 0
+ },
+ "pile": {
+  "area_frac": 0.5,
+  "area_per_phrase": true,
+  "border_px": 6,
+  "border": [
+   "#FF9ECF",
+   "#B9A6FF",
+   "#7FD9C4",
+   "#FFD66E",
+   "#8EC9FF"
+  ],
+  "shadow": 0.3,
+  "spots": [
+   [
+    540,
+    960
+   ]
+  ],
+  "tilt": [
+   -3,
+   2,
+   -2,
+   3,
+   -3,
+   2
+  ],
+  "final_center": true,
+  "final_scale": 1.25,
+  "_look": "a centred polaroid stack: every photo lands dead centre, tilted a few degrees (scrapbook style), thin 6 px pastel borders (pink, lilac, mint, butter, sky) and a soft shadow; each new photo is the same size as the one it covers, so earlier ones peek out at the corners",
+  "_finale": "the unicorn pair lands last, straight (no tilt), dead centre and a little bigger"
+ },
+ "_order": "hook: the Lip Smacker collection. Each stack mixes kinds (beauty, hair, glitter tattoos, unicorns, toys, playground, party...) so no two of the same kind are back to back; ends on the two unicorns, which loops back to the Lip Smackers. 48 of the board's 50 pins: the kids' makeup palette is left out (375 px and another creator's TikTok watermark) and so is the glitter-pot palette (500 px wide, very wide and soft).",
+ "_crops": "tree-sunbeams: top 38 px of blown-out white sky trimmed so no white edge shows.",
+ "images": {
+  "uni-lip-smacker-collection": {
+   "kind": "beauty"
+  },
+  "uni-silly-bandz-pile": {
+   "kind": "crafts"
+  },
+  "uni-unicorn-crossing-sign": {
+   "kind": "unicorn"
+  },
+  "uni-glitter-hibiscus-tattoos": {
+   "kind": "tattoo"
+  },
+  "uni-pink-mp3-player-cds": {
+   "kind": "gadgets"
+  },
+  "uni-tinsel-hair-strands": {
+   "kind": "hair"
+  },
+  "uni-ball-pit-balls": {
+   "kind": "toys"
+  },
+  "uni-glitter-pink-nails": {
+   "kind": "beauty"
+  },
+  "uni-white-toy-unicorn": {
+   "kind": "unicorn"
+  },
+  "uni-sticker-gem-pile": {
+   "kind": "stickers"
+  },
+  "uni-butterfly-glitter-arm": {
+   "kind": "tattoo"
+  },
+  "uni-rainbow-hair-clips": {
+   "kind": "hair"
+  },
+  "uni-birthday-balloons-ceiling": {
+   "kind": "party"
+  },
+  "uni-heart-glitter-lip-gloss": {
+   "kind": "beauty"
+  },
+  "uni-trampoline-leaves": {
+   "kind": "playground"
+  },
+  "uni-rainbow-layer-cake": {
+   "kind": "party"
+  },
+  "uni-sparkly-butterfly-slippers": {
+   "kind": "fashion"
+  },
+  "uni-my-little-pony-meadow": {
+   "kind": "tv"
+  },
+  "uni-face-paint-birthday-cake": {
+   "kind": "party"
+  },
+  "uni-glitter-hair-part": {
+   "kind": "hair"
+  },
+  "uni-pink-play-tent": {
+   "kind": "toys"
+  },
+  "uni-glossy-lips": {
+   "kind": "beauty"
+  },
+  "uni-sticker-sheets": {
+   "kind": "stickers"
+  },
+  "uni-unicorns-sunset-beach": {
+   "kind": "unicorn"
+  },
+  "uni-water-balloons-bucket": {
+   "kind": "summer"
+  },
+  "uni-butterfly-glitter-tattoo": {
+   "kind": "tattoo"
+  },
+  "uni-ladybug-rain-boots": {
+   "kind": "fashion"
+  },
+  "uni-nail-polish-vanity": {
+   "kind": "beauty"
+  },
+  "uni-bubbles-backyard-playset": {
+   "kind": "playground"
+  },
+  "uni-heart-paint-pony": {
+   "kind": "toys"
+  },
+  "uni-yo-gabba-gabba-cast": {
+   "kind": "tv"
+  },
+  "uni-pink-glitter-eyeshadow": {
+   "kind": "beauty"
+  },
+  "uni-rainbow-loom-bands-crafting": {
+   "kind": "crafts"
+  },
+  "uni-door-covered-stickers": {
+   "kind": "stickers"
+  },
+  "uni-blonde-hair-tinsel": {
+   "kind": "hair"
+  },
+  "uni-unicorn-mane-flowers": {
+   "kind": "unicorn"
+  },
+  "uni-wooden-castle-playground": {
+   "kind": "playground"
+  },
+  "uni-belly-glitter-tattoo-belt": {
+   "kind": "tattoo"
+  },
+  "uni-purses-hanging-door": {
+   "kind": "fashion"
+  },
+  "uni-trading-cards-floor": {
+   "kind": "toys"
+  },
+  "uni-glitter-roots-hair": {
+   "kind": "hair"
+  },
+  "uni-library-tree-reading-nook": {
+   "kind": "place"
+  },
+  "uni-backyard-wooden-swingset": {
+   "kind": "playground"
+  },
+  "uni-pajama-pants-kids": {
+   "kind": "fashion"
+  },
+  "uni-tree-sunbeams": {
+   "kind": "nature",
+   "crop": [
+    0,
+    38,
+    736,
+    579
+   ]
+  },
+  "uni-pink-fairy-wings-hooks": {
+   "kind": "fashion"
+  },
+  "uni-glitter-unicorn-tattoo": {
+   "kind": "tattoo"
+  },
+  "uni-unicorn-pair-forest": {
+   "kind": "unicorn"
+  }
+ },
+ "order": [
+  "uni-lip-smacker-collection",
+  "uni-silly-bandz-pile",
+  "uni-unicorn-crossing-sign",
+  "uni-glitter-hibiscus-tattoos",
+  "uni-pink-mp3-player-cds",
+  "uni-tinsel-hair-strands",
+  "uni-ball-pit-balls",
+  "uni-glitter-pink-nails",
+  "uni-white-toy-unicorn",
+  "uni-sticker-gem-pile",
+  "uni-butterfly-glitter-arm",
+  "uni-rainbow-hair-clips",
+  "uni-birthday-balloons-ceiling",
+  "uni-heart-glitter-lip-gloss",
+  "uni-trampoline-leaves",
+  "uni-rainbow-layer-cake",
+  "uni-sparkly-butterfly-slippers",
+  "uni-my-little-pony-meadow",
+  "uni-face-paint-birthday-cake",
+  "uni-glitter-hair-part",
+  "uni-pink-play-tent",
+  "uni-glossy-lips",
+  "uni-sticker-sheets",
+  "uni-unicorns-sunset-beach",
+  "uni-water-balloons-bucket",
+  "uni-butterfly-glitter-tattoo",
+  "uni-ladybug-rain-boots",
+  "uni-nail-polish-vanity",
+  "uni-bubbles-backyard-playset",
+  "uni-heart-paint-pony",
+  "uni-yo-gabba-gabba-cast",
+  "uni-pink-glitter-eyeshadow",
+  "uni-rainbow-loom-bands-crafting",
+  "uni-door-covered-stickers",
+  "uni-blonde-hair-tinsel",
+  "uni-unicorn-mane-flowers",
+  "uni-wooden-castle-playground",
+  "uni-belly-glitter-tattoo-belt",
+  "uni-purses-hanging-door",
+  "uni-trading-cards-floor",
+  "uni-glitter-roots-hair",
+  "uni-library-tree-reading-nook",
+  "uni-backyard-wooden-swingset",
+  "uni-pajama-pants-kids",
+  "uni-tree-sunbeams",
+  "uni-pink-fairy-wings-hooks",
+  "uni-glitter-unicorn-tattoo",
+  "uni-unicorn-pair-forest"
+ ]
+}

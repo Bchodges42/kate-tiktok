@@ -1,0 +1,41 @@
+120 BPM steady, one photo per beat (0.500 s), 32 photos, 48 beats = 24.00 s, ends on a bar line; 4 phrases of 8/8/8/8 photos, each clearing to the background
+hard cuts; beat sync: worst offset 0.00 frames -> PASS
+stillness: max held-frame diff 0.059 -> PASS
+photos: whole (no cropping), own shape (no stretching), none repeated -> PASS
+variety: no two photos of the same kind back to back -> PASS
+overlap: every photo lands at the same area as the one it covers, never smaller -> PASS
+screen filled: 74% after 4 photos, 87% at the end
+finale: fg-candle-fireplace-dinner centred (box centre 540, 960 on a 1080 x 1920 screen)
+
+ 1.   0.00s  parade    fg-macys-parade-snoopy
+ 2.   0.50s  outfit    fg-plaid-maxi-skirt-leather-jacket
+ 3.   1.00s  parade    fg-parade-aerial-autumn-park
+ 4.   1.50s  outfit    fg-red-cape-autumn-road
+ 5.   2.00s  parade    fg-macys-parade-turkey-float
+ 6.   2.50s  outfit    fg-brown-jacket-flare-jeans
+ 7.   3.00s  place     fg-autumn-moon-hills
+ 8.   3.50s  outfit    fg-plaid-skirt-black-knit
+ 9.   6.00s  food      fg-roast-turkey-oranges
+10.   6.50s  drinks    fg-pink-cocktail-cheers
+11.   7.00s  food      fg-mac-and-cheese
+12.   7.50s  decor     fg-dried-orange-garland-decor
+13.   8.00s  food      fg-pie-table
+14.   8.50s  drinks    fg-orange-slice-cheers
+15.   9.00s  food      fg-pumpkin-soup-bread
+16.   9.50s  drinks    fg-whipped-cream-mugs
+17.  12.00s  table     fg-long-table-friends
+18.  12.50s  food      fg-pomegranate-fig-board
+19.  13.00s  table     fg-red-candles-pumpkin-table
+20.  13.50s  drinks    fg-cranberry-martini-cheers
+21.  14.00s  food      fg-harvest-buffet-candles
+22.  14.50s  table     fg-library-dinner-party
+23.  15.00s  food      fg-appetizer-spread-cake
+24.  15.50s  table     fg-candlelit-turkey-dinner
+25.  18.00s  games     fg-board-game-friends
+26.  18.50s  party     fg-pink-lantern-party
+27.  19.00s  games     fg-cards-on-table
+28.  19.50s  party     fg-marshmallow-bonfire
+29.  20.00s  drinks    fg-cocoa-whipped-cream-bar
+30.  20.50s  party     fg-party-garland-crowd
+31.  21.00s  games     fg-cards-pumpkin-coffee-table
+32.  21.50s  table     fg-candle-fireplace-dinner

@@ -1,0 +1,32 @@
+150 BPM steady, one photo per beat (0.400 s), 25 photos, 28 beats = 11.20 s, ends on a bar line
+beat sync: worst offset 0.00 frames -> PASS
+stillness: max held-frame diff 0.037 -> PASS
+photos: whole (no cropping), own shape (no stretching), none repeated -> PASS
+variety: no two photos of the same kind back to back -> PASS
+screen filled per photo: 48%-79% (whole photos; wide ones are shorter)
+
+ 1.   0.00s  group     fur-fox-fur-grannies
+ 2.   0.40s  outfit    fur-shaggy-white-fur-street
+ 3.   0.80s  detail    fur-fox-collar-detail
+ 4.   1.20s  outfit    fur-velvet-fur-trim-coat
+ 5.   1.60s  detail    fur-pink-mongolian-fur
+ 6.   2.00s  outfit    fur-gold-coat-subway
+ 7.   2.40s  rack      fur-colour-fur-rack
+ 8.   2.80s  outfit    fur-floral-duster-coat
+ 9.   3.20s  group     fur-brocade-jacket-duo
+10.   3.60s  outfit    fur-lilac-fur-jeans
+11.   4.00s  rack      fur-fur-rack-heels
+12.   4.40s  outfit    fur-afghan-coat-park
+13.   4.80s  detail    fur-paisley-fur-bralette
+14.   5.20s  outfit    fur-camel-fur-lace-slip
+15.   5.60s  group     fur-shaggy-fur-couple
+16.   6.00s  outfit    fur-olive-silk-coat
+17.   6.40s  detail    fur-velvet-pink-fur-cuffs
+18.   6.80s  outfit    fur-suede-shearling-street
+19.   7.20s  rack      fur-embroidered-coat-thrift
+20.   7.60s  outfit    fur-leopard-coat-doorway
+21.   8.00s  group     fur-elevator-trio
+22.   8.40s  rack      fur-closet-zebra-rug
+23.   8.80s  detail    fur-leather-fur-trunk
+24.   9.20s  outfit    fur-sable-brocade-jacket
+25.   9.60s  stage     fur-fur-stage-spotlight

@@ -1,0 +1,403 @@
+{
+ "name": "coastal-winter",
+ "version": "chic_moodboard_cut",
+ "vibe": "a clean Pinterest-style mood board: photos pinned over each other on warm cream, one quiet serif title, hard cuts on the beat, nothing animated",
+ "fps": 30,
+ "size": [
+  1080,
+  1920
+ ],
+ "bpm": 120,
+ "grade": {
+  "warmth": 0.0,
+  "lift": 4,
+  "saturation": 1.0,
+  "grain": 2.0,
+  "grain_seed": 7
+ },
+ "images_dir": "images",
+ "images": {
+  "cw-snowy-lighthouse": {
+   "kind": "seascape"
+  },
+  "cw-fair-isle-sweater-mittens": {
+   "kind": "knitwear"
+  },
+  "cw-shingle-houses-full-moon": {
+   "kind": "town"
+  },
+  "cw-sailboat-mug-coffee": {
+   "kind": "tableware"
+  },
+  "cw-snowfall-dune-grass": {
+   "kind": "beach"
+  },
+  "cw-quilt-bedroom-beams": {
+   "kind": "bedroom"
+  },
+  "cw-cliff-sailboat-black-cat": {
+   "kind": "seascape"
+  },
+  "cw-mohair-yarn-balls": {
+   "kind": "craft"
+  },
+  "cw-open-window-rocky-surf": {
+   "kind": "window"
+  },
+  "cw-cream-wrap-sweater-sea": {
+   "kind": "knitwear"
+  },
+  "cw-foggy-harbor-village": {
+   "kind": "town"
+  },
+  "cw-open-shutters-sea-desk": {
+   "kind": "window"
+  },
+  "cw-striped-mitten-shells": {
+   "kind": "hands"
+  },
+  "cw-cottage-white-sofa": {
+   "kind": "interior"
+  },
+  "cw-red-house-snowy-shore": {
+   "kind": "seascape"
+  },
+  "cw-lace-cuff-mohair-cardigan": {
+   "kind": "knitwear"
+  },
+  "cw-deck-chair-blanket-coffee": {
+   "kind": "porch"
+  },
+  "cw-snowy-beach-picnic-sunset": {
+   "kind": "person"
+  },
+  "cw-cliff-house-surf": {
+   "kind": "seascape"
+  },
+  "cw-knit-sweaters-on-bed": {
+   "kind": "cosy"
+  },
+  "cw-sunset-windows-candles": {
+   "kind": "window"
+  },
+  "cw-floral-teacups-suds": {
+   "kind": "tableware"
+  },
+  "cw-sunset-dunes-from-behind": {
+   "kind": "person"
+  },
+  "cw-bed-hydrangea-gingham-pillows": {
+   "kind": "bedroom"
+  },
+  "cw-frosty-meadow-sunrise": {
+   "kind": "landscape"
+  },
+  "cw-sunlit-hallway-wood-floor": {
+   "kind": "interior"
+  },
+  "cw-moonrise-snowy-beach": {
+   "kind": "beach"
+  },
+  "cw-yellow-sweater-red-door": {
+   "kind": "knitwear"
+  },
+  "cw-window-seat-dune-view": {
+   "kind": "window"
+  },
+  "cw-adirondack-chair-quilt": {
+   "kind": "porch"
+  },
+  "cw-blue-painted-staircase": {
+   "kind": "interior"
+  },
+  "cw-foggy-beach-fair-isle-set": {
+   "kind": "person"
+  }
+ },
+ "page": {
+  "color": "#F2ECE0",
+  "seed": 4,
+  "stitch": false,
+  "ink_opacity": 0,
+  "text": [
+   {
+    "text": "coastal winter",
+    "font": "CormorantGaramond-Italic.ttf",
+    "size": 128,
+    "weight": 500,
+    "y": 262,
+    "color": "#2F3B48"
+   },
+   {
+    "text": "THE MOOD BOARD",
+    "font": "CormorantGaramond.ttf",
+    "size": 30,
+    "weight": 600,
+    "y": 326,
+    "color": "#2F3B48",
+    "tracking": 14,
+    "opacity": 0.75
+   }
+  ],
+  "_look": "warm cream paper, no decorations; the title is set once in a serif italic with a small letter-spaced line under it and stays put"
+ },
+ "drop_frames": 0,
+ "phrases": [
+  {
+   "_what": "hook: first photo dead centre under the title, 8 photos in the first 2 seconds (every half beat), then 3 on the beat",
+   "photos": [
+    "cw-snowy-lighthouse",
+    "cw-fair-isle-sweater-mittens",
+    "cw-shingle-houses-full-moon",
+    "cw-sailboat-mug-coffee",
+    "cw-snowfall-dune-grass",
+    "cw-quilt-bedroom-beams",
+    "cw-cliff-sailboat-black-cat",
+    "cw-mohair-yarn-balls",
+    "cw-open-window-rocky-surf",
+    "cw-cream-wrap-sweater-sea",
+    "cw-foggy-harbor-village"
+   ],
+   "steps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    10,
+    12
+   ],
+   "length": 16,
+   "area_frac": 0.3,
+   "spots": [
+    [
+     540,
+     1040
+    ],
+    [
+     345,
+     800
+    ],
+    [
+     735,
+     1290
+    ],
+    [
+     735,
+     790
+    ],
+    [
+     345,
+     1290
+    ],
+    [
+     340,
+     1045
+    ],
+    [
+     745,
+     1040
+    ],
+    [
+     540,
+     790
+    ],
+    [
+     540,
+     1290
+    ],
+    [
+     350,
+     900
+    ],
+    [
+     730,
+     1180
+    ]
+   ]
+  },
+  {
+   "_what": "scattered pile, one per beat, holds a beat",
+   "photos": [
+    "cw-open-shutters-sea-desk",
+    "cw-striped-mitten-shells",
+    "cw-cottage-white-sofa",
+    "cw-red-house-snowy-shore",
+    "cw-lace-cuff-mohair-cardigan",
+    "cw-deck-chair-blanket-coffee",
+    "cw-snowy-beach-picnic-sunset"
+   ],
+   "steps": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10,
+    12
+   ],
+   "length": 16,
+   "area_frac": 0.3,
+   "spots": [
+    [
+     540,
+     1040
+    ],
+    [
+     735,
+     800
+    ],
+    [
+     345,
+     1290
+    ],
+    [
+     345,
+     800
+    ],
+    [
+     735,
+     1290
+    ],
+    [
+     745,
+     1045
+    ],
+    [
+     335,
+     1040
+    ]
+   ]
+  },
+  {
+   "_what": "centred stack, one per beat",
+   "photos": [
+    "cw-cliff-house-surf",
+    "cw-knit-sweaters-on-bed",
+    "cw-sunset-windows-candles",
+    "cw-floral-teacups-suds",
+    "cw-sunset-dunes-from-behind",
+    "cw-bed-hydrangea-gingham-pillows",
+    "cw-frosty-meadow-sunrise"
+   ],
+   "steps": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10,
+    12
+   ],
+   "length": 16,
+   "area_frac": 0.3,
+   "spots": [
+    [
+     540,
+     1040
+    ],
+    [
+     345,
+     1280
+    ],
+    [
+     735,
+     800
+    ],
+    [
+     735,
+     1290
+    ],
+    [
+     345,
+     800
+    ],
+    [
+     540,
+     800
+    ],
+    [
+     540,
+     1280
+    ]
+   ]
+  },
+  {
+   "_what": "scattered pile; the last polaroid lands dead centre, straight and bigger, and holds",
+   "photos": [
+    "cw-sunlit-hallway-wood-floor",
+    "cw-moonrise-snowy-beach",
+    "cw-yellow-sweater-red-door",
+    "cw-window-seat-dune-view",
+    "cw-adirondack-chair-quilt",
+    "cw-blue-painted-staircase",
+    "cw-foggy-beach-fair-isle-set"
+   ],
+   "steps": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10,
+    12
+   ],
+   "length": 16,
+   "area_frac": 0.3,
+   "spots": [
+    [
+     540,
+     1040
+    ],
+    [
+     735,
+     800
+    ],
+    [
+     345,
+     1290
+    ],
+    [
+     345,
+     800
+    ],
+    [
+     735,
+     1290
+    ],
+    [
+     745,
+     1045
+    ],
+    [
+     335,
+     1040
+    ]
+   ],
+   "final_center": true,
+   "final_scale": 1.3,
+   "center": [
+    540,
+    1040
+   ]
+  }
+ ],
+ "_order": "32 of the board's 44 pins: the 4 small ones (under ~500 px) and 8 that repeat a subject are left out to keep it short.",
+ "plain_frame": {
+  "border_px": 5,
+  "border": "#FFFFFF",
+  "shadow": 0.26
+ },
+ "safe": [
+  36,
+  380,
+  1044,
+  1700
+ ],
+ "_tempo_comment": "120 BPM, hard cuts. 4 piles of 2 bars (4 s) each = 16 s; each pile's first photo lands dead centre. No song: main MP4 has a kick beat guide; _silent.mp4 for posting with any ~120 BPM TikTok sound.",
+ "_layout": "photos stay between y=380 and y=1700: clear of the title above and of TikTok's caption and buttons below."
+}

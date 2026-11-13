@@ -1,0 +1,245 @@
+{
+ "name": "coastal-winter",
+ "vibe": "coastal winter: snowy beaches, lighthouses, shingle cottages, sea-view windows, quilts, mohair knits, coffee in a sailboat mug",
+ "fps": 30,
+ "size": [
+  1080,
+  1920
+ ],
+ "grade": {
+  "warmth": 0.0,
+  "lift": 4,
+  "saturation": 1.0,
+  "grain": 2.0,
+  "grain_seed": 7
+ },
+ "images_dir": "images",
+ "images": {
+  "cw-bed-hydrangea-gingham-pillows": {
+   "kind": "bedroom"
+  },
+  "cw-vintage-sailing-postcards": {
+   "kind": "keepsake"
+  },
+  "cw-fair-isle-sweater-mittens": {
+   "kind": "knitwear"
+  },
+  "cw-blue-armoire-sitting-room": {
+   "kind": "interior"
+  },
+  "cw-blue-painted-staircase": {
+   "kind": "interior"
+  },
+  "cw-floral-striped-bedding": {
+   "kind": "bedroom"
+  },
+  "cw-mohair-yarn-balls": {
+   "kind": "craft"
+  },
+  "cw-open-shutters-sea-desk": {
+   "kind": "window"
+  },
+  "cw-floral-teacups-suds": {
+   "kind": "tableware"
+  },
+  "cw-sailboat-mug-coffee": {
+   "kind": "tableware"
+  },
+  "cw-adirondack-chair-quilt": {
+   "kind": "porch"
+  },
+  "cw-blue-tile-bathroom": {
+   "kind": "interior"
+  },
+  "cw-fish-tiles": {
+   "kind": "decor"
+  },
+  "cw-lace-cuff-mohair-cardigan": {
+   "kind": "knitwear"
+  },
+  "cw-cliff-house-surf": {
+   "kind": "seascape"
+  },
+  "cw-pine-dresser-linens": {
+   "kind": "decor"
+  },
+  "cw-yellow-sweater-red-door": {
+   "kind": "knitwear"
+  },
+  "cw-cottage-white-sofa": {
+   "kind": "interior"
+  },
+  "cw-deck-chair-blanket-coffee": {
+   "kind": "porch"
+  },
+  "cw-knit-sweater-straw-bag": {
+   "kind": "bag"
+  },
+  "cw-knit-sweaters-on-bed": {
+   "kind": "cosy"
+  },
+  "cw-foggy-harbor-village": {
+   "kind": "town"
+  },
+  "cw-woman-at-sink-green-cardigan": {
+   "kind": "person"
+  },
+  "cw-dark-room-lantern-window": {
+   "kind": "window"
+  },
+  "cw-shingle-houses-full-moon": {
+   "kind": "town"
+  },
+  "cw-open-window-rocky-surf": {
+   "kind": "window"
+  },
+  "cw-lace-curtain-doorway": {
+   "kind": "interior"
+  },
+  "cw-cliff-sailboat-black-cat": {
+   "kind": "seascape"
+  },
+  "cw-quilt-bedroom-beams": {
+   "kind": "bedroom"
+  },
+  "cw-sunset-windows-candles": {
+   "kind": "window"
+  },
+  "cw-snowy-lighthouse": {
+   "kind": "seascape"
+  },
+  "cw-moonrise-snowy-beach": {
+   "kind": "beach"
+  },
+  "cw-red-house-snowy-shore": {
+   "kind": "seascape"
+  },
+  "cw-window-seat-dune-view": {
+   "kind": "window"
+  },
+  "cw-snowy-beach-picnic-sunset": {
+   "kind": "person"
+  },
+  "cw-snowfall-dune-grass": {
+   "kind": "beach"
+  },
+  "cw-snowy-beach-path-fence": {
+   "kind": "beach"
+  },
+  "cw-cream-wrap-sweater-sea": {
+   "kind": "knitwear"
+  },
+  "cw-frosty-meadow-sunrise": {
+   "kind": "landscape"
+  },
+  "cw-sofa-mugs-cream-knits": {
+   "kind": "cosy"
+  },
+  "cw-sunlit-hallway-wood-floor": {
+   "kind": "interior"
+  },
+  "cw-sunset-dunes-from-behind": {
+   "kind": "person"
+  },
+  "cw-striped-mitten-shells": {
+   "kind": "hands"
+  },
+  "cw-foggy-beach-fair-isle-set": {
+   "kind": "person"
+  }
+ },
+ "_source": "all 44 pins of the user's Pinterest board kholthaus8/coastal-winter, whole and uncropped (the three largest files were saved at 2400 px on the long side, still larger than the screen)",
+ "version": "sand_postcard_stack_overlap",
+ "bpm": 104,
+ "style": "pile",
+ "background": "#E3D8C4",
+ "margin_px": 28,
+ "order": [
+  "cw-cliff-sailboat-black-cat",
+  "cw-cottage-white-sofa",
+  "cw-open-window-rocky-surf",
+  "cw-knit-sweater-straw-bag",
+  "cw-striped-mitten-shells",
+  "cw-blue-armoire-sitting-room",
+  "cw-adirondack-chair-quilt",
+  "cw-yellow-sweater-red-door",
+  "cw-sunset-dunes-from-behind",
+  "cw-window-seat-dune-view",
+  "cw-foggy-harbor-village",
+  "cw-lace-cuff-mohair-cardigan",
+  "cw-snowy-beach-path-fence",
+  "cw-blue-painted-staircase",
+  "cw-cliff-house-surf",
+  "cw-sunset-windows-candles",
+  "cw-snowfall-dune-grass",
+  "cw-lace-curtain-doorway",
+  "cw-cream-wrap-sweater-sea",
+  "cw-bed-hydrangea-gingham-pillows",
+  "cw-red-house-snowy-shore",
+  "cw-sofa-mugs-cream-knits",
+  "cw-deck-chair-blanket-coffee",
+  "cw-vintage-sailing-postcards",
+  "cw-moonrise-snowy-beach",
+  "cw-quilt-bedroom-beams",
+  "cw-snowy-beach-picnic-sunset",
+  "cw-pine-dresser-linens",
+  "cw-dark-room-lantern-window",
+  "cw-snowy-lighthouse",
+  "cw-sunlit-hallway-wood-floor",
+  "cw-shingle-houses-full-moon",
+  "cw-open-shutters-sea-desk",
+  "cw-frosty-meadow-sunrise",
+  "cw-woman-at-sink-green-cardigan",
+  "cw-fair-isle-sweater-mittens",
+  "cw-floral-striped-bedding",
+  "cw-mohair-yarn-balls",
+  "cw-sailboat-mug-coffee",
+  "cw-knit-sweaters-on-bed",
+  "cw-blue-tile-bathroom",
+  "cw-fish-tiles",
+  "cw-floral-teacups-suds",
+  "cw-foggy-beach-fair-isle-set"
+ ],
+ "phrases": {
+  "sizes": [
+   6,
+   6,
+   5,
+   5,
+   6,
+   5,
+   5,
+   6
+  ],
+  "steps": 8,
+  "clear_steps": 0
+ },
+ "pile": {
+  "area_frac": 0.5,
+  "area_per_phrase": true,
+  "border_px": 6,
+  "border": "#FFFFFF",
+  "shadow": 0.3,
+  "spots": [
+   [
+    540,
+    960
+   ]
+  ],
+  "tilt": [
+   0,
+   -3,
+   2,
+   -2,
+   3,
+   -3,
+   2
+  ],
+  "final_center": true,
+  "final_scale": 1.2,
+  "wide_first": true,
+  "_look": "a centred stack of postcards on warm sand: every photo lands dead centre on top of the last at the same size, tilted a few degrees so earlier ones peek out at the corners; thin 6 px white borders, soft shadow"
+ },
+ "_tempo_comment": "steady 104 BPM, one photo per beat (0.577 s), hard cuts. 8 stacks of 5-6 photos, 2 bars each; each finished stack holds 2-3 beats, then the next stack starts on the bar line (no blank screen). 36.9 s.",
+ "_order": "its own order. Opens on the cliff, sailboat and black cat, straight and centred; ends on the woman on the foggy beach, straight, centred and a little bigger. The board's two wide photos (beach path, lantern window) each open a stack, so the taller photos that cover them can be bigger."
+}

@@ -1,0 +1,255 @@
+{
+ "name": "colorful",
+ "vibe": "dopamine maximalism: candy colours, sequins, tights, eye close-ups",
+ "fps": 30,
+ "size": [
+  1080,
+  1920
+ ],
+ "bpm": 150,
+ "grade": {
+  "warmth": 0.0,
+  "lift": 4,
+  "saturation": 1.04,
+  "grain": 2.0,
+  "grain_seed": 7
+ },
+ "_tempo_comment": "steady 150 BPM, one photo per beat (0.40 s = 12 frames), ends on a bar line. No song: main MP4 has a plain kick beat guide, _silent.mp4 is for posting with any TikTok sound. Add \"song\" to cut to a real track.",
+ "images_dir": "images",
+ "images": {
+  "colorful-pink-eye-teal-lashes": {
+   "kind": "eye"
+  },
+  "colorful-red-tights-heels": {
+   "kind": "legs"
+  },
+  "colorful-floral-mules": {
+   "kind": "shoes"
+  },
+  "colorful-pink-tweed-staircase": {
+   "kind": "outfit"
+  },
+  "colorful-red-tights-triptych": {
+   "kind": "legs"
+  },
+  "colorful-horse-swim-lake": {
+   "kind": "scene",
+   "crop": [
+    52,
+    115,
+    548,
+    486
+   ],
+   "_crop": "removes the white frame around the photo"
+  },
+  "colorful-monsters-colour-legs": {
+   "kind": "legs"
+  },
+  "colorful-polka-dot-boots": {
+   "kind": "shoes"
+  },
+  "colorful-gem-hair-clip": {
+   "kind": "beauty"
+  },
+  "colorful-pink-tights-polka-skirt": {
+   "kind": "outfit"
+  },
+  "colorful-jewelled-boxes": {
+   "kind": "texture"
+  },
+  "colorful-glitter-lips": {
+   "kind": "beauty",
+   "crop": [
+    22,
+    26,
+    592,
+    588
+   ],
+   "_crop": "removes the white stamp-edge frame"
+  },
+  "colorful-disco-floor": {
+   "kind": "scene"
+  },
+  "colorful-brocade-boots-bed": {
+   "kind": "shoes"
+  },
+  "colorful-coloured-tights-bench": {
+   "kind": "legs"
+  },
+  "colorful-runway-graphic-tee": {
+   "kind": "outfit"
+  },
+  "colorful-sari-fabrics": {
+   "kind": "texture"
+  },
+  "colorful-sequin-rack": {
+   "kind": "rack"
+  },
+  "colorful-eyeshadow-palette": {
+   "kind": "beauty"
+  },
+  "colorful-sitting-legs-polka": {
+   "kind": "legs"
+  },
+  "colorful-embroidered-boots-box": {
+   "kind": "shoes"
+  },
+  "colorful-beetle-cardigan-plaid": {
+   "kind": "outfit"
+  },
+  "colorful-street-trio-tights": {
+   "kind": "scene"
+  },
+  "colorful-polka-dot-chair-girl": {
+   "kind": "art"
+  },
+  "colorful-sequin-paillettes": {
+   "kind": "texture"
+  },
+  "colorful-yellow-sunglasses": {
+   "kind": "portrait"
+  },
+  "colorful-embroidered-pink-jeans": {
+   "kind": "clothes"
+  },
+  "colorful-tulips-garden-books": {
+   "kind": "still-life"
+  },
+  "colorful-glitter-fingertips": {
+   "kind": "beauty"
+  },
+  "colorful-bathroom-getting-ready": {
+   "kind": "scene"
+  },
+  "colorful-embroidered-denim-boots": {
+   "kind": "shoes"
+  },
+  "colorful-painted-tights-legs": {
+   "kind": "legs"
+  },
+  "colorful-mirror-selfie-fur": {
+   "kind": "outfit"
+  },
+  "colorful-striped-vespa": {
+   "kind": "object"
+  },
+  "colorful-painted-pink-horses": {
+   "kind": "art"
+  },
+  "colorful-jewelled-bangles": {
+   "kind": "texture"
+  },
+  "colorful-red-lash-eye": {
+   "kind": "eye"
+  },
+  "colorful-fur-rack-heels": {
+   "kind": "rack"
+  },
+  "colorful-pop-art-tigers": {
+   "kind": "art"
+  }
+ },
+ "order": [
+  "colorful-pink-eye-teal-lashes",
+  "colorful-red-tights-heels",
+  "colorful-floral-mules",
+  "colorful-pink-tweed-staircase",
+  "colorful-red-tights-triptych",
+  "colorful-horse-swim-lake",
+  "colorful-monsters-colour-legs",
+  "colorful-polka-dot-boots",
+  "colorful-gem-hair-clip",
+  "colorful-pink-tights-polka-skirt",
+  "colorful-jewelled-boxes",
+  "colorful-glitter-lips",
+  "colorful-disco-floor",
+  "colorful-brocade-boots-bed",
+  "colorful-coloured-tights-bench",
+  "colorful-runway-graphic-tee",
+  "colorful-sari-fabrics",
+  "colorful-sequin-rack",
+  "colorful-eyeshadow-palette",
+  "colorful-sitting-legs-polka",
+  "colorful-embroidered-boots-box",
+  "colorful-beetle-cardigan-plaid",
+  "colorful-street-trio-tights",
+  "colorful-polka-dot-chair-girl",
+  "colorful-sequin-paillettes",
+  "colorful-yellow-sunglasses",
+  "colorful-embroidered-pink-jeans",
+  "colorful-tulips-garden-books",
+  "colorful-glitter-fingertips",
+  "colorful-bathroom-getting-ready",
+  "colorful-embroidered-denim-boots",
+  "colorful-painted-tights-legs",
+  "colorful-mirror-selfie-fur",
+  "colorful-striped-vespa",
+  "colorful-painted-pink-horses",
+  "colorful-jewelled-bangles",
+  "colorful-red-lash-eye",
+  "colorful-fur-rack-heels",
+  "colorful-pop-art-tigers"
+ ],
+ "version": "colorful_overlap_collage_long",
+ "style": "pile",
+ "background": {
+  "checker": [
+   "#FFC4DF",
+   "#FF9DCB"
+  ],
+  "size": 90
+ },
+ "margin_px": 30,
+ "pile": {
+  "area_frac": 0.3,
+  "border_px": 22,
+  "border": [
+   "#2B59FF",
+   "#FF7A1A",
+   "#B6F03B",
+   "#FFD23F",
+   "#19D3C5",
+   "#FF3B30"
+  ],
+  "shadow": 0.3,
+  "spots": [
+   [
+    330,
+    430
+   ],
+   [
+    760,
+    620
+   ],
+   [
+    320,
+    1020
+   ],
+   [
+    770,
+    1200
+   ],
+   [
+    340,
+    1520
+   ],
+   [
+    740,
+    1480
+   ],
+   [
+    560,
+    860
+   ],
+   [
+    540,
+    1300
+   ]
+  ],
+  "_look": "pink checkerboard background; thick borders cycling cobalt, tangerine, lime, sunshine, turquoise, red (no pink, so every border pops off the checker)",
+  "final_center": true,
+  "final_scale": 1.3,
+  "_finale": "the last photo (pop-art tigers) lands dead centre, 1.3x the size of the others, and holds to the bar line"
+ },
+ "_length_comment": "all 39 pins on the board (the RSS feed only lists the newest 25; the rest came from the board widget feed)"
+}

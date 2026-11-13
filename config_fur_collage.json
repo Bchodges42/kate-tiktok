@@ -1,0 +1,168 @@
+{
+ "name": "fur",
+ "vibe": "vintage fur coats, maximal street style",
+ "fps": 30,
+ "size": [
+  1080,
+  1920
+ ],
+ "bpm": 150,
+ "background": "#2A1E18",
+ "grade": {
+  "warmth": 0.01,
+  "lift": 5,
+  "saturation": 1.0,
+  "grain": 2.0,
+  "grain_seed": 7
+ },
+ "_tempo_comment": "steady 150 BPM, one photo per beat (0.40 s = exactly 12 frames); ends on a bar line so it loops. No song given: the main MP4 has a plain kick-drum beat guide, the _silent.mp4 is for posting with a TikTok sound at this tempo. Add \"song\": \"audio/<file>.wav\" to cut to a real track.",
+ "images_dir": "images",
+ "images": {
+  "fur-fox-fur-grannies": {
+   "kind": "group"
+  },
+  "fur-shaggy-white-fur-street": {
+   "kind": "outfit"
+  },
+  "fur-fox-collar-detail": {
+   "kind": "detail"
+  },
+  "fur-velvet-fur-trim-coat": {
+   "kind": "outfit"
+  },
+  "fur-pink-mongolian-fur": {
+   "kind": "detail"
+  },
+  "fur-gold-coat-subway": {
+   "kind": "outfit"
+  },
+  "fur-colour-fur-rack": {
+   "kind": "rack"
+  },
+  "fur-floral-duster-coat": {
+   "kind": "outfit"
+  },
+  "fur-brocade-jacket-duo": {
+   "kind": "group"
+  },
+  "fur-lilac-fur-jeans": {
+   "kind": "outfit"
+  },
+  "fur-fur-rack-heels": {
+   "kind": "rack"
+  },
+  "fur-afghan-coat-park": {
+   "kind": "outfit"
+  },
+  "fur-paisley-fur-bralette": {
+   "kind": "detail"
+  },
+  "fur-camel-fur-lace-slip": {
+   "kind": "outfit"
+  },
+  "fur-shaggy-fur-couple": {
+   "kind": "group"
+  },
+  "fur-olive-silk-coat": {
+   "kind": "outfit"
+  },
+  "fur-velvet-pink-fur-cuffs": {
+   "kind": "detail"
+  },
+  "fur-suede-shearling-street": {
+   "kind": "outfit"
+  },
+  "fur-embroidered-coat-thrift": {
+   "kind": "rack"
+  },
+  "fur-leopard-coat-doorway": {
+   "kind": "outfit"
+  },
+  "fur-elevator-trio": {
+   "kind": "group"
+  },
+  "fur-closet-zebra-rug": {
+   "kind": "rack"
+  },
+  "fur-leather-fur-trunk": {
+   "kind": "detail"
+  },
+  "fur-sable-brocade-jacket": {
+   "kind": "outfit"
+  },
+  "fur-fur-stage-spotlight": {
+   "kind": "stage"
+  }
+ },
+ "order": [
+  "fur-fox-fur-grannies",
+  "fur-shaggy-white-fur-street",
+  "fur-fox-collar-detail",
+  "fur-velvet-fur-trim-coat",
+  "fur-pink-mongolian-fur",
+  "fur-gold-coat-subway",
+  "fur-colour-fur-rack",
+  "fur-floral-duster-coat",
+  "fur-brocade-jacket-duo",
+  "fur-lilac-fur-jeans",
+  "fur-fur-rack-heels",
+  "fur-afghan-coat-park",
+  "fur-paisley-fur-bralette",
+  "fur-camel-fur-lace-slip",
+  "fur-shaggy-fur-couple",
+  "fur-olive-silk-coat",
+  "fur-velvet-pink-fur-cuffs",
+  "fur-suede-shearling-street",
+  "fur-embroidered-coat-thrift",
+  "fur-leopard-coat-doorway",
+  "fur-elevator-trio",
+  "fur-closet-zebra-rug",
+  "fur-leather-fur-trunk",
+  "fur-sable-brocade-jacket",
+  "fur-fur-stage-spotlight"
+ ],
+ "version": "fur_overlap_collage",
+ "style": "pile",
+ "margin_px": 30,
+ "pile": {
+  "area_frac": 0.3,
+  "border_px": 14,
+  "border": "#F3EBDD",
+  "shadow": 0.35,
+  "spots": [
+   [
+    330,
+    430
+   ],
+   [
+    760,
+    620
+   ],
+   [
+    320,
+    1020
+   ],
+   [
+    770,
+    1200
+   ],
+   [
+    340,
+    1520
+   ],
+   [
+    740,
+    1480
+   ],
+   [
+    560,
+    860
+   ],
+   [
+    540,
+    1300
+   ]
+  ],
+  "_note": "each photo lands on top at the same area as the one below, cycling through these spots so the pile stays balanced"
+ }
+}

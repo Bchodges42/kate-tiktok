@@ -1,0 +1,34 @@
+120 BPM steady, one photo per 1/2 beat (0.250 s), 25 photos, 16 beats = 8.00 s, ends on a bar line
+beat sync: worst offset 0.50 frames -> PASS
+stillness: max held-frame diff 0.041 -> PASS
+photos: whole (no cropping), own shape (no stretching), none repeated -> PASS
+variety: no two photos of the same kind back to back -> PASS
+overlap: every photo lands at the same area as the one it covers, never smaller -> PASS
+screen filled: 72% after 4 photos, 89% at the end
+finale: dance-studio-54-dancer centred (box centre 540, 960 on a 1080 x 1920 screen)
+
+ 1.   0.00s  crowd     dance-studio-54-crowd
+ 2.   0.27s  object    dance-boombox-glitter-hand
+ 3.   0.50s  dancers   dance-blurred-dancers-dark
+ 4.   0.73s  crowd     dance-red-lights-club
+ 5.   1.00s  beauty    dance-star-eye-makeup
+ 6.   1.27s  silhouette dance-window-silhouettes
+ 7.   1.50s  legs      dance-platform-boots
+ 8.   1.73s  object    dance-champagne-toast
+ 9.   2.00s  outfit    dance-sequin-dress-blur
+10.   2.27s  dancers   dance-motion-blur-dancers
+11.   2.50s  place     dance-light-up-floor
+12.   2.73s  crowd     dance-disco-ball-dancers
+13.   3.00s  art       dance-peace-prints
+14.   3.27s  outfit    dance-gold-fringe-dancer
+15.   3.50s  portrait  dance-headphones-dancing
+16.   3.73s  place     dance-chandelier-glam
+17.   4.00s  retro     dance-go-go-girls-red
+18.   4.27s  dancers   dance-hair-flip-heels
+19.   4.50s  object    dance-spinning-record
+20.   4.73s  crowd     dance-disco-dancers-group
+21.   5.00s  beauty    dance-glitter-palette
+22.   5.27s  performers dance-sequin-singers
+23.   5.50s  silhouette dance-tinsel-silhouette
+24.   5.73s  legs      dance-sequin-flares-row
+25.   6.00s  dancers   dance-studio-54-dancer

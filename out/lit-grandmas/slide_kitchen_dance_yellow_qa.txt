@@ -1,0 +1,5 @@
+slide_kitchen_dance_yellow.mp4: 1080x1920, 30 fps, 16.80 s, silent (add it to your video by hand)
+  gma-kitchen-dance-tan-sweater.gif: 249x249 source, 3.36 s loop, shown 730x730 at (167,72) = 2.9x enlargement, loops 5.00 times
+  gma-kitchen-dance-chips-striped.gif: 345x465 source, 4.20 s loop, shown 730x984 at (167,848) = 2.1x enlargement, loops 4.00 times
+  shape kept: True; column edges aligned: True
+  gaps: top 72 px, between 30 px, bottom 72 px; screen covered 63%

@@ -7,7 +7,12 @@ spaced apart (never overlapping), then the canvas clears and the next pattern st
 The config's "timeline" is a list of steps, one per beat (or "beats": n):
     {"image": "<key>", "slot": "<slot name>"}   add a photo to the canvas
     {"clear": true}                              back to the plain background
+With groups, "clear_between": false skips the blank screen between slides.
 Photos keep their own shape (never cropped), fit inside their slot box, never move.
+
+Background: a colour, or {"image": "images/<file>"} (a 9:16 picture, used whole).
+No song? Give "bpm" instead: photos land on an exact beat grid, the main MP4 carries a plain
+kick beat guide and the _silent.mp4 is for posting with any TikTok sound at that tempo.
 """
 import argparse
 import json
@@ -166,8 +171,10 @@ def timeline_from_groups(cfg, W, H):
             st = {"image": k, "slot": f"g{n + 1}-{grp.get('name', grp.get('flow'))}", "box": list(b), "beats": holds.get(k, cfg["step_beats"])}
             if "at" in grp:  # exact hit times (seconds), one per photo in appearance order
                 st["at"] = grp["at"][m]
+            if m == 0 and n > 0 and not cfg.get("clear_between", True):
+                st["fresh"] = True  # no blank screen: the full slide cuts straight to the next slide's first photo
             steps.append(st)
-        if n < len(cfg["groups"]) - 1:
+        if n < len(cfg["groups"]) - 1 and cfg.get("clear_between", True):
             st = {"clear": True, "beats": cfg["step_beats"]}
             if "clear_at" in grp:
                 st["at"] = grp["clear_at"]
@@ -187,12 +194,23 @@ def main():
     os.makedirs(outdir, exist_ok=True)
     slots = cfg.get("slots", {})
     bg = np.empty((H, W, 3), np.float32)
-    bg[:] = hex_rgb(cfg["background"])
+    if isinstance(cfg["background"], dict):
+        bim = Image.open(os.path.join(ROOT, cfg["background"]["image"])).convert("RGB")
+        if abs(bim.width / bim.height - W / H) > 0.01:
+            sys.exit(f"background image is {bim.width}x{bim.height}, not {W}:{H}; it would have to be cropped")
+        bg[:] = np.asarray(bim.resize((W, H), Image.LANCZOS), np.float32)
+    else:
+        bg[:] = hex_rgb(cfg["background"])
 
     # ---- beat grid (absolute beat times, snapped to frames; frame 0 = sound 0.00 s)
-    au = analyze_audio(cfg, None)
-    if au["placeholder"]:
-        sys.exit(f"song not found: {cfg['song']}")
+    if not cfg.get("song"):  # steady tempo, no song: an exact grid from 0.00 s
+        bpm = cfg["bpm"]
+        au = {"tempo": bpm, "beats": np.arange(2000) * 60.0 / bpm, "phase": 0}
+        cfg["start_beat_index"] = 0
+    else:
+        au = analyze_audio(cfg, None)
+        if au["placeholder"]:
+            sys.exit(f"song not found: {cfg['song']}")
     beats = au["beats"]
     if "start_beat_index" in cfg:
         start = cfg["start_beat_index"]
@@ -271,6 +289,8 @@ def main():
         if sh.get("clear"):
             layers = []
         else:
+            if sh.get("fresh"):
+                layers = []
             key, slot = sh["image"], slots.get(sh["slot"], {})
             im = srcs[key]
             if "box" in sh:
@@ -316,9 +336,14 @@ def main():
         sys.exit("a photo is used twice")
 
     grain = np.random.default_rng(cfg["grade"].get("grain_seed", 0)).normal(0, cfg["grade"]["grain"], (H, W, 1)).astype(np.float32)
-    song = os.path.join(ROOT, cfg["song"])
     mp4 = os.path.join(outdir, f"{cfg['version']}.mp4")
     silent = os.path.join(outdir, f"{cfg['version']}_silent.mp4")
+    if cfg.get("song"):
+        song = os.path.join(ROOT, cfg["song"])
+    else:
+        from steady import beat_guide
+        song = os.path.join(outdir, f"{cfg['version']}_beat.wav")
+        beat_guide(song, cfg["bpm"], int(np.ceil(N / fps * cfg["bpm"] / 60)) + 1)
     cmd = ["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}",
            "-r", str(fps), "-i", "-", "-i", song, "-filter_complex",
            f"[1:a]atrim=0:{N / fps:.4f},asetpts=N/SR/TB,afade=t=in:d=0.04,afade=t=out:st={N / fps - 0.04:.4f}:d=0.04[a]",
@@ -336,6 +361,8 @@ def main():
     p.stdin.close()
     if p.wait():
         sys.exit("ffmpeg failed")
+    if not cfg.get("song"):
+        os.remove(song)
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", mp4, "-an", "-c:v", "copy", "-movflags",
                     "+faststart", silent], check=True)
 
