@@ -6,6 +6,7 @@
   style "single": one whole photo at a time, centred as big as it fits on a solid background.
                   "dissolve_frames": D blends each photo into the next, finishing exactly on the beat;
                   with "transition": "wipe" those D frames are a soft-edged wipe instead of a blend.
+                  "polaroid": {...} draws each photo inside an instant-photo frame with a film look.
   Any image can carry "clip": "clips/<file>.mp4": the clip plays in its spot before the next photo lands.
   style "pile":   an overlapping collage. Every photo lands on top of the pile at the same area
                   (so a cover is never smaller than what it covers), with a thin border and a soft
@@ -44,6 +45,77 @@ def beat_guide(path, bpm, beats, sr=44100):
     pcm = (np.clip(y, -1, 1) * 32000).astype(np.int16)
     with wave.open(path, "wb") as w:
         w.setnchannels(1); w.setsampwidth(2); w.setframerate(sr); w.writeframes(pcm.tobytes())
+
+
+def polaroid_filter(a, f):
+    """An instant-film look on one photo (float RGB 0-255): faded blacks, soft highlights, slightly
+    lower colour, cool-green shadows and warm highlights, and a gentle corner vignette."""
+    x = a / 255.0
+    lum = x.mean(axis=2, keepdims=True)
+    x = lum + (x - lum) * f.get("saturation", 0.86)
+    x = x * x * (3 - 2 * x) * 0.35 + x * 0.65                       # a little more mid contrast
+    x = f.get("black", 0.075) + x * (f.get("white", 0.955) - f.get("black", 0.075))  # milky blacks, creamy whites
+    lum = x.mean(axis=2, keepdims=True)
+    t = f.get("tint", 1.0)
+    x[..., 0] += t * (0.030 * lum - 0.012 * (1 - lum))[..., 0]       # warm highlights
+    x[..., 1] += t * (0.012 * lum + 0.012 * (1 - lum))[..., 0]       # faint green cast
+    x[..., 2] += t * (-0.045 * lum + 0.022 * (1 - lum))[..., 0]      # yellow highlights, cool shadows
+    h, w = x.shape[:2]
+    yy, xx = np.mgrid[0:h, 0:w].astype(np.float32)
+    r2 = ((xx - w / 2) / (w / 2)) ** 2 + ((yy - h / 2) / (h / 2)) ** 2
+    x *= (1 - f.get("vignette", 0.16) * np.clip(r2 / 2, 0, 1) ** 1.5)[..., None]
+    return np.clip(x * 255, 0, 255)
+
+
+def polaroid_plate(bg, im, pol, cfg, m, idx):
+    """One whole photo inside a drawn instant-photo frame, centred on the background: thin paper
+    border on the top and sides, a deep one at the bottom, sized around the photo's own shape (the
+    photo is never cropped to a square). Paper grain, a recessed picture window and a soft shadow
+    are all fixed, so the held frame is perfectly still."""
+    H, W = bg.shape[:2]
+    side, top, bot = pol.get("side", 0.052), pol.get("top", 0.062), pol.get("bottom", 0.215)   # as fractions of the frame width
+    # frame width fw and photo width w: w = fw (1 - 2 side); frame height = photo height + (top + bot) fw
+    r = im.height / im.width
+    fw = min(W - 2 * m, (H - 2 * m) / (r * (1 - 2 * side) + top + bot))
+    fw = int(fw)
+    sp, tp = int(round(side * fw)), int(round(top * fw))
+    w = fw - 2 * sp
+    h = int(round(w * r))
+    fh = h + tp + int(round(bot * fw))
+    x, y = (W - fw) // 2, (H - fh) // 2
+    c = bg.copy()
+    rad = pol.get("corner_px", 7)
+    mask = Image.new("L", (W, H), 0)
+    ImageDraw.Draw(mask).rounded_rectangle([x, y, x + fw - 1, y + fh - 1], rad, fill=255)
+    # shadow: a tight contact shadow plus a wide soft one, lit from the upper left
+    for dx, dy, blur, st in ((2, 4, 5, 0.30), (10, 22, 32, pol.get("shadow", 0.30))):
+        sh = Image.new("L", (W, H), 0)
+        ImageDraw.Draw(sh).rounded_rectangle([x + dx, y + dy, x + fw - 1 + dx, y + fh - 1 + dy], rad, fill=int(255 * st))
+        c *= 1 - np.asarray(sh.filter(ImageFilter.GaussianBlur(blur)), np.float32)[..., None] / 255
+    # paper: warm off-white, fine fibre grain (fixed seed), very slightly darker toward the edges
+    rng = np.random.default_rng(pol.get("seed", 5))
+    paper = np.array(hex_rgb(pol.get("paper", "#F6F3EA")), np.float32) * np.ones((fh, fw, 3), np.float32)
+    fine = rng.normal(0, 1.6, (fh, fw, 1)).astype(np.float32)
+    coarse = np.asarray(Image.fromarray((rng.normal(128, 40, (fh // 6 + 2, fw // 6 + 2))).clip(0, 255).astype(np.uint8)).resize((fw, fh), Image.BICUBIC), np.float32)[..., None]
+    paper += fine + (coarse - 128) * 0.035
+    yy, xx = np.mgrid[0:fh, 0:fw].astype(np.float32)
+    edge = np.minimum(np.minimum(xx, fw - 1 - xx), np.minimum(yy, fh - 1 - yy))
+    paper *= (1 - 0.05 * np.exp(-edge / 5.0))[..., None]            # the cut edge of the card catches less light
+    paper *= (1.012 - 0.03 * yy / fh)[..., None]                    # soft top-to-bottom falloff
+    # the picture: graded like every edit, then the instant-film look, with its own fixed film grain
+    ph = polaroid_filter(grade(np.asarray(im.resize((w, h), Image.LANCZOS)), cfg["grade"]), pol.get("filter", {}))
+    ph += np.random.default_rng(pol.get("seed", 5) + 1).normal(0, pol.get("film_grain", 3.0), (h, w, 1)).astype(np.float32)
+    # recessed window: the paper frame casts a thin shadow onto the top and left of the picture
+    py, px = np.mgrid[0:h, 0:w].astype(np.float32)
+    ph *= (1 - 0.30 * np.exp(-py / 3.0) - 0.22 * np.exp(-px / 3.0) - 0.08 * np.exp(-(h - 1 - py) / 2.0) - 0.08 * np.exp(-(w - 1 - px) / 2.0))[..., None].clip(0, 1)
+    paper[tp:tp + h, sp:sp + w] = np.clip(ph, 0, 255)
+    # a hairline lip around the window where the frame layer ends
+    lip = np.array(hex_rgb("#D9D4C6"), np.float32)
+    paper[tp - 1, sp - 1:sp + w + 1] = lip; paper[tp + h, sp - 1:sp + w + 1] = paper[tp + h, sp - 1:sp + w + 1] * 0.5 + 127
+    paper[tp - 1:tp + h + 1, sp - 1] = lip; paper[tp - 1:tp + h + 1, sp + w] = paper[tp - 1:tp + h + 1, sp + w] * 0.5 + 127
+    al = np.asarray(mask, np.float32)[y:y + fh, x:x + fw, None] / 255
+    c[y:y + fh, x:x + fw] = c[y:y + fh, x:x + fw] * (1 - al) + np.clip(paper, 0, 255) * al
+    return c, (x, y, fw, fh)
 
 
 def main():
@@ -162,8 +234,13 @@ def main():
         bord = cfg.get("border_px", 0)
         bcol = np.array(hex_rgb(cfg.get("border", "#FFFFFF")), np.float32)
         cyc, every = cfg.get("bg_cycle"), cfg.get("bg_every", 4)  # e.g. a new background colour every bar
+        pol = cfg.get("polaroid")
         for i, k in enumerate(order):
             im = srcs[k]
+            if pol:
+                c, box = polaroid_plate(bg, im, pol, cfg, m, i)
+                plates.append(c); boxes.append(box); cover.append(box[2] * box[3] / (W * H))
+                continue
             s = min((W - 2 * m - 2 * bord) / im.width, (H - 2 * m - 2 * bord) / im.height)
             w, h = int(round(im.width * s)), int(round(im.height * s))
             fw, fh = w + 2 * bord, h + 2 * bord
