@@ -1,0 +1,19 @@
+60 BPM steady, one photo per beat (1.000 s), 12 photos, 12 beats = 12.00 s, ends on a bar line
+dissolve: 18 frames (0.60 s) into each photo, finishing on the beat; beat sync: worst offset 1.00 frames -> PASS
+stillness: max held-frame diff 0.610 -> PASS
+photos: whole (no cropping), own shape (no stretching), none repeated -> PASS
+variety: no two photos of the same kind back to back -> PASS
+screen filled per photo: 37%-78% (whole photos; wide ones are shorter)
+
+ 1.   0.00s  closeup   gma-blue-eyeshadow-eyelid
+ 2.   1.00s  couple    gma-couple-selfie-windblown
+ 3.   2.00s  hair      gma-braiding-silver-hair-bw
+ 4.   3.00s  dance     gma-doorway-kitchen-dance
+ 5.   4.00s  keepsake  gma-photo-album-hands
+ 6.   5.00s  friends   gma-friends-mirror-selfie
+ 7.   6.00s  portrait  gma-four-generations-profile-bw
+ 8.   7.00s  cooking   gma-hands-dumplings
+ 9.   8.00s  dance     gma-marsh-hug-dance
+10.   9.00s  hands     gma-three-hands-ages-bw
+11.  10.00s  family    gma-rollers-baby-kitchen
+12.  11.00s  sunset    gma-sunset-phone-photo

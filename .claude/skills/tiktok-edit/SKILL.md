@@ -41,6 +41,8 @@ python3 .claude/skills/tiktok-edit/scripts/fetch_board.py <link> --out <scratchp
 
 It saves every pin whole at the largest size, a `board.json` and numbered contact sheets. The feed returns at most the newest 50 pins; if the board has more, say which are missing. A secret board returns nothing: ask the user to make it public or upload the photos.
 
+**Board sections.** The feed covers the whole board and does not say which section a pin is in. When the user names a section, open the section's public page (`pinterest.com/<user>/<board>/<section-slug>/`) in the pre-installed headless browser, scroll it, collect the pin image hashes it shows, and keep only the fetched pins whose image URL carries one of those hashes. The page needs the host `s.pinimg.com` allowed. Never guess a section from what the photos look like.
+
 Then:
 
 1. **Look at every contact sheet yourself.** Do not plan from file names or descriptions.

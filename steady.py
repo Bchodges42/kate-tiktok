@@ -319,6 +319,7 @@ def main():
                 ma = Image.new("L", (fw, fh), 255).rotate(t, resample=Image.BICUBIC, expand=True)
                 bw, bh = rt.size
                 x, y = int(round(cx - bw / 2)), int(round(cy - bh / 2))
+                x, y = int(min(max(x, m), W - m - bw)), int(min(max(y, m), bot - bh))  # nudged inside the margin
                 if x < m or y < m or x + bw > W - m or y + bh > bot:
                     errs.append(f"{k} tilted runs past the margin")
                 sh = Image.new("L", (W, H), 0)

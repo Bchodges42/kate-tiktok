@@ -11,7 +11,8 @@ Chic, calm, Pinterest mood board. It should look like a person with taste laid r
 - **Whole photos, centred, as big as the screen allows.** Spacing may be tight if it makes photos bigger.
 - **Thin borders.** White or cream, a few pixels.
 - **Cream and off-white backgrounds** (`#F4ECDA`, `#F7F4EE`), and deep or dusty colours pulled from the board (`#570B28` burgundy, `#93ABBE` dusty blue, slate blue).
-- **Overlapping styles**: a centred tilted stack, or a scattered pile, with thin borders and a soft shadow. A cover is never smaller than what it covers.
+- **Overlapping styles**: a centred tilted stack, or a scattered pile, with thin borders and a soft shadow. A cover is never smaller than what it covers. Asked for as "one continuous pile": photos keep landing on top of one another without the screen clearing, starting and ending on a photo in the centre.
+- **Neutral backgrounds**: oat `#E9E1D3`, warm taupe `#B9AE9F`.
 - **Realistic polaroid frames** with a gentle film look and a blank bottom edge.
 - **The dusty blue page with white line doodles** and a stitched border, as a background for polaroid piles.
 - **One photo at a time, blending** into the next on a cream background.
@@ -32,6 +33,7 @@ Chic, calm, Pinterest mood board. It should look like a person with taste laid r
 - **Off-centre or lopsided placement**, uneven gaps, big empty patches.
 - **White edges showing inside a photo's frame.** Crop a junk white print border off so the border is only the one the edit draws.
 - **Thick borders.**
+- **Red photo borders.** Use white, off-white or cream.
 - **One photo dwarfing the others on the opening slide.** Keep opening sizes similar.
 - **A blank background between slides** in full-screen and collage styles. Go straight to the next slide unless a clear is part of the design.
 - **Two photos of the same kind next to each other** (two dresses, two party scenes, two seascapes).

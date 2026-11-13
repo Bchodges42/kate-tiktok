@@ -1,0 +1,92 @@
+{
+ "name": "aging-gracefully",
+ "vibe": "aging gracefully: old hands, silver hair, long love, generations, dancing and small joys; tender, warm, a little funny",
+ "fps": 30,
+ "size": [
+  1080,
+  1920
+ ],
+ "grade": {
+  "warmth": 0.0,
+  "lift": 4,
+  "saturation": 1.0,
+  "grain": 2.0,
+  "grain_seed": 7
+ },
+ "images_dir": "images",
+ "_source": "only the 18 pins in the 'aging gracefully' section of the user's Pinterest board kholthaus8/lit-ass-grandmas (read from the section's public page), whole and uncropped",
+ "_search_phrase": "aging gracefully aesthetic / growing old together",
+ "version": "oat_blend_one_at_a_time",
+ "bpm": 60,
+ "style": "single",
+ "dissolve_frames": 18,
+ "dissolve_ease": 0.7,
+ "background": "#E9E1D3",
+ "margin_px": 32,
+ "border_px": 5,
+ "border": "#FFFFFF",
+ "images": {
+  "gma-blue-eyeshadow-eyelid": {
+   "kind": "closeup"
+  },
+  "gma-couple-selfie-windblown": {
+   "kind": "couple"
+  },
+  "gma-braiding-silver-hair-bw": {
+   "kind": "hair"
+  },
+  "gma-doorway-kitchen-dance": {
+   "kind": "dance"
+  },
+  "gma-photo-album-hands": {
+   "kind": "keepsake"
+  },
+  "gma-friends-mirror-selfie": {
+   "kind": "friends"
+  },
+  "gma-four-generations-profile-bw": {
+   "kind": "portrait"
+  },
+  "gma-hands-dumplings": {
+   "kind": "cooking"
+  },
+  "gma-marsh-hug-dance": {
+   "kind": "dance"
+  },
+  "gma-three-hands-ages-bw": {
+   "kind": "hands"
+  },
+  "gma-rollers-baby-kitchen": {
+   "kind": "family"
+  },
+  "gma-sunset-phone-photo": {
+   "kind": "sunset"
+  }
+ },
+ "order": [
+  "gma-blue-eyeshadow-eyelid",
+  "gma-couple-selfie-windblown",
+  "gma-braiding-silver-hair-bw",
+  "gma-doorway-kitchen-dance",
+  "gma-photo-album-hands",
+  "gma-friends-mirror-selfie",
+  "gma-four-generations-profile-bw",
+  "gma-hands-dumplings",
+  "gma-marsh-hug-dance",
+  "gma-three-hands-ages-bw",
+  "gma-rollers-baby-kitchen",
+  "gma-sunset-phone-photo"
+ ],
+ "_look": "warm oat background, each photo whole and centred with a thin 5 px white border",
+ "_tempo_comment": "steady 60 BPM, one photo per beat (1.0 s). Each photo blends into the next over 18 frames (0.6 s) with a gentle ease in and out, finishing exactly on the beat, then holds still for 0.4 s. 12 photos = 12.0 s = 3 bars. No song: main MP4 has a kick beat guide; _silent.mp4 for posting with a 60 or 120 BPM TikTok sound.",
+ "_order": "hook: the blue-eyeshadow eyelid close-up; then love, hands, dancing, friends and generations in turn, black-and-white photos spread out, the two dance photos far apart; ends on the sunset, which leads back to the eyelid. No two photos of the same kind back to back, including around the loop.",
+ "_engagement": "12 s. The user asked for blends that are not too fast, so this runs at 1 s per photo instead of the 0.2-0.6 s default; only 2 photos have appeared by 2.0 s.",
+ "not_used": {
+  "gma-folded-hands-lap": "a fifth hands photo, and the smallest of them",
+  "gma-piano-duet": "wide, would sit small on screen",
+  "gma-bed-cuddle-laughing": "525 px, would look soft full-size",
+  "gma-i-like-getting-older-collage": "carries a photographer's printed credit along its edge and is only 390 px wide",
+  "gma-two-eyes-young-old-bw": "404 px tall, soft at full size",
+  "gma-reading-tent-grandkids": "480 px, soft at full size"
+ }
+}

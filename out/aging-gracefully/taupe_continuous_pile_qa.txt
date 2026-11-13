@@ -1,0 +1,26 @@
+100 BPM steady, one photo per beat (0.600 s), 17 photos, 20 beats = 12.00 s, ends on a bar line; 1 phrases of 17 photos, each cutting straight to the next (no blank screen)
+dissolve: 6 frames (0.20 s) into each photo, finishing on the beat; beat sync: worst offset 0.00 frames -> PASS
+stillness: max held-frame diff 0.055 -> PASS
+photos: whole (no cropping), own shape (no stretching), none repeated -> PASS
+variety: no two photos of the same kind back to back -> PASS
+overlap: every photo lands at the same area as the one it covers, never smaller -> PASS
+screen filled: 80% after 4 photos, 90% at the end
+finale: gma-couple-selfie-windblown centred (box centre 540, 960 on a 1080 x 1920 screen)
+
+ 1.   0.00s  friends   gma-friends-mirror-selfie
+ 2.   0.60s  hands     gma-folded-hands-lap
+ 3.   1.20s  dance     gma-doorway-kitchen-dance
+ 4.   1.80s  portrait  gma-four-generations-profile-bw
+ 5.   2.40s  sunset    gma-sunset-phone-photo
+ 6.   3.00s  cooking   gma-hands-dumplings
+ 7.   3.60s  closeup   gma-two-eyes-young-old-bw
+ 8.   4.20s  family    gma-rollers-baby-kitchen
+ 9.   4.80s  keepsake  gma-photo-album-hands
+10.   5.40s  dance     gma-marsh-hug-dance
+11.   6.00s  hair      gma-braiding-silver-hair-bw
+12.   6.60s  couple    gma-bed-cuddle-laughing
+13.   7.20s  hands     gma-three-hands-ages-bw
+14.   7.80s  music     gma-piano-duet
+15.   8.40s  closeup   gma-blue-eyeshadow-eyelid
+16.   9.00s  family    gma-reading-tent-grandkids
+17.   9.60s  couple    gma-couple-selfie-windblown
