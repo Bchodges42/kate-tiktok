@@ -413,6 +413,10 @@ def main():
                     mk = np.clip((a * (x1 - x0 + e) - xs) / e, 0, 1)[None, :, None]
                     pr.stdin.write((fr * (1 - mk) + nxt * mk + 0.5).astype(np.uint8).tobytes())
                 else:
+                    # "dissolve_ease" (0-1): how much the blend eases in and out instead of running at
+                    # a constant rate; a gentle start and finish reads calmer than a straight fade
+                    ez = cfg.get("dissolve_ease", 0)
+                    a = (1 - ez) * a + ez * a * a * (3 - 2 * a)
                     pr.stdin.write((fr * (1 - a) + nxt * a + 0.5).astype(np.uint8).tobytes())
             else:
                 pr.stdin.write(fr.tobytes())
@@ -431,7 +435,12 @@ def main():
     for st in cut_steps:
         f = int(round(st * spb * fps))
         if D:  # the landing frame: the first frame after the dissolve that then holds still
-            hit = next((j for j in range(max(f - 3, 1), min(f + 4, len(F) - 1)) if d[j - 1] > 1 and d[j] < 1), f + 99)
+            # (the first frame whose picture is within 3% of the held picture, measured against the
+            # whole change from the previous held photo; an eased blend has a soft tail)
+            ref, prev = F[min(f + 3, len(F) - 1)].astype(np.float32), F[max(f - D - 2, 0)].astype(np.float32)
+            tot = np.abs(prev - ref).mean()
+            hit = next((j for j in range(max(f - D, 1), min(f + 4, len(F) - 1))
+                        if np.abs(F[j].astype(np.float32) - ref).mean() < max(0.03 * tot, 0.35)), f + 99)
         else:
             hit = max(range(max(f - 3, 1), min(f + 4, len(F))), key=lambda j: d[j - 1])
         offs.append(abs(hit - st * spb * fps))

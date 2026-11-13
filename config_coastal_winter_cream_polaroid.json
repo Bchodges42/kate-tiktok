@@ -150,9 +150,9 @@
  },
  "_source": "all 44 pins of the user's Pinterest board kholthaus8/coastal-winter, whole and uncropped (the three largest files were saved at 2400 px on the long side, still larger than the screen)",
  "version": "cream_polaroid_blend",
- "bpm": 80,
+ "bpm": 60,
  "style": "single",
- "dissolve_frames": 14,
+ "dissolve_frames": 18,
  "background": "#F4ECDA",
  "margin_px": 56,
  "order": [
@@ -201,7 +201,7 @@
   "cw-sailboat-mug-coffee",
   "cw-moonrise-snowy-beach"
  ],
- "_tempo_comment": "steady 80 BPM, one photo per beat (0.75 s). Each photo blends into the next over 14 frames (0.47 s), finishing exactly on the beat, then holds still. 44 photos = 33 s, ends on a bar line. No song: main MP4 has a kick beat guide; _silent.mp4 for posting with any ~80 BPM (or 160 BPM) TikTok sound.",
+ "_tempo_comment": "steady 60 BPM, one photo per beat (1.0 s). Each photo blends into the next over 18 frames (0.6 s) with a gentle ease in and out, finishing exactly on the beat, then holds still for 0.4 s. 44 photos = 44 s, ends on a bar line. Slowed from 80 BPM at the user's request (calmer, smoother). No song: main MP4 has a kick beat guide; _silent.mp4 for posting with any ~60 BPM (or 120 BPM) TikTok sound.",
  "_order": "same order as the cream blend version.",
  "polaroid": {
   "paper": "#F6F3EA",
@@ -219,5 +219,6 @@
    "vignette": 0.16
   },
   "_look": "each photo sits whole inside a drawn instant-photo frame: off-white paper with fine grain, thin border on the top and sides, deep border at the bottom, a slightly recessed picture window and a soft shadow on the cream background. The frame is shaped around each photo (nothing is cropped to a square). Film look, at the user's request: faded blacks, creamy whites, slightly lower colour, warm highlights, cool shadows, a gentle vignette and film grain."
- }
+ },
+ "dissolve_ease": 0.7
 }
