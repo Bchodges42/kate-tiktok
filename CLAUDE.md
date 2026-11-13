@@ -131,6 +131,7 @@ Each edit ships as a viewable video plus everything needed to remake it.
 
 - `gallery.py --config <file>`: gallery-build edits. A config's `groups` list one slide each: `images`, a layout `tree` (`["h", ...]` side by side, `["v", ...]` stacked, numbers = photo index) or a `flow` (ltr/rtl/ttb/btt), optional `order`, `at` (hit times in seconds) and `clear_at`. `categories` enables the same-kind-touching check. Renders the MP4, silent copy, QA report and sequence sheet into `out/<name>/`.
 - `steady.py --config <file>`: steady-tempo edits with no song. Style `single` shows one photo at a time (hard cut, `dissolve_frames` blend, or `"transition": "wipe"`); style `pile` makes overlapping stacks and scattered collages.
+- `scrapbook.py --config <file>`: short, decorated edits: captioned polaroids set down on a drawn page (doodles, washi tape) with drifting snow. Only for when the user asks for decorations or effects.
 - `collage.py`: stacked-collage edits (swaps and covers). `moodboard.py`: full-screen cut edits and the shared audio analysis (beats, onsets).
 - `images/`: source photos. `audio/`: song files (git-ignored; extract them from the user's screen recording with ffmpeg).
 - Shared viewing page for previews: https://claude.ai/artifact/BMttNKuh7vvfpkbwuHYeKq

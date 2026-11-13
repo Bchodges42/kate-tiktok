@@ -1,0 +1,543 @@
+{
+ "name": "coastal-winter",
+ "version": "winter_scrapbook_snow",
+ "vibe": "a winter-by-the-sea scrapbook page: captioned polaroids taped down while snow falls",
+ "fps": 30,
+ "size": [
+  1080,
+  1920
+ ],
+ "bpm": 120,
+ "grade": {
+  "warmth": 0.0,
+  "lift": 4,
+  "saturation": 1.0,
+  "grain": 1.5,
+  "grain_seed": 7
+ },
+ "images_dir": "images",
+ "images": {
+  "cw-snowy-lighthouse": {
+   "kind": "seascape",
+   "caption": "coastal winter"
+  },
+  "cw-fair-isle-sweater-mittens": {
+   "kind": "knitwear",
+   "caption": "fair isle season"
+  },
+  "cw-shingle-houses-full-moon": {
+   "kind": "town",
+   "caption": "full moon"
+  },
+  "cw-sailboat-mug-coffee": {
+   "kind": "tableware",
+   "caption": "first coffee"
+  },
+  "cw-snowfall-dune-grass": {
+   "kind": "beach",
+   "caption": "snow day"
+  },
+  "cw-quilt-bedroom-beams": {
+   "kind": "bedroom",
+   "caption": "quilts"
+  },
+  "cw-cliff-sailboat-black-cat": {
+   "kind": "seascape",
+   "caption": "sailboat spotting"
+  },
+  "cw-mohair-yarn-balls": {
+   "kind": "craft",
+   "caption": "mohair"
+  },
+  "cw-open-window-rocky-surf": {
+   "kind": "window",
+   "caption": "window open"
+  },
+  "cw-cream-wrap-sweater-sea": {
+   "kind": "knitwear",
+   "caption": "cream knits"
+  },
+  "cw-foggy-harbor-village": {
+   "kind": "town",
+   "caption": "the harbor"
+  },
+  "cw-open-shutters-sea-desk": {
+   "kind": "window",
+   "caption": "sea air"
+  },
+  "cw-striped-mitten-shells": {
+   "kind": "hands",
+   "caption": "shell hunting"
+  },
+  "cw-cottage-white-sofa": {
+   "kind": "interior",
+   "caption": "the cottage"
+  },
+  "cw-red-house-snowy-shore": {
+   "kind": "seascape",
+   "caption": "snow on the shore"
+  },
+  "cw-lace-cuff-mohair-cardigan": {
+   "kind": "knitwear",
+   "caption": "lace cuffs"
+  },
+  "cw-deck-chair-blanket-coffee": {
+   "kind": "porch",
+   "caption": "deck coffee"
+  },
+  "cw-snowy-beach-picnic-sunset": {
+   "kind": "person",
+   "caption": "beach picnic"
+  },
+  "cw-cliff-house-surf": {
+   "kind": "seascape",
+   "caption": "the cliff house"
+  },
+  "cw-knit-sweaters-on-bed": {
+   "kind": "cosy",
+   "caption": "slow mornings"
+  },
+  "cw-sunset-windows-candles": {
+   "kind": "window",
+   "caption": "golden hour"
+  },
+  "cw-floral-teacups-suds": {
+   "kind": "tableware",
+   "caption": "tea time"
+  },
+  "cw-sunset-dunes-from-behind": {
+   "kind": "person",
+   "caption": "sunset walk"
+  },
+  "cw-bed-hydrangea-gingham-pillows": {
+   "kind": "bedroom",
+   "caption": "fresh linens"
+  },
+  "cw-frosty-meadow-sunrise": {
+   "kind": "landscape",
+   "caption": "frosty morning"
+  },
+  "cw-sunlit-hallway-wood-floor": {
+   "kind": "interior",
+   "caption": "sunlit hall"
+  },
+  "cw-moonrise-snowy-beach": {
+   "kind": "beach",
+   "caption": "moonrise"
+  },
+  "cw-yellow-sweater-red-door": {
+   "kind": "knitwear",
+   "caption": "butter yellow"
+  },
+  "cw-window-seat-dune-view": {
+   "kind": "window",
+   "caption": "window seat"
+  },
+  "cw-adirondack-chair-quilt": {
+   "kind": "porch",
+   "caption": "porch naps"
+  },
+  "cw-blue-painted-staircase": {
+   "kind": "interior",
+   "caption": "blue stairs"
+  },
+  "cw-foggy-beach-fair-isle-set": {
+   "kind": "person",
+   "caption": "meet me by the sea"
+  }
+ },
+ "page": {
+  "color": "#93ABBE",
+  "ink": "#FFFFFF",
+  "ink_opacity": 0.78,
+  "seed": 4,
+  "stitch_inset": 34,
+  "doodles": [
+   [
+    "sailboat",
+    170,
+    215,
+    105
+   ],
+   [
+    "snowflake",
+    905,
+    190,
+    95
+   ],
+   [
+    "sparkle",
+    700,
+    120,
+    70
+   ],
+   [
+    "snowflake",
+    420,
+    110,
+    45
+   ],
+   [
+    "sparkle",
+    80,
+    560,
+    60
+   ],
+   [
+    "anchor",
+    985,
+    640,
+    75
+   ],
+   [
+    "starfish",
+    95,
+    1010,
+    80
+   ],
+   [
+    "heart",
+    1000,
+    1040,
+    70
+   ],
+   [
+    "snowflake",
+    985,
+    1350,
+    60
+   ],
+   [
+    "shell",
+    110,
+    1420,
+    75
+   ],
+   [
+    "lighthouse",
+    180,
+    1700,
+    100
+   ],
+   [
+    "waves",
+    560,
+    1790,
+    105
+   ],
+   [
+    "mug",
+    900,
+    1700,
+    90
+   ],
+   [
+    "sparkle",
+    690,
+    1650,
+    60
+   ],
+   [
+    "snowflake",
+    420,
+    1640,
+    50
+   ],
+   [
+    "sparkle",
+    1000,
+    870,
+    45
+   ],
+   [
+    "heart",
+    70,
+    760,
+    50
+   ]
+  ],
+  "_look": "dusty sea-blue paper with a stitched border and white hand-drawn line doodles (sailboat, lighthouse, snowflakes, starfish, shell, anchor, mug, waves), all drawn by the script"
+ },
+ "polaroid": {
+  "paper": "#F6F3EA",
+  "ink": "#34455A",
+  "side": 0.052,
+  "top": 0.062,
+  "bottom": 0.215,
+  "corner_px": 7,
+  "shadow": 0.34,
+  "film_grain": 2.5,
+  "filter": {
+   "saturation": 0.9,
+   "black": 0.06,
+   "white": 0.96,
+   "tint": 0.9,
+   "vignette": 0.14
+  }
+ },
+ "tapes": [
+  {
+   "colors": [
+    "#F4EEDD",
+    "#A9C3D6"
+   ],
+   "pattern": "gingham"
+  },
+  {
+   "colors": [
+    "#E9DFC8",
+    "#F7F2E6"
+   ],
+   "pattern": "stripe"
+  },
+  {
+   "colors": [
+    "#B9C9B4",
+    "#DCE6D6"
+   ],
+   "pattern": "gingham"
+  },
+  {
+   "colors": [
+    "#E8C9C2",
+    "#F4E3DE"
+   ],
+   "pattern": "stripe"
+  },
+  {
+   "colors": [
+    "#F2E6B8",
+    "#FBF5DC"
+   ],
+   "pattern": "gingham"
+  }
+ ],
+ "snow": {
+  "count": 150,
+  "opacity": 0.9,
+  "seed": 9
+ },
+ "drop_frames": 4,
+ "drop_scale": 0.1,
+ "phrases": [
+  {
+   "_what": "hook: a centred stack, 8 polaroids in the first 2 seconds (every half beat), then 3 on the beat",
+   "photos": [
+    "cw-snowy-lighthouse",
+    "cw-fair-isle-sweater-mittens",
+    "cw-shingle-houses-full-moon",
+    "cw-sailboat-mug-coffee",
+    "cw-snowfall-dune-grass",
+    "cw-quilt-bedroom-beams",
+    "cw-cliff-sailboat-black-cat",
+    "cw-mohair-yarn-balls",
+    "cw-open-window-rocky-surf",
+    "cw-cream-wrap-sweater-sea",
+    "cw-foggy-harbor-village"
+   ],
+   "steps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    10,
+    12
+   ],
+   "length": 16,
+   "area_frac": 0.5,
+   "spots": [
+    [
+     540,
+     880
+    ]
+   ],
+   "tilt": [
+    -4,
+    3,
+    -2,
+    4,
+    -3,
+    2,
+    -5,
+    3
+   ]
+  },
+  {
+   "_what": "scattered pile, one per beat, holds a beat",
+   "photos": [
+    "cw-open-shutters-sea-desk",
+    "cw-striped-mitten-shells",
+    "cw-cottage-white-sofa",
+    "cw-red-house-snowy-shore",
+    "cw-lace-cuff-mohair-cardigan",
+    "cw-deck-chair-blanket-coffee",
+    "cw-snowy-beach-picnic-sunset"
+   ],
+   "steps": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10,
+    12
+   ],
+   "length": 16,
+   "area_frac": 0.27,
+   "spots": [
+    [
+     345,
+     470
+    ],
+    [
+     735,
+     1330
+    ],
+    [
+     740,
+     520
+    ],
+    [
+     340,
+     1290
+    ],
+    [
+     350,
+     880
+    ],
+    [
+     735,
+     925
+    ],
+    [
+     540,
+     700
+    ]
+   ],
+   "tilt": [
+    -5,
+    4,
+    3,
+    -4,
+    5,
+    -3,
+    2
+   ]
+  },
+  {
+   "_what": "centred stack, one per beat",
+   "photos": [
+    "cw-cliff-house-surf",
+    "cw-knit-sweaters-on-bed",
+    "cw-sunset-windows-candles",
+    "cw-floral-teacups-suds",
+    "cw-sunset-dunes-from-behind",
+    "cw-bed-hydrangea-gingham-pillows",
+    "cw-frosty-meadow-sunrise"
+   ],
+   "steps": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10,
+    12
+   ],
+   "length": 16,
+   "area_frac": 0.5,
+   "spots": [
+    [
+     540,
+     880
+    ]
+   ],
+   "tilt": [
+    -4,
+    3,
+    -2,
+    4,
+    -3,
+    2,
+    -5,
+    3
+   ]
+  },
+  {
+   "_what": "scattered pile; the last polaroid lands dead centre, straight and bigger, and holds",
+   "photos": [
+    "cw-sunlit-hallway-wood-floor",
+    "cw-moonrise-snowy-beach",
+    "cw-yellow-sweater-red-door",
+    "cw-window-seat-dune-view",
+    "cw-adirondack-chair-quilt",
+    "cw-blue-painted-staircase",
+    "cw-foggy-beach-fair-isle-set"
+   ],
+   "steps": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10,
+    12
+   ],
+   "length": 16,
+   "area_frac": 0.27,
+   "spots": [
+    [
+     345,
+     470
+    ],
+    [
+     735,
+     1330
+    ],
+    [
+     740,
+     520
+    ],
+    [
+     340,
+     1290
+    ],
+    [
+     350,
+     880
+    ],
+    [
+     735,
+     925
+    ],
+    [
+     540,
+     700
+    ]
+   ],
+   "tilt": [
+    4,
+    -5,
+    -3,
+    5,
+    -4,
+    3,
+    0
+   ],
+   "final_center": true,
+   "final_scale": 1.4,
+   "center": [
+    540,
+    900
+   ]
+  }
+ ],
+ "_tempo_comment": "120 BPM. 4 piles of 2 bars (4 s) each = 16 s. No song: main MP4 has a kick beat guide; _silent.mp4 for posting with any ~120 BPM TikTok sound.",
+ "_engagement": "built for watch time: 16 s instead of 30-44 s; the title is on the first polaroid at frame 0; 8 polaroids land in the first 2 seconds; snow moves constantly; captions reward a pause; the last polaroid (\"meet me by the sea\") cuts back to the lighthouse for a loop.",
+ "_order": "32 of the board's 44 pins: the 4 small ones (under ~500 px) and 8 that repeat a subject are left out to keep it short."
+}
