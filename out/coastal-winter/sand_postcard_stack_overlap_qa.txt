@@ -1,0 +1,53 @@
+104 BPM steady, one photo per beat (0.577 s), 44 photos, 64 beats = 36.93 s, ends on a bar line; 8 phrases of 6/6/5/5/6/5/5/6 photos, each cutting straight to the next (no blank screen)
+hard cuts; beat sync: worst offset 0.46 frames -> PASS
+stillness: max held-frame diff 0.043 -> PASS
+photos: whole (no cropping), own shape (no stretching), none repeated -> PASS
+variety: no two photos of the same kind back to back -> PASS
+overlap: every photo lands at the same area as the one it covers, never smaller -> PASS
+screen filled: 55% after 4 photos, 66% at the end
+finale: cw-foggy-beach-fair-isle-set centred (box centre 540, 960 on a 1080 x 1920 screen)
+
+ 1.   0.00s  seascape  cw-cliff-sailboat-black-cat
+ 2.   0.57s  interior  cw-cottage-white-sofa
+ 3.   1.17s  window    cw-open-window-rocky-surf
+ 4.   1.73s  bag       cw-knit-sweater-straw-bag
+ 5.   2.30s  hands     cw-striped-mitten-shells
+ 6.   2.90s  interior  cw-blue-armoire-sitting-room
+ 7.   4.60s  porch     cw-adirondack-chair-quilt
+ 8.   5.20s  knitwear  cw-yellow-sweater-red-door
+ 9.   5.77s  person    cw-sunset-dunes-from-behind
+10.   6.33s  window    cw-window-seat-dune-view
+11.   6.93s  town      cw-foggy-harbor-village
+12.   7.50s  knitwear  cw-lace-cuff-mohair-cardigan
+13.   9.23s  beach     cw-snowy-beach-path-fence
+14.   9.80s  interior  cw-blue-painted-staircase
+15.  10.40s  seascape  cw-cliff-house-surf
+16.  10.97s  window    cw-sunset-windows-candles
+17.  11.53s  beach     cw-snowfall-dune-grass
+18.  13.83s  interior  cw-lace-curtain-doorway
+19.  14.43s  knitwear  cw-cream-wrap-sweater-sea
+20.  15.00s  bedroom   cw-bed-hydrangea-gingham-pillows
+21.  15.57s  seascape  cw-red-house-snowy-shore
+22.  16.17s  cosy      cw-sofa-mugs-cream-knits
+23.  18.47s  porch     cw-deck-chair-blanket-coffee
+24.  19.03s  keepsake  cw-vintage-sailing-postcards
+25.  19.60s  beach     cw-moonrise-snowy-beach
+26.  20.20s  bedroom   cw-quilt-bedroom-beams
+27.  20.77s  person    cw-snowy-beach-picnic-sunset
+28.  21.33s  decor     cw-pine-dresser-linens
+29.  23.07s  window    cw-dark-room-lantern-window
+30.  23.67s  seascape  cw-snowy-lighthouse
+31.  24.23s  interior  cw-sunlit-hallway-wood-floor
+32.  24.80s  town      cw-shingle-houses-full-moon
+33.  25.40s  window    cw-open-shutters-sea-desk
+34.  27.70s  landscape cw-frosty-meadow-sunrise
+35.  28.27s  person    cw-woman-at-sink-green-cardigan
+36.  28.83s  knitwear  cw-fair-isle-sweater-mittens
+37.  29.43s  bedroom   cw-floral-striped-bedding
+38.  30.00s  craft     cw-mohair-yarn-balls
+39.  32.30s  tableware cw-sailboat-mug-coffee
+40.  32.90s  cosy      cw-knit-sweaters-on-bed
+41.  33.47s  interior  cw-blue-tile-bathroom
+42.  34.03s  decor     cw-fish-tiles
+43.  34.60s  tableware cw-floral-teacups-suds
+44.  35.20s  person    cw-foggy-beach-fair-isle-set

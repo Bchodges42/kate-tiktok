@@ -4,7 +4,8 @@
     python3 steady.py --config config_peace_single.json
 
   style "single": one whole photo at a time, centred as big as it fits on a solid background.
-                  "dissolve_frames": D blends each photo into the next, finishing exactly on the beat.
+                  "dissolve_frames": D blends each photo into the next, finishing exactly on the beat;
+                  with "transition": "wipe" those D frames are a soft-edged wipe instead of a blend.
   Any image can carry "clip": "clips/<file>.mp4": the clip plays in its spot before the next photo lands.
   style "pile":   an overlapping collage. Every photo lands on top of the pile at the same area
                   (so a cover is never smaller than what it covers), with a thin border and a soft
@@ -200,9 +201,13 @@ def main():
         ph_area = {}
         if p.get("area_per_phrase"):
             for a0, a1 in zip(starts_ph, starts_ph[1:]):
-                A = min(p["area_frac"] * W * H, min(fit_of(srcs[k]) for k in order[a0:a1]))
+                # "wide_first": a phrase may open on a wide photo at its own (smaller) best fit; the
+                # photos that then cover it are all bigger, so the rest of the stack is not held small
+                rest = order[a0 + 1:a1] if p.get("wide_first") and a1 - a0 > 1 else order[a0:a1]
+                A = min(p["area_frac"] * W * H, min(fit_of(srcs[k]) for k in rest))
                 for j in range(a0, a1):
                     ph_area[j] = A
+                ph_area[a0] = min(A, fit_of(srcs[order[a0]]))
         pre_areas = []
         bl = p.get("border", "#FFFFFF")
         bcols = [np.array(hex_rgb(c), np.float32) for c in (bl if isinstance(bl, list) else [bl])]
@@ -317,7 +322,21 @@ def main():
             j = f - (s1 - D)
             if nxt is not None and j >= 0:
                 a = (j + 1) / (D + 1)
-                pr.stdin.write((fr * (1 - a) + nxt * a + 0.5).astype(np.uint8).tobytes())
+                if cfg.get("transition") == "wipe":
+                    # soft-edged wipe: the next photo is uncovered in place by a feathered edge that
+                    # sweeps across the screen, left-to-right then right-to-left in turn; nothing moves
+                    e = cfg.get("wipe_feather_px", 120)
+                    # sweep only across the columns where the two photos differ, so the wipe is
+                    # visibly complete exactly on the beat (not spent crossing plain background)
+                    ch = np.flatnonzero(np.abs(fr.astype(np.int16) - nxt).max(axis=(0, 2)) > 12)
+                    x0, x1 = (int(ch[0]), int(ch[-1]) + 1) if len(ch) else (0, W)
+                    xs = np.arange(W, dtype=np.float32) - x0
+                    if n % 2:
+                        xs = (x1 - x0 - 1) - xs
+                    mk = np.clip((a * (x1 - x0 + e) - xs) / e, 0, 1)[None, :, None]
+                    pr.stdin.write((fr * (1 - mk) + nxt * mk + 0.5).astype(np.uint8).tobytes())
+                else:
+                    pr.stdin.write((fr * (1 - a) + nxt * a + 0.5).astype(np.uint8).tobytes())
             else:
                 pr.stdin.write(fr.tobytes())
     pr.stdin.close()
@@ -342,7 +361,7 @@ def main():
     still = [d[f - 1] for s0, s1 in hold for f in range(s0 + 1, s1) if f < len(F)]
     rep = [f"{bpm} BPM steady, one photo per {'beat' if ppb == 1 else f'1/{ppb} beat'} ({spb:.3f} s), {len(order)} photos, {total_beats / ppb:g} beats = {N / fps:.2f} s, ends on a bar line"
            + (f"; {len(ph['sizes'])} phrases of {'/'.join(map(str, ph['sizes']))} photos, " + ("each clearing to the background" if ph["clear_steps"] else "each cutting straight to the next (no blank screen)") if ph else ""),
-           (f"dissolve: {D} frames ({D / fps:.2f} s) into each photo, finishing on the beat; " if D else "hard cuts; ")
+           (f"{'soft wipe, alternating direction' if cfg.get('transition') == 'wipe' else 'dissolve'}: {D} frames ({D / fps:.2f} s) into each photo, finishing on the beat; " if D else "hard cuts; ")
            + f"beat sync: worst offset {max(offs):.2f} frames -> {'PASS' if max(offs) <= 1 else 'FAIL'}",
            f"stillness: max held-frame diff {max(still):.3f} -> {'PASS' if max(still) < 1 else 'FAIL'}",
            "photos: whole (no cropping), own shape (no stretching), none repeated -> PASS",
