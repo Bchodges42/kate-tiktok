@@ -338,7 +338,7 @@ def main():
             j = f - (nx["frame"] - D)
             if j >= 0:  # the next polaroid being set down: a touch larger and see-through, settling by the beat
                 t = (j + 1) / (D + 1)
-                e = 1 - (1 - t) ** 2
+                e = t * t * (3 - 2 * t) if cfg.get("drop_ease") == "smooth" else 1 - (1 - t) ** 2
                 base = nx["before"] if not nx["first"] else cur * (1 - e) + page * e  # a new phrase: the old pile fades to the page
                 fr = stamp(base, nx["tile"], nx["pos"][0], nx["pos"][1], e, pol.get("shadow", 0.32), scale=1 + cfg.get("drop_scale", 0.10) * (1 - e))
         if nf:
@@ -368,10 +368,10 @@ def main():
         hit = next((j for j in range(max(f - 6, 1), min(f + 4, len(F))) if np.abs(F[j] - ref).mean() <= max(noise * 1.6, 0.04 * tot)), f + 99)
         offs.append(abs(hit - (b["frame"])))
     rep = [f"{bpm} BPM, polaroids land on half-beat steps ({spb:.3f} s), {len(order)} photos, {step0 / 2:g} beats = {N / fps:.2f} s, ends on a bar line",
-           (f"set-down: each polaroid settles over up to {drop} frames and is fully in place on its beat" if drop else "hard cuts: each photo appears whole on its beat")
+           (f"soft fade-in: each polaroid fades in over up to {drop} frames and is fully in place on its beat" if drop else "hard cuts: each photo appears whole on its beat")
            + f"; worst offset {max(offs):.2f} frames -> {'PASS' if max(offs) <= 1 else 'FAIL'}",
-           ("stillness: once landed a polaroid is never redrawn or moved (only the snow in front of it drifts, by design) -> PASS" if nf or drop else
-            (lambda dd: f"stillness: max held-frame diff {dd:.3f} -> {'PASS' if dd < 1 else 'FAIL'}")(max(np.abs(F[f] - F[f - 1]).mean() for a, b in zip(events, events[1:] + [dict(frame=len(F))]) for f in range(a["frame"] + 1, min(b["frame"], len(F)))))),
+           ("stillness: once landed a polaroid is never redrawn or moved (only the snow in front of it drifts, by design) -> PASS" if nf else
+            (lambda dd: f"stillness: max held-frame diff {dd:.3f} (between fades) -> {'PASS' if dd < 1 else 'FAIL'}")(max(np.abs(F[f] - F[f - 1]).mean() for a, b in zip(events, events[1:] + [dict(frame=len(F) + drop)]) for f in range(a["frame"] + 1, min(b["frame"] - drop, len(F)))))),
            "photos: whole (no cropping), own shape (no stretching), none repeated -> PASS",
            "variety: no two photos of the same kind back to back, including around the loop -> PASS",
            "overlap: every polaroid in a pile has the same card area as the one it covers, never smaller -> PASS",
