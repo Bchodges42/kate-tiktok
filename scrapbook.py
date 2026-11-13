@@ -114,17 +114,35 @@ def make_page(cfg, W, H):
     d = ImageDraw.Draw(ink)
     # a stitched border, then the doodles
     m, dash = pg.get("stitch_inset", 34), 26
-    per = [(m, m, W - m, m), (W - m, m, W - m, H - m), (W - m, H - m, m, H - m), (m, H - m, m, m)]
+    per = [(m, m, W - m, m), (W - m, m, W - m, H - m), (W - m, H - m, m, H - m), (m, H - m, m, m)] if pg.get("stitch", True) else []
     for x0, y0, x1, y1 in per:
         n = int(math.hypot(x1 - x0, y1 - y0) // (dash * 2))
         for i in range(n):
             a, b = (i * 2 * dash + dash / 2), (i * 2 * dash + dash * 1.5)
             T = math.hypot(x1 - x0, y1 - y0)
             wob(d, [(x0 + (x1 - x0) * a / T, y0 + (y1 - y0) * a / T), (x0 + (x1 - x0) * b / T, y0 + (y1 - y0) * b / T)], rng, 150, 4, 0.8)
-    for kind, x, y, s in pg["doodles"]:
+    for kind, x, y, s in pg.get("doodles", []):
         doodle(d, kind, x, y, s / 100.0, rng, 235)
     a = np.asarray(ink.filter(ImageFilter.GaussianBlur(0.7)), np.float32)[..., None] / 255 * pg.get("ink_opacity", 0.8)
-    return base * (1 - a) + np.array(hex_rgb(pg.get("ink", "#FFFFFF")), np.float32) * a
+    base = base * (1 - a) + np.array(hex_rgb(pg.get("ink", "#FFFFFF")), np.float32) * a
+    # optional static title set in type: a serif italic line with a small letter-spaced line under it
+    for t in pg.get("text", []):
+        f = ImageFont.truetype(os.path.join(ROOT, "fonts", t["font"]), t["size"])
+        try:
+            f.set_variation_by_axes([t.get("weight", 500)])
+        except Exception:
+            pass
+        lay = Image.new("L", (W, H), 0)
+        dl = ImageDraw.Draw(lay)
+        tr = t.get("tracking", 0)
+        wd = sum(dl.textlength(ch, font=f) + tr for ch in t["text"]) - tr
+        x = (W - wd) / 2
+        for ch in t["text"]:
+            dl.text((x, t["y"]), ch, font=f, fill=255, anchor="ls")
+            x += dl.textlength(ch, font=f) + tr
+        al = np.asarray(lay, np.float32)[..., None] / 255 * t.get("opacity", 1.0)
+        base = base * (1 - al) + np.array(hex_rgb(t["color"]), np.float32) * al
+    return base
 
 
 # ---------------------------------------------------------------- one polaroid as an RGBA tile
@@ -191,6 +209,19 @@ def polaroid_tile(im, fw, pol, cfg, caption, idx, tape):
     return tile, (fw, fh), pad
 
 
+def plain_tile(im, fw, fr, cfg):
+    """RGBA tile: the whole photo with a thin border, only the edit's light grade (no film look)."""
+    b = fr.get("border_px", 5)
+    w = fw - 2 * b
+    h = int(round(w * im.height / im.width))
+    card = Image.new("RGB", (fw, h + 2 * b), hex_rgb(fr.get("border", "#FFFFFF")))
+    card.paste(Image.fromarray(np.clip(grade(np.asarray(im.resize((w, h), Image.LANCZOS)), cfg["grade"]), 0, 255).astype(np.uint8)), (b, b))
+    pad = 8
+    tile = Image.new("RGBA", (fw + 2 * pad, h + 2 * b + 2 * pad), (0, 0, 0, 0))
+    tile.paste(card, (pad, pad))
+    return tile, (fw, h + 2 * b), pad
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--config", required=True)
@@ -200,7 +231,10 @@ def main():
     spb = 60.0 / bpm / 2  # one step = half a beat
     outdir = os.path.join(ROOT, "out", cfg["name"])
     os.makedirs(outdir, exist_ok=True)
-    pol, kinds = cfg["polaroid"], {k: v.get("kind") for k, v in cfg["images"].items()}
+    pol, kinds = cfg.get("polaroid", {}), {k: v.get("kind") for k, v in cfg["images"].items()}
+    plain = cfg.get("plain_frame")  # {"border_px", "border", "shadow"}: clean photos instead of polaroids
+    if plain:
+        pol = dict(shadow=plain.get("shadow", 0.3))
     page = make_page(cfg, W, H)
     errs, order = [], [k for p in cfg["phrases"] for k in p["photos"]]
     if len(set(order)) != len(order):
@@ -222,17 +256,23 @@ def main():
             A = p["area_frac"] * (p.get("final_scale", 1.0) ** 2 if final else 1) * W * H
             side, top, bot = pol.get("side", 0.052), pol.get("top", 0.062), pol.get("bottom", 0.215)
             ratio = (1 - 2 * side) * im.height / im.width + top + bot  # card height / card width
+            if plain:
+                ratio = im.height / im.width
             fw = int(math.sqrt(A / ratio))
-            tilt = 0 if final or (idx == 0) else p["tilt"][j % len(p["tilt"])]
+            tilt = 0 if final or (idx == 0) or not p.get("tilt") else p["tilt"][j % len(p["tilt"])]
             cx, cy = (p.get("center", [W / 2, H / 2]) if final else p["spots"][j % len(p["spots"])])
-            tile, (fw, fh), pad = polaroid_tile(im, fw, pol, cfg, cfg["images"][k].get("caption"), idx, tapes[idx % len(tapes)] if tapes else None)
+            if plain:
+                tile, (fw, fh), pad = plain_tile(im, fw, plain, cfg)
+            else:
+                tile, (fw, fh), pad = polaroid_tile(im, fw, pol, cfg, cfg["images"][k].get("caption"), idx, tapes[idx % len(tapes)] if tapes else None)
             rt = tile.rotate(tilt, resample=Image.BICUBIC, expand=True) if tilt else tile
             x, y = int(round(cx - rt.width / 2)), int(round(cy - rt.height / 2))
             bx = rt.getbbox()
             # nudge a scattered polaroid back inside the page's stitched border if its spot puts it past it
             mg = cfg["page"].get("stitch_inset", 34) + 14
-            x += max(0, mg - (x + bx[0])) - max(0, (x + bx[2]) - (W - mg))
-            y += max(0, mg - (y + bx[1])) - max(0, (y + bx[3]) - (H - mg))
+            sl, stp, sr, sb = cfg.get("safe", [mg, mg, W - mg, H - mg])  # photos stay inside this box (clear of the title / TikTok's buttons)
+            x += max(0, sl - (x + bx[0])) - max(0, (x + bx[2]) - sr)
+            y += max(0, stp - (y + bx[1])) - max(0, (y + bx[3]) - sb)
             if x + bx[0] < 0 or y + bx[1] < 0 or x + bx[2] > W or y + bx[3] > H:
                 errs.append(f"{k} runs off the screen")
             ev = dict(key=k, frame=int(round((step0 + st) * spb * fps)), tile=rt, pos=(x, y), first=(j == 0), before=canvas.copy(), area=fw * fh)
@@ -292,7 +332,7 @@ def main():
         cur = events[ei]["after"]
         fr = cur
         nx = events[ei + 1] if ei + 1 < len(events) else None
-        if nx is not None:
+        if nx is not None and drop > 0:
             gap = nx["frame"] - events[ei]["frame"]
             D = min(drop, max(2, gap - 3))  # quick bursts get a shorter set-down
             j = f - (nx["frame"] - D)
@@ -328,14 +368,16 @@ def main():
         hit = next((j for j in range(max(f - 6, 1), min(f + 4, len(F))) if np.abs(F[j] - ref).mean() <= max(noise * 1.6, 0.04 * tot)), f + 99)
         offs.append(abs(hit - (b["frame"])))
     rep = [f"{bpm} BPM, polaroids land on half-beat steps ({spb:.3f} s), {len(order)} photos, {step0 / 2:g} beats = {N / fps:.2f} s, ends on a bar line",
-           f"set-down: each polaroid settles over up to {drop} frames and is fully in place on its beat; worst offset {max(offs):.2f} frames -> {'PASS' if max(offs) <= 1 else 'FAIL'}",
-           "stillness: once landed a polaroid is never redrawn or moved (only the snow in front of it drifts, by design) -> PASS",
+           (f"set-down: each polaroid settles over up to {drop} frames and is fully in place on its beat" if drop else "hard cuts: each photo appears whole on its beat")
+           + f"; worst offset {max(offs):.2f} frames -> {'PASS' if max(offs) <= 1 else 'FAIL'}",
+           ("stillness: once landed a polaroid is never redrawn or moved (only the snow in front of it drifts, by design) -> PASS" if nf or drop else
+            (lambda dd: f"stillness: max held-frame diff {dd:.3f} -> {'PASS' if dd < 1 else 'FAIL'}")(max(np.abs(F[f] - F[f - 1]).mean() for a, b in zip(events, events[1:] + [dict(frame=len(F))]) for f in range(a["frame"] + 1, min(b["frame"], len(F)))))),
            "photos: whole (no cropping), own shape (no stretching), none repeated -> PASS",
            "variety: no two photos of the same kind back to back, including around the loop -> PASS",
            "overlap: every polaroid in a pile has the same card area as the one it covers, never smaller -> PASS",
            "screen filled at the end of each pile: " + ", ".join(f"{e['cover']:.0%}" for e, n in zip(events, events[1:] + [dict(first=True)]) if n["first"]),
            f"first frame: {order[0]} on screen at 0.00 s, covering {events[0]['cover']:.0%}",
-           f"snow: {nf} flakes, loops seamlessly (frame {N} = frame 0)", ""]
+           (f"snow: {nf} flakes, loops seamlessly (frame {N} = frame 0)" if nf else "no moving effects: nothing on screen moves between cuts"), ""]
     for i, e in enumerate(events):
         rep.append(f"{i + 1:2d}. {e['frame'] / fps:6.2f}s  {kinds.get(e['key'], ''):<9} {e['key']}  \"{cfg['images'][e['key']].get('caption', '')}\"")
     open(os.path.join(outdir, f"{cfg['version']}_qa.txt"), "w").write("\n".join(rep) + "\n")
