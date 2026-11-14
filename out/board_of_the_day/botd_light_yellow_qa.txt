@@ -1,30 +1,30 @@
-150 BPM steady, one photo per beat (0.400 s), 20 photos, 24 beats = 9.60 s, ends on a bar line
+150 BPM steady, one photo per beat (0.400 s), 20 photos, 28 beats = 11.20 s, ends on a bar line
 hard cuts; beat sync: worst offset 0.00 frames -> PASS
 stillness: max held-frame diff 0.040 -> PASS
 photos: whole (no cropping), own shape (no stretching), none repeated -> PASS
-clip: botd-clip-creek-stones plays 0.80 s (2 beats) in full before the next photo lands
-clip: botd-clip-windy-pines plays 0.80 s (2 beats) in full before the next photo lands
-clip: botd-clip-sage-hillside plays 0.80 s (2 beats) in full before the next photo lands
+clip: botd-clip-creek-stones plays 1.20 s (3 beats) in full before the next photo lands
+clip: botd-clip-windy-pines plays 1.20 s (3 beats) in full before the next photo lands
+clip: botd-clip-sage-hillside plays 1.20 s (3 beats) in full before the next photo lands
 variety: no two photos of the same kind back to back -> PASS
 screen filled per photo: 33%-73% (whole photos; wide ones are shorter)
 
  1.   0.00s  outfit    botd-lilac-lace-blouse
- 2.   0.40s  nature    botd-clip-creek-stones
- 3.   1.20s  food      botd-choc-chip-cookies
- 4.   1.60s  place     botd-foggy-beach
- 5.   2.00s  people    botd-orange-silhouettes
- 6.   2.40s  nature    botd-clip-windy-pines
+ 2.   0.40s  food      botd-choc-chip-cookies
+ 3.   0.80s  place     botd-foggy-beach
+ 4.   1.20s  people    botd-orange-silhouettes
+ 5.   1.60s  nature    botd-clip-creek-stones
+ 6.   2.80s  object    botd-vintage-sweaters
  7.   3.20s  people    botd-street-couple
- 8.   3.60s  object    botd-vintage-sweaters
- 9.   4.00s  place     botd-brownstone-door
-10.   4.40s  food      botd-rose-lemon-tea
-11.   4.80s  outfit    botd-denim-sitting
-12.   5.20s  place     botd-papered-staircase
-13.   5.60s  nature    botd-river-pebbles
-14.   6.00s  outfit    botd-military-jacket-leaves
-15.   6.40s  nature    botd-clip-sage-hillside
-16.   7.20s  food      botd-latte-swirl
-17.   7.60s  place     botd-lake-dock
-18.   8.00s  outfit    botd-slouch-socks
-19.   8.40s  nature    botd-pavement-flowers
-20.   8.80s  place     botd-autumn-deck-chairs
+ 8.   3.60s  place     botd-brownstone-door
+ 9.   4.00s  food      botd-rose-lemon-tea
+10.   4.40s  nature    botd-clip-windy-pines
+11.   5.60s  outfit    botd-denim-sitting
+12.   6.00s  place     botd-papered-staircase
+13.   6.40s  nature    botd-river-pebbles
+14.   6.80s  outfit    botd-military-jacket-leaves
+15.   7.20s  nature    botd-clip-sage-hillside
+16.   8.40s  food      botd-latte-swirl
+17.   8.80s  place     botd-lake-dock
+18.   9.20s  outfit    botd-slouch-socks
+19.   9.60s  nature    botd-pavement-flowers
+20.  10.00s  place     botd-autumn-deck-chairs

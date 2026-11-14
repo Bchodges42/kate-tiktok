@@ -13,7 +13,7 @@
   "botd-clip-creek-stones": {
    "kind": "nature",
    "clip": "clips/botd-clip-creek-stones.mp4",
-   "clip_dur": 0.8
+   "clip_dur": 1.2
   },
   "botd-choc-chip-cookies": {
    "kind": "food"
@@ -27,7 +27,7 @@
   "botd-clip-windy-pines": {
    "kind": "nature",
    "clip": "clips/botd-clip-windy-pines.mp4",
-   "clip_dur": 0.8
+   "clip_dur": 1.2
   },
   "botd-street-couple": {
    "kind": "people"
@@ -56,7 +56,7 @@
   "botd-clip-sage-hillside": {
    "kind": "nature",
    "clip": "clips/botd-clip-sage-hillside.mp4",
-   "clip_dur": 0.8
+   "clip_dur": 1.2
   },
   "botd-latte-swirl": {
    "kind": "food"
@@ -76,15 +76,15 @@
  },
  "order": [
   "botd-lilac-lace-blouse",
-  "botd-clip-creek-stones",
   "botd-choc-chip-cookies",
   "botd-foggy-beach",
   "botd-orange-silhouettes",
-  "botd-clip-windy-pines",
-  "botd-street-couple",
+  "botd-clip-creek-stones",
   "botd-vintage-sweaters",
+  "botd-street-couple",
   "botd-brownstone-door",
   "botd-rose-lemon-tea",
+  "botd-clip-windy-pines",
   "botd-denim-sitting",
   "botd-papered-staircase",
   "botd-river-pebbles",
@@ -108,7 +108,7 @@
   "grain": 2.0,
   "grain_seed": 11
  },
- "_comment": "Board 'board of the day' (kholthaus8), pin.it/2pJ1dUSmy. 150 BPM, one photo per beat (0.4 s = 12 frames); the 3 board videos (animated GIFs) each play 0.8 s = 2 beats, looped from the GIF. 17 photos + 3 clips = 23 beats, ends on a bar line (24 beats = 9.6 s) so the last photo holds 0.8 s. Hook: lilac lace blouse (tall, fills the screen). Kinds never touch, including last->first loop. Not used: pin 4 (green rain flowers, off-palette), 5/7/8/13/19/23 (soft sources under 500 px), 24 (bright pigment grid, off-palette), 28 bedroom and 29 lace curtain (cut to keep it short). Soft but kept because the user chose them: the pines and hillside videos (540/500 px wide) and the deck-chairs photo (517 px).",
+ "_comment": "Board 'board of the day' (kholthaus8), pin.it/2pJ1dUSmy. 150 BPM, one photo per beat (0.4 s = 12 frames); the 3 board videos (animated GIFs) each play 1.2 s = 3 beats (looped from the GIF), looped from the GIF. 17 photos + 3 clips = 26 beats, ends on a bar line (28 beats = 11.2 s) so the last photo holds 1.2 s. Hook: lilac lace blouse (tall, fills the screen). Kinds never touch, including last->first loop. Not used: pin 4 (green rain flowers, off-palette), 5/7/8/13/19/23 (soft sources under 500 px), 24 (bright pigment grid, off-palette), 28 bedroom and 29 lace curtain (cut to keep it short). Soft but kept because the user chose them: the pines and hillside videos (540/500 px wide) and the deck-chairs photo (517 px). v2: clips spread out (steps 4, 11, 20) instead of the first two sitting within 2 s.",
  "name": "board_of_the_day",
  "version": "botd_light_yellow",
  "background": "#FBF1B3"
