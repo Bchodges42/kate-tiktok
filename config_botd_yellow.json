@@ -1,0 +1,115 @@
+{
+ "fps": 30,
+ "size": [
+  1080,
+  1920
+ ],
+ "bpm": 150,
+ "images_dir": "images",
+ "images": {
+  "botd-lilac-lace-blouse": {
+   "kind": "outfit"
+  },
+  "botd-clip-creek-stones": {
+   "kind": "nature",
+   "clip": "clips/botd-clip-creek-stones.mp4",
+   "clip_dur": 0.8
+  },
+  "botd-choc-chip-cookies": {
+   "kind": "food"
+  },
+  "botd-foggy-beach": {
+   "kind": "place"
+  },
+  "botd-orange-silhouettes": {
+   "kind": "people"
+  },
+  "botd-clip-windy-pines": {
+   "kind": "nature",
+   "clip": "clips/botd-clip-windy-pines.mp4",
+   "clip_dur": 0.8
+  },
+  "botd-street-couple": {
+   "kind": "people"
+  },
+  "botd-vintage-sweaters": {
+   "kind": "object"
+  },
+  "botd-brownstone-door": {
+   "kind": "place"
+  },
+  "botd-rose-lemon-tea": {
+   "kind": "food"
+  },
+  "botd-denim-sitting": {
+   "kind": "outfit"
+  },
+  "botd-papered-staircase": {
+   "kind": "place"
+  },
+  "botd-river-pebbles": {
+   "kind": "nature"
+  },
+  "botd-military-jacket-leaves": {
+   "kind": "outfit"
+  },
+  "botd-clip-sage-hillside": {
+   "kind": "nature",
+   "clip": "clips/botd-clip-sage-hillside.mp4",
+   "clip_dur": 0.8
+  },
+  "botd-latte-swirl": {
+   "kind": "food"
+  },
+  "botd-lake-dock": {
+   "kind": "place"
+  },
+  "botd-slouch-socks": {
+   "kind": "outfit"
+  },
+  "botd-pavement-flowers": {
+   "kind": "nature"
+  },
+  "botd-autumn-deck-chairs": {
+   "kind": "place"
+  }
+ },
+ "order": [
+  "botd-lilac-lace-blouse",
+  "botd-clip-creek-stones",
+  "botd-choc-chip-cookies",
+  "botd-foggy-beach",
+  "botd-orange-silhouettes",
+  "botd-clip-windy-pines",
+  "botd-street-couple",
+  "botd-vintage-sweaters",
+  "botd-brownstone-door",
+  "botd-rose-lemon-tea",
+  "botd-denim-sitting",
+  "botd-papered-staircase",
+  "botd-river-pebbles",
+  "botd-military-jacket-leaves",
+  "botd-clip-sage-hillside",
+  "botd-latte-swirl",
+  "botd-lake-dock",
+  "botd-slouch-socks",
+  "botd-pavement-flowers",
+  "botd-autumn-deck-chairs"
+ ],
+ "style": "single",
+ "margin_px": 36,
+ "center_y": 0.5,
+ "border_px": 4,
+ "border": "#FFF9EC",
+ "grade": {
+  "warmth": 0.02,
+  "lift": 6,
+  "saturation": 0.98,
+  "grain": 2.0,
+  "grain_seed": 11
+ },
+ "_comment": "Board 'board of the day' (kholthaus8), pin.it/2pJ1dUSmy. 150 BPM, one photo per beat (0.4 s = 12 frames); the 3 board videos (animated GIFs) each play 0.8 s = 2 beats, looped from the GIF. 17 photos + 3 clips = 23 beats, ends on a bar line (24 beats = 9.6 s) so the last photo holds 0.8 s. Hook: lilac lace blouse (tall, fills the screen). Kinds never touch, including last->first loop. Not used: pin 4 (green rain flowers, off-palette), 5/7/8/13/19/23 (soft sources under 500 px), 24 (bright pigment grid, off-palette), 28 bedroom and 29 lace curtain (cut to keep it short). Soft but kept because the user chose them: the pines and hillside videos (540/500 px wide) and the deck-chairs photo (517 px).",
+ "name": "board_of_the_day",
+ "version": "botd_light_yellow",
+ "background": "#FBF1B3"
+}
