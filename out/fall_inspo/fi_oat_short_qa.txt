@@ -1,0 +1,25 @@
+120 BPM steady, one photo per beat (0.500 s), 18 photos, 20 beats = 10.00 s, ends on a bar line
+hard cuts; beat sync: worst offset 0.00 frames -> PASS
+stillness: max held-frame diff 0.046 -> PASS
+photos: whole (no cropping), own shape (no stretching), none repeated -> PASS
+variety: no two photos of the same kind back to back -> PASS
+screen filled per photo: 36%-85% (whole photos; wide ones are shorter)
+
+ 1.   0.00s  place     fi-ivy-building
+ 2.   0.50s  food      fi-apple-baskets
+ 3.   1.00s  landscape fi-forest-canopy
+ 4.   1.50s  textile   fi-plaid
+ 5.   2.00s  car       fi-orange-car
+ 6.   2.50s  food      fi-simmer-pot
+ 7.   3.00s  interior  fi-french-doors
+ 8.   3.50s  person    fi-mug-blanket
+ 9.   4.00s  object    fi-fire-logs
+10.   4.50s  food      fi-tea-steam
+11.   5.00s  landscape fi-sunset-hills
+12.   5.50s  person    fi-petal-shoe
+13.   6.00s  car       fi-red-car-leaves
+14.   6.50s  food      fi-pumpkin-soup
+15.   7.00s  textile   fi-sweater-rack
+16.   7.50s  place     fi-leaf-fountain
+17.   8.00s  interior  fi-arched-windows
+18.   8.50s  object    fi-log-pile

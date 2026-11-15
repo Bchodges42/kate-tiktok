@@ -1,0 +1,136 @@
+{
+ "name": "board_1111",
+ "version": "b11_blue_full",
+ "fps": 30,
+ "size": [
+  1080,
+  1920
+ ],
+ "bpm": 90,
+ "background": "#C9D8E3",
+ "grade": {
+  "warmth": 0.015,
+  "lift": 5,
+  "saturation": 0.98,
+  "grain": 2.0,
+  "grain_seed": 11
+ },
+ "images_dir": "images",
+ "images": {
+  "b11-cat-on-fence": {
+   "kind": "animal"
+  },
+  "b11-subway-windows": {
+   "kind": "place"
+  },
+  "b11-blackberry-rolls": {
+   "kind": "food"
+  },
+  "b11-striped-sweater-sea": {
+   "kind": "outfit"
+  },
+  "b11-willow-bridge": {
+   "kind": "landscape"
+  },
+  "b11-stack-of-books": {
+   "kind": "books"
+  },
+  "b11-candles": {
+   "kind": "object"
+  },
+  "b11-white-cat-stone": {
+   "kind": "animal"
+  },
+  "b11-tile-kitchen": {
+   "kind": "interior"
+  },
+  "b11-framed-paintings": {
+   "kind": "art"
+  },
+  "b11-peach-basket": {
+   "kind": "food"
+  },
+  "b11-photobooth": {
+   "kind": "place"
+  },
+  "b11-sweater-hands": {
+   "kind": "outfit"
+  },
+  "b11-full-moon": {
+   "kind": "night"
+  },
+  "b11-window-flowers": {
+   "kind": "place"
+  },
+  "b11-gingham-breakfast": {
+   "kind": "food"
+  },
+  "b11-horses-meadow": {
+   "kind": "landscape"
+  },
+  "b11-embroidered-pillow": {
+   "kind": "textile"
+  },
+  "b11-bw-yoga": {
+   "kind": "person"
+  },
+  "b11-lake-arch": {
+   "kind": "landscape"
+  },
+  "b11-journal-coffee": {
+   "kind": "desk"
+  },
+  "b11-black-cat-leaves": {
+   "kind": "animal"
+  },
+  "b11-lace-curtain-window": {
+   "kind": "interior"
+  },
+  "b11-scarves": {
+   "kind": "outfit"
+  },
+  "b11-bag-contents": {
+   "kind": "books"
+  },
+  "b11-star-window-cat": {
+   "kind": "interior"
+  },
+  "b11-cinnamon-roll-plate": {
+   "kind": "food"
+  }
+ },
+ "order": [
+  "b11-cat-on-fence",
+  "b11-subway-windows",
+  "b11-blackberry-rolls",
+  "b11-striped-sweater-sea",
+  "b11-willow-bridge",
+  "b11-stack-of-books",
+  "b11-candles",
+  "b11-white-cat-stone",
+  "b11-tile-kitchen",
+  "b11-framed-paintings",
+  "b11-peach-basket",
+  "b11-photobooth",
+  "b11-sweater-hands",
+  "b11-full-moon",
+  "b11-window-flowers",
+  "b11-gingham-breakfast",
+  "b11-horses-meadow",
+  "b11-embroidered-pillow",
+  "b11-bw-yoga",
+  "b11-lake-arch",
+  "b11-journal-coffee",
+  "b11-black-cat-leaves",
+  "b11-lace-curtain-window",
+  "b11-scarves",
+  "b11-bag-contents",
+  "b11-star-window-cat",
+  "b11-cinnamon-roll-plate"
+ ],
+ "style": "single",
+ "margin_px": 40,
+ "center_y": 0.5,
+ "border_px": 0,
+ "_comment": "Board 1111. Style copied from the user's reference video: one whole photo at a time, hard cuts, no border, flat colour background, steady grid (90 BPM = 0.667 s, the same as the reference). 27 photos; kinds never touch incl. last->first. Left out of this version: none. Soft sources left out of both: see board contact sheet (under ~500 px)."
+}

@@ -1,0 +1,25 @@
+120 BPM steady, one photo per beat (0.500 s), 18 photos, 20 beats = 10.00 s, ends on a bar line
+hard cuts; beat sync: worst offset 0.00 frames -> PASS
+stillness: max held-frame diff 0.039 -> PASS
+photos: whole (no cropping), own shape (no stretching), none repeated -> PASS
+variety: no two photos of the same kind back to back -> PASS
+screen filled per photo: 35%-64% (whole photos; wide ones are shorter)
+
+ 1.   0.00s  night     b11-full-moon
+ 2.   0.50s  food      b11-blackberry-rolls
+ 3.   1.00s  landscape b11-lake-arch
+ 4.   1.50s  outfit    b11-striped-sweater-sea
+ 5.   2.00s  object    b11-candles
+ 6.   2.50s  animal    b11-black-cat-leaves
+ 7.   3.00s  art       b11-framed-paintings
+ 8.   3.50s  food      b11-gingham-breakfast
+ 9.   4.00s  landscape b11-horses-meadow
+10.   4.50s  interior  b11-tile-kitchen
+11.   5.00s  outfit    b11-scarves
+12.   5.50s  place     b11-subway-windows
+13.   6.00s  books     b11-stack-of-books
+14.   6.50s  animal    b11-white-cat-stone
+15.   7.00s  textile   b11-embroidered-pillow
+16.   7.50s  food      b11-peach-basket
+17.   8.00s  interior  b11-lace-curtain-window
+18.   8.50s  landscape b11-willow-bridge

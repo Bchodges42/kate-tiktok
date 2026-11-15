@@ -1,0 +1,120 @@
+{
+ "name": "fall_inspo",
+ "version": "fi_sage_full",
+ "fps": 30,
+ "size": [
+  1080,
+  1920
+ ],
+ "bpm": 90,
+ "background": "#AEB892",
+ "grade": {
+  "warmth": 0.015,
+  "lift": 5,
+  "saturation": 0.98,
+  "grain": 2.0,
+  "grain_seed": 11
+ },
+ "images_dir": "images",
+ "images": {
+  "fi-maple-cafe": {
+   "kind": "place"
+  },
+  "fi-tea-steam": {
+   "kind": "food"
+  },
+  "fi-sunset-hills": {
+   "kind": "landscape"
+  },
+  "fi-sweater-rack": {
+   "kind": "textile"
+  },
+  "fi-leaf-fountain": {
+   "kind": "place"
+  },
+  "fi-mug-blanket": {
+   "kind": "person"
+  },
+  "fi-orange-car": {
+   "kind": "car"
+  },
+  "fi-pumpkin-soup": {
+   "kind": "food"
+  },
+  "fi-arched-windows": {
+   "kind": "interior"
+  },
+  "fi-jeans-leaves": {
+   "kind": "person"
+  },
+  "fi-fall-road": {
+   "kind": "landscape"
+  },
+  "fi-latte-rug": {
+   "kind": "food"
+  },
+  "fi-leafy-roof": {
+   "kind": "place"
+  },
+  "fi-plaid": {
+   "kind": "textile"
+  },
+  "fi-red-car-leaves": {
+   "kind": "car"
+  },
+  "fi-simmer-pot": {
+   "kind": "food"
+  },
+  "fi-french-doors": {
+   "kind": "interior"
+  },
+  "fi-petal-shoe": {
+   "kind": "person"
+  },
+  "fi-fire-logs": {
+   "kind": "object"
+  },
+  "fi-apple-baskets": {
+   "kind": "food"
+  },
+  "fi-ivy-building": {
+   "kind": "place"
+  },
+  "fi-log-pile": {
+   "kind": "object"
+  },
+  "fi-forest-canopy": {
+   "kind": "landscape"
+  }
+ },
+ "order": [
+  "fi-maple-cafe",
+  "fi-tea-steam",
+  "fi-sunset-hills",
+  "fi-sweater-rack",
+  "fi-leaf-fountain",
+  "fi-mug-blanket",
+  "fi-orange-car",
+  "fi-pumpkin-soup",
+  "fi-arched-windows",
+  "fi-jeans-leaves",
+  "fi-fall-road",
+  "fi-latte-rug",
+  "fi-leafy-roof",
+  "fi-plaid",
+  "fi-red-car-leaves",
+  "fi-simmer-pot",
+  "fi-french-doors",
+  "fi-petal-shoe",
+  "fi-fire-logs",
+  "fi-apple-baskets",
+  "fi-ivy-building",
+  "fi-log-pile",
+  "fi-forest-canopy"
+ ],
+ "style": "single",
+ "margin_px": 40,
+ "center_y": 0.5,
+ "border_px": 0,
+ "_comment": "Board fall-inspo. Style copied from the user's reference video: one whole photo at a time, hard cuts, no border, flat colour background, steady grid (90 BPM = 0.667 s, the same as the reference). 23 photos; kinds never touch incl. last->first. Left out of this version: none. Soft sources left out of both: see board contact sheet (under ~500 px)."
+}

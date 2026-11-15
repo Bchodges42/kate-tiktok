@@ -1,0 +1,100 @@
+{
+ "name": "board_1111",
+ "version": "b11_blush_short",
+ "fps": 30,
+ "size": [
+  1080,
+  1920
+ ],
+ "bpm": 120,
+ "background": "#EAD5C9",
+ "grade": {
+  "warmth": 0.015,
+  "lift": 5,
+  "saturation": 0.98,
+  "grain": 2.0,
+  "grain_seed": 11
+ },
+ "images_dir": "images",
+ "images": {
+  "b11-full-moon": {
+   "kind": "night"
+  },
+  "b11-blackberry-rolls": {
+   "kind": "food"
+  },
+  "b11-lake-arch": {
+   "kind": "landscape"
+  },
+  "b11-striped-sweater-sea": {
+   "kind": "outfit"
+  },
+  "b11-candles": {
+   "kind": "object"
+  },
+  "b11-black-cat-leaves": {
+   "kind": "animal"
+  },
+  "b11-framed-paintings": {
+   "kind": "art"
+  },
+  "b11-gingham-breakfast": {
+   "kind": "food"
+  },
+  "b11-horses-meadow": {
+   "kind": "landscape"
+  },
+  "b11-tile-kitchen": {
+   "kind": "interior"
+  },
+  "b11-scarves": {
+   "kind": "outfit"
+  },
+  "b11-subway-windows": {
+   "kind": "place"
+  },
+  "b11-stack-of-books": {
+   "kind": "books"
+  },
+  "b11-white-cat-stone": {
+   "kind": "animal"
+  },
+  "b11-embroidered-pillow": {
+   "kind": "textile"
+  },
+  "b11-peach-basket": {
+   "kind": "food"
+  },
+  "b11-lace-curtain-window": {
+   "kind": "interior"
+  },
+  "b11-willow-bridge": {
+   "kind": "landscape"
+  }
+ },
+ "order": [
+  "b11-full-moon",
+  "b11-blackberry-rolls",
+  "b11-lake-arch",
+  "b11-striped-sweater-sea",
+  "b11-candles",
+  "b11-black-cat-leaves",
+  "b11-framed-paintings",
+  "b11-gingham-breakfast",
+  "b11-horses-meadow",
+  "b11-tile-kitchen",
+  "b11-scarves",
+  "b11-subway-windows",
+  "b11-stack-of-books",
+  "b11-white-cat-stone",
+  "b11-embroidered-pillow",
+  "b11-peach-basket",
+  "b11-lace-curtain-window",
+  "b11-willow-bridge"
+ ],
+ "style": "single",
+ "margin_px": 40,
+ "center_y": 0.5,
+ "border_px": 0,
+ "_comment": "Board 1111. Style copied from the user's reference video: one whole photo at a time, hard cuts, no border, flat colour background, steady grid (120 BPM = 0.5 s, a faster short cut). 18 photos; kinds never touch incl. last->first. Left out of this version: 2 cat-on-fence, 19 photobooth, 23 sweater-hands, 17 window-flowers, 16 bw-yoga, 30 journal-coffee, 22 bag-contents, 24 star-window-cat, 31 cinnamon-roll-plate. Soft sources left out of both: see board contact sheet (under ~500 px)."
+}

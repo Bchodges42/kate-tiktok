@@ -1,0 +1,34 @@
+90 BPM steady, one photo per beat (0.667 s), 27 photos, 28 beats = 18.67 s, ends on a bar line
+hard cuts; beat sync: worst offset 0.00 frames -> PASS
+stillness: max held-frame diff 0.034 -> PASS
+photos: whole (no cropping), own shape (no stretching), none repeated -> PASS
+variety: no two photos of the same kind back to back -> PASS
+screen filled per photo: 27%-64% (whole photos; wide ones are shorter)
+
+ 1.   0.00s  animal    b11-cat-on-fence
+ 2.   0.67s  place     b11-subway-windows
+ 3.   1.33s  food      b11-blackberry-rolls
+ 4.   2.00s  outfit    b11-striped-sweater-sea
+ 5.   2.67s  landscape b11-willow-bridge
+ 6.   3.33s  books     b11-stack-of-books
+ 7.   4.00s  object    b11-candles
+ 8.   4.67s  animal    b11-white-cat-stone
+ 9.   5.33s  interior  b11-tile-kitchen
+10.   6.00s  art       b11-framed-paintings
+11.   6.67s  food      b11-peach-basket
+12.   7.33s  place     b11-photobooth
+13.   8.00s  outfit    b11-sweater-hands
+14.   8.67s  night     b11-full-moon
+15.   9.33s  place     b11-window-flowers
+16.  10.00s  food      b11-gingham-breakfast
+17.  10.67s  landscape b11-horses-meadow
+18.  11.33s  textile   b11-embroidered-pillow
+19.  12.00s  person    b11-bw-yoga
+20.  12.67s  landscape b11-lake-arch
+21.  13.33s  desk      b11-journal-coffee
+22.  14.00s  animal    b11-black-cat-leaves
+23.  14.67s  interior  b11-lace-curtain-window
+24.  15.33s  outfit    b11-scarves
+25.  16.00s  books     b11-bag-contents
+26.  16.67s  interior  b11-star-window-cat
+27.  17.33s  food      b11-cinnamon-roll-plate
