@@ -64,6 +64,21 @@
   },
   "mbotd-sunset-meditation": {
    "kind": "people"
+  },
+  "mbotd-cat-yoga-stretch": {
+   "kind": "animal"
+  },
+  "mbotd-shadow-legs": {
+   "kind": "body"
+  },
+  "mbotd-lips-freckles": {
+   "kind": "body"
+  },
+  "mbotd-ladybugs": {
+   "kind": "animal"
+  },
+  "mbotd-turkish-coffee": {
+   "kind": "food"
   }
  },
  "order": [
@@ -72,13 +87,18 @@
   "mbotd-cliff-jump",
   "mbotd-film-camera",
   "mbotd-water-droplets-skin",
+  "mbotd-cat-yoga-stretch",
   "mbotd-flower-shop",
   "mbotd-plaid-shorts",
   "mbotd-amber-bottles",
+  "mbotd-lips-freckles",
   "mbotd-pressed-lily-book",
   "mbotd-strappy-sandals",
-  "mbotd-raspberries",
+  "mbotd-turkish-coffee",
   "mbotd-paint-table",
+  "mbotd-ladybugs",
+  "mbotd-raspberries",
+  "mbotd-shadow-legs",
   "mbotd-blue-mohair-sweater",
   "mbotd-sunset-meditation"
  ],
@@ -87,5 +107,5 @@
  "center_y": 0.5,
  "border_px": 4,
  "border": "#FFFFFF",
- "_comment": "Board mbotd-1115 (kholthaus8), pin.it/1njWMB1JW. Simple one-at-a-time, hard cuts, 120 BPM (0.5 s = 15 frames), 14 photos = 14 beats, ends on a bar line (16 beats = 8.0 s) so the last photo holds 1.5 s. Opens on the fur coat (tall, striking), ends on the sunset meditation. Kinds never touch, including last->first. Fur coat: bottom 100 px cropped to remove a baked-in speaker icon from a video thumbnail. Not used (soft sources): pins 0 cat yoga, 2 shadow legs, 11 lips close-up, 14 ladybugs, 15 turkish coffee."
+ "_comment": "Board mbotd-1115 (kholthaus8), pin.it/1njWMB1JW. Simple one-at-a-time, hard cuts, 120 BPM (0.5 s = 15 frames), ALL 19 pins = 19 beats, ends on a bar line (20 beats = 10.0 s) so the last photo holds 1 s. Opens on the fur coat, ends on the sunset meditation. Kinds never touch, including last->first. Fur coat: bottom 100 px cropped to remove a baked-in speaker icon. Soft sources kept because the user asked for every photo: cat yoga (500 px), shadow legs (500), lips (400x300, softest), ladybugs (351x559), turkish coffee (490 short side)."
 }

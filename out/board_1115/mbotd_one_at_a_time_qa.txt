@@ -1,21 +1,27 @@
-120 BPM steady, one photo per beat (0.500 s), 14 photos, 16 beats = 8.00 s, ends on a bar line
+120 BPM steady, one photo per beat (0.500 s), 19 photos, 20 beats = 10.00 s, ends on a bar line
 hard cuts; beat sync: worst offset 0.00 frames -> PASS
 stillness: max held-frame diff 0.058 -> PASS
 photos: whole (no cropping), own shape (no stretching), none repeated -> PASS
 variety: no two photos of the same kind back to back -> PASS
 screen filled per photo: 33%-82% (whole photos; wide ones are shorter)
+soft sources (under 500 px): mbotd-lips-freckles
 
  1.   0.00s  outfit    mbotd-fur-coat-wine
  2.   0.50s  food      mbotd-ripe-figs
  3.   1.00s  place     mbotd-cliff-jump
  4.   1.50s  object    mbotd-film-camera
  5.   2.00s  body      mbotd-water-droplets-skin
- 6.   2.50s  place     mbotd-flower-shop
- 7.   3.00s  outfit    mbotd-plaid-shorts
- 8.   3.50s  object    mbotd-amber-bottles
- 9.   4.00s  botanical mbotd-pressed-lily-book
-10.   4.50s  outfit    mbotd-strappy-sandals
-11.   5.00s  food      mbotd-raspberries
-12.   5.50s  object    mbotd-paint-table
-13.   6.00s  outfit    mbotd-blue-mohair-sweater
-14.   6.50s  people    mbotd-sunset-meditation
+ 6.   2.50s  animal    mbotd-cat-yoga-stretch
+ 7.   3.00s  place     mbotd-flower-shop
+ 8.   3.50s  outfit    mbotd-plaid-shorts
+ 9.   4.00s  object    mbotd-amber-bottles
+10.   4.50s  body      mbotd-lips-freckles
+11.   5.00s  botanical mbotd-pressed-lily-book
+12.   5.50s  outfit    mbotd-strappy-sandals
+13.   6.00s  food      mbotd-turkish-coffee
+14.   6.50s  object    mbotd-paint-table
+15.   7.00s  animal    mbotd-ladybugs
+16.   7.50s  food      mbotd-raspberries
+17.   8.00s  body      mbotd-shadow-legs
+18.   8.50s  outfit    mbotd-blue-mohair-sweater
+19.   9.00s  people    mbotd-sunset-meditation
