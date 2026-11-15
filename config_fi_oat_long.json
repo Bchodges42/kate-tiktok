@@ -1,12 +1,12 @@
 {
  "name": "fall_inspo",
- "version": "fi_oat_short",
+ "version": "fi_oat_long",
  "fps": 30,
  "size": [
   1080,
   1920
  ],
- "bpm": 120,
+ "bpm": 100,
  "background": "#F1E6D3",
  "grade": {
   "warmth": 0.015,
@@ -50,6 +50,9 @@
   "fi-sunset-hills": {
    "kind": "landscape"
   },
+  "fi-leafy-roof": {
+   "kind": "place"
+  },
   "fi-petal-shoe": {
    "kind": "person"
   },
@@ -68,6 +71,18 @@
   "fi-arched-windows": {
    "kind": "interior"
   },
+  "fi-jeans-leaves": {
+   "kind": "person"
+  },
+  "fi-latte-rug": {
+   "kind": "food"
+  },
+  "fi-fall-road": {
+   "kind": "landscape"
+  },
+  "fi-maple-cafe": {
+   "kind": "place"
+  },
   "fi-log-pile": {
    "kind": "object"
   }
@@ -84,17 +99,22 @@
   "fi-fire-logs",
   "fi-tea-steam",
   "fi-sunset-hills",
+  "fi-leafy-roof",
   "fi-petal-shoe",
   "fi-red-car-leaves",
   "fi-pumpkin-soup",
   "fi-sweater-rack",
   "fi-leaf-fountain",
   "fi-arched-windows",
+  "fi-jeans-leaves",
+  "fi-latte-rug",
+  "fi-fall-road",
+  "fi-maple-cafe",
   "fi-log-pile"
  ],
  "style": "single",
  "margin_px": 40,
  "center_y": 0.5,
  "border_px": 0,
- "_comment": "Board fall-inspo. Style copied from the user's reference video: one whole photo at a time, hard cuts, no border, flat colour background, steady grid (120 BPM = 0.5 s, a faster short cut). 18 photos; kinds never touch incl. last->first. Left out of this version: 7 maple-cafe, 25 jeans-leaves, 4 fall-road, 17 latte-rug, 12 leafy-roof. Soft sources left out of both: see board contact sheet (under ~500 px)."
+ "_comment": "Board fall-inspo. Same look as the reference (one whole photo at a time, hard cuts, no border, flat colour). Lengthened from the 10 s cut: every non-soft photo used (23), 100 BPM = 0.6 s = 18 frames per photo, different order from the full version. Kinds never touch incl. last->first."
 }

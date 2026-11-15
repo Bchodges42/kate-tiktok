@@ -1,12 +1,12 @@
 {
  "name": "board_1111",
- "version": "b11_blush_short",
+ "version": "b11_blush_long",
  "fps": 30,
  "size": [
   1080,
   1920
  ],
- "bpm": 120,
+ "bpm": 100,
  "background": "#EAD5C9",
  "grade": {
   "warmth": 0.015,
@@ -38,6 +38,9 @@
   "b11-framed-paintings": {
    "kind": "art"
   },
+  "b11-bw-yoga": {
+   "kind": "person"
+  },
   "b11-gingham-breakfast": {
    "kind": "food"
   },
@@ -62,11 +65,35 @@
   "b11-embroidered-pillow": {
    "kind": "textile"
   },
+  "b11-journal-coffee": {
+   "kind": "desk"
+  },
   "b11-peach-basket": {
    "kind": "food"
   },
+  "b11-photobooth": {
+   "kind": "place"
+  },
+  "b11-sweater-hands": {
+   "kind": "outfit"
+  },
   "b11-lace-curtain-window": {
    "kind": "interior"
+  },
+  "b11-window-flowers": {
+   "kind": "place"
+  },
+  "b11-cinnamon-roll-plate": {
+   "kind": "food"
+  },
+  "b11-star-window-cat": {
+   "kind": "interior"
+  },
+  "b11-bag-contents": {
+   "kind": "books"
+  },
+  "b11-cat-on-fence": {
+   "kind": "animal"
   },
   "b11-willow-bridge": {
    "kind": "landscape"
@@ -80,6 +107,7 @@
   "b11-candles",
   "b11-black-cat-leaves",
   "b11-framed-paintings",
+  "b11-bw-yoga",
   "b11-gingham-breakfast",
   "b11-horses-meadow",
   "b11-tile-kitchen",
@@ -88,13 +116,21 @@
   "b11-stack-of-books",
   "b11-white-cat-stone",
   "b11-embroidered-pillow",
+  "b11-journal-coffee",
   "b11-peach-basket",
+  "b11-photobooth",
+  "b11-sweater-hands",
   "b11-lace-curtain-window",
+  "b11-window-flowers",
+  "b11-cinnamon-roll-plate",
+  "b11-star-window-cat",
+  "b11-bag-contents",
+  "b11-cat-on-fence",
   "b11-willow-bridge"
  ],
  "style": "single",
  "margin_px": 40,
  "center_y": 0.5,
  "border_px": 0,
- "_comment": "Board 1111. Style copied from the user's reference video: one whole photo at a time, hard cuts, no border, flat colour background, steady grid (120 BPM = 0.5 s, a faster short cut). 18 photos; kinds never touch incl. last->first. Left out of this version: 2 cat-on-fence, 19 photobooth, 23 sweater-hands, 17 window-flowers, 16 bw-yoga, 30 journal-coffee, 22 bag-contents, 24 star-window-cat, 31 cinnamon-roll-plate. Soft sources left out of both: see board contact sheet (under ~500 px)."
+ "_comment": "Board 1111. Same look as the reference (one whole photo at a time, hard cuts, no border, flat colour). Lengthened from the 10 s cut: every non-soft photo used (27), 100 BPM = 0.6 s = 18 frames per photo, different order from the full version. Kinds never touch incl. last->first."
 }

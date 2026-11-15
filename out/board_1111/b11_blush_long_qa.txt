@@ -1,0 +1,34 @@
+100 BPM steady, one photo per beat (0.600 s), 27 photos, 28 beats = 16.80 s, ends on a bar line
+hard cuts; beat sync: worst offset 0.00 frames -> PASS
+stillness: max held-frame diff 0.038 -> PASS
+photos: whole (no cropping), own shape (no stretching), none repeated -> PASS
+variety: no two photos of the same kind back to back -> PASS
+screen filled per photo: 27%-64% (whole photos; wide ones are shorter)
+
+ 1.   0.00s  night     b11-full-moon
+ 2.   0.60s  food      b11-blackberry-rolls
+ 3.   1.20s  landscape b11-lake-arch
+ 4.   1.80s  outfit    b11-striped-sweater-sea
+ 5.   2.40s  object    b11-candles
+ 6.   3.00s  animal    b11-black-cat-leaves
+ 7.   3.60s  art       b11-framed-paintings
+ 8.   4.20s  person    b11-bw-yoga
+ 9.   4.80s  food      b11-gingham-breakfast
+10.   5.40s  landscape b11-horses-meadow
+11.   6.00s  interior  b11-tile-kitchen
+12.   6.60s  outfit    b11-scarves
+13.   7.20s  place     b11-subway-windows
+14.   7.80s  books     b11-stack-of-books
+15.   8.40s  animal    b11-white-cat-stone
+16.   9.00s  textile   b11-embroidered-pillow
+17.   9.60s  desk      b11-journal-coffee
+18.  10.20s  food      b11-peach-basket
+19.  10.80s  place     b11-photobooth
+20.  11.40s  outfit    b11-sweater-hands
+21.  12.00s  interior  b11-lace-curtain-window
+22.  12.60s  place     b11-window-flowers
+23.  13.20s  food      b11-cinnamon-roll-plate
+24.  13.80s  interior  b11-star-window-cat
+25.  14.40s  books     b11-bag-contents
+26.  15.00s  animal    b11-cat-on-fence
+27.  15.60s  landscape b11-willow-bridge
