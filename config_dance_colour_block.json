@@ -14,7 +14,7 @@
   "grain": 2.0,
   "grain_seed": 7
  },
- "_tempo_comment": "28 photos = 28 beats = 11.2 s, 7 bars. Same length and pace as the reference. No song: beat guide in the MP4, silent copy for TikTok sound at 150 BPM.",
+ "_tempo_comment": "36 photos = 36 beats = 14.4 s, 9 bars; the background changes every bar and ends on hot pink so it loops. No song: beat guide in the MP4, silent copy for TikTok sound at 150 BPM.",
  "images_dir": "images",
  "images": {
   "dn-star-eye-makeup": {
@@ -71,6 +71,12 @@
   "dn-turntable": {
    "kind": "record"
   },
+  "dn-motion-blur-dancers": {
+   "kind": "dancer"
+  },
+  "dn-poster-wall-ball": {
+   "kind": "ball"
+  },
   "dn-studio54-dancer": {
    "kind": "dancer"
   },
@@ -89,8 +95,26 @@
   "dn-stereo-sparkle-sleeve": {
    "kind": "object"
   },
+  "dn-ball-dance-crowd": {
+   "kind": "ball"
+  },
+  "dn-champagne-blur": {
+   "kind": "drinks"
+  },
   "dn-tinsel-silhouette": {
    "kind": "silhouette"
+  },
+  "dn-platform-boots-white": {
+   "kind": "shoes"
+  },
+  "dn-sparkle-dancers": {
+   "kind": "crowd"
+  },
+  "dn-sunset-bookshelf": {
+   "kind": "books"
+  },
+  "dn-beaded-chandelier": {
+   "kind": "decor"
   },
   "dn-headphones-blush": {
    "kind": "portrait"
@@ -127,13 +151,21 @@
   "dn-heels-in-hand",
   "dn-dj-bar-crowd",
   "dn-turntable",
+  "dn-motion-blur-dancers",
+  "dn-poster-wall-ball",
   "dn-studio54-dancer",
   "dn-glitter-palette",
   "dn-club-red-lights",
   "dn-peace-prints",
   "dn-sequin-singers",
   "dn-stereo-sparkle-sleeve",
+  "dn-ball-dance-crowd",
+  "dn-champagne-blur",
   "dn-tinsel-silhouette",
+  "dn-platform-boots-white",
+  "dn-sparkle-dancers",
+  "dn-sunset-bookshelf",
+  "dn-beaded-chandelier",
   "dn-headphones-blush",
   "dn-studio54-sign",
   "dn-disco-dance-floor"
@@ -147,7 +179,9 @@
   "#B6F03B",
   "#2B59FF",
   "#FFD23F",
+  "#FF3B30",
   "#19D3C5",
+  "#9B5CFF",
   "#FF2E93"
  ],
  "bg_every": 4,
@@ -156,5 +190,5 @@
  "margin_px": 56,
  "center_y": 0.5,
  "_look": "Copied from the user's reference video: one photo at a time, hard cuts at 150 BPM (0.4 s), thin white border, and the background changes colour every 4 photos: pink, orange, lime, blue, yellow, teal, then pink again so it loops.",
- "_comment": "Board dance (kholthaus8), pin.it/5B1sXn1FA. 40 pins; opens on the star eye makeup. Disco floor: 16 px brown source border cropped. Kinds never touch incl. loop. Left out: soft sources 8, 11, 16 (under ~500 px) and, to keep it to 28, ."
+ "_comment": "Board dance (kholthaus8), pin.it/5B1sXn1FA. Lengthened from 11.2 s: 36 of 37 non-soft pins (only the orange glitter palette, pin 9, left out as a near-duplicate of the other makeup photo). Soft sources 8, 11, 16 left out. Opens on the star eye makeup. Disco floor: 16 px brown source border cropped. Kinds never touch incl. loop."
 }
