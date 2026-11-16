@@ -1,0 +1,35 @@
+150 BPM steady, one photo per beat (0.400 s), 28 photos, 28 beats = 11.20 s, ends on a bar line
+hard cuts; beat sync: worst offset 0.00 frames -> PASS
+stillness: max held-frame diff 0.061 -> PASS
+photos: whole (no cropping), own shape (no stretching), none repeated -> PASS
+variety: no two photos of the same kind back to back -> PASS
+screen filled per photo: 26%-79% (whole photos; wide ones are shorter)
+
+ 1.   0.00s  portrait  dn-star-eye-makeup
+ 2.   0.40s  crowd     dn-pink-disco-silhouettes
+ 3.   0.80s  shoes     dn-platform-boots-glass
+ 4.   1.20s  dancer    dn-gold-fringe-dancer
+ 5.   1.60s  ball      dn-mirror-ball-tunnel
+ 6.   2.00s  outfit    dn-bw-glitter-legs
+ 7.   2.40s  drinks    dn-cocktail-cheers
+ 8.   2.80s  dancer    dn-stage-dancer-yellow
+ 9.   3.20s  sign      dn-disco-sign
+10.   3.60s  outfit    dn-sequin-dress-row
+11.   4.00s  crowd     dn-red-haze-crowd
+12.   4.40s  record    dn-pink-vinyl
+13.   4.80s  silhouette dn-window-silhouettes
+14.   5.20s  illustration dn-retro-dancers-red
+15.   5.60s  outfit    dn-silver-sequin-blur
+16.   6.00s  portrait  dn-heels-in-hand
+17.   6.40s  crowd     dn-dj-bar-crowd
+18.   6.80s  record    dn-turntable
+19.   7.20s  dancer    dn-studio54-dancer
+20.   7.60s  makeup    dn-glitter-palette
+21.   8.00s  crowd     dn-club-red-lights
+22.   8.40s  art       dn-peace-prints
+23.   8.80s  dancer    dn-sequin-singers
+24.   9.20s  object    dn-stereo-sparkle-sleeve
+25.   9.60s  silhouette dn-tinsel-silhouette
+26.  10.00s  portrait  dn-headphones-blush
+27.  10.40s  sign      dn-studio54-sign
+28.  10.80s  floor     dn-disco-dance-floor
