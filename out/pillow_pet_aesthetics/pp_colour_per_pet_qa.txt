@@ -1,6 +1,6 @@
-150 BPM steady, one photo per beat (0.400 s), 42 photos, 48 beats = 19.20 s, ends on a bar line
+150 BPM steady, one photo per beat (0.400 s), 66 photos, 72 beats = 28.80 s, ends on a bar line
 hard cuts; beat sync: worst offset 0.00 frames -> PASS
-stillness: max held-frame diff 0.053 -> PASS
+stillness: max held-frame diff 0.054 -> PASS
 photos: whole (no cropping), own shape (no stretching), none repeated -> PASS
 variety: no two photos of the same kind back to back -> PASS
 screen filled per photo: 27%-82% (whole photos; wide ones are shorter)
@@ -13,38 +13,62 @@ soft sources (under 500 px): pp-dog-dog-pet, pp-bee-bee-pet
  5.   2.00s  outfit    pp-dog-pink-cardigan
  6.   2.40s  landscape pp-dog-wildflower-meadow
  7.   2.80s  drink     pp-dog-lemonade-lunch
- 8.   3.20s  pet       pp-panda-panda-pet
- 9.   4.00s  place     pp-panda-arched-hallway
-10.   4.40s  object    pp-panda-perfume-on-linen
-11.   4.80s  outfit    pp-panda-white-babydoll-dress
-12.   5.20s  art       pp-panda-landscape-paintings
-13.   5.60s  interior  pp-panda-vanity-mirror
-14.   6.00s  drink     pp-panda-latte-art
-15.   6.40s  pet       pp-bee-bee-pet
-16.   7.20s  landscape pp-bee-hives-in-wildflowers
-17.   7.60s  detail    pp-bee-bee-on-skin
-18.   8.00s  house     pp-bee-stone-cottage
-19.   8.40s  animal    pp-bee-kittens-on-hay
-20.   8.80s  interior  pp-bee-stone-kitchen
-21.   9.20s  object    pp-bee-speckled-eggs
-22.   9.60s  pet       pp-ladybug-ladybug-pet
-23.  10.40s  food      pp-ladybug-jam-toast-heart
-24.  10.80s  outfit    pp-ladybug-polka-dot-tights
-25.  11.20s  place     pp-ladybug-red-barn-window
-26.  11.60s  object    pp-ladybug-ladybug-ribbons
-27.  12.00s  outfit    pp-ladybug-red-mary-janes
-28.  12.40s  flower    pp-ladybug-white-lilies
-29.  12.80s  pet       pp-giraffe-giraffe-pet
-30.  13.60s  animal    pp-giraffe-giraffe-at-the-window
-31.  14.00s  flowers   pp-giraffe-tulip-market
-32.  14.40s  outfit    pp-giraffe-yellow-jacket
-33.  14.80s  house     pp-giraffe-yellow-victorian-house
-34.  15.20s  interior  pp-giraffe-glowing-lamp-room
-35.  15.60s  landscape pp-giraffe-mountain-hike
-36.  16.00s  pet       pp-unicorn-unicorn-pet
-37.  16.80s  animal    pp-unicorn-rainbow-cat
-38.  17.20s  place     pp-unicorn-porch-lanterns
-39.  17.60s  texture   pp-unicorn-pink-sequins
-40.  18.00s  flowers   pp-unicorn-sunbeam-flowers
-41.  18.40s  outfit    pp-unicorn-purple-knit-cardigan
-42.  18.80s  sky       pp-unicorn-pink-sunset-water
+ 8.   3.20s  outfit    pp-dog-grey-fleece-pullover
+ 9.   3.60s  place     pp-dog-lakeside-yard-sunset
+10.   4.00s  dog       pp-dog-dog-and-girl
+11.   4.40s  outfit    pp-dog-green-cardigan
+12.   4.80s  pet       pp-panda-panda-pet
+13.   5.60s  place     pp-panda-arched-hallway
+14.   6.00s  object    pp-panda-perfume-on-linen
+15.   6.40s  outfit    pp-panda-white-babydoll-dress
+16.   6.80s  art       pp-panda-landscape-paintings
+17.   7.20s  interior  pp-panda-vanity-mirror
+18.   7.60s  drink     pp-panda-latte-art
+19.   8.00s  outfit    pp-panda-street-wide-jeans
+20.   8.40s  flatlay   pp-panda-stack-of-turtlenecks
+21.   8.80s  interior  pp-panda-fur-coat-bag-chair
+22.   9.20s  outfit    pp-panda-striped-cardigan-iced-coffee
+23.   9.60s  pet       pp-bee-bee-pet
+24.  10.40s  landscape pp-bee-hives-in-wildflowers
+25.  10.80s  detail    pp-bee-bee-on-skin
+26.  11.20s  house     pp-bee-stone-cottage
+27.  11.60s  animal    pp-bee-kittens-on-hay
+28.  12.00s  interior  pp-bee-stone-kitchen
+29.  12.40s  object    pp-bee-speckled-eggs
+30.  12.80s  person    pp-bee-girl-in-blue-dress-fence
+31.  13.20s  place     pp-bee-hay-barn-swing
+32.  13.60s  flatlay   pp-bee-gardening-tools
+33.  14.00s  object    pp-bee-wind-chimes
+34.  14.40s  pet       pp-ladybug-ladybug-pet
+35.  15.20s  food      pp-ladybug-jam-toast-heart
+36.  15.60s  outfit    pp-ladybug-polka-dot-tights
+37.  16.00s  place     pp-ladybug-red-barn-window
+38.  16.40s  object    pp-ladybug-ladybug-ribbons
+39.  16.80s  outfit    pp-ladybug-red-mary-janes
+40.  17.20s  flower    pp-ladybug-white-lilies
+41.  17.60s  animal    pp-ladybug-ladybug-in-hair
+42.  18.00s  outfit    pp-ladybug-polka-dot-belt
+43.  18.40s  landscape pp-ladybug-willow-sunset
+44.  18.80s  object    pp-ladybug-candles
+45.  19.20s  pet       pp-giraffe-giraffe-pet
+46.  20.00s  animal    pp-giraffe-giraffe-at-the-window
+47.  20.40s  flowers   pp-giraffe-tulip-market
+48.  20.80s  outfit    pp-giraffe-yellow-jacket
+49.  21.20s  house     pp-giraffe-yellow-victorian-house
+50.  21.60s  interior  pp-giraffe-glowing-lamp-room
+51.  22.00s  landscape pp-giraffe-mountain-hike
+52.  22.40s  person    pp-giraffe-guitar-eyelet-dress
+53.  22.80s  outfit    pp-giraffe-yellow-heels
+54.  23.20s  interior  pp-giraffe-guitars-in-the-corner
+55.  23.60s  landscape pp-giraffe-hot-air-balloon
+56.  24.00s  pet       pp-unicorn-unicorn-pet
+57.  24.80s  animal    pp-unicorn-rainbow-cat
+58.  25.20s  place     pp-unicorn-porch-lanterns
+59.  25.60s  texture   pp-unicorn-pink-sequins
+60.  26.00s  flowers   pp-unicorn-sunbeam-flowers
+61.  26.40s  outfit    pp-unicorn-purple-knit-cardigan
+62.  26.80s  sky       pp-unicorn-pink-sunset-water
+63.  27.20s  object    pp-unicorn-love-letters-mailbox
+64.  27.60s  flowers   pp-unicorn-hollyhocks
+65.  28.00s  person    pp-unicorn-friends-in-yellow-boots
+66.  28.40s  object    pp-unicorn-pastel-cabinet

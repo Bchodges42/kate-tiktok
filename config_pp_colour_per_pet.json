@@ -37,6 +37,18 @@
   "pp-dog-lemonade-lunch": {
    "kind": "drink"
   },
+  "pp-dog-grey-fleece-pullover": {
+   "kind": "outfit"
+  },
+  "pp-dog-lakeside-yard-sunset": {
+   "kind": "place"
+  },
+  "pp-dog-dog-and-girl": {
+   "kind": "dog"
+  },
+  "pp-dog-green-cardigan": {
+   "kind": "outfit"
+  },
   "pp-panda-panda-pet": {
    "kind": "pet",
    "hold": 2
@@ -59,6 +71,18 @@
   "pp-panda-latte-art": {
    "kind": "drink"
   },
+  "pp-panda-street-wide-jeans": {
+   "kind": "outfit"
+  },
+  "pp-panda-stack-of-turtlenecks": {
+   "kind": "flatlay"
+  },
+  "pp-panda-fur-coat-bag-chair": {
+   "kind": "interior"
+  },
+  "pp-panda-striped-cardigan-iced-coffee": {
+   "kind": "outfit"
+  },
   "pp-bee-bee-pet": {
    "kind": "pet",
    "hold": 2
@@ -79,6 +103,18 @@
    "kind": "interior"
   },
   "pp-bee-speckled-eggs": {
+   "kind": "object"
+  },
+  "pp-bee-girl-in-blue-dress-fence": {
+   "kind": "person"
+  },
+  "pp-bee-hay-barn-swing": {
+   "kind": "place"
+  },
+  "pp-bee-gardening-tools": {
+   "kind": "flatlay"
+  },
+  "pp-bee-wind-chimes": {
    "kind": "object"
   },
   "pp-ladybug-ladybug-pet": {
@@ -103,6 +139,18 @@
   "pp-ladybug-white-lilies": {
    "kind": "flower"
   },
+  "pp-ladybug-ladybug-in-hair": {
+   "kind": "animal"
+  },
+  "pp-ladybug-polka-dot-belt": {
+   "kind": "outfit"
+  },
+  "pp-ladybug-willow-sunset": {
+   "kind": "landscape"
+  },
+  "pp-ladybug-candles": {
+   "kind": "object"
+  },
   "pp-giraffe-giraffe-pet": {
    "kind": "pet",
    "hold": 2
@@ -123,6 +171,18 @@
    "kind": "interior"
   },
   "pp-giraffe-mountain-hike": {
+   "kind": "landscape"
+  },
+  "pp-giraffe-guitar-eyelet-dress": {
+   "kind": "person"
+  },
+  "pp-giraffe-yellow-heels": {
+   "kind": "outfit"
+  },
+  "pp-giraffe-guitars-in-the-corner": {
+   "kind": "interior"
+  },
+  "pp-giraffe-hot-air-balloon": {
    "kind": "landscape"
   },
   "pp-unicorn-unicorn-pet": {
@@ -146,6 +206,18 @@
   },
   "pp-unicorn-pink-sunset-water": {
    "kind": "sky"
+  },
+  "pp-unicorn-love-letters-mailbox": {
+   "kind": "object"
+  },
+  "pp-unicorn-hollyhocks": {
+   "kind": "flowers"
+  },
+  "pp-unicorn-friends-in-yellow-boots": {
+   "kind": "person"
+  },
+  "pp-unicorn-pastel-cabinet": {
+   "kind": "object"
   }
  },
  "version": "pp_colour_per_pet",
@@ -163,6 +235,10 @@
   "pp-dog-pink-cardigan",
   "pp-dog-wildflower-meadow",
   "pp-dog-lemonade-lunch",
+  "pp-dog-grey-fleece-pullover",
+  "pp-dog-lakeside-yard-sunset",
+  "pp-dog-dog-and-girl",
+  "pp-dog-green-cardigan",
   "pp-panda-panda-pet",
   "pp-panda-arched-hallway",
   "pp-panda-perfume-on-linen",
@@ -170,6 +246,10 @@
   "pp-panda-landscape-paintings",
   "pp-panda-vanity-mirror",
   "pp-panda-latte-art",
+  "pp-panda-street-wide-jeans",
+  "pp-panda-stack-of-turtlenecks",
+  "pp-panda-fur-coat-bag-chair",
+  "pp-panda-striped-cardigan-iced-coffee",
   "pp-bee-bee-pet",
   "pp-bee-hives-in-wildflowers",
   "pp-bee-bee-on-skin",
@@ -177,6 +257,10 @@
   "pp-bee-kittens-on-hay",
   "pp-bee-stone-kitchen",
   "pp-bee-speckled-eggs",
+  "pp-bee-girl-in-blue-dress-fence",
+  "pp-bee-hay-barn-swing",
+  "pp-bee-gardening-tools",
+  "pp-bee-wind-chimes",
   "pp-ladybug-ladybug-pet",
   "pp-ladybug-jam-toast-heart",
   "pp-ladybug-polka-dot-tights",
@@ -184,6 +268,10 @@
   "pp-ladybug-ladybug-ribbons",
   "pp-ladybug-red-mary-janes",
   "pp-ladybug-white-lilies",
+  "pp-ladybug-ladybug-in-hair",
+  "pp-ladybug-polka-dot-belt",
+  "pp-ladybug-willow-sunset",
+  "pp-ladybug-candles",
   "pp-giraffe-giraffe-pet",
   "pp-giraffe-giraffe-at-the-window",
   "pp-giraffe-tulip-market",
@@ -191,15 +279,23 @@
   "pp-giraffe-yellow-victorian-house",
   "pp-giraffe-glowing-lamp-room",
   "pp-giraffe-mountain-hike",
+  "pp-giraffe-guitar-eyelet-dress",
+  "pp-giraffe-yellow-heels",
+  "pp-giraffe-guitars-in-the-corner",
+  "pp-giraffe-hot-air-balloon",
   "pp-unicorn-unicorn-pet",
   "pp-unicorn-rainbow-cat",
   "pp-unicorn-porch-lanterns",
   "pp-unicorn-pink-sequins",
   "pp-unicorn-sunbeam-flowers",
   "pp-unicorn-purple-knit-cardigan",
-  "pp-unicorn-pink-sunset-water"
+  "pp-unicorn-pink-sunset-water",
+  "pp-unicorn-love-letters-mailbox",
+  "pp-unicorn-hollyhocks",
+  "pp-unicorn-friends-in-yellow-boots",
+  "pp-unicorn-pastel-cabinet"
  ],
- "_comment": "Board kholthaus8/pillow-pet-aesthetic, split by the user into 6 boards. Each pillow pet's photo comes first (held 2 beats), then 6 photos from its aesthetic, hard cuts at 150 BPM, background colour changes with each pet. 6 x (2+6) = 48 beats = 19.2 s. Section order = board order. Pet photos: dog (425 px) is a soft source but is the only pet photo on its board.",
+ "_comment": "Updated: each pillow pet photo (held 2 beats) is now followed by 10 photos from its aesthetic (was 6), same timing: 150 BPM, 0.4 s per photo, hard cuts, background colour per pet. 6 x (2+10) = 72 beats = 28.8 s. Giraffe board has only 11 sharp photos, so it uses 10 of them; all 6 boards otherwise leave out only soft pins under ~500 px.",
  "bg_cycle": [
   "#F3E2B3",
   "#D9D5CE",
@@ -208,5 +304,5 @@
   "#D9822B",
   "#C9B6E4"
  ],
- "bg_every": 7
+ "bg_every": 11
 }
