@@ -1,0 +1,96 @@
+{
+ "name": "board_1116",
+ "vibe": "soft vintage domestic: lace, florals, books, cats, light",
+ "fps": 30,
+ "size": [
+  1080,
+  1920
+ ],
+ "grade": {
+  "warmth": 0.0,
+  "lift": 4,
+  "saturation": 1.0,
+  "grain": 2.0,
+  "grain_seed": 7
+ },
+ "images_dir": "images",
+ "images": {
+  "mt-vintage-eyes": {
+   "kind": "face"
+  },
+  "mt-ranunculus-bedside": {
+   "kind": "flowers"
+  },
+  "mt-live-oak": {
+   "kind": "tree"
+  },
+  "mt-pink-quilt-sofa": {
+   "kind": "textile"
+  },
+  "mt-pink-curtain-window": {
+   "kind": "window"
+  },
+  "mt-spotted-deer": {
+   "kind": "animal"
+  },
+  "mt-coffee-photo-album": {
+   "kind": "flatlay"
+  },
+  "mt-thrift-cliff-path": {
+   "kind": "landscape"
+  },
+  "mt-crochet-lamp": {
+   "kind": "lace"
+  },
+  "mt-amber-lamp-bar": {
+   "kind": "interior"
+  },
+  "mt-antique-books": {
+   "kind": "books"
+  },
+  "mt-fig-fruit-bowl": {
+   "kind": "food"
+  },
+  "mt-stained-glass": {
+   "kind": "glass"
+  },
+  "mt-two-black-cats": {
+   "kind": "cat"
+  },
+  "mt-blossom-petals-clogs": {
+   "kind": "ground"
+  },
+  "mt-fortune-poster": {
+   "kind": "graphic"
+  }
+ },
+ "version": "mt_greige_blend",
+ "bpm": 60,
+ "style": "single",
+ "dissolve_frames": 12,
+ "background": "#CBC5BA",
+ "margin_px": 44,
+ "border_px": 4,
+ "border": "#FFFFFF",
+ "order": [
+  "mt-vintage-eyes",
+  "mt-ranunculus-bedside",
+  "mt-live-oak",
+  "mt-pink-quilt-sofa",
+  "mt-pink-curtain-window",
+  "mt-spotted-deer",
+  "mt-coffee-photo-album",
+  "mt-thrift-cliff-path",
+  "mt-crochet-lamp",
+  "mt-amber-lamp-bar",
+  "mt-antique-books",
+  "mt-fig-fruit-bowl",
+  "mt-stained-glass",
+  "mt-two-black-cats",
+  "mt-blossom-petals-clogs",
+  "mt-fortune-poster"
+ ],
+ "_tempo_comment": "steady 80 BPM, one photo per beat (0.75 s). Each photo blends into the next over 14 frames (0.47 s), finishing exactly on the beat, then holds still. 44 photos = 33 s, ends on a bar line. No song: main MP4 has a kick beat guide; _silent.mp4 for posting with any ~80 BPM (or 160 BPM) TikTok sound.",
+ "_comment": "Board motd-11-16 (kholthaus8), pin.it/567lYet6c. Version 2: one photo at a time, centred, soft eased blends (12 frames = 0.4 s, finishing on the beat), 60 BPM (1 s), 16 photos = 16.0 s, none repeated. Left out: soft pins 2 and 7; the other photos are in version 1 only.",
+ "dissolve_ease": 0.7
+}

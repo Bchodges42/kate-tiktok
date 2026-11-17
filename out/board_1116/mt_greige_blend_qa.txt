@@ -1,0 +1,23 @@
+60 BPM steady, one photo per beat (1.000 s), 16 photos, 16 beats = 16.00 s, ends on a bar line
+dissolve: 12 frames (0.40 s) into each photo, finishing on the beat; beat sync: worst offset 0.00 frames -> PASS
+stillness: max held-frame diff 0.515 -> PASS
+photos: whole (no cropping), own shape (no stretching), none repeated -> PASS
+variety: no two photos of the same kind back to back -> PASS
+screen filled per photo: 28%-68% (whole photos; wide ones are shorter)
+
+ 1.   0.00s  face      mt-vintage-eyes
+ 2.   1.00s  flowers   mt-ranunculus-bedside
+ 3.   2.00s  tree      mt-live-oak
+ 4.   3.00s  textile   mt-pink-quilt-sofa
+ 5.   4.00s  window    mt-pink-curtain-window
+ 6.   5.00s  animal    mt-spotted-deer
+ 7.   6.00s  flatlay   mt-coffee-photo-album
+ 8.   7.00s  landscape mt-thrift-cliff-path
+ 9.   8.00s  lace      mt-crochet-lamp
+10.   9.00s  interior  mt-amber-lamp-bar
+11.  10.00s  books     mt-antique-books
+12.  11.00s  food      mt-fig-fruit-bowl
+13.  12.00s  glass     mt-stained-glass
+14.  13.00s  cat       mt-two-black-cats
+15.  14.00s  ground    mt-blossom-petals-clogs
+16.  15.00s  graphic   mt-fortune-poster

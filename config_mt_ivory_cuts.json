@@ -1,0 +1,126 @@
+{
+ "name": "board_1116",
+ "vibe": "soft vintage domestic: lace, florals, books, cats, light",
+ "fps": 30,
+ "size": [
+  1080,
+  1920
+ ],
+ "grade": {
+  "warmth": 0.0,
+  "lift": 4,
+  "saturation": 1.0,
+  "grain": 2.0,
+  "grain_seed": 7
+ },
+ "images_dir": "images",
+ "images": {
+  "mt-stained-glass": {
+   "kind": "glass"
+  },
+  "mt-spotted-deer": {
+   "kind": "animal"
+  },
+  "mt-flower-mugs": {
+   "kind": "dishes"
+  },
+  "mt-thrift-cliff-path": {
+   "kind": "landscape"
+  },
+  "mt-bubble-bath": {
+   "kind": "interior"
+  },
+  "mt-black-kitten": {
+   "kind": "cat"
+  },
+  "mt-antique-books": {
+   "kind": "books"
+  },
+  "mt-tomato-toast": {
+   "kind": "food"
+  },
+  "mt-live-oak": {
+   "kind": "tree"
+  },
+  "mt-pink-quilt-sofa": {
+   "kind": "textile"
+  },
+  "mt-beach-bonfire": {
+   "kind": "people"
+  },
+  "mt-lace-curtain": {
+   "kind": "lace"
+  },
+  "mt-red-cat-silhouette": {
+   "kind": "cat"
+  },
+  "mt-blossom-petals-clogs": {
+   "kind": "ground"
+  },
+  "mt-amber-lamp-bar": {
+   "kind": "interior"
+  },
+  "mt-brick-cottage": {
+   "kind": "house"
+  },
+  "mt-coffee-photo-album": {
+   "kind": "flatlay"
+  },
+  "mt-yoga-room-sunset": {
+   "kind": "interior"
+  },
+  "mt-pink-curtain-window": {
+   "kind": "window"
+  },
+  "mt-fig-fruit-bowl": {
+   "kind": "food"
+  },
+  "mt-fortune-poster": {
+   "kind": "graphic"
+  },
+  "mt-ranunculus-bedside": {
+   "kind": "flowers"
+  },
+  "mt-two-black-cats": {
+   "kind": "cat"
+  },
+  "mt-crochet-lamp": {
+   "kind": "lace"
+  }
+ },
+ "version": "mt_ivory_cuts",
+ "bpm": 90,
+ "style": "single",
+ "background": "#EFEAE0",
+ "margin_px": 44,
+ "border_px": 4,
+ "border": "#FFFFFF",
+ "order": [
+  "mt-stained-glass",
+  "mt-spotted-deer",
+  "mt-flower-mugs",
+  "mt-thrift-cliff-path",
+  "mt-bubble-bath",
+  "mt-black-kitten",
+  "mt-antique-books",
+  "mt-tomato-toast",
+  "mt-live-oak",
+  "mt-pink-quilt-sofa",
+  "mt-beach-bonfire",
+  "mt-lace-curtain",
+  "mt-red-cat-silhouette",
+  "mt-blossom-petals-clogs",
+  "mt-amber-lamp-bar",
+  "mt-brick-cottage",
+  "mt-coffee-photo-album",
+  "mt-yoga-room-sunset",
+  "mt-pink-curtain-window",
+  "mt-fig-fruit-bowl",
+  "mt-fortune-poster",
+  "mt-ranunculus-bedside",
+  "mt-two-black-cats",
+  "mt-crochet-lamp"
+ ],
+ "_tempo_comment": "steady 80 BPM, one photo per beat (0.75 s). Each photo blends into the next over 14 frames (0.47 s), finishing exactly on the beat, then holds still. 44 photos = 33 s, ends on a bar line. No song: main MP4 has a kick beat guide; _silent.mp4 for posting with any ~80 BPM (or 160 BPM) TikTok sound.",
+ "_comment": "Board motd-11-16 (kholthaus8), pin.it/567lYet6c. Version 1: one photo at a time, centred, hard cuts, 90 BPM (0.667 s = 20 frames), 24 photos = 16.0 s, none repeated. Left out: soft pins 2 (736x490), 7 (500x500) and 22 (vintage eyes, 800x499, used in version 2 only)."
+}

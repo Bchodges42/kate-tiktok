@@ -1,0 +1,31 @@
+90 BPM steady, one photo per beat (0.667 s), 24 photos, 24 beats = 16.00 s, ends on a bar line
+hard cuts; beat sync: worst offset 0.00 frames -> PASS
+stillness: max held-frame diff 0.038 -> PASS
+photos: whole (no cropping), own shape (no stretching), none repeated -> PASS
+variety: no two photos of the same kind back to back -> PASS
+screen filled per photo: 28%-68% (whole photos; wide ones are shorter)
+
+ 1.   0.00s  glass     mt-stained-glass
+ 2.   0.67s  animal    mt-spotted-deer
+ 3.   1.33s  dishes    mt-flower-mugs
+ 4.   2.00s  landscape mt-thrift-cliff-path
+ 5.   2.67s  interior  mt-bubble-bath
+ 6.   3.33s  cat       mt-black-kitten
+ 7.   4.00s  books     mt-antique-books
+ 8.   4.67s  food      mt-tomato-toast
+ 9.   5.33s  tree      mt-live-oak
+10.   6.00s  textile   mt-pink-quilt-sofa
+11.   6.67s  people    mt-beach-bonfire
+12.   7.33s  lace      mt-lace-curtain
+13.   8.00s  cat       mt-red-cat-silhouette
+14.   8.67s  ground    mt-blossom-petals-clogs
+15.   9.33s  interior  mt-amber-lamp-bar
+16.  10.00s  house     mt-brick-cottage
+17.  10.67s  flatlay   mt-coffee-photo-album
+18.  11.33s  interior  mt-yoga-room-sunset
+19.  12.00s  window    mt-pink-curtain-window
+20.  12.67s  food      mt-fig-fruit-bowl
+21.  13.33s  graphic   mt-fortune-poster
+22.  14.00s  flowers   mt-ranunculus-bedside
+23.  14.67s  cat       mt-two-black-cats
+24.  15.33s  lace      mt-crochet-lamp
