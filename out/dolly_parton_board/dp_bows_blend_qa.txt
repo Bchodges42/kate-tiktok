@@ -1,0 +1,23 @@
+60 BPM steady, one photo per beat (1.000 s), 16 photos, 16 beats = 16.00 s, ends on a bar line
+dissolve: 12 frames (0.40 s) into each photo, finishing on the beat; beat sync: worst offset 0.00 frames -> PASS
+stillness: max held-frame diff 0.770 -> PASS
+photos: whole (no cropping), own shape (no stretching), none repeated -> PASS
+variety: no two photos of the same kind back to back -> PASS
+screen filled per photo: 30%-68% (whole photos; wide ones are shorter)
+
+ 1.   0.00s  portrait  dp-pink-sunglasses-portrait
+ 2.   1.00s  window    dp-billowing-curtains
+ 3.   2.00s  landscape dp-hollow-hills-barn
+ 4.   3.00s  porch-swing dp-porch-swing-quilts
+ 5.   4.00s  portrait  dp-denim-bandana-portrait
+ 6.   5.00s  kitchen   dp-sunny-kitchen
+ 7.   6.00s  rosary    dp-rosary-mirror
+ 8.   7.00s  landscape dp-deer-meadow
+ 9.   8.00s  lace      dp-lace-curtain-shadow
+10.   9.00s  portrait  dp-mirror-lights-portrait
+11.  10.00s  house     dp-farmhouse
+12.  11.00s  kitchen   dp-retro-fridge
+13.  12.00s  rugs      dp-rug-doorway
+14.  13.00s  portrait  dp-bw-guitar-portrait
+15.  14.00s  door      dp-screen-door
+16.  15.00s  dining    dp-porch-dinner

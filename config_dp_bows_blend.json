@@ -1,0 +1,98 @@
+{
+ "name": "dolly_parton_board",
+ "vibe": "Appalachian cottage, vintage country, quilts and lace",
+ "fps": 30,
+ "size": [
+  1080,
+  1920
+ ],
+ "grade": {
+  "warmth": 0.0,
+  "lift": 4,
+  "saturation": 1.0,
+  "grain": 2.0,
+  "grain_seed": 7
+ },
+ "images_dir": "images",
+ "images": {
+  "dp-pink-sunglasses-portrait": {
+   "kind": "portrait"
+  },
+  "dp-billowing-curtains": {
+   "kind": "window"
+  },
+  "dp-hollow-hills-barn": {
+   "kind": "landscape"
+  },
+  "dp-porch-swing-quilts": {
+   "kind": "porch-swing"
+  },
+  "dp-denim-bandana-portrait": {
+   "kind": "portrait"
+  },
+  "dp-sunny-kitchen": {
+   "kind": "kitchen"
+  },
+  "dp-rosary-mirror": {
+   "kind": "rosary"
+  },
+  "dp-deer-meadow": {
+   "kind": "landscape"
+  },
+  "dp-lace-curtain-shadow": {
+   "kind": "lace"
+  },
+  "dp-mirror-lights-portrait": {
+   "kind": "portrait"
+  },
+  "dp-farmhouse": {
+   "kind": "house"
+  },
+  "dp-retro-fridge": {
+   "kind": "kitchen"
+  },
+  "dp-rug-doorway": {
+   "kind": "rugs"
+  },
+  "dp-bw-guitar-portrait": {
+   "kind": "portrait"
+  },
+  "dp-screen-door": {
+   "kind": "door"
+  },
+  "dp-porch-dinner": {
+   "kind": "dining"
+  }
+ },
+ "version": "dp_bows_blend",
+ "bpm": 60,
+ "style": "single",
+ "background": {
+  "image": "images/bg-bows-butterflies.jpg"
+ },
+ "margin_px": 48,
+ "border_px": 8,
+ "border": "#FFFFFF",
+ "order": [
+  "dp-pink-sunglasses-portrait",
+  "dp-billowing-curtains",
+  "dp-hollow-hills-barn",
+  "dp-porch-swing-quilts",
+  "dp-denim-bandana-portrait",
+  "dp-sunny-kitchen",
+  "dp-rosary-mirror",
+  "dp-deer-meadow",
+  "dp-lace-curtain-shadow",
+  "dp-mirror-lights-portrait",
+  "dp-farmhouse",
+  "dp-retro-fridge",
+  "dp-rug-doorway",
+  "dp-bw-guitar-portrait",
+  "dp-screen-door",
+  "dp-porch-dinner"
+ ],
+ "_tempo_comment": "steady 80 BPM, one photo per beat (0.75 s). Each photo blends into the next over 14 frames (0.47 s), finishing exactly on the beat, then holds still. 44 photos = 33 s, ends on a bar line. No song: main MP4 has a kick beat guide; _silent.mp4 for posting with any ~80 BPM (or 160 BPM) TikTok sound.",
+ "_comment": "Board kholthaus8/dolly-parton (the user's link was a profile link; this is the newest board). Bows and butterflies wallpaper (original is 9:16), soft eased blends of 12 frames, 60 BPM (1 s), 16 photos = 16 s. None repeated; kinds never touch incl. loop. Left out of all: the 19 soft pins under ~500 px.",
+ "dissolve_frames": 12,
+ "dissolve_ease": 0.7
+}

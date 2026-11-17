@@ -1,0 +1,27 @@
+75 BPM steady, one photo per beat (0.800 s), 20 photos, 20 beats = 16.00 s, ends on a bar line
+hard cuts; beat sync: worst offset 0.00 frames -> PASS
+stillness: max held-frame diff 0.057 -> PASS
+photos: whole (no cropping), own shape (no stretching), none repeated -> PASS
+variety: no two photos of the same kind back to back -> PASS
+screen filled per photo: 35%-62% (whole photos; wide ones are shorter)
+
+ 1.   0.00s  portrait  dp-denim-bandana-portrait
+ 2.   0.80s  kitchen   dp-fridge-collage
+ 3.   1.60s  landscape dp-country-road
+ 4.   2.40s  rugs      dp-rug-doorway
+ 5.   3.20s  portrait  dp-sepia-bathtub
+ 6.   4.00s  lace      dp-lace-door-latch
+ 7.   4.80s  porch     dp-porch-rocker
+ 8.   5.60s  swing     dp-garden-swing
+ 9.   6.40s  portrait  dp-mirror-lights-portrait
+10.   7.20s  kitchen   dp-retro-fridge
+11.   8.00s  landscape dp-hollow-hills-barn
+12.   8.80s  quilt     dp-patchwork-quilt
+13.   9.60s  portrait  dp-pink-sunglasses-portrait
+14.  10.40s  door      dp-screen-door
+15.  11.20s  landscape dp-deer-meadow
+16.  12.00s  lace      dp-lace-curtain-shadow
+17.  12.80s  portrait  dp-kitten-smile-portrait
+18.  13.60s  dining    dp-porch-dinner
+19.  14.40s  house     dp-farmhouse
+20.  15.20s  window    dp-billowing-curtains

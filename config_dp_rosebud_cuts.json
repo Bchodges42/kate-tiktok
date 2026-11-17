@@ -1,0 +1,128 @@
+{
+ "name": "dolly_parton_board",
+ "vibe": "Appalachian cottage, vintage country, quilts and lace",
+ "fps": 30,
+ "size": [
+  1080,
+  1920
+ ],
+ "grade": {
+  "warmth": 0.0,
+  "lift": 4,
+  "saturation": 1.0,
+  "grain": 2.0,
+  "grain_seed": 7
+ },
+ "images_dir": "images",
+ "images": {
+  "dp-kitten-smile-portrait": {
+   "kind": "portrait"
+  },
+  "dp-deer-meadow": {
+   "kind": "landscape"
+  },
+  "dp-fridge-collage": {
+   "kind": "kitchen"
+  },
+  "dp-garden-swing": {
+   "kind": "swing"
+  },
+  "dp-lace-curtain-shadow": {
+   "kind": "lace"
+  },
+  "dp-denim-bandana-portrait": {
+   "kind": "portrait"
+  },
+  "dp-farmhouse": {
+   "kind": "house"
+  },
+  "dp-patchwork-quilt": {
+   "kind": "quilt"
+  },
+  "dp-country-road": {
+   "kind": "landscape"
+  },
+  "dp-rosary-mirror": {
+   "kind": "rosary"
+  },
+  "dp-porch-swing-quilts": {
+   "kind": "porch-swing"
+  },
+  "dp-pink-sunglasses-portrait": {
+   "kind": "portrait"
+  },
+  "dp-sunny-kitchen": {
+   "kind": "kitchen"
+  },
+  "dp-billowing-curtains": {
+   "kind": "window"
+  },
+  "dp-hollow-hills-barn": {
+   "kind": "landscape"
+  },
+  "dp-lace-door-latch": {
+   "kind": "lace"
+  },
+  "dp-porch-rocker": {
+   "kind": "porch"
+  },
+  "dp-white-dress-portrait": {
+   "kind": "portrait"
+  },
+  "dp-rug-doorway": {
+   "kind": "rugs"
+  },
+  "dp-retro-fridge": {
+   "kind": "kitchen"
+  },
+  "dp-bw-guitar-portrait": {
+   "kind": "portrait"
+  },
+  "dp-screen-door": {
+   "kind": "door"
+  },
+  "dp-mirror-lights-portrait": {
+   "kind": "portrait"
+  },
+  "dp-porch-dinner": {
+   "kind": "dining"
+  }
+ },
+ "version": "dp_rosebud_cuts",
+ "bpm": 90,
+ "style": "single",
+ "background": {
+  "image": "images/bg-rosebud-wallpaper.jpg"
+ },
+ "margin_px": 48,
+ "border_px": 8,
+ "border": "#FFFFFF",
+ "order": [
+  "dp-kitten-smile-portrait",
+  "dp-deer-meadow",
+  "dp-fridge-collage",
+  "dp-garden-swing",
+  "dp-lace-curtain-shadow",
+  "dp-denim-bandana-portrait",
+  "dp-farmhouse",
+  "dp-patchwork-quilt",
+  "dp-country-road",
+  "dp-rosary-mirror",
+  "dp-porch-swing-quilts",
+  "dp-pink-sunglasses-portrait",
+  "dp-sunny-kitchen",
+  "dp-billowing-curtains",
+  "dp-hollow-hills-barn",
+  "dp-lace-door-latch",
+  "dp-porch-rocker",
+  "dp-white-dress-portrait",
+  "dp-rug-doorway",
+  "dp-retro-fridge",
+  "dp-bw-guitar-portrait",
+  "dp-screen-door",
+  "dp-mirror-lights-portrait",
+  "dp-porch-dinner"
+ ],
+ "_tempo_comment": "steady 80 BPM, one photo per beat (0.75 s). Each photo blends into the next over 14 frames (0.47 s), finishing exactly on the beat, then holds still. 44 photos = 33 s, ends on a bar line. No song: main MP4 has a kick beat guide; _silent.mp4 for posting with any ~80 BPM (or 160 BPM) TikTok sound.",
+ "_comment": "Board kholthaus8/dolly-parton (the user's link was a profile link; this is the newest board). Floral wallpaper (cropped to 9:16 from the 3:4 original), hard cuts, 90 BPM (0.667 s), 24 photos = 16 s. None repeated; kinds never touch incl. loop. Left out of all: the 19 soft pins under ~500 px."
+}

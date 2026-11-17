@@ -1,0 +1,112 @@
+{
+ "name": "dolly_parton_board",
+ "vibe": "Appalachian cottage, vintage country, quilts and lace",
+ "fps": 30,
+ "size": [
+  1080,
+  1920
+ ],
+ "grade": {
+  "warmth": 0.0,
+  "lift": 4,
+  "saturation": 1.0,
+  "grain": 2.0,
+  "grain_seed": 7
+ },
+ "images_dir": "images",
+ "images": {
+  "dp-denim-bandana-portrait": {
+   "kind": "portrait"
+  },
+  "dp-fridge-collage": {
+   "kind": "kitchen"
+  },
+  "dp-country-road": {
+   "kind": "landscape"
+  },
+  "dp-rug-doorway": {
+   "kind": "rugs"
+  },
+  "dp-sepia-bathtub": {
+   "kind": "portrait"
+  },
+  "dp-lace-door-latch": {
+   "kind": "lace"
+  },
+  "dp-porch-rocker": {
+   "kind": "porch"
+  },
+  "dp-garden-swing": {
+   "kind": "swing"
+  },
+  "dp-mirror-lights-portrait": {
+   "kind": "portrait"
+  },
+  "dp-retro-fridge": {
+   "kind": "kitchen"
+  },
+  "dp-hollow-hills-barn": {
+   "kind": "landscape"
+  },
+  "dp-patchwork-quilt": {
+   "kind": "quilt"
+  },
+  "dp-pink-sunglasses-portrait": {
+   "kind": "portrait"
+  },
+  "dp-screen-door": {
+   "kind": "door"
+  },
+  "dp-deer-meadow": {
+   "kind": "landscape"
+  },
+  "dp-lace-curtain-shadow": {
+   "kind": "lace"
+  },
+  "dp-kitten-smile-portrait": {
+   "kind": "portrait"
+  },
+  "dp-porch-dinner": {
+   "kind": "dining"
+  },
+  "dp-farmhouse": {
+   "kind": "house"
+  },
+  "dp-billowing-curtains": {
+   "kind": "window"
+  }
+ },
+ "version": "dp_polka_cuts",
+ "bpm": 75,
+ "style": "single",
+ "background": {
+  "image": "images/bg-pink-polka-dots.jpg"
+ },
+ "margin_px": 48,
+ "border_px": 8,
+ "border": "#FFFFFF",
+ "order": [
+  "dp-denim-bandana-portrait",
+  "dp-fridge-collage",
+  "dp-country-road",
+  "dp-rug-doorway",
+  "dp-sepia-bathtub",
+  "dp-lace-door-latch",
+  "dp-porch-rocker",
+  "dp-garden-swing",
+  "dp-mirror-lights-portrait",
+  "dp-retro-fridge",
+  "dp-hollow-hills-barn",
+  "dp-patchwork-quilt",
+  "dp-pink-sunglasses-portrait",
+  "dp-screen-door",
+  "dp-deer-meadow",
+  "dp-lace-curtain-shadow",
+  "dp-kitten-smile-portrait",
+  "dp-porch-dinner",
+  "dp-farmhouse",
+  "dp-billowing-curtains"
+ ],
+ "_tempo_comment": "steady 80 BPM, one photo per beat (0.75 s). Each photo blends into the next over 14 frames (0.47 s), finishing exactly on the beat, then holds still. 44 photos = 33 s, ends on a bar line. No song: main MP4 has a kick beat guide; _silent.mp4 for posting with any ~80 BPM (or 160 BPM) TikTok sound.",
+ "_comment": "Board kholthaus8/dolly-parton (the user's link was a profile link; this is the newest board). Pink polka dots (trimmed 69 px of height to reach 9:16), hard cuts, 75 BPM (0.8 s), 20 photos = 16 s. None repeated; kinds never touch incl. loop. Left out of all: the 19 soft pins under ~500 px."
+}

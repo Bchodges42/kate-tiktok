@@ -1,0 +1,31 @@
+90 BPM steady, one photo per beat (0.667 s), 24 photos, 24 beats = 16.00 s, ends on a bar line
+hard cuts; beat sync: worst offset 0.00 frames -> PASS
+stillness: max held-frame diff 0.046 -> PASS
+photos: whole (no cropping), own shape (no stretching), none repeated -> PASS
+variety: no two photos of the same kind back to back -> PASS
+screen filled per photo: 30%-68% (whole photos; wide ones are shorter)
+
+ 1.   0.00s  portrait  dp-kitten-smile-portrait
+ 2.   0.67s  landscape dp-deer-meadow
+ 3.   1.33s  kitchen   dp-fridge-collage
+ 4.   2.00s  swing     dp-garden-swing
+ 5.   2.67s  lace      dp-lace-curtain-shadow
+ 6.   3.33s  portrait  dp-denim-bandana-portrait
+ 7.   4.00s  house     dp-farmhouse
+ 8.   4.67s  quilt     dp-patchwork-quilt
+ 9.   5.33s  landscape dp-country-road
+10.   6.00s  rosary    dp-rosary-mirror
+11.   6.67s  porch-swing dp-porch-swing-quilts
+12.   7.33s  portrait  dp-pink-sunglasses-portrait
+13.   8.00s  kitchen   dp-sunny-kitchen
+14.   8.67s  window    dp-billowing-curtains
+15.   9.33s  landscape dp-hollow-hills-barn
+16.  10.00s  lace      dp-lace-door-latch
+17.  10.67s  porch     dp-porch-rocker
+18.  11.33s  portrait  dp-white-dress-portrait
+19.  12.00s  rugs      dp-rug-doorway
+20.  12.67s  kitchen   dp-retro-fridge
+21.  13.33s  portrait  dp-bw-guitar-portrait
+22.  14.00s  door      dp-screen-door
+23.  14.67s  portrait  dp-mirror-lights-portrait
+24.  15.33s  dining    dp-porch-dinner
