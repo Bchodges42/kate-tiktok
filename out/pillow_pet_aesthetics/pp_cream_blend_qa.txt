@@ -1,0 +1,38 @@
+90 BPM steady, one photo per beat (0.667 s), 30 photos, 36 beats = 24.00 s, ends on a bar line
+dissolve: 12 frames (0.40 s) into each photo, finishing on the beat; beat sync: worst offset 0.00 frames -> PASS
+stillness: max held-frame diff 0.377 -> PASS
+photos: whole (no cropping), own shape (no stretching), none repeated -> PASS
+variety: no two photos of the same kind back to back -> PASS
+screen filled per photo: 27%-82% (whole photos; wide ones are shorter)
+soft sources (under 500 px): pp-bee-bee-pet, pp-dog-dog-pet
+
+ 1.   0.00s  pet       pp-giraffe-giraffe-pet
+ 2.   1.33s  person    pp-giraffe-guitar-eyelet-dress
+ 3.   2.00s  landscape pp-giraffe-hot-air-balloon
+ 4.   2.67s  outfit    pp-giraffe-yellow-heels
+ 5.   3.33s  interior  pp-giraffe-guitars-in-the-corner
+ 6.   4.00s  pet       pp-ladybug-ladybug-pet
+ 7.   5.33s  detail    pp-ladybug-gingham-hair-bows
+ 8.   6.00s  object    pp-ladybug-candles
+ 9.   6.67s  landscape pp-ladybug-willow-pond
+10.   7.33s  outfit    pp-ladybug-apple-pocket-jeans
+11.   8.00s  pet       pp-unicorn-unicorn-pet
+12.   9.33s  person    pp-unicorn-friends-in-yellow-boots
+13.  10.00s  object    pp-unicorn-love-letters-mailbox
+14.  10.67s  flowers   pp-unicorn-hollyhocks
+15.  11.33s  flatlay   pp-unicorn-pink-rug-flats
+16.  12.00s  pet       pp-bee-bee-pet
+17.  13.33s  place     pp-bee-beekeeper-field
+18.  14.00s  person    pp-bee-reading-in-the-field
+19.  14.67s  interior  pp-bee-library-doorway
+20.  15.33s  flatlay   pp-bee-gardening-tools
+21.  16.00s  pet       pp-dog-dog-pet
+22.  17.33s  dog       pp-dog-dog-and-girl
+23.  18.00s  outfit    pp-dog-green-cardigan
+24.  18.67s  flatlay   pp-dog-picnic-by-river
+25.  19.33s  outdoor   pp-dog-forest-bike-ride
+26.  20.00s  pet       pp-panda-panda-pet
+27.  21.33s  flatlay   pp-panda-stack-of-turtlenecks
+28.  22.00s  outfit    pp-panda-street-camera-girl
+29.  22.67s  interior  pp-panda-bedroom-laptop-glow
+30.  23.33s  portrait  pp-panda-bw-skirt-heels

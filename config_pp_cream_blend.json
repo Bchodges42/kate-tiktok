@@ -1,0 +1,157 @@
+{
+ "name": "pillow_pet_aesthetics",
+ "vibe": "six pillow pets, each matched to an aesthetic",
+ "fps": 30,
+ "size": [
+  1080,
+  1920
+ ],
+ "grade": {
+  "warmth": 0.0,
+  "lift": 4,
+  "saturation": 1.0,
+  "grain": 2.0,
+  "grain_seed": 7
+ },
+ "images_dir": "images",
+ "images": {
+  "pp-giraffe-giraffe-pet": {
+   "kind": "pet",
+   "hold": 2
+  },
+  "pp-giraffe-guitar-eyelet-dress": {
+   "kind": "person"
+  },
+  "pp-giraffe-hot-air-balloon": {
+   "kind": "landscape"
+  },
+  "pp-giraffe-yellow-heels": {
+   "kind": "outfit"
+  },
+  "pp-giraffe-guitars-in-the-corner": {
+   "kind": "interior"
+  },
+  "pp-ladybug-ladybug-pet": {
+   "kind": "pet",
+   "hold": 2
+  },
+  "pp-ladybug-gingham-hair-bows": {
+   "kind": "detail"
+  },
+  "pp-ladybug-candles": {
+   "kind": "object"
+  },
+  "pp-ladybug-willow-pond": {
+   "kind": "landscape"
+  },
+  "pp-ladybug-apple-pocket-jeans": {
+   "kind": "outfit"
+  },
+  "pp-unicorn-unicorn-pet": {
+   "kind": "pet",
+   "hold": 2
+  },
+  "pp-unicorn-friends-in-yellow-boots": {
+   "kind": "person"
+  },
+  "pp-unicorn-love-letters-mailbox": {
+   "kind": "object"
+  },
+  "pp-unicorn-hollyhocks": {
+   "kind": "flowers"
+  },
+  "pp-unicorn-pink-rug-flats": {
+   "kind": "flatlay"
+  },
+  "pp-bee-bee-pet": {
+   "kind": "pet",
+   "hold": 2
+  },
+  "pp-bee-beekeeper-field": {
+   "kind": "place"
+  },
+  "pp-bee-reading-in-the-field": {
+   "kind": "person"
+  },
+  "pp-bee-library-doorway": {
+   "kind": "interior"
+  },
+  "pp-bee-gardening-tools": {
+   "kind": "flatlay"
+  },
+  "pp-dog-dog-pet": {
+   "kind": "pet",
+   "hold": 2
+  },
+  "pp-dog-dog-and-girl": {
+   "kind": "dog"
+  },
+  "pp-dog-green-cardigan": {
+   "kind": "outfit"
+  },
+  "pp-dog-picnic-by-river": {
+   "kind": "flatlay"
+  },
+  "pp-dog-forest-bike-ride": {
+   "kind": "outdoor"
+  },
+  "pp-panda-panda-pet": {
+   "kind": "pet",
+   "hold": 2
+  },
+  "pp-panda-stack-of-turtlenecks": {
+   "kind": "flatlay"
+  },
+  "pp-panda-street-camera-girl": {
+   "kind": "outfit"
+  },
+  "pp-panda-bedroom-laptop-glow": {
+   "kind": "interior"
+  },
+  "pp-panda-bw-skirt-heels": {
+   "kind": "portrait"
+  }
+ },
+ "version": "pp_cream_blend",
+ "bpm": 90,
+ "style": "single",
+ "background": "#F4ECDA",
+ "margin_px": 48,
+ "border_px": 8,
+ "border": "#FFFFFF",
+ "order": [
+  "pp-giraffe-giraffe-pet",
+  "pp-giraffe-guitar-eyelet-dress",
+  "pp-giraffe-hot-air-balloon",
+  "pp-giraffe-yellow-heels",
+  "pp-giraffe-guitars-in-the-corner",
+  "pp-ladybug-ladybug-pet",
+  "pp-ladybug-gingham-hair-bows",
+  "pp-ladybug-candles",
+  "pp-ladybug-willow-pond",
+  "pp-ladybug-apple-pocket-jeans",
+  "pp-unicorn-unicorn-pet",
+  "pp-unicorn-friends-in-yellow-boots",
+  "pp-unicorn-love-letters-mailbox",
+  "pp-unicorn-hollyhocks",
+  "pp-unicorn-pink-rug-flats",
+  "pp-bee-bee-pet",
+  "pp-bee-beekeeper-field",
+  "pp-bee-reading-in-the-field",
+  "pp-bee-library-doorway",
+  "pp-bee-gardening-tools",
+  "pp-dog-dog-pet",
+  "pp-dog-dog-and-girl",
+  "pp-dog-green-cardigan",
+  "pp-dog-picnic-by-river",
+  "pp-dog-forest-bike-ride",
+  "pp-panda-panda-pet",
+  "pp-panda-stack-of-turtlenecks",
+  "pp-panda-street-camera-girl",
+  "pp-panda-bedroom-laptop-glow",
+  "pp-panda-bw-skirt-heels"
+ ],
+ "_comment": "Same six pets in a different order on one cream background with soft eased blends, 90 BPM (0.67 s). Pet photo held 2 beats, then 4 different photos from its aesthetic. 6 x (2+4) = 36 beats = 24 s.",
+ "dissolve_frames": 12,
+ "dissolve_ease": 0.7
+}

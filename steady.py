@@ -7,6 +7,7 @@
                   "dissolve_frames": D blends each photo into the next, finishing exactly on the beat;
                   with "transition": "wipe" those D frames are a soft-edged wipe instead of a blend.
                   "polaroid": {...} draws each photo inside an instant-photo frame with a film look.
+  Any image can carry "hold": N to stay on screen for N steps (e.g. a title photo before a run of others).
   Any image can carry "clip": "clips/<file>.mp4": the clip plays in its spot before the next photo lands.
   style "pile":   an overlapping collage. Every photo lands on top of the pile at the same area
                   (so a cover is never smaller than what it covers), with a thin border and a soft
@@ -149,7 +150,8 @@ def main():
             ["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries", "format=duration", "-of", "csv=p=0",
              os.path.join(ROOT, v["clip"])], capture_output=True, text=True).stdout.strip())
         clip_len[k] = max(1, int(d / spb + 1e-6))  # whole steps that fit inside the clip
-    dur = [clip_len.get(k, 1) for k in order]
+    # an image may hold for several steps ("hold": 2) so a title-like photo can sit a little longer
+    dur = [clip_len.get(k, int(cfg["images"][k].get("hold", 1))) for k in order]
     total_beats = int(math.ceil(sum(dur) / bar) * bar) if cfg.get("end_on_bar", True) else sum(dur)  # in steps
     # optional phrases: a burst of photos, the finished pile holds, then a clear to the background
     # before the next phrase starts on a fresh bar ("phrases": {"sizes": [6, 6, 7], "steps": 16, "clear_steps": 2})
