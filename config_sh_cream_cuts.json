@@ -1,0 +1,105 @@
+{
+ "name": "shoots_minimal",
+ "vibe": "minimal soft domestic: flowers, interiors, linen and denim",
+ "fps": 30,
+ "size": [
+  1080,
+  1920
+ ],
+ "grade": {
+  "warmth": 0.0,
+  "lift": 4,
+  "saturation": 1.0,
+  "grain": 2.0,
+  "grain_seed": 7
+ },
+ "images_dir": "images",
+ "images": {
+  "sh-hydrangea-and-grandma": {
+   "kind": "garden"
+  },
+  "sh-quilted-bed-pillows": {
+   "kind": "interior"
+  },
+  "sh-chanel-flats-in-box": {
+   "kind": "shoes"
+  },
+  "sh-bedside-lamp": {
+   "kind": "interior"
+  },
+  "sh-white-knit-and-book": {
+   "kind": "outfit"
+  },
+  "sh-ring-box": {
+   "kind": "object"
+  },
+  "sh-green-sweater-window": {
+   "kind": "interior"
+  },
+  "sh-iced-latte-gingham": {
+   "kind": "drink"
+  },
+  "sh-sunburst-leaves": {
+   "kind": "nature"
+  },
+  "sh-denim-jacket-flatlay": {
+   "kind": "outfit"
+  },
+  "sh-stacked-bowls": {
+   "kind": "object"
+  },
+  "sh-bed-corner-lamp": {
+   "kind": "interior"
+  },
+  "sh-boat-shoes-on-rug": {
+   "kind": "shoes"
+  },
+  "sh-stone-house-hydrangeas": {
+   "kind": "garden"
+  },
+  "sh-legs-ballet-flats": {
+   "kind": "legs"
+  },
+  "sh-bay-window-bedroom": {
+   "kind": "interior"
+  },
+  "sh-long-blonde-hair": {
+   "kind": "portrait"
+  },
+  "sh-loafers-and-socks": {
+   "kind": "shoes"
+  },
+  "sh-cat-in-striped-bed": {
+   "kind": "animal"
+  }
+ },
+ "version": "sh_cream_cuts",
+ "bpm": 75,
+ "style": "single",
+ "background": "#F7F1E1",
+ "margin_px": 56,
+ "border_px": 0,
+ "order": [
+  "sh-hydrangea-and-grandma",
+  "sh-quilted-bed-pillows",
+  "sh-chanel-flats-in-box",
+  "sh-bedside-lamp",
+  "sh-white-knit-and-book",
+  "sh-ring-box",
+  "sh-green-sweater-window",
+  "sh-iced-latte-gingham",
+  "sh-sunburst-leaves",
+  "sh-denim-jacket-flatlay",
+  "sh-stacked-bowls",
+  "sh-bed-corner-lamp",
+  "sh-boat-shoes-on-rug",
+  "sh-stone-house-hydrangeas",
+  "sh-legs-ballet-flats",
+  "sh-bay-window-bedroom",
+  "sh-long-blonde-hair",
+  "sh-loafers-and-socks",
+  "sh-cat-in-striped-bed"
+ ],
+ "center_y": 0.5,
+ "_comment": "Board kholthaus8/shoots (pin.it/5sIuOnToR), 36 pins. 15 photos per version, no photo in both; 60 BPM (1 s), 15 photos then the last holds to the bar line = 16 s. No borders. Crops (junk overlay only): stone-house-hydrangeas bottom 120 px (app icons), sunburst-leaves bottom 90 px (creator name). Left out: soft pins 8, 20, 26, 34, 35 and pin 22 (shopping graphic with text and affiliate tag). Version 3 (added on request): light cream #F7F1E1, hard cuts, 75 BPM (0.8 s), 19 photos drawn from both earlier sets (the board has only 30 usable photos), 20 beats = 16 s."
+}

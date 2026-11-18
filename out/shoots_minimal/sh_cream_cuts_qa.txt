@@ -1,0 +1,26 @@
+75 BPM steady, one photo per beat (0.800 s), 19 photos, 20 beats = 16.00 s, ends on a bar line
+hard cuts; beat sync: worst offset 0.00 frames -> PASS
+stillness: max held-frame diff 0.035 -> PASS
+photos: whole (no cropping), own shape (no stretching), none repeated -> PASS
+variety: no two photos of the same kind back to back -> PASS
+screen filled per photo: 23%-80% (whole photos; wide ones are shorter)
+
+ 1.   0.00s  garden    sh-hydrangea-and-grandma
+ 2.   0.80s  interior  sh-quilted-bed-pillows
+ 3.   1.60s  shoes     sh-chanel-flats-in-box
+ 4.   2.40s  interior  sh-bedside-lamp
+ 5.   3.20s  outfit    sh-white-knit-and-book
+ 6.   4.00s  object    sh-ring-box
+ 7.   4.80s  interior  sh-green-sweater-window
+ 8.   5.60s  drink     sh-iced-latte-gingham
+ 9.   6.40s  nature    sh-sunburst-leaves
+10.   7.20s  outfit    sh-denim-jacket-flatlay
+11.   8.00s  object    sh-stacked-bowls
+12.   8.80s  interior  sh-bed-corner-lamp
+13.   9.60s  shoes     sh-boat-shoes-on-rug
+14.  10.40s  garden    sh-stone-house-hydrangeas
+15.  11.20s  legs      sh-legs-ballet-flats
+16.  12.00s  interior  sh-bay-window-bedroom
+17.  12.80s  portrait  sh-long-blonde-hair
+18.  13.60s  shoes     sh-loafers-and-socks
+19.  14.40s  animal    sh-cat-in-striped-bed
