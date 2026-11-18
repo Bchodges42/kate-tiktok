@@ -1,0 +1,14 @@
+150 BPM steady, 0.400 s per step; 6 slides of 10 backdrop photos + the featured photo (held 2 steps); 80 steps = 32.00 s, ends on a bar line
+hard cuts; beat sync: worst offset 0.00 frames -> PASS
+stillness: max held-frame diff 0.022 -> PASS
+photos: whole, own shape, none repeated, nothing off screen -> PASS
+variety: no two same-kind photos on neighbouring spots -> PASS
+screen filled when each slide is complete: 82%-91%
+overlap: every backdrop photo has the same area on its slide (dog 370k px, panda 373k px, bee 210k px, ladybug 278k px, giraffe 373k px, unicorn 309k px), and the featured photo is at least as big -> PASS
+
+  0.00s  slide 1: dog alone, then pp-dog-dog-car-window, pp-dog-ice-cream-gingham, pp-dog-ivy-brick-house, pp-dog-wildflower-meadow, pp-dog-pink-cardigan, pp-dog-grey-fleece-pullover, pp-dog-lemonade-lunch, pp-dog-lakeside-yard-sunset, pp-dog-dog-and-girl, pp-dog-green-cardigan
+  5.20s  slide 2: panda alone, then pp-panda-open-door-garden, pp-panda-bw-skirt-heels, pp-panda-plaid-star-tank, pp-panda-bedroom-laptop-glow, pp-panda-glasses-on-book, pp-panda-ruffle-collar-blouse, pp-panda-garden-with-dogs, pp-panda-perfume-on-linen, pp-panda-arched-hallway, pp-panda-street-camera-girl
+ 10.40s  slide 3: bee alone, then pp-bee-hives-in-wildflowers, pp-bee-bee-on-skin, pp-bee-stone-cottage, pp-bee-kittens-on-hay, pp-bee-stone-kitchen, pp-bee-speckled-eggs, pp-bee-girl-in-blue-dress-fence, pp-bee-hay-barn-swing, pp-bee-gardening-tools, pp-bee-wind-chimes
+ 15.60s  slide 4: ladybug alone, then pp-ladybug-jam-toast-heart, pp-ladybug-polka-dot-tights, pp-ladybug-red-barn-window, pp-ladybug-ladybug-ribbons, pp-ladybug-white-lilies, pp-ladybug-red-mary-janes, pp-ladybug-ladybug-in-hair, pp-ladybug-candles, pp-ladybug-polka-dot-belt, pp-ladybug-willow-sunset
+ 20.80s  slide 5: giraffe alone, then pp-giraffe-giraffe-at-the-window, pp-giraffe-tulip-market, pp-giraffe-yellow-jacket, pp-giraffe-yellow-victorian-house, pp-giraffe-glowing-lamp-room, pp-giraffe-mountain-hike, pp-giraffe-guitar-eyelet-dress, pp-giraffe-yellow-heels, pp-giraffe-guitars-in-the-corner, pp-giraffe-hot-air-balloon
+ 26.00s  slide 6: unicorn alone, then pp-unicorn-rainbow-cat, pp-unicorn-porch-lanterns, pp-unicorn-pink-sequins, pp-unicorn-sunbeam-flowers, pp-unicorn-purple-knit-cardigan, pp-unicorn-pink-sunset-water, pp-unicorn-love-letters-mailbox, pp-unicorn-hollyhocks, pp-unicorn-friends-in-yellow-boots, pp-unicorn-pastel-cabinet

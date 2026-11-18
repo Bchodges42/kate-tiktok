@@ -1,0 +1,338 @@
+{
+ "name": "pillow_pet_fill",
+ "version": "pp_fill_cream",
+ "fps": 30,
+ "size": [
+  1080,
+  1920
+ ],
+ "bpm": 180,
+ "grade": {
+  "warmth": 0.0,
+  "lift": 4,
+  "saturation": 1.0,
+  "grain": 2.0,
+  "grain_seed": 7
+ },
+ "images_dir": "images",
+ "images": {
+  "pp-dog-dog-pet": {
+   "kind": "pet"
+  },
+  "pp-dog-dog-car-window": {
+   "kind": "dog"
+  },
+  "pp-dog-ice-cream-gingham": {
+   "kind": "food"
+  },
+  "pp-dog-ivy-brick-house": {
+   "kind": "house"
+  },
+  "pp-dog-pink-cardigan": {
+   "kind": "outfit"
+  },
+  "pp-dog-wildflower-meadow": {
+   "kind": "landscape"
+  },
+  "pp-dog-lemonade-lunch": {
+   "kind": "drink"
+  },
+  "pp-dog-grey-fleece-pullover": {
+   "kind": "outfit"
+  },
+  "pp-dog-lakeside-yard-sunset": {
+   "kind": "place"
+  },
+  "pp-dog-dog-and-girl": {
+   "kind": "dog"
+  },
+  "pp-dog-green-cardigan": {
+   "kind": "outfit"
+  },
+  "pp-panda-panda-pet": {
+   "kind": "pet"
+  },
+  "pp-panda-open-door-garden": {
+   "kind": "place"
+  },
+  "pp-panda-bw-skirt-heels": {
+   "kind": "portrait"
+  },
+  "pp-panda-plaid-star-tank": {
+   "kind": "outfit"
+  },
+  "pp-panda-bedroom-laptop-glow": {
+   "kind": "interior"
+  },
+  "pp-panda-glasses-on-book": {
+   "kind": "object"
+  },
+  "pp-panda-ruffle-collar-blouse": {
+   "kind": "outfit"
+  },
+  "pp-panda-garden-with-dogs": {
+   "kind": "landscape"
+  },
+  "pp-panda-street-camera-girl": {
+   "kind": "outfit"
+  },
+  "pp-panda-arched-hallway": {
+   "kind": "place"
+  },
+  "pp-panda-perfume-on-linen": {
+   "kind": "object"
+  },
+  "pp-bee-bee-pet": {
+   "kind": "pet"
+  },
+  "pp-bee-hives-in-wildflowers": {
+   "kind": "landscape"
+  },
+  "pp-bee-bee-on-skin": {
+   "kind": "detail"
+  },
+  "pp-bee-stone-cottage": {
+   "kind": "house"
+  },
+  "pp-bee-kittens-on-hay": {
+   "kind": "animal"
+  },
+  "pp-bee-stone-kitchen": {
+   "kind": "interior"
+  },
+  "pp-bee-speckled-eggs": {
+   "kind": "object"
+  },
+  "pp-bee-girl-in-blue-dress-fence": {
+   "kind": "person"
+  },
+  "pp-bee-hay-barn-swing": {
+   "kind": "place"
+  },
+  "pp-bee-gardening-tools": {
+   "kind": "flatlay"
+  },
+  "pp-bee-wind-chimes": {
+   "kind": "object"
+  },
+  "pp-ladybug-ladybug-pet": {
+   "kind": "pet"
+  },
+  "pp-ladybug-jam-toast-heart": {
+   "kind": "food"
+  },
+  "pp-ladybug-polka-dot-tights": {
+   "kind": "outfit"
+  },
+  "pp-ladybug-red-barn-window": {
+   "kind": "place"
+  },
+  "pp-ladybug-ladybug-ribbons": {
+   "kind": "object"
+  },
+  "pp-ladybug-red-mary-janes": {
+   "kind": "outfit"
+  },
+  "pp-ladybug-white-lilies": {
+   "kind": "flower"
+  },
+  "pp-ladybug-ladybug-in-hair": {
+   "kind": "animal"
+  },
+  "pp-ladybug-polka-dot-belt": {
+   "kind": "outfit"
+  },
+  "pp-ladybug-willow-sunset": {
+   "kind": "landscape"
+  },
+  "pp-ladybug-candles": {
+   "kind": "object"
+  },
+  "pp-giraffe-giraffe-pet": {
+   "kind": "pet"
+  },
+  "pp-giraffe-giraffe-at-the-window": {
+   "kind": "animal"
+  },
+  "pp-giraffe-tulip-market": {
+   "kind": "flowers"
+  },
+  "pp-giraffe-yellow-jacket": {
+   "kind": "outfit"
+  },
+  "pp-giraffe-yellow-victorian-house": {
+   "kind": "house"
+  },
+  "pp-giraffe-glowing-lamp-room": {
+   "kind": "interior"
+  },
+  "pp-giraffe-mountain-hike": {
+   "kind": "landscape"
+  },
+  "pp-giraffe-guitar-eyelet-dress": {
+   "kind": "person"
+  },
+  "pp-giraffe-yellow-heels": {
+   "kind": "outfit"
+  },
+  "pp-giraffe-guitars-in-the-corner": {
+   "kind": "interior"
+  },
+  "pp-giraffe-hot-air-balloon": {
+   "kind": "landscape"
+  },
+  "pp-unicorn-unicorn-pet": {
+   "kind": "pet"
+  },
+  "pp-unicorn-rainbow-cat": {
+   "kind": "animal"
+  },
+  "pp-unicorn-porch-lanterns": {
+   "kind": "place"
+  },
+  "pp-unicorn-pink-sequins": {
+   "kind": "texture"
+  },
+  "pp-unicorn-sunbeam-flowers": {
+   "kind": "flowers"
+  },
+  "pp-unicorn-purple-knit-cardigan": {
+   "kind": "outfit"
+  },
+  "pp-unicorn-pink-sunset-water": {
+   "kind": "sky"
+  },
+  "pp-unicorn-love-letters-mailbox": {
+   "kind": "object"
+  },
+  "pp-unicorn-hollyhocks": {
+   "kind": "flowers"
+  },
+  "pp-unicorn-friends-in-yellow-boots": {
+   "kind": "person"
+  },
+  "pp-unicorn-pastel-cabinet": {
+   "kind": "object"
+  }
+ },
+ "pets": [
+  {
+   "name": "giraffe",
+   "pet": "pp-giraffe-giraffe-pet",
+   "photos": [
+    "pp-giraffe-giraffe-at-the-window",
+    "pp-giraffe-tulip-market",
+    "pp-giraffe-yellow-jacket",
+    "pp-giraffe-yellow-victorian-house",
+    "pp-giraffe-glowing-lamp-room",
+    "pp-giraffe-mountain-hike",
+    "pp-giraffe-guitar-eyelet-dress",
+    "pp-giraffe-yellow-heels",
+    "pp-giraffe-guitars-in-the-corner",
+    "pp-giraffe-hot-air-balloon"
+   ],
+   "pattern": "spiral_ccw"
+  },
+  {
+   "name": "ladybug",
+   "pet": "pp-ladybug-ladybug-pet",
+   "photos": [
+    "pp-ladybug-jam-toast-heart",
+    "pp-ladybug-polka-dot-tights",
+    "pp-ladybug-red-barn-window",
+    "pp-ladybug-ladybug-ribbons",
+    "pp-ladybug-red-mary-janes",
+    "pp-ladybug-white-lilies",
+    "pp-ladybug-ladybug-in-hair",
+    "pp-ladybug-polka-dot-belt",
+    "pp-ladybug-willow-sunset",
+    "pp-ladybug-candles"
+   ],
+   "pattern": "rows_rev"
+  },
+  {
+   "name": "unicorn",
+   "pet": "pp-unicorn-unicorn-pet",
+   "photos": [
+    "pp-unicorn-rainbow-cat",
+    "pp-unicorn-porch-lanterns",
+    "pp-unicorn-pink-sequins",
+    "pp-unicorn-sunbeam-flowers",
+    "pp-unicorn-purple-knit-cardigan",
+    "pp-unicorn-pink-sunset-water",
+    "pp-unicorn-love-letters-mailbox",
+    "pp-unicorn-hollyhocks",
+    "pp-unicorn-friends-in-yellow-boots",
+    "pp-unicorn-pastel-cabinet"
+   ],
+   "pattern": "spiral_cw"
+  },
+  {
+   "name": "bee",
+   "pet": "pp-bee-bee-pet",
+   "photos": [
+    "pp-bee-hives-in-wildflowers",
+    "pp-bee-bee-on-skin",
+    "pp-bee-stone-cottage",
+    "pp-bee-kittens-on-hay",
+    "pp-bee-stone-kitchen",
+    "pp-bee-speckled-eggs",
+    "pp-bee-girl-in-blue-dress-fence",
+    "pp-bee-hay-barn-swing",
+    "pp-bee-gardening-tools",
+    "pp-bee-wind-chimes"
+   ],
+   "pattern": "rows"
+  },
+  {
+   "name": "dog",
+   "pet": "pp-dog-dog-pet",
+   "photos": [
+    "pp-dog-dog-car-window",
+    "pp-dog-ice-cream-gingham",
+    "pp-dog-ivy-brick-house",
+    "pp-dog-pink-cardigan",
+    "pp-dog-wildflower-meadow",
+    "pp-dog-lemonade-lunch",
+    "pp-dog-grey-fleece-pullover",
+    "pp-dog-lakeside-yard-sunset",
+    "pp-dog-dog-and-girl",
+    "pp-dog-green-cardigan"
+   ],
+   "pattern": "spiral_ccw"
+  },
+  {
+   "name": "panda",
+   "pet": "pp-panda-panda-pet",
+   "photos": [
+    "pp-panda-open-door-garden",
+    "pp-panda-bw-skirt-heels",
+    "pp-panda-plaid-star-tank",
+    "pp-panda-bedroom-laptop-glow",
+    "pp-panda-glasses-on-book",
+    "pp-panda-ruffle-collar-blouse",
+    "pp-panda-garden-with-dogs",
+    "pp-panda-street-camera-girl",
+    "pp-panda-arched-hallway",
+    "pp-panda-perfume-on-linen"
+   ],
+   "pattern": "rows_rev"
+  }
+ ],
+ "pet_hold": 2,
+ "end_hold": 1,
+ "dissolve_frames": 6,
+ "margin_px": 30,
+ "gap_px": 18,
+ "border_px": 0,
+ "pet_border_px": 0,
+ "pet_max": [
+  620,
+  760
+ ],
+ "shadow": 0.3,
+ "border": "#FFFFFF",
+ "_comment": "Same format on one cream background, pets in a different order, faster (180 BPM = 0.33 s) with a soft 6-frame in-place fade finishing on each beat. No borders on any photo.",
+ "background": "#F4ECDA",
+ "area_px": 430000
+}
