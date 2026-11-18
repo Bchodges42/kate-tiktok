@@ -1,22 +1,19 @@
-60 BPM steady, one photo per beat (1.000 s), 15 photos, 16 beats = 16.00 s, ends on a bar line
+40 BPM steady, one photo per beat (1.500 s), 12 photos, 12 beats = 18.00 s, ends on a bar line
 hard cuts; beat sync: worst offset 0.00 frames -> PASS
-stillness: max held-frame diff 0.036 -> PASS
+stillness: max held-frame diff 0.033 -> PASS
 photos: whole (no cropping), own shape (no stretching), none repeated -> PASS
 variety: no two photos of the same kind back to back -> PASS
-screen filled per photo: 23%-80% (whole photos; wide ones are shorter)
+screen filled per photo: 25%-60% (whole photos; wide ones are shorter)
 
  1.   0.00s  garden    sh-rose-window-box
- 2.   1.00s  outfit    sh-denim-jacket-mirror
- 3.   2.00s  interior  sh-gallery-wall
- 4.   3.00s  drink     sh-iced-latte-gingham
- 5.   4.00s  shoes     sh-loafers-and-socks
- 6.   5.00s  interior  sh-green-sweater-window
- 7.   6.00s  nature    sh-sunburst-leaves
- 8.   7.00s  outfit    sh-white-knit-and-book
- 9.   8.00s  interior  sh-bedside-lamp
-10.   9.00s  object    sh-stacked-bowls
-11.  10.00s  shoes     sh-friends-on-the-curb
-12.  11.00s  garden    sh-hydrangea-and-grandma
-13.  12.00s  legs      sh-legs-ballet-flats
-14.  13.00s  animal    sh-cat-in-striped-bed
-15.  14.00s  portrait  sh-long-blonde-hair
+ 2.   1.50s  outfit    sh-denim-jacket-mirror
+ 3.   3.00s  animal    sh-horses-nuzzling
+ 4.   4.50s  outfit    sh-white-knit-and-book
+ 5.   6.00s  interior  sh-candlelit-window-room
+ 6.   7.50s  shoes     sh-chanel-flats-in-box
+ 7.   9.00s  outfit    sh-champagne-bandana-bag
+ 8.  10.50s  object    sh-stacked-bowls
+ 9.  12.00s  portrait  sh-long-blonde-hair
+10.  13.50s  outfit    sh-denim-jacket-flatlay
+11.  15.00s  object    sh-ring-box
+12.  16.50s  drink     sh-iced-latte-gingham

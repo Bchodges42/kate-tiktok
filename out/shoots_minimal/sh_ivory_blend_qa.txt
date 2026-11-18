@@ -1,22 +1,19 @@
-60 BPM steady, one photo per beat (1.000 s), 15 photos, 16 beats = 16.00 s, ends on a bar line
-dissolve: 12 frames (0.40 s) into each photo, finishing on the beat; beat sync: worst offset 0.00 frames -> PASS
-stillness: max held-frame diff 0.965 -> PASS
+40 BPM steady, one photo per beat (1.500 s), 12 photos, 12 beats = 18.00 s, ends on a bar line
+dissolve: 15 frames (0.50 s) into each photo, finishing on the beat; beat sync: worst offset 1.00 frames -> PASS
+stillness: max held-frame diff 0.686 -> PASS
 photos: whole (no cropping), own shape (no stretching), none repeated -> PASS
 variety: no two photos of the same kind back to back -> PASS
-screen filled per photo: 30%-67% (whole photos; wide ones are shorter)
+screen filled per photo: 23%-80% (whole photos; wide ones are shorter)
 
  1.   0.00s  garden    sh-stone-house-hydrangeas
- 2.   1.00s  shoes     sh-chanel-flats-in-box
- 3.   2.00s  interior  sh-quilted-bed-pillows
- 4.   3.00s  flower    sh-tiger-lilies
- 5.   4.00s  outfit    sh-champagne-bandana-bag
- 6.   5.00s  interior  sh-bay-window-bedroom
- 7.   6.00s  game      sh-chessboard
- 8.   7.00s  outfit    sh-green-cardigan-lace
- 9.   8.00s  nature    sh-autumn-window
-10.   9.00s  object    sh-ring-box
-11.  10.00s  scene     sh-candlelit-porch-dinner
-12.  11.00s  shoes     sh-boat-shoes-on-rug
-13.  12.00s  interior  sh-bed-corner-lamp
-14.  13.00s  flower    sh-pink-hydrangeas
-15.  14.00s  outfit    sh-denim-jacket-flatlay
+ 2.   1.50s  people    sh-uno-on-a-blanket
+ 3.   3.00s  interior  sh-bay-window-bedroom
+ 4.   4.50s  nature    sh-sunburst-leaves
+ 5.   6.00s  animal    sh-cat-in-striped-bed
+ 6.   7.50s  interior  sh-bed-corner-lamp
+ 7.   9.00s  nature    sh-autumn-window
+ 8.  10.50s  house     sh-farmhouse-patio
+ 9.  12.00s  interior  sh-green-sweater-window
+10.  13.50s  flower    sh-tiger-lilies
+11.  15.00s  shoes     sh-loafers-and-socks
+12.  16.50s  interior  sh-gallery-wall

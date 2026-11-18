@@ -21,48 +21,39 @@
   "sh-denim-jacket-mirror": {
    "kind": "outfit"
   },
-  "sh-gallery-wall": {
-   "kind": "interior"
-  },
-  "sh-iced-latte-gingham": {
-   "kind": "drink"
-  },
-  "sh-loafers-and-socks": {
-   "kind": "shoes"
-  },
-  "sh-green-sweater-window": {
-   "kind": "interior"
-  },
-  "sh-sunburst-leaves": {
-   "kind": "nature"
+  "sh-horses-nuzzling": {
+   "kind": "animal"
   },
   "sh-white-knit-and-book": {
    "kind": "outfit"
   },
-  "sh-bedside-lamp": {
+  "sh-candlelit-window-room": {
    "kind": "interior"
+  },
+  "sh-chanel-flats-in-box": {
+   "kind": "shoes"
+  },
+  "sh-champagne-bandana-bag": {
+   "kind": "outfit"
   },
   "sh-stacked-bowls": {
    "kind": "object"
   },
-  "sh-friends-on-the-curb": {
-   "kind": "shoes"
-  },
-  "sh-hydrangea-and-grandma": {
-   "kind": "garden"
-  },
-  "sh-legs-ballet-flats": {
-   "kind": "legs"
-  },
-  "sh-cat-in-striped-bed": {
-   "kind": "animal"
-  },
   "sh-long-blonde-hair": {
    "kind": "portrait"
+  },
+  "sh-denim-jacket-flatlay": {
+   "kind": "outfit"
+  },
+  "sh-ring-box": {
+   "kind": "object"
+  },
+  "sh-iced-latte-gingham": {
+   "kind": "drink"
   }
  },
  "version": "sh_stone_cuts",
- "bpm": 60,
+ "bpm": 40,
  "style": "single",
  "background": "#D6D0C4",
  "margin_px": 56,
@@ -70,20 +61,17 @@
  "order": [
   "sh-rose-window-box",
   "sh-denim-jacket-mirror",
-  "sh-gallery-wall",
-  "sh-iced-latte-gingham",
-  "sh-loafers-and-socks",
-  "sh-green-sweater-window",
-  "sh-sunburst-leaves",
+  "sh-horses-nuzzling",
   "sh-white-knit-and-book",
-  "sh-bedside-lamp",
+  "sh-candlelit-window-room",
+  "sh-chanel-flats-in-box",
+  "sh-champagne-bandana-bag",
   "sh-stacked-bowls",
-  "sh-friends-on-the-curb",
-  "sh-hydrangea-and-grandma",
-  "sh-legs-ballet-flats",
-  "sh-cat-in-striped-bed",
-  "sh-long-blonde-hair"
+  "sh-long-blonde-hair",
+  "sh-denim-jacket-flatlay",
+  "sh-ring-box",
+  "sh-iced-latte-gingham"
  ],
  "center_y": 0.5,
- "_comment": "Board kholthaus8/shoots (pin.it/5sIuOnToR), 36 pins. 15 photos per version, no photo in both; 60 BPM (1 s), 15 photos then the last holds to the bar line = 16 s. No borders. Crops (junk overlay only): stone-house-hydrangeas bottom 120 px (app icons), sunburst-leaves bottom 90 px (creator name). Left out: soft pins 8, 20, 26, 34, 35 and pin 22 (shopping graphic with text and affiliate tag). Version 2: warm stone grey, hard cuts."
+ "_comment": "Board kholthaus8/shoots (pin.it/5sIuOnToR). Longer cut, no photo in more than one version: the 35 usable pins are split 12/12/11. 40 BPM = 1.5 s per photo, ends on a bar line. No borders. Crops (junk overlay only): stone-house-hydrangeas bottom 120 px, sunburst-leaves bottom 90 px. Left out: pin 22 (shopping graphic with text and affiliate tag). The 5 soft pins (<500 px side or shown enlarged) are used once each: farmhouse patio, uno on a blanket, horses, candlelit window room, shoulder shadows. Version 2: warm stone grey, hard cuts."
 }
