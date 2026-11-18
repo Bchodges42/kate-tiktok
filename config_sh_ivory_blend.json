@@ -1,0 +1,91 @@
+{
+ "name": "shoots_minimal",
+ "vibe": "minimal soft domestic: flowers, interiors, linen and denim",
+ "fps": 30,
+ "size": [
+  1080,
+  1920
+ ],
+ "grade": {
+  "warmth": 0.0,
+  "lift": 4,
+  "saturation": 1.0,
+  "grain": 2.0,
+  "grain_seed": 7
+ },
+ "images_dir": "images",
+ "images": {
+  "sh-stone-house-hydrangeas": {
+   "kind": "garden"
+  },
+  "sh-chanel-flats-in-box": {
+   "kind": "shoes"
+  },
+  "sh-quilted-bed-pillows": {
+   "kind": "interior"
+  },
+  "sh-tiger-lilies": {
+   "kind": "flower"
+  },
+  "sh-champagne-bandana-bag": {
+   "kind": "outfit"
+  },
+  "sh-bay-window-bedroom": {
+   "kind": "interior"
+  },
+  "sh-chessboard": {
+   "kind": "game"
+  },
+  "sh-green-cardigan-lace": {
+   "kind": "outfit"
+  },
+  "sh-autumn-window": {
+   "kind": "nature"
+  },
+  "sh-ring-box": {
+   "kind": "object"
+  },
+  "sh-candlelit-porch-dinner": {
+   "kind": "scene"
+  },
+  "sh-boat-shoes-on-rug": {
+   "kind": "shoes"
+  },
+  "sh-bed-corner-lamp": {
+   "kind": "interior"
+  },
+  "sh-pink-hydrangeas": {
+   "kind": "flower"
+  },
+  "sh-denim-jacket-flatlay": {
+   "kind": "outfit"
+  }
+ },
+ "version": "sh_ivory_blend",
+ "bpm": 60,
+ "style": "single",
+ "background": "#EFEAE0",
+ "margin_px": 56,
+ "border_px": 0,
+ "order": [
+  "sh-stone-house-hydrangeas",
+  "sh-chanel-flats-in-box",
+  "sh-quilted-bed-pillows",
+  "sh-tiger-lilies",
+  "sh-champagne-bandana-bag",
+  "sh-bay-window-bedroom",
+  "sh-chessboard",
+  "sh-green-cardigan-lace",
+  "sh-autumn-window",
+  "sh-ring-box",
+  "sh-candlelit-porch-dinner",
+  "sh-boat-shoes-on-rug",
+  "sh-bed-corner-lamp",
+  "sh-pink-hydrangeas",
+  "sh-denim-jacket-flatlay"
+ ],
+ "center_y": 0.5,
+ "_comment": "Board kholthaus8/shoots (pin.it/5sIuOnToR), 36 pins. 15 photos per version, no photo in both; 60 BPM (1 s), 15 photos then the last holds to the bar line = 16 s. No borders. Crops (junk overlay only): stone-house-hydrangeas bottom 120 px (app icons), sunburst-leaves bottom 90 px (creator name). Left out: soft pins 8, 20, 26, 34, 35 and pin 22 (shopping graphic with text and affiliate tag). Version 1: ivory, soft 0.4 s eased blends finishing on the beat.",
+ "dissolve_frames": 12,
+ "dissolve_ease": 0.7
+}

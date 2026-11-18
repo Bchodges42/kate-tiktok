@@ -1,0 +1,22 @@
+60 BPM steady, one photo per beat (1.000 s), 15 photos, 16 beats = 16.00 s, ends on a bar line
+hard cuts; beat sync: worst offset 0.00 frames -> PASS
+stillness: max held-frame diff 0.036 -> PASS
+photos: whole (no cropping), own shape (no stretching), none repeated -> PASS
+variety: no two photos of the same kind back to back -> PASS
+screen filled per photo: 23%-80% (whole photos; wide ones are shorter)
+
+ 1.   0.00s  garden    sh-rose-window-box
+ 2.   1.00s  outfit    sh-denim-jacket-mirror
+ 3.   2.00s  interior  sh-gallery-wall
+ 4.   3.00s  drink     sh-iced-latte-gingham
+ 5.   4.00s  shoes     sh-loafers-and-socks
+ 6.   5.00s  interior  sh-green-sweater-window
+ 7.   6.00s  nature    sh-sunburst-leaves
+ 8.   7.00s  outfit    sh-white-knit-and-book
+ 9.   8.00s  interior  sh-bedside-lamp
+10.   9.00s  object    sh-stacked-bowls
+11.  10.00s  shoes     sh-friends-on-the-curb
+12.  11.00s  garden    sh-hydrangea-and-grandma
+13.  12.00s  legs      sh-legs-ballet-flats
+14.  13.00s  animal    sh-cat-in-striped-bed
+15.  14.00s  portrait  sh-long-blonde-hair

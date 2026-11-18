@@ -1,0 +1,89 @@
+{
+ "name": "shoots_minimal",
+ "vibe": "minimal soft domestic: flowers, interiors, linen and denim",
+ "fps": 30,
+ "size": [
+  1080,
+  1920
+ ],
+ "grade": {
+  "warmth": 0.0,
+  "lift": 4,
+  "saturation": 1.0,
+  "grain": 2.0,
+  "grain_seed": 7
+ },
+ "images_dir": "images",
+ "images": {
+  "sh-rose-window-box": {
+   "kind": "garden"
+  },
+  "sh-denim-jacket-mirror": {
+   "kind": "outfit"
+  },
+  "sh-gallery-wall": {
+   "kind": "interior"
+  },
+  "sh-iced-latte-gingham": {
+   "kind": "drink"
+  },
+  "sh-loafers-and-socks": {
+   "kind": "shoes"
+  },
+  "sh-green-sweater-window": {
+   "kind": "interior"
+  },
+  "sh-sunburst-leaves": {
+   "kind": "nature"
+  },
+  "sh-white-knit-and-book": {
+   "kind": "outfit"
+  },
+  "sh-bedside-lamp": {
+   "kind": "interior"
+  },
+  "sh-stacked-bowls": {
+   "kind": "object"
+  },
+  "sh-friends-on-the-curb": {
+   "kind": "shoes"
+  },
+  "sh-hydrangea-and-grandma": {
+   "kind": "garden"
+  },
+  "sh-legs-ballet-flats": {
+   "kind": "legs"
+  },
+  "sh-cat-in-striped-bed": {
+   "kind": "animal"
+  },
+  "sh-long-blonde-hair": {
+   "kind": "portrait"
+  }
+ },
+ "version": "sh_stone_cuts",
+ "bpm": 60,
+ "style": "single",
+ "background": "#D6D0C4",
+ "margin_px": 56,
+ "border_px": 0,
+ "order": [
+  "sh-rose-window-box",
+  "sh-denim-jacket-mirror",
+  "sh-gallery-wall",
+  "sh-iced-latte-gingham",
+  "sh-loafers-and-socks",
+  "sh-green-sweater-window",
+  "sh-sunburst-leaves",
+  "sh-white-knit-and-book",
+  "sh-bedside-lamp",
+  "sh-stacked-bowls",
+  "sh-friends-on-the-curb",
+  "sh-hydrangea-and-grandma",
+  "sh-legs-ballet-flats",
+  "sh-cat-in-striped-bed",
+  "sh-long-blonde-hair"
+ ],
+ "center_y": 0.5,
+ "_comment": "Board kholthaus8/shoots (pin.it/5sIuOnToR), 36 pins. 15 photos per version, no photo in both; 60 BPM (1 s), 15 photos then the last holds to the bar line = 16 s. No borders. Crops (junk overlay only): stone-house-hydrangeas bottom 120 px (app icons), sunburst-leaves bottom 90 px (creator name). Left out: soft pins 8, 20, 26, 34, 35 and pin 22 (shopping graphic with text and affiliate tag). Version 2: warm stone grey, hard cuts."
+}
