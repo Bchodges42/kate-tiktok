@@ -26,7 +26,7 @@ soft sources (under 500 px): pp-dog-dog-pet, pp-bee-bee-pet
 18.   7.60s  outfit    pp-panda-ruffle-collar-blouse
 19.   8.00s  landscape pp-panda-garden-with-dogs
 20.   8.40s  outfit    pp-panda-street-camera-girl
-21.   8.80s  interior  pp-panda-vanity-mirror
+21.   8.80s  place     pp-panda-arched-hallway
 22.   9.20s  object    pp-panda-perfume-on-linen
 23.   9.60s  pet       pp-bee-bee-pet
 24.  10.40s  landscape pp-bee-hives-in-wildflowers

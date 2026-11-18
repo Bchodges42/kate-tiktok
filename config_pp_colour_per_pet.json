@@ -77,8 +77,8 @@
   "pp-panda-street-camera-girl": {
    "kind": "outfit"
   },
-  "pp-panda-vanity-mirror": {
-   "kind": "interior"
+  "pp-panda-arched-hallway": {
+   "kind": "place"
   },
   "pp-panda-perfume-on-linen": {
    "kind": "object"
@@ -248,7 +248,7 @@
   "pp-panda-ruffle-collar-blouse",
   "pp-panda-garden-with-dogs",
   "pp-panda-street-camera-girl",
-  "pp-panda-vanity-mirror",
+  "pp-panda-arched-hallway",
   "pp-panda-perfume-on-linen",
   "pp-bee-bee-pet",
   "pp-bee-hives-in-wildflowers",
@@ -295,7 +295,7 @@
   "pp-unicorn-friends-in-yellow-boots",
   "pp-unicorn-pastel-cabinet"
  ],
- "_comment": "Updated: each pillow pet photo (held 2 beats) is now followed by 10 photos from its aesthetic (was 6), same timing: 150 BPM, 0.4 s per photo, hard cuts, background colour per pet. 6 x (2+10) = 72 beats = 28.8 s. Giraffe board has only 11 sharp photos, so it uses 10 of them; all 6 boards otherwise leave out only soft pins under ~500 px. Panda section redone: the green striped cardigan photo removed (didn't match the pet), replaced with the vanity with hydrangeas, and the section reshuffled. All other sections unchanged. Panda section redone again from the updated panda board: 8 of 10 photos are new or not previously used (3 are brand-new pins: open door to the garden, glasses on a book, garden with dogs); only the vanity mirror and perfume are kept.",
+ "_comment": "Updated: each pillow pet photo (held 2 beats) is now followed by 10 photos from its aesthetic (was 6), same timing: 150 BPM, 0.4 s per photo, hard cuts, background colour per pet. 6 x (2+10) = 72 beats = 28.8 s. Giraffe board has only 11 sharp photos, so it uses 10 of them; all 6 boards otherwise leave out only soft pins under ~500 px. Panda section redone: the green striped cardigan photo removed (didn't match the pet), replaced with the vanity with hydrangeas, and the section reshuffled. All other sections unchanged. Panda section redone again from the updated panda board: 8 of 10 photos are new or not previously used (3 are brand-new pins: open door to the garden, glasses on a book, garden with dogs); only the vanity mirror and perfume are kept. Vanity mirror photo swapped for the arched hallway.",
  "bg_cycle": [
   "#F3E2B3",
   "#D9D5CE",
