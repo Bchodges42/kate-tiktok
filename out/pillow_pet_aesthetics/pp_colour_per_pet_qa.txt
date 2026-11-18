@@ -1,6 +1,6 @@
 150 BPM steady, one photo per beat (0.400 s), 66 photos, 72 beats = 28.80 s, ends on a bar line
 hard cuts; beat sync: worst offset 0.00 frames -> PASS
-stillness: max held-frame diff 0.054 -> PASS
+stillness: max held-frame diff 0.053 -> PASS
 photos: whole (no cropping), own shape (no stretching), none repeated -> PASS
 variety: no two photos of the same kind back to back -> PASS
 screen filled per photo: 27%-82% (whole photos; wide ones are shorter)
@@ -18,16 +18,16 @@ soft sources (under 500 px): pp-dog-dog-pet, pp-bee-bee-pet
 10.   4.00s  dog       pp-dog-dog-and-girl
 11.   4.40s  outfit    pp-dog-green-cardigan
 12.   4.80s  pet       pp-panda-panda-pet
-13.   5.60s  place     pp-panda-arched-hallway
-14.   6.00s  object    pp-panda-perfume-on-linen
-15.   6.40s  outfit    pp-panda-white-babydoll-dress
-16.   6.80s  art       pp-panda-landscape-paintings
-17.   7.20s  interior  pp-panda-vanity-mirror
-18.   7.60s  drink     pp-panda-latte-art
-19.   8.00s  outfit    pp-panda-street-wide-jeans
-20.   8.40s  flatlay   pp-panda-stack-of-turtlenecks
-21.   8.80s  interior  pp-panda-fur-coat-bag-chair
-22.   9.20s  outfit    pp-panda-striped-cardigan-iced-coffee
+13.   5.60s  interior  pp-panda-vanity-mirror
+14.   6.00s  outfit    pp-panda-white-babydoll-dress
+15.   6.40s  place     pp-panda-arched-hallway
+16.   6.80s  flatlay   pp-panda-stack-of-turtlenecks
+17.   7.20s  interior  pp-panda-vanity-with-hydrangeas
+18.   7.60s  outfit    pp-panda-street-wide-jeans
+19.   8.00s  object    pp-panda-perfume-on-linen
+20.   8.40s  interior  pp-panda-fur-coat-bag-chair
+21.   8.80s  drink     pp-panda-latte-art
+22.   9.20s  art       pp-panda-landscape-paintings
 23.   9.60s  pet       pp-bee-bee-pet
 24.  10.40s  landscape pp-bee-hives-in-wildflowers
 25.  10.80s  detail    pp-bee-bee-on-skin

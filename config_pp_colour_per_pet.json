@@ -53,35 +53,35 @@
    "kind": "pet",
    "hold": 2
   },
-  "pp-panda-arched-hallway": {
-   "kind": "place"
-  },
-  "pp-panda-perfume-on-linen": {
-   "kind": "object"
+  "pp-panda-vanity-mirror": {
+   "kind": "interior"
   },
   "pp-panda-white-babydoll-dress": {
    "kind": "outfit"
   },
-  "pp-panda-landscape-paintings": {
-   "kind": "art"
+  "pp-panda-arched-hallway": {
+   "kind": "place"
   },
-  "pp-panda-vanity-mirror": {
+  "pp-panda-stack-of-turtlenecks": {
+   "kind": "flatlay"
+  },
+  "pp-panda-vanity-with-hydrangeas": {
+   "kind": "interior"
+  },
+  "pp-panda-street-wide-jeans": {
+   "kind": "outfit"
+  },
+  "pp-panda-perfume-on-linen": {
+   "kind": "object"
+  },
+  "pp-panda-fur-coat-bag-chair": {
    "kind": "interior"
   },
   "pp-panda-latte-art": {
    "kind": "drink"
   },
-  "pp-panda-street-wide-jeans": {
-   "kind": "outfit"
-  },
-  "pp-panda-stack-of-turtlenecks": {
-   "kind": "flatlay"
-  },
-  "pp-panda-fur-coat-bag-chair": {
-   "kind": "interior"
-  },
-  "pp-panda-striped-cardigan-iced-coffee": {
-   "kind": "outfit"
+  "pp-panda-landscape-paintings": {
+   "kind": "art"
   },
   "pp-bee-bee-pet": {
    "kind": "pet",
@@ -240,16 +240,16 @@
   "pp-dog-dog-and-girl",
   "pp-dog-green-cardigan",
   "pp-panda-panda-pet",
-  "pp-panda-arched-hallway",
-  "pp-panda-perfume-on-linen",
-  "pp-panda-white-babydoll-dress",
-  "pp-panda-landscape-paintings",
   "pp-panda-vanity-mirror",
-  "pp-panda-latte-art",
-  "pp-panda-street-wide-jeans",
+  "pp-panda-white-babydoll-dress",
+  "pp-panda-arched-hallway",
   "pp-panda-stack-of-turtlenecks",
+  "pp-panda-vanity-with-hydrangeas",
+  "pp-panda-street-wide-jeans",
+  "pp-panda-perfume-on-linen",
   "pp-panda-fur-coat-bag-chair",
-  "pp-panda-striped-cardigan-iced-coffee",
+  "pp-panda-latte-art",
+  "pp-panda-landscape-paintings",
   "pp-bee-bee-pet",
   "pp-bee-hives-in-wildflowers",
   "pp-bee-bee-on-skin",
@@ -295,7 +295,7 @@
   "pp-unicorn-friends-in-yellow-boots",
   "pp-unicorn-pastel-cabinet"
  ],
- "_comment": "Updated: each pillow pet photo (held 2 beats) is now followed by 10 photos from its aesthetic (was 6), same timing: 150 BPM, 0.4 s per photo, hard cuts, background colour per pet. 6 x (2+10) = 72 beats = 28.8 s. Giraffe board has only 11 sharp photos, so it uses 10 of them; all 6 boards otherwise leave out only soft pins under ~500 px.",
+ "_comment": "Updated: each pillow pet photo (held 2 beats) is now followed by 10 photos from its aesthetic (was 6), same timing: 150 BPM, 0.4 s per photo, hard cuts, background colour per pet. 6 x (2+10) = 72 beats = 28.8 s. Giraffe board has only 11 sharp photos, so it uses 10 of them; all 6 boards otherwise leave out only soft pins under ~500 px. Panda section redone: the green striped cardigan photo removed (didn't match the pet), replaced with the vanity with hydrangeas, and the section reshuffled. All other sections unchanged.",
  "bg_cycle": [
   "#F3E2B3",
   "#D9D5CE",
