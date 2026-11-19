@@ -375,7 +375,7 @@ def main():
         beat_guide(audio, bpm, total_beats // ppb)
     cmd = ["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(fps),
            "-i", "-", "-i", audio, "-map", "0:v", "-map", "1:a", "-c:v", "libx264", "-profile:v", "high",
-           "-pix_fmt", "yuv420p", "-crf", "18", "-preset", "veryfast", "-c:a", "aac", "-b:a", "192k",
+           "-pix_fmt", "yuv420p", "-crf", str(cfg.get("crf", 18)), "-preset", cfg.get("preset", "veryfast"), "-c:a", "aac", "-b:a", "192k",
            "-movflags", "+faststart", "-t", f"{N / fps:.4f}", mp4]
     pr = subprocess.Popen(cmd, stdin=subprocess.PIPE)
     segs = sorted([(s0, pl, i) for i, (s0, pl) in enumerate(zip(starts, plates))] +

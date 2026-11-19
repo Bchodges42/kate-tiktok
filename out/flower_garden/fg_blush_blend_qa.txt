@@ -1,0 +1,27 @@
+60 BPM steady, one photo per beat (1.000 s), 20 photos, 20 beats = 20.00 s, ends on a bar line
+dissolve: 12 frames (0.40 s) into each photo, finishing on the beat; beat sync: worst offset 0.00 frames -> PASS
+stillness: max held-frame diff 0.448 -> PASS
+photos: whole (no cropping), own shape (no stretching), none repeated -> PASS
+variety: no two photos of the same kind back to back -> PASS
+screen filled per photo: 24%-60% (whole photos; wide ones are shorter)
+
+ 1.   0.00s  house2    fg-rose-covered-window
+ 2.   1.00s  animal    fg-swans-under-willows
+ 3.   2.00s  water     fg-stone-bridge-pond
+ 4.   3.00s  nook      fg-tree-nook-cushions
+ 5.   4.00s  flower3   fg-birdbath-wildflowers
+ 6.   5.00s  scene     fg-willow-picnic-table
+ 7.   6.00s  flower2   fg-foxgloves-and-roses
+ 8.   7.00s  cat       fg-cat-on-the-birdbath
+ 9.   8.00s  arch      fg-stone-arch-garden
+10.   9.00s  flower4   fg-misty-hydrangeas
+11.  10.00s  whimsy    fg-mushroom-fairy-door
+12.  11.00s  flower    fg-hydrangeas-on-the-path
+13.  12.00s  house     fg-castle-window-roses
+14.  13.00s  statue2   fg-pond-statue-lily
+15.  14.00s  meadow    fg-pink-lilies-in-the-meadow
+16.  15.00s  macro     fg-dandelion-clock
+17.  16.00s  statue    fg-statue-birdbath
+18.  17.00s  water2    fg-lily-pond
+19.  18.00s  art       fg-lily-of-the-valley-fairy
+20.  19.00s  bench     fg-rhododendron-bench

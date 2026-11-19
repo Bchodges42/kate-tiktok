@@ -1,0 +1,116 @@
+{
+ "name": "flower_garden",
+ "vibe": "flower garden: ponds, roses, hydrangeas, statues, fairy touches",
+ "fps": 30,
+ "size": [
+  1080,
+  1920
+ ],
+ "bpm": 60,
+ "background": {
+  "image": "images/bg-pink-sparkle-florals.jpg"
+ },
+ "grade": {
+  "warmth": 0.015,
+  "lift": 5,
+  "saturation": 1.0,
+  "grain": 2.0,
+  "grain_seed": 9
+ },
+ "images_dir": "images",
+ "version": "fg_blush_blend",
+ "style": "single",
+ "margin_px": 120,
+ "center_y": 0.5,
+ "images": {
+  "fg-rose-covered-window": {
+   "kind": "house2"
+  },
+  "fg-swans-under-willows": {
+   "kind": "animal"
+  },
+  "fg-stone-bridge-pond": {
+   "kind": "water"
+  },
+  "fg-tree-nook-cushions": {
+   "kind": "nook"
+  },
+  "fg-birdbath-wildflowers": {
+   "kind": "flower3"
+  },
+  "fg-willow-picnic-table": {
+   "kind": "scene"
+  },
+  "fg-foxgloves-and-roses": {
+   "kind": "flower2"
+  },
+  "fg-cat-on-the-birdbath": {
+   "kind": "cat"
+  },
+  "fg-stone-arch-garden": {
+   "kind": "arch"
+  },
+  "fg-misty-hydrangeas": {
+   "kind": "flower4"
+  },
+  "fg-mushroom-fairy-door": {
+   "kind": "whimsy"
+  },
+  "fg-hydrangeas-on-the-path": {
+   "kind": "flower"
+  },
+  "fg-castle-window-roses": {
+   "kind": "house"
+  },
+  "fg-pond-statue-lily": {
+   "kind": "statue2"
+  },
+  "fg-pink-lilies-in-the-meadow": {
+   "kind": "meadow"
+  },
+  "fg-dandelion-clock": {
+   "kind": "macro"
+  },
+  "fg-statue-birdbath": {
+   "kind": "statue"
+  },
+  "fg-lily-pond": {
+   "kind": "water2"
+  },
+  "fg-lily-of-the-valley-fairy": {
+   "kind": "art"
+  },
+  "fg-rhododendron-bench": {
+   "kind": "bench"
+  }
+ },
+ "order": [
+  "fg-rose-covered-window",
+  "fg-swans-under-willows",
+  "fg-stone-bridge-pond",
+  "fg-tree-nook-cushions",
+  "fg-birdbath-wildflowers",
+  "fg-willow-picnic-table",
+  "fg-foxgloves-and-roses",
+  "fg-cat-on-the-birdbath",
+  "fg-stone-arch-garden",
+  "fg-misty-hydrangeas",
+  "fg-mushroom-fairy-door",
+  "fg-hydrangeas-on-the-path",
+  "fg-castle-window-roses",
+  "fg-pond-statue-lily",
+  "fg-pink-lilies-in-the-meadow",
+  "fg-dandelion-clock",
+  "fg-statue-birdbath",
+  "fg-lily-pond",
+  "fg-lily-of-the-valley-fairy",
+  "fg-rhododendron-bench"
+ ],
+ "border_px": 8,
+ "border": "#FFFFFF",
+ "_comment": "Board kholthaus8/flower-garden (pin.it/52xqYxOkR). 20 photos, each centred with a 120 px margin so no photo reaches the screen sides (widest 840 of 1080 px). Background is one of the user's three pictures, used whole (9:16, no crop). The 18 sharp pins are in every version in a different order; soft pins are split so each version has two different ones (4+19, 16+17, 22+23). Left out: pin 12 (watermark), 8 and 26 (soft). Version 2: pink sparkle florals, soft 0.4 s eased blends, 60 BPM (1 s).",
+ "dissolve_frames": 12,
+ "dissolve_ease": 0.7,
+ "crf": 14,
+ "preset": "slow"
+}

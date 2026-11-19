@@ -1,0 +1,28 @@
+75 BPM steady, one photo per beat (0.800 s), 20 photos, 20 beats = 16.00 s, ends on a bar line
+hard cuts; beat sync: worst offset 0.00 frames -> PASS
+stillness: max held-frame diff 0.415 -> PASS
+photos: whole (no cropping), own shape (no stretching), none repeated -> PASS
+variety: no two photos of the same kind back to back -> PASS
+screen filled per photo: 24%-60% (whole photos; wide ones are shorter)
+soft sources (under 500 px): fg-flowers-in-hair
+
+ 1.   0.00s  flower    fg-hydrangeas-on-the-path
+ 2.   0.80s  nook      fg-tree-nook-cushions
+ 3.   1.60s  portrait  fg-flowers-in-hair
+ 4.   2.40s  animal    fg-swans-under-willows
+ 5.   3.20s  meadow    fg-pink-lilies-in-the-meadow
+ 6.   4.00s  flower2   fg-foxgloves-and-roses
+ 7.   4.80s  house2    fg-rose-covered-window
+ 8.   5.60s  macro     fg-dandelion-clock
+ 9.   6.40s  art       fg-lily-of-the-valley-fairy
+10.   7.20s  bench     fg-rhododendron-bench
+11.   8.00s  flower3   fg-birdbath-wildflowers
+12.   8.80s  house     fg-castle-window-roses
+13.   9.60s  tree      fg-weeping-blossom-tree
+14.  10.40s  water     fg-stone-bridge-pond
+15.  11.20s  scene     fg-willow-picnic-table
+16.  12.00s  flower4   fg-misty-hydrangeas
+17.  12.80s  whimsy    fg-mushroom-fairy-door
+18.  13.60s  statue    fg-statue-birdbath
+19.  14.40s  cat       fg-cat-on-the-birdbath
+20.  15.20s  water2    fg-lily-pond

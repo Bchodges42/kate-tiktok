@@ -1,0 +1,114 @@
+{
+ "name": "flower_garden",
+ "vibe": "flower garden: ponds, roses, hydrangeas, statues, fairy touches",
+ "fps": 30,
+ "size": [
+  1080,
+  1920
+ ],
+ "bpm": 75,
+ "background": {
+  "image": "images/bg-love-stars-collage.jpg"
+ },
+ "grade": {
+  "warmth": 0.015,
+  "lift": 5,
+  "saturation": 1.0,
+  "grain": 2.0,
+  "grain_seed": 9
+ },
+ "images_dir": "images",
+ "version": "fg_love_cuts",
+ "style": "single",
+ "margin_px": 120,
+ "center_y": 0.5,
+ "images": {
+  "fg-lily-pond": {
+   "kind": "water2"
+  },
+  "fg-foxgloves-and-roses": {
+   "kind": "flower2"
+  },
+  "fg-lily-of-the-valley-fairy": {
+   "kind": "art"
+  },
+  "fg-cat-on-the-birdbath": {
+   "kind": "cat"
+  },
+  "fg-willow-picnic-table": {
+   "kind": "scene"
+  },
+  "fg-rhododendron-bench": {
+   "kind": "bench"
+  },
+  "fg-pink-lilies-on-black": {
+   "kind": "macro2"
+  },
+  "fg-hydrangeas-on-the-path": {
+   "kind": "flower"
+  },
+  "fg-castle-window-roses": {
+   "kind": "house"
+  },
+  "fg-birdbath-wildflowers": {
+   "kind": "flower3"
+  },
+  "fg-dandelion-clock": {
+   "kind": "macro"
+  },
+  "fg-statue-birdbath": {
+   "kind": "statue"
+  },
+  "fg-pink-lilies-in-the-meadow": {
+   "kind": "meadow"
+  },
+  "fg-rose-covered-window": {
+   "kind": "house2"
+  },
+  "fg-misty-hydrangeas": {
+   "kind": "flower4"
+  },
+  "fg-stone-bridge-pond": {
+   "kind": "water"
+  },
+  "fg-tree-nook-cushions": {
+   "kind": "nook"
+  },
+  "fg-swans-under-willows": {
+   "kind": "animal"
+  },
+  "fg-mushroom-fairy-door": {
+   "kind": "whimsy"
+  },
+  "fg-peony-wall": {
+   "kind": "macro3"
+  }
+ },
+ "order": [
+  "fg-lily-pond",
+  "fg-foxgloves-and-roses",
+  "fg-lily-of-the-valley-fairy",
+  "fg-cat-on-the-birdbath",
+  "fg-willow-picnic-table",
+  "fg-rhododendron-bench",
+  "fg-pink-lilies-on-black",
+  "fg-hydrangeas-on-the-path",
+  "fg-castle-window-roses",
+  "fg-birdbath-wildflowers",
+  "fg-dandelion-clock",
+  "fg-statue-birdbath",
+  "fg-pink-lilies-in-the-meadow",
+  "fg-rose-covered-window",
+  "fg-misty-hydrangeas",
+  "fg-stone-bridge-pond",
+  "fg-tree-nook-cushions",
+  "fg-swans-under-willows",
+  "fg-mushroom-fairy-door",
+  "fg-peony-wall"
+ ],
+ "border_px": 8,
+ "border": "#FFFFFF",
+ "_comment": "Board kholthaus8/flower-garden (pin.it/52xqYxOkR). 20 photos, each centred with a 120 px margin so no photo reaches the screen sides (widest 840 of 1080 px). Background is one of the user's three pictures, used whole (9:16, no crop). The 18 sharp pins are in every version in a different order; soft pins are split so each version has two different ones (4+19, 16+17, 22+23). Left out: pin 12 (watermark), 8 and 26 (soft). Version 3: love-and-stars collage, hard cuts, 75 BPM (0.8 s).",
+ "crf": 14,
+ "preset": "slow"
+}

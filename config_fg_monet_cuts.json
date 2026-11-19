@@ -1,0 +1,114 @@
+{
+ "name": "flower_garden",
+ "vibe": "flower garden: ponds, roses, hydrangeas, statues, fairy touches",
+ "fps": 30,
+ "size": [
+  1080,
+  1920
+ ],
+ "bpm": 75,
+ "background": {
+  "image": "images/bg-monet-garden.jpg"
+ },
+ "grade": {
+  "warmth": 0.015,
+  "lift": 5,
+  "saturation": 1.0,
+  "grain": 2.0,
+  "grain_seed": 9
+ },
+ "images_dir": "images",
+ "version": "fg_monet_cuts",
+ "style": "single",
+ "margin_px": 120,
+ "center_y": 0.5,
+ "images": {
+  "fg-hydrangeas-on-the-path": {
+   "kind": "flower"
+  },
+  "fg-tree-nook-cushions": {
+   "kind": "nook"
+  },
+  "fg-flowers-in-hair": {
+   "kind": "portrait"
+  },
+  "fg-swans-under-willows": {
+   "kind": "animal"
+  },
+  "fg-pink-lilies-in-the-meadow": {
+   "kind": "meadow"
+  },
+  "fg-foxgloves-and-roses": {
+   "kind": "flower2"
+  },
+  "fg-rose-covered-window": {
+   "kind": "house2"
+  },
+  "fg-dandelion-clock": {
+   "kind": "macro"
+  },
+  "fg-lily-of-the-valley-fairy": {
+   "kind": "art"
+  },
+  "fg-rhododendron-bench": {
+   "kind": "bench"
+  },
+  "fg-birdbath-wildflowers": {
+   "kind": "flower3"
+  },
+  "fg-castle-window-roses": {
+   "kind": "house"
+  },
+  "fg-weeping-blossom-tree": {
+   "kind": "tree"
+  },
+  "fg-stone-bridge-pond": {
+   "kind": "water"
+  },
+  "fg-willow-picnic-table": {
+   "kind": "scene"
+  },
+  "fg-misty-hydrangeas": {
+   "kind": "flower4"
+  },
+  "fg-mushroom-fairy-door": {
+   "kind": "whimsy"
+  },
+  "fg-statue-birdbath": {
+   "kind": "statue"
+  },
+  "fg-cat-on-the-birdbath": {
+   "kind": "cat"
+  },
+  "fg-lily-pond": {
+   "kind": "water2"
+  }
+ },
+ "order": [
+  "fg-hydrangeas-on-the-path",
+  "fg-tree-nook-cushions",
+  "fg-flowers-in-hair",
+  "fg-swans-under-willows",
+  "fg-pink-lilies-in-the-meadow",
+  "fg-foxgloves-and-roses",
+  "fg-rose-covered-window",
+  "fg-dandelion-clock",
+  "fg-lily-of-the-valley-fairy",
+  "fg-rhododendron-bench",
+  "fg-birdbath-wildflowers",
+  "fg-castle-window-roses",
+  "fg-weeping-blossom-tree",
+  "fg-stone-bridge-pond",
+  "fg-willow-picnic-table",
+  "fg-misty-hydrangeas",
+  "fg-mushroom-fairy-door",
+  "fg-statue-birdbath",
+  "fg-cat-on-the-birdbath",
+  "fg-lily-pond"
+ ],
+ "border_px": 8,
+ "border": "#FFFFFF",
+ "_comment": "Board kholthaus8/flower-garden (pin.it/52xqYxOkR). 20 photos, each centred with a 120 px margin so no photo reaches the screen sides (widest 840 of 1080 px). Background is one of the user's three pictures, used whole (9:16, no crop). The 18 sharp pins are in every version in a different order; soft pins are split so each version has two different ones (4+19, 16+17, 22+23). Left out: pin 12 (watermark), 8 and 26 (soft). Version 1: Monet-style garden painting, hard cuts, 75 BPM (0.8 s).",
+ "crf": 14,
+ "preset": "slow"
+}
