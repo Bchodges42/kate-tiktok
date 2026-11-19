@@ -1,0 +1,18 @@
+40 BPM steady, one photo per beat (1.500 s), 11 photos, 11 beats = 16.50 s, ends on a bar line
+hard cuts; beat sync: worst offset 0.00 frames -> PASS
+stillness: max held-frame diff 0.058 -> PASS
+photos: whole (no cropping), own shape (no stretching), none repeated -> PASS
+variety: no two photos of the same kind back to back -> PASS
+screen filled per photo: 30%-80% (whole photos; wide ones are shorter)
+
+ 1.   0.00s  macro     fl-pink-amaryllis
+ 2.   1.50s  held      fl-armful-of-vases
+ 3.   3.00s  bloom     fl-pink-bellflowers
+ 4.   4.50s  arrangement fl-peonies-and-lilac
+ 5.   6.00s  macro     fl-stargazer-lilies-by-lamp
+ 6.   7.50s  basket    fl-basket-of-roses
+ 7.   9.00s  bloom     fl-striped-carnations
+ 8.  10.50s  arrangement fl-tiger-lilies-on-a-table
+ 9.  12.00s  macro     fl-orange-lilies
+10.  13.50s  held      fl-tulip-and-chamomile-armful
+11.  15.00s  bloom     fl-rhododendron-blooms

@@ -1,0 +1,18 @@
+40 BPM steady, one photo per beat (1.500 s), 11 photos, 11 beats = 16.50 s, ends on a bar line
+hard cuts; beat sync: worst offset 0.00 frames -> PASS
+stillness: max held-frame diff 0.893 -> PASS
+photos: whole (no cropping), own shape (no stretching), none repeated -> PASS
+variety: no two photos of the same kind back to back -> PASS
+screen filled per photo: 34%-71% (whole photos; wide ones are shorter)
+
+ 1.   0.00s  garden    fl-spring-tulips
+ 2.   1.50s  arrangement fl-calla-and-peony-vase
+ 3.   3.00s  garden    fl-purple-orchid-in-mist
+ 4.   4.50s  macro     fl-lilies-in-the-garden
+ 5.   6.00s  arrangement fl-amaranthus-arrangement
+ 6.   7.50s  garden    fl-sunbeams-on-the-flower-bed
+ 7.   9.00s  held      fl-anthurium-calla-bouquet
+ 8.  10.50s  garden    fl-oleander-by-the-sea
+ 9.  12.00s  macro     fl-striped-pink-lily
+10.  13.50s  arrangement fl-centerpiece-arrangement
+11.  15.00s  held      fl-calla-lily-bouquet

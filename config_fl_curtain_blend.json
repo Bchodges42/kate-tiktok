@@ -1,0 +1,79 @@
+{
+ "name": "flowers_backgrounds",
+ "vibe": "florals: lilies, tulips, bouquets, garden light",
+ "fps": 30,
+ "size": [
+  1080,
+  1920
+ ],
+ "bpm": 40,
+ "background": {
+  "image": "images/bg-ruffled-curtain.jpg"
+ },
+ "grade": {
+  "warmth": 0.015,
+  "lift": 5,
+  "saturation": 1.0,
+  "grain": 2.0,
+  "grain_seed": 5
+ },
+ "images_dir": "images",
+ "version": "fl_curtain_blend",
+ "style": "single",
+ "margin_px": 56,
+ "center_y": 0.5,
+ "images": {
+  "fl-white-wrapped-bouquet": {
+   "kind": "held"
+  },
+  "fl-ruffled-gladiolus": {
+   "kind": "bloom"
+  },
+  "fl-hydrangea-anthurium-vase": {
+   "kind": "arrangement"
+  },
+  "fl-white-lilies-in-the-mist": {
+   "kind": "garden"
+  },
+  "fl-bridal-orchid-bouquet": {
+   "kind": "held"
+  },
+  "fl-cream-and-pink-lilies": {
+   "kind": "macro"
+  },
+  "fl-pastel-bouquet": {
+   "kind": "held"
+  },
+  "fl-white-orchids-in-the-garden": {
+   "kind": "garden"
+  },
+  "fl-viburnum-orchid-urns": {
+   "kind": "arrangement"
+  },
+  "fl-tall-garden-installations": {
+   "kind": "installation"
+  },
+  "fl-daisy-peace-wreath": {
+   "kind": "wreath"
+  }
+ },
+ "order": [
+  "fl-white-wrapped-bouquet",
+  "fl-ruffled-gladiolus",
+  "fl-hydrangea-anthurium-vase",
+  "fl-white-lilies-in-the-mist",
+  "fl-bridal-orchid-bouquet",
+  "fl-cream-and-pink-lilies",
+  "fl-pastel-bouquet",
+  "fl-white-orchids-in-the-garden",
+  "fl-viburnum-orchid-urns",
+  "fl-tall-garden-installations",
+  "fl-daisy-peace-wreath"
+ ],
+ "border_px": 8,
+ "border": "#FFFFFF",
+ "_comment": "Board kholthaus8/peace (pin.it/6BWc5mVft), flowers only, 11 photos per video and none shared between the three; 40 BPM = 1.5 s per photo, no padding to a bar line (16.5 s). One background per video, matched to its flowers. Left out: the coast, flower stall, blossom street and lily pond (not flower photos), soft pin 14, creator-watermarked and licence-plate pins, non-flower pins. Version 2: ruffled curtain, soft 0.5 s eased blends. Cream, white and pastel blooms.",
+ "end_on_bar": false,
+ "dissolve_frames": 15,
+ "dissolve_ease": 0.7
+}

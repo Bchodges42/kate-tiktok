@@ -1,0 +1,18 @@
+40 BPM steady, one photo per beat (1.500 s), 11 photos, 11 beats = 16.50 s, ends on a bar line
+dissolve: 15 frames (0.50 s) into each photo, finishing on the beat; beat sync: worst offset 1.00 frames -> PASS
+stillness: max held-frame diff 0.706 -> PASS
+photos: whole (no cropping), own shape (no stretching), none repeated -> PASS
+variety: no two photos of the same kind back to back -> PASS
+screen filled per photo: 34%-60% (whole photos; wide ones are shorter)
+
+ 1.   0.00s  held      fl-white-wrapped-bouquet
+ 2.   1.50s  bloom     fl-ruffled-gladiolus
+ 3.   3.00s  arrangement fl-hydrangea-anthurium-vase
+ 4.   4.50s  garden    fl-white-lilies-in-the-mist
+ 5.   6.00s  held      fl-bridal-orchid-bouquet
+ 6.   7.50s  macro     fl-cream-and-pink-lilies
+ 7.   9.00s  held      fl-pastel-bouquet
+ 8.  10.50s  garden    fl-white-orchids-in-the-garden
+ 9.  12.00s  arrangement fl-viburnum-orchid-urns
+10.  13.50s  installation fl-tall-garden-installations
+11.  15.00s  wreath    fl-daisy-peace-wreath

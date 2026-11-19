@@ -1,0 +1,77 @@
+{
+ "name": "flowers_backgrounds",
+ "vibe": "florals: lilies, tulips, bouquets, garden light",
+ "fps": 30,
+ "size": [
+  1080,
+  1920
+ ],
+ "bpm": 40,
+ "background": {
+  "image": "images/bg-scalloped-pink.jpg"
+ },
+ "grade": {
+  "warmth": 0.015,
+  "lift": 5,
+  "saturation": 1.0,
+  "grain": 2.0,
+  "grain_seed": 5
+ },
+ "images_dir": "images",
+ "version": "fl_pink_cuts",
+ "style": "single",
+ "margin_px": 56,
+ "center_y": 0.5,
+ "images": {
+  "fl-pink-amaryllis": {
+   "kind": "macro"
+  },
+  "fl-armful-of-vases": {
+   "kind": "held"
+  },
+  "fl-pink-bellflowers": {
+   "kind": "bloom"
+  },
+  "fl-peonies-and-lilac": {
+   "kind": "arrangement"
+  },
+  "fl-stargazer-lilies-by-lamp": {
+   "kind": "macro"
+  },
+  "fl-basket-of-roses": {
+   "kind": "basket"
+  },
+  "fl-striped-carnations": {
+   "kind": "bloom"
+  },
+  "fl-tiger-lilies-on-a-table": {
+   "kind": "arrangement"
+  },
+  "fl-orange-lilies": {
+   "kind": "macro"
+  },
+  "fl-tulip-and-chamomile-armful": {
+   "kind": "held"
+  },
+  "fl-rhododendron-blooms": {
+   "kind": "bloom"
+  }
+ },
+ "order": [
+  "fl-pink-amaryllis",
+  "fl-armful-of-vases",
+  "fl-pink-bellflowers",
+  "fl-peonies-and-lilac",
+  "fl-stargazer-lilies-by-lamp",
+  "fl-basket-of-roses",
+  "fl-striped-carnations",
+  "fl-tiger-lilies-on-a-table",
+  "fl-orange-lilies",
+  "fl-tulip-and-chamomile-armful",
+  "fl-rhododendron-blooms"
+ ],
+ "border_px": 8,
+ "border": "#FFFFFF",
+ "_comment": "Board kholthaus8/peace (pin.it/6BWc5mVft), flowers only, 11 photos per video and none shared between the three; 40 BPM = 1.5 s per photo, no padding to a bar line (16.5 s). One background per video, matched to its flowers. Left out: the coast, flower stall, blossom street and lily pond (not flower photos), soft pin 14, creator-watermarked and licence-plate pins, non-flower pins. Version 1: scalloped pink frame, hard cuts. Warm pink and red blooms.",
+ "end_on_bar": false
+}

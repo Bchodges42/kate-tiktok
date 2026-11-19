@@ -1,0 +1,77 @@
+{
+ "name": "flowers_backgrounds",
+ "vibe": "florals: lilies, tulips, bouquets, garden light",
+ "fps": 30,
+ "size": [
+  1080,
+  1920
+ ],
+ "bpm": 40,
+ "background": {
+  "image": "images/bg-tulip-stripes.jpg"
+ },
+ "grade": {
+  "warmth": 0.015,
+  "lift": 5,
+  "saturation": 1.0,
+  "grain": 2.0,
+  "grain_seed": 5
+ },
+ "images_dir": "images",
+ "version": "fl_tulip_cuts",
+ "style": "single",
+ "margin_px": 56,
+ "center_y": 0.5,
+ "images": {
+  "fl-spring-tulips": {
+   "kind": "garden"
+  },
+  "fl-calla-and-peony-vase": {
+   "kind": "arrangement"
+  },
+  "fl-purple-orchid-in-mist": {
+   "kind": "garden"
+  },
+  "fl-lilies-in-the-garden": {
+   "kind": "macro"
+  },
+  "fl-amaranthus-arrangement": {
+   "kind": "arrangement"
+  },
+  "fl-sunbeams-on-the-flower-bed": {
+   "kind": "garden"
+  },
+  "fl-anthurium-calla-bouquet": {
+   "kind": "held"
+  },
+  "fl-oleander-by-the-sea": {
+   "kind": "garden"
+  },
+  "fl-striped-pink-lily": {
+   "kind": "macro"
+  },
+  "fl-centerpiece-arrangement": {
+   "kind": "arrangement"
+  },
+  "fl-calla-lily-bouquet": {
+   "kind": "held"
+  }
+ },
+ "order": [
+  "fl-spring-tulips",
+  "fl-calla-and-peony-vase",
+  "fl-purple-orchid-in-mist",
+  "fl-lilies-in-the-garden",
+  "fl-amaranthus-arrangement",
+  "fl-sunbeams-on-the-flower-bed",
+  "fl-anthurium-calla-bouquet",
+  "fl-oleander-by-the-sea",
+  "fl-striped-pink-lily",
+  "fl-centerpiece-arrangement",
+  "fl-calla-lily-bouquet"
+ ],
+ "border_px": 8,
+ "border": "#FFFFFF",
+ "_comment": "Board kholthaus8/peace (pin.it/6BWc5mVft), flowers only, 11 photos per video and none shared between the three; 40 BPM = 1.5 s per photo, no padding to a bar line (16.5 s). One background per video, matched to its flowers. Left out: the coast, flower stall, blossom street and lily pond (not flower photos), soft pin 14, creator-watermarked and licence-plate pins, non-flower pins. Version 3: tulip stripes, hard cuts. Garden greens and pink-and-green blooms.",
+ "end_on_bar": false
+}
