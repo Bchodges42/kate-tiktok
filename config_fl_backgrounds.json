@@ -26,71 +26,14 @@
   "fl-pink-amaryllis": {
    "kind": "macro"
   },
-  "fl-ruffled-gladiolus": {
-   "kind": "bloom"
-  },
-  "fl-armful-of-vases": {
-   "kind": "held"
-  },
-  "fl-spring-tulips": {
-   "kind": "garden"
-  },
-  "fl-lilies-in-the-garden": {
-   "kind": "macro"
-  },
-  "fl-bridal-orchid-bouquet": {
-   "kind": "held"
-  },
-  "fl-stargazer-lilies-by-lamp": {
-   "kind": "macro"
-  },
-  "fl-hydrangea-anthurium-vase": {
-   "kind": "arrangement"
-  },
-  "fl-coast-and-thrift-flowers": {
-   "kind": "scenery"
-  },
-  "fl-amaranthus-arrangement": {
-   "kind": "arrangement"
-  },
-  "fl-white-wrapped-bouquet": {
-   "kind": "held"
-  },
-  "fl-peonies-and-lilac": {
-   "kind": "arrangement"
-  },
-  "fl-striped-pink-lily": {
-   "kind": "macro"
-  },
   "fl-centerpiece-arrangement": {
    "kind": "arrangement"
   },
-  "fl-cream-and-pink-lilies": {
-   "kind": "macro"
+  "fl-basket-of-roses": {
+   "kind": "basket"
   },
-  "fl-flower-stall": {
-   "kind": "market"
-  },
-  "fl-purple-orchid-in-mist": {
-   "kind": "garden"
-  },
-  "fl-calla-lily-bouquet": {
+  "fl-armful-of-vases": {
    "kind": "held"
-  },
-  "fl-striped-carnations": {
-   "kind": "bloom"
-  },
-  "fl-white-lilies-in-the-mist": {
-   "kind": "garden"
-  },
-  "fl-tulip-and-chamomile-armful": {
-   "kind": "held"
-  },
-  "fl-oleander-by-the-sea": {
-   "kind": "garden"
-  },
-  "fl-cherry-blossom-street": {
-   "kind": "street"
   },
   "fl-calla-and-peony-vase": {
    "kind": "arrangement"
@@ -98,73 +41,110 @@
   "fl-pink-bellflowers": {
    "kind": "bloom"
   },
-  "fl-sunbeams-on-the-flower-bed": {
-   "kind": "garden"
+  "fl-stargazer-lilies-by-lamp": {
+   "kind": "macro"
   },
   "fl-tall-garden-installations": {
    "kind": "installation"
   },
-  "fl-anthurium-calla-bouquet": {
-   "kind": "held"
+  "fl-orange-lilies": {
+   "kind": "macro"
   },
-  "fl-lily-pond": {
-   "kind": "water"
-  },
-  "fl-tiger-lilies-on-a-table": {
-   "kind": "arrangement"
-  },
-  "fl-white-orchids-in-the-garden": {
+  "fl-oleander-by-the-sea": {
    "kind": "garden"
   },
-  "fl-pastel-bouquet": {
-   "kind": "held"
+  "fl-peonies-and-lilac": {
+   "kind": "arrangement"
   },
-  "fl-basket-of-roses": {
-   "kind": "basket"
+  "fl-white-lilies-in-the-mist": {
+   "kind": "garden"
   },
-  "fl-orange-lilies": {
+  "fl-amaranthus-arrangement": {
+   "kind": "arrangement"
+  },
+  "fl-cream-and-pink-lilies": {
    "kind": "macro"
   },
   "fl-viburnum-orchid-urns": {
    "kind": "arrangement"
+  },
+  "fl-anthurium-calla-bouquet": {
+   "kind": "held"
+  },
+  "fl-striped-pink-lily": {
+   "kind": "macro"
+  },
+  "fl-purple-orchid-in-mist": {
+   "kind": "garden"
+  },
+  "fl-bridal-orchid-bouquet": {
+   "kind": "held"
+  },
+  "fl-spring-tulips": {
+   "kind": "garden"
+  },
+  "fl-ruffled-gladiolus": {
+   "kind": "bloom"
+  },
+  "fl-white-orchids-in-the-garden": {
+   "kind": "garden"
+  },
+  "fl-white-wrapped-bouquet": {
+   "kind": "held"
+  },
+  "fl-sunbeams-on-the-flower-bed": {
+   "kind": "garden"
+  },
+  "fl-lilies-in-the-garden": {
+   "kind": "macro"
+  },
+  "fl-calla-lily-bouquet": {
+   "kind": "held"
+  },
+  "fl-hydrangea-anthurium-vase": {
+   "kind": "arrangement"
+  },
+  "fl-tulip-and-chamomile-armful": {
+   "kind": "held"
+  },
+  "fl-tiger-lilies-on-a-table": {
+   "kind": "arrangement"
+  },
+  "fl-striped-carnations": {
+   "kind": "bloom"
   }
  },
  "order": [
   "fl-pink-amaryllis",
-  "fl-ruffled-gladiolus",
-  "fl-armful-of-vases",
-  "fl-spring-tulips",
-  "fl-lilies-in-the-garden",
-  "fl-bridal-orchid-bouquet",
-  "fl-stargazer-lilies-by-lamp",
-  "fl-hydrangea-anthurium-vase",
-  "fl-coast-and-thrift-flowers",
-  "fl-amaranthus-arrangement",
-  "fl-white-wrapped-bouquet",
-  "fl-peonies-and-lilac",
-  "fl-striped-pink-lily",
   "fl-centerpiece-arrangement",
-  "fl-cream-and-pink-lilies",
-  "fl-flower-stall",
-  "fl-purple-orchid-in-mist",
-  "fl-calla-lily-bouquet",
-  "fl-striped-carnations",
-  "fl-white-lilies-in-the-mist",
-  "fl-tulip-and-chamomile-armful",
-  "fl-oleander-by-the-sea",
-  "fl-cherry-blossom-street",
+  "fl-basket-of-roses",
+  "fl-armful-of-vases",
   "fl-calla-and-peony-vase",
   "fl-pink-bellflowers",
-  "fl-sunbeams-on-the-flower-bed",
+  "fl-stargazer-lilies-by-lamp",
   "fl-tall-garden-installations",
-  "fl-anthurium-calla-bouquet",
-  "fl-lily-pond",
-  "fl-tiger-lilies-on-a-table",
-  "fl-white-orchids-in-the-garden",
-  "fl-pastel-bouquet",
-  "fl-basket-of-roses",
   "fl-orange-lilies",
-  "fl-viburnum-orchid-urns"
+  "fl-oleander-by-the-sea",
+  "fl-peonies-and-lilac",
+  "fl-white-lilies-in-the-mist",
+  "fl-amaranthus-arrangement",
+  "fl-cream-and-pink-lilies",
+  "fl-viburnum-orchid-urns",
+  "fl-anthurium-calla-bouquet",
+  "fl-striped-pink-lily",
+  "fl-purple-orchid-in-mist",
+  "fl-bridal-orchid-bouquet",
+  "fl-spring-tulips",
+  "fl-ruffled-gladiolus",
+  "fl-white-orchids-in-the-garden",
+  "fl-white-wrapped-bouquet",
+  "fl-sunbeams-on-the-flower-bed",
+  "fl-lilies-in-the-garden",
+  "fl-calla-lily-bouquet",
+  "fl-hydrangea-anthurium-vase",
+  "fl-tulip-and-chamomile-armful",
+  "fl-tiger-lilies-on-a-table",
+  "fl-striped-carnations"
  ],
  "bg_cycle": [
   {
@@ -175,9 +155,6 @@
   },
   {
    "image": "images/bg-tulip-stripes.jpg"
-  },
-  {
-   "image": "images/bg-scalloped-pink.jpg"
   },
   {
    "image": "images/bg-ruffled-curtain.jpg"
@@ -192,5 +169,5 @@
  "bg_every": 5,
  "border_px": 8,
  "border": "#FFFFFF",
- "_comment": "Board kholthaus8/peace (pin.it/6BWc5mVft), now mostly florals: the feed gives the newest 50 of 79 pins. 35 photos, 100 BPM (0.6 s), the background changes every 5 photos: scalloped pink, ruffled curtain, tulip stripes, then round again and ends on pink so it loops. Backgrounds are the user's three pictures: pink (810x1440) patched where a 'Meta AI' watermark sat on the bottom border, tulip stripes trimmed 73 px from each side to reach 9:16. Left out: soft pins 14, 38, 47, 48; pin 17 (creator watermark), 30 (car licence plate), 40-46 and 49 (not florals: text cards, coffee foam, hillside, leaves, incense, peace wreath)."
+ "_comment": "Board kholthaus8/peace (pin.it/6BWc5mVft), now mostly florals: the feed gives the newest 50 of 79 pins. 30 flower-only photos, 100 BPM (0.6 s), the background changes every 5 photos: scalloped pink, ruffled curtain, tulip stripes, curtain, tulip stripes, pink. Backgrounds are the user's three pictures: pink (810x1440) patched where a 'Meta AI' watermark sat on the bottom border, tulip stripes trimmed 73 px from each side to reach 9:16. Left out: soft pins 14, 38, 47, 48; pin 17 (creator watermark), 30 (car licence plate), 40-46 and 49 (not florals: text cards, coffee foam, hillside, leaves, incense, peace wreath). Flowers only (on request): also left out the coast, the flower stall, the cherry-blossom street, the lily pond and one bouquet with a brand name on its wrapper."
 }

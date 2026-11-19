@@ -1,42 +1,37 @@
-100 BPM steady, one photo per beat (0.600 s), 35 photos, 36 beats = 21.60 s, ends on a bar line
+100 BPM steady, one photo per beat (0.600 s), 30 photos, 32 beats = 19.20 s, ends on a bar line
 hard cuts; beat sync: worst offset 0.00 frames -> PASS
-stillness: max held-frame diff 0.066 -> PASS
+stillness: max held-frame diff 0.062 -> PASS
 photos: whole (no cropping), own shape (no stretching), none repeated -> PASS
 variety: no two photos of the same kind back to back -> PASS
-screen filled per photo: 30%-80% (whole photos; wide ones are shorter)
+screen filled per photo: 34%-80% (whole photos; wide ones are shorter)
 
  1.   0.00s  macro     fl-pink-amaryllis
- 2.   0.60s  bloom     fl-ruffled-gladiolus
- 3.   1.20s  held      fl-armful-of-vases
- 4.   1.80s  garden    fl-spring-tulips
- 5.   2.40s  macro     fl-lilies-in-the-garden
- 6.   3.00s  held      fl-bridal-orchid-bouquet
+ 2.   0.60s  arrangement fl-centerpiece-arrangement
+ 3.   1.20s  basket    fl-basket-of-roses
+ 4.   1.80s  held      fl-armful-of-vases
+ 5.   2.40s  arrangement fl-calla-and-peony-vase
+ 6.   3.00s  bloom     fl-pink-bellflowers
  7.   3.60s  macro     fl-stargazer-lilies-by-lamp
- 8.   4.20s  arrangement fl-hydrangea-anthurium-vase
- 9.   4.80s  scenery   fl-coast-and-thrift-flowers
-10.   5.40s  arrangement fl-amaranthus-arrangement
-11.   6.00s  held      fl-white-wrapped-bouquet
-12.   6.60s  arrangement fl-peonies-and-lilac
-13.   7.20s  macro     fl-striped-pink-lily
-14.   7.80s  arrangement fl-centerpiece-arrangement
-15.   8.40s  macro     fl-cream-and-pink-lilies
-16.   9.00s  market    fl-flower-stall
-17.   9.60s  garden    fl-purple-orchid-in-mist
-18.  10.20s  held      fl-calla-lily-bouquet
-19.  10.80s  bloom     fl-striped-carnations
-20.  11.40s  garden    fl-white-lilies-in-the-mist
-21.  12.00s  held      fl-tulip-and-chamomile-armful
-22.  12.60s  garden    fl-oleander-by-the-sea
-23.  13.20s  street    fl-cherry-blossom-street
-24.  13.80s  arrangement fl-calla-and-peony-vase
-25.  14.40s  bloom     fl-pink-bellflowers
-26.  15.00s  garden    fl-sunbeams-on-the-flower-bed
-27.  15.60s  installation fl-tall-garden-installations
-28.  16.20s  held      fl-anthurium-calla-bouquet
-29.  16.80s  water     fl-lily-pond
-30.  17.40s  arrangement fl-tiger-lilies-on-a-table
-31.  18.00s  garden    fl-white-orchids-in-the-garden
-32.  18.60s  held      fl-pastel-bouquet
-33.  19.20s  basket    fl-basket-of-roses
-34.  19.80s  macro     fl-orange-lilies
-35.  20.40s  arrangement fl-viburnum-orchid-urns
+ 8.   4.20s  installation fl-tall-garden-installations
+ 9.   4.80s  macro     fl-orange-lilies
+10.   5.40s  garden    fl-oleander-by-the-sea
+11.   6.00s  arrangement fl-peonies-and-lilac
+12.   6.60s  garden    fl-white-lilies-in-the-mist
+13.   7.20s  arrangement fl-amaranthus-arrangement
+14.   7.80s  macro     fl-cream-and-pink-lilies
+15.   8.40s  arrangement fl-viburnum-orchid-urns
+16.   9.00s  held      fl-anthurium-calla-bouquet
+17.   9.60s  macro     fl-striped-pink-lily
+18.  10.20s  garden    fl-purple-orchid-in-mist
+19.  10.80s  held      fl-bridal-orchid-bouquet
+20.  11.40s  garden    fl-spring-tulips
+21.  12.00s  bloom     fl-ruffled-gladiolus
+22.  12.60s  garden    fl-white-orchids-in-the-garden
+23.  13.20s  held      fl-white-wrapped-bouquet
+24.  13.80s  garden    fl-sunbeams-on-the-flower-bed
+25.  14.40s  macro     fl-lilies-in-the-garden
+26.  15.00s  held      fl-calla-lily-bouquet
+27.  15.60s  arrangement fl-hydrangea-anthurium-vase
+28.  16.20s  held      fl-tulip-and-chamomile-armful
+29.  16.80s  arrangement fl-tiger-lilies-on-a-table
+30.  17.40s  bloom     fl-striped-carnations
