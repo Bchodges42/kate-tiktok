@@ -1,0 +1,110 @@
+{
+ "name": "maximalist_board",
+ "vibe": "maximalist vintage layers: knits, plaid, jewellery, olive and rust",
+ "fps": 30,
+ "size": [
+  1080,
+  1920
+ ],
+ "bpm": 40,
+ "background": "#F4ECDA",
+ "grade": {
+  "warmth": 0.015,
+  "lift": 5,
+  "saturation": 1.0,
+  "grain": 2.0,
+  "grain_seed": 13
+ },
+ "images_dir": "images",
+ "version": "mx_cream_cuts",
+ "style": "single",
+ "margin_px": 56,
+ "center_y": 0.5,
+ "images": {
+  "mx-striped-mohair-sweater": {
+   "kind": "sweater"
+  },
+  "mx-stacked-rings": {
+   "kind": "hand"
+  },
+  "mx-bandana-and-jeans": {
+   "kind": "look"
+  },
+  "mx-headscarf-by-the-sea": {
+   "kind": "portrait"
+  },
+  "mx-pearl-cuff": {
+   "kind": "jewel"
+  },
+  "mx-floral-ballet-flats": {
+   "kind": "shoes"
+  },
+  "mx-striped-jacket": {
+   "kind": "jacket"
+  },
+  "mx-plaid-tights": {
+   "kind": "tights"
+  },
+  "mx-yellow-quilted-jacket": {
+   "kind": "jacket"
+  },
+  "mx-floral-coat": {
+   "kind": "coat"
+  },
+  "mx-hoops-and-turquoise-choker": {
+   "kind": "neck"
+  },
+  "mx-rings-ruffle-sleeves": {
+   "kind": "hand"
+  },
+  "mx-braided-claw-clip": {
+   "kind": "hair"
+  },
+  "mx-olive-bag-on-chair": {
+   "kind": "bag"
+  },
+  "mx-braid-and-leather": {
+   "kind": "hair"
+  },
+  "mx-coin-drop-necklace": {
+   "kind": "neck"
+  },
+  "mx-red-embroidered-jacket": {
+   "kind": "jacket"
+  },
+  "mx-lace-top-boots": {
+   "kind": "shoes"
+  },
+  "mx-feather-trim-jacket": {
+   "kind": "jacket"
+  },
+  "mx-black-wide-leg-look": {
+   "kind": "look"
+  }
+ },
+ "order": [
+  "mx-striped-mohair-sweater",
+  "mx-stacked-rings",
+  "mx-bandana-and-jeans",
+  "mx-headscarf-by-the-sea",
+  "mx-pearl-cuff",
+  "mx-floral-ballet-flats",
+  "mx-striped-jacket",
+  "mx-plaid-tights",
+  "mx-yellow-quilted-jacket",
+  "mx-floral-coat",
+  "mx-hoops-and-turquoise-choker",
+  "mx-rings-ruffle-sleeves",
+  "mx-braided-claw-clip",
+  "mx-olive-bag-on-chair",
+  "mx-braid-and-leather",
+  "mx-coin-drop-necklace",
+  "mx-red-embroidered-jacket",
+  "mx-lace-top-boots",
+  "mx-feather-trim-jacket",
+  "mx-black-wide-leg-look"
+ ],
+ "border_px": 8,
+ "border": "#FFFFFF",
+ "_comment": "Board kholthaus8/maximalist (pin.it/14W3UhxR6), 39 sharp pins split between the two videos so none repeats (20 and 19). 40 BPM = 1.5 s per photo, 20 beats = exactly 30 s (the 19-photo video holds its last photo 3 s). Background picture trimmed 234 px top and bottom to reach 9:16 (a repeating pattern). Version 1: neutral cream #F4ECDA, hard cuts."
+}

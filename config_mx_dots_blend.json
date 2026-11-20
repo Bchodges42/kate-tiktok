@@ -1,0 +1,111 @@
+{
+ "name": "maximalist_board",
+ "vibe": "maximalist vintage layers: knits, plaid, jewellery, olive and rust",
+ "fps": 30,
+ "size": [
+  1080,
+  1920
+ ],
+ "bpm": 40,
+ "background": {
+  "image": "images/bg-black-dots-cream.jpg"
+ },
+ "grade": {
+  "warmth": 0.015,
+  "lift": 5,
+  "saturation": 1.0,
+  "grain": 2.0,
+  "grain_seed": 13
+ },
+ "images_dir": "images",
+ "version": "mx_dots_blend",
+ "style": "single",
+ "margin_px": 90,
+ "center_y": 0.5,
+ "images": {
+  "mx-red-plaid-jacket": {
+   "kind": "jacket"
+  },
+  "mx-polka-dot-jacket": {
+   "kind": "look"
+  },
+  "mx-mint-sneakers": {
+   "kind": "shoes"
+  },
+  "mx-olive-jacket": {
+   "kind": "jacket"
+  },
+  "mx-lace-up-top": {
+   "kind": "top"
+  },
+  "mx-messy-bun": {
+   "kind": "hair"
+  },
+  "mx-green-bag-and-cuffs": {
+   "kind": "bag"
+  },
+  "mx-belt-buckles": {
+   "kind": "accessory"
+  },
+  "mx-olive-mary-janes": {
+   "kind": "shoes"
+  },
+  "mx-striped-cardigan-cafe": {
+   "kind": "sweater"
+  },
+  "mx-kicking-boots": {
+   "kind": "look"
+  },
+  "mx-frog-closure-jacket": {
+   "kind": "jacket"
+  },
+  "mx-plaid-coat-green-tiles": {
+   "kind": "coat2"
+  },
+  "mx-round-sunglasses": {
+   "kind": "glasses"
+  },
+  "mx-gemstone-necklace": {
+   "kind": "neck"
+  },
+  "mx-hammered-gold-rings": {
+   "kind": "hand"
+  },
+  "mx-green-stone-choker": {
+   "kind": "neck"
+  },
+  "mx-snow-day-knit": {
+   "kind": "sweater"
+  },
+  "mx-plaid-skirt-on-steps": {
+   "kind": "look",
+   "hold": 2
+  }
+ },
+ "order": [
+  "mx-red-plaid-jacket",
+  "mx-polka-dot-jacket",
+  "mx-mint-sneakers",
+  "mx-olive-jacket",
+  "mx-lace-up-top",
+  "mx-messy-bun",
+  "mx-green-bag-and-cuffs",
+  "mx-belt-buckles",
+  "mx-olive-mary-janes",
+  "mx-striped-cardigan-cafe",
+  "mx-kicking-boots",
+  "mx-frog-closure-jacket",
+  "mx-plaid-coat-green-tiles",
+  "mx-round-sunglasses",
+  "mx-gemstone-necklace",
+  "mx-hammered-gold-rings",
+  "mx-green-stone-choker",
+  "mx-snow-day-knit",
+  "mx-plaid-skirt-on-steps"
+ ],
+ "border_px": 8,
+ "border": "#FFFFFF",
+ "_comment": "Board kholthaus8/maximalist (pin.it/14W3UhxR6), 39 sharp pins split between the two videos so none repeats (20 and 19). 40 BPM = 1.5 s per photo, 20 beats = exactly 30 s (the 19-photo video holds its last photo 3 s). Background picture trimmed 234 px top and bottom to reach 9:16 (a repeating pattern). Version 2: the user's black-dots-on-cream background, soft 0.4 s eased blends.",
+ "dissolve_frames": 12,
+ "dissolve_ease": 0.7
+}

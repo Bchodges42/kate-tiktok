@@ -1,0 +1,27 @@
+40 BPM steady, one photo per beat (1.500 s), 20 photos, 20 beats = 30.00 s, ends on a bar line
+hard cuts; beat sync: worst offset 0.00 frames -> PASS
+stillness: max held-frame diff 0.029 -> PASS
+photos: whole (no cropping), own shape (no stretching), none repeated -> PASS
+variety: no two photos of the same kind back to back -> PASS
+screen filled per photo: 34%-80% (whole photos; wide ones are shorter)
+
+ 1.   0.00s  sweater   mx-striped-mohair-sweater
+ 2.   1.50s  hand      mx-stacked-rings
+ 3.   3.00s  look      mx-bandana-and-jeans
+ 4.   4.50s  portrait  mx-headscarf-by-the-sea
+ 5.   6.00s  jewel     mx-pearl-cuff
+ 6.   7.50s  shoes     mx-floral-ballet-flats
+ 7.   9.00s  jacket    mx-striped-jacket
+ 8.  10.50s  tights    mx-plaid-tights
+ 9.  12.00s  jacket    mx-yellow-quilted-jacket
+10.  13.50s  coat      mx-floral-coat
+11.  15.00s  neck      mx-hoops-and-turquoise-choker
+12.  16.50s  hand      mx-rings-ruffle-sleeves
+13.  18.00s  hair      mx-braided-claw-clip
+14.  19.50s  bag       mx-olive-bag-on-chair
+15.  21.00s  hair      mx-braid-and-leather
+16.  22.50s  neck      mx-coin-drop-necklace
+17.  24.00s  jacket    mx-red-embroidered-jacket
+18.  25.50s  shoes     mx-lace-top-boots
+19.  27.00s  jacket    mx-feather-trim-jacket
+20.  28.50s  look      mx-black-wide-leg-look
