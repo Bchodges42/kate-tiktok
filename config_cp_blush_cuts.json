@@ -1,0 +1,126 @@
+{
+ "name": "colourful_sequins",
+ "vibe": "colourful sequins",
+ "fps": 30,
+ "size": [
+  1080,
+  1920
+ ],
+ "bpm": 120,
+ "background": "#F7E4E1",
+ "grade": {
+  "warmth": 0.015,
+  "lift": 5,
+  "saturation": 1.0,
+  "grain": 2.0,
+  "grain_seed": 17
+ },
+ "images_dir": "images",
+ "version": "cp_blush_cuts",
+ "style": "single",
+ "margin_px": 56,
+ "center_y": 0.5,
+ "images": {
+  "cp-glitter-face": {
+   "kind": "face"
+  },
+  "cp-pastel-beaded-set": {
+   "kind": "outfit"
+  },
+  "cp-green-sequin-tank": {
+   "kind": "garment"
+  },
+  "cp-chainmail-top-champagne": {
+   "kind": "outfit"
+  },
+  "cp-striped-vespa": {
+   "kind": "scooter"
+  },
+  "cp-patchwork-top": {
+   "kind": "outfit"
+  },
+  "cp-floral-lime-mules": {
+   "kind": "shoes"
+  },
+  "cp-peach-fringe-cape": {
+   "kind": "outfit"
+  },
+  "cp-floral-platform-mules": {
+   "kind": "shoes2"
+  },
+  "cp-lime-skirt-yellow-heels": {
+   "kind": "outfit"
+  },
+  "cp-studded-rust-boots": {
+   "kind": "boots"
+  },
+  "cp-swirl-sequin-dress": {
+   "kind": "garment"
+  },
+  "cp-closet-teal-tights": {
+   "kind": "outfit"
+  },
+  "cp-pink-flowers-bookshelf": {
+   "kind": "flowers"
+  },
+  "cp-sequin-closet-wall": {
+   "kind": "rack"
+  },
+  "cp-feather-hem-green-boots": {
+   "kind": "outfit"
+  },
+  "cp-starburst-eyeliner": {
+   "kind": "eye"
+  },
+  "cp-chandelier-bokeh": {
+   "kind": "bokeh"
+  },
+  "cp-mirror-disc-nails": {
+   "kind": "nails"
+  },
+  "cp-tan-blouse-leopard-chair": {
+   "kind": "outfit"
+  },
+  "cp-tulips-and-books": {
+   "kind": "flowers"
+  },
+  "cp-confetti-sequin-top": {
+   "kind": "garment"
+  },
+  "cp-beaded-gold-heels": {
+   "kind": "shoes3"
+  },
+  "cp-pink-fur-vogue": {
+   "kind": "outfit"
+  }
+ },
+ "order": [
+  "cp-glitter-face",
+  "cp-pastel-beaded-set",
+  "cp-green-sequin-tank",
+  "cp-chainmail-top-champagne",
+  "cp-striped-vespa",
+  "cp-patchwork-top",
+  "cp-floral-lime-mules",
+  "cp-peach-fringe-cape",
+  "cp-floral-platform-mules",
+  "cp-lime-skirt-yellow-heels",
+  "cp-studded-rust-boots",
+  "cp-swirl-sequin-dress",
+  "cp-closet-teal-tights",
+  "cp-pink-flowers-bookshelf",
+  "cp-sequin-closet-wall",
+  "cp-feather-hem-green-boots",
+  "cp-starburst-eyeliner",
+  "cp-chandelier-bokeh",
+  "cp-mirror-disc-nails",
+  "cp-tan-blouse-leopard-chair",
+  "cp-tulips-and-books",
+  "cp-confetti-sequin-top",
+  "cp-beaded-gold-heels",
+  "cp-pink-fur-vogue"
+ ],
+ "border_px": 6,
+ "border": "#FFFFFF",
+ "_comment": "Board kholthaus8/colorful-p2 (pin.it/79pjmma70). 24 photos, 120 BPM (0.5 s) = 12 s, hard cuts, blush #F7E4E1. Opens on the glitter face. Length follows engagement.md (8-15 s, 0.2-0.6 s per photo). Left out: soft pins, creator-watermarked or app-overlay pins."
+}

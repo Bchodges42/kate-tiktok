@@ -1,0 +1,31 @@
+120 BPM steady, one photo per beat (0.500 s), 24 photos, 24 beats = 12.00 s, ends on a bar line
+hard cuts; beat sync: worst offset 0.00 frames -> PASS
+stillness: max held-frame diff 0.044 -> PASS
+photos: whole (no cropping), own shape (no stretching), none repeated -> PASS
+variety: no two photos of the same kind back to back -> PASS
+screen filled per photo: 44%-80% (whole photos; wide ones are shorter)
+
+ 1.   0.00s  face      cp-glitter-face
+ 2.   0.50s  outfit    cp-pastel-beaded-set
+ 3.   1.00s  garment   cp-green-sequin-tank
+ 4.   1.50s  outfit    cp-chainmail-top-champagne
+ 5.   2.00s  scooter   cp-striped-vespa
+ 6.   2.50s  outfit    cp-patchwork-top
+ 7.   3.00s  shoes     cp-floral-lime-mules
+ 8.   3.50s  outfit    cp-peach-fringe-cape
+ 9.   4.00s  shoes2    cp-floral-platform-mules
+10.   4.50s  outfit    cp-lime-skirt-yellow-heels
+11.   5.00s  boots     cp-studded-rust-boots
+12.   5.50s  garment   cp-swirl-sequin-dress
+13.   6.00s  outfit    cp-closet-teal-tights
+14.   6.50s  flowers   cp-pink-flowers-bookshelf
+15.   7.00s  rack      cp-sequin-closet-wall
+16.   7.50s  outfit    cp-feather-hem-green-boots
+17.   8.00s  eye       cp-starburst-eyeliner
+18.   8.50s  bokeh     cp-chandelier-bokeh
+19.   9.00s  nails     cp-mirror-disc-nails
+20.   9.50s  outfit    cp-tan-blouse-leopard-chair
+21.  10.00s  flowers   cp-tulips-and-books
+22.  10.50s  garment   cp-confetti-sequin-top
+23.  11.00s  shoes3    cp-beaded-gold-heels
+24.  11.50s  outfit    cp-pink-fur-vogue

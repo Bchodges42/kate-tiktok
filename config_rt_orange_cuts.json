@@ -1,0 +1,112 @@
+{
+ "name": "retro_60s70s",
+ "vibe": "retro 60s70s",
+ "fps": 30,
+ "size": [
+  1080,
+  1920
+ ],
+ "bpm": 100,
+ "background": {
+  "image": "images/bg-retro-orange-circles.jpg"
+ },
+ "grade": {
+  "warmth": 0.015,
+  "lift": 5,
+  "saturation": 1.0,
+  "grain": 2.0,
+  "grain_seed": 17
+ },
+ "images_dir": "images",
+ "version": "rt_orange_cuts",
+ "style": "single",
+ "margin_px": 90,
+ "center_y": 0.5,
+ "images": {
+  "rt-pop-circles-group": {
+   "kind": "group"
+  },
+  "rt-blue-socks-clogs": {
+   "kind": "shoes"
+  },
+  "rt-boots-open-view": {
+   "kind": "boots"
+  },
+  "rt-upside-down-polka-top": {
+   "kind": "flatlay"
+  },
+  "rt-striped-tights-ad": {
+   "kind": "tights2"
+  },
+  "rt-tights-and-minis-collage": {
+   "kind": "collage"
+  },
+  "rt-button-covered-tights": {
+   "kind": "tights"
+  },
+  "rt-blonde-fringe-eye": {
+   "kind": "closeup"
+  },
+  "rt-catalogue-minis": {
+   "kind": "catalogue"
+  },
+  "rt-vogue-new-young-fashion": {
+   "kind": "cover"
+  },
+  "rt-polka-dot-illustration": {
+   "kind": "illus"
+  },
+  "rt-pastel-eyeshadow-grid": {
+   "kind": "eyes"
+  },
+  "rt-pink-feather-skirt": {
+   "kind": "feathers"
+  },
+  "rt-legs-should-be-seen": {
+   "kind": "tights3"
+  },
+  "rt-orange-minidress-line-up": {
+   "kind": "group2"
+  },
+  "rt-silver-boots-and-tights": {
+   "kind": "legs2"
+  },
+  "rt-mint-plaid-dress": {
+   "kind": "dress"
+  },
+  "rt-mod-trio-dresses": {
+   "kind": "group3"
+  },
+  "rt-flares-spread": {
+   "kind": "group4"
+  },
+  "rt-blue-liner-portrait": {
+   "kind": "portrait"
+  }
+ },
+ "order": [
+  "rt-pop-circles-group",
+  "rt-blue-socks-clogs",
+  "rt-boots-open-view",
+  "rt-upside-down-polka-top",
+  "rt-striped-tights-ad",
+  "rt-tights-and-minis-collage",
+  "rt-button-covered-tights",
+  "rt-blonde-fringe-eye",
+  "rt-catalogue-minis",
+  "rt-vogue-new-young-fashion",
+  "rt-polka-dot-illustration",
+  "rt-pastel-eyeshadow-grid",
+  "rt-pink-feather-skirt",
+  "rt-legs-should-be-seen",
+  "rt-orange-minidress-line-up",
+  "rt-silver-boots-and-tights",
+  "rt-mint-plaid-dress",
+  "rt-mod-trio-dresses",
+  "rt-flares-spread",
+  "rt-blue-liner-portrait"
+ ],
+ "border_px": 10,
+ "border": "#FFFFFF",
+ "_comment": "Board kholthaus8/60s-70s (pin.it/1cXYTK5MQ). 20 photos, 100 BPM (0.6 s) = 12 s, hard cuts, on the user's 70s orange circles wallpaper (trimmed 111 px of height to reach 9:16; 2x enlarged so a little soft). Length follows engagement.md (8-15 s, 0.2-0.6 s per photo). Left out: soft pins, creator-watermarked or app-overlay pins."
+}

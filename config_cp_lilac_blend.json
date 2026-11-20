@@ -1,0 +1,112 @@
+{
+ "name": "colourful_sequins",
+ "vibe": "colourful sequins",
+ "fps": 30,
+ "size": [
+  1080,
+  1920
+ ],
+ "bpm": 100,
+ "background": "#D8CDE3",
+ "grade": {
+  "warmth": 0.015,
+  "lift": 5,
+  "saturation": 1.0,
+  "grain": 2.0,
+  "grain_seed": 17
+ },
+ "images_dir": "images",
+ "version": "cp_lilac_blend",
+ "style": "single",
+ "margin_px": 56,
+ "center_y": 0.5,
+ "images": {
+  "cp-feather-hem-green-boots": {
+   "kind": "outfit"
+  },
+  "cp-pink-ostrich-feathers": {
+   "kind": "texture"
+  },
+  "cp-tan-blouse-leopard-chair": {
+   "kind": "outfit"
+  },
+  "cp-studded-rust-boots": {
+   "kind": "boots"
+  },
+  "cp-patchwork-top": {
+   "kind": "outfit"
+  },
+  "cp-sparkling-glasses": {
+   "kind": "sparkle"
+  },
+  "cp-green-sequin-tank": {
+   "kind": "garment"
+  },
+  "cp-chainmail-top-champagne": {
+   "kind": "outfit"
+  },
+  "cp-starburst-eyeliner": {
+   "kind": "eye"
+  },
+  "cp-pink-fur-vogue": {
+   "kind": "outfit"
+  },
+  "cp-swirl-sequin-dress": {
+   "kind": "garment"
+  },
+  "cp-lime-skirt-yellow-heels": {
+   "kind": "outfit"
+  },
+  "cp-floral-platform-mules": {
+   "kind": "shoes2"
+  },
+  "cp-sequin-closet-wall": {
+   "kind": "rack"
+  },
+  "cp-confetti-sequin-top": {
+   "kind": "garment"
+  },
+  "cp-mirror-disc-nails": {
+   "kind": "nails"
+  },
+  "cp-glitter-face": {
+   "kind": "face"
+  },
+  "cp-closet-teal-tights": {
+   "kind": "outfit"
+  },
+  "cp-striped-vespa": {
+   "kind": "scooter"
+  },
+  "cp-beaded-gold-heels": {
+   "kind": "shoes3"
+  }
+ },
+ "order": [
+  "cp-feather-hem-green-boots",
+  "cp-pink-ostrich-feathers",
+  "cp-tan-blouse-leopard-chair",
+  "cp-studded-rust-boots",
+  "cp-patchwork-top",
+  "cp-sparkling-glasses",
+  "cp-green-sequin-tank",
+  "cp-chainmail-top-champagne",
+  "cp-starburst-eyeliner",
+  "cp-pink-fur-vogue",
+  "cp-swirl-sequin-dress",
+  "cp-lime-skirt-yellow-heels",
+  "cp-floral-platform-mules",
+  "cp-sequin-closet-wall",
+  "cp-confetti-sequin-top",
+  "cp-mirror-disc-nails",
+  "cp-glitter-face",
+  "cp-closet-teal-tights",
+  "cp-striped-vespa",
+  "cp-beaded-gold-heels"
+ ],
+ "border_px": 6,
+ "border": "#FFFFFF",
+ "_comment": "Same board, a different order and look: 20 photos, 100 BPM (0.6 s) = 12 s, soft 0.4 s blends, dusty lilac #D8CDE3. Opens on the feather-hem skirt. Length follows engagement.md (8-15 s, 0.2-0.6 s per photo). Left out: soft pins, creator-watermarked or app-overlay pins.",
+ "dissolve_frames": 12,
+ "dissolve_ease": 0.7
+}

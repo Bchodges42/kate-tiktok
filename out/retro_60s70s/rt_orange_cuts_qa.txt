@@ -1,0 +1,27 @@
+100 BPM steady, one photo per beat (0.600 s), 20 photos, 20 beats = 12.00 s, ends on a bar line
+hard cuts; beat sync: worst offset 0.00 frames -> PASS
+stillness: max held-frame diff 0.051 -> PASS
+photos: whole (no cropping), own shape (no stretching), none repeated -> PASS
+variety: no two photos of the same kind back to back -> PASS
+screen filled per photo: 26%-69% (whole photos; wide ones are shorter)
+
+ 1.   0.00s  group     rt-pop-circles-group
+ 2.   0.60s  shoes     rt-blue-socks-clogs
+ 3.   1.20s  boots     rt-boots-open-view
+ 4.   1.80s  flatlay   rt-upside-down-polka-top
+ 5.   2.40s  tights2   rt-striped-tights-ad
+ 6.   3.00s  collage   rt-tights-and-minis-collage
+ 7.   3.60s  tights    rt-button-covered-tights
+ 8.   4.20s  closeup   rt-blonde-fringe-eye
+ 9.   4.80s  catalogue rt-catalogue-minis
+10.   5.40s  cover     rt-vogue-new-young-fashion
+11.   6.00s  illus     rt-polka-dot-illustration
+12.   6.60s  eyes      rt-pastel-eyeshadow-grid
+13.   7.20s  feathers  rt-pink-feather-skirt
+14.   7.80s  tights3   rt-legs-should-be-seen
+15.   8.40s  group2    rt-orange-minidress-line-up
+16.   9.00s  legs2     rt-silver-boots-and-tights
+17.   9.60s  dress     rt-mint-plaid-dress
+18.  10.20s  group3    rt-mod-trio-dresses
+19.  10.80s  group4    rt-flares-spread
+20.  11.40s  portrait  rt-blue-liner-portrait

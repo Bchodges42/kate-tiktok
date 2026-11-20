@@ -1,0 +1,27 @@
+100 BPM steady, one photo per beat (0.600 s), 20 photos, 20 beats = 12.00 s, ends on a bar line
+dissolve: 12 frames (0.40 s) into each photo, finishing on the beat; beat sync: worst offset 0.00 frames -> PASS
+stillness: max held-frame diff 0.578 -> PASS
+photos: whole (no cropping), own shape (no stretching), none repeated -> PASS
+variety: no two photos of the same kind back to back -> PASS
+screen filled per photo: 44%-80% (whole photos; wide ones are shorter)
+
+ 1.   0.00s  outfit    cp-feather-hem-green-boots
+ 2.   0.60s  texture   cp-pink-ostrich-feathers
+ 3.   1.20s  outfit    cp-tan-blouse-leopard-chair
+ 4.   1.80s  boots     cp-studded-rust-boots
+ 5.   2.40s  outfit    cp-patchwork-top
+ 6.   3.00s  sparkle   cp-sparkling-glasses
+ 7.   3.60s  garment   cp-green-sequin-tank
+ 8.   4.20s  outfit    cp-chainmail-top-champagne
+ 9.   4.80s  eye       cp-starburst-eyeliner
+10.   5.40s  outfit    cp-pink-fur-vogue
+11.   6.00s  garment   cp-swirl-sequin-dress
+12.   6.60s  outfit    cp-lime-skirt-yellow-heels
+13.   7.20s  shoes2    cp-floral-platform-mules
+14.   7.80s  rack      cp-sequin-closet-wall
+15.   8.40s  garment   cp-confetti-sequin-top
+16.   9.00s  nails     cp-mirror-disc-nails
+17.   9.60s  face      cp-glitter-face
+18.  10.20s  outfit    cp-closet-teal-tights
+19.  10.80s  scooter   cp-striped-vespa
+20.  11.40s  shoes3    cp-beaded-gold-heels

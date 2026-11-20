@@ -1,0 +1,110 @@
+{
+ "name": "retro_60s70s",
+ "vibe": "retro 60s70s",
+ "fps": 30,
+ "size": [
+  1080,
+  1920
+ ],
+ "bpm": 120,
+ "background": "#C4DDD3",
+ "grade": {
+  "warmth": 0.015,
+  "lift": 5,
+  "saturation": 1.0,
+  "grain": 2.0,
+  "grain_seed": 17
+ },
+ "images_dir": "images",
+ "version": "rt_mint_cuts",
+ "style": "single",
+ "margin_px": 56,
+ "center_y": 0.5,
+ "images": {
+  "rt-vogue-new-young-fashion": {
+   "kind": "cover"
+  },
+  "rt-orange-minidress-line-up": {
+   "kind": "group2"
+  },
+  "rt-pastel-eyeshadow-grid": {
+   "kind": "eyes"
+  },
+  "rt-tights-and-minis-collage": {
+   "kind": "collage"
+  },
+  "rt-upside-down-polka-top": {
+   "kind": "flatlay"
+  },
+  "rt-catalogue-minis": {
+   "kind": "catalogue"
+  },
+  "rt-silver-boots-and-tights": {
+   "kind": "legs2"
+  },
+  "rt-mint-plaid-dress": {
+   "kind": "dress"
+  },
+  "rt-cat-and-polka-tights": {
+   "kind": "legs"
+  },
+  "rt-boots-open-view": {
+   "kind": "boots"
+  },
+  "rt-pop-circles-group": {
+   "kind": "group"
+  },
+  "rt-legs-should-be-seen": {
+   "kind": "tights3"
+  },
+  "rt-mod-trio-dresses": {
+   "kind": "group3"
+  },
+  "rt-blonde-fringe-eye": {
+   "kind": "closeup"
+  },
+  "rt-pink-feather-skirt": {
+   "kind": "feathers"
+  },
+  "rt-button-covered-tights": {
+   "kind": "tights"
+  },
+  "rt-blue-socks-clogs": {
+   "kind": "shoes"
+  },
+  "rt-polka-dot-illustration": {
+   "kind": "illus"
+  },
+  "rt-flares-spread": {
+   "kind": "group4"
+  },
+  "rt-blue-liner-portrait": {
+   "kind": "portrait"
+  }
+ },
+ "order": [
+  "rt-vogue-new-young-fashion",
+  "rt-orange-minidress-line-up",
+  "rt-pastel-eyeshadow-grid",
+  "rt-tights-and-minis-collage",
+  "rt-upside-down-polka-top",
+  "rt-catalogue-minis",
+  "rt-silver-boots-and-tights",
+  "rt-mint-plaid-dress",
+  "rt-cat-and-polka-tights",
+  "rt-boots-open-view",
+  "rt-pop-circles-group",
+  "rt-legs-should-be-seen",
+  "rt-mod-trio-dresses",
+  "rt-blonde-fringe-eye",
+  "rt-pink-feather-skirt",
+  "rt-button-covered-tights",
+  "rt-blue-socks-clogs",
+  "rt-polka-dot-illustration",
+  "rt-flares-spread",
+  "rt-blue-liner-portrait"
+ ],
+ "border_px": 6,
+ "border": "#FFFFFF",
+ "_comment": "Same board, another order: 20 photos, 120 BPM (0.5 s) = 10 s, hard cuts, soft mint #C4DDD3 so the oranges and pinks pop. Opens on the Vogue cover. Length follows engagement.md (8-15 s, 0.2-0.6 s per photo). Left out: soft pins, creator-watermarked or app-overlay pins."
+}
