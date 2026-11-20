@@ -1,26 +1,25 @@
-40 BPM steady, one photo per beat (1.500 s), 19 photos, 20 beats = 30.00 s, ends on a bar line
+40 BPM steady, one photo per beat (1.500 s), 18 photos, 20 beats = 30.00 s, ends on a bar line
 dissolve: 12 frames (0.40 s) into each photo, finishing on the beat; beat sync: worst offset 0.00 frames -> PASS
-stillness: max held-frame diff 0.598 -> PASS
+stillness: max held-frame diff 0.731 -> PASS
 photos: whole (no cropping), own shape (no stretching), none repeated -> PASS
 variety: no two photos of the same kind back to back -> PASS
 screen filled per photo: 32%-69% (whole photos; wide ones are shorter)
 
  1.   0.00s  jacket    mx-red-plaid-jacket
- 2.   1.50s  look      mx-polka-dot-jacket
- 3.   3.00s  shoes     mx-mint-sneakers
- 4.   4.50s  jacket    mx-olive-jacket
- 5.   6.00s  top       mx-lace-up-top
- 6.   7.50s  hair      mx-messy-bun
- 7.   9.00s  bag       mx-green-bag-and-cuffs
- 8.  10.50s  accessory mx-belt-buckles
- 9.  12.00s  shoes     mx-olive-mary-janes
-10.  13.50s  sweater   mx-striped-cardigan-cafe
-11.  15.00s  look      mx-kicking-boots
-12.  16.50s  jacket    mx-frog-closure-jacket
-13.  18.00s  coat2     mx-plaid-coat-green-tiles
-14.  19.50s  glasses   mx-round-sunglasses
-15.  21.00s  neck      mx-gemstone-necklace
-16.  22.50s  hand      mx-hammered-gold-rings
-17.  24.00s  neck      mx-green-stone-choker
-18.  25.50s  sweater   mx-snow-day-knit
-19.  27.00s  look      mx-plaid-skirt-on-steps
+ 2.   3.00s  neck      mx-gemstone-necklace
+ 3.   4.50s  sweater   mx-snow-day-knit
+ 4.   6.00s  bag       mx-green-bag-and-cuffs
+ 5.   7.50s  hair      mx-messy-bun
+ 6.   9.00s  top       mx-lace-up-top
+ 7.  10.50s  sweater   mx-striped-cardigan-cafe
+ 8.  12.00s  hand      mx-hammered-gold-rings
+ 9.  13.50s  jacket    mx-olive-jacket
+10.  15.00s  look      mx-polka-dot-jacket
+11.  16.50s  accessory mx-belt-buckles
+12.  18.00s  coat2     mx-plaid-coat-green-tiles
+13.  19.50s  look      mx-plaid-skirt-on-steps
+14.  21.00s  glasses   mx-round-sunglasses
+15.  22.50s  neck      mx-green-stone-choker
+16.  24.00s  look      mx-kicking-boots
+17.  25.50s  jacket    mx-frog-closure-jacket
+18.  27.00s  shoes     mx-olive-mary-janes
