@@ -1,0 +1,39 @@
+143.6 BPM steady, one photo per beat (0.418 s), 32 photos, 32 beats = 13.37 s, ends on a bar line
+hard cuts; beat sync: worst offset 0.49 frames -> PASS
+stillness: max held-frame diff 0.049 -> PASS
+photos: whole (no cropping), own shape (no stretching), none repeated -> PASS
+variety: no two photos of the same kind back to back -> PASS
+screen filled per photo: 24%-75% (whole photos; wide ones are shorter)
+
+ 1.   0.00s  group     rt-pop-circles-group
+ 2.   0.43s  dress     rt-mint-plaid-dress
+ 3.   0.83s  tights4   rt-tights-line-up
+ 4.   1.27s  room      rt-purple-carpet-phone
+ 5.   1.67s  illus2    rt-coat-illustrations
+ 6.   2.10s  spread    rt-we-dare-you-spread
+ 7.   2.50s  group4    rt-flares-spread
+ 8.   2.93s  pose2     rt-red-stripe-reader
+ 9.   3.33s  tights2   rt-striped-tights-ad
+10.   3.77s  illus     rt-polka-dot-illustration
+11.   4.17s  group5    rt-wrangler-jeans-ad
+12.   4.60s  closeup   rt-blonde-fringe-eye
+13.   5.00s  group2    rt-orange-minidress-line-up
+14.   5.43s  catalogue rt-catalogue-minis
+15.   5.83s  glasses   rt-round-sunglasses-girl
+16.   6.27s  portrait  rt-blue-liner-portrait
+17.   6.70s  tights3   rt-legs-should-be-seen
+18.   7.10s  boots     rt-boots-open-view
+19.   7.53s  grid      rt-sunglasses-faces-grid
+20.   7.93s  flatlay   rt-upside-down-polka-top
+21.   8.37s  shoes2    rt-pastel-shoes-and-tights
+22.   8.77s  group6    rt-striped-berets-group
+23.   9.20s  group3    rt-mod-trio-dresses
+24.   9.60s  eyes      rt-pastel-eyeshadow-grid
+25.  10.03s  shoes     rt-blue-socks-clogs
+26.  10.43s  pose      rt-striped-model-swirl-wall
+27.  10.87s  tights    rt-button-covered-tights
+28.  11.27s  collage   rt-tights-and-minis-collage
+29.  11.70s  cover     rt-vogue-new-young-fashion
+30.  12.13s  feathers  rt-pink-feather-skirt
+31.  12.53s  legs      rt-cat-and-polka-tights
+32.  12.97s  legs2     rt-silver-boots-and-tights
