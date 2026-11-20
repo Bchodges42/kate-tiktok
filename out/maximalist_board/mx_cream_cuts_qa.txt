@@ -3,25 +3,25 @@ hard cuts; beat sync: worst offset 0.00 frames -> PASS
 stillness: max held-frame diff 0.029 -> PASS
 photos: whole (no cropping), own shape (no stretching), none repeated -> PASS
 variety: no two photos of the same kind back to back -> PASS
-screen filled per photo: 34%-80% (whole photos; wide ones are shorter)
+screen filled per photo: 37%-80% (whole photos; wide ones are shorter)
 
  1.   0.00s  sweater   mx-striped-mohair-sweater
- 2.   1.50s  shoes     mx-floral-ballet-flats
- 3.   3.00s  look      mx-bandana-and-jeans
- 4.   4.50s  hair      mx-braided-claw-clip
- 5.   6.00s  jacket    mx-red-embroidered-jacket
- 6.   7.50s  look      mx-black-wide-leg-look
- 7.   9.00s  hand      mx-stacked-rings
- 8.  10.50s  tights    mx-plaid-tights
- 9.  12.00s  bag       mx-olive-bag-on-chair
-10.  13.50s  hand      mx-rings-ruffle-sleeves
-11.  15.00s  portrait  mx-headscarf-by-the-sea
-12.  16.50s  coat      mx-floral-coat
-13.  18.00s  neck      mx-coin-drop-necklace
+ 2.   1.50s  hair      mx-braided-claw-clip
+ 3.   3.00s  accessory mx-belt-buckles
+ 4.   4.50s  look      mx-plaid-skirt-on-steps
+ 5.   6.00s  bag       mx-olive-bag-on-chair
+ 6.   7.50s  hair      mx-messy-bun
+ 7.   9.00s  jacket    mx-red-embroidered-jacket
+ 8.  10.50s  look      mx-black-wide-leg-look
+ 9.  12.00s  jacket    mx-red-plaid-jacket
+10.  13.50s  neck      mx-coin-drop-necklace
+11.  15.00s  tights    mx-plaid-tights
+12.  16.50s  neck      mx-gemstone-necklace
+13.  18.00s  shoes     mx-lace-top-boots
 14.  19.50s  jewel     mx-pearl-cuff
-15.  21.00s  shoes     mx-lace-top-boots
-16.  22.50s  jacket    mx-yellow-quilted-jacket
-17.  24.00s  neck      mx-hoops-and-turquoise-choker
-18.  25.50s  jacket    mx-feather-trim-jacket
-19.  27.00s  hair      mx-braid-and-leather
-20.  28.50s  jacket    mx-striped-jacket
+15.  21.00s  jacket    mx-frog-closure-jacket
+16.  22.50s  hand      mx-rings-ruffle-sleeves
+17.  24.00s  jacket    mx-feather-trim-jacket
+18.  25.50s  sweater   mx-striped-cardigan-cafe
+19.  27.00s  glasses   mx-round-sunglasses
+20.  28.50s  coat      mx-floral-coat

@@ -24,13 +24,19 @@
   "mx-striped-mohair-sweater": {
    "kind": "sweater"
   },
-  "mx-floral-ballet-flats": {
-   "kind": "shoes"
+  "mx-braided-claw-clip": {
+   "kind": "hair"
   },
-  "mx-bandana-and-jeans": {
+  "mx-belt-buckles": {
+   "kind": "accessory"
+  },
+  "mx-plaid-skirt-on-steps": {
    "kind": "look"
   },
-  "mx-braided-claw-clip": {
+  "mx-olive-bag-on-chair": {
+   "kind": "bag"
+  },
+  "mx-messy-bun": {
    "kind": "hair"
   },
   "mx-red-embroidered-jacket": {
@@ -39,72 +45,66 @@
   "mx-black-wide-leg-look": {
    "kind": "look"
   },
-  "mx-stacked-rings": {
-   "kind": "hand"
-  },
-  "mx-plaid-tights": {
-   "kind": "tights"
-  },
-  "mx-olive-bag-on-chair": {
-   "kind": "bag"
-  },
-  "mx-rings-ruffle-sleeves": {
-   "kind": "hand"
-  },
-  "mx-headscarf-by-the-sea": {
-   "kind": "portrait"
-  },
-  "mx-floral-coat": {
-   "kind": "coat"
+  "mx-red-plaid-jacket": {
+   "kind": "jacket"
   },
   "mx-coin-drop-necklace": {
    "kind": "neck"
   },
-  "mx-pearl-cuff": {
-   "kind": "jewel"
+  "mx-plaid-tights": {
+   "kind": "tights"
+  },
+  "mx-gemstone-necklace": {
+   "kind": "neck"
   },
   "mx-lace-top-boots": {
    "kind": "shoes"
   },
-  "mx-yellow-quilted-jacket": {
+  "mx-pearl-cuff": {
+   "kind": "jewel"
+  },
+  "mx-frog-closure-jacket": {
    "kind": "jacket"
   },
-  "mx-hoops-and-turquoise-choker": {
-   "kind": "neck"
+  "mx-rings-ruffle-sleeves": {
+   "kind": "hand"
   },
   "mx-feather-trim-jacket": {
    "kind": "jacket"
   },
-  "mx-braid-and-leather": {
-   "kind": "hair"
+  "mx-striped-cardigan-cafe": {
+   "kind": "sweater"
   },
-  "mx-striped-jacket": {
-   "kind": "jacket"
+  "mx-round-sunglasses": {
+   "kind": "glasses"
+  },
+  "mx-floral-coat": {
+   "kind": "coat"
   }
  },
  "order": [
   "mx-striped-mohair-sweater",
-  "mx-floral-ballet-flats",
-  "mx-bandana-and-jeans",
   "mx-braided-claw-clip",
+  "mx-belt-buckles",
+  "mx-plaid-skirt-on-steps",
+  "mx-olive-bag-on-chair",
+  "mx-messy-bun",
   "mx-red-embroidered-jacket",
   "mx-black-wide-leg-look",
-  "mx-stacked-rings",
-  "mx-plaid-tights",
-  "mx-olive-bag-on-chair",
-  "mx-rings-ruffle-sleeves",
-  "mx-headscarf-by-the-sea",
-  "mx-floral-coat",
+  "mx-red-plaid-jacket",
   "mx-coin-drop-necklace",
-  "mx-pearl-cuff",
+  "mx-plaid-tights",
+  "mx-gemstone-necklace",
   "mx-lace-top-boots",
-  "mx-yellow-quilted-jacket",
-  "mx-hoops-and-turquoise-choker",
+  "mx-pearl-cuff",
+  "mx-frog-closure-jacket",
+  "mx-rings-ruffle-sleeves",
   "mx-feather-trim-jacket",
-  "mx-braid-and-leather",
-  "mx-striped-jacket"
+  "mx-striped-cardigan-cafe",
+  "mx-round-sunglasses",
+  "mx-floral-coat"
  ],
  "border_px": 8,
  "border": "#FFFFFF",
- "_comment": "Board kholthaus8/maximalist (pin.it/14W3UhxR6), 39 sharp pins split between the two videos so none repeats (20 and 19). 40 BPM = 1.5 s per photo, 20 beats = exactly 30 s (the 19-photo video holds its last photo 3 s). Background picture trimmed 234 px top and bottom to reach 9:16 (a repeating pattern). Version 1: neutral cream #F4ECDA, hard cuts. Reshuffled; mint sneakers removed on request."
+ "_comment": "Board kholthaus8/maximalist (pin.it/14W3UhxR6), re-fetched after the user edited the board: 40 sharp pins (mint sneakers removed, blue tortoise glasses and red striped toggle coat added), split 20/20 so none repeats. 40 BPM = 1.5 s per photo, 20 beats = exactly 30 s. Version 1: neutral cream, hard cuts."
 }
