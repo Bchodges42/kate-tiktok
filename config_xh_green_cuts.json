@@ -1,0 +1,128 @@
+{
+ "name": "christmas_hogwarts",
+ "vibe": "Christmas at Hogwarts: snow, candlelight, trees, stone halls",
+ "fps": 30,
+ "size": [
+  1080,
+  1920
+ ],
+ "bpm": 100,
+ "background": {
+  "image": "images/bg-green-velvet-stars.jpg"
+ },
+ "grade": {
+  "warmth": 0.01,
+  "lift": 5,
+  "saturation": 1.0,
+  "grain": 2.0,
+  "grain_seed": 23
+ },
+ "images_dir": "images",
+ "version": "xh_green_cuts",
+ "style": "single",
+ "margin_px": 90,
+ "center_y": 0.5,
+ "images": {
+  "xh-train-on-the-viaduct": {
+   "kind": "train"
+  },
+  "xh-tree-through-the-window": {
+   "kind": "tree"
+  },
+  "xh-stone-archway": {
+   "kind": "corridor"
+  },
+  "xh-trio-in-the-snow": {
+   "kind": "people2"
+  },
+  "xh-snowy-castle-towers": {
+   "kind": "castle"
+  },
+  "xh-starry-great-hall": {
+   "kind": "hall"
+  },
+  "xh-gryffindor-common-room": {
+   "kind": "common"
+  },
+  "xh-snowy-sweet-shop": {
+   "kind": "shop"
+  },
+  "xh-presents-under-the-tree": {
+   "kind": "gifts"
+  },
+  "xh-fireplace-in-the-common-room": {
+   "kind": "fire"
+  },
+  "xh-boy-and-the-great-tree": {
+   "kind": "hall"
+  },
+  "xh-lantern-balcony": {
+   "kind": "balcony"
+  },
+  "xh-castle-and-owl": {
+   "kind": "castle"
+  },
+  "xh-tree-by-the-window": {
+   "kind": "tree"
+  },
+  "xh-antique-books": {
+   "kind": "books"
+  },
+  "xh-candlelit-tree": {
+   "kind": "tree"
+  },
+  "xh-butterbeer-cheers": {
+   "kind": "drink"
+  },
+  "xh-house-scarves": {
+   "kind": "scarves"
+  },
+  "xh-snowy-shop-front": {
+   "kind": "shop"
+  },
+  "xh-sleeping-by-the-fire": {
+   "kind": "people"
+  },
+  "xh-hogsmeade-street-night": {
+   "kind": "street"
+  },
+  "xh-boys-in-the-hall": {
+   "kind": "hall"
+  },
+  "xh-snowy-train-bend": {
+   "kind": "train"
+  },
+  "xh-great-hall-candles": {
+   "kind": "hall"
+  }
+ },
+ "order": [
+  "xh-train-on-the-viaduct",
+  "xh-tree-through-the-window",
+  "xh-stone-archway",
+  "xh-trio-in-the-snow",
+  "xh-snowy-castle-towers",
+  "xh-starry-great-hall",
+  "xh-gryffindor-common-room",
+  "xh-snowy-sweet-shop",
+  "xh-presents-under-the-tree",
+  "xh-fireplace-in-the-common-room",
+  "xh-boy-and-the-great-tree",
+  "xh-lantern-balcony",
+  "xh-castle-and-owl",
+  "xh-tree-by-the-window",
+  "xh-antique-books",
+  "xh-candlelit-tree",
+  "xh-butterbeer-cheers",
+  "xh-house-scarves",
+  "xh-snowy-shop-front",
+  "xh-sleeping-by-the-fire",
+  "xh-hogsmeade-street-night",
+  "xh-boys-in-the-hall",
+  "xh-snowy-train-bend",
+  "xh-great-hall-candles"
+ ],
+ "border_px": 6,
+ "border": "#E8D3A0",
+ "_comment": "Board kholthaus8/christmas-at-hogwarts (pin.it/6QKCDVFbT), 43 pins; 24 used in every version in a different order, 100 BPM (0.6 s) = 14.4 s, hard cuts only. Left out: 17 soft pins under ~500 px, pin 1 (the photo is saved sideways), pins 21 and 33 (watermarks). The feed shows no video pins on this board. User's green velvet and gold stars background (675x1200 enlarged 1.6x, so a little soft)."
+}

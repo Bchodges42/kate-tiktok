@@ -1,0 +1,31 @@
+100 BPM steady, one photo per beat (0.600 s), 24 photos, 24 beats = 14.40 s, ends on a bar line
+hard cuts; beat sync: worst offset 0.00 frames -> PASS
+stillness: max held-frame diff 0.072 -> PASS
+photos: whole (no cropping), own shape (no stretching), none repeated -> PASS
+variety: no two photos of the same kind back to back -> PASS
+screen filled per photo: 26%-74% (whole photos; wide ones are shorter)
+
+ 1.   0.00s  train     xh-train-on-the-viaduct
+ 2.   0.60s  tree      xh-tree-through-the-window
+ 3.   1.20s  corridor  xh-stone-archway
+ 4.   1.80s  people2   xh-trio-in-the-snow
+ 5.   2.40s  castle    xh-snowy-castle-towers
+ 6.   3.00s  hall      xh-starry-great-hall
+ 7.   3.60s  common    xh-gryffindor-common-room
+ 8.   4.20s  shop      xh-snowy-sweet-shop
+ 9.   4.80s  gifts     xh-presents-under-the-tree
+10.   5.40s  fire      xh-fireplace-in-the-common-room
+11.   6.00s  hall      xh-boy-and-the-great-tree
+12.   6.60s  balcony   xh-lantern-balcony
+13.   7.20s  castle    xh-castle-and-owl
+14.   7.80s  tree      xh-tree-by-the-window
+15.   8.40s  books     xh-antique-books
+16.   9.00s  tree      xh-candlelit-tree
+17.   9.60s  drink     xh-butterbeer-cheers
+18.  10.20s  scarves   xh-house-scarves
+19.  10.80s  shop      xh-snowy-shop-front
+20.  11.40s  people    xh-sleeping-by-the-fire
+21.  12.00s  street    xh-hogsmeade-street-night
+22.  12.60s  hall      xh-boys-in-the-hall
+23.  13.20s  train     xh-snowy-train-bend
+24.  13.80s  hall      xh-great-hall-candles
