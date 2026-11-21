@@ -1,0 +1,142 @@
+{
+ "name": "green_board",
+ "vibe": "olive, pink and plum: tomatoes, rings, stairs, stripes, pistachio",
+ "fps": 30,
+ "size": [
+  1080,
+  1920
+ ],
+ "bpm": 120,
+ "background": "#F3E6C8",
+ "grade": {
+  "warmth": 0.015,
+  "lift": 5,
+  "saturation": 1.0,
+  "grain": 2.0,
+  "grain_seed": 31
+ },
+ "images_dir": "images",
+ "version": "gr_butter_cuts",
+ "style": "single",
+ "margin_px": 60,
+ "center_y": 0.5,
+ "images": {
+  "gr-striped-sweater-tomatoes": {
+   "kind": "sweater"
+  },
+  "gr-arched-window": {
+   "kind": "window"
+  },
+  "gr-green-olives": {
+   "kind": "food"
+  },
+  "gr-pink-spiral-staircase": {
+   "kind": "stair"
+  },
+  "gr-persian-cat-on-rug": {
+   "kind": "cat"
+  },
+  "gr-green-nails-and-rings": {
+   "kind": "jewel"
+  },
+  "gr-weeping-willows": {
+   "kind": "tree"
+  },
+  "gr-spiral-stair-from-above": {
+   "kind": "stair"
+  },
+  "gr-dancing-silhouettes": {
+   "kind": "dance"
+  },
+  "gr-crochet-top-red-beads": {
+   "kind": "portrait"
+  },
+  "gr-swan-folding-screen": {
+   "kind": "screen"
+  },
+  "gr-greek-salad": {
+   "kind": "food"
+  },
+  "gr-white-cap-sleeve-blouse": {
+   "kind": "blouse"
+  },
+  "gr-enamel-bracelet": {
+   "kind": "jewel"
+  },
+  "gr-button-back-linen-top": {
+   "kind": "top"
+  },
+  "gr-stacked-bangles": {
+   "kind": "jewel"
+  },
+  "gr-heirloom-tomatoes": {
+   "kind": "food"
+  },
+  "gr-arched-hallway-stairs": {
+   "kind": "house"
+  },
+  "gr-pistachios": {
+   "kind": "food"
+  },
+  "gr-denim-jacket-curls": {
+   "kind": "jacket"
+  },
+  "gr-lime-paillettes": {
+   "kind": "sequins"
+  },
+  "gr-tray-of-rings": {
+   "kind": "jewel"
+  },
+  "gr-purple-striped-trousers": {
+   "kind": "trousers"
+  },
+  "gr-olive-velvet-theatre-seats": {
+   "kind": "seats"
+  },
+  "gr-white-horses": {
+   "kind": "horses"
+  },
+  "gr-tortoiseshell-hair-combs": {
+   "kind": "combs"
+  },
+  "gr-ballerina-lamps": {
+   "kind": "lamps"
+  },
+  "gr-striped-pleated-bag": {
+   "kind": "bag"
+  }
+ },
+ "order": [
+  "gr-striped-sweater-tomatoes",
+  "gr-arched-window",
+  "gr-green-olives",
+  "gr-pink-spiral-staircase",
+  "gr-persian-cat-on-rug",
+  "gr-green-nails-and-rings",
+  "gr-weeping-willows",
+  "gr-spiral-stair-from-above",
+  "gr-dancing-silhouettes",
+  "gr-crochet-top-red-beads",
+  "gr-swan-folding-screen",
+  "gr-greek-salad",
+  "gr-white-cap-sleeve-blouse",
+  "gr-enamel-bracelet",
+  "gr-button-back-linen-top",
+  "gr-stacked-bangles",
+  "gr-heirloom-tomatoes",
+  "gr-arched-hallway-stairs",
+  "gr-pistachios",
+  "gr-denim-jacket-curls",
+  "gr-lime-paillettes",
+  "gr-tray-of-rings",
+  "gr-purple-striped-trousers",
+  "gr-olive-velvet-theatre-seats",
+  "gr-white-horses",
+  "gr-tortoiseshell-hair-combs",
+  "gr-ballerina-lamps",
+  "gr-striped-pleated-bag"
+ ],
+ "border_px": 6,
+ "border": "#FFFFFF",
+ "_comment": "Board kholthaus8/green (pin.it/xY1qxVPSm). 28 photos, 120 BPM (0.5 s) = 14.0 s, hard cuts, soft butter #F3E6C8 so the olives, plums and pinks glow. Opens on the red striped sweater with tomatoes. Left out: pin 4 (soft) and pin 17 (icon in the corner)."
+}

@@ -1,0 +1,35 @@
+120 BPM steady, one photo per beat (0.500 s), 28 photos, 28 beats = 14.00 s, ends on a bar line
+hard cuts; beat sync: worst offset 0.00 frames -> PASS
+stillness: max held-frame diff 0.044 -> PASS
+photos: whole (no cropping), own shape (no stretching), none repeated -> PASS
+variety: no two photos of the same kind back to back -> PASS
+screen filled per photo: 25%-79% (whole photos; wide ones are shorter)
+
+ 1.   0.00s  sweater   gr-striped-sweater-tomatoes
+ 2.   0.50s  window    gr-arched-window
+ 3.   1.00s  food      gr-green-olives
+ 4.   1.50s  stair     gr-pink-spiral-staircase
+ 5.   2.00s  cat       gr-persian-cat-on-rug
+ 6.   2.50s  jewel     gr-green-nails-and-rings
+ 7.   3.00s  tree      gr-weeping-willows
+ 8.   3.50s  stair     gr-spiral-stair-from-above
+ 9.   4.00s  dance     gr-dancing-silhouettes
+10.   4.50s  portrait  gr-crochet-top-red-beads
+11.   5.00s  screen    gr-swan-folding-screen
+12.   5.50s  food      gr-greek-salad
+13.   6.00s  blouse    gr-white-cap-sleeve-blouse
+14.   6.50s  jewel     gr-enamel-bracelet
+15.   7.00s  top       gr-button-back-linen-top
+16.   7.50s  jewel     gr-stacked-bangles
+17.   8.00s  food      gr-heirloom-tomatoes
+18.   8.50s  house     gr-arched-hallway-stairs
+19.   9.00s  food      gr-pistachios
+20.   9.50s  jacket    gr-denim-jacket-curls
+21.  10.00s  sequins   gr-lime-paillettes
+22.  10.50s  jewel     gr-tray-of-rings
+23.  11.00s  trousers  gr-purple-striped-trousers
+24.  11.50s  seats     gr-olive-velvet-theatre-seats
+25.  12.00s  horses    gr-white-horses
+26.  12.50s  combs     gr-tortoiseshell-hair-combs
+27.  13.00s  lamps     gr-ballerina-lamps
+28.  13.50s  bag       gr-striped-pleated-bag
