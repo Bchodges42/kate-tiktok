@@ -9,6 +9,8 @@
                   "polaroid": {...} draws each photo inside an instant-photo frame with a film look.
   Opening push-in: images {"src": "<first photo>", "scale": 0.75, "hard_in": true} entries placed first in "order" show
   the first photo at 75%, then 94%, then 100% of its fitted size, one step each (the reference style's stepped push-in).
+  Overlap: an image with {"over": 0.7, "dx": 0} lands on top of the picture already on screen (the previous
+  step) in one frame, partly covering it; it is enlarged if needed so it is never smaller than what it covers.
   Any image can carry "hold": N to stay on screen for N steps (e.g. a title photo before a run of others).
   Any image can carry "clip": "clips/<file>.mp4": the clip plays in its spot before the next photo lands.
   style "pile":   an overlapping collage. Every photo lands on top of the pile at the same area
@@ -233,7 +235,7 @@ def main():
         return [grade(f, cfg["grade"]) for f in a]
     srcs = {k: load_source(cfg, k)[0] for k in order}
     lowres = [k for k in order if max(srcs[k].size) < 500]
-    plates, boxes, cover = [], [], []
+    plates, boxes, cover, covered = [], [], [], []
     m = cfg.get("margin_px", 40)
 
     if cfg["style"] == "single":
@@ -248,6 +250,33 @@ def main():
                 plates.append(c); boxes.append(box); cover.append(box[2] * box[3] / (W * H))
                 continue
             s = min((W - 2 * m - 2 * bord) / im.width, (H - 2 * m - 2 * bord) / im.height) * cfg["images"][k].get("scale", 1)
+            ov = cfg["images"][k].get("over")
+            if ov is not None and i > 0:
+                # OVERLAP: this photo lands on top of the picture already on screen (the previous step), partly
+                # covering it, at its final size in one frame. It is scaled up if needed so it is never smaller
+                # than the photo(s) it covers (collage rule). "over": vertical anchor as a fraction of the
+                # previous photo's height (0.7 = its lower part); "dx": sideways offset in px.
+                pbx, pby, pbw, pbh = boxes[i - 1]
+                need = max(bw_ * bh_ for bw_, bh_ in covered[i - 1])
+                s0 = s
+                if (im.width * s0 + 2 * bord) * (im.height * s0 + 2 * bord) < need:
+                    s0 = s0 * math.sqrt(need / ((im.width * s0 + 2 * bord) * (im.height * s0 + 2 * bord))) * 1.02
+                cap = min((W - 2 * cfg.get("overlap_margin_px", 60) - 2 * bord) / im.width, (H - 2 * cfg.get("overlap_margin_px", 60) - 2 * bord) / im.height)
+                s0 = min(s0, cap)
+                w, h = int(round(im.width * s0)), int(round(im.height * s0))
+                fw, fh = w + 2 * bord, h + 2 * bord
+                if fw * fh < need:
+                    errs.append(f"{k} is smaller than the photo it covers")
+                x = int(round(W / 2 + cfg["images"][k].get("dx", 0) - fw / 2))
+                y = int(round(pby + ov * pbh - fh / 2))
+                mm = cfg.get("overlap_margin_px", 60)
+                x = min(max(x, mm), W - mm - fw); y = min(max(y, mm), H - mm - fh)
+                c = plates[i - 1].copy()
+                c[y:y + fh, x:x + fw] = bcol
+                c[y + bord:y + bord + h, x + bord:x + bord + w] = grade(np.asarray(im.resize((w, h), Image.LANCZOS)), cfg["grade"])
+                plates.append(c); boxes.append((x, y, fw, fh)); cover.append(fw * fh / (W * H))
+                covered.append(covered[i - 1] + [(fw, fh)])
+                continue
             w, h = int(round(im.width * s)), int(round(im.height * s))
             fw, fh = w + 2 * bord, h + 2 * bord
             x, y = (W - fw) // 2, int(round((H - fh) * cfg.get("center_y", 0.5)))
@@ -260,6 +289,7 @@ def main():
             else:
                 c[y + bord:y + bord + h, x + bord:x + bord + w] = grade(np.asarray(im.resize((w, h), Image.LANCZOS)), cfg["grade"])
             plates.append(c); boxes.append((x, y, fw, fh)); cover.append(fw * fh / (W * H))
+            covered.append([(fw, fh)])
     else:  # pile
         p = cfg["pile"]
         bord = p.get("border_px", 14)

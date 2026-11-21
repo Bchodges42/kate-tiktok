@@ -38,115 +38,136 @@
    "kind": "step3",
    "hard_in": true
   },
-  "wo-pink-feather-scales": {
-   "kind": "feathers"
+  "wo-iguazu-falls": {
+   "kind": "falls",
+   "hold": 1
+  },
+  "wo-temple-rooftops": {
+   "kind": "roofs",
+   "hold": 1
+  },
+  "wo-green-canyon-arch": {
+   "kind": "canyon",
+   "hold": 2
+  },
+  "wo-jungle-train": {
+   "kind": "train",
+   "hold": 1
+  },
+  "wo-great-wall": {
+   "kind": "wall",
+   "hold": 1
   },
   "wo-machu-picchu": {
-   "kind": "ruins"
+   "kind": "ruins",
+   "hold": 2
+  },
+  "wo-kyoto-reflection-garden": {
+   "kind": "garden",
+   "hold": 2
+  },
+  "wo-rice-terrace-trek": {
+   "kind": "terrace",
+   "hold": 2,
+   "over": 0.72,
+   "dx": 0
+  },
+  "wo-jewel-spiral-staircase": {
+   "kind": "stair",
+   "hold": 1
+  },
+  "wo-pink-feather-scales": {
+   "kind": "feathers",
+   "hold": 2
+  },
+  "wo-sand-ripples": {
+   "kind": "sand",
+   "hold": 1
+  },
+  "wo-dragon-blood-trees": {
+   "kind": "trees",
+   "hold": 1
+  },
+  "wo-rainbow-dunes-camels": {
+   "kind": "rainbow",
+   "hold": 1
+  },
+  "wo-ivy-wall-windows": {
+   "kind": "ivy",
+   "hold": 2
   },
   "wo-pheasant-feathers": {
-   "kind": "feathers"
+   "kind": "feathers",
+   "hold": 1
+  },
+  "wo-iceland-canyon": {
+   "kind": "canyon",
+   "hold": 1
+  },
+  "wo-white-spiral-staircase": {
+   "kind": "stair",
+   "hold": 2
+  },
+  "wo-zebra-herd": {
+   "kind": "zebra",
+   "hold": 1
+  },
+  "wo-mountain-road-riders": {
+   "kind": "road",
+   "hold": 2
+  },
+  "wo-orange-lanterns": {
+   "kind": "lantern",
+   "hold": 2,
+   "over": 0.72,
+   "dx": -70
   },
   "wo-red-rock-arch": {
    "kind": "arch",
    "hold": 2
   },
+  "wo-lanterns-in-a-tree": {
+   "kind": "lantern",
+   "hold": 1
+  },
   "wo-alpacas-in-the-andes": {
-   "kind": "alpaca"
-  },
-  "wo-green-canyon-arch": {
-   "kind": "canyon"
-  },
-  "wo-rice-terrace-trek": {
-   "kind": "terrace",
-   "hold": 2
+   "kind": "alpaca",
+   "hold": 1
   },
   "wo-paper-lantern-wall": {
    "kind": "lantern",
-   "hold": 2
-  },
-  "wo-mountain-road-riders": {
-   "kind": "road"
-  },
-  "wo-white-spiral-staircase": {
-   "kind": "stair"
-  },
-  "wo-rainbow-dunes-camels": {
-   "kind": "rainbow",
-   "hold": 2
-  },
-  "wo-temple-rooftops": {
-   "kind": "roofs"
-  },
-  "wo-jungle-train": {
-   "kind": "train"
-  },
-  "wo-iceland-canyon": {
-   "kind": "canyon"
-  },
-  "wo-kyoto-reflection-garden": {
-   "kind": "garden"
-  },
-  "wo-sand-ripples": {
-   "kind": "sand"
-  },
-  "wo-iguazu-falls": {
-   "kind": "falls"
-  },
-  "wo-ivy-wall-windows": {
-   "kind": "ivy"
-  },
-  "wo-lanterns-in-a-tree": {
-   "kind": "lantern"
-  },
-  "wo-zebra-herd": {
-   "kind": "zebra",
-   "hold": 2
-  },
-  "wo-dragon-blood-trees": {
-   "kind": "trees"
-  },
-  "wo-orange-lanterns": {
-   "kind": "lantern"
-  },
-  "wo-great-wall": {
-   "kind": "wall",
-   "hold": 2
-  },
-  "wo-jewel-spiral-staircase": {
-   "kind": "stair",
-   "hold": 2
+   "hold": 1
   }
  },
  "order": [
   "wo-step1",
   "wo-step2",
   "wo-step3",
-  "wo-pink-feather-scales",
-  "wo-machu-picchu",
-  "wo-pheasant-feathers",
-  "wo-red-rock-arch",
-  "wo-alpacas-in-the-andes",
-  "wo-green-canyon-arch",
-  "wo-rice-terrace-trek",
-  "wo-paper-lantern-wall",
-  "wo-mountain-road-riders",
-  "wo-white-spiral-staircase",
-  "wo-rainbow-dunes-camels",
-  "wo-temple-rooftops",
-  "wo-jungle-train",
-  "wo-iceland-canyon",
-  "wo-kyoto-reflection-garden",
-  "wo-sand-ripples",
   "wo-iguazu-falls",
-  "wo-ivy-wall-windows",
-  "wo-lanterns-in-a-tree",
-  "wo-zebra-herd",
-  "wo-dragon-blood-trees",
-  "wo-orange-lanterns",
+  "wo-temple-rooftops",
+  "wo-green-canyon-arch",
+  "wo-jungle-train",
   "wo-great-wall",
-  "wo-jewel-spiral-staircase"
+  "wo-machu-picchu",
+  "wo-kyoto-reflection-garden",
+  "wo-rice-terrace-trek",
+  "wo-jewel-spiral-staircase",
+  "wo-pink-feather-scales",
+  "wo-sand-ripples",
+  "wo-dragon-blood-trees",
+  "wo-rainbow-dunes-camels",
+  "wo-ivy-wall-windows",
+  "wo-pheasant-feathers",
+  "wo-iceland-canyon",
+  "wo-white-spiral-staircase",
+  "wo-zebra-herd",
+  "wo-mountain-road-riders",
+  "wo-orange-lanterns",
+  "wo-red-rock-arch",
+  "wo-lanterns-in-a-tree",
+  "wo-alpacas-in-the-andes",
+  "wo-paper-lantern-wall"
  ],
  "border_px": 0,
- "_comment": "Board kholthaus8/wow (pin.it/1wzaEPWcW). VERSION A, exact reference style: Reference analysed from the user's video (13.3 s, 30 fps): flat white background, each photo centred with NO border at a size that leaves white around it, hard cuts landing on a ~0.4 s pulse (150 BPM) with holds of 1 or 2 pulses, and the opening photo pushed in by three stepped sizes (about 75%, 94%, 100% of its final size, one pulse each) before the first cut. All 25 sharp photos. Left out: soft pins 0, 11."
+ "_comment": "Exact reference style: flat white, no borders, stepped push-in on the first photo, hard cuts on a 150 BPM pulse with holds of 1-2 pulses, and TWO overlap moments like the reference (a photo lands on top of the previous one, partly covering it, never smaller than what it covers). No blending anywhere. Left out: soft pins and overlay/app-icon pins."
 }

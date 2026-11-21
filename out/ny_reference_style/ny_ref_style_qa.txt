@@ -8,30 +8,30 @@ screen filled per photo: 20%-55% (whole photos; wide ones are shorter)
  1.   0.00s  step1     ny-step1
  2.   0.40s  step2     ny-step2
  3.   0.80s  step3     ny-step3
- 4.   1.20s  accessory ny-sparkle-socks-and-whisky
- 5.   1.60s  party     ny-chandelier-ballroom
- 6.   2.00s  fireworks ny-fireworks-and-lanterns
- 7.   2.40s  look      ny-white-harem-pants
- 8.   3.20s  party     ny-two-beaded-minis
- 9.   3.60s  dress     ny-green-feather-dress
-10.   4.00s  look      ny-yellow-mini-bathroom
-11.   4.80s  dress     ny-pink-halter
-12.   5.60s  look      ny-striped-beach-set
-13.   6.00s  accessory ny-heels-on-tiger-rug
-14.   6.40s  dress     ny-orange-corset-dress
-15.   7.20s  accessory ny-elevator-and-coral-heels
-16.   7.60s  dress     ny-plum-pleated-dress
-17.   8.00s  gown      ny-pink-feather-gown
-18.   8.40s  party     ny-party-table-aftermath
-19.   8.80s  look      ny-gold-jacquard-doorway
-20.   9.20s  pattern   ny-glitter-tights-and-duck
-21.   9.60s  party     ny-gold-confetti-floor
-22.  10.00s  nails     ny-red-gradient-nails
-23.  10.40s  pattern   ny-sequin-zebra-pants
-24.  11.20s  fireworks ny-paris-fireworks
-25.  11.60s  look      ny-silver-satin-skirt
-26.  12.00s  party     ny-paper-stars-mantel
-27.  12.80s  hanger    ny-sequin-dress-on-hanger
-28.  13.60s  dress     ny-gold-star-corset
-29.  14.00s  accessory ny-glitter-bag-and-martini
-30.  14.40s  nails     ny-teal-chrome-nails
+ 4.   1.20s  look      ny-yellow-mini-bathroom
+ 5.   1.60s  party     ny-gold-confetti-floor
+ 6.   2.00s  nails     ny-red-gradient-nails
+ 7.   2.80s  party     ny-party-table-aftermath
+ 8.   3.20s  dress     ny-plum-pleated-dress
+ 9.   3.60s  look      ny-striped-beach-set
+10.   4.40s  accessory ny-elevator-and-coral-heels
+11.   4.80s  gown      ny-pink-feather-gown
+12.   5.60s  fireworks ny-paris-fireworks
+13.   6.40s  accessory ny-sparkle-socks-and-whisky
+14.   7.20s  look      ny-silver-satin-skirt
+15.   7.60s  party     ny-chandelier-ballroom
+16.   8.00s  dress     ny-gold-star-corset
+17.   8.40s  accessory ny-glitter-bag-and-martini
+18.   9.20s  look      ny-gold-jacquard-doorway
+19.   9.60s  nails     ny-teal-chrome-nails
+20.  10.00s  dress     ny-orange-corset-dress
+21.  10.80s  hanger    ny-sequin-dress-on-hanger
+22.  11.20s  fireworks ny-fireworks-and-lanterns
+23.  11.60s  party     ny-two-beaded-minis
+24.  12.00s  look      ny-white-harem-pants
+25.  12.80s  dress     ny-green-feather-dress
+26.  13.60s  party     ny-paper-stars-mantel
+27.  14.00s  pattern   ny-sequin-zebra-pants
+28.  14.40s  accessory ny-heels-on-tiger-rug
+29.  15.20s  pattern   ny-glitter-tights-and-duck
+30.  15.60s  dress     ny-pink-halter

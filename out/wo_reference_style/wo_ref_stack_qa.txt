@@ -1,0 +1,34 @@
+150 BPM steady, one photo per beat (0.400 s), 27 photos, 32 beats = 12.80 s, ends on a bar line
+hard cuts; beat sync: worst offset 0.00 frames -> PASS
+stillness: max held-frame diff 0.056 -> PASS
+photos: whole (no cropping), own shape (no stretching), none repeated -> PASS
+variety: no two photos of the same kind back to back -> PASS
+screen filled per photo: 17%-47% (whole photos; wide ones are shorter)
+
+ 1.   0.00s  step1     wo-step1
+ 2.   0.40s  step2     wo-step2
+ 3.   0.80s  step3     wo-step3
+ 4.   1.20s  lantern   wo-lanterns-in-a-tree
+ 5.   1.60s  ruins     wo-machu-picchu
+ 6.   2.00s  lantern   wo-paper-lantern-wall
+ 7.   2.40s  sand      wo-sand-ripples
+ 8.   2.80s  trees     wo-dragon-blood-trees
+ 9.   3.20s  alpaca    wo-alpacas-in-the-andes
+10.   4.00s  wall      wo-great-wall
+11.   4.40s  stair     wo-white-spiral-staircase
+12.   4.80s  road      wo-mountain-road-riders
+13.   5.20s  canyon    wo-green-canyon-arch
+14.   5.60s  garden    wo-kyoto-reflection-garden
+15.   6.00s  feathers  wo-pheasant-feathers
+16.   6.40s  train     wo-jungle-train
+17.   7.20s  rainbow   wo-rainbow-dunes-camels
+18.   7.60s  falls     wo-iguazu-falls
+19.   8.00s  zebra     wo-zebra-herd
+20.   8.40s  feathers  wo-pink-feather-scales
+21.   8.80s  stair     wo-jewel-spiral-staircase
+22.   9.20s  canyon    wo-iceland-canyon
+23.   9.60s  ivy       wo-ivy-wall-windows
+24.  10.00s  arch      wo-red-rock-arch
+25.  10.80s  lantern   wo-orange-lanterns
+26.  11.20s  roofs     wo-temple-rooftops
+27.  11.60s  terrace   wo-rice-terrace-trek

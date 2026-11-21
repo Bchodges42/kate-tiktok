@@ -1,0 +1,196 @@
+{
+ "name": "ny_reference_style",
+ "vibe": "reference style",
+ "fps": 30,
+ "size": [
+  1080,
+  1920
+ ],
+ "bpm": 150,
+ "background": "#FFFFFF",
+ "grade": {
+  "warmth": 0.0,
+  "lift": 3,
+  "saturation": 1.0,
+  "grain": 1.5,
+  "grain_seed": 33
+ },
+ "images_dir": "images",
+ "version": "ny_ref_stack",
+ "style": "single",
+ "margin_px": 170,
+ "center_y": 0.5,
+ "images": {
+  "ny-step1": {
+   "src": "ny-gold-fringe-mini",
+   "scale": 0.75,
+   "kind": "step1"
+  },
+  "ny-step2": {
+   "src": "ny-gold-fringe-mini",
+   "scale": 0.94,
+   "kind": "step2",
+   "hard_in": true
+  },
+  "ny-step3": {
+   "src": "ny-gold-fringe-mini",
+   "scale": 1.0,
+   "kind": "step3",
+   "hard_in": true
+  },
+  "ny-gold-star-corset": {
+   "kind": "dress",
+   "hold": 1
+  },
+  "ny-gold-confetti-floor": {
+   "kind": "party",
+   "hold": 1
+  },
+  "ny-sequin-zebra-pants": {
+   "kind": "pattern",
+   "hold": 1
+  },
+  "ny-plum-pleated-dress": {
+   "kind": "dress",
+   "hold": 1
+  },
+  "ny-paper-stars-mantel": {
+   "kind": "party",
+   "hold": 1
+  },
+  "ny-glitter-tights-and-duck": {
+   "kind": "pattern",
+   "hold": 1,
+   "over": 0.7,
+   "dx": -90
+  },
+  "ny-silver-satin-skirt": {
+   "kind": "look",
+   "hold": 2,
+   "over": 0.62,
+   "dx": 90
+  },
+  "ny-heels-on-tiger-rug": {
+   "kind": "accessory",
+   "hold": 1
+  },
+  "ny-orange-corset-dress": {
+   "kind": "dress",
+   "hold": 1
+  },
+  "ny-sparkle-socks-and-whisky": {
+   "kind": "accessory",
+   "hold": 1
+  },
+  "ny-striped-beach-set": {
+   "kind": "look",
+   "hold": 1
+  },
+  "ny-pink-halter": {
+   "kind": "dress",
+   "hold": 1
+  },
+  "ny-red-gradient-nails": {
+   "kind": "nails",
+   "hold": 1
+  },
+  "ny-fireworks-and-lanterns": {
+   "kind": "fireworks",
+   "hold": 1,
+   "over": 0.7,
+   "dx": 90
+  },
+  "ny-pink-feather-gown": {
+   "kind": "gown",
+   "hold": 2,
+   "over": 0.62,
+   "dx": -90
+  },
+  "ny-two-beaded-minis": {
+   "kind": "party",
+   "hold": 1
+  },
+  "ny-sequin-dress-on-hanger": {
+   "kind": "hanger",
+   "hold": 1
+  },
+  "ny-yellow-mini-bathroom": {
+   "kind": "look",
+   "hold": 1
+  },
+  "ny-teal-chrome-nails": {
+   "kind": "nails",
+   "hold": 1
+  },
+  "ny-green-feather-dress": {
+   "kind": "dress",
+   "hold": 1
+  },
+  "ny-elevator-and-coral-heels": {
+   "kind": "accessory",
+   "hold": 1
+  },
+  "ny-gold-jacquard-doorway": {
+   "kind": "look",
+   "hold": 1,
+   "over": 0.7,
+   "dx": -90
+  },
+  "ny-party-table-aftermath": {
+   "kind": "party",
+   "hold": 2,
+   "over": 0.62,
+   "dx": 90
+  },
+  "ny-paris-fireworks": {
+   "kind": "fireworks",
+   "hold": 1
+  },
+  "ny-chandelier-ballroom": {
+   "kind": "party",
+   "hold": 1
+  },
+  "ny-white-harem-pants": {
+   "kind": "look",
+   "hold": 1
+  },
+  "ny-glitter-bag-and-martini": {
+   "kind": "accessory",
+   "hold": 1
+  }
+ },
+ "order": [
+  "ny-step1",
+  "ny-step2",
+  "ny-step3",
+  "ny-gold-star-corset",
+  "ny-gold-confetti-floor",
+  "ny-sequin-zebra-pants",
+  "ny-plum-pleated-dress",
+  "ny-paper-stars-mantel",
+  "ny-glitter-tights-and-duck",
+  "ny-silver-satin-skirt",
+  "ny-heels-on-tiger-rug",
+  "ny-orange-corset-dress",
+  "ny-sparkle-socks-and-whisky",
+  "ny-striped-beach-set",
+  "ny-pink-halter",
+  "ny-red-gradient-nails",
+  "ny-fireworks-and-lanterns",
+  "ny-pink-feather-gown",
+  "ny-two-beaded-minis",
+  "ny-sequin-dress-on-hanger",
+  "ny-yellow-mini-bathroom",
+  "ny-teal-chrome-nails",
+  "ny-green-feather-dress",
+  "ny-elevator-and-coral-heels",
+  "ny-gold-jacquard-doorway",
+  "ny-party-table-aftermath",
+  "ny-paris-fireworks",
+  "ny-chandelier-ballroom",
+  "ny-white-harem-pants",
+  "ny-glitter-bag-and-martini"
+ ],
+ "border_px": 0,
+ "_comment": "Reference style with a different SHARP transition: three times, one photo lands, a second lands on top of it, then a third lands on top of both (each at least as big as the last, all hard cuts, stepped push-in kept). No blending anywhere."
+}

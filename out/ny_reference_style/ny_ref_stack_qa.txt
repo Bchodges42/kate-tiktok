@@ -1,0 +1,37 @@
+150 BPM steady, one photo per beat (0.400 s), 30 photos, 36 beats = 14.40 s, ends on a bar line
+hard cuts; beat sync: worst offset 0.00 frames -> PASS
+stillness: max held-frame diff 0.052 -> PASS
+photos: whole (no cropping), own shape (no stretching), none repeated -> PASS
+variety: no two photos of the same kind back to back -> PASS
+screen filled per photo: 20%-55% (whole photos; wide ones are shorter)
+
+ 1.   0.00s  step1     ny-step1
+ 2.   0.40s  step2     ny-step2
+ 3.   0.80s  step3     ny-step3
+ 4.   1.20s  dress     ny-gold-star-corset
+ 5.   1.60s  party     ny-gold-confetti-floor
+ 6.   2.00s  pattern   ny-sequin-zebra-pants
+ 7.   2.40s  dress     ny-plum-pleated-dress
+ 8.   2.80s  party     ny-paper-stars-mantel
+ 9.   3.20s  pattern   ny-glitter-tights-and-duck
+10.   3.60s  look      ny-silver-satin-skirt
+11.   4.40s  accessory ny-heels-on-tiger-rug
+12.   4.80s  dress     ny-orange-corset-dress
+13.   5.20s  accessory ny-sparkle-socks-and-whisky
+14.   5.60s  look      ny-striped-beach-set
+15.   6.00s  dress     ny-pink-halter
+16.   6.40s  nails     ny-red-gradient-nails
+17.   6.80s  fireworks ny-fireworks-and-lanterns
+18.   7.20s  gown      ny-pink-feather-gown
+19.   8.00s  party     ny-two-beaded-minis
+20.   8.40s  hanger    ny-sequin-dress-on-hanger
+21.   8.80s  look      ny-yellow-mini-bathroom
+22.   9.20s  nails     ny-teal-chrome-nails
+23.   9.60s  dress     ny-green-feather-dress
+24.  10.00s  accessory ny-elevator-and-coral-heels
+25.  10.40s  look      ny-gold-jacquard-doorway
+26.  10.80s  party     ny-party-table-aftermath
+27.  11.60s  fireworks ny-paris-fireworks
+28.  12.00s  party     ny-chandelier-ballroom
+29.  12.40s  look      ny-white-harem-pants
+30.  12.80s  accessory ny-glitter-bag-and-martini

@@ -1,0 +1,181 @@
+{
+ "name": "wo_reference_style",
+ "vibe": "reference style",
+ "fps": 30,
+ "size": [
+  1080,
+  1920
+ ],
+ "bpm": 150,
+ "background": "#FFFFFF",
+ "grade": {
+  "warmth": 0.0,
+  "lift": 3,
+  "saturation": 1.0,
+  "grain": 1.5,
+  "grain_seed": 33
+ },
+ "images_dir": "images",
+ "version": "wo_ref_stack",
+ "style": "single",
+ "margin_px": 170,
+ "center_y": 0.5,
+ "images": {
+  "wo-step1": {
+   "src": "wo-rainbow-mountain",
+   "scale": 0.75,
+   "kind": "step1"
+  },
+  "wo-step2": {
+   "src": "wo-rainbow-mountain",
+   "scale": 0.94,
+   "kind": "step2",
+   "hard_in": true
+  },
+  "wo-step3": {
+   "src": "wo-rainbow-mountain",
+   "scale": 1.0,
+   "kind": "step3",
+   "hard_in": true
+  },
+  "wo-lanterns-in-a-tree": {
+   "kind": "lantern",
+   "hold": 1
+  },
+  "wo-machu-picchu": {
+   "kind": "ruins",
+   "hold": 1
+  },
+  "wo-paper-lantern-wall": {
+   "kind": "lantern",
+   "hold": 1
+  },
+  "wo-sand-ripples": {
+   "kind": "sand",
+   "hold": 1
+  },
+  "wo-dragon-blood-trees": {
+   "kind": "trees",
+   "hold": 1,
+   "over": 0.7,
+   "dx": -90
+  },
+  "wo-alpacas-in-the-andes": {
+   "kind": "alpaca",
+   "hold": 2,
+   "over": 0.62,
+   "dx": 90
+  },
+  "wo-great-wall": {
+   "kind": "wall",
+   "hold": 1
+  },
+  "wo-white-spiral-staircase": {
+   "kind": "stair",
+   "hold": 1
+  },
+  "wo-mountain-road-riders": {
+   "kind": "road",
+   "hold": 1
+  },
+  "wo-green-canyon-arch": {
+   "kind": "canyon",
+   "hold": 1
+  },
+  "wo-kyoto-reflection-garden": {
+   "kind": "garden",
+   "hold": 1
+  },
+  "wo-pheasant-feathers": {
+   "kind": "feathers",
+   "hold": 1,
+   "over": 0.7,
+   "dx": 90
+  },
+  "wo-jungle-train": {
+   "kind": "train",
+   "hold": 2,
+   "over": 0.62,
+   "dx": -90
+  },
+  "wo-rainbow-dunes-camels": {
+   "kind": "rainbow",
+   "hold": 1
+  },
+  "wo-iguazu-falls": {
+   "kind": "falls",
+   "hold": 1
+  },
+  "wo-zebra-herd": {
+   "kind": "zebra",
+   "hold": 1
+  },
+  "wo-pink-feather-scales": {
+   "kind": "feathers",
+   "hold": 1
+  },
+  "wo-jewel-spiral-staircase": {
+   "kind": "stair",
+   "hold": 1
+  },
+  "wo-iceland-canyon": {
+   "kind": "canyon",
+   "hold": 1
+  },
+  "wo-ivy-wall-windows": {
+   "kind": "ivy",
+   "hold": 1,
+   "over": 0.7,
+   "dx": -90
+  },
+  "wo-red-rock-arch": {
+   "kind": "arch",
+   "hold": 2,
+   "over": 0.62,
+   "dx": 90
+  },
+  "wo-orange-lanterns": {
+   "kind": "lantern",
+   "hold": 1
+  },
+  "wo-temple-rooftops": {
+   "kind": "roofs",
+   "hold": 1
+  },
+  "wo-rice-terrace-trek": {
+   "kind": "terrace",
+   "hold": 1
+  }
+ },
+ "order": [
+  "wo-step1",
+  "wo-step2",
+  "wo-step3",
+  "wo-lanterns-in-a-tree",
+  "wo-machu-picchu",
+  "wo-paper-lantern-wall",
+  "wo-sand-ripples",
+  "wo-dragon-blood-trees",
+  "wo-alpacas-in-the-andes",
+  "wo-great-wall",
+  "wo-white-spiral-staircase",
+  "wo-mountain-road-riders",
+  "wo-green-canyon-arch",
+  "wo-kyoto-reflection-garden",
+  "wo-pheasant-feathers",
+  "wo-jungle-train",
+  "wo-rainbow-dunes-camels",
+  "wo-iguazu-falls",
+  "wo-zebra-herd",
+  "wo-pink-feather-scales",
+  "wo-jewel-spiral-staircase",
+  "wo-iceland-canyon",
+  "wo-ivy-wall-windows",
+  "wo-red-rock-arch",
+  "wo-orange-lanterns",
+  "wo-temple-rooftops",
+  "wo-rice-terrace-trek"
+ ],
+ "border_px": 0,
+ "_comment": "Reference style with a different SHARP transition: three times, one photo lands, a second lands on top of it, then a third lands on top of both (each at least as big as the last, all hard cuts, stepped push-in kept). No blending anywhere."
+}
