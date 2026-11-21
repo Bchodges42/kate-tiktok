@@ -1,0 +1,55 @@
+23 steps, 30 photos, 21 slides, 18.47 s (music ends 18.47 s)
+sync: every change within 0.50 frames of its beat (mean 0.27) -> PASS
+stillness: max held-frame change 0.034 -> PASS
+shape: every photo whole, at its own width-to-height shape -> PASS
+repeats: none -> PASS
+variety: no two photos of the same kind touching, back to back, or across the loop -> PASS
+position: every photo and every arrangement centred on the screen's vertical centre line
+symmetry: mirror-symmetric at every moment; worst mismatch 10 px (2.4% of that photo's width) -> PASS
+
+screen covered by photos, per slide (finished slide):
+  slide  1 sym     73%  (gap 20 px)
+  slide  2 sym     53%  (gap 20 px)
+  slide  3 sym     60%  (gap 20 px)
+  slide  4 sym     56%  (gap 20 px)
+  slide  5 sym     47%  (gap 20 px)
+  slide  6 sym     65%  (gap 20 px)
+  slide  7 sym     65%  (gap 20 px)
+  slide  8 sym     59%  (gap 20 px)
+  slide  9 sym     60%  (gap 20 px)
+  slide 10 sym     72%  (gap 20 px)
+  slide 11 sym     70%  (gap 20 px)
+  slide 12 sym     38%  (gap 20 px)
+  slide 13 sym     74%  (gap 20 px)
+  slide 14 sym     57%  (gap 20 px)
+  slide 15 sym     44%  (gap 20 px)
+  slide 16 sym     73%  (gap 20 px)
+  slide 17 sym     66%  (gap 20 px)
+  slide 18 sym     61%  (gap 20 px)
+  slide 19 sym     62%  (gap 20 px)
+  slide 20 sym     48%  (gap 20 px)
+  slide 21 sym     72%  (gap 20 px)
+
+ 1.  0.00s  slide 1  sym   ny-green-feather-dress [outfit]
+ 2.  0.61s  slide 2  sym   ny-glitter-socks-whiskey [accessory]
+ 3.  1.00s  slide 3  sym   ny-gold-strapless-mini [outfit]
+ 4.  1.76s  slide 4  sym   ny-gold-tights-duck [detail]
+ 5.  2.55s  slide 5  sym   ny-pink-halter-gown [outfit]
+ 6.  3.35s  slide 6  sym   ny-elevator-red-heels [accessory], ny-lace-dress-rooftop [outfit]
+ 7.  4.14s  slide 6  sym   ny-gold-corset-set [outfit], ny-gold-confetti-floor [confetti]
+ 8.  4.92s  slide 6  sym   ny-gold-dress-doorway [outfit], ny-glitter-bag-martini [accessory]
+ 9.  5.72s  slide 7  sym   ny-pink-feather-gown [outfit]
+10.  6.50s  slide 8  sym   ny-ballroom-midnight [party]
+11.  7.28s  slide 9  sym   ny-white-drape-back [outfit]
+12.  8.06s  slide 10 sym   ny-blue-mules-tiger-rug [accessory], ny-paper-stars-mantel [decor]
+13.  8.85s  slide 11 sym   ny-beaded-shift-mosaic [outfit]
+14.  9.45s  slide 12 sym   ny-party-boots-drinks [party]
+15. 10.23s  slide 13 sym   ny-zebra-sequin-pants [outfit]
+16. 11.00s  slide 14 sym   ny-silver-satin-skirt [outfit], ny-teal-nails-denim [beauty], ny-fireworks-lanterns [fireworks], ny-orange-drop-waist [outfit]
+17. 11.79s  slide 15 sym   ny-yellow-dress-bathroom [outfit]
+18. 12.99s  slide 16 sym   ny-party-table-candles [party]
+19. 13.77s  slide 17 sym   ny-sequin-tank-jeans [outfit]
+20. 14.55s  slide 18 sym   ny-sequin-pair-dancing [party]
+21. 15.33s  slide 19 sym   ny-magenta-pleated-dress [outfit]
+22. 16.13s  slide 20 sym   ny-gold-rings-nails [beauty]
+23. 17.29s  slide 21 sym   ny-paris-fireworks [fireworks]

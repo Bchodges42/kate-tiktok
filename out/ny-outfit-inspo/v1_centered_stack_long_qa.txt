@@ -1,0 +1,49 @@
+30 steps, 30 photos, 9 slides, 18.47 s (music ends 18.47 s)
+sync: every change within 0.47 frames of its beat (mean 0.26) -> PASS
+stillness: max held-frame change 0.054 -> PASS
+shape: every photo whole, at its own width-to-height shape -> PASS
+repeats: none -> PASS
+variety: no two photos of the same kind touching, back to back, or across the loop -> PASS
+position: every photo and every arrangement centred on the screen's vertical centre line
+
+screen covered by photos, per slide (finished slide):
+  slide  1 stack   55%
+  slide  2 inset   64%  (frame of base photo 89 px, gap 22 px)
+  slide  3 stack   64%
+  slide  4 inset   63%  (frame of base photo 80 px, gap 22 px)
+  slide  5 stack   67%
+  slide  6 inset   60%  (frame of base photo 89 px, gap 22 px)
+  slide  7 stack   66%
+  slide  8 inset   65%  (frame of base photo 80 px, gap 22 px)
+  slide  9 stack   60%
+
+ 1.  0.00s  slide 1  swap  ny-gold-dress-doorway [outfit]
+ 2.  0.61s  slide 1  swap  ny-party-boots-drinks [party]
+ 3.  1.00s  slide 1  cover ny-zebra-sequin-pants [outfit]
+ 4.  1.39s  slide 1  swap  ny-glitter-socks-whiskey [accessory]
+ 5.  1.76s  slide 1  cover ny-pink-feather-gown [outfit]
+ 6.  2.55s  slide 1  swap  ny-glitter-bag-martini [accessory]
+ 7.  3.35s  slide 1  swap  ny-green-feather-dress [outfit]
+ 8.  4.14s  slide 2  swap  ny-fireworks-lanterns [fireworks]
+ 9.  4.92s  slide 2  inset ny-white-drape-back [outfit]
+10.  5.72s  slide 3  swap  ny-gold-tights-duck [detail]
+11.  6.10s  slide 3  swap  ny-silver-satin-skirt [outfit]
+12.  6.50s  slide 4  swap  ny-ballroom-midnight [party]
+13.  7.28s  slide 4  inset ny-gold-corset-set [outfit]
+14.  8.06s  slide 4  inset ny-elevator-red-heels [accessory]
+15.  8.85s  slide 5  swap  ny-pink-halter-gown [outfit]
+16.  9.45s  slide 5  swap  ny-gold-rings-nails [beauty]
+17. 10.23s  slide 5  swap  ny-gold-strapless-mini [outfit]
+18. 10.63s  slide 5  swap  ny-party-table-candles [party]
+19. 11.00s  slide 5  cover ny-lace-dress-rooftop [outfit]
+20. 11.79s  slide 6  swap  ny-gold-confetti-floor [confetti]
+21. 12.58s  slide 6  inset ny-sequin-tank-jeans [outfit]
+22. 13.38s  slide 7  swap  ny-teal-nails-denim [beauty]
+23. 13.77s  slide 7  swap  ny-orange-drop-waist [outfit]
+24. 14.16s  slide 7  swap  ny-paper-stars-mantel [decor]
+25. 14.95s  slide 7  cover ny-beaded-shift-mosaic [outfit]
+26. 15.33s  slide 8  swap  ny-sequin-pair-dancing [party]
+27. 15.73s  slide 8  inset ny-yellow-dress-bathroom [outfit]
+28. 16.51s  slide 8  inset ny-blue-mules-tiger-rug [accessory]
+29. 16.90s  slide 9  swap  ny-magenta-pleated-dress [outfit]
+30. 17.29s  slide 9  swap  ny-paris-fireworks [fireworks]
