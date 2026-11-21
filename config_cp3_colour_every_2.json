@@ -1,0 +1,179 @@
+{
+ "name": "colorful_p3",
+ "vibe": "colorful: sequins, tights, jewellery, maximal pattern",
+ "fps": 30,
+ "size": [
+  1080,
+  1920
+ ],
+ "bpm": 150,
+ "grade": {
+  "warmth": 0.0,
+  "lift": 4,
+  "saturation": 1.0,
+  "grain": 2.0,
+  "grain_seed": 21
+ },
+ "images_dir": "images",
+ "version": "cp3_colour_every_2",
+ "style": "single",
+ "background": "#FF5FA2",
+ "bg_cycle": [
+  "#FF5FA2",
+  "#FF8A3D",
+  "#C6E83A",
+  "#3D6BFF",
+  "#FFD84A",
+  "#2FD0C0"
+ ],
+ "bg_every": 2,
+ "border_px": 10,
+ "border": "#FFFFFF",
+ "margin_px": 70,
+ "center_y": 0.5,
+ "images": {
+  "cp3-colour-block-trio": {
+   "kind": "group"
+  },
+  "cp3-fur-coat-rack": {
+   "kind": "rack"
+  },
+  "cp3-pink-heels-and-fuzz": {
+   "kind": "shoes"
+  },
+  "cp3-beaded-yellow-dress": {
+   "kind": "dress2"
+  },
+  "cp3-striped-blouse-white-skirt": {
+   "kind": "outfit3"
+  },
+  "cp3-beaded-dress-rack": {
+   "kind": "rack2"
+  },
+  "cp3-beaded-cap": {
+   "kind": "hair"
+  },
+  "cp3-pink-top-tiered-skirt": {
+   "kind": "outfit2"
+  },
+  "cp3-corset-and-lace-skirt": {
+   "kind": "outfit5"
+  },
+  "cp3-statement-earrings": {
+   "kind": "ear"
+  },
+  "cp3-gold-paillettes": {
+   "kind": "texture3"
+  },
+  "cp3-rainbow-trout-scales": {
+   "kind": "texture"
+  },
+  "cp3-shells-and-peacock-feather": {
+   "kind": "flatlay2"
+  },
+  "cp3-pink-muhly-grass": {
+   "kind": "landscape"
+  },
+  "cp3-green-top-floral-skirt": {
+   "kind": "street"
+  },
+  "cp3-pink-paillettes": {
+   "kind": "texture2"
+  },
+  "cp3-fringe-boot": {
+   "kind": "boot"
+  },
+  "cp3-shell-mini-skirt": {
+   "kind": "skirt"
+  },
+  "cp3-sequin-bags": {
+   "kind": "bags"
+  },
+  "cp3-pink-gold-slips": {
+   "kind": "rack3"
+  },
+  "cp3-orange-sequin-dresses": {
+   "kind": "dress"
+  },
+  "cp3-pink-sequin-dress-heels": {
+   "kind": "shoes2"
+  },
+  "cp3-plaid-tights-lime-sofa": {
+   "kind": "legs2"
+  },
+  "cp3-polka-dot-tights-orange-heels": {
+   "kind": "legs4"
+  },
+  "cp3-lime-set-on-red": {
+   "kind": "studio"
+  },
+  "cp3-tray-of-trinkets": {
+   "kind": "flatlay"
+  },
+  "cp3-keep-fashion-weird": {
+   "kind": "text"
+  },
+  "cp3-camera-and-charm-bag": {
+   "kind": "hands"
+  },
+  "cp3-floral-silk-romper": {
+   "kind": "outfit"
+  },
+  "cp3-closet-teal-tights": {
+   "kind": "closet"
+  },
+  "cp3-sage-beaded-slip": {
+   "kind": "slip"
+  },
+  "cp3-tights-and-bracelets": {
+   "kind": "legs"
+  },
+  "cp3-pink-beanbag": {
+   "kind": "pose"
+  },
+  "cp3-argyle-and-blue-tights": {
+   "kind": "legs3"
+  },
+  "cp3-pink-wrap-skirt-boardwalk": {
+   "kind": "outfit4"
+  }
+ },
+ "order": [
+  "cp3-colour-block-trio",
+  "cp3-fur-coat-rack",
+  "cp3-pink-heels-and-fuzz",
+  "cp3-beaded-yellow-dress",
+  "cp3-striped-blouse-white-skirt",
+  "cp3-beaded-dress-rack",
+  "cp3-beaded-cap",
+  "cp3-pink-top-tiered-skirt",
+  "cp3-corset-and-lace-skirt",
+  "cp3-statement-earrings",
+  "cp3-gold-paillettes",
+  "cp3-rainbow-trout-scales",
+  "cp3-shells-and-peacock-feather",
+  "cp3-pink-muhly-grass",
+  "cp3-green-top-floral-skirt",
+  "cp3-pink-paillettes",
+  "cp3-fringe-boot",
+  "cp3-shell-mini-skirt",
+  "cp3-sequin-bags",
+  "cp3-pink-gold-slips",
+  "cp3-orange-sequin-dresses",
+  "cp3-pink-sequin-dress-heels",
+  "cp3-plaid-tights-lime-sofa",
+  "cp3-polka-dot-tights-orange-heels",
+  "cp3-lime-set-on-red",
+  "cp3-tray-of-trinkets",
+  "cp3-keep-fashion-weird",
+  "cp3-camera-and-charm-bag",
+  "cp3-floral-silk-romper",
+  "cp3-closet-teal-tights",
+  "cp3-sage-beaded-slip",
+  "cp3-tights-and-bracelets",
+  "cp3-pink-beanbag",
+  "cp3-argyle-and-blue-tights",
+  "cp3-pink-wrap-skirt-boardwalk"
+ ],
+ "_comment": "Board kholthaus8/colorful-p3 (pin.it/3wtohQL9x). 35 photos, 150 BPM (0.4 s), 14.0 s; the background changes every 2 photos through hot pink, tangerine, lime, cobalt, lemon, teal and ends on teal so it loops to pink. Crop (junk border only): closet-teal-tights, 116 px white print border. Left out: soft pins 18, 38; pin 0 (app avatar overlay); pin 32 (creator handle overlay)."
+}

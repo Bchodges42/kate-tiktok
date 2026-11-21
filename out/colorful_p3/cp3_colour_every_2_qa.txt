@@ -1,0 +1,42 @@
+150 BPM steady, one photo per beat (0.400 s), 35 photos, 36 beats = 14.40 s, ends on a bar line
+hard cuts; beat sync: worst offset 0.00 frames -> PASS
+stillness: max held-frame diff 0.053 -> PASS
+photos: whole (no cropping), own shape (no stretching), none repeated -> PASS
+variety: no two photos of the same kind back to back -> PASS
+screen filled per photo: 29%-75% (whole photos; wide ones are shorter)
+
+ 1.   0.00s  group     cp3-colour-block-trio
+ 2.   0.40s  rack      cp3-fur-coat-rack
+ 3.   0.80s  shoes     cp3-pink-heels-and-fuzz
+ 4.   1.20s  dress2    cp3-beaded-yellow-dress
+ 5.   1.60s  outfit3   cp3-striped-blouse-white-skirt
+ 6.   2.00s  rack2     cp3-beaded-dress-rack
+ 7.   2.40s  hair      cp3-beaded-cap
+ 8.   2.80s  outfit2   cp3-pink-top-tiered-skirt
+ 9.   3.20s  outfit5   cp3-corset-and-lace-skirt
+10.   3.60s  ear       cp3-statement-earrings
+11.   4.00s  texture3  cp3-gold-paillettes
+12.   4.40s  texture   cp3-rainbow-trout-scales
+13.   4.80s  flatlay2  cp3-shells-and-peacock-feather
+14.   5.20s  landscape cp3-pink-muhly-grass
+15.   5.60s  street    cp3-green-top-floral-skirt
+16.   6.00s  texture2  cp3-pink-paillettes
+17.   6.40s  boot      cp3-fringe-boot
+18.   6.80s  skirt     cp3-shell-mini-skirt
+19.   7.20s  bags      cp3-sequin-bags
+20.   7.60s  rack3     cp3-pink-gold-slips
+21.   8.00s  dress     cp3-orange-sequin-dresses
+22.   8.40s  shoes2    cp3-pink-sequin-dress-heels
+23.   8.80s  legs2     cp3-plaid-tights-lime-sofa
+24.   9.20s  legs4     cp3-polka-dot-tights-orange-heels
+25.   9.60s  studio    cp3-lime-set-on-red
+26.  10.00s  flatlay   cp3-tray-of-trinkets
+27.  10.40s  text      cp3-keep-fashion-weird
+28.  10.80s  hands     cp3-camera-and-charm-bag
+29.  11.20s  outfit    cp3-floral-silk-romper
+30.  11.60s  closet    cp3-closet-teal-tights
+31.  12.00s  slip      cp3-sage-beaded-slip
+32.  12.40s  legs      cp3-tights-and-bracelets
+33.  12.80s  pose      cp3-pink-beanbag
+34.  13.20s  legs3     cp3-argyle-and-blue-tights
+35.  13.60s  outfit4   cp3-pink-wrap-skirt-boardwalk
