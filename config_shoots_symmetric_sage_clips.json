@@ -1,0 +1,565 @@
+{
+ "_comment": "Shoots video 2 re-cut so the board's clips play: mirror-symmetric at every moment on light sage green (the user asked for the moss version with a lighter background), thin white borders, even 20 px gaps, hard cuts. Six GIF clips play inside the collages while photos land around them: the birds in the six-up grid, the car window and bicycle above and below the plaster roses, the running cat over the open book, and the hummingbird in the lilies at the centre of the final collage, playing out to the end of the song. Every clip stays until it has played all the way through. 18.5 s (the sound twice).",
+ "name": "shoots",
+ "version": "v2_symmetric_sage_clips",
+ "vibe": "romantic, vintage, cottage: ivy houses, peonies and hydrangeas, rings, lace, old photos, little film clips",
+ "song": "audio/ref-ny-x2.wav",
+ "_song_comment": "The 9.23 s TikTok sound from the user's reference screen recording, played twice back to back (frame-exact, 277 frames each), as TikTok does with a sound shorter than the video. 152 BPM; second-pass beats = first-pass beats + 9.2333 s.",
+ "end_at": 18.466666666666665,
+ "fps": 30,
+ "size": [
+  1080,
+  1920
+ ],
+ "grade": {
+  "warmth": 0.02,
+  "lift": 8,
+  "saturation": 0.98,
+  "grain": 2.5,
+  "grain_seed": 11
+ },
+ "background": "#D6DDCB",
+ "border": {
+  "px": 5,
+  "color": "#FFFFFF"
+ },
+ "max_box": [
+  0.92,
+  0.74
+ ],
+ "center_y": 0.48,
+ "images_dir": "images",
+ "images": {
+  "sh-white-peacock": {
+   "kind": "animal"
+  },
+  "sh-chanel-flats-box": {
+   "kind": "shoes"
+  },
+  "sh-yarrow-blooms": {
+   "kind": "flower"
+  },
+  "sh-dalmatian-on-bed": {
+   "kind": "animal"
+  },
+  "sh-daisy-garden-steps": {
+   "kind": "garden"
+  },
+  "sh-lace-hand-fan": {
+   "kind": "object"
+  },
+  "sh-birds-flock-sky": {
+   "kind": "sky",
+   "clip": "clips/sh-birds-flock-sky.gif",
+   "_clip": "animated GIF pin from the board; plays from the moment it lands"
+  },
+  "sh-gold-ring-hand": {
+   "kind": "jewelry"
+  },
+  "sh-chess-board": {
+   "kind": "object"
+  },
+  "sh-green-door-carriage-house": {
+   "kind": "house"
+  },
+  "sh-denim-jacket-selfie": {
+   "kind": "outfit"
+  },
+  "sh-pink-hydrangeas": {
+   "kind": "flower"
+  },
+  "sh-plaid-shirt-legs": {
+   "kind": "people"
+  },
+  "sh-pink-dress-armchair": {
+   "kind": "interior"
+  },
+  "sh-hand-out-car-window": {
+   "kind": "road trip",
+   "clip": "clips/sh-hand-out-car-window.gif",
+   "_clip": "animated GIF pin from the board; plays from the moment it lands"
+  },
+  "sh-plaster-roses-relief": {
+   "kind": "texture"
+  },
+  "sh-bicycle-pedalling": {
+   "kind": "bicycle",
+   "clip": "clips/sh-bicycle-pedalling.gif",
+   "_clip": "animated GIF pin from the board; plays from the moment it lands"
+  },
+  "sh-marquise-ring-hand": {
+   "kind": "jewelry"
+  },
+  "sh-magnolia-still-life": {
+   "kind": "flower"
+  },
+  "sh-long-blonde-waves": {
+   "kind": "people"
+  },
+  "sh-bay-window-bedroom": {
+   "kind": "interior"
+  },
+  "sh-stacked-bowls": {
+   "kind": "object"
+  },
+  "sh-cat-running-film": {
+   "kind": "animal",
+   "clip": "clips/sh-cat-running-film.gif",
+   "_clip": "animated GIF pin from the board; plays from the moment it lands"
+  },
+  "sh-open-book-grass": {
+   "kind": "book",
+   "clip": "clips/sh-open-book-grass.gif",
+   "_clip": "animated GIF pin from the board; plays from the moment it lands"
+  },
+  "sh-pink-lilies": {
+   "kind": "flower"
+  },
+  "sh-signet-rings-tray": {
+   "kind": "jewelry"
+  },
+  "sh-pink-silk-lanterns": {
+   "kind": "object"
+  },
+  "sh-spanish-moss-oak": {
+   "kind": "tree"
+  },
+  "sh-hummingbird-lilies": {
+   "kind": "flower",
+   "clip": "clips/sh-hummingbird-lilies.gif",
+   "_clip": "animated GIF pin from the board; plays from the moment it lands"
+  },
+  "sh-vintage-shopfront": {
+   "kind": "storefront"
+  },
+  "sh-old-photos-pile": {
+   "kind": "object"
+  }
+ },
+ "not_used": {
+  "pins 4, 5, 9, 12, 13, 16, 17, 18, 27, 30, 39": "soft sources (under 500 px)",
+  "orchids (pin 7)": "brand name printed across the top",
+  "sun through leaves (pin 41)": "creator watermark in the corner",
+  "spiral staircase (pin 15)": "drawn golden-spiral lines over the photo",
+  "16 newest-first pins": "the board has 66 pins; Pinterest's feed only returns the newest 50",
+  "wheat in the wind (GIF pin)": "250 px clip, far too soft at any useful size"
+ },
+ "slides": [
+  {
+   "type": "sym",
+   "images": [
+    "sh-white-peacock"
+   ],
+   "tree": 0,
+   "reveal": [
+    [
+     0
+    ]
+   ],
+   "at": [
+    0.0
+   ],
+   "gap": 20,
+   "margin": [
+    60,
+    140
+   ]
+  },
+  {
+   "type": "sym",
+   "images": [
+    "sh-chanel-flats-box"
+   ],
+   "tree": 0,
+   "reveal": [
+    [
+     0
+    ]
+   ],
+   "at": [
+    0.61
+   ],
+   "gap": 20,
+   "margin": [
+    60,
+    140
+   ]
+  },
+  {
+   "type": "sym",
+   "images": [
+    "sh-yarrow-blooms"
+   ],
+   "tree": 0,
+   "reveal": [
+    [
+     0
+    ]
+   ],
+   "at": [
+    0.998
+   ],
+   "gap": 20,
+   "margin": [
+    60,
+    140
+   ]
+  },
+  {
+   "type": "sym",
+   "images": [
+    "sh-dalmatian-on-bed"
+   ],
+   "tree": 0,
+   "reveal": [
+    [
+     0
+    ]
+   ],
+   "at": [
+    1.393
+   ],
+   "gap": 20,
+   "margin": [
+    60,
+    140
+   ]
+  },
+  {
+   "type": "sym",
+   "images": [
+    "sh-daisy-garden-steps",
+    "sh-lace-hand-fan",
+    "sh-birds-flock-sky",
+    "sh-gold-ring-hand",
+    "sh-chess-board",
+    "sh-green-door-carriage-house"
+   ],
+   "tree": [
+    "v",
+    [
+     "h",
+     0,
+     1
+    ],
+    [
+     "h",
+     2,
+     3
+    ],
+    [
+     "h",
+     4,
+     5
+    ]
+   ],
+   "reveal": [
+    [
+     2,
+     3
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     4,
+     5
+    ]
+   ],
+   "at": [
+    1.765,
+    2.554,
+    3.349
+   ],
+   "gap": 20,
+   "margin": [
+    60,
+    140
+   ]
+  },
+  {
+   "type": "sym",
+   "images": [
+    "sh-denim-jacket-selfie"
+   ],
+   "tree": 0,
+   "reveal": [
+    [
+     0
+    ]
+   ],
+   "at": [
+    4.145
+   ],
+   "gap": 20,
+   "margin": [
+    60,
+    140
+   ]
+  },
+  {
+   "type": "sym",
+   "images": [
+    "sh-pink-hydrangeas",
+    "sh-plaid-shirt-legs"
+   ],
+   "tree": [
+    "v",
+    0,
+    1
+   ],
+   "reveal": [
+    [
+     0,
+     1
+    ]
+   ],
+   "at": [
+    4.54
+   ],
+   "gap": 20,
+   "margin": [
+    60,
+    140
+   ]
+  },
+  {
+   "type": "sym",
+   "images": [
+    "sh-pink-dress-armchair"
+   ],
+   "tree": 0,
+   "reveal": [
+    [
+     0
+    ]
+   ],
+   "at": [
+    5.317
+   ],
+   "gap": 20,
+   "margin": [
+    60,
+    140
+   ]
+  },
+  {
+   "type": "sym",
+   "images": [
+    "sh-hand-out-car-window",
+    "sh-plaster-roses-relief",
+    "sh-bicycle-pedalling"
+   ],
+   "tree": [
+    "v",
+    0,
+    1,
+    2
+   ],
+   "reveal": [
+    [
+     1
+    ],
+    [
+     0,
+     2
+    ]
+   ],
+   "at": [
+    5.718,
+    6.101
+   ],
+   "gap": 20,
+   "margin": [
+    60,
+    140
+   ]
+  },
+  {
+   "type": "sym",
+   "images": [
+    "sh-marquise-ring-hand"
+   ],
+   "tree": 0,
+   "reveal": [
+    [
+     0
+    ]
+   ],
+   "at": [
+    7.668
+   ],
+   "gap": 20,
+   "margin": [
+    60,
+    140
+   ]
+  },
+  {
+   "type": "sym",
+   "images": [
+    "sh-magnolia-still-life",
+    "sh-long-blonde-waves",
+    "sh-bay-window-bedroom"
+   ],
+   "tree": [
+    "v",
+    0,
+    1,
+    2
+   ],
+   "reveal": [
+    [
+     0,
+     2
+    ],
+    [
+     1
+    ]
+   ],
+   "at": [
+    8.057,
+    8.458
+   ],
+   "gap": 20,
+   "margin": [
+    60,
+    140
+   ]
+  },
+  {
+   "type": "sym",
+   "images": [
+    "sh-stacked-bowls"
+   ],
+   "tree": 0,
+   "reveal": [
+    [
+     0
+    ]
+   ],
+   "at": [
+    8.847
+   ],
+   "gap": 20,
+   "margin": [
+    60,
+    140
+   ]
+  },
+  {
+   "type": "sym",
+   "images": [
+    "sh-cat-running-film",
+    "sh-open-book-grass"
+   ],
+   "tree": [
+    "v",
+    0,
+    1
+   ],
+   "reveal": [
+    [
+     0,
+     1
+    ]
+   ],
+   "at": [
+    9.448
+   ],
+   "gap": 20,
+   "margin": [
+    60,
+    140
+   ]
+  },
+  {
+   "type": "sym",
+   "images": [
+    "sh-pink-lilies"
+   ],
+   "tree": 0,
+   "reveal": [
+    [
+     0
+    ]
+   ],
+   "at": [
+    12.582
+   ],
+   "gap": 20,
+   "margin": [
+    60,
+    140
+   ]
+  },
+  {
+   "type": "sym",
+   "images": [
+    "sh-signet-rings-tray"
+   ],
+   "tree": 0,
+   "reveal": [
+    [
+     0
+    ]
+   ],
+   "at": [
+    12.989
+   ],
+   "gap": 20,
+   "margin": [
+    60,
+    140
+   ]
+  },
+  {
+   "type": "sym",
+   "images": [
+    "sh-pink-silk-lanterns",
+    "sh-spanish-moss-oak",
+    "sh-hummingbird-lilies",
+    "sh-vintage-shopfront",
+    "sh-old-photos-pile"
+   ],
+   "tree": [
+    "v",
+    [
+     "h",
+     0,
+     1
+    ],
+    2,
+    [
+     "h",
+     3,
+     4
+    ]
+   ],
+   "reveal": [
+    [
+     2
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     3,
+     4
+    ]
+   ],
+   "at": [
+    13.378,
+    14.156,
+    14.951
+   ],
+   "gap": 20,
+   "margin": [
+    60,
+    140
+   ]
+  }
+ ]
+}

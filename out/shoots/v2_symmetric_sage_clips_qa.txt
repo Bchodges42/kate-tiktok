@@ -1,0 +1,50 @@
+22 steps, 31 photos, 16 slides, 18.47 s (music ends 18.47 s)
+sync: every change within 0.49 frames of its beat (mean 0.30) -> PASS
+stillness: max held-frame change 0.045 -> PASS
+shape: every photo whole, at its own width-to-height shape -> PASS
+repeats: none -> PASS
+variety: no two photos of the same kind touching, back to back, or across the loop -> PASS
+position: every photo and every arrangement centred on the screen's vertical centre line
+clips: sh-birds-flock-sky 2.00 s, on screen 2.37 s, sh-hand-out-car-window 1.53 s, on screen 1.57 s, sh-bicycle-pedalling 1.20 s, on screen 1.57 s, sh-cat-running-film 1.07 s, on screen 3.13 s, sh-open-book-grass 3.10 s, on screen 3.13 s, sh-hummingbird-lilies 5.00 s, on screen 5.10 s -> PASS (every clip plays all the way through)
+symmetry: mirror-symmetric at every moment; worst mismatch 14 px (2.9% of that photo's width) -> PASS
+
+screen covered by photos, per slide (finished slide):
+  slide  1 sym     59%  (gap 20 px)
+  slide  2 sym     59%  (gap 20 px)
+  slide  3 sym     67%  (gap 20 px)
+  slide  4 sym     59%  (gap 20 px)
+  slide  5 sym     64%  (gap 20 px)
+  slide  6 sym     59%  (gap 20 px)
+  slide  7 sym     67%  (gap 20 px)
+  slide  8 sym     59%  (gap 20 px)
+  slide  9 sym     66%  (gap 20 px)
+  slide 10 sym     56%  (gap 20 px)
+  slide 11 sym     55%  (gap 20 px)
+  slide 12 sym     59%  (gap 20 px)
+  slide 13 sym     58%  (gap 20 px)
+  slide 14 sym     50%  (gap 20 px)
+  slide 15 sym     55%  (gap 20 px)
+  slide 16 sym     65%  (gap 20 px)
+
+ 1.  0.00s  slide 1  sym   sh-white-peacock [animal]
+ 2.  0.61s  slide 2  sym   sh-chanel-flats-box [shoes]
+ 3.  1.00s  slide 3  sym   sh-yarrow-blooms [flower]
+ 4.  1.39s  slide 4  sym   sh-dalmatian-on-bed [animal]
+ 5.  1.76s  slide 5  sym   sh-birds-flock-sky [sky], sh-gold-ring-hand [jewelry]
+ 6.  2.55s  slide 5  sym   sh-daisy-garden-steps [garden], sh-lace-hand-fan [object]
+ 7.  3.35s  slide 5  sym   sh-chess-board [object], sh-green-door-carriage-house [house]
+ 8.  4.14s  slide 6  sym   sh-denim-jacket-selfie [outfit]
+ 9.  4.54s  slide 7  sym   sh-pink-hydrangeas [flower], sh-plaid-shirt-legs [people]
+10.  5.32s  slide 8  sym   sh-pink-dress-armchair [interior]
+11.  5.72s  slide 9  sym   sh-plaster-roses-relief [texture]
+12.  6.10s  slide 9  sym   sh-hand-out-car-window [road trip], sh-bicycle-pedalling [bicycle]
+13.  7.67s  slide 10 sym   sh-marquise-ring-hand [jewelry]
+14.  8.06s  slide 11 sym   sh-magnolia-still-life [flower], sh-bay-window-bedroom [interior]
+15.  8.46s  slide 11 sym   sh-long-blonde-waves [people]
+16.  8.85s  slide 12 sym   sh-stacked-bowls [object]
+17.  9.45s  slide 13 sym   sh-cat-running-film [animal], sh-open-book-grass [book]
+18. 12.58s  slide 14 sym   sh-pink-lilies [flower]
+19. 12.99s  slide 15 sym   sh-signet-rings-tray [jewelry]
+20. 13.38s  slide 16 sym   sh-hummingbird-lilies [flower]
+21. 14.16s  slide 16 sym   sh-pink-silk-lanterns [object], sh-spanish-moss-oak [tree]
+22. 14.95s  slide 16 sym   sh-vintage-shopfront [storefront], sh-old-photos-pile [object]
