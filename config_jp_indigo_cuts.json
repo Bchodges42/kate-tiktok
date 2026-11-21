@@ -1,0 +1,174 @@
+{
+ "name": "japan_trip",
+ "vibe": "Japan trip: Fuji, lanterns, deer, neon alleys, kimono",
+ "fps": 30,
+ "size": [
+  1080,
+  1920
+ ],
+ "bpm": 150,
+ "background": "#1F2A44",
+ "grade": {
+  "warmth": 0.01,
+  "lift": 5,
+  "saturation": 1.0,
+  "grain": 2.0,
+  "grain_seed": 29
+ },
+ "images_dir": "images",
+ "version": "jp_indigo_cuts",
+ "style": "single",
+ "margin_px": 60,
+ "center_y": 0.5,
+ "images": {
+  "jp-torii-and-fuji": {
+   "kind": "fuji"
+  },
+  "jp-omoide-alley-maple": {
+   "kind": "alley"
+  },
+  "jp-shrine-deer": {
+   "kind": "deer"
+  },
+  "jp-moss-jizo-statues": {
+   "kind": "statues"
+  },
+  "jp-fuji-crossing": {
+   "kind": "fuji"
+  },
+  "jp-red-parasol-garden": {
+   "kind": "garden"
+  },
+  "jp-koinobori-carp": {
+   "kind": "koi"
+  },
+  "jp-noren-couple": {
+   "kind": "couple"
+  },
+  "jp-autumn-garden": {
+   "kind": "autumn"
+  },
+  "jp-todaiji-deer": {
+   "kind": "deer"
+  },
+  "jp-fuji-lake-reflection": {
+   "kind": "fuji"
+  },
+  "jp-tea-ceremony": {
+   "kind": "tea"
+  },
+  "jp-white-lantern-row": {
+   "kind": "lantern"
+  },
+  "jp-flea-market-bowls": {
+   "kind": "bowls"
+  },
+  "jp-osaka-manhole": {
+   "kind": "manhole"
+  },
+  "jp-deer-meadow": {
+   "kind": "deer"
+  },
+  "jp-dotonbori-signs": {
+   "kind": "street"
+  },
+  "jp-winter-fuji-lake": {
+   "kind": "fuji"
+  },
+  "jp-izakaya-counter": {
+   "kind": "izakaya"
+  },
+  "jp-kimono-trio": {
+   "kind": "kimono"
+  },
+  "jp-nara-deer-pair": {
+   "kind": "deer"
+  },
+  "jp-shinjuku-ramen-street": {
+   "kind": "street"
+  },
+  "jp-autumn-canal-friends": {
+   "kind": "friends"
+  },
+  "jp-scarf-street": {
+   "kind": "scarf"
+  },
+  "jp-noodle-stall": {
+   "kind": "stall"
+  },
+  "jp-red-lantern-alley": {
+   "kind": "alley"
+  },
+  "jp-kimono-couple": {
+   "kind": "kimono"
+  },
+  "jp-tsutenkaku-street": {
+   "kind": "street"
+  },
+  "jp-deer-and-cherry-blossom": {
+   "kind": "deer"
+  },
+  "jp-paper-lanterns": {
+   "kind": "lantern"
+  },
+  "jp-hakone-train": {
+   "kind": "train"
+  },
+  "jp-osaka-neon-street": {
+   "kind": "street"
+  },
+  "jp-bookshop-reader": {
+   "kind": "shop"
+  },
+  "jp-fushimi-torii-gates": {
+   "kind": "torii"
+  },
+  "jp-osaka-castle-garden": {
+   "kind": "castle"
+  },
+  "jp-ukiyo-e-prints": {
+   "kind": "prints"
+  }
+ },
+ "order": [
+  "jp-torii-and-fuji",
+  "jp-omoide-alley-maple",
+  "jp-shrine-deer",
+  "jp-moss-jizo-statues",
+  "jp-fuji-crossing",
+  "jp-red-parasol-garden",
+  "jp-koinobori-carp",
+  "jp-noren-couple",
+  "jp-autumn-garden",
+  "jp-todaiji-deer",
+  "jp-fuji-lake-reflection",
+  "jp-tea-ceremony",
+  "jp-white-lantern-row",
+  "jp-flea-market-bowls",
+  "jp-osaka-manhole",
+  "jp-deer-meadow",
+  "jp-dotonbori-signs",
+  "jp-winter-fuji-lake",
+  "jp-izakaya-counter",
+  "jp-kimono-trio",
+  "jp-nara-deer-pair",
+  "jp-shinjuku-ramen-street",
+  "jp-autumn-canal-friends",
+  "jp-scarf-street",
+  "jp-noodle-stall",
+  "jp-red-lantern-alley",
+  "jp-kimono-couple",
+  "jp-tsutenkaku-street",
+  "jp-deer-and-cherry-blossom",
+  "jp-paper-lanterns",
+  "jp-hakone-train",
+  "jp-osaka-neon-street",
+  "jp-bookshop-reader",
+  "jp-fushimi-torii-gates",
+  "jp-osaka-castle-garden",
+  "jp-ukiyo-e-prints"
+ ],
+ "border_px": 6,
+ "border": "#F4ECDA",
+ "_comment": "Board kholthaus8/japan-trip (pin.it/2PGB4s3Ud): the feed gives the newest 50 of 78 pins. 36 travel photos, 150 BPM (0.4 s) = 14.4 s, hard cuts, deep indigo #1F2A44 (aizome blue) so the reds and greens pop. Opens on the torii and Fuji. Left out: pin 47 (soft), 3, 14, 26, 41 (app icons or overlays), 9 (creator handle), 12 (itinerary graphic), and the non-Japan outfit shots (27, 29, 30, 31, 37, 40, 45)."
+}

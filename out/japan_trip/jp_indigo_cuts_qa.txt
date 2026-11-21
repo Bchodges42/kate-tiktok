@@ -1,0 +1,43 @@
+150 BPM steady, one photo per beat (0.400 s), 36 photos, 36 beats = 14.40 s, ends on a bar line
+hard cuts; beat sync: worst offset 0.00 frames -> PASS
+stillness: max held-frame diff 0.041 -> PASS
+photos: whole (no cropping), own shape (no stretching), none repeated -> PASS
+variety: no two photos of the same kind back to back -> PASS
+screen filled per photo: 31%-79% (whole photos; wide ones are shorter)
+
+ 1.   0.00s  fuji      jp-torii-and-fuji
+ 2.   0.40s  alley     jp-omoide-alley-maple
+ 3.   0.80s  deer      jp-shrine-deer
+ 4.   1.20s  statues   jp-moss-jizo-statues
+ 5.   1.60s  fuji      jp-fuji-crossing
+ 6.   2.00s  garden    jp-red-parasol-garden
+ 7.   2.40s  koi       jp-koinobori-carp
+ 8.   2.80s  couple    jp-noren-couple
+ 9.   3.20s  autumn    jp-autumn-garden
+10.   3.60s  deer      jp-todaiji-deer
+11.   4.00s  fuji      jp-fuji-lake-reflection
+12.   4.40s  tea       jp-tea-ceremony
+13.   4.80s  lantern   jp-white-lantern-row
+14.   5.20s  bowls     jp-flea-market-bowls
+15.   5.60s  manhole   jp-osaka-manhole
+16.   6.00s  deer      jp-deer-meadow
+17.   6.40s  street    jp-dotonbori-signs
+18.   6.80s  fuji      jp-winter-fuji-lake
+19.   7.20s  izakaya   jp-izakaya-counter
+20.   7.60s  kimono    jp-kimono-trio
+21.   8.00s  deer      jp-nara-deer-pair
+22.   8.40s  street    jp-shinjuku-ramen-street
+23.   8.80s  friends   jp-autumn-canal-friends
+24.   9.20s  scarf     jp-scarf-street
+25.   9.60s  stall     jp-noodle-stall
+26.  10.00s  alley     jp-red-lantern-alley
+27.  10.40s  kimono    jp-kimono-couple
+28.  10.80s  street    jp-tsutenkaku-street
+29.  11.20s  deer      jp-deer-and-cherry-blossom
+30.  11.60s  lantern   jp-paper-lanterns
+31.  12.00s  train     jp-hakone-train
+32.  12.40s  street    jp-osaka-neon-street
+33.  12.80s  shop      jp-bookshop-reader
+34.  13.20s  torii     jp-fushimi-torii-gates
+35.  13.60s  castle    jp-osaka-castle-garden
+36.  14.00s  prints    jp-ukiyo-e-prints
