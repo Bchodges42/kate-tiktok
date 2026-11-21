@@ -1,0 +1,34 @@
+150 BPM steady, one photo per beat (0.400 s), 27 photos, 36 beats = 14.40 s, ends on a bar line
+hard cuts; beat sync: worst offset 0.00 frames -> PASS
+stillness: max held-frame diff 0.056 -> PASS
+photos: whole (no cropping), own shape (no stretching), none repeated -> PASS
+variety: no two photos of the same kind back to back -> PASS
+screen filled per photo: 17%-47% (whole photos; wide ones are shorter)
+
+ 1.   0.00s  step1     wo-step1
+ 2.   0.40s  step2     wo-step2
+ 3.   0.80s  step3     wo-step3
+ 4.   1.20s  feathers  wo-pink-feather-scales
+ 5.   1.60s  ruins     wo-machu-picchu
+ 6.   2.00s  feathers  wo-pheasant-feathers
+ 7.   2.40s  arch      wo-red-rock-arch
+ 8.   3.20s  alpaca    wo-alpacas-in-the-andes
+ 9.   3.60s  canyon    wo-green-canyon-arch
+10.   4.00s  terrace   wo-rice-terrace-trek
+11.   4.80s  lantern   wo-paper-lantern-wall
+12.   5.60s  road      wo-mountain-road-riders
+13.   6.00s  stair     wo-white-spiral-staircase
+14.   6.40s  rainbow   wo-rainbow-dunes-camels
+15.   7.20s  roofs     wo-temple-rooftops
+16.   7.60s  train     wo-jungle-train
+17.   8.00s  canyon    wo-iceland-canyon
+18.   8.40s  garden    wo-kyoto-reflection-garden
+19.   8.80s  sand      wo-sand-ripples
+20.   9.20s  falls     wo-iguazu-falls
+21.   9.60s  ivy       wo-ivy-wall-windows
+22.  10.00s  lantern   wo-lanterns-in-a-tree
+23.  10.40s  zebra     wo-zebra-herd
+24.  11.20s  trees     wo-dragon-blood-trees
+25.  11.60s  lantern   wo-orange-lanterns
+26.  12.00s  wall      wo-great-wall
+27.  12.80s  stair     wo-jewel-spiral-staircase

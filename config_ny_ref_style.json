@@ -1,0 +1,165 @@
+{
+ "name": "ny_reference_style",
+ "vibe": "reference style",
+ "fps": 30,
+ "size": [
+  1080,
+  1920
+ ],
+ "bpm": 150,
+ "background": "#FFFFFF",
+ "grade": {
+  "warmth": 0.0,
+  "lift": 3,
+  "saturation": 1.0,
+  "grain": 1.5,
+  "grain_seed": 33
+ },
+ "images_dir": "images",
+ "version": "ny_ref_style",
+ "style": "single",
+ "margin_px": 170,
+ "center_y": 0.5,
+ "images": {
+  "ny-step1": {
+   "src": "ny-gold-fringe-mini",
+   "scale": 0.75,
+   "kind": "step1"
+  },
+  "ny-step2": {
+   "src": "ny-gold-fringe-mini",
+   "scale": 0.94,
+   "kind": "step2",
+   "hard_in": true
+  },
+  "ny-step3": {
+   "src": "ny-gold-fringe-mini",
+   "scale": 1.0,
+   "kind": "step3",
+   "hard_in": true
+  },
+  "ny-sparkle-socks-and-whisky": {
+   "kind": "accessory"
+  },
+  "ny-chandelier-ballroom": {
+   "kind": "party"
+  },
+  "ny-fireworks-and-lanterns": {
+   "kind": "fireworks"
+  },
+  "ny-white-harem-pants": {
+   "kind": "look",
+   "hold": 2
+  },
+  "ny-two-beaded-minis": {
+   "kind": "party"
+  },
+  "ny-green-feather-dress": {
+   "kind": "dress"
+  },
+  "ny-yellow-mini-bathroom": {
+   "kind": "look",
+   "hold": 2
+  },
+  "ny-pink-halter": {
+   "kind": "dress",
+   "hold": 2
+  },
+  "ny-striped-beach-set": {
+   "kind": "look"
+  },
+  "ny-heels-on-tiger-rug": {
+   "kind": "accessory"
+  },
+  "ny-orange-corset-dress": {
+   "kind": "dress",
+   "hold": 2
+  },
+  "ny-elevator-and-coral-heels": {
+   "kind": "accessory"
+  },
+  "ny-plum-pleated-dress": {
+   "kind": "dress"
+  },
+  "ny-pink-feather-gown": {
+   "kind": "gown"
+  },
+  "ny-party-table-aftermath": {
+   "kind": "party"
+  },
+  "ny-gold-jacquard-doorway": {
+   "kind": "look"
+  },
+  "ny-glitter-tights-and-duck": {
+   "kind": "pattern"
+  },
+  "ny-gold-confetti-floor": {
+   "kind": "party"
+  },
+  "ny-red-gradient-nails": {
+   "kind": "nails"
+  },
+  "ny-sequin-zebra-pants": {
+   "kind": "pattern",
+   "hold": 2
+  },
+  "ny-paris-fireworks": {
+   "kind": "fireworks"
+  },
+  "ny-silver-satin-skirt": {
+   "kind": "look"
+  },
+  "ny-paper-stars-mantel": {
+   "kind": "party",
+   "hold": 2
+  },
+  "ny-sequin-dress-on-hanger": {
+   "kind": "hanger",
+   "hold": 2
+  },
+  "ny-gold-star-corset": {
+   "kind": "dress"
+  },
+  "ny-glitter-bag-and-martini": {
+   "kind": "accessory"
+  },
+  "ny-teal-chrome-nails": {
+   "kind": "nails",
+   "hold": 2
+  }
+ },
+ "order": [
+  "ny-step1",
+  "ny-step2",
+  "ny-step3",
+  "ny-sparkle-socks-and-whisky",
+  "ny-chandelier-ballroom",
+  "ny-fireworks-and-lanterns",
+  "ny-white-harem-pants",
+  "ny-two-beaded-minis",
+  "ny-green-feather-dress",
+  "ny-yellow-mini-bathroom",
+  "ny-pink-halter",
+  "ny-striped-beach-set",
+  "ny-heels-on-tiger-rug",
+  "ny-orange-corset-dress",
+  "ny-elevator-and-coral-heels",
+  "ny-plum-pleated-dress",
+  "ny-pink-feather-gown",
+  "ny-party-table-aftermath",
+  "ny-gold-jacquard-doorway",
+  "ny-glitter-tights-and-duck",
+  "ny-gold-confetti-floor",
+  "ny-red-gradient-nails",
+  "ny-sequin-zebra-pants",
+  "ny-paris-fireworks",
+  "ny-silver-satin-skirt",
+  "ny-paper-stars-mantel",
+  "ny-sequin-dress-on-hanger",
+  "ny-gold-star-corset",
+  "ny-glitter-bag-and-martini",
+  "ny-teal-chrome-nails"
+ ],
+ "border_px": 0,
+ "_comment": "Board kholthaus8/ny-outfit-inspo (pin.it/37VCdm4rg). VERSION A, exact reference style: Reference analysed from the user's video (13.3 s, 30 fps): flat white background, each photo centred with NO border at a size that leaves white around it, hard cuts landing on a ~0.4 s pulse (150 BPM) with holds of 1 or 2 pulses, and the opening photo pushed in by three stepped sizes (about 75%, 94%, 100% of its final size, one pulse each) before the first cut. 28 photos; holds follow the reference's pattern. Left out: soft pins 4, 17; overlay pins 8, 14, 19, 21."
+}

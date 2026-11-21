@@ -93,7 +93,7 @@ def load_source(cfg, key):
     meta = cfg["images"].get(key, {})
     path = None
     for ext in (".jpg", ".jpeg", ".png", ".webp"):
-        p = os.path.join(ROOT, cfg["images_dir"], key + ext)
+        p = os.path.join(ROOT, cfg["images_dir"], meta.get("src", key) + ext)  # "src": reuse another image's file
         if os.path.exists(p):
             path = p
             break

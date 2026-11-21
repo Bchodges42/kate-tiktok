@@ -7,6 +7,8 @@
                   "dissolve_frames": D blends each photo into the next, finishing exactly on the beat;
                   with "transition": "wipe" those D frames are a soft-edged wipe instead of a blend.
                   "polaroid": {...} draws each photo inside an instant-photo frame with a film look.
+  Opening push-in: images {"src": "<first photo>", "scale": 0.75, "hard_in": true} entries placed first in "order" show
+  the first photo at 75%, then 94%, then 100% of its fitted size, one step each (the reference style's stepped push-in).
   Any image can carry "hold": N to stay on screen for N steps (e.g. a title photo before a run of others).
   Any image can carry "clip": "clips/<file>.mp4": the clip plays in its spot before the next photo lands.
   style "pile":   an overlapping collage. Every photo lands on top of the pile at the same area
@@ -245,7 +247,7 @@ def main():
                 c, box = polaroid_plate(bg, im, pol, cfg, m, i)
                 plates.append(c); boxes.append(box); cover.append(box[2] * box[3] / (W * H))
                 continue
-            s = min((W - 2 * m - 2 * bord) / im.width, (H - 2 * m - 2 * bord) / im.height)
+            s = min((W - 2 * m - 2 * bord) / im.width, (H - 2 * m - 2 * bord) / im.height) * cfg["images"][k].get("scale", 1)
             w, h = int(round(im.width * s)), int(round(im.height * s))
             fw, fh = w + 2 * bord, h + 2 * bord
             x, y = (W - fw) // 2, int(round((H - fh) * cfg.get("center_y", 0.5)))
@@ -390,7 +392,10 @@ def main():
         s1 = segs[n + 1][0] if n + 1 < len(segs) else N
         fr = np.clip(pl + grain, 0, 255).astype(np.uint8)
         frames8.append(fr); sheet_lbl.append((s0, i))
-        nxt = np.clip(segs[n + 1][1] + grain, 0, 255) if D and n + 1 < len(segs) else None
+        # "hard_in": true on an image makes the cut INTO it a hard cut even when dissolve_frames is set
+        # (used for the stepped push-in on the opening photo)
+        hard = n + 1 < len(segs) and segs[n + 1][2] is not None and cfg["images"][order[segs[n + 1][2]]].get("hard_in")
+        nxt = np.clip(segs[n + 1][1] + grain, 0, 255) if D and n + 1 < len(segs) and not hard else None
         if i in clipframes:  # a clip: every frame drawn from the clip, last frame held if it runs short
             base, (cx, cy, cw, ch), cf = clipframes[i]
             for f in range(s0, s1):

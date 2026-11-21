@@ -1,0 +1,25 @@
+150 BPM steady, one photo per beat (0.400 s), 18 photos, 36 beats = 14.40 s, ends on a bar line
+dissolve: 7 frames (0.23 s) into each photo, finishing on the beat; beat sync: worst offset 0.00 frames -> PASS
+stillness: max held-frame diff 0.163 -> PASS
+photos: whole (no cropping), own shape (no stretching), none repeated -> PASS
+variety: no two photos of the same kind back to back -> PASS
+screen filled per photo: 17%-47% (whole photos; wide ones are shorter)
+
+ 1.   0.00s  step1     wo-step1
+ 2.   0.40s  step2     wo-step2
+ 3.   0.80s  step3     wo-step3
+ 4.   1.20s  canyon    wo-green-canyon-arch
+ 5.   2.00s  rainbow   wo-rainbow-mountain
+ 6.   2.80s  lantern   wo-paper-lantern-wall
+ 7.   3.60s  terrace   wo-rice-terrace-trek
+ 8.   4.40s  stair     wo-jewel-spiral-staircase
+ 9.   5.20s  roofs     wo-temple-rooftops
+10.   6.00s  alpaca    wo-alpacas-in-the-andes
+11.   6.80s  lantern   wo-lanterns-in-a-tree
+12.   7.60s  wall      wo-great-wall
+13.   8.40s  arch      wo-red-rock-arch
+14.   9.20s  stair     wo-white-spiral-staircase
+15.  10.00s  falls     wo-iguazu-falls
+16.  10.80s  garden    wo-kyoto-reflection-garden
+17.  11.60s  canyon    wo-iceland-canyon
+18.  12.40s  road      wo-mountain-road-riders
