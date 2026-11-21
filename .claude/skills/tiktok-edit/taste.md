@@ -36,6 +36,7 @@ Chic, calm, Pinterest mood board. It should look like a person with taste laid r
 - **A blank background between slides** in full-screen and collage styles. Go straight to the next slide unless a clear is part of the design.
 - **Two photos of the same kind next to each other** (two dresses, two party scenes, two seascapes).
 - **Repeated photos**, unless a loop or second pass is asked for.
+- **Board videos or GIFs shown as stills.** Moving pins must play, all the way through, in the edit ("make sure you're letting the videos play").
 - **Previews that have to be downloaded to play.** They must play in the viewing page on a phone.
 
 ## How the user gives direction

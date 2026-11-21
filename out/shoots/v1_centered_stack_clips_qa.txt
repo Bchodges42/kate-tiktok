@@ -1,0 +1,42 @@
+23 steps, 23 photos, 8 slides, 18.47 s (music ends 18.47 s)
+sync: every change within 0.49 frames of its beat (mean 0.30) -> PASS
+stillness: max held-frame change 0.046 -> PASS
+shape: every photo whole, at its own width-to-height shape -> PASS
+repeats: none -> PASS
+variety: no two photos of the same kind touching, back to back, or across the loop -> PASS
+position: every photo and every arrangement centred on the screen's vertical centre line
+clips: sh-bicycle-pedalling 1.20 s, on screen 1.57 s, sh-hand-out-car-window 1.53 s, on screen 1.57 s, sh-cat-running-film 1.07 s, on screen 1.17 s, sh-hummingbird-lilies 5.00 s, on screen 5.10 s -> PASS (every clip plays all the way through)
+
+screen covered by photos, per slide (finished slide):
+  slide  1 stack   63%
+  slide  2 inset   65%  (frame of base photo 80 px, gap 22 px)
+  slide  3 stack   52%
+  slide  4 inset   63%  (frame of base photo 80 px, gap 22 px)
+  slide  5 stack   51%
+  slide  6 inset   63%  (frame of base photo 80 px, gap 22 px)
+  slide  7 stack   48%
+  slide  8 inset   58%  (frame of base photo 80 px, gap 22 px)
+
+ 1.  0.00s  slide 1  swap  sh-white-peacock [animal]
+ 2.  0.61s  slide 1  swap  sh-gold-ring-hand [jewelry]
+ 3.  1.00s  slide 1  swap  sh-rose-cottage [house]
+ 4.  1.39s  slide 1  cover sh-loafers-white-socks [shoes]
+ 5.  1.76s  slide 1  swap  sh-pink-lilies [flower]
+ 6.  2.55s  slide 1  swap  sh-pink-dress-armchair [interior]
+ 7.  3.35s  slide 2  swap  sh-spanish-moss-oak [tree]
+ 8.  3.76s  slide 2  inset sh-bicycle-pedalling [bicycle]
+ 9.  5.32s  slide 3  swap  sh-chanel-flats-box [shoes]
+10.  5.72s  slide 3  swap  sh-hydrangea-grandma [flower]
+11.  6.10s  slide 4  swap  sh-vintage-shopfront [storefront]
+12.  6.50s  slide 4  inset sh-hand-out-car-window [road trip]
+13.  8.06s  slide 5  swap  sh-denim-jacket-selfie [outfit]
+14.  8.46s  slide 5  swap  sh-marquise-ring-hand [jewelry]
+15.  8.85s  slide 5  swap  sh-pink-hydrangeas [flower]
+16.  9.45s  slide 5  cover sh-dalmatian-on-bed [animal]
+17.  9.84s  slide 6  swap  sh-old-photos-pile [object]
+18. 10.23s  slide 6  inset sh-cat-running-film [animal]
+19. 11.39s  slide 7  swap  sh-yarrow-blooms [flower]
+20. 11.79s  slide 7  swap  sh-plaster-roses-relief [texture]
+21. 12.18s  slide 7  cover sh-pink-silk-lanterns [object]
+22. 12.58s  slide 8  swap  sh-ivy-stone-house [house]
+23. 13.38s  slide 8  inset sh-hummingbird-lilies [flower]

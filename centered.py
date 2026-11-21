@@ -25,6 +25,11 @@ fade). Each slide is one of:
       A collage that is mirror-symmetric about the vertical centre line at every moment: each
       reveal group (one centred photo, or a mirrored pair of the same shape) lands at once.
 
+An image may carry "clip": "clips/<file>.gif|mp4" (its still file in images/ is the clip's first frame, used for
+layout). The clip plays from the moment it lands, at its own speed, and loops if it stays on screen longer; QA
+checks that every clip stays on screen long enough to play all the way through, and checks stillness and sync with
+the clips masked out.
+
 Any slide may set "bg" (its background colour) and "enter": {"fade_frames": n}: the previous
 slide fades out to the new background over n frames that end exactly on the slide's first
 time, then the slide's first photo lands with a hard cut. Without "enter" the slide cuts in.
@@ -228,6 +233,16 @@ def build_states(cfg):
 
 
 # --------------------------------------------------------------------------- render
+def load_clip(path, fps):
+    """Every frame of a GIF or video, resampled to the edit's frame rate (uint8, native size)."""
+    w, h = (int(v) for v in subprocess.run(["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries",
+                                            "stream=width,height", "-of", "csv=p=0", path],
+                                           capture_output=True, text=True, check=True).stdout.split(",")[:2])
+    raw = subprocess.run(["ffmpeg", "-v", "error", "-i", path, "-vf", f"fps={fps}", "-f", "rawvideo", "-pix_fmt", "rgb24", "-"],
+                         capture_output=True, check=True).stdout
+    return np.frombuffer(raw, np.uint8).reshape(-1, h, w, 3)
+
+
 def border(arr, px, rgb):
     if px <= 0:
         return arr
@@ -289,6 +304,26 @@ def main():
            "-crf", "18", "-preset", "veryfast", "-r", str(fps), "-c:a", "aac", "-b:a", "192k",
            "-movflags", "+faststart", "-t", f"{dur:.4f}", mp4]
     p = subprocess.Popen(cmd, stdin=subprocess.PIPE)
+    # clips: frames at the edit's rate, and the frame each clip landed on (it plays from there)
+    clips = {k: load_clip(os.path.join(ROOT, v["clip"]), fps) for k, v in cfg["images"].items() if v.get("clip") and k in srcs}
+    landed = []
+    for i, st in enumerate(states):
+        lk = {}
+        for k, _ in st["layers"]:
+            lk[k] = landed[i - 1][k] if i and k in landed[i - 1] and k in dict(states[i - 1]["layers"]) else st["f0"]
+        landed.append(lk)
+    clip_cache = {}
+    bpx = cfg.get("border", {}).get("px", 0)
+    brgb = hex_rgb(cfg.get("border", {}).get("color", "#FFFFFF"))
+
+    def clip_frame(k, idx, w, h):
+        if (k, idx, w, h) not in clip_cache:
+            im = Image.fromarray(clips[k][idx]).resize((w, h), Image.LANCZOS)
+            clip_cache[(k, idx, w, h)] = border(grade(np.asarray(im), cfg["grade"]), bpx, brgb)
+        return clip_cache[(k, idx, w, h)]
+
+    clip_boxes = [[] for _ in range(N)]   # per output frame: boxes of clips that are moving
+    clip_seen = {k: 0 for k in clips}     # longest unbroken run on screen, in frames
     fade_frames = set()
     frames8 = []
     for i, (s, pl) in enumerate(zip(states, plates)):
@@ -298,15 +333,27 @@ def main():
         nf = nxt["fade"] if nxt else 0
         fade_start = s["f1"] - nf
         hb = held.tobytes()
+        live = [(k, b, landed[i][k]) for k, b in s["layers"] if k in clips]
+        for k, _, l0 in live:
+            clip_seen[k] = max(clip_seen[k], s["f1"] - l0)
         for f in range(s["f0"], s["f1"]):
+            base = pl
+            if live:
+                base = pl.copy()
+                for k, (x, y, w, h), l0 in live:
+                    base[y:y + h, x:x + w] = clip_frame(k, (f - l0) % len(clips[k]), w, h)
+                    if f > l0:  # the frame it lands on is a real cut; after that its motion is left out of QA
+                        clip_boxes[f].append((x, y, w, h))
             if nf and f >= fade_start:  # ease out to the next slide's background, finishing on its beat
                 a = (f - fade_start + 1) / (nf + 1)
                 a = a * a * (3 - 2 * a)
                 target = np.empty_like(pl)
                 target[:] = hex_rgb(nxt["bg"])
-                fr = np.clip(pl * (1 - a) + target * a + grain, 0, 255).astype(np.uint8)
+                fr = np.clip(base * (1 - a) + target * a + grain, 0, 255).astype(np.uint8)
                 p.stdin.write(fr.tobytes())
                 fade_frames.add(f)
+            elif live:
+                p.stdin.write(np.clip(base + grain, 0, 255).astype(np.uint8).tobytes())
             else:
                 p.stdin.write(hb)
     p.stdin.close()
@@ -317,7 +364,18 @@ def main():
 
     # ---- QA on the rendered file
     F = decode_small(mp4)
-    d = np.abs(np.diff(F, axis=0)).mean((1, 2, 3))
+    sc = F.shape[2] / W
+    d = np.empty(len(F) - 1)
+    for f in range(1, len(F)):
+        diff = np.abs(F[f].astype(np.float32) - F[f - 1])
+        boxes = (clip_boxes[f] if f < N else []) + (clip_boxes[f - 1] if f - 1 < N else [])
+        if boxes:  # moving clips are not a cut and not a wobble: leave them out of the measure
+            m = np.ones(diff.shape[:2], bool)
+            for x, y, w, h in boxes:
+                m[max(int(y * sc) - 2, 0):int((y + h) * sc) + 2, max(int(x * sc) - 2, 0):int((x + w) * sc) + 2] = False
+            d[f - 1] = diff[m].mean() if m.any() else 0.0
+        else:
+            d[f - 1] = diff.mean()
     offs = []
     for s in states[1:]:
         f = s["f0"]
@@ -335,6 +393,10 @@ def main():
            "repeats: none -> PASS",
            "variety: no two photos of the same kind touching, back to back, or across the loop -> PASS",
            "position: every photo and every arrangement centred on the screen's vertical centre line"]
+    if clips:
+        short = [k for k in clips if clip_seen[k] < len(clips[k])]
+        rep.append("clips: " + ", ".join(f"{k} {len(clips[k]) / fps:.2f} s, on screen {clip_seen[k] / fps:.2f} s" for k in clips)
+                   + (" -> PASS (every clip plays all the way through)" if not short else f" -> FAIL (cut short: {short})"))
     sym_worst = (0, 0.0)
     for s in states:
         if s["op"] == "sym":

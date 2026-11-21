@@ -49,7 +49,9 @@ def pins_from_widget(user, board):
         src = (imgs.get("564x") or next(iter(imgs.values()), {})).get("url")
         if not src:
             continue
+        emb = p.get("embed") or {}
         out.append(dict(id=p.get("id"), url=src, video=bool(p.get("is_video")),
+                        gif=emb.get("src") if emb.get("type") == "gif" else None,
                         description=html.unescape(p.get("description") or "").strip(),
                         source=p.get("domain") or "", link=html.unescape(p.get("link") or "")))
     return out, (data.get("board") or {}).get("pin_count")
@@ -62,7 +64,7 @@ def pins_from_rss(user, board):
         m = re.search(r'https://i\.pinimg\.com/[^"&<\s]+', html.unescape(item))
         if m:
             t = re.search(r"<title>(.*?)</title>", item, flags=re.S)
-            out.append(dict(id=None, url=m.group(0), video=False, source="", link="",
+            out.append(dict(id=None, url=m.group(0), video=False, gif=None, source="", link="",
                             description=html.unescape(re.sub(r"<!\[CDATA\[|\]\]>", "", t.group(1))).strip() if t else ""))
     return out, None
 
@@ -137,7 +139,14 @@ def main():
         if not size:
             print(f"  {i:02d}: download failed, skipped")
             continue
-        entries.append(dict(index=i, file=fn, width=size[0], height=size[1], soft=min(size) <= 500,
+        gif = None
+        if p.get("gif"):  # animated pin: keep the moving original next to its still
+            try:
+                open(os.path.join(a.out, f"{i:02d}.gif"), "wb").write(curl([p["gif"]], binary=True))
+                gif = f"{i:02d}.gif"
+            except Exception:
+                pass
+        entries.append(dict(index=i, file=fn, gif=gif, width=size[0], height=size[1], soft=min(size) <= 500,
                             shape="tall" if size[1] > size[0] * 1.1 else "wide" if size[0] > size[1] * 1.1 else "square",
                             video_pin=p["video"], description=p["description"], source=p["source"], pin_link=p["link"]))
     json.dump(dict(user=user, board=board, url=f"https://www.pinterest.com/{user}/{board}/", via=via,
@@ -151,6 +160,9 @@ def main():
     soft = [e["index"] for e in entries if e["soft"]]
     if soft:
         print(f"  Soft (small) sources, flag or leave out: {soft}")
+    gifs = [e["index"] for e in entries if e.get("gif")]
+    if gifs:
+        print(f"  Animated GIF pins, saved as NN.gif (the user expects these to PLAY: use them as clips, not stills): {gifs}")
     vids = [e["index"] for e in entries if e["video_pin"]]
     if vids:
         print(f"  Video pins (only the cover frame was saved): {vids}")
