@@ -1,0 +1,48 @@
+29 steps, 30 photos, 9 slides, 18.47 s (music ends 18.47 s)
+sync: every change within 0.49 frames of its beat (mean 0.26) -> PASS
+stillness: max held-frame change 0.046 -> PASS
+shape: every photo whole, at its own width-to-height shape -> PASS
+repeats: none -> PASS
+variety: no two photos of the same kind touching, back to back, or across the loop -> PASS
+position: every photo and every arrangement centred on the screen's vertical centre line
+
+screen covered by photos, per slide (finished slide):
+  slide  1 stack   59%
+  slide  2 inset   65%  (frame of base photo 80 px, gap 22 px)
+  slide  3 stack   52%
+  slide  4 inset   63%  (frame of base photo 80 px, gap 22 px)
+  slide  5 stack   51%
+  slide  6 inset   63%  (frame of base photo 80 px, gap 22 px)
+  slide  7 stack   48%
+  slide  8 inset   48%  (frame of base photo 80 px, gap 22 px)
+  slide  9 stack   58%
+
+ 1.  0.00s  slide 1  swap  sh-white-peacock [animal]
+ 2.  0.61s  slide 1  swap  sh-gold-ring-hand [jewelry]
+ 3.  1.00s  slide 1  swap  sh-rose-cottage [house]
+ 4.  1.39s  slide 1  cover sh-loafers-white-socks [shoes]
+ 5.  1.76s  slide 1  swap  sh-pink-lilies [flower]
+ 6.  2.16s  slide 1  swap  sh-pink-dress-armchair [interior]
+ 7.  2.95s  slide 1  swap  sh-stacked-bowls [object]
+ 8.  3.35s  slide 2  swap  sh-spanish-moss-oak [tree]
+ 9.  4.14s  slide 2  inset sh-magnolia-still-life [flower]
+10.  4.92s  slide 3  swap  sh-chanel-flats-box [shoes]
+11.  5.32s  slide 3  swap  sh-hydrangea-grandma [flower]
+12.  6.10s  slide 4  swap  sh-vintage-shopfront [storefront]
+13.  6.90s  slide 4  inset sh-vintage-cranes-print [art]
+14.  7.67s  slide 4  inset sh-chess-board [object]
+15.  8.06s  slide 5  swap  sh-denim-jacket-selfie [outfit]
+16.  8.85s  slide 5  swap  sh-marquise-ring-hand [jewelry]
+17.  9.45s  slide 5  swap  sh-pink-hydrangeas [flower]
+18. 10.23s  slide 5  cover sh-dalmatian-on-bed [animal]
+19. 11.00s  slide 6  swap  sh-old-photos-pile [object]
+20. 11.39s  slide 6  inset sh-plaid-shirt-legs [people]
+21. 12.18s  slide 7  swap  sh-yarrow-blooms [flower]
+22. 12.99s  slide 7  swap  sh-green-door-carriage-house [house]
+23. 13.38s  slide 7  swap  sh-plaster-roses-relief [texture]
+24. 14.16s  slide 7  cover sh-pink-silk-lanterns [object]
+25. 14.95s  slide 8  swap  sh-daisy-garden-steps [garden]
+26. 15.73s  slide 8  inset sh-signet-rings-tray [jewelry], sh-spotted-horse-sculpture [animal]
+27. 16.13s  slide 9  swap  sh-pillow-piled-bed [interior]
+28. 16.90s  slide 9  swap  sh-lace-hand-fan [object]
+29. 17.29s  slide 9  swap  sh-ivy-stone-house [house]

@@ -1,0 +1,54 @@
+23 steps, 33 photos, 20 slides, 18.47 s (music ends 18.47 s)
+sync: every change within 0.47 frames of its beat (mean 0.26) -> PASS
+stillness: max held-frame change 0.042 -> PASS
+shape: every photo whole, at its own width-to-height shape -> PASS
+repeats: none -> PASS
+variety: no two photos of the same kind touching, back to back, or across the loop -> PASS
+position: every photo and every arrangement centred on the screen's vertical centre line
+symmetry: mirror-symmetric at every moment; worst mismatch 14 px (2.9% of that photo's width) -> PASS
+
+screen covered by photos, per slide (finished slide):
+  slide  1 sym     59%  (gap 20 px)
+  slide  2 sym     59%  (gap 20 px)
+  slide  3 sym     67%  (gap 20 px)
+  slide  4 sym     59%  (gap 20 px)
+  slide  5 sym     64%  (gap 20 px)
+  slide  6 sym     59%  (gap 20 px)
+  slide  7 sym     67%  (gap 20 px)
+  slide  8 sym     59%  (gap 20 px)
+  slide  9 sym     49%  (gap 20 px)
+  slide 10 sym     57%  (gap 20 px)
+  slide 11 sym     56%  (gap 20 px)
+  slide 12 sym     55%  (gap 20 px)
+  slide 13 sym     59%  (gap 20 px)
+  slide 14 sym     50%  (gap 20 px)
+  slide 15 sym     59%  (gap 20 px)
+  slide 16 sym     55%  (gap 20 px)
+  slide 17 sym     73%  (gap 20 px)
+  slide 18 sym     59%  (gap 20 px)
+  slide 19 sym     44%  (gap 20 px)
+  slide 20 sym     55%  (gap 20 px)
+
+ 1.  0.00s  slide 1  sym   sh-white-peacock [animal]
+ 2.  0.61s  slide 2  sym   sh-chanel-flats-box [shoes]
+ 3.  1.00s  slide 3  sym   sh-yarrow-blooms [flower]
+ 4.  1.39s  slide 4  sym   sh-dalmatian-on-bed [animal]
+ 5.  1.76s  slide 5  sym   sh-gallery-wall-room [interior], sh-gold-ring-hand [jewelry]
+ 6.  2.16s  slide 5  sym   sh-daisy-garden-steps [garden], sh-lace-hand-fan [object]
+ 7.  2.95s  slide 5  sym   sh-chess-board [object], sh-green-door-carriage-house [house]
+ 8.  4.14s  slide 6  sym   sh-denim-jacket-selfie [outfit]
+ 9.  4.92s  slide 7  sym   sh-pink-hydrangeas [flower], sh-plaid-shirt-legs [people]
+10.  5.72s  slide 8  sym   sh-pink-dress-armchair [interior]
+11.  6.90s  slide 9  sym   sh-hydrangea-grandma [flower]
+12.  7.67s  slide 10 sym   sh-pink-silk-lanterns [object], sh-spanish-moss-oak [tree], sh-vintage-shopfront [storefront], sh-old-photos-pile [object]
+13.  8.46s  slide 11 sym   sh-marquise-ring-hand [jewelry]
+14.  9.45s  slide 12 sym   sh-magnolia-still-life [flower], sh-plaster-roses-relief [texture]
+15. 10.63s  slide 12 sym   sh-long-blonde-waves [people]
+16. 11.39s  slide 13 sym   sh-stacked-bowls [object]
+17. 12.18s  slide 14 sym   sh-pink-lilies [flower]
+18. 13.38s  slide 15 sym   sh-rose-cottage [house], sh-candlelit-deck-dinner [people]
+19. 14.16s  slide 16 sym   sh-signet-rings-tray [jewelry]
+20. 14.95s  slide 17 sym   sh-loafers-white-socks [shoes]
+21. 16.13s  slide 18 sym   sh-green-sweater-bed [people], sh-vintage-cranes-print [art]
+22. 16.90s  slide 19 sym   sh-pillow-piled-bed [interior]
+23. 17.29s  slide 20 sym   sh-ivy-stone-house [house]

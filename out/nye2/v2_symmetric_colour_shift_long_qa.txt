@@ -1,0 +1,57 @@
+24 steps, 31 photos, 22 slides, 18.47 s (music ends 18.47 s)
+sync: every change within 0.47 frames of its beat (mean 0.26) -> PASS
+stillness: max held-frame change 0.178 -> PASS
+shape: every photo whole, at its own width-to-height shape -> PASS
+repeats: none -> PASS
+variety: no two photos of the same kind touching, back to back, or across the loop -> PASS
+position: every photo and every arrangement centred on the screen's vertical centre line
+symmetry: mirror-symmetric at every moment; worst mismatch 10 px (2.3% of that photo's width) -> PASS
+
+screen covered by photos, per slide (finished slide):
+  slide  1 sym     59%  (gap 20 px)
+  slide  2 sym     72%  (gap 20 px)
+  slide  3 sym     73%  (gap 20 px)
+  slide  4 sym     59%  (gap 20 px)
+  slide  5 sym     71%  (gap 20 px)
+  slide  6 sym     68%  (gap 20 px)
+  slide  7 sym     59%  (gap 20 px)
+  slide  8 sym     59%  (gap 20 px)
+  slide  9 sym     72%  (gap 20 px)
+  slide 10 sym     44%  (gap 20 px)
+  slide 11 sym     73%  (gap 20 px)
+  slide 12 sym     73%  (gap 20 px)
+  slide 13 sym     44%  (gap 20 px)
+  slide 14 sym     48%  (gap 20 px)
+  slide 15 sym     71%  (gap 20 px)
+  slide 16 sym     51%  (gap 20 px)
+  slide 17 sym     73%  (gap 20 px)
+  slide 18 sym     44%  (gap 20 px)
+  slide 19 sym     67%  (gap 20 px)
+  slide 20 sym     67%  (gap 20 px)
+  slide 21 sym     44%  (gap 20 px)
+  slide 22 sym     55%  (gap 20 px)
+
+ 1.  0.00s  slide 1  sym   nye-glitter-eye-freckles [beauty]
+ 2.  0.61s  slide 2  sym   nye-sequin-slingbacks [shoes]
+ 3.  1.00s  slide 3  sym   nye-white-sequin-slip [outfit]
+ 4.  1.39s  slide 4  sym   nye-espresso-martinis [drinks]
+ 5.  1.76s  slide 5  sym   nye-lace-top-wine [outfit]
+ 6.  2.16s  slide 6  sym   nye-feather-mirror-selfie [outfit], nye-vintage-dice [object]  (bg #5A1A22, fade in 6f)
+ 7.  2.95s  slide 6  sym   nye-dj-girls-candles [party], nye-white-paillette-dress [outfit]
+ 8.  3.76s  slide 6  sym   nye-sequin-blonde-beer [party], nye-beaded-dress-on-bed [outfit]
+ 9.  4.92s  slide 7  sym   nye-tiffany-lamp-bar [venue]
+10.  5.72s  slide 8  sym   nye-gold-glitter-eyes [beauty], nye-green-stone-choker [jewelry]  (bg #1E2433, fade in 6f)
+11.  6.50s  slide 9  sym   nye-sequin-dress-rack [wardrobe]
+12.  7.28s  slide 10 sym   nye-fur-coats-champagne [party]
+13.  8.06s  slide 11 sym   nye-manolo-row [shoes]  (bg #4A3326, fade in 6f)
+14.  8.85s  slide 12 sym   nye-checker-chrome-nails [nails]
+15.  9.84s  slide 13 sym   nye-metallic-waves [texture]
+16. 11.00s  slide 14 sym   nye-leopard-coat-street [outfit]
+17. 11.79s  slide 15 sym   nye-star-table-setting [table]
+18. 12.58s  slide 16 sym   nye-blurred-sequin-top [outfit], nye-bathroom-champagne [party], nye-pool-table-cocktails [drinks], nye-sequin-long-sleeve [outfit]  (bg #8A6A43, fade in 6f)
+19. 13.38s  slide 17 sym   nye-fringe-lamp-bar [venue]
+20. 14.16s  slide 18 sym   nye-feather-skirt-hanger [outfit]
+21. 15.33s  slide 19 sym   nye-star-garland-curtain [decor]  (bg #1E2433, fade in 6f)
+22. 16.13s  slide 20 sym   nye-chrome-nails-rings [nails]
+23. 16.90s  slide 21 sym   nye-bar-stools-legs [venue]
+24. 17.29s  slide 22 sym   nye-champagne-tower [party]  (bg #2A2421, fade in 6f)

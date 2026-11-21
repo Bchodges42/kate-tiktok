@@ -1,0 +1,389 @@
+{
+ "_comment": "Video 1 for the nye2 board, 18.5 s (the sound twice), built like the reference: warm white page, one centred photo at a time, covers never smaller than what they cover, and photos landing inside a photo (the Jimmy Choos inside the fringe-lamp bar, the chrome nails and choker inside the star curtain, the bathroom champagne inside the Tiffany-lamp bar, the sequin rack and candle sconce inside the star table). Hard cuts on the beat. Opens on the glitter eye close-up; the champagne tower lands on the second pass's big hit and holds.",
+ "name": "nye2",
+ "version": "v1_centered_stack_long",
+ "vibe": "new year's eve nightlife: sequins, champagne towers, glitter eyes, bars and lamps",
+ "song": "audio/ref-ny-x2.wav",
+ "_song_comment": "The 9.23 s TikTok sound from the user's reference screen recording, played twice back to back (frame-exact, 277 frames each), as TikTok does with a sound shorter than the video. 152 BPM; second-pass beats = first-pass beats + 9.2333 s.",
+ "end_at": 18.466666666666665,
+ "fps": 30,
+ "size": [
+  1080,
+  1920
+ ],
+ "grade": {
+  "warmth": 0.02,
+  "lift": 8,
+  "saturation": 0.98,
+  "grain": 2.5,
+  "grain_seed": 11
+ },
+ "background": "#F5F1EA",
+ "border": {
+  "px": 6,
+  "color": "#FFFFFF"
+ },
+ "max_box": [
+  0.92,
+  0.74
+ ],
+ "center_y": 0.48,
+ "images_dir": "images",
+ "images": {
+  "nye-glitter-eye-freckles": {
+   "kind": "beauty"
+  },
+  "nye-sequin-long-sleeve": {
+   "kind": "outfit"
+  },
+  "nye-gold-glitter-eyes": {
+   "kind": "beauty"
+  },
+  "nye-white-sequin-slip": {
+   "kind": "outfit"
+  },
+  "nye-espresso-martinis": {
+   "kind": "drinks"
+  },
+  "nye-lace-top-wine": {
+   "kind": "outfit"
+  },
+  "nye-fur-coats-champagne": {
+   "kind": "party"
+  },
+  "nye-fringe-lamp-bar": {
+   "kind": "venue"
+  },
+  "nye-sequin-slingbacks": {
+   "kind": "shoes"
+  },
+  "nye-feather-mirror-selfie": {
+   "kind": "outfit"
+  },
+  "nye-vintage-dice": {
+   "kind": "object"
+  },
+  "nye-star-garland-curtain": {
+   "kind": "decor"
+  },
+  "nye-checker-chrome-nails": {
+   "kind": "nails"
+  },
+  "nye-green-stone-choker": {
+   "kind": "jewelry"
+  },
+  "nye-beaded-dress-on-bed": {
+   "kind": "outfit"
+  },
+  "nye-dj-girls-candles": {
+   "kind": "party"
+  },
+  "nye-metallic-waves": {
+   "kind": "texture"
+  },
+  "nye-white-paillette-dress": {
+   "kind": "outfit"
+  },
+  "nye-tiffany-lamp-bar": {
+   "kind": "venue"
+  },
+  "nye-bathroom-champagne": {
+   "kind": "party"
+  },
+  "nye-manolo-row": {
+   "kind": "shoes"
+  },
+  "nye-leopard-coat-street": {
+   "kind": "outfit"
+  },
+  "nye-pool-table-cocktails": {
+   "kind": "drinks"
+  },
+  "nye-star-table-setting": {
+   "kind": "table"
+  },
+  "nye-gold-sequin-rack": {
+   "kind": "wardrobe"
+  },
+  "nye-candle-mosaic-sconce": {
+   "kind": "decor"
+  },
+  "nye-blurred-sequin-top": {
+   "kind": "outfit"
+  },
+  "nye-fur-jacket-champagne": {
+   "kind": "party"
+  },
+  "nye-feather-skirt-hanger": {
+   "kind": "outfit"
+  },
+  "nye-bar-stools-legs": {
+   "kind": "venue"
+  },
+  "nye-champagne-tower": {
+   "kind": "party"
+  }
+ },
+ "not_used": {
+  "gold mosaic, shoe polaroid, disco ball table (pins 0, 30, 32)": "soft sources (under 500 px)",
+  "triple glitter eyes, martini grid (pins 3, 37)": "collages of several photos",
+  "gold chain curtain (pin 24)": "logo mark in the corner",
+  "feather top and white trousers, sequin skirt with wine (pins 29, 33)": "Instagram icons baked into the image"
+ },
+ "slides": [
+  {
+   "type": "stack",
+   "shots": [
+    {
+     "image": "nye-glitter-eye-freckles",
+     "at": 0.0,
+     "op": "swap",
+     "scale": 1.0
+    },
+    {
+     "image": "nye-sequin-long-sleeve",
+     "at": 0.61,
+     "op": "swap",
+     "scale": 0.96
+    },
+    {
+     "image": "nye-gold-glitter-eyes",
+     "at": 0.998,
+     "op": "swap",
+     "scale": 1.0
+    },
+    {
+     "image": "nye-white-sequin-slip",
+     "at": 1.393,
+     "op": "cover",
+     "scale": 1.0
+    },
+    {
+     "image": "nye-espresso-martinis",
+     "at": 1.765,
+     "op": "swap",
+     "scale": 0.9
+    },
+    {
+     "image": "nye-lace-top-wine",
+     "at": 2.159,
+     "op": "cover",
+     "scale": 1.0
+    },
+    {
+     "image": "nye-fur-coats-champagne",
+     "at": 2.949,
+     "op": "swap",
+     "scale": 1.0
+    }
+   ]
+  },
+  {
+   "type": "inset",
+   "base": {
+    "image": "nye-fringe-lamp-bar",
+    "at": 3.349,
+    "scale": 1.0
+   },
+   "insets": [
+    "nye-sequin-slingbacks"
+   ],
+   "tree": 0,
+   "reveal": [
+    [
+     0
+    ]
+   ],
+   "at": [
+    4.145
+   ],
+   "margin": 0.08,
+   "gap": 22
+  },
+  {
+   "type": "stack",
+   "shots": [
+    {
+     "image": "nye-feather-mirror-selfie",
+     "at": 4.54,
+     "op": "swap",
+     "scale": 1.0
+    },
+    {
+     "image": "nye-vintage-dice",
+     "at": 5.317,
+     "op": "swap",
+     "scale": 0.96
+    }
+   ]
+  },
+  {
+   "type": "inset",
+   "base": {
+    "image": "nye-star-garland-curtain",
+    "at": 6.101,
+    "scale": 1.0
+   },
+   "insets": [
+    "nye-checker-chrome-nails",
+    "nye-green-stone-choker"
+   ],
+   "tree": [
+    "v",
+    0,
+    1
+   ],
+   "reveal": [
+    [
+     0
+    ],
+    [
+     1
+    ]
+   ],
+   "at": [
+    6.496,
+    7.279
+   ],
+   "margin": 0.08,
+   "gap": 22
+  },
+  {
+   "type": "stack",
+   "shots": [
+    {
+     "image": "nye-beaded-dress-on-bed",
+     "at": 8.057,
+     "op": "swap",
+     "scale": 1.0
+    },
+    {
+     "image": "nye-dj-girls-candles",
+     "at": 8.458,
+     "op": "swap",
+     "scale": 1.0
+    },
+    {
+     "image": "nye-metallic-waves",
+     "at": 9.448,
+     "op": "swap",
+     "scale": 0.85
+    },
+    {
+     "image": "nye-white-paillette-dress",
+     "at": 9.843,
+     "op": "cover",
+     "scale": 1.0
+    }
+   ]
+  },
+  {
+   "type": "inset",
+   "base": {
+    "image": "nye-tiffany-lamp-bar",
+    "at": 10.626,
+    "scale": 1.0
+   },
+   "insets": [
+    "nye-bathroom-champagne"
+   ],
+   "tree": 0,
+   "reveal": [
+    [
+     0
+    ]
+   ],
+   "at": [
+    10.998
+   ],
+   "margin": 0.08,
+   "gap": 22
+  },
+  {
+   "type": "stack",
+   "shots": [
+    {
+     "image": "nye-manolo-row",
+     "at": 11.787,
+     "op": "swap",
+     "scale": 1.0
+    },
+    {
+     "image": "nye-leopard-coat-street",
+     "at": 12.582,
+     "op": "swap",
+     "scale": 1.0
+    },
+    {
+     "image": "nye-pool-table-cocktails",
+     "at": 12.989,
+     "op": "swap",
+     "scale": 1.0
+    }
+   ]
+  },
+  {
+   "type": "inset",
+   "base": {
+    "image": "nye-star-table-setting",
+    "at": 13.773,
+    "scale": 1.0
+   },
+   "insets": [
+    "nye-gold-sequin-rack",
+    "nye-candle-mosaic-sconce"
+   ],
+   "tree": [
+    "v",
+    0,
+    1
+   ],
+   "reveal": [
+    [
+     0,
+     1
+    ]
+   ],
+   "at": [
+    14.156
+   ],
+   "margin": 0.08,
+   "gap": 22
+  },
+  {
+   "type": "stack",
+   "shots": [
+    {
+     "image": "nye-blurred-sequin-top",
+     "at": 14.951,
+     "op": "swap",
+     "scale": 1.0
+    },
+    {
+     "image": "nye-fur-jacket-champagne",
+     "at": 15.729,
+     "op": "swap",
+     "scale": 0.96
+    },
+    {
+     "image": "nye-feather-skirt-hanger",
+     "at": 16.129,
+     "op": "swap",
+     "scale": 1.0
+    },
+    {
+     "image": "nye-bar-stools-legs",
+     "at": 16.901,
+     "op": "swap",
+     "scale": 0.96
+    },
+    {
+     "image": "nye-champagne-tower",
+     "at": 17.29,
+     "op": "swap",
+     "scale": 1.0
+    }
+   ]
+  }
+ ]
+}

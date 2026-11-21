@@ -1,0 +1,381 @@
+{
+ "_comment": "Video 1 for the shoots board, 18.5 s (the sound twice), built like the reference: warm white page, one centred photo at a time, covers never smaller than what they cover, and photos landing inside a photo (the magnolia inside the mossy oak, the cranes print and chess board inside the shopfront, the plaid couple inside the old photos, the rings and the horse inside the daisy steps). Hard cuts on the beat. Opens on the white peacock; the ivy stone house lands on the second pass's big hit and holds.",
+ "name": "shoots",
+ "version": "v1_centered_stack_long",
+ "vibe": "romantic, vintage, cottage: ivy houses, peonies and hydrangeas, rings, lace, old photos",
+ "song": "audio/ref-ny-x2.wav",
+ "_song_comment": "The 9.23 s TikTok sound from the user's reference screen recording, played twice back to back (frame-exact, 277 frames each), as TikTok does with a sound shorter than the video. 152 BPM; second-pass beats = first-pass beats + 9.2333 s.",
+ "end_at": 18.466666666666665,
+ "fps": 30,
+ "size": [
+  1080,
+  1920
+ ],
+ "grade": {
+  "warmth": 0.02,
+  "lift": 8,
+  "saturation": 0.98,
+  "grain": 2.5,
+  "grain_seed": 11
+ },
+ "background": "#F5F1EA",
+ "border": {
+  "px": 6,
+  "color": "#FFFFFF"
+ },
+ "max_box": [
+  0.92,
+  0.74
+ ],
+ "center_y": 0.48,
+ "images_dir": "images",
+ "images": {
+  "sh-white-peacock": {
+   "kind": "animal"
+  },
+  "sh-gold-ring-hand": {
+   "kind": "jewelry"
+  },
+  "sh-rose-cottage": {
+   "kind": "house"
+  },
+  "sh-loafers-white-socks": {
+   "kind": "shoes"
+  },
+  "sh-pink-lilies": {
+   "kind": "flower"
+  },
+  "sh-pink-dress-armchair": {
+   "kind": "interior"
+  },
+  "sh-stacked-bowls": {
+   "kind": "object"
+  },
+  "sh-spanish-moss-oak": {
+   "kind": "tree"
+  },
+  "sh-magnolia-still-life": {
+   "kind": "flower"
+  },
+  "sh-chanel-flats-box": {
+   "kind": "shoes"
+  },
+  "sh-hydrangea-grandma": {
+   "kind": "flower"
+  },
+  "sh-vintage-shopfront": {
+   "kind": "storefront"
+  },
+  "sh-vintage-cranes-print": {
+   "kind": "art"
+  },
+  "sh-chess-board": {
+   "kind": "object"
+  },
+  "sh-denim-jacket-selfie": {
+   "kind": "outfit"
+  },
+  "sh-marquise-ring-hand": {
+   "kind": "jewelry"
+  },
+  "sh-pink-hydrangeas": {
+   "kind": "flower"
+  },
+  "sh-dalmatian-on-bed": {
+   "kind": "animal"
+  },
+  "sh-old-photos-pile": {
+   "kind": "object"
+  },
+  "sh-plaid-shirt-legs": {
+   "kind": "people"
+  },
+  "sh-yarrow-blooms": {
+   "kind": "flower"
+  },
+  "sh-green-door-carriage-house": {
+   "kind": "house"
+  },
+  "sh-plaster-roses-relief": {
+   "kind": "texture"
+  },
+  "sh-pink-silk-lanterns": {
+   "kind": "object"
+  },
+  "sh-daisy-garden-steps": {
+   "kind": "garden"
+  },
+  "sh-signet-rings-tray": {
+   "kind": "jewelry"
+  },
+  "sh-spotted-horse-sculpture": {
+   "kind": "animal"
+  },
+  "sh-pillow-piled-bed": {
+   "kind": "interior"
+  },
+  "sh-lace-hand-fan": {
+   "kind": "object"
+  },
+  "sh-ivy-stone-house": {
+   "kind": "house"
+  }
+ },
+ "not_used": {
+  "pins 4, 5, 9, 12, 13, 16, 17, 18, 27, 30, 39": "soft sources (under 500 px)",
+  "orchids (pin 7)": "brand name printed across the top",
+  "sun through leaves (pin 41)": "creator watermark in the corner",
+  "spiral staircase (pin 15)": "drawn golden-spiral lines over the photo",
+  "16 newest-first pins": "the board has 66 pins; Pinterest's feed only returns the newest 50"
+ },
+ "slides": [
+  {
+   "type": "stack",
+   "shots": [
+    {
+     "image": "sh-white-peacock",
+     "at": 0.0,
+     "op": "swap",
+     "scale": 1.0
+    },
+    {
+     "image": "sh-gold-ring-hand",
+     "at": 0.61,
+     "op": "swap",
+     "scale": 0.96
+    },
+    {
+     "image": "sh-rose-cottage",
+     "at": 0.998,
+     "op": "swap",
+     "scale": 1.0
+    },
+    {
+     "image": "sh-loafers-white-socks",
+     "at": 1.393,
+     "op": "cover",
+     "scale": 1.0
+    },
+    {
+     "image": "sh-pink-lilies",
+     "at": 1.765,
+     "op": "swap",
+     "scale": 0.9
+    },
+    {
+     "image": "sh-pink-dress-armchair",
+     "at": 2.159,
+     "op": "swap",
+     "scale": 1.0
+    },
+    {
+     "image": "sh-stacked-bowls",
+     "at": 2.949,
+     "op": "swap",
+     "scale": 0.96
+    }
+   ]
+  },
+  {
+   "type": "inset",
+   "base": {
+    "image": "sh-spanish-moss-oak",
+    "at": 3.349,
+    "scale": 1.0
+   },
+   "insets": [
+    "sh-magnolia-still-life"
+   ],
+   "tree": 0,
+   "reveal": [
+    [
+     0
+    ]
+   ],
+   "at": [
+    4.145
+   ],
+   "margin": 0.08,
+   "gap": 22
+  },
+  {
+   "type": "stack",
+   "shots": [
+    {
+     "image": "sh-chanel-flats-box",
+     "at": 4.923,
+     "op": "swap",
+     "scale": 0.96
+    },
+    {
+     "image": "sh-hydrangea-grandma",
+     "at": 5.317,
+     "op": "swap",
+     "scale": 1.0
+    }
+   ]
+  },
+  {
+   "type": "inset",
+   "base": {
+    "image": "sh-vintage-shopfront",
+    "at": 6.101,
+    "scale": 1.0
+   },
+   "insets": [
+    "sh-vintage-cranes-print",
+    "sh-chess-board"
+   ],
+   "tree": [
+    "v",
+    0,
+    1
+   ],
+   "reveal": [
+    [
+     0
+    ],
+    [
+     1
+    ]
+   ],
+   "at": [
+    6.896,
+    7.668
+   ],
+   "margin": 0.08,
+   "gap": 22
+  },
+  {
+   "type": "stack",
+   "shots": [
+    {
+     "image": "sh-denim-jacket-selfie",
+     "at": 8.057,
+     "op": "swap",
+     "scale": 1.0
+    },
+    {
+     "image": "sh-marquise-ring-hand",
+     "at": 8.847,
+     "op": "swap",
+     "scale": 0.96
+    },
+    {
+     "image": "sh-pink-hydrangeas",
+     "at": 9.448,
+     "op": "swap",
+     "scale": 1.0
+    },
+    {
+     "image": "sh-dalmatian-on-bed",
+     "at": 10.231,
+     "op": "cover",
+     "scale": 0.85
+    }
+   ]
+  },
+  {
+   "type": "inset",
+   "base": {
+    "image": "sh-old-photos-pile",
+    "at": 10.998,
+    "scale": 1.0
+   },
+   "insets": [
+    "sh-plaid-shirt-legs"
+   ],
+   "tree": 0,
+   "reveal": [
+    [
+     0
+    ]
+   ],
+   "at": [
+    11.392
+   ],
+   "margin": 0.08,
+   "gap": 22
+  },
+  {
+   "type": "stack",
+   "shots": [
+    {
+     "image": "sh-yarrow-blooms",
+     "at": 12.182,
+     "op": "swap",
+     "scale": 1.0
+    },
+    {
+     "image": "sh-green-door-carriage-house",
+     "at": 12.989,
+     "op": "swap",
+     "scale": 1.0
+    },
+    {
+     "image": "sh-plaster-roses-relief",
+     "at": 13.378,
+     "op": "swap",
+     "scale": 1.0
+    },
+    {
+     "image": "sh-pink-silk-lanterns",
+     "at": 14.156,
+     "op": "cover",
+     "scale": 0.8
+    }
+   ]
+  },
+  {
+   "type": "inset",
+   "base": {
+    "image": "sh-daisy-garden-steps",
+    "at": 14.951,
+    "scale": 1.0
+   },
+   "insets": [
+    "sh-signet-rings-tray",
+    "sh-spotted-horse-sculpture"
+   ],
+   "tree": [
+    "h",
+    0,
+    1
+   ],
+   "reveal": [
+    [
+     0,
+     1
+    ]
+   ],
+   "at": [
+    15.729
+   ],
+   "margin": 0.08,
+   "gap": 22
+  },
+  {
+   "type": "stack",
+   "shots": [
+    {
+     "image": "sh-pillow-piled-bed",
+     "at": 16.129,
+     "op": "swap",
+     "scale": 1.0
+    },
+    {
+     "image": "sh-lace-hand-fan",
+     "at": 16.901,
+     "op": "swap",
+     "scale": 0.96
+    },
+    {
+     "image": "sh-ivy-stone-house",
+     "at": 17.29,
+     "op": "swap",
+     "scale": 1.0
+    }
+   ]
+  }
+ ]
+}
