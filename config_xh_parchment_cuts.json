@@ -24,103 +24,129 @@
   "xh-snowy-shop-front": {
    "kind": "shop"
   },
-  "xh-great-hall-candles": {
-   "kind": "hall"
-  },
-  "xh-lantern-balcony": {
-   "kind": "balcony"
-  },
-  "xh-starry-great-hall": {
-   "kind": "hall"
+  "xh-tree-through-the-window": {
+   "kind": "tree"
   },
   "xh-sleeping-by-the-fire": {
    "kind": "people"
   },
-  "xh-castle-and-owl": {
-   "kind": "castle"
-  },
-  "xh-butterbeer-cheers": {
-   "kind": "drink"
-  },
-  "xh-boys-in-the-hall": {
-   "kind": "hall"
-  },
-  "xh-fireplace-in-the-common-room": {
-   "kind": "fire"
-  },
-  "xh-house-scarves": {
-   "kind": "scarves"
-  },
-  "xh-gryffindor-common-room": {
-   "kind": "common"
-  },
-  "xh-stone-archway": {
-   "kind": "corridor"
-  },
-  "xh-snowy-castle-towers": {
-   "kind": "castle"
-  },
-  "xh-tree-through-the-window": {
-   "kind": "tree"
-  },
-  "xh-trio-in-the-snow": {
-   "kind": "people2"
-  },
-  "xh-tree-by-the-window": {
-   "kind": "tree"
-  },
-  "xh-antique-books": {
-   "kind": "books"
-  },
   "xh-snowy-train-bend": {
    "kind": "train"
   },
-  "xh-boy-and-the-great-tree": {
-   "kind": "hall"
+  "xh-great-hall-snowfall": {
+   "kind": "hall-gif",
+   "clip": "clips/xh-great-hall-snowfall.mp4"
   },
   "xh-hogsmeade-street-night": {
    "kind": "street"
   },
+  "xh-lantern-balcony": {
+   "kind": "balcony"
+  },
+  "xh-boys-in-the-hall": {
+   "kind": "hall"
+  },
+  "xh-quidditch-run": {
+   "kind": "run-gif",
+   "clip": "clips/xh-quidditch-run.mp4"
+  },
   "xh-snowy-sweet-shop": {
    "kind": "shop"
   },
-  "xh-candlelit-tree": {
-   "kind": "tree"
+  "xh-trio-in-the-robes": {
+   "kind": "trio-gif",
+   "clip": "clips/xh-trio-in-the-robes.mp4"
+  },
+  "xh-starry-great-hall": {
+   "kind": "hall"
+  },
+  "xh-stone-archway": {
+   "kind": "corridor"
+  },
+  "xh-butterbeer-cheers": {
+   "kind": "drink"
   },
   "xh-presents-under-the-tree": {
    "kind": "gifts"
   },
+  "xh-castle-and-owl": {
+   "kind": "castle"
+  },
+  "xh-candlelit-tree": {
+   "kind": "tree"
+  },
+  "xh-boy-and-the-great-tree": {
+   "kind": "hall"
+  },
   "xh-train-on-the-viaduct": {
    "kind": "train"
+  },
+  "xh-house-scarves": {
+   "kind": "scarves"
+  },
+  "xh-snowy-tree-delivery": {
+   "kind": "tree-gif",
+   "clip": "clips/xh-snowy-tree-delivery.mp4"
+  },
+  "xh-great-hall-candles": {
+   "kind": "hall"
+  },
+  "xh-tree-by-the-window": {
+   "kind": "tree"
+  },
+  "xh-fireplace-in-the-common-room": {
+   "kind": "fire"
+  },
+  "xh-trio-in-the-snow": {
+   "kind": "people2"
+  },
+  "xh-gryffindor-common-room": {
+   "kind": "common"
+  },
+  "xh-castle-in-the-snow": {
+   "kind": "castle-gif",
+   "clip": "clips/xh-castle-in-the-snow.mp4"
+  },
+  "xh-antique-books": {
+   "kind": "books"
+  },
+  "xh-snowy-castle-towers": {
+   "kind": "castle"
   }
  },
  "order": [
   "xh-snowy-shop-front",
-  "xh-great-hall-candles",
-  "xh-lantern-balcony",
-  "xh-starry-great-hall",
-  "xh-sleeping-by-the-fire",
-  "xh-castle-and-owl",
-  "xh-butterbeer-cheers",
-  "xh-boys-in-the-hall",
-  "xh-fireplace-in-the-common-room",
-  "xh-house-scarves",
-  "xh-gryffindor-common-room",
-  "xh-stone-archway",
-  "xh-snowy-castle-towers",
   "xh-tree-through-the-window",
-  "xh-trio-in-the-snow",
-  "xh-tree-by-the-window",
-  "xh-antique-books",
+  "xh-sleeping-by-the-fire",
   "xh-snowy-train-bend",
-  "xh-boy-and-the-great-tree",
+  "xh-great-hall-snowfall",
   "xh-hogsmeade-street-night",
+  "xh-lantern-balcony",
+  "xh-boys-in-the-hall",
+  "xh-quidditch-run",
   "xh-snowy-sweet-shop",
-  "xh-candlelit-tree",
+  "xh-trio-in-the-robes",
+  "xh-starry-great-hall",
+  "xh-stone-archway",
+  "xh-butterbeer-cheers",
   "xh-presents-under-the-tree",
-  "xh-train-on-the-viaduct"
+  "xh-castle-and-owl",
+  "xh-candlelit-tree",
+  "xh-boy-and-the-great-tree",
+  "xh-train-on-the-viaduct",
+  "xh-house-scarves",
+  "xh-snowy-tree-delivery",
+  "xh-great-hall-candles",
+  "xh-tree-by-the-window",
+  "xh-fireplace-in-the-common-room",
+  "xh-trio-in-the-snow",
+  "xh-gryffindor-common-room",
+  "xh-castle-in-the-snow",
+  "xh-antique-books",
+  "xh-snowy-castle-towers"
  ],
  "border_px": 6,
  "border": "#FFFFFF",
- "_comment": "Board kholthaus8/christmas-at-hogwarts (pin.it/6QKCDVFbT), 43 pins; 24 used in every version in a different order, 100 BPM (0.6 s) = 14.4 s, hard cuts only. Left out: 17 soft pins under ~500 px, pin 1 (the photo is saved sideways), pins 21 and 33 (watermarks). The feed shows no video pins on this board. Background chosen by me: warm parchment #E9DCC0, so the dark candlelit photos glow."
+ "_comment": "Board kholthaus8/christmas-at-hogwarts (pin.it/6QKCDVFbT), 43 pins; 24 used in every version in a different order, 100 BPM (0.6 s) = 14.4 s, hard cuts only. Left out: 17 soft pins under ~500 px, pin 1 (the photo is saved sideways), pins 21 and 33 (watermarks). The feed shows no video pins on this board. Background chosen by me: warm parchment #E9DCC0, so the dark candlelit photos glow. UPDATE: the board's 5 animated pins (snowy tree delivery, trio in robes, quidditch run, castle in snow, great hall snowfall; the great hall is pinned twice) are now included and each plays out in full, its last frame holding to the next beat. 29 items, 40 beats = 24 s.",
+ "clip_round": "up"
 }

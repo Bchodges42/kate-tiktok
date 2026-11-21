@@ -1,31 +1,41 @@
-100 BPM steady, one photo per beat (0.600 s), 24 photos, 24 beats = 14.40 s, ends on a bar line
+100 BPM steady, one photo per beat (0.600 s), 29 photos, 40 beats = 24.00 s, ends on a bar line
 hard cuts; beat sync: worst offset 0.00 frames -> PASS
-stillness: max held-frame diff 0.062 -> PASS
+stillness: max held-frame diff 0.061 -> PASS
 photos: whole (no cropping), own shape (no stretching), none repeated -> PASS
+clip: xh-castle-in-the-snow plays 1.20 s (2 beats) in full before the next photo lands
+clip: xh-snowy-tree-delivery plays 1.20 s (2 beats) in full before the next photo lands
+clip: xh-great-hall-snowfall plays 3.00 s (5 beats) in full before the next photo lands
+clip: xh-trio-in-the-robes plays 2.40 s (4 beats) in full before the next photo lands
+clip: xh-quidditch-run plays 1.80 s (3 beats) in full before the next photo lands
 variety: no two photos of the same kind back to back -> PASS
-screen filled per photo: 26%-74% (whole photos; wide ones are shorter)
+screen filled per photo: 20%-74% (whole photos; wide ones are shorter)
 
  1.   0.00s  hall      xh-great-hall-candles
- 2.   0.60s  train     xh-snowy-train-bend
- 3.   1.20s  scarves   xh-house-scarves
- 4.   1.80s  people2   xh-trio-in-the-snow
- 5.   2.40s  tree      xh-tree-through-the-window
- 6.   3.00s  hall      xh-boy-and-the-great-tree
- 7.   3.60s  shop      xh-snowy-shop-front
- 8.   4.20s  tree      xh-tree-by-the-window
- 9.   4.80s  gifts     xh-presents-under-the-tree
-10.   5.40s  shop      xh-snowy-sweet-shop
-11.   6.00s  train     xh-train-on-the-viaduct
-12.   6.60s  castle    xh-snowy-castle-towers
-13.   7.20s  hall      xh-starry-great-hall
-14.   7.80s  castle    xh-castle-and-owl
-15.   8.40s  street    xh-hogsmeade-street-night
-16.   9.00s  fire      xh-fireplace-in-the-common-room
-17.   9.60s  drink     xh-butterbeer-cheers
-18.  10.20s  corridor  xh-stone-archway
-19.  10.80s  tree      xh-candlelit-tree
-20.  11.40s  people    xh-sleeping-by-the-fire
-21.  12.00s  hall      xh-boys-in-the-hall
-22.  12.60s  books     xh-antique-books
-23.  13.20s  common    xh-gryffindor-common-room
-24.  13.80s  balcony   xh-lantern-balcony
+ 2.   0.60s  tree      xh-candlelit-tree
+ 3.   1.20s  common    xh-gryffindor-common-room
+ 4.   1.80s  street    xh-hogsmeade-street-night
+ 5.   2.40s  shop      xh-snowy-sweet-shop
+ 6.   3.00s  hall      xh-boys-in-the-hall
+ 7.   3.60s  castle-gif xh-castle-in-the-snow
+ 8.   4.80s  books     xh-antique-books
+ 9.   5.40s  hall      xh-boy-and-the-great-tree
+10.   6.00s  tree-gif  xh-snowy-tree-delivery
+11.   7.20s  castle    xh-castle-and-owl
+12.   7.80s  scarves   xh-house-scarves
+13.   8.40s  tree      xh-tree-by-the-window
+14.   9.00s  hall-gif  xh-great-hall-snowfall
+15.  12.00s  castle    xh-snowy-castle-towers
+16.  12.60s  trio-gif  xh-trio-in-the-robes
+17.  15.00s  train     xh-train-on-the-viaduct
+18.  15.60s  run-gif   xh-quidditch-run
+19.  17.40s  gifts     xh-presents-under-the-tree
+20.  18.00s  corridor  xh-stone-archway
+21.  18.60s  train     xh-snowy-train-bend
+22.  19.20s  shop      xh-snowy-shop-front
+23.  19.80s  tree      xh-tree-through-the-window
+24.  20.40s  people    xh-sleeping-by-the-fire
+25.  21.00s  hall      xh-starry-great-hall
+26.  21.60s  people2   xh-trio-in-the-snow
+27.  22.20s  fire      xh-fireplace-in-the-common-room
+28.  22.80s  drink     xh-butterbeer-cheers
+29.  23.40s  balcony   xh-lantern-balcony

@@ -149,7 +149,9 @@ def main():
         d = v.get("clip_dur") or float(subprocess.run(
             ["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries", "format=duration", "-of", "csv=p=0",
              os.path.join(ROOT, v["clip"])], capture_output=True, text=True).stdout.strip())
-        clip_len[k] = max(1, int(d / spb + 1e-6))  # whole steps that fit inside the clip
+        # whole steps that fit inside the clip; with "clip_round": "up" the clip plays out in full and its
+        # last frame holds until the next beat (nothing is cut off)
+        clip_len[k] = max(1, int(math.ceil(d / spb - 1e-6)) if cfg.get("clip_round") == "up" else int(d / spb + 1e-6))
     # an image may hold for several steps ("hold": 2) so a title-like photo can sit a little longer
     dur = [clip_len.get(k, int(cfg["images"][k].get("hold", 1))) for k in order]
     total_beats = int(math.ceil(sum(dur) / bar) * bar) if cfg.get("end_on_bar", True) else sum(dur)  # in steps
