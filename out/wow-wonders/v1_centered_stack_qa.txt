@@ -1,0 +1,35 @@
+19 steps, 21 photos, 6 slides, 9.23 s (music ends 9.23 s)
+sync: every change within 0.47 frames of its beat (mean 0.25) -> PASS
+stillness: max held-frame change 0.036 -> PASS
+shape: every photo whole, at its own width-to-height shape -> PASS
+repeats: none -> PASS
+variety: no two photos of the same kind touching, back to back, or across the loop -> PASS
+position: every photo and every arrangement centred on the screen's vertical centre line
+
+screen covered by photos, per slide (finished slide):
+  slide  1 stack   65%
+  slide  2 inset   63%  (frame of base photo 89 px, gap 22 px)
+  slide  3 stack   65%
+  slide  4 inset   65%  (frame of base photo 76 px, gap 20 px)
+  slide  5 stack   63%
+  slide  6 stack   60%
+
+ 1.  0.00s  slide 1  swap  wow-rainbow-mountain [red earth]
+ 2.  0.61s  slide 1  swap  wow-paper-lanterns-shop [lanterns]
+ 3.  1.00s  slide 2  swap  wow-green-canyon-river [green landscape]
+ 4.  1.39s  slide 2  inset wow-pink-reflection-hall [reflection]
+ 5.  1.76s  slide 2  inset wow-zebra-herd [animals]
+ 6.  2.55s  slide 3  swap  wow-moto-road-gorge [green landscape]
+ 7.  2.95s  slide 3  cover wow-lantern-tree [lanterns]
+ 8.  3.35s  slide 3  swap  wow-sand-swirls [texture]
+ 9.  3.76s  slide 3  cover wow-alpacas-glacier [animals]
+10.  4.14s  slide 4  swap  wow-pheasant-feathers [texture]
+11.  4.54s  slide 4  inset wow-violet-spiral-stairs [stairs], wow-ivy-windows [building]
+12.  4.92s  slide 4  inset wow-temple-rooftops [landmark], wow-red-rock-arch [red earth]
+13.  5.72s  slide 5  swap  wow-orange-silk-lanterns [lanterns]
+14.  6.10s  slide 5  swap  wow-jungle-train [train]
+15.  6.50s  slide 5  swap  wow-mossy-waterfalls [green landscape]
+16.  6.90s  slide 5  swap  wow-rainbow-hills-camels [red earth]
+17.  7.28s  slide 6  swap  wow-white-spiral-stairs [stairs]
+18.  7.67s  slide 6  swap  wow-green-gorge-arch [green landscape]
+19.  8.06s  slide 6  swap  wow-machu-picchu [landmark]

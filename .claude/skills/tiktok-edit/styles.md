@@ -15,6 +15,8 @@ Every tool takes `--config <file>` and writes the MP4, a `_silent.mp4`, a QA rep
 | Photos building a spaced arrangement, timed to a song's hits | `gallery.py` with `groups`, each with `at` times | `config_hunger_games.json` |
 | The same on a steady beat, with named slots | `gallery.py` with `timeline` and `slots` | `config_cheetah_sunshine.json` |
 | A stacked collage of swaps and covers on a slow song | `collage.py` | `config_christmas_song.json` |
+| Centred stack with covers and photos landing inside a photo, on exact beat times | `centered.py`, `stack` and `inset` slides | `config_ny_centered_stack.json` |
+| Symmetric centred collages built from the centre in mirrored pairs, optional colour change per scene | `centered.py`, `sym` slides with `bg` and `enter` | `config_ny_symmetric_burgundy.json`, `config_wow_symmetric_colour_shift.json` |
 | Full-screen photos, soft dissolves, 8 to 12 s | `moodboard.py` | `config.json` |
 | A still slide of looping clips to drop into an edit by hand | `slide.py` | `config_slide_lit_grandmas_kitchen_dance.json` |
 
@@ -25,6 +27,7 @@ Avoid `"transition": "wipe"` in `steady.py` and the drop, caption, title and sno
 Frame 0 of the video is always sound 0.00 s, because the silent copy is posted with the sound added in TikTok.
 
 - **`gallery.py` with `groups`**: each photo has its own time in `at`, in seconds from the start of the audio. Take the times from `song_map.py` (beats, bar lines, hits). This is the tool for songs with pickups, tempo changes, brass or vocal hits, and slow intros.
+- **`centered.py`**: every slide step has its own `at` time in seconds, like `gallery.py` groups. Take the times from `song_map.py`; `end_at` is where the music ends.
 - **`collage.py`**: finds musical events itself (harmony and melody changes on the song's pulse) and picks cuts from them. Set `audio.music_end`, `audio.video_end`, `audio.pulse_bpm` and `audio.min_gap`.
 - **`moodboard.py`**: tracks beats in the song and chooses the strongest window, or the one nearest `song_start`.
 - **`steady.py` and `scrapbook.py`**: cuts sit on an exact grid from 0.00 s at `bpm`. With `"song"` set, this only works when the song's tempo is steady and a beat falls on 0.00 s. Check `song_map.py`: the first beat within one frame of 0.00 and even beat spacing. If not, do not force it. Build the look in `gallery.py`, or extend the tool to take beat times.

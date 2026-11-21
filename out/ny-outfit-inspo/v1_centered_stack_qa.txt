@@ -1,0 +1,34 @@
+19 steps, 21 photos, 5 slides, 9.23 s (music ends 9.23 s)
+sync: every change within 0.49 frames of its beat (mean 0.27) -> PASS
+stillness: max held-frame change 0.039 -> PASS
+shape: every photo whole, at its own width-to-height shape -> PASS
+repeats: none -> PASS
+variety: no two photos of the same kind touching, back to back, or across the loop -> PASS
+position: every photo and every arrangement centred on the screen's vertical centre line
+
+screen covered by photos, per slide (finished slide):
+  slide  1 stack   67%
+  slide  2 inset   64%  (frame of base photo 89 px, gap 22 px)
+  slide  3 stack   65%
+  slide  4 inset   63%  (frame of base photo 70 px, gap 20 px)
+  slide  5 stack   60%
+
+ 1.  0.00s  slide 1  swap  ny-gold-dress-doorway [outfit]
+ 2.  0.61s  slide 1  swap  ny-glitter-bag-martini [accessory]
+ 3.  1.00s  slide 1  swap  ny-party-boots-drinks [party]
+ 4.  1.39s  slide 1  cover ny-zebra-sequin-pants [outfit]
+ 5.  1.76s  slide 1  swap  ny-glitter-socks-whiskey [accessory]
+ 6.  2.16s  slide 1  cover ny-pink-feather-gown [outfit]
+ 7.  2.55s  slide 2  swap  ny-fireworks-lanterns [fireworks]
+ 8.  2.95s  slide 2  inset ny-paper-stars-mantel [decor]
+ 9.  3.35s  slide 2  inset ny-gold-rings-nails [beauty]
+10.  4.14s  slide 3  swap  ny-sequin-pair-dancing [party]
+11.  4.54s  slide 3  swap  ny-green-feather-dress [outfit]
+12.  4.92s  slide 3  swap  ny-gold-tights-duck [detail]
+13.  5.32s  slide 3  swap  ny-white-drape-back [outfit]
+14.  5.72s  slide 4  swap  ny-ballroom-midnight [party]
+15.  6.10s  slide 4  inset ny-gold-corset-set [outfit], ny-gold-confetti-floor [confetti]
+16.  6.50s  slide 4  inset ny-elevator-red-heels [accessory], ny-silver-satin-skirt [outfit]
+17.  7.28s  slide 5  swap  ny-party-table-candles [party]
+18.  7.67s  slide 5  swap  ny-gold-strapless-mini [outfit]
+19.  8.06s  slide 5  swap  ny-paris-fireworks [fireworks]

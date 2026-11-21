@@ -1,0 +1,431 @@
+{
+ "_comment": "Video 2 for the NY outfit inspo board: a symmetric collage on deep burgundy. Every moment is a mirror image across the vertical centre line: single centred photos, and arrangements that build from the centre outwards in mirrored pairs (six-up grid: middle pair, top pair, bottom pair; 2-1-2: centre photo then pairs; two wide photos stacked; a big side-by-side pair). Pairs are matched by shape so they mirror exactly. Even 20 px gaps, no borders, hard cuts on the beat. Starts and ends on a single centred photo.",
+ "name": "ny-outfit-inspo",
+ "version": "v2_symmetric_burgundy",
+ "vibe": "new year's eve in new york: gold sequins, champagne, fireworks, party aftermath",
+ "song": "audio/ref-ny.wav",
+ "_song_comment": "Audio of the TikTok sound from the user's reference screen recording (ffmpeg -vn). 152 BPM, beat every 0.3925 s; bar accents at 1.00, 2.55, 4.15, 5.72, 7.28, 8.85 s. Music runs to 9.25 s, where TikTok's outro jingle starts.",
+ "end_at": 9.233,
+ "fps": 30,
+ "size": [
+  1080,
+  1920
+ ],
+ "grade": {
+  "warmth": 0.02,
+  "lift": 8,
+  "saturation": 0.98,
+  "grain": 2.5,
+  "grain_seed": 11
+ },
+ "background": "#4A0F22",
+ "border": {
+  "px": 0
+ },
+ "max_box": [
+  0.92,
+  0.74
+ ],
+ "center_y": 0.48,
+ "images_dir": "images",
+ "images": {
+  "ny-green-feather-dress": {
+   "kind": "outfit"
+  },
+  "ny-sequin-pair-dancing": {
+   "kind": "party"
+  },
+  "ny-gold-corset-set": {
+   "kind": "outfit"
+  },
+  "ny-gold-confetti-floor": {
+   "kind": "confetti"
+  },
+  "ny-elevator-red-heels": {
+   "kind": "accessory"
+  },
+  "ny-lace-dress-rooftop": {
+   "kind": "outfit"
+  },
+  "ny-gold-dress-doorway": {
+   "kind": "outfit"
+  },
+  "ny-glitter-bag-martini": {
+   "kind": "accessory"
+  },
+  "ny-silver-satin-skirt": {
+   "kind": "outfit"
+  },
+  "ny-fireworks-lanterns": {
+   "kind": "fireworks"
+  },
+  "ny-paper-stars-mantel": {
+   "kind": "decor"
+  },
+  "ny-ballroom-midnight": {
+   "kind": "party"
+  },
+  "ny-orange-drop-waist": {
+   "kind": "outfit"
+  },
+  "ny-party-boots-drinks": {
+   "kind": "party"
+  },
+  "ny-gold-rings-nails": {
+   "kind": "beauty"
+  },
+  "ny-pink-halter-gown": {
+   "kind": "outfit"
+  },
+  "ny-glitter-socks-whiskey": {
+   "kind": "accessory",
+   "crop": [
+    0,
+    0,
+    736,
+    883
+   ],
+   "_crop": "removes a 5 px white strip along the bottom edge"
+  },
+  "ny-gold-strapless-mini": {
+   "kind": "outfit"
+  },
+  "ny-gold-tights-duck": {
+   "kind": "detail"
+  },
+  "ny-zebra-sequin-pants": {
+   "kind": "outfit"
+  },
+  "ny-party-table-candles": {
+   "kind": "party"
+  },
+  "ny-white-drape-back": {
+   "kind": "outfit"
+  },
+  "ny-paris-fireworks": {
+   "kind": "fireworks"
+  }
+ },
+ "not_used": {
+  "fireworks (pins 4, 17)": "soft sources (473 px, 474 px)",
+  "red sequin gown, black satin dress": "Instagram counter/mute icon baked into the image",
+  "sunset field, white trousers, blue nails, striped beach look, rug and blue mules": "daytime/summer pieces, off the gold new-year's-eve palette",
+  "green fringe top": "beachy, off palette",
+  "brocade dress with champagne": "carries the creator's name as a watermark",
+  "yellow bathroom dress, beaded shift, sequin tank, magenta pleated dress, dress on a hanger": "the board has far more outfits than other kinds; these were left out so no two outfits touch or follow each other"
+ },
+ "slides": [
+  {
+   "type": "sym",
+   "images": [
+    "ny-green-feather-dress"
+   ],
+   "tree": 0,
+   "reveal": [
+    [
+     0
+    ]
+   ],
+   "at": [
+    0.0
+   ],
+   "gap": 20,
+   "margin": [
+    60,
+    140
+   ]
+  },
+  {
+   "type": "sym",
+   "images": [
+    "ny-sequin-pair-dancing"
+   ],
+   "tree": 0,
+   "reveal": [
+    [
+     0
+    ]
+   ],
+   "at": [
+    0.61
+   ],
+   "gap": 20,
+   "margin": [
+    60,
+    140
+   ]
+  },
+  {
+   "type": "sym",
+   "images": [
+    "ny-gold-corset-set",
+    "ny-gold-confetti-floor",
+    "ny-elevator-red-heels",
+    "ny-lace-dress-rooftop",
+    "ny-gold-dress-doorway",
+    "ny-glitter-bag-martini"
+   ],
+   "tree": [
+    "v",
+    [
+     "h",
+     0,
+     1
+    ],
+    [
+     "h",
+     2,
+     3
+    ],
+    [
+     "h",
+     4,
+     5
+    ]
+   ],
+   "reveal": [
+    [
+     2,
+     3
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     4,
+     5
+    ]
+   ],
+   "at": [
+    0.998,
+    1.393,
+    1.765
+   ],
+   "gap": 20,
+   "margin": [
+    60,
+    140
+   ]
+  },
+  {
+   "type": "sym",
+   "images": [
+    "ny-silver-satin-skirt",
+    "ny-fireworks-lanterns",
+    "ny-paper-stars-mantel",
+    "ny-ballroom-midnight",
+    "ny-orange-drop-waist"
+   ],
+   "tree": [
+    "v",
+    [
+     "h",
+     0,
+     1
+    ],
+    2,
+    [
+     "h",
+     3,
+     4
+    ]
+   ],
+   "reveal": [
+    [
+     2
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     3,
+     4
+    ]
+   ],
+   "at": [
+    2.554,
+    2.949,
+    3.349
+   ],
+   "gap": 20,
+   "margin": [
+    60,
+    140
+   ]
+  },
+  {
+   "type": "sym",
+   "images": [
+    "ny-party-boots-drinks",
+    "ny-gold-rings-nails"
+   ],
+   "tree": [
+    "v",
+    0,
+    1
+   ],
+   "reveal": [
+    [
+     0,
+     1
+    ]
+   ],
+   "at": [
+    4.145
+   ],
+   "gap": 20,
+   "margin": [
+    60,
+    140
+   ]
+  },
+  {
+   "type": "sym",
+   "images": [
+    "ny-pink-halter-gown"
+   ],
+   "tree": 0,
+   "reveal": [
+    [
+     0
+    ]
+   ],
+   "at": [
+    4.923
+   ],
+   "gap": 20,
+   "margin": [
+    60,
+    140
+   ]
+  },
+  {
+   "type": "sym",
+   "images": [
+    "ny-glitter-socks-whiskey"
+   ],
+   "tree": 0,
+   "reveal": [
+    [
+     0
+    ]
+   ],
+   "at": [
+    5.317
+   ],
+   "gap": 20,
+   "margin": [
+    60,
+    140
+   ]
+  },
+  {
+   "type": "sym",
+   "images": [
+    "ny-gold-strapless-mini"
+   ],
+   "tree": 0,
+   "reveal": [
+    [
+     0
+    ]
+   ],
+   "at": [
+    5.718
+   ],
+   "gap": 20,
+   "margin": [
+    60,
+    140
+   ]
+  },
+  {
+   "type": "sym",
+   "images": [
+    "ny-gold-tights-duck"
+   ],
+   "tree": 0,
+   "reveal": [
+    [
+     0
+    ]
+   ],
+   "at": [
+    6.101
+   ],
+   "gap": 20,
+   "margin": [
+    60,
+    140
+   ]
+  },
+  {
+   "type": "sym",
+   "images": [
+    "ny-zebra-sequin-pants",
+    "ny-party-table-candles"
+   ],
+   "tree": [
+    "h",
+    0,
+    1
+   ],
+   "reveal": [
+    [
+     0,
+     1
+    ]
+   ],
+   "at": [
+    6.496
+   ],
+   "margin": [
+    40,
+    140
+   ],
+   "gap": 20
+  },
+  {
+   "type": "sym",
+   "images": [
+    "ny-white-drape-back"
+   ],
+   "tree": 0,
+   "reveal": [
+    [
+     0
+    ]
+   ],
+   "at": [
+    7.279
+   ],
+   "gap": 20,
+   "margin": [
+    60,
+    140
+   ]
+  },
+  {
+   "type": "sym",
+   "images": [
+    "ny-paris-fireworks"
+   ],
+   "tree": 0,
+   "reveal": [
+    [
+     0
+    ]
+   ],
+   "at": [
+    8.057
+   ],
+   "gap": 20,
+   "margin": [
+    60,
+    140
+   ]
+  }
+ ]
+}

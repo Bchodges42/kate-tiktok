@@ -1,0 +1,268 @@
+{
+ "_comment": "Video 1 for the 'wow' board, same method as the reference: warm white page, one centred photo at a time, covers never smaller than what they cover, and photos appearing inside a photo (the feather texture frames four insets). Hard cuts on the beat. Hook: rainbow mountain. Machu Picchu lands on the 8.06 s hit and holds; it leads back to the rainbow mountain for the loop.",
+ "name": "wow-wonders",
+ "version": "v1_centered_stack",
+ "vibe": "wonders of the world: rainbow mountains, lanterns, gorges, spiral stairs, natural textures",
+ "song": "audio/ref-ny.wav",
+ "_song_comment": "Audio of the TikTok sound from the user's reference screen recording (ffmpeg -vn). 152 BPM, beat every 0.3925 s; bar accents at 1.00, 2.55, 4.15, 5.72, 7.28, 8.85 s. Music runs to 9.25 s, where TikTok's outro jingle starts.",
+ "end_at": 9.233,
+ "fps": 30,
+ "size": [
+  1080,
+  1920
+ ],
+ "grade": {
+  "warmth": 0.02,
+  "lift": 8,
+  "saturation": 0.98,
+  "grain": 2.5,
+  "grain_seed": 11
+ },
+ "background": "#F5F1EA",
+ "border": {
+  "px": 6,
+  "color": "#FFFFFF"
+ },
+ "max_box": [
+  0.92,
+  0.74
+ ],
+ "center_y": 0.48,
+ "images_dir": "images",
+ "images": {
+  "wow-rainbow-mountain": {
+   "kind": "red earth"
+  },
+  "wow-paper-lanterns-shop": {
+   "kind": "lanterns"
+  },
+  "wow-green-canyon-river": {
+   "kind": "green landscape"
+  },
+  "wow-pink-reflection-hall": {
+   "kind": "reflection"
+  },
+  "wow-zebra-herd": {
+   "kind": "animals"
+  },
+  "wow-moto-road-gorge": {
+   "kind": "green landscape"
+  },
+  "wow-lantern-tree": {
+   "kind": "lanterns"
+  },
+  "wow-sand-swirls": {
+   "kind": "texture"
+  },
+  "wow-alpacas-glacier": {
+   "kind": "animals"
+  },
+  "wow-pheasant-feathers": {
+   "kind": "texture"
+  },
+  "wow-violet-spiral-stairs": {
+   "kind": "stairs"
+  },
+  "wow-ivy-windows": {
+   "kind": "building"
+  },
+  "wow-temple-rooftops": {
+   "kind": "landmark"
+  },
+  "wow-red-rock-arch": {
+   "kind": "red earth"
+  },
+  "wow-orange-silk-lanterns": {
+   "kind": "lanterns"
+  },
+  "wow-jungle-train": {
+   "kind": "train"
+  },
+  "wow-mossy-waterfalls": {
+   "kind": "green landscape"
+  },
+  "wow-rainbow-hills-camels": {
+   "kind": "red earth"
+  },
+  "wow-white-spiral-stairs": {
+   "kind": "stairs"
+  },
+  "wow-green-gorge-arch": {
+   "kind": "green landscape"
+  },
+  "wow-machu-picchu": {
+   "kind": "landmark"
+  }
+ },
+ "not_used": {
+  "autumn tree canopy (pin 0), sea cave (pin 11)": "soft sources (489 px, 477 px tall)",
+  "dragon-blood trees (pin 3)": "a digital painting, not a photo; reads differently from the rest",
+  "great wall, pink scales texture, rice terraces": "left for video 2; 21 photos fit the 9.2 s sound"
+ },
+ "slides": [
+  {
+   "type": "stack",
+   "shots": [
+    {
+     "image": "wow-rainbow-mountain",
+     "at": 0.0,
+     "op": "swap",
+     "scale": 1.0
+    },
+    {
+     "image": "wow-paper-lanterns-shop",
+     "at": 0.61,
+     "op": "swap",
+     "scale": 1.0
+    }
+   ]
+  },
+  {
+   "type": "inset",
+   "base": {
+    "image": "wow-green-canyon-river",
+    "at": 0.998,
+    "scale": 1.0
+   },
+   "insets": [
+    "wow-pink-reflection-hall",
+    "wow-zebra-herd"
+   ],
+   "tree": [
+    "v",
+    0,
+    1
+   ],
+   "at": [
+    1.393,
+    1.765
+   ],
+   "margin": 0.09,
+   "gap": 22
+  },
+  {
+   "type": "stack",
+   "shots": [
+    {
+     "image": "wow-moto-road-gorge",
+     "at": 2.554,
+     "op": "swap",
+     "scale": 1.0
+    },
+    {
+     "image": "wow-lantern-tree",
+     "at": 2.949,
+     "op": "cover",
+     "scale": 0.85
+    },
+    {
+     "image": "wow-sand-swirls",
+     "at": 3.349,
+     "op": "swap",
+     "scale": 0.9
+    },
+    {
+     "image": "wow-alpacas-glacier",
+     "at": 3.756,
+     "op": "cover",
+     "scale": 1.0
+    }
+   ]
+  },
+  {
+   "type": "inset",
+   "base": {
+    "image": "wow-pheasant-feathers",
+    "at": 4.145,
+    "scale": 1.0
+   },
+   "insets": [
+    "wow-violet-spiral-stairs",
+    "wow-ivy-windows",
+    "wow-temple-rooftops",
+    "wow-red-rock-arch"
+   ],
+   "tree": [
+    "v",
+    [
+     "h",
+     0,
+     1
+    ],
+    [
+     "h",
+     2,
+     3
+    ]
+   ],
+   "reveal": [
+    [
+     0,
+     1
+    ],
+    [
+     2,
+     3
+    ]
+   ],
+   "at": [
+    4.54,
+    4.923
+   ],
+   "margin": 0.08,
+   "gap": 20
+  },
+  {
+   "type": "stack",
+   "shots": [
+    {
+     "image": "wow-orange-silk-lanterns",
+     "at": 5.718,
+     "op": "swap",
+     "scale": 1.0
+    },
+    {
+     "image": "wow-jungle-train",
+     "at": 6.101,
+     "op": "swap",
+     "scale": 1.0
+    },
+    {
+     "image": "wow-mossy-waterfalls",
+     "at": 6.496,
+     "op": "swap",
+     "scale": 1.0
+    },
+    {
+     "image": "wow-rainbow-hills-camels",
+     "at": 6.896,
+     "op": "swap",
+     "scale": 1.0
+    }
+   ]
+  },
+  {
+   "type": "stack",
+   "shots": [
+    {
+     "image": "wow-white-spiral-stairs",
+     "at": 7.279,
+     "op": "swap",
+     "scale": 1.0
+    },
+    {
+     "image": "wow-green-gorge-arch",
+     "at": 7.668,
+     "op": "swap",
+     "scale": 1.0
+    },
+    {
+     "image": "wow-machu-picchu",
+     "at": 8.057,
+     "op": "swap",
+     "scale": 1.0
+    }
+   ]
+  }
+ ]
+}

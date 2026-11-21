@@ -1,0 +1,39 @@
+16 steps, 23 photos, 12 slides, 9.23 s (music ends 9.23 s)
+sync: every change within 0.49 frames of its beat (mean 0.29) -> PASS
+stillness: max held-frame change 0.033 -> PASS
+shape: every photo whole, at its own width-to-height shape -> PASS
+repeats: none -> PASS
+variety: no two photos of the same kind touching, back to back, or across the loop -> PASS
+position: every photo and every arrangement centred on the screen's vertical centre line
+symmetry: mirror-symmetric at every moment; worst mismatch 10 px (2.4% of that photo's width) -> PASS
+
+screen covered by photos, per slide (finished slide):
+  slide  1 sym     73%  (gap 20 px)
+  slide  2 sym     61%  (gap 20 px)
+  slide  3 sym     65%  (gap 20 px)
+  slide  4 sym     56%  (gap 20 px)
+  slide  5 sym     66%  (gap 20 px)
+  slide  6 sym     47%  (gap 20 px)
+  slide  7 sym     53%  (gap 20 px)
+  slide  8 sym     60%  (gap 20 px)
+  slide  9 sym     56%  (gap 20 px)
+  slide 10 sym     41%  (gap 20 px)
+  slide 11 sym     60%  (gap 20 px)
+  slide 12 sym     72%  (gap 20 px)
+
+ 1.  0.00s  slide 1  sym   ny-green-feather-dress [outfit]
+ 2.  0.61s  slide 2  sym   ny-sequin-pair-dancing [party]
+ 3.  1.00s  slide 3  sym   ny-elevator-red-heels [accessory], ny-lace-dress-rooftop [outfit]
+ 4.  1.39s  slide 3  sym   ny-gold-corset-set [outfit], ny-gold-confetti-floor [confetti]
+ 5.  1.76s  slide 3  sym   ny-gold-dress-doorway [outfit], ny-glitter-bag-martini [accessory]
+ 6.  2.55s  slide 4  sym   ny-paper-stars-mantel [decor]
+ 7.  2.95s  slide 4  sym   ny-silver-satin-skirt [outfit], ny-fireworks-lanterns [fireworks]
+ 8.  3.35s  slide 4  sym   ny-ballroom-midnight [party], ny-orange-drop-waist [outfit]
+ 9.  4.14s  slide 5  sym   ny-party-boots-drinks [party], ny-gold-rings-nails [beauty]
+10.  4.92s  slide 6  sym   ny-pink-halter-gown [outfit]
+11.  5.32s  slide 7  sym   ny-glitter-socks-whiskey [accessory]
+12.  5.72s  slide 8  sym   ny-gold-strapless-mini [outfit]
+13.  6.10s  slide 9  sym   ny-gold-tights-duck [detail]
+14.  6.50s  slide 10 sym   ny-zebra-sequin-pants [outfit], ny-party-table-candles [party]
+15.  7.28s  slide 11 sym   ny-white-drape-back [outfit]
+16.  8.06s  slide 12 sym   ny-paris-fireworks [fireworks]

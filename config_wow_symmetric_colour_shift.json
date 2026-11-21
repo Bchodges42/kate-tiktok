@@ -1,0 +1,409 @@
+{
+ "_comment": "Video 2 for the 'wow' board: symmetric, centred collages like video 2 of the NY board, but the background colour changes with every scene, pulled from that scene's photos: sage, sand, rust, slate, plum, and back to sage so the loop is seamless. Scene changes on the bar accents: the old scene fades into the new colour over 6 frames (0.2 s) that finish exactly on the beat, then the new photos land with a hard cut. Thin cream borders, even 24 px gaps.",
+ "name": "wow-wonders",
+ "version": "v2_symmetric_colour_shift",
+ "vibe": "wonders of the world: rainbow mountains, lanterns, gorges, spiral stairs, natural textures",
+ "song": "audio/ref-ny.wav",
+ "_song_comment": "Audio of the TikTok sound from the user's reference screen recording (ffmpeg -vn). 152 BPM, beat every 0.3925 s; bar accents at 1.00, 2.55, 4.15, 5.72, 7.28, 8.85 s. Music runs to 9.25 s, where TikTok's outro jingle starts.",
+ "end_at": 9.233,
+ "fps": 30,
+ "size": [
+  1080,
+  1920
+ ],
+ "grade": {
+  "warmth": 0.02,
+  "lift": 8,
+  "saturation": 0.98,
+  "grain": 2.5,
+  "grain_seed": 11
+ },
+ "background": "#7F8C7D",
+ "border": {
+  "px": 5,
+  "color": "#F7F4EE"
+ },
+ "max_box": [
+  0.92,
+  0.74
+ ],
+ "center_y": 0.48,
+ "images_dir": "images",
+ "images": {
+  "wow-lantern-tree": {
+   "kind": "lanterns"
+  },
+  "wow-mossy-waterfalls": {
+   "kind": "green landscape"
+  },
+  "wow-moto-road-gorge": {
+   "kind": "green landscape"
+  },
+  "wow-great-wall": {
+   "kind": "landmark"
+  },
+  "wow-orange-silk-lanterns": {
+   "kind": "lanterns"
+  },
+  "wow-pink-reflection-hall": {
+   "kind": "reflection"
+  },
+  "wow-pink-scales-texture": {
+   "kind": "texture"
+  },
+  "wow-green-gorge-arch": {
+   "kind": "green landscape"
+  },
+  "wow-jungle-train": {
+   "kind": "train"
+  },
+  "wow-red-rock-arch": {
+   "kind": "red earth"
+  },
+  "wow-sand-swirls": {
+   "kind": "texture"
+  },
+  "wow-ivy-windows": {
+   "kind": "building"
+  },
+  "wow-paper-lanterns-shop": {
+   "kind": "lanterns"
+  },
+  "wow-zebra-herd": {
+   "kind": "animals"
+  },
+  "wow-temple-rooftops": {
+   "kind": "landmark"
+  },
+  "wow-rainbow-mountain": {
+   "kind": "red earth"
+  },
+  "wow-rainbow-hills-camels": {
+   "kind": "red earth"
+  },
+  "wow-violet-spiral-stairs": {
+   "kind": "stairs"
+  },
+  "wow-white-spiral-stairs": {
+   "kind": "stairs"
+  },
+  "wow-green-canyon-river": {
+   "kind": "green landscape"
+  },
+  "wow-alpacas-glacier": {
+   "kind": "animals"
+  },
+  "wow-pheasant-feathers": {
+   "kind": "texture"
+  },
+  "wow-rice-terrace-valley": {
+   "kind": "green landscape"
+  },
+  "wow-machu-picchu": {
+   "kind": "landmark"
+  }
+ },
+ "not_used": {
+  "autumn tree canopy (pin 0), sea cave (pin 11)": "soft sources (489 px, 477 px tall)",
+  "dragon-blood trees (pin 3)": "a digital painting, not a photo; reads differently from the rest"
+ },
+ "slides": [
+  {
+   "type": "sym",
+   "images": [
+    "wow-lantern-tree"
+   ],
+   "tree": 0,
+   "reveal": [
+    [
+     0
+    ]
+   ],
+   "at": [
+    0.0
+   ],
+   "bg": "#7F8C7D",
+   "gap": 24,
+   "margin": [
+    60,
+    140
+   ]
+  },
+  {
+   "type": "sym",
+   "images": [
+    "wow-mossy-waterfalls"
+   ],
+   "tree": 0,
+   "reveal": [
+    [
+     0
+    ]
+   ],
+   "at": [
+    0.61
+   ],
+   "bg": "#7F8C7D",
+   "gap": 24,
+   "margin": [
+    60,
+    140
+   ]
+  },
+  {
+   "type": "sym",
+   "bg": "#CBB894",
+   "images": [
+    "wow-moto-road-gorge",
+    "wow-great-wall",
+    "wow-orange-silk-lanterns",
+    "wow-pink-reflection-hall"
+   ],
+   "tree": [
+    "v",
+    0,
+    [
+     "h",
+     1,
+     2
+    ],
+    3
+   ],
+   "reveal": [
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "at": [
+    0.998,
+    1.765
+   ],
+   "gap": 24,
+   "margin": [
+    60,
+    140
+   ]
+  },
+  {
+   "type": "sym",
+   "bg": "#6E3B2A",
+   "enter": {
+    "fade_frames": 6
+   },
+   "images": [
+    "wow-pink-scales-texture",
+    "wow-green-gorge-arch",
+    "wow-jungle-train",
+    "wow-red-rock-arch"
+   ],
+   "tree": [
+    "v",
+    [
+     "h",
+     0,
+     1
+    ],
+    [
+     "h",
+     2,
+     3
+    ]
+   ],
+   "reveal": [
+    [
+     0,
+     1
+    ],
+    [
+     2,
+     3
+    ]
+   ],
+   "at": [
+    2.554,
+    2.949
+   ],
+   "gap": 24,
+   "margin": [
+    60,
+    140
+   ]
+  },
+  {
+   "type": "sym",
+   "images": [
+    "wow-sand-swirls"
+   ],
+   "tree": 0,
+   "reveal": [
+    [
+     0
+    ]
+   ],
+   "at": [
+    3.349
+   ],
+   "bg": "#6E3B2A",
+   "gap": 24,
+   "margin": [
+    60,
+    140
+   ]
+  },
+  {
+   "type": "sym",
+   "bg": "#2E3A48",
+   "enter": {
+    "fade_frames": 6
+   },
+   "images": [
+    "wow-ivy-windows",
+    "wow-paper-lanterns-shop",
+    "wow-zebra-herd",
+    "wow-temple-rooftops",
+    "wow-rainbow-mountain"
+   ],
+   "tree": [
+    "v",
+    [
+     "h",
+     0,
+     1
+    ],
+    2,
+    [
+     "h",
+     3,
+     4
+    ]
+   ],
+   "reveal": [
+    [
+     0,
+     1,
+     3,
+     4
+    ],
+    [
+     2
+    ]
+   ],
+   "at": [
+    4.145,
+    4.923
+   ],
+   "gap": 24,
+   "margin": [
+    60,
+    140
+   ]
+  },
+  {
+   "type": "sym",
+   "bg": "#6E5262",
+   "enter": {
+    "fade_frames": 6
+   },
+   "images": [
+    "wow-rainbow-hills-camels",
+    "wow-violet-spiral-stairs",
+    "wow-white-spiral-stairs",
+    "wow-green-canyon-river",
+    "wow-alpacas-glacier",
+    "wow-pheasant-feathers"
+   ],
+   "tree": [
+    "v",
+    [
+     "h",
+     0,
+     1
+    ],
+    [
+     "h",
+     2,
+     3
+    ],
+    [
+     "h",
+     4,
+     5
+    ]
+   ],
+   "reveal": [
+    [
+     2,
+     3
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     4,
+     5
+    ]
+   ],
+   "at": [
+    5.718,
+    6.101,
+    6.496
+   ],
+   "gap": 24,
+   "margin": [
+    60,
+    140
+   ]
+  },
+  {
+   "type": "sym",
+   "images": [
+    "wow-rice-terrace-valley"
+   ],
+   "tree": 0,
+   "reveal": [
+    [
+     0
+    ]
+   ],
+   "at": [
+    7.279
+   ],
+   "bg": "#6E5262",
+   "gap": 24,
+   "margin": [
+    60,
+    140
+   ]
+  },
+  {
+   "type": "sym",
+   "images": [
+    "wow-machu-picchu"
+   ],
+   "tree": 0,
+   "reveal": [
+    [
+     0
+    ]
+   ],
+   "at": [
+    8.057
+   ],
+   "bg": "#7F8C7D",
+   "enter": {
+    "fade_frames": 6
+   },
+   "gap": 24,
+   "margin": [
+    60,
+    140
+   ]
+  }
+ ]
+}
