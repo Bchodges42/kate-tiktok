@@ -1,0 +1,57 @@
+25 steps, 34 photos, 21 slides, 18.47 s (music ends 18.47 s)
+sync: every change within 0.50 frames of its beat (mean 0.24) -> PASS
+stillness: max held-frame change 0.043 -> PASS
+shape: every photo whole, at its own width-to-height shape -> PASS
+repeats: none -> PASS
+variety: no two photos of the same kind touching, back to back, or across the loop -> PASS
+position: every photo and every arrangement centred on the screen's vertical centre line
+symmetry: mirror-symmetric at every moment; worst mismatch 2 px (0.6% of that photo's width) -> PASS
+
+screen covered by photos, per slide (finished slide):
+  slide  1 sym     69%  (gap 20 px)
+  slide  2 sym     59%  (gap 20 px)
+  slide  3 sym     67%  (gap 20 px)
+  slide  4 sym     44%  (gap 20 px)
+  slide  5 sym     44%  (gap 20 px)
+  slide  6 sym     56%  (gap 20 px)
+  slide  7 sym     44%  (gap 20 px)
+  slide  8 sym     59%  (gap 20 px)
+  slide  9 sym     59%  (gap 20 px)
+  slide 10 inset   60%  (frame of base photo 105 px, gap 22 px)
+  slide 11 sym     60%  (gap 20 px)
+  slide 12 sym     57%  (gap 20 px)
+  slide 13 sym     50%  (gap 20 px)
+  slide 14 sym     68%  (gap 20 px)
+  slide 15 sym     57%  (gap 20 px)
+  slide 16 sym     62%  (gap 20 px)
+  slide 17 sym     56%  (gap 20 px)
+  slide 18 inset   67%  (frame of base photo 118 px, gap 22 px)
+  slide 19 sym     56%  (gap 20 px)
+  slide 20 sym     59%  (gap 20 px)
+  slide 21 sym     45%  (gap 20 px)
+
+ 1.  0.00s  slide 1  sym   mm-bride-on-the-rocks [film still]
+ 2.  0.61s  slide 2  sym   mm-flower-cocktails [drinks]
+ 3.  1.00s  slide 3  sym   mm-boho-lace-dress [outfit]
+ 4.  1.39s  slide 4  sym   mm-disco-ball-ceiling [disco]
+ 5.  1.76s  slide 5  sym   mm-three-singers-sequins [film still]
+ 6.  2.16s  slide 6  sym   mm-pink-stone-houses [building], mm-sailboat-arms-out [people]
+ 7.  2.95s  slide 6  sym   mm-tennis-court-party [people], mm-greek-alley-shops [street]
+ 8.  3.76s  slide 6  sym   mm-pink-sequin-dresses [outfit], mm-laundry-sea-view [town]
+ 9.  4.54s  slide 7  sym   mm-dancing-arms-up [film still]
+10.  5.32s  slide 8  sym   mm-amalfi-beach-town [town], mm-jumping-off-dock [people]
+11.  6.10s  slide 9  sym   mm-feather-sequin-rack [outfit]
+12.  6.90s  slide 10 swap  mm-bougainvillea-tower [building]
+13.  8.06s  slide 10 inset mm-pink-disco-ball [disco]
+14.  8.85s  slide 11 sym   mm-dance-floor-night [film still]
+15.  9.45s  slide 12 sym   mm-reading-by-the-sea [people], mm-blue-door-bougainvillea [door], mm-disco-ball-pile [disco], mm-positano-steps [town]
+16. 10.23s  slide 13 sym   mm-sequin-top-feathers [outfit]
+17. 11.00s  slide 14 sym   mm-bridesmaids-running [film still], mm-pink-seashells [object]
+18. 12.18s  slide 15 sym   mm-sparkling-sea [sea]
+19. 12.99s  slide 16 sym   mm-finale-cast-singing [film still], mm-dancing-figures-art [art]
+20. 13.77s  slide 17 sym   mm-sequin-scallop-skirt [outfit]
+21. 14.55s  slide 18 swap  mm-flower-balconies [building]
+22. 15.33s  slide 18 inset mm-white-sailboat [boat]
+23. 16.13s  slide 19 sym   mm-sunbather-stone-wall [people]
+24. 16.90s  slide 20 sym   mm-feather-boa-pile [object]
+25. 17.29s  slide 21 sym   mm-fireworks-over-lake [fireworks]

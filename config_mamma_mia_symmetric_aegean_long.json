@@ -1,0 +1,643 @@
+{
+ "_comment": "Mamma Mia board, 18.5 s (the sound twice), in the symmetric centred style on Aegean blue (my pick: whitewash and blue like the island, and it makes the pinks and sequins pop), thin white borders, even 20 px gaps, hard cuts. Single centred photos between collages that build from the centre in mirrored pairs (a six-up grid, a four-up grid, wide photos stacked), plus two photo-inside-a-photo moments (the pink disco ball inside the bougainvillea tower, the sailboat inside the flower balconies). Film stills are described by scene, nobody is named. Opens on the bride and friends on the rocks; the fireworks over the lake land on the second pass's big hit and hold.",
+ "name": "mamma-mia",
+ "version": "v1_symmetric_aegean_long",
+ "vibe": "mamma mia summer: greek island streets, sailboats, sequins, disco balls, the film's big numbers",
+ "song": "audio/ref-ny-x2.wav",
+ "_song_comment": "The 9.23 s TikTok sound from the user's reference screen recording, played twice back to back (frame-exact, 277 frames each), as TikTok does with a sound shorter than the video. 152 BPM; second-pass beats = first-pass beats + 9.2333 s.",
+ "end_at": 18.466666666666665,
+ "fps": 30,
+ "size": [
+  1080,
+  1920
+ ],
+ "grade": {
+  "warmth": 0.02,
+  "lift": 8,
+  "saturation": 0.98,
+  "grain": 2.5,
+  "grain_seed": 11
+ },
+ "background": "#2B4C6F",
+ "border": {
+  "px": 5,
+  "color": "#FFFFFF"
+ },
+ "max_box": [
+  0.92,
+  0.74
+ ],
+ "center_y": 0.48,
+ "images_dir": "images",
+ "images": {
+  "mm-bride-on-the-rocks": {
+   "kind": "film still"
+  },
+  "mm-flower-cocktails": {
+   "kind": "drinks"
+  },
+  "mm-boho-lace-dress": {
+   "kind": "outfit"
+  },
+  "mm-disco-ball-ceiling": {
+   "kind": "disco"
+  },
+  "mm-three-singers-sequins": {
+   "kind": "film still"
+  },
+  "mm-tennis-court-party": {
+   "kind": "people"
+  },
+  "mm-greek-alley-shops": {
+   "kind": "street"
+  },
+  "mm-pink-stone-houses": {
+   "kind": "building"
+  },
+  "mm-sailboat-arms-out": {
+   "kind": "people"
+  },
+  "mm-pink-sequin-dresses": {
+   "kind": "outfit"
+  },
+  "mm-laundry-sea-view": {
+   "kind": "town"
+  },
+  "mm-dancing-arms-up": {
+   "kind": "film still"
+  },
+  "mm-amalfi-beach-town": {
+   "kind": "town"
+  },
+  "mm-jumping-off-dock": {
+   "kind": "people"
+  },
+  "mm-feather-sequin-rack": {
+   "kind": "outfit"
+  },
+  "mm-bougainvillea-tower": {
+   "kind": "building"
+  },
+  "mm-pink-disco-ball": {
+   "kind": "disco"
+  },
+  "mm-dance-floor-night": {
+   "kind": "film still",
+   "crop": [
+    0,
+    0,
+    964,
+    1310
+   ],
+   "_crop": "removes the OutNow.CH site watermark in the bottom-right corner (bottom 90 px)"
+  },
+  "mm-reading-by-the-sea": {
+   "kind": "people"
+  },
+  "mm-blue-door-bougainvillea": {
+   "kind": "door"
+  },
+  "mm-disco-ball-pile": {
+   "kind": "disco"
+  },
+  "mm-positano-steps": {
+   "kind": "town"
+  },
+  "mm-sequin-top-feathers": {
+   "kind": "outfit"
+  },
+  "mm-bridesmaids-running": {
+   "kind": "film still"
+  },
+  "mm-pink-seashells": {
+   "kind": "object"
+  },
+  "mm-sparkling-sea": {
+   "kind": "sea"
+  },
+  "mm-finale-cast-singing": {
+   "kind": "film still"
+  },
+  "mm-dancing-figures-art": {
+   "kind": "art"
+  },
+  "mm-sequin-scallop-skirt": {
+   "kind": "outfit"
+  },
+  "mm-flower-balconies": {
+   "kind": "building"
+  },
+  "mm-white-sailboat": {
+   "kind": "boat"
+  },
+  "mm-sunbather-stone-wall": {
+   "kind": "people"
+  },
+  "mm-feather-boa-pile": {
+   "kind": "object"
+  },
+  "mm-fireworks-over-lake": {
+   "kind": "fireworks"
+  }
+ },
+ "not_used": {
+  "pins 2, 3, 5, 6, 12, 22, 33, 36, 42": "soft sources (under 500 px)",
+  "dance circle at night, square (pin 35)": "same scene as the taller dance floor shot",
+  "three singers, wide (pin 8)": "same moment as the opening photo"
+ },
+ "slides": [
+  {
+   "type": "sym",
+   "images": [
+    "mm-bride-on-the-rocks"
+   ],
+   "tree": 0,
+   "reveal": [
+    [
+     0
+    ]
+   ],
+   "at": [
+    0.0
+   ],
+   "gap": 20,
+   "margin": [
+    60,
+    140
+   ]
+  },
+  {
+   "type": "sym",
+   "images": [
+    "mm-flower-cocktails"
+   ],
+   "tree": 0,
+   "reveal": [
+    [
+     0
+    ]
+   ],
+   "at": [
+    0.61
+   ],
+   "gap": 20,
+   "margin": [
+    60,
+    140
+   ]
+  },
+  {
+   "type": "sym",
+   "images": [
+    "mm-boho-lace-dress"
+   ],
+   "tree": 0,
+   "reveal": [
+    [
+     0
+    ]
+   ],
+   "at": [
+    0.998
+   ],
+   "gap": 20,
+   "margin": [
+    60,
+    140
+   ]
+  },
+  {
+   "type": "sym",
+   "images": [
+    "mm-disco-ball-ceiling"
+   ],
+   "tree": 0,
+   "reveal": [
+    [
+     0
+    ]
+   ],
+   "at": [
+    1.393
+   ],
+   "gap": 20,
+   "margin": [
+    60,
+    140
+   ]
+  },
+  {
+   "type": "sym",
+   "images": [
+    "mm-three-singers-sequins"
+   ],
+   "tree": 0,
+   "reveal": [
+    [
+     0
+    ]
+   ],
+   "at": [
+    1.765
+   ],
+   "gap": 20,
+   "margin": [
+    60,
+    140
+   ]
+  },
+  {
+   "type": "sym",
+   "images": [
+    "mm-tennis-court-party",
+    "mm-greek-alley-shops",
+    "mm-pink-stone-houses",
+    "mm-sailboat-arms-out",
+    "mm-pink-sequin-dresses",
+    "mm-laundry-sea-view"
+   ],
+   "tree": [
+    "v",
+    [
+     "h",
+     0,
+     1
+    ],
+    [
+     "h",
+     2,
+     3
+    ],
+    [
+     "h",
+     4,
+     5
+    ]
+   ],
+   "reveal": [
+    [
+     2,
+     3
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     4,
+     5
+    ]
+   ],
+   "at": [
+    2.159,
+    2.949,
+    3.756
+   ],
+   "gap": 20,
+   "margin": [
+    60,
+    140
+   ]
+  },
+  {
+   "type": "sym",
+   "images": [
+    "mm-dancing-arms-up"
+   ],
+   "tree": 0,
+   "reveal": [
+    [
+     0
+    ]
+   ],
+   "at": [
+    4.54
+   ],
+   "gap": 20,
+   "margin": [
+    60,
+    140
+   ]
+  },
+  {
+   "type": "sym",
+   "images": [
+    "mm-amalfi-beach-town",
+    "mm-jumping-off-dock"
+   ],
+   "tree": [
+    "v",
+    0,
+    1
+   ],
+   "reveal": [
+    [
+     0,
+     1
+    ]
+   ],
+   "at": [
+    5.317
+   ],
+   "gap": 20,
+   "margin": [
+    60,
+    140
+   ]
+  },
+  {
+   "type": "sym",
+   "images": [
+    "mm-feather-sequin-rack"
+   ],
+   "tree": 0,
+   "reveal": [
+    [
+     0
+    ]
+   ],
+   "at": [
+    6.101
+   ],
+   "gap": 20,
+   "margin": [
+    60,
+    140
+   ]
+  },
+  {
+   "type": "inset",
+   "base": {
+    "image": "mm-bougainvillea-tower",
+    "at": 6.896,
+    "scale": 1.0
+   },
+   "insets": [
+    "mm-pink-disco-ball"
+   ],
+   "tree": 0,
+   "reveal": [
+    [
+     0
+    ]
+   ],
+   "at": [
+    8.057
+   ],
+   "margin": 0.12,
+   "gap": 22
+  },
+  {
+   "type": "sym",
+   "images": [
+    "mm-dance-floor-night"
+   ],
+   "tree": 0,
+   "reveal": [
+    [
+     0
+    ]
+   ],
+   "at": [
+    8.847
+   ],
+   "gap": 20,
+   "margin": [
+    60,
+    140
+   ]
+  },
+  {
+   "type": "sym",
+   "images": [
+    "mm-reading-by-the-sea",
+    "mm-blue-door-bougainvillea",
+    "mm-disco-ball-pile",
+    "mm-positano-steps"
+   ],
+   "tree": [
+    "v",
+    [
+     "h",
+     0,
+     1
+    ],
+    [
+     "h",
+     2,
+     3
+    ]
+   ],
+   "reveal": [
+    [
+     0,
+     1,
+     2,
+     3
+    ]
+   ],
+   "at": [
+    9.448
+   ],
+   "gap": 20,
+   "margin": [
+    60,
+    140
+   ]
+  },
+  {
+   "type": "sym",
+   "images": [
+    "mm-sequin-top-feathers"
+   ],
+   "tree": 0,
+   "reveal": [
+    [
+     0
+    ]
+   ],
+   "at": [
+    10.231
+   ],
+   "gap": 20,
+   "margin": [
+    60,
+    140
+   ]
+  },
+  {
+   "type": "sym",
+   "images": [
+    "mm-bridesmaids-running",
+    "mm-pink-seashells"
+   ],
+   "tree": [
+    "v",
+    0,
+    1
+   ],
+   "reveal": [
+    [
+     0,
+     1
+    ]
+   ],
+   "at": [
+    10.998
+   ],
+   "gap": 20,
+   "margin": [
+    60,
+    140
+   ]
+  },
+  {
+   "type": "sym",
+   "images": [
+    "mm-sparkling-sea"
+   ],
+   "tree": 0,
+   "reveal": [
+    [
+     0
+    ]
+   ],
+   "at": [
+    12.182
+   ],
+   "gap": 20,
+   "margin": [
+    60,
+    140
+   ]
+  },
+  {
+   "type": "sym",
+   "images": [
+    "mm-finale-cast-singing",
+    "mm-dancing-figures-art"
+   ],
+   "tree": [
+    "v",
+    0,
+    1
+   ],
+   "reveal": [
+    [
+     0,
+     1
+    ]
+   ],
+   "at": [
+    12.989
+   ],
+   "gap": 20,
+   "margin": [
+    60,
+    140
+   ]
+  },
+  {
+   "type": "sym",
+   "images": [
+    "mm-sequin-scallop-skirt"
+   ],
+   "tree": 0,
+   "reveal": [
+    [
+     0
+    ]
+   ],
+   "at": [
+    13.773
+   ],
+   "gap": 20,
+   "margin": [
+    60,
+    140
+   ]
+  },
+  {
+   "type": "inset",
+   "base": {
+    "image": "mm-flower-balconies",
+    "at": 14.55,
+    "scale": 1.0
+   },
+   "insets": [
+    "mm-white-sailboat"
+   ],
+   "tree": 0,
+   "reveal": [
+    [
+     0
+    ]
+   ],
+   "at": [
+    15.334
+   ],
+   "margin": 0.12,
+   "gap": 22
+  },
+  {
+   "type": "sym",
+   "images": [
+    "mm-sunbather-stone-wall"
+   ],
+   "tree": 0,
+   "reveal": [
+    [
+     0
+    ]
+   ],
+   "at": [
+    16.129
+   ],
+   "gap": 20,
+   "margin": [
+    60,
+    140
+   ]
+  },
+  {
+   "type": "sym",
+   "images": [
+    "mm-feather-boa-pile"
+   ],
+   "tree": 0,
+   "reveal": [
+    [
+     0
+    ]
+   ],
+   "at": [
+    16.901
+   ],
+   "gap": 20,
+   "margin": [
+    60,
+    140
+   ]
+  },
+  {
+   "type": "sym",
+   "images": [
+    "mm-fireworks-over-lake"
+   ],
+   "tree": 0,
+   "reveal": [
+    [
+     0
+    ]
+   ],
+   "at": [
+    17.29
+   ],
+   "gap": 20,
+   "margin": [
+    60,
+    140
+   ]
+  }
+ ]
+}
