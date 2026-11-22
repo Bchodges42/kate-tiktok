@@ -1,0 +1,305 @@
+{
+ "_comment": "Haymitch's District 12. Device: the insert. A tactile detail fills the screen before the photo it belongs to: fingers working a small handmade trinket and the geese come before the couple; a stained shirt and worn jacket cuff come before Haymitch's face at the reaping. Between them: light through a doorway, the fence wire, a hand on a cheek. Everything builds to one uninterrupted hold on young Haymitch's portrait on bar 5; the meadow with the geese then leads back to the hands.",
+ "name": "sotr",
+ "version": "v2_haymitch_district12",
+ "bpm": 90,
+ "beats": 24,
+ "fps": 30,
+ "size": [
+  1080,
+  1920
+ ],
+ "background": "#101418",
+ "_tempo_comment": "90 BPM, 6 bars, 16.0 s, 20 frames per beat. Post with an intimate acoustic or folk sound at 90 (45 half time). Bar 5 (10.67 s) is the anchor portrait: put the vocal entrance or the first big chord there.",
+ "grade": {
+  "warmth": 0.02,
+  "lift": 8,
+  "saturation": 0.96,
+  "grain": 3.0,
+  "grain_seed": 12
+ },
+ "safe_zone": [
+  60,
+  210,
+  930,
+  1440
+ ],
+ "max_upscale": 1.3,
+ "images": {
+  "trinket": {
+   "file": "images/sotr/d12-trinket-hands.jpg",
+   "source": "https://image.tmdb.org/t/p/original/vnPWSxbaiQSR28X1b9y12Bzh9WO.jpg",
+   "kind": "hands detail / couple",
+   "credit": "Lionsgate, film still (TMDB backdrop)",
+   "people": "not captioned at source; same costumes and setting as the captioned geese still (likely Lenore Dove and Haymitch, unverified)"
+  },
+  "geese": {
+   "file": "images/sotr/d12-lenore-haymitch-geese.jpg",
+   "source": "https://image.tmdb.org/t/p/original/8F2zI3KRfPZY4tMYWG16VBLZRJK.jpg",
+   "kind": "couple with geese",
+   "credit": "Photo by Murray Close/Lionsgate",
+   "people": "Whitney Peak as Lenore Dove Baird and Joseph Zada as Haymitch Abernathy (caption: https://bleedingcool.com/movies/the-hunger-games-sunrise-on-the-reaping-teaser-poster-images/)"
+  },
+  "doorway": {
+   "file": "images/sotr/d12-doorway-light.jpg",
+   "source": "https://image.tmdb.org/t/p/original/gNdycaLvPdlzodWKv0OY5lWUPve.jpg",
+   "kind": "interior, light",
+   "credit": "Lionsgate, film still (TMDB backdrop)",
+   "people": "not captioned at source; not named in the edit"
+  },
+  "walk": {
+   "file": "images/sotr/d12-reaping-walk-haymitch.jpg",
+   "source": "https://image.tmdb.org/t/p/original/9B3AMSs7A3bqqFLKlOv6W4LyAHG.jpg",
+   "kind": "reaping, person",
+   "credit": "Photo by Murray Close/Lionsgate",
+   "people": "Joseph Zada as Haymitch Abernathy (caption: https://bleedingcool.com/movies/the-hunger-games-sunrise-on-the-reaping-teaser-poster-images/)"
+  },
+  "fence": {
+   "file": "images/sotr/d12-fence-wire.jpg",
+   "source": "https://image.tmdb.org/t/p/original/wL01xuxeihFXIf6loVUCTOJj3oz.jpg",
+   "kind": "fence, person",
+   "credit": "Lionsgate, film still (TMDB backdrop)",
+   "people": "not captioned at source; not named in the edit"
+  },
+  "portrait": {
+   "file": "images/sotr/poster-haymitch.jpg",
+   "source": "https://image.tmdb.org/t/p/original/9iNZRAhUHHYmNjNv1sd8hbcO1Yl.jpg",
+   "kind": "portrait",
+   "credit": "Lionsgate, character poster",
+   "people": "poster text: Joseph Zada is Haymitch (the name and title are outside the crop)"
+  },
+  "meadow": {
+   "file": "images/sotr/d12-geese-meadow.jpg",
+   "source": "https://image.tmdb.org/t/p/original/rUtT2tJsFFcZhubaAdDwOE4E4He.jpg",
+   "kind": "meadow, geese",
+   "credit": "Lionsgate, film still (TMDB backdrop)",
+   "people": "a figure seen from behind; not named"
+  },
+  "kiss": {
+   "file": "images/sotr/d12-kiss-hand-cheek.jpg",
+   "source": "https://image.tmdb.org/t/p/original/gzgCvX9rrsuhqmrcwXVT81atEEW.jpg",
+   "kind": "couple close",
+   "credit": "Lionsgate, film still (TMDB backdrop)",
+   "people": "not captioned at source; same costumes as the captioned geese still (likely Lenore Dove and Haymitch, unverified)"
+  }
+ },
+ "shots": [
+  {
+   "id": "trinket-detail",
+   "image": "trinket",
+   "at": 0,
+   "crop": [
+    1980,
+    630,
+    860
+   ],
+   "focus": [
+    [
+     2100,
+     830,
+     2770,
+     1170
+    ]
+   ],
+   "_note": "hook: fingers working a small purple-and-gold trinket, the face soft and cut off above"
+  },
+  {
+   "id": "geese-detail",
+   "image": "geese",
+   "at": 2,
+   "crop": [
+    150,
+    560,
+    900
+   ],
+   "focus": [
+    [
+     350,
+     1150,
+     900,
+     1500
+    ]
+   ],
+   "_note": "the geese, before the couple"
+  },
+  {
+   "id": "geese-reveal",
+   "image": "geese",
+   "same_photo_as": "geese-detail",
+   "at": 3,
+   "crop": [
+    1420,
+    0,
+    1215
+   ],
+   "focus": [
+    [
+     1780,
+     280,
+     2060,
+     675
+    ],
+    [
+     2260,
+     230,
+     2545,
+     585
+    ]
+   ],
+   "_note": "the reveal answers both details: Lenore Dove and Haymitch, the geese beside them, the trinket in his fingers (captioned still)"
+  },
+  {
+   "id": "doorway-light",
+   "image": "doorway",
+   "at": 5,
+   "crop": [
+    560,
+    0,
+    900
+   ],
+   "focus": [
+    [
+     870,
+     60,
+     1240,
+     400
+    ]
+   ],
+   "_note": "light through a doorway; a hand to a face"
+  },
+  {
+   "id": "cuff-detail",
+   "image": "walk",
+   "at": 7,
+   "crop": [
+    1460,
+    630,
+    860
+   ],
+   "focus": [
+    [
+     1700,
+     710,
+     2015,
+     1110
+    ],
+    [
+     1470,
+     880,
+     1580,
+     1300
+    ]
+   ],
+   "_note": "the stained shirt and worn jacket cuff, before the face"
+  },
+  {
+   "id": "reaping-walk",
+   "image": "walk",
+   "same_photo_as": "cuff-detail",
+   "at": 8,
+   "crop": [
+    1330,
+    0,
+    1215
+   ],
+   "focus": [
+    [
+     1750,
+     230,
+     1960,
+     520
+    ]
+   ],
+   "_note": "Haymitch walking to the reaping between Peacekeepers (captioned still)"
+  },
+  {
+   "id": "fence-wire",
+   "image": "fence",
+   "at": 10,
+   "crop": [
+    1080,
+    0,
+    909
+   ],
+   "focus": [
+    [
+     1150,
+     180,
+     1420,
+     420
+    ],
+    [
+     1120,
+     480,
+     1400,
+     760
+    ]
+   ],
+   "_note": "the District 12 fence wire, held three beats"
+  },
+  {
+   "id": "hand-on-cheek",
+   "image": "kiss",
+   "at": 13,
+   "crop": [
+    1790,
+    0,
+    1215
+   ],
+   "focus": [
+    [
+     1900,
+     550,
+     2800,
+     1150
+    ]
+   ],
+   "_note": "a hand on a cheek, held three beats before the portrait"
+  },
+  {
+   "id": "haymitch-portrait",
+   "image": "portrait",
+   "at": 16,
+   "crop": [
+    438,
+    500,
+    1125
+   ],
+   "focus": [
+    [
+     520,
+     780,
+     1440,
+     1000
+    ],
+    [
+     750,
+     1000,
+     1300,
+     1950
+    ]
+   ],
+   "_note": "the anchor: holds 2.7 s on bar 5"
+  },
+  {
+   "id": "geese-meadow",
+   "image": "meadow",
+   "at": 20,
+   "crop": [
+    1343,
+    471,
+    950
+   ],
+   "focus": [
+    [
+     1700,
+     1400,
+     1960,
+     1700
+    ]
+   ],
+   "_note": "quiet wide with the geese; loops back to the hands"
+  }
+ ],
+ "text": "none"
+}

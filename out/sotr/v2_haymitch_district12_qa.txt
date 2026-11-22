@@ -1,0 +1,34 @@
+sotr / v2_haymitch_district12: 90 BPM, 24 beats (6 bars), 480 frames = 16.00 s, 20 frames per beat
+file: h264,1080,1920,30/1,480 (codec, width, height, fps, frames)
+
+Events (every cut, petal opening and blend end is on the beat grid):
+  beat     0    0.00 s  frame    0  cut      trinket-detail
+  beat     2    1.33 s  frame   40  cut      geese-detail
+  beat     3    2.00 s  frame   60  cut      geese-reveal
+  beat     5    3.33 s  frame  100  cut      doorway-light
+  beat     7    4.67 s  frame  140  cut      cuff-detail
+  beat     8    5.33 s  frame  160  cut      reaping-walk
+  beat    10    6.67 s  frame  200  cut      fence-wire
+  beat    13    8.67 s  frame  260  cut      hand-on-cheek
+  beat    16   10.67 s  frame  320  cut      haymitch-portrait
+  beat    20   13.33 s  frame  400  cut      geese-meadow
+
+Held frames perfectly still: PASS
+
+Crops (source px -> screen; upscale over 1.0 means the source is enlarged):
+  trinket-detail           trinket                      src 3840x2160 crop 860x1529 at 1980,630 -> 1080x1920 (x1.26), covers 100% of screen
+  geese-detail             geese                        src 3840x2160 crop 900x1600 at 150,560 -> 1080x1920 (x1.20), covers 100% of screen
+  geese-reveal             geese                        src 3840x2160 crop 1215x2160 at 1420,0 -> 1080x1920 (x0.89), covers 100% of screen [detail of the same photo as geese-detail]
+  doorway-light            doorway                      src 2844x1600 crop 900x1600 at 560,0 -> 1080x1920 (x1.20), covers 100% of screen
+  cuff-detail              walk                         src 3840x2160 crop 860x1529 at 1460,630 -> 1080x1920 (x1.26), covers 100% of screen
+  reaping-walk             walk                         src 3840x2160 crop 1215x2160 at 1330,0 -> 1080x1920 (x0.89), covers 100% of screen [detail of the same photo as cuff-detail]
+  fence-wire               fence                        src 2875x1617 crop 909x1616 at 1080,0 -> 1080x1920 (x1.19), covers 100% of screen
+  hand-on-cheek            kiss                         src 3840x2160 crop 1215x2160 at 1790,0 -> 1080x1920 (x0.89), covers 100% of screen
+  haymitch-portrait        portrait                     src 1998x3000 crop 1125x2000 at 438,500 -> 1080x1920 (x0.96), covers 100% of screen
+  geese-meadow             meadow                       src 3840x2160 crop 950x1689 at 1343,471 -> 1080x1920 (x1.14), covers 100% of screen
+
+Faces and key details (focus boxes) clear of TikTok's interface: right-side buttons x>950 at y 680-1500, caption area y>1480 (the thin top tabs are not counted)
+Text in the edit: none drawn; every crop was checked by eye to leave out poster titles, names, signs and logos
+Loop: last frame -> first frame mean difference 41.1/255 (a cut on the bar line back to shot 1)
+
+OVERALL: PASS

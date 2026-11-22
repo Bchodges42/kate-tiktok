@@ -1,0 +1,183 @@
+{
+ "_comment": "Sunrise in silhouette. Device: the held horizon and light-first dissolves. Every landscape is cropped so its horizon sits on the same line, 1040 px down the screen, and every change is a luma dissolve: the brightest parts of the next photo (sun, sky, haze) burn through first while the shadows of the last one hold a moment longer, so one place quietly becomes another. Slow and spacious: five photos, one per bar or so, ending on the widest, most luminous image, the arena at sunrise, held for 4 s.",
+ "name": "sotr",
+ "version": "v4_sunrise_silhouette",
+ "bpm": 60,
+ "beats": 16,
+ "fps": 30,
+ "size": [
+  1080,
+  1920
+ ],
+ "background": "#05070A",
+ "_tempo_comment": "60 BPM, 4 bars, 16.0 s, 30 frames per beat (120 double time). Post with a slow, swelling sound at 60 or 120; the payoff lands on bar 4 (12.0 s) where the sound should bloom.",
+ "grade": {
+  "warmth": 0.03,
+  "lift": 6,
+  "saturation": 1.0,
+  "grain": 2.6,
+  "grain_seed": 14
+ },
+ "safe_zone": [
+  60,
+  210,
+  930,
+  1440
+ ],
+ "max_upscale": 1.3,
+ "horizon_y": 1040,
+ "images": {
+  "ridge": {
+   "file": "images/sotr/sunrise-ridge-sun.jpg",
+   "source": "https://image.tmdb.org/t/p/original/2MkOJ7WETcN5gr9mYgO0ukTvGFC.jpg",
+   "kind": "horizon, sun",
+   "credit": "Lionsgate, film still (TMDB backdrop)",
+   "horizon_src_y": 1170
+  },
+  "volcano": {
+   "file": "images/sotr/sunrise-volcano-figure.jpg",
+   "source": "https://image.tmdb.org/t/p/original/bB1qSmTam52Oj9CmX0QLEZ75FMK.jpg",
+   "kind": "horizon, lone figure",
+   "credit": "Lionsgate, film still (TMDB backdrop)",
+   "people": "a lone figure from behind; not named",
+   "horizon_src_y": 1150
+  },
+  "haze": {
+   "file": "images/sotr/sunrise-forest-haze.jpg",
+   "source": "https://image.tmdb.org/t/p/original/npOjnofaZHOLBoKzC7ugX9A9INM.jpg",
+   "kind": "amber haze, figures",
+   "credit": "Lionsgate, film still (TMDB backdrop)",
+   "people": "two tributes in backlight; not named"
+  },
+  "flare": {
+   "file": "images/sotr/sunrise-tree-flare.jpg",
+   "source": "https://image.tmdb.org/t/p/original/q9YhLoNviHCSExkrlBn7uEUbNmb.jpg",
+   "kind": "sun through leaves",
+   "credit": "Lionsgate, film still (TMDB backdrop)",
+   "people": "an embrace; not named"
+  },
+  "arena": {
+   "file": "images/sotr/poster-arena-sunrise.jpg",
+   "source": "https://image.tmdb.org/t/p/original/1jkFSHDizXbk7yXFZy8rzyHDsdT.jpg",
+   "kind": "horizon, arena, sunrise (hero)",
+   "credit": "Lionsgate, 'Welcome to the Second Quarter Quell' arena poster (title outside the crop)",
+   "horizon_src_y": 1550
+  }
+ },
+ "shots": [
+  {
+   "id": "ridge-sun",
+   "image": "ridge",
+   "at": 0,
+   "crop": [
+    1343,
+    0,
+    1215
+   ],
+   "focus": [
+    [
+     1850,
+     1080,
+     2050,
+     1230
+    ]
+   ],
+   "_note": "hook: the sun on the ridge line; horizon at 1040"
+  },
+  {
+   "id": "lone-figure",
+   "image": "volcano",
+   "at": 3,
+   "crop": [
+    1950,
+    5,
+    1190
+   ],
+   "focus": [
+    [
+     2369,
+     975,
+     2787,
+     1437
+    ]
+   ],
+   "in": {
+    "type": "luma",
+    "end": 4,
+    "lead": 0.55
+   },
+   "_note": "horizon matched to 1040; the figure stands in deep shadow"
+  },
+  {
+   "id": "amber-haze",
+   "image": "haze",
+   "at": 6,
+   "crop": [
+    1000,
+    0,
+    1215
+   ],
+   "focus": [
+    [
+     1000,
+     225,
+     1371,
+     787
+    ]
+   ],
+   "in": {
+    "type": "luma",
+    "end": 7,
+    "lead": 0.55
+   }
+  },
+  {
+   "id": "sun-through-leaves",
+   "image": "flare",
+   "at": 9,
+   "crop": [
+    1350,
+    0,
+    1215
+   ],
+   "focus": [
+    [
+     1687,
+     506,
+     2362,
+     1181
+    ]
+   ],
+   "in": {
+    "type": "luma",
+    "end": 10,
+    "lead": 0.55
+   }
+  },
+  {
+   "id": "arena-sunrise",
+   "image": "arena",
+   "at": 11,
+   "crop": [
+    320,
+    491,
+    1100
+   ],
+   "focus": [
+    [
+     650,
+     1150,
+     1100,
+     1700
+    ]
+   ],
+   "in": {
+    "type": "luma",
+    "end": 12,
+    "lead": 0.55
+   },
+   "_note": "the payoff: the widest, brightest image, horizon matched to 1040, lands on bar 4 and holds 4 s; loops back to the sun on the ridge"
+  }
+ ],
+ "text": "none"
+}

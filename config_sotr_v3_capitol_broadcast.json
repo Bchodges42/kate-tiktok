@@ -1,0 +1,475 @@
+{
+ "_comment": "The Capitol broadcast. Device: the poster window. A pristine commemorative poster for the Second Quarter Quell, built with no lettering at all: ivory paper, double gold rules, a gold Capitol sunburst, and one severe window that holds every image (Snow, Effie, Caesar, Drusilla, Magno, Plutarch, the reaping as ceremony, the tributes in their white parade suits). On bar 5 the window's edge becomes the frame: a hard cut to full bleed shows what the broadcast crops out (two tributes facing a wall of fire, then a scream), and on the next beat the poster is back as if nothing happened.",
+ "name": "sotr",
+ "version": "v3_capitol_broadcast",
+ "bpm": 100,
+ "beats": 24,
+ "fps": 30,
+ "size": [
+  1080,
+  1920
+ ],
+ "background": "#000000",
+ "_tempo_comment": "100 BPM, 6 bars, 14.4 s, 18 frames per beat. Post with a stately, polished sound at 100 (50 half time) that has a hit, drop or sudden stop on bar 5 (9.6 s): that is the interruption.",
+ "grade": {
+  "warmth": 0.0,
+  "lift": 5,
+  "saturation": 0.98,
+  "grain": 1.8,
+  "grain_seed": 13
+ },
+ "safe_zone": [
+  60,
+  210,
+  930,
+  1440
+ ],
+ "max_upscale": 1.3,
+ "templates": {
+  "poster": {
+   "background": "#EFE7D6",
+   "paper_grain": 1.6,
+   "paper_seed": 5,
+   "window": [
+    165,
+    400,
+    750,
+    1000
+   ],
+   "elements": [
+    {
+     "type": "outline",
+     "box": [
+      44,
+      44,
+      1035,
+      1875
+     ],
+     "color": "#A2834A",
+     "width": 2
+    },
+    {
+     "type": "outline",
+     "box": [
+      58,
+      58,
+      1021,
+      1861
+     ],
+     "color": "#A2834A",
+     "width": 1
+    },
+    {
+     "type": "sunburst",
+     "center": [
+      540,
+      350
+     ],
+     "r_in": 34,
+     "r_out": 120,
+     "rays": 17,
+     "from": 0,
+     "to": 180,
+     "short": 0.66,
+     "color": "#A2834A",
+     "width": 3
+    },
+    {
+     "type": "diamond",
+     "center": [
+      540,
+      350
+     ],
+     "size": 13,
+     "color": "#6E1F2B"
+    },
+    {
+     "type": "line",
+     "xy": [
+      200,
+      366,
+      470,
+      366
+     ],
+     "color": "#A2834A",
+     "width": 2
+    },
+    {
+     "type": "line",
+     "xy": [
+      610,
+      366,
+      880,
+      366
+     ],
+     "color": "#A2834A",
+     "width": 2
+    },
+    {
+     "type": "outline",
+     "box": [
+      152,
+      387,
+      927,
+      1412
+     ],
+     "color": "#A2834A",
+     "width": 3
+    },
+    {
+     "type": "outline",
+     "box": [
+      142,
+      377,
+      937,
+      1422
+     ],
+     "color": "#A2834A",
+     "width": 1
+    },
+    {
+     "type": "line",
+     "xy": [
+      200,
+      1452,
+      470,
+      1452
+     ],
+     "color": "#A2834A",
+     "width": 2
+    },
+    {
+     "type": "line",
+     "xy": [
+      610,
+      1452,
+      880,
+      1452
+     ],
+     "color": "#A2834A",
+     "width": 2
+    },
+    {
+     "type": "diamond",
+     "center": [
+      540,
+      1452
+     ],
+     "size": 11,
+     "color": "#6E1F2B"
+    },
+    {
+     "type": "sunburst",
+     "center": [
+      540,
+      1760
+     ],
+     "r_in": 18,
+     "r_out": 60,
+     "rays": 13,
+     "from": 0,
+     "to": 180,
+     "short": 0.6,
+     "color": "#A2834A",
+     "width": 2
+    }
+   ]
+  }
+ },
+ "images": {
+  "snow": {
+   "file": "images/sotr/poster-president-snow.jpg",
+   "source": "https://image.tmdb.org/t/p/original/o9zzpI2V9qzb3bFJUm8Z3W9GTJj.jpg",
+   "kind": "Capitol portrait",
+   "credit": "Lionsgate, character poster",
+   "people": "poster text: Ralph Fiennes is President Snow"
+  },
+  "effie": {
+   "file": "images/sotr/poster-effie.jpg",
+   "source": "https://image.tmdb.org/t/p/original/7XP7qB7BEkUd1melh5a0dIoXrSp.jpg",
+   "kind": "Capitol portrait",
+   "credit": "Lionsgate, character poster",
+   "people": "poster text: Elle Fanning is Effie"
+  },
+  "caesar": {
+   "file": "images/sotr/poster-caesar-flickerman.jpg",
+   "source": "https://image.tmdb.org/t/p/original/y7E9FZLRAoDsWVagbOt8ZH0l387.jpg",
+   "kind": "Capitol portrait",
+   "credit": "Lionsgate, character poster",
+   "people": "poster text: Kieran Culkin is Caesar Flickerman"
+  },
+  "drusilla": {
+   "file": "images/sotr/poster-drusilla.jpg",
+   "source": "https://image.tmdb.org/t/p/original/p7ERJERj39sXBjEyXHwlyUxe9We.jpg",
+   "kind": "Capitol portrait",
+   "credit": "Lionsgate, character poster",
+   "people": "poster text: Glenn Close is Drusilla"
+  },
+  "magno": {
+   "file": "images/sotr/poster-magno.jpg",
+   "source": "https://image.tmdb.org/t/p/original/3d0eVfal7ZifEi1Q9ZqSNR8TCj7.jpg",
+   "kind": "Capitol portrait",
+   "credit": "Lionsgate, character poster",
+   "people": "poster text: Billy Porter is Magno"
+  },
+  "plutarch": {
+   "file": "images/sotr/poster-plutarch.jpg",
+   "source": "https://image.tmdb.org/t/p/original/hqTLKJBj1qBnzQV4DFBsMyVWvpM.jpg",
+   "kind": "Capitol portrait",
+   "credit": "Lionsgate, character poster",
+   "people": "poster text: Jesse Plemons is Plutarch"
+  },
+  "white": {
+   "file": "images/sotr/capitol-tributes-in-white.jpg",
+   "source": "https://bleedingcool.com/wp-content/uploads/2026/09/SOLSTICE-UNIT-251110-008524RC2-rgb.jpg",
+   "kind": "tributes",
+   "credit": "Photo by Murray Close/Lionsgate",
+   "people": "Iona Bell as Lou Lou, Ben Wang as Wyatt Callow, Joseph Zada as Haymitch Abernathy, Mckenna Grace as Maysilee Donner (caption: https://bleedingcool.com/movies/the-hunger-games-sunrise-on-the-reaping-trailer-posters-images/)"
+  },
+  "fire": {
+   "file": "images/sotr/arena-fire-two-tributes.jpg",
+   "source": "https://image.tmdb.org/t/p/original/1Kx5ELQf7Xw4avHx2CedV35cBpS.jpg",
+   "kind": "arena violence",
+   "credit": "Lionsgate, film still (TMDB backdrop)",
+   "people": "two tributes seen from behind; not named"
+  },
+  "scream": {
+   "file": "images/sotr/arena-tribute-scream.jpg",
+   "source": "https://image.tmdb.org/t/p/original/1rbayJ6dpCCeNxGZS4sPxZIZGht.jpg",
+   "kind": "arena violence",
+   "credit": "Lionsgate, film still (TMDB backdrop)",
+   "people": "not captioned at source; not named"
+  },
+  "stage": {
+   "file": "images/sotr/capitol-reaping-stage.jpg",
+   "source": "https://image.tmdb.org/t/p/original/75vAEwovU93tC7jLKQuwmCt197V.jpg",
+   "kind": "reaping, symmetry",
+   "credit": "Lionsgate, film still (TMDB backdrop)",
+   "people": "crowd and Peacekeepers; no one named"
+  },
+  "stagewide": {
+   "file": "images/sotr/capitol-reaping-stage-drusilla.jpg",
+   "source": "https://bleedingcool.com/wp-content/uploads/2026/09/SOLSTICE-UNIT-250924-00408RC3-Crop-rgb.jpg",
+   "kind": "reaping ceremony",
+   "credit": "Photo by Murray Close/Lionsgate",
+   "people": "Jesse Plemons as Plutarch Heavensbee and Joseph Zada as Haymitch Abernathy (caption: https://bleedingcool.com/movies/the-hunger-games-sunrise-on-the-reaping-trailer-posters-images/); the escort in yellow is not named in the caption"
+  }
+ },
+ "shots": [
+  {
+   "id": "snow",
+   "image": "snow",
+   "template": "poster",
+   "at": 0,
+   "crop": [
+    50,
+    550,
+    1200
+   ],
+   "focus": [
+    [
+     200,
+     850,
+     1150,
+     1950
+    ]
+   ],
+   "_note": "hook: the finished poster, Snow in the window"
+  },
+  {
+   "id": "effie",
+   "image": "effie",
+   "template": "poster",
+   "at": 2,
+   "crop": [
+    180,
+    500,
+    1200
+   ],
+   "focus": [
+    [
+     350,
+     800,
+     1250,
+     1850
+    ]
+   ]
+  },
+  {
+   "id": "caesar",
+   "image": "caesar",
+   "template": "poster",
+   "at": 4,
+   "crop": [
+    380,
+    650,
+    1200
+   ],
+   "focus": [
+    [
+     550,
+     950,
+     1450,
+     2100
+    ]
+   ]
+  },
+  {
+   "id": "drusilla",
+   "image": "drusilla",
+   "template": "poster",
+   "at": 6,
+   "crop": [
+    450,
+    520,
+    1200
+   ],
+   "focus": [
+    [
+     600,
+     850,
+     1550,
+     1950
+    ]
+   ]
+  },
+  {
+   "id": "magno",
+   "image": "magno",
+   "template": "poster",
+   "at": 8,
+   "crop": [
+    150,
+    450,
+    1350
+   ],
+   "focus": [
+    [
+     500,
+     600,
+     1500,
+     1700
+    ]
+   ],
+   "_note": "the snake ring on his hand sits at the window's lower left"
+  },
+  {
+   "id": "plutarch",
+   "image": "plutarch",
+   "template": "poster",
+   "at": 10,
+   "crop": [
+    300,
+    450,
+    1300
+   ],
+   "focus": [
+    [
+     450,
+     800,
+     1600,
+     1800
+    ]
+   ]
+  },
+  {
+   "id": "reaping-ceremony",
+   "image": "stagewide",
+   "template": "poster",
+   "at": 12,
+   "crop": [
+    560,
+    0,
+    1200
+   ],
+   "focus": [
+    [
+     650,
+     250,
+     1700,
+     1400
+    ]
+   ],
+   "_note": "the reaping as ceremony: the stage, the emblem, the glass bowls, the escort in yellow"
+  },
+  {
+   "id": "tributes-white",
+   "image": "white",
+   "template": "poster",
+   "at": 14,
+   "crop": [
+    380,
+    0,
+    999
+   ],
+   "focus": [
+    [
+     600,
+     550,
+     1350,
+     1000
+    ]
+   ],
+   "_note": "the tributes as the Capitol shows them"
+  },
+  {
+   "id": "interruption-fire",
+   "image": "fire",
+   "at": 16,
+   "crop": [
+    1000,
+    0,
+    1215
+   ],
+   "focus": [
+    [
+     1112,
+     731,
+     2012,
+     1237
+    ]
+   ],
+   "_note": "bar 5: the window's edge becomes the frame. Full bleed, hard cut"
+  },
+  {
+   "id": "interruption-scream",
+   "image": "scream",
+   "at": 18,
+   "crop": [
+    2250,
+    0,
+    1215
+   ],
+   "focus": [
+    [
+     2419,
+     394,
+     3150,
+     1125
+    ]
+   ],
+   "_note": "one beat"
+  },
+  {
+   "id": "poster-restored",
+   "image": "stage",
+   "template": "poster",
+   "at": 19,
+   "crop": [
+    822,
+    0,
+    1200
+   ],
+   "focus": [
+    [
+     900,
+     300,
+     1950,
+     1300
+    ]
+   ],
+   "_note": "the poster is back, perfectly composed: the Justice Building and Peacekeepers in symmetry. Holds 3 s, loops to Snow"
+  }
+ ],
+ "text": "none"
+}

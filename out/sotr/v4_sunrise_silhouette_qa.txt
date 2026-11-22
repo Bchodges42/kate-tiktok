@@ -1,0 +1,24 @@
+sotr / v4_sunrise_silhouette: 60 BPM, 16 beats (4 bars), 480 frames = 16.00 s, 30 frames per beat
+file: h264,1080,1920,30/1,480 (codec, width, height, fps, frames)
+
+Events (every cut, petal opening and blend end is on the beat grid):
+  beat     0    0.00 s  frame    0  cut      ridge-sun
+  beat     3    3.00 s  frame   90  luma     lone-figure, luma ends beat 4 (4.00 s)
+  beat     6    6.00 s  frame  180  luma     amber-haze, luma ends beat 7 (7.00 s)
+  beat     9    9.00 s  frame  270  luma     sun-through-leaves, luma ends beat 10 (10.00 s)
+  beat    11   11.00 s  frame  330  luma     arena-sunrise, luma ends beat 12 (12.00 s)
+
+Held frames perfectly still: PASS
+
+Crops (source px -> screen; upscale over 1.0 means the source is enlarged):
+  ridge-sun                ridge                        src 3840x2160 crop 1215x2160 at 1343,0 -> 1080x1920 (x0.89), covers 100% of screen
+  lone-figure              volcano                      src 3840x2160 crop 1190x2116 at 1950,5 -> 1080x1920 (x0.91), covers 100% of screen
+  amber-haze               haze                         src 3840x2160 crop 1215x2160 at 1000,0 -> 1080x1920 (x0.89), covers 100% of screen
+  sun-through-leaves       flare                        src 3840x2160 crop 1215x2160 at 1350,0 -> 1080x1920 (x0.89), covers 100% of screen
+  arena-sunrise            arena                        src 2000x3000 crop 1100x1956 at 320,491 -> 1080x1920 (x0.98), covers 100% of screen
+
+Faces and key details (focus boxes) clear of TikTok's interface: right-side buttons x>950 at y 680-1500, caption area y>1480 (the thin top tabs are not counted)
+Text in the edit: none drawn; every crop was checked by eye to leave out poster titles, names, signs and logos
+Loop: last frame -> first frame mean difference 66.3/255 (a cut on the bar line back to shot 1)
+
+OVERALL: PASS

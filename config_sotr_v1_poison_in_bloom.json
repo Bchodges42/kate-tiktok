@@ -1,0 +1,315 @@
+{
+ "_comment": "Poison in bloom. Device: a petal-shaped window. Every new photo first shows inside a vertical petal at the centre, then the petal opens to full screen, finishing on a beat. At the danger moment the petal stops opening and becomes a snake's pupil around the poster's snake head; the hero landscape then opens out of that pupil. Photos never move; only the window opens.",
+ "name": "sotr",
+ "version": "v1_poison_in_bloom",
+ "bpm": 120,
+ "beats": 32,
+ "fps": 30,
+ "size": [
+  1080,
+  1920
+ ],
+ "background": "#1B1020",
+ "_tempo_comment": "120 BPM, 8 bars, 16.0 s, 15 frames per beat. Post with a lush, sweet sound at 120 (or 60 half time). Bar 5 (8.0 s) is where the music should open up: the cornucopia with the tributes running lands full screen there. Bar 6 (10.0 s) is the snake; bar 7 (12.0 s) the hero landscape.",
+ "grade": {
+  "warmth": 0.0,
+  "lift": 3,
+  "saturation": 1.08,
+  "grain": 2.0,
+  "grain_seed": 11
+ },
+ "safe_zone": [
+  60,
+  210,
+  930,
+  1440
+ ],
+ "max_upscale": 1.3,
+ "images": {
+  "beds": {
+   "file": "images/sotr/arena-flower-beds-overhead.jpg",
+   "source": "https://image.tmdb.org/t/p/original/wQkeqpddiYjI7iVzCjBvjvEWapa.jpg",
+   "kind": "flowers close",
+   "credit": "Lionsgate, film still (TMDB backdrop)"
+  },
+  "circle": {
+   "file": "images/sotr/arena-cornucopia-circle.jpg",
+   "source": "https://image.tmdb.org/t/p/original/3c1S61NmmhlMJJuleIj6soVupM.jpg",
+   "kind": "arena wide",
+   "credit": "Lionsgate, film still (TMDB backdrop)"
+  },
+  "handover": {
+   "file": "images/sotr/arena-flower-handover.jpg",
+   "source": "https://image.tmdb.org/t/p/original/497KYpXqaxh99RPMVmsxAg76Nal.jpg",
+   "kind": "hands and flower",
+   "credit": "Lionsgate, film still (TMDB backdrop)",
+   "people": "two hands passing a flower; both faces are outside the crop, not named"
+  },
+  "wreath": {
+   "file": "images/sotr/poster-snake-bird-wreath.jpg",
+   "source": "https://image.tmdb.org/t/p/original/646HHtzfUF4wHB8TW4gMF2mat8I.jpg",
+   "kind": "snake detail",
+   "credit": "Lionsgate, teaser poster (TMDB poster)"
+  },
+  "rays": {
+   "file": "images/sotr/arena-cornucopia-light-rays.jpg",
+   "source": "https://image.tmdb.org/t/p/original/zZ3DAYvMBC30u7usCgdfuILkuSf.jpg",
+   "kind": "arena wide hero",
+   "credit": "Lionsgate, film still (TMDB backdrop)"
+  },
+  "bloodbath": {
+   "file": "images/sotr/arena-cornucopia-bloodbath.jpg",
+   "source": "https://image.tmdb.org/t/p/original/3svTzBIR9IoXpdOUA0PRipNrsQX.jpg",
+   "kind": "arena wide, tributes running",
+   "credit": "Lionsgate, film still (TMDB backdrop)",
+   "people": "tributes running from their plates; no one named"
+  }
+ },
+ "shots": [
+  {
+   "id": "magenta-lilies",
+   "image": "beds",
+   "at": 0,
+   "crop": [
+    0,
+    0,
+    860
+   ],
+   "focus": [
+    [
+     0,
+     318,
+     637,
+     717
+    ]
+   ],
+   "_note": "hook: the overhead flower beds cropped until they read as colour"
+  },
+  {
+   "id": "arena-in-petal",
+   "image": "circle",
+   "at": 2,
+   "crop": [
+    1200,
+    0,
+    1215
+   ],
+   "focus": [
+    [
+     1580,
+     1050,
+     1990,
+     1300
+    ]
+   ],
+   "in": {
+    "type": "petal",
+    "petal": [
+     540,
+     860,
+     340,
+     780
+    ],
+    "open": [
+     3,
+     4
+    ],
+    "edge": "#FFF1F4"
+   },
+   "_note": "the petal shape reveals the arena: the cornucopia spires sit inside it"
+  },
+  {
+   "id": "pink-beds",
+   "image": "beds",
+   "same_photo_as": "magenta-lilies",
+   "at": 8,
+   "crop": [
+    2840,
+    180,
+    1000
+   ],
+   "focus": [
+    [
+     2933,
+     643,
+     3673,
+     1106
+    ]
+   ],
+   "in": {
+    "type": "petal",
+    "petal": [
+     540,
+     860,
+     340,
+     780
+    ],
+    "open": [
+     9,
+     10
+    ],
+    "edge": "#FFF1F4"
+   },
+   "_note": "other end of the same overhead still (the 08 graphic sits between and is left out)"
+  },
+  {
+   "id": "flower-handover",
+   "image": "handover",
+   "at": 12,
+   "crop": [
+    1000,
+    0,
+    1215
+   ],
+   "focus": [
+    [
+     1370,
+     480,
+     1730,
+     1500
+    ]
+   ],
+   "in": {
+    "type": "petal",
+    "petal": [
+     540,
+     860,
+     340,
+     780
+    ],
+    "open": [
+     13,
+     14
+    ],
+    "edge": "#FFF1F4"
+   },
+   "_note": "a flowering spike passed between two hands; both faces are outside the crop"
+  },
+  {
+   "id": "cornucopia-run",
+   "image": "bloodbath",
+   "at": 15,
+   "crop": [
+    890,
+    0,
+    901
+   ],
+   "focus": [
+    [
+     1180,
+     450,
+     1500,
+     850
+    ]
+   ],
+   "in": {
+    "type": "petal",
+    "petal": [
+     540,
+     860,
+     340,
+     780
+    ],
+    "open": [
+     15,
+     16
+    ],
+    "edge": "#FFF1F4"
+   },
+   "_note": "lands full screen exactly on bar 5, where the sound opens up: the cornucopia, tributes already running from their plates"
+  },
+  {
+   "id": "snake-pupil",
+   "image": "wreath",
+   "at": 20,
+   "crop": [
+    260,
+    0,
+    1080
+   ],
+   "focus": [
+    [
+     780,
+     740,
+     960,
+     920
+    ]
+   ],
+   "in": {
+    "type": "petal",
+    "petal": [
+     540,
+     860,
+     340,
+     780
+    ],
+    "edge": "#FFF1F4"
+   },
+   "_note": "the danger: the petal stops opening and becomes a snake's pupil around the snake's open jaws (scale 1:1, no upscale)"
+  },
+  {
+   "id": "hero-light-rays",
+   "image": "rays",
+   "at": 24,
+   "crop": [
+    1300,
+    0,
+    1215
+   ],
+   "focus": [
+    [
+     1600,
+     800,
+     2300,
+     1550
+    ]
+   ],
+   "in": {
+    "type": "petal",
+    "petal": [
+     540,
+     860,
+     340,
+     780
+    ],
+    "open": [
+     24,
+     25
+    ],
+    "edge": "#FFF1F4"
+   },
+   "_note": "the hero opens out of the pupil and holds 2.5 s"
+  },
+  {
+   "id": "loop-petal",
+   "image": "beds",
+   "same_photo_as": "magenta-lilies",
+   "at": 30,
+   "crop": [
+    0,
+    0,
+    860
+   ],
+   "focus": [
+    [
+     318,
+     398,
+     541,
+     717
+    ]
+   ],
+   "in": {
+    "type": "petal",
+    "petal": [
+     540,
+     860,
+     340,
+     780
+    ],
+    "edge": "#FFF1F4"
+   },
+   "_note": "the opening colour appears in the petal; the loop cut back to frame 0 opens it"
+  }
+ ],
+ "text": "none"
+}
