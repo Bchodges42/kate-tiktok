@@ -1,5 +1,5 @@
 {
- "_comment": "Sunrise in silhouette. Device: the held horizon and light-first dissolves. Every landscape is cropped so its horizon sits on the same line, 1040 px down the screen, and every change is a luma dissolve: the brightest parts of the next photo (sun, sky, haze) burn through first while the shadows of the last one hold a moment longer, so one place quietly becomes another. Slow and spacious: five photos, one per bar or so, ending on the widest, most luminous image, the arena at sunrise, held for 4 s.",
+ "_comment": "Sunrise in silhouette. Device: the held horizon and light-first dissolves. Every landscape is cropped so its horizon sits on the same line, 1040 px down, and each change is a luma dissolve: the brightest parts of the next photo burn through first. Two dissolves keep the outgoing photo's subject to the very end, so it is the last thing you see: the lone figure's silhouette is left standing in the amber haze, and the boy's head lingers as the sun breaks through the leaves. The first dissolve does the opposite: the figure's silhouette briefly holds the last of the sunset. The last dissolve is clean light-first into the widest, brightest image, the arena at sunrise, held 4 s.",
  "name": "sotr",
  "version": "v4_sunrise_silhouette",
  "bpm": 60,
@@ -87,7 +87,7 @@
   {
    "id": "lone-figure",
    "image": "volcano",
-   "at": 3,
+   "at": 2,
    "crop": [
     1950,
     5,
@@ -106,12 +106,12 @@
     "end": 4,
     "lead": 0.55
    },
-   "_note": "horizon matched to 1040; the figure stands in deep shadow"
+   "_note": "light-first: for a moment the figure's silhouette is filled with the last of the sunset"
   },
   {
    "id": "amber-haze",
    "image": "haze",
-   "at": 6,
+   "at": 5,
    "crop": [
     1000,
     0,
@@ -128,13 +128,25 @@
    "in": {
     "type": "luma",
     "end": 7,
-    "lead": 0.55
-   }
+    "lead": 0.55,
+    "keep": {
+     "box": [
+      330,
+      830,
+      820,
+      1720
+     ],
+     "mode": "dark",
+     "feather": 40,
+     "until": 0.62
+    }
+   },
+   "_note": "the lone figure's silhouette stays standing in the amber haze, then fades last"
   },
   {
    "id": "sun-through-leaves",
    "image": "flare",
-   "at": 9,
+   "at": 8,
    "crop": [
     1350,
     0,
@@ -151,8 +163,20 @@
    "in": {
     "type": "luma",
     "end": 10,
-    "lead": 0.55
-   }
+    "lead": 0.55,
+    "keep": {
+     "box": [
+      -60,
+      100,
+      430,
+      1050
+     ],
+     "mode": "ellipse",
+     "feather": 70,
+     "until": 0.62
+    }
+   },
+   "_note": "his head and shoulder linger as the sun through the leaves burns in around them"
   },
   {
    "id": "arena-sunrise",

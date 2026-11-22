@@ -10,9 +10,9 @@ Events (every cut, petal opening and blend end is on the beat grid):
   beat    10    6.00 s  frame  180  cut      plutarch
   beat    12    7.20 s  frame  216  cut      reaping-ceremony
   beat    14    8.40 s  frame  252  cut      tributes-white
-  beat    16    9.60 s  frame  288  cut      interruption-fire
+  beat    16    9.60 s  frame  288  window   interruption-fire, opens to full frame beat 16.5->17 (lands 10.20 s)
   beat    18   10.80 s  frame  324  cut      interruption-scream
-  beat    19   11.40 s  frame  342  cut      poster-restored
+  beat    19   11.40 s  frame  342  window_close poster-restored, poster closes in beat 19->20 (lands 12.00 s)
 
 Held frames perfectly still: PASS
 

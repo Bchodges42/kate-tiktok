@@ -27,6 +27,11 @@ Config (all times in beats from 0; bpm should give a whole number of frames per 
               {"type": "dissolve", "end": beat}                    blend that finishes on "end"
               {"type": "luma", "end": beat, "soft": 0.18}          light-first: brightest areas of
                                                                     the new photo arrive first
+              {"type": "luma", ..., "keep": {"box": [x0, y0, x1, y1],  the outgoing photo's subject (canvas
+                         "mode": "ellipse|dark|bright"}}            box) stays until the end of the blend
+              {"type": "window", "box": [X, Y, W, H],              new full-bleed photo shows inside the
+               "open": [b0, b1], "edge": "#hex"}                    box, then the box opens to full frame
+              {"type": "window_close", "box": ..., "open": ...}    the new frame closes in from the edges
               {"type": "petal", "petal": [cx, cy, w, h],           shows inside a petal-shaped window
                "open": [beat_start, beat_end], "edge": "#hex"}     then the window opens to full
                                                                     screen (omit "open" to stay a petal)
@@ -215,6 +220,36 @@ class Edit:
         lo, hi = np.percentile(up, 2), np.percentile(up, 99.5)
         return np.clip((up - lo) / max(1.0, hi - lo), 0, 1)[..., None].astype(np.float32)
 
+    def subject_mask(self, img, keep):
+        """Soft mask of the outgoing photo's subject inside a canvas box, so it is the last thing to
+        leave in a luma dissolve. mode "ellipse": a feathered oval filling the box; "dark" / "bright":
+        the pixels clearly darker / brighter than the middle of the box's range (a silhouette, the sun),
+        smoothed and feathered so the edge never speckles."""
+        x0, y0, x1, y1 = keep["box"]
+        fe = keep.get("feather", 40)
+        cx, cy, rx, ry = (x0 + x1) / 2, (y0 + y1) / 2, (x1 - x0) / 2, (y1 - y0) / 2
+        d = np.sqrt(((self.xx - cx) / rx) ** 2 + ((self.yy - cy) / ry) ** 2)
+        oval = np.clip((1 - d) * min(rx, ry) / fe + 0.5, 0, 1)
+        mode = keep.get("mode", "ellipse")
+        if mode == "ellipse":
+            m = oval
+        else:
+            lum = img.mean(axis=2)
+            inbox = lum[int(y0):int(y1), int(x0):int(x1)]
+            lo, hi = np.percentile(inbox, 10), np.percentile(inbox, 90)
+            thr, soft = (lo + hi) / 2, max(4.0, (hi - lo) * 0.15)
+            m = np.clip(((thr - lum) if mode == "dark" else (lum - thr)) / soft + 0.5, 0, 1)
+            box = (np.clip((self.xx - x0) / fe, 0, 1) * np.clip((x1 - self.xx) / fe, 0, 1) *
+                   np.clip((self.yy - y0) / fe, 0, 1) * np.clip((y1 - self.yy) / fe, 0, 1))
+            m = m * box
+        b = 4
+        s = m[: self.H // b * b, : self.W // b * b].reshape(self.H // b, b, self.W // b, b).mean(axis=(1, 3))
+        for _ in range(keep.get("smooth", 2)):
+            pad = np.pad(s, 2, mode="edge")
+            s = sum(pad[dy:dy + s.shape[0], dx:dx + s.shape[1]] for dy in range(5) for dx in range(5)) / 25.0
+        up = np.asarray(Image.fromarray(s.astype(np.float32), mode="F").resize((self.W, self.H), Image.BILINEAR))
+        return np.clip(up, 0, 1)[..., None].astype(np.float32)
+
     # ---------- render ----------
     def build(self):
         shots = self.cfg["shots"]
@@ -253,6 +288,33 @@ class Edit:
             m, _ = self.petal_mask(*ptr["petal"])
             prev = prev * m + under * (1 - m)
         t = tr["type"]
+        if t in ("window", "window_close"):
+            # a rectangular window: "window" shows the new full-bleed photo inside a box (for example
+            # a poster's window) and pushes the box out to the full frame; "window_close" brings the
+            # new frame (the poster) in from the edges, the old photo still showing in the shrinking
+            # box until it closes. Photos stay put; only the box edges move.
+            a, b = self.frame_of(tr["open"][0]), self.frame_of(tr["open"][1])
+            full = (0, 0, self.W, self.H)
+            box = tr["box"]
+            p = 0.0 if f < a else smooth((f - a + 1) / max(1, b - a))
+            if f >= b:
+                return cur, False
+            if t == "window":
+                r = [box[k] + (full[k] - box[k]) * p for k in range(4)]
+                inner, outer = cur, prev
+            else:
+                r = [full[k] + (box[k] - full[k]) * p for k in range(4)]
+                inner, outer = prev, cur
+            x0, y0, x1, y1 = r[0], r[1], r[0] + r[2], r[1] + r[3]
+            m = (np.clip(self.xx - x0 + 0.5, 0, 1) * np.clip(x1 - self.xx + 0.5, 0, 1) *
+                 np.clip(self.yy - y0 + 0.5, 0, 1) * np.clip(y1 - self.yy + 0.5, 0, 1))[..., None]
+            out = inner * m + outer * (1 - m)
+            if tr.get("edge") and 0 < p < 1:
+                ew = tr.get("edge_width", 3)
+                ring = ((np.abs(self.xx - x0) < ew) | (np.abs(self.xx - x1) < ew)) & (self.yy > y0 - ew) & (self.yy < y1 + ew)
+                ring |= ((np.abs(self.yy - y0) < ew) | (np.abs(self.yy - y1) < ew)) & (self.xx > x0 - ew) & (self.xx < x1 + ew)
+                out = np.where(ring[..., None], np.array(hex_rgb(tr["edge"]), np.float32), out)
+            return out, f >= a
         if t == "dissolve":
             a, b = self.starts[i], self.frame_of(tr["end"])
             p = smooth((f - a + 1) / max(1, b - a))
@@ -267,9 +329,18 @@ class Edit:
             # every pixel blends smoothly, but the new photo's brightest areas start first and its
             # shadows last: k is how much of the blend the light gets ahead by
             k = tr.get("lead", 0.55)
+            keep = tr.get("keep")
+            qg = q / keep.get("until", 0.62) if keep else q      # with a kept subject, everything else lands first
             t0 = k * (1 - tr["_lum"])
-            x = np.clip((q - t0) / (1 - k), 0, 1)
+            x = np.clip((qg - t0) / (1 - k), 0, 1)
             al = x * x * (3 - 2 * x)
+            if keep:
+                if "_mask" not in tr:
+                    tr["_mask"] = self.subject_mask(prev, keep)
+                u = keep.get("until", 0.62)
+                xs = min(1.0, max(0.0, (q - u) / (1 - u)))
+                S = tr["_mask"]
+                al = al * (1 - S) + (xs * xs * (3 - 2 * xs)) * S
             return cur * al + prev * (1 - al), True
         if t == "petal":
             cx, cy, w, h = tr["petal"]
@@ -369,8 +440,13 @@ class Edit:
                 extra = f", opens beat {tr['open'][0]:g}->{tr['open'][1]:g} (lands {self.frame_of(tr['open'][1]) / self.fps:.2f} s)"
             elif tr["type"] == "petal":
                 extra = ", stays a petal window"
+            elif tr["type"] in ("window", "window_close"):
+                verb = "opens to full frame" if tr["type"] == "window" else "poster closes in"
+                extra = f", {verb} beat {tr['open'][0]:g}->{tr['open'][1]:g} (lands {self.frame_of(tr['open'][1]) / self.fps:.2f} s)"
             elif "end" in tr:
                 extra = f", {tr['type']} ends beat {tr['end']:g} ({self.frame_of(tr['end']) / self.fps:.2f} s)"
+                if tr.get("keep"):
+                    extra += ", the outgoing subject leaves last"
             flag = "" if off <= 1 else "  FAIL off grid"
             ok &= off <= 1
             L.append(f"  beat {s['at']:>5g}  {st / self.fps:6.2f} s  frame {st:4d}  {tr['type']:8s} {s['id']}{extra}{flag}")

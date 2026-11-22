@@ -1,5 +1,5 @@
 {
- "_comment": "The Capitol broadcast. Device: the poster window. A pristine commemorative poster for the Second Quarter Quell, built with no lettering at all: ivory paper, double gold rules, a gold Capitol sunburst, and one severe window that holds every image (Snow, Effie, Caesar, Drusilla, Magno, Plutarch, the reaping as ceremony, the tributes in their white parade suits). On bar 5 the window's edge becomes the frame: a hard cut to full bleed shows what the broadcast crops out (two tributes facing a wall of fire, then a scream), and on the next beat the poster is back as if nothing happened.",
+ "_comment": "The Capitol broadcast. Device: the poster window. A pristine commemorative poster for the Second Quarter Quell, built with no lettering at all: ivory paper, double gold rules, a gold Capitol sunburst, and one severe window that holds every image (Snow, Effie, Caesar, Drusilla, Magno, Plutarch, the reaping as ceremony, the tributes in their white parade suits). On bar 5 two tributes facing a wall of fire land inside the window, then the window's gold edges push out to the full frame, showing what the broadcast crops out. A scream follows for one beat, then the poster closes back in from the edges around it, and on the next beat the window shows the Justice Building in perfect symmetry, as if nothing happened.",
  "name": "sotr",
  "version": "v3_capitol_broadcast",
  "bpm": 100,
@@ -429,7 +429,21 @@
      1237
     ]
    ],
-   "_note": "bar 5: the window's edge becomes the frame. Full bleed, hard cut"
+   "_note": "bar 5: the fire lands inside the poster's window on the hit, then the window's edges push out to the full frame half a beat later, showing what the broadcast crops out",
+   "in": {
+    "type": "window",
+    "box": [
+     165,
+     400,
+     750,
+     1000
+    ],
+    "open": [
+     16.5,
+     17
+    ],
+    "edge": "#A2834A"
+   }
   },
   {
    "id": "interruption-scream",
@@ -468,7 +482,21 @@
      1300
     ]
    ],
-   "_note": "the poster is back, perfectly composed: the Justice Building and Peacekeepers in symmetry. Holds 3 s, loops to Snow"
+   "_note": "the poster closes back in from the edges around the scream; on beat 20 the window shows the Justice Building in symmetry, as if nothing happened. Holds to the loop",
+   "in": {
+    "type": "window_close",
+    "box": [
+     165,
+     400,
+     750,
+     1000
+    ],
+    "open": [
+     19,
+     20
+    ],
+    "edge": "#A2834A"
+   }
   }
  ],
  "text": "none"

@@ -30,15 +30,16 @@ Nobody was identified from their face. Stills without a caption are described by
 | Shot | File | Source | Credit | Who / what | Crop (x, y, width in source px) |
 | --- | --- | --- | --- | --- | --- |
 | trinket-detail | `d12-trinket-hands.jpg` | https://image.tmdb.org/t/p/original/vnPWSxbaiQSR28X1b9y12Bzh9WO.jpg | Lionsgate, film still (TMDB backdrop) | not captioned at source; same costumes and setting as the captioned geese still (likely Lenore Dove and Haymitch, unverified) | 1980, 630, 860 |
-| geese-detail | `d12-lenore-haymitch-geese.jpg` | https://image.tmdb.org/t/p/original/8F2zI3KRfPZY4tMYWG16VBLZRJK.jpg | Photo by Murray Close/Lionsgate | Whitney Peak as Lenore Dove Baird and Joseph Zada as Haymitch Abernathy (caption: https://bleedingcool.com/movies/the-hunger-games-sunrise-on-the-reaping-teaser-poster-images/) | 150, 560, 900 |
-| geese-reveal | `d12-lenore-haymitch-geese.jpg` | https://image.tmdb.org/t/p/original/8F2zI3KRfPZY4tMYWG16VBLZRJK.jpg | Photo by Murray Close/Lionsgate | Whitney Peak as Lenore Dove Baird and Joseph Zada as Haymitch Abernathy (caption: https://bleedingcool.com/movies/the-hunger-games-sunrise-on-the-reaping-teaser-poster-images/) | 1420, 0, 1215 |
-| doorway-light | `d12-doorway-light.jpg` | https://image.tmdb.org/t/p/original/gNdycaLvPdlzodWKv0OY5lWUPve.jpg | Lionsgate, film still (TMDB backdrop) | not captioned at source; not named in the edit | 560, 0, 900 |
 | cuff-detail | `d12-reaping-walk-haymitch.jpg` | https://image.tmdb.org/t/p/original/9B3AMSs7A3bqqFLKlOv6W4LyAHG.jpg | Photo by Murray Close/Lionsgate | Joseph Zada as Haymitch Abernathy (caption: https://bleedingcool.com/movies/the-hunger-games-sunrise-on-the-reaping-teaser-poster-images/) | 1460, 630, 860 |
 | reaping-walk | `d12-reaping-walk-haymitch.jpg` | https://image.tmdb.org/t/p/original/9B3AMSs7A3bqqFLKlOv6W4LyAHG.jpg | Photo by Murray Close/Lionsgate | Joseph Zada as Haymitch Abernathy (caption: https://bleedingcool.com/movies/the-hunger-games-sunrise-on-the-reaping-teaser-poster-images/) | 1330, 0, 1215 |
+| reaping-girls | `d12-reaping-girls.jpg` | https://image.tmdb.org/t/p/original/gUpL81U5nNSYJXWvHHVhRwo04Oj.jpg | Lionsgate, film still (TMDB backdrop) | girls waiting at the District 12 reaping; not captioned at source, not named | 150, 0, 900 |
+| doorway-light | `d12-doorway-light.jpg` | https://image.tmdb.org/t/p/original/gNdycaLvPdlzodWKv0OY5lWUPve.jpg | Lionsgate, film still (TMDB backdrop) | not captioned at source; not named in the edit | 560, 0, 900 |
+| geese-detail | `d12-lenore-haymitch-geese.jpg` | https://image.tmdb.org/t/p/original/8F2zI3KRfPZY4tMYWG16VBLZRJK.jpg | Photo by Murray Close/Lionsgate | Whitney Peak as Lenore Dove Baird and Joseph Zada as Haymitch Abernathy (caption: https://bleedingcool.com/movies/the-hunger-games-sunrise-on-the-reaping-teaser-poster-images/) | 150, 560, 900 |
+| geese-reveal | `d12-lenore-haymitch-geese.jpg` | https://image.tmdb.org/t/p/original/8F2zI3KRfPZY4tMYWG16VBLZRJK.jpg | Photo by Murray Close/Lionsgate | Whitney Peak as Lenore Dove Baird and Joseph Zada as Haymitch Abernathy (caption: https://bleedingcool.com/movies/the-hunger-games-sunrise-on-the-reaping-teaser-poster-images/) | 1420, 0, 1215 |
 | fence-wire | `d12-fence-wire.jpg` | https://image.tmdb.org/t/p/original/wL01xuxeihFXIf6loVUCTOJj3oz.jpg | Lionsgate, film still (TMDB backdrop) | not captioned at source; not named in the edit | 1080, 0, 909 |
-| hand-on-cheek | `d12-kiss-hand-cheek.jpg` | https://image.tmdb.org/t/p/original/gzgCvX9rrsuhqmrcwXVT81atEEW.jpg | Lionsgate, film still (TMDB backdrop) | not captioned at source; same costumes as the captioned geese still (likely Lenore Dove and Haymitch, unverified) | 1790, 0, 1215 |
+| burning-house | `d12-burning-house.jpg` | https://image.tmdb.org/t/p/original/qZ4KfB6T44VwKJoBDZxZa5TxB1a.jpg | Lionsgate, film still (TMDB backdrop) | men held back from a burning house; not captioned at source, not named | 1300, 0, 1215 |
 | haymitch-portrait | `poster-haymitch.jpg` | https://image.tmdb.org/t/p/original/9iNZRAhUHHYmNjNv1sd8hbcO1Yl.jpg | Lionsgate, character poster | poster text: Joseph Zada is Haymitch (the name and title are outside the crop) | 438, 500, 1125 |
-| geese-meadow | `d12-geese-meadow.jpg` | https://image.tmdb.org/t/p/original/rUtT2tJsFFcZhubaAdDwOE4E4He.jpg | Lionsgate, film still (TMDB backdrop) | a figure seen from behind; not named | 1343, 471, 950 |
+| face-in-the-crowd | `d12-reaping-crowd-haymitch.jpg` | https://image.tmdb.org/t/p/original/jkWEP33qm5ClmQELG5EYAaWImNa.jpg | Lionsgate, film still (TMDB backdrop) | not captioned at source; same costume and setting as the captioned reaping-walk still (likely Haymitch, unverified); not named in the edit | 620, 0, 900 |
 
 ## 3. The Capitol broadcast
 `config_sotr_v3_capitol_broadcast.json` · 100 BPM · 24 beats
@@ -67,7 +68,6 @@ Nobody was identified from their face. Stills without a caption are described by
 | amber-haze | `sunrise-forest-haze.jpg` | https://image.tmdb.org/t/p/original/npOjnofaZHOLBoKzC7ugX9A9INM.jpg | Lionsgate, film still (TMDB backdrop) | two tributes in backlight; not named | 1000, 0, 1215 |
 | sun-through-leaves | `sunrise-tree-flare.jpg` | https://image.tmdb.org/t/p/original/q9YhLoNviHCSExkrlBn7uEUbNmb.jpg | Lionsgate, film still (TMDB backdrop) | an embrace; not named | 1350, 0, 1215 |
 | arena-sunrise | `poster-arena-sunrise.jpg` | https://image.tmdb.org/t/p/original/1jkFSHDizXbk7yXFZy8rzyHDsdT.jpg | Lionsgate, 'Welcome to the Second Quarter Quell' arena poster (title outside the crop) | no people | 320, 491, 1100 |
-
 ## Could not access
 
 - **Wikimedia Commons** (public-domain and Creative Commons photos and recordings): reachable, but rate-limited this session's connection to roughly one request every few minutes, so I couldn't bring in atmosphere or texture images. I didn't try to get around the limit.
@@ -81,5 +81,6 @@ Nobody was identified from their face. Stills without a caption are described by
 - Couple walking in the meadow (TMDB `xxHzApYmRt6gFp8Du4Ap3mszCUs`): waxy, upscaled faces at 1:1.
 - Lenore looking up (TMDB `pZhB13YT3GP72zzx0OrWOOPQSa6`): the face is too large for any 9:16 slice.
 - Golden-hour heads (TMDB `isb8EErxytcvczhObJHqWu8ht3K`): in a 9:16 slice one face sits under TikTok's caption area, or the other loses its eyes.
+- Kiss and Lenore with the geese in the meadow: dropped from edit 2 in the second round so it reads as District 12 rather than the couple.
 - Plutarch with the TV camera: the camera carries a small logo, which counts as text.
 - Arena overhead with the "08" and "04" graphics: used only where the crop leaves the numbers out.
