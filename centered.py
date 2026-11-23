@@ -33,6 +33,7 @@ the clips masked out. With "clips_play_once": true a clip never loops or freezes
 left off) and must leave the screen within them, cut at most
 "clip_max_trim" frames (default 6, 0.2 s) short of its end so the next photo lands on the beat as it finishes.
 
+"background" (and any slide's "bg") is a hex colour or {"image": "images/<file>"}, a picture already at the frame size.
 Any slide may set "bg" (its background colour) and "enter": {"fade_frames": n}: the previous
 slide fades out to the new background over n frames that end exactly on the slide's first
 time, then the slide's first photo lands with a hard cut. Without "enter" the slide cuts in.
@@ -254,10 +255,29 @@ def border(arr, px, rgb):
     return a
 
 
+_BG = {}
+
+
+def bg_canvas(spec, W, H):
+    """A background as a float canvas: a hex colour, or {"image": "images/<file>"} (exactly W x H, used whole)."""
+    key = json.dumps(spec, sort_keys=True)
+    if key not in _BG:
+        c = np.empty((H, W, 3), np.float32)
+        if isinstance(spec, dict):
+            im = Image.open(os.path.join(ROOT, spec["image"])).convert("RGB")
+            if im.size != (W, H):
+                sys.exit(f"background {spec['image']} is {im.width}x{im.height}, not {W}x{H}; prepare it at the frame size first")
+            c[:] = np.asarray(im, np.float32)
+        else:
+            c[:] = hex_rgb(spec)
+        _BG[key] = c
+    return _BG[key]
+
+
 def plate(cfg, state, srcs, cache):
     W, H = cfg["size"]
     canvas = np.empty((H, W, 3), np.float32)
-    canvas[:] = hex_rgb(state["bg"])
+    canvas[:] = bg_canvas(state["bg"], W, H)
     bpx = cfg.get("border", {}).get("px", 0)
     brgb = hex_rgb(cfg.get("border", {}).get("color", "#FFFFFF"))
     for k, (x, y, w, h) in state["layers"]:
@@ -356,7 +376,7 @@ def main():
                 a = (f - fade_start + 1) / (nf + 1)
                 a = a * a * (3 - 2 * a)
                 target = np.empty_like(pl)
-                target[:] = hex_rgb(nxt["bg"])
+                target[:] = bg_canvas(nxt["bg"], W, H)
                 fr = np.clip(base * (1 - a) + target * a + grain, 0, 255).astype(np.uint8)
                 p.stdin.write(fr.tobytes())
                 fade_frames.add(f)
