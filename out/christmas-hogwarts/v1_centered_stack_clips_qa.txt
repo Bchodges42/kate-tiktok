@@ -1,0 +1,76 @@
+37 steps, 37 photos, 19 slides, 27.70 s (music ends 27.70 s)
+sync: every change within 0.50 frames of its beat (mean 0.27) -> PASS
+stillness: max held-frame change 0.038 -> PASS
+shape: every photo whole, at its own width-to-height shape -> PASS
+repeats: none -> PASS
+variety: no two photos of the same kind touching, back to back, or across the loop -> PASS
+position: every photo and every arrangement centred on the screen's vertical centre line
+clips: each plays once from its first moving frame, never loops, never freezes, and the next photo lands as it ends -> PASS
+  hp-owl-in-snow: 2.87 s of clip, on screen 2.73 s, 4 frame(s) trimmed off the end
+  hp-three-walking-snow: 4.20 s of clip, on screen 4.13 s, 2 frame(s) trimmed off the end
+  hp-castle-on-lake: 1.87 s of clip, on screen 1.77 s, 3 frame(s) trimmed off the end
+  hp-snowy-great-hall: 2.47 s of clip, on screen 2.37 s, 3 frame(s) trimmed off the end
+  hp-three-in-courtyard: 1.30 s of clip, on screen 1.20 s, 3 frame(s) trimmed off the end
+  hp-dragging-tree-snow: 0.97 s of clip, on screen 0.80 s, 5 frame(s) trimmed off the end
+  hp-three-in-robes: 2.17 s of clip, on screen 2.00 s, 5 frame(s) trimmed off the end
+  hp-running-to-pitch: 1.20 s of clip, on screen 1.17 s, 1 frame(s) trimmed off the end
+  hp-snowy-castle-towers: 0.77 s of clip, on screen 0.77 s, 0 frame(s) trimmed off the end
+
+screen covered by photos, per slide (finished slide):
+  slide  1 stack   56%
+  slide  2 inset   64%  (frame of base photo 80 px, gap 22 px)
+  slide  3 stack   33%
+  slide  4 inset   64%  (frame of base photo 74 px, gap 22 px)
+  slide  5 stack   58%
+  slide  6 inset   63%  (frame of base photo 80 px, gap 22 px)
+  slide  7 stack   63%
+  slide  8 inset   55%  (frame of base photo 64 px, gap 22 px)
+  slide  9 stack   44%
+  slide 10 inset   48%  (frame of base photo 80 px, gap 22 px)
+  slide 11 stack   57%
+  slide 12 inset   55%  (frame of base photo 64 px, gap 22 px)
+  slide 13 stack   44%
+  slide 14 inset   48%  (frame of base photo 80 px, gap 22 px)
+  slide 15 stack   44%
+  slide 16 inset   48%  (frame of base photo 80 px, gap 22 px)
+  slide 17 stack   48%
+  slide 18 inset   67%  (frame of base photo 80 px, gap 22 px)
+  slide 19 stack   60%
+
+ 1.  0.00s  slide 1  swap  hp-snowy-castle-owl [castle]
+ 2.  0.61s  slide 1  swap  hp-butterbeer-cheers [food]
+ 3.  0.80s  slide 1  swap  hp-flying-car-over-lake [film scene]
+ 4.  1.18s  slide 1  cover hp-train-viaduct-snow [train]
+ 5.  1.57s  slide 2  swap  hp-tapestry-room-stairs [interior]
+ 6.  1.96s  slide 2  inset hp-snowy-great-hall [great hall]
+ 7.  4.34s  slide 3  swap  hp-hogsmeade-snow-lane [village]
+ 8.  4.72s  slide 3  swap  hp-house-scarves [object]
+ 9.  5.12s  slide 4  swap  hp-train-corridor [train]
+10.  5.51s  slide 4  inset hp-castle-on-lake [castle]
+11.  7.28s  slide 5  swap  hp-three-friends-snow-sepia [people]
+12.  7.67s  slide 6  swap  hp-teal-shopfront-snow [village]
+13.  8.06s  slide 6  inset hp-owl-in-snow [people]
+14. 10.81s  slide 7  swap  hp-great-hall-trees [great hall]
+15. 11.20s  slide 7  swap  hp-snowy-alley-shops [village]
+16. 11.39s  slide 7  cover hp-train-compartment [train]
+17. 11.79s  slide 8  swap  hp-vaulted-hall-candles [great hall]
+18. 12.18s  slide 8  inset hp-three-in-courtyard [people]
+19. 13.38s  slide 9  swap  hp-steam-train-snow [train]
+20. 13.77s  slide 9  swap  hp-yule-ball-crowd [party]
+21. 14.16s  slide 10 swap  hp-presents-under-tree [object]
+22. 14.55s  slide 10 inset hp-dragging-tree-snow [people]
+23. 15.33s  slide 11 swap  hp-moving-staircases [stairs]
+24. 15.73s  slide 11 swap  hp-common-room-fireplace [people]
+25. 16.13s  slide 12 swap  hp-snowy-shop-front [village]
+26. 16.51s  slide 12 inset hp-three-walking-snow [people]
+27. 20.63s  slide 13 swap  hp-three-broomsticks-window [village]
+28. 21.02s  slide 14 swap  hp-leather-books [object]
+29. 21.42s  slide 14 inset hp-three-in-robes [people]
+30. 23.39s  slide 15 swap  hp-greenhouse [interior]
+31. 23.78s  slide 16 swap  hp-castle-valley [castle]
+32. 24.18s  slide 16 inset hp-running-to-pitch [people]
+33. 25.36s  slide 17 swap  hp-yule-ball-wide [party]
+34. 25.55s  slide 17 cover hp-portrait-staircase [stairs]
+35. 25.94s  slide 18 swap  hp-common-room-tree-window [common room]
+36. 26.33s  slide 18 inset hp-snowy-castle-towers [castle]
+37. 27.12s  slide 19 swap  hp-hogsmeade-night [village]

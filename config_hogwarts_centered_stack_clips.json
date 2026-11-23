@@ -1,0 +1,555 @@
+{
+ "_comment": "Christmas at Hogwarts in the centred-stack style (the shoots video 1 look the user loved), 27.7 s = the TikTok sound three times, which is what nine clips need to play in full. Soft parchment page, thin white borders, hard cuts on the beat or half-beat. Each of the board's nine GIF clips lands inside a centred photo and plays exactly once from its first moving frame: no loop and no frozen frame; the next photo lands on the beat as the clip ends (trimmed by at most 0.2 s to meet the beat). Film stills are described by scene; nobody is named. Opens on the snowy castle with the owl and ends on Hogsmeade at night.",
+ "name": "christmas-hogwarts",
+ "version": "v1_centered_stack_clips",
+ "vibe": "christmas at hogwarts: snow, candlelit halls, trains, hogsmeade",
+ "song": "audio/ref-ny-x3.wav",
+ "_song_comment": "The 9.23 s TikTok sound from the user's reference screen recording, played three times back to back (frame-exact).",
+ "end_at": 27.7,
+ "fps": 30,
+ "size": [
+  1080,
+  1920
+ ],
+ "grade": {
+  "warmth": 0.02,
+  "lift": 8,
+  "saturation": 0.98,
+  "grain": 2.5,
+  "grain_seed": 11
+ },
+ "background": "#EFE6D6",
+ "border": {
+  "px": 6,
+  "color": "#FFFFFF"
+ },
+ "max_box": [
+  0.92,
+  0.74
+ ],
+ "center_y": 0.48,
+ "images_dir": "images",
+ "clips_play_once": true,
+ "clip_max_trim": 6,
+ "images": {
+  "hp-owl-in-snow": {
+   "kind": "people",
+   "clip": "clips/hp-owl-in-snow.gif",
+   "clip_start": 1,
+   "clip_frames": 86,
+   "_clip": "animated GIF pin from the board: plays once from its first moving frame, the next photo lands as it ends"
+  },
+  "hp-three-walking-snow": {
+   "kind": "people",
+   "clip": "clips/hp-three-walking-snow.gif",
+   "clip_start": 1,
+   "clip_frames": 126,
+   "_clip": "animated GIF pin from the board: plays once from its first moving frame, the next photo lands as it ends"
+  },
+  "hp-castle-on-lake": {
+   "kind": "castle",
+   "clip": "clips/hp-castle-on-lake.gif",
+   "clip_start": 1,
+   "clip_frames": 56,
+   "_clip": "animated GIF pin from the board: plays once from its first moving frame, the next photo lands as it ends"
+  },
+  "hp-snowy-great-hall": {
+   "kind": "great hall",
+   "clip": "clips/hp-snowy-great-hall.gif",
+   "clip_start": 2,
+   "clip_frames": 74,
+   "_clip": "animated GIF pin from the board: plays once from its first moving frame, the next photo lands as it ends"
+  },
+  "hp-three-in-courtyard": {
+   "kind": "people",
+   "clip": "clips/hp-three-in-courtyard.gif",
+   "clip_start": 1,
+   "clip_frames": 39,
+   "_clip": "animated GIF pin from the board: plays once from its first moving frame, the next photo lands as it ends"
+  },
+  "hp-dragging-tree-snow": {
+   "kind": "people",
+   "clip": "clips/hp-dragging-tree-snow.gif",
+   "clip_start": 1,
+   "clip_frames": 29,
+   "_clip": "animated GIF pin from the board: plays once from its first moving frame, the next photo lands as it ends"
+  },
+  "hp-three-in-robes": {
+   "kind": "people",
+   "clip": "clips/hp-three-in-robes.gif",
+   "clip_start": 1,
+   "clip_frames": 65,
+   "_clip": "animated GIF pin from the board: plays once from its first moving frame, the next photo lands as it ends"
+  },
+  "hp-running-to-pitch": {
+   "kind": "people",
+   "clip": "clips/hp-running-to-pitch.gif",
+   "clip_start": 1,
+   "clip_frames": 36,
+   "_clip": "animated GIF pin from the board: plays once from its first moving frame, the next photo lands as it ends"
+  },
+  "hp-snowy-castle-towers": {
+   "kind": "castle",
+   "clip": "clips/hp-snowy-castle-towers.gif",
+   "clip_start": 1,
+   "clip_frames": 23,
+   "_clip": "animated GIF pin from the board: plays once from its first moving frame, the next photo lands as it ends"
+  },
+  "hp-moving-staircases": {
+   "kind": "stairs"
+  },
+  "hp-portrait-staircase": {
+   "kind": "stairs"
+  },
+  "hp-three-broomsticks-window": {
+   "kind": "village"
+  },
+  "hp-yule-ball-wide": {
+   "kind": "party"
+  },
+  "hp-greenhouse": {
+   "kind": "interior"
+  },
+  "hp-snowy-alley-shops": {
+   "kind": "village"
+  },
+  "hp-train-compartment": {
+   "kind": "train"
+  },
+  "hp-flying-car-over-lake": {
+   "kind": "film scene"
+  },
+  "hp-vaulted-hall-candles": {
+   "kind": "great hall"
+  },
+  "hp-castle-valley": {
+   "kind": "castle"
+  },
+  "hp-train-corridor": {
+   "kind": "train"
+  },
+  "hp-hogsmeade-snow-lane": {
+   "kind": "village"
+  },
+  "hp-yule-ball-crowd": {
+   "kind": "party"
+  },
+  "hp-leather-books": {
+   "kind": "object"
+  },
+  "hp-great-hall-trees": {
+   "kind": "great hall"
+  },
+  "hp-steam-train-snow": {
+   "kind": "train"
+  },
+  "hp-teal-shopfront-snow": {
+   "kind": "village"
+  },
+  "hp-butterbeer-cheers": {
+   "kind": "food"
+  },
+  "hp-train-viaduct-snow": {
+   "kind": "train"
+  },
+  "hp-tapestry-room-stairs": {
+   "kind": "interior"
+  },
+  "hp-house-scarves": {
+   "kind": "object"
+  },
+  "hp-snowy-shop-front": {
+   "kind": "village"
+  },
+  "hp-snowy-castle-owl": {
+   "kind": "castle"
+  },
+  "hp-hogsmeade-night": {
+   "kind": "village"
+  },
+  "hp-common-room-fireplace": {
+   "kind": "people"
+  },
+  "hp-three-friends-snow-sepia": {
+   "kind": "people"
+  },
+  "hp-common-room-tree-window": {
+   "kind": "common room"
+  },
+  "hp-presents-under-tree": {
+   "kind": "object"
+  }
+ },
+ "not_used": {
+  "pins 2, 9, 15, 42, 43, 44": "soft sources (under 500 px)",
+  "snowy sweet shop (pin 7)": "creator ID watermark (Xiaohongshu)",
+  "Honeydukes bag on the street (pin 45)": "creator name across the top",
+  "three friends selfie (pin 25)": "saved sideways",
+  "great hall from above (pin 3), cloister (pin 10), common room tree and sofa (pin 29)": "left out for length or to keep same-kind photos apart",
+  "11 older pins": "the board has 61 pins; Pinterest's feed only returns the newest 50"
+ },
+ "slides": [
+  {
+   "type": "stack",
+   "shots": [
+    {
+     "image": "hp-snowy-castle-owl",
+     "at": 0.0,
+     "op": "swap",
+     "scale": 1.0
+    },
+    {
+     "image": "hp-butterbeer-cheers",
+     "at": 0.61,
+     "op": "swap",
+     "scale": 1.0
+    },
+    {
+     "image": "hp-flying-car-over-lake",
+     "at": 0.801,
+     "op": "swap",
+     "scale": 1.0
+    },
+    {
+     "image": "hp-train-viaduct-snow",
+     "at": 1.184,
+     "op": "cover",
+     "scale": 1.0
+    }
+   ]
+  },
+  {
+   "type": "inset",
+   "base": {
+    "image": "hp-tapestry-room-stairs",
+    "at": 1.573,
+    "scale": 1.0
+   },
+   "insets": [
+    "hp-snowy-great-hall"
+   ],
+   "tree": 0,
+   "reveal": [
+    [
+     0
+    ]
+   ],
+   "at": [
+    1.962
+   ],
+   "margin": 0.08,
+   "gap": 22
+  },
+  {
+   "type": "stack",
+   "shots": [
+    {
+     "image": "hp-hogsmeade-snow-lane",
+     "at": 4.336,
+     "op": "swap",
+     "scale": 1.0
+    },
+    {
+     "image": "hp-house-scarves",
+     "at": 4.725,
+     "op": "swap",
+     "scale": 0.96
+    }
+   ]
+  },
+  {
+   "type": "inset",
+   "base": {
+    "image": "hp-train-corridor",
+    "at": 5.12,
+    "scale": 1.0
+   },
+   "insets": [
+    "hp-castle-on-lake"
+   ],
+   "tree": 0,
+   "reveal": [
+    [
+     0
+    ]
+   ],
+   "at": [
+    5.509
+   ],
+   "margin": 0.08,
+   "gap": 22
+  },
+  {
+   "type": "stack",
+   "shots": [
+    {
+     "image": "hp-three-friends-snow-sepia",
+     "at": 7.279,
+     "op": "swap",
+     "scale": 1.0
+    }
+   ]
+  },
+  {
+   "type": "inset",
+   "base": {
+    "image": "hp-teal-shopfront-snow",
+    "at": 7.668,
+    "scale": 1.0
+   },
+   "insets": [
+    "hp-owl-in-snow"
+   ],
+   "tree": 0,
+   "reveal": [
+    [
+     0
+    ]
+   ],
+   "at": [
+    8.057
+   ],
+   "margin": 0.08,
+   "gap": 22
+  },
+  {
+   "type": "stack",
+   "shots": [
+    {
+     "image": "hp-great-hall-trees",
+     "at": 10.806,
+     "op": "swap",
+     "scale": 1.0
+    },
+    {
+     "image": "hp-snowy-alley-shops",
+     "at": 11.195,
+     "op": "swap",
+     "scale": 1.0
+    },
+    {
+     "image": "hp-train-compartment",
+     "at": 11.392,
+     "op": "cover",
+     "scale": 1.0
+    }
+   ]
+  },
+  {
+   "type": "inset",
+   "base": {
+    "image": "hp-vaulted-hall-candles",
+    "at": 11.787,
+    "scale": 1.0
+   },
+   "insets": [
+    "hp-three-in-courtyard"
+   ],
+   "tree": 0,
+   "reveal": [
+    [
+     0
+    ]
+   ],
+   "at": [
+    12.182
+   ],
+   "margin": 0.08,
+   "gap": 22
+  },
+  {
+   "type": "stack",
+   "shots": [
+    {
+     "image": "hp-steam-train-snow",
+     "at": 13.378,
+     "op": "swap",
+     "scale": 0.96
+    },
+    {
+     "image": "hp-yule-ball-crowd",
+     "at": 13.773,
+     "op": "swap",
+     "scale": 0.96
+    }
+   ]
+  },
+  {
+   "type": "inset",
+   "base": {
+    "image": "hp-presents-under-tree",
+    "at": 14.156,
+    "scale": 1.0
+   },
+   "insets": [
+    "hp-dragging-tree-snow"
+   ],
+   "tree": 0,
+   "reveal": [
+    [
+     0
+    ]
+   ],
+   "at": [
+    14.55
+   ],
+   "margin": 0.08,
+   "gap": 22
+  },
+  {
+   "type": "stack",
+   "shots": [
+    {
+     "image": "hp-moving-staircases",
+     "at": 15.334,
+     "op": "swap",
+     "scale": 0.96
+    },
+    {
+     "image": "hp-common-room-fireplace",
+     "at": 15.729,
+     "op": "swap",
+     "scale": 1.0
+    }
+   ]
+  },
+  {
+   "type": "inset",
+   "base": {
+    "image": "hp-snowy-shop-front",
+    "at": 16.129,
+    "scale": 1.0
+   },
+   "insets": [
+    "hp-three-walking-snow"
+   ],
+   "tree": 0,
+   "reveal": [
+    [
+     0
+    ]
+   ],
+   "at": [
+    16.512
+   ],
+   "margin": 0.08,
+   "gap": 22
+  },
+  {
+   "type": "stack",
+   "shots": [
+    {
+     "image": "hp-three-broomsticks-window",
+     "at": 20.626,
+     "op": "swap",
+     "scale": 0.96
+    }
+   ]
+  },
+  {
+   "type": "inset",
+   "base": {
+    "image": "hp-leather-books",
+    "at": 21.021,
+    "scale": 1.0
+   },
+   "insets": [
+    "hp-three-in-robes"
+   ],
+   "tree": 0,
+   "reveal": [
+    [
+     0
+    ]
+   ],
+   "at": [
+    21.416
+   ],
+   "margin": 0.08,
+   "gap": 22
+  },
+  {
+   "type": "stack",
+   "shots": [
+    {
+     "image": "hp-greenhouse",
+     "at": 23.39,
+     "op": "swap",
+     "scale": 0.96
+    }
+   ]
+  },
+  {
+   "type": "inset",
+   "base": {
+    "image": "hp-castle-valley",
+    "at": 23.784,
+    "scale": 1.0
+   },
+   "insets": [
+    "hp-running-to-pitch"
+   ],
+   "tree": 0,
+   "reveal": [
+    [
+     0
+    ]
+   ],
+   "at": [
+    24.185
+   ],
+   "margin": 0.08,
+   "gap": 22
+  },
+  {
+   "type": "stack",
+   "shots": [
+    {
+     "image": "hp-yule-ball-wide",
+     "at": 25.363,
+     "op": "swap",
+     "scale": 1.0
+    },
+    {
+     "image": "hp-portrait-staircase",
+     "at": 25.549,
+     "op": "cover",
+     "scale": 1.0
+    }
+   ]
+  },
+  {
+   "type": "inset",
+   "base": {
+    "image": "hp-common-room-tree-window",
+    "at": 25.938,
+    "scale": 1.0
+   },
+   "insets": [
+    "hp-snowy-castle-towers"
+   ],
+   "tree": 0,
+   "reveal": [
+    [
+     0
+    ]
+   ],
+   "at": [
+    26.333
+   ],
+   "margin": 0.08,
+   "gap": 22
+  },
+  {
+   "type": "stack",
+   "shots": [
+    {
+     "image": "hp-hogsmeade-night",
+     "at": 27.116,
+     "op": "swap",
+     "scale": 1.0
+    }
+   ]
+  }
+ ]
+}

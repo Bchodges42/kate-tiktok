@@ -28,7 +28,10 @@ fade). Each slide is one of:
 An image may carry "clip": "clips/<file>.gif|mp4" (its still file in images/ is the clip's first frame, used for
 layout). The clip plays from the moment it lands, at its own speed, and loops if it stays on screen longer; QA
 checks that every clip stays on screen long enough to play all the way through, and checks stillness and sync with
-the clips masked out.
+the clips masked out. With "clips_play_once": true a clip never loops or freezes: it starts at "clip_start"
+(frames to skip, e.g. a still lead-in), plays "clip_frames" frames at most (default: the rest, so a frozen tail can be
+left off) and must leave the screen within them, cut at most
+"clip_max_trim" frames (default 6, 0.2 s) short of its end so the next photo lands on the beat as it finishes.
 
 Any slide may set "bg" (its background colour) and "enter": {"fade_frames": n}: the previous
 slide fades out to the new background over n frames that end exactly on the slide's first
@@ -322,6 +325,7 @@ def main():
             clip_cache[(k, idx, w, h)] = border(grade(np.asarray(im), cfg["grade"]), bpx, brgb)
         return clip_cache[(k, idx, w, h)]
 
+    once = cfg.get("clips_play_once", False)
     clip_boxes = [[] for _ in range(N)]   # per output frame: boxes of clips that are moving
     clip_seen = {k: 0 for k in clips}     # longest unbroken run on screen, in frames
     fade_frames = set()
@@ -341,7 +345,11 @@ def main():
             if live:
                 base = pl.copy()
                 for k, (x, y, w, h), l0 in live:
-                    base[y:y + h, x:x + w] = clip_frame(k, (f - l0) % len(clips[k]), w, h)
+                    if once:
+                        idx = min(cfg["images"][k].get("clip_start", 0) + f - l0, len(clips[k]) - 1)
+                    else:
+                        idx = (f - l0) % len(clips[k])
+                    base[y:y + h, x:x + w] = clip_frame(k, idx, w, h)
                     if f > l0:  # the frame it lands on is a real cut; after that its motion is left out of QA
                         clip_boxes[f].append((x, y, w, h))
             if nf and f >= fade_start:  # ease out to the next slide's background, finishing on its beat
@@ -393,7 +401,19 @@ def main():
            "repeats: none -> PASS",
            "variety: no two photos of the same kind touching, back to back, or across the loop -> PASS",
            "position: every photo and every arrangement centred on the screen's vertical centre line"]
-    if clips:
+    if clips and once:
+        lines, bad = [], []
+        for k in clips:
+            meta = cfg["images"][k]
+            avail = meta.get("clip_frames", len(clips[k]) - meta.get("clip_start", 0))
+            seen, cut = clip_seen[k], avail - clip_seen[k]
+            lines.append(f"  {k}: {avail / fps:.2f} s of clip, on screen {seen / fps:.2f} s, {max(cut, 0)} frame(s) trimmed off the end")
+            if cut < 0 or cut > cfg.get("clip_max_trim", 6):
+                bad.append(k)
+        rep.append("clips: each plays once from its first moving frame, never loops, never freezes, and the next photo lands as it "
+                   f"ends -> {'PASS' if not bad else 'FAIL ' + str(bad)}")
+        rep += lines
+    elif clips:
         short = [k for k in clips if clip_seen[k] < len(clips[k])]
         rep.append("clips: " + ", ".join(f"{k} {len(clips[k]) / fps:.2f} s, on screen {clip_seen[k] / fps:.2f} s" for k in clips)
                    + (" -> PASS (every clip plays all the way through)" if not short else f" -> FAIL (cut short: {short})"))
