@@ -1,0 +1,445 @@
+{
+ "_comment": "Coraline board in the centred-stack style (same as the Christmas at Hogwarts edit), background my pick: pale periwinkle, after Coraline's blue hair and the dreamy Other World. 27.7 s = the TikTok sound three times, which is what nine clips need to play in full. Hard cuts on the beat or half-beat. Each of the board's nine GIF clips lands inside a centred photo and plays exactly once from its first moving frame: no loop and no frozen frame; the next photo lands on the beat as the clip ends (trimmed by at most 0.2 s to meet the beat). Photos are ordered by colour (the user asked for photos to appear with or right after photos of similar colours): indigo and purple, red, amber, yellow-olive, green-grey, teal, then blue, which loops back to the purple start; each clip lands inside a photo of its own colour. Opens on the star fairy lights and ends on the Pink Palace at night.",
+ "name": "coraline",
+ "version": "v3_colour_order_periwinkle",
+ "vibe": "coraline: the Pink Palace, the little door and tunnel, buttons, stars, the Other World",
+ "song": "audio/ref-ny-x3.wav",
+ "_song_comment": "The 9.23 s TikTok sound from the user's reference screen recording, played three times back to back (frame-exact).",
+ "end_at": 27.7,
+ "fps": 30,
+ "size": [
+  1080,
+  1920
+ ],
+ "grade": {
+  "warmth": 0.02,
+  "lift": 8,
+  "saturation": 0.98,
+  "grain": 2.5,
+  "grain_seed": 11
+ },
+ "background": "#CDD3E8",
+ "border": {
+  "px": 6,
+  "color": "#FFFFFF"
+ },
+ "max_box": [
+  0.92,
+  0.74
+ ],
+ "center_y": 0.48,
+ "images_dir": "images",
+ "clips_play_once": true,
+ "clip_max_trim": 6,
+ "images": {
+  "co-blue-tunnel": {
+   "kind": "tunnel",
+   "clip": "clips/co-blue-tunnel.gif",
+   "clip_start": 1,
+   "clip_frames": 164,
+   "_clip": "animated GIF pin from the board: plays once from its first moving frame, the next photo lands as it ends"
+  },
+  "co-garden-friends": {
+   "kind": "characters",
+   "clip": "clips/co-garden-friends.gif",
+   "clip_start": 1,
+   "clip_frames": 42,
+   "_clip": "animated GIF pin from the board: plays once from its first moving frame, the next photo lands as it ends"
+  },
+  "co-yellow-boots": {
+   "kind": "boots",
+   "clip": "clips/co-yellow-boots.gif",
+   "clip_start": 2,
+   "clip_frames": 86,
+   "_clip": "animated GIF pin from the board: plays once from its first moving frame, the next photo lands as it ends"
+  },
+  "co-pink-palace-glow": {
+   "kind": "house",
+   "clip": "clips/co-pink-palace-glow.gif",
+   "clip_start": 1,
+   "clip_frames": 96,
+   "_clip": "animated GIF pin from the board: plays once from its first moving frame, the next photo lands as it ends"
+  },
+  "co-cat-eyes": {
+   "kind": "cat",
+   "clip": "clips/co-cat-eyes.gif",
+   "clip_start": 5,
+   "clip_frames": 29,
+   "_clip": "animated GIF pin from the board: plays once from its first moving frame, the next photo lands as it ends"
+  },
+  "co-hummingbird-flowers": {
+   "kind": "garden",
+   "clip": "clips/co-hummingbird-flowers.gif",
+   "clip_start": 1,
+   "clip_frames": 72,
+   "_clip": "animated GIF pin from the board: plays once from its first moving frame, the next photo lands as it ends"
+  },
+  "co-house-in-rain": {
+   "kind": "house",
+   "clip": "clips/co-house-in-rain.gif",
+   "clip_start": 2,
+   "clip_frames": 38,
+   "_clip": "animated GIF pin from the board: plays once from its first moving frame, the next photo lands as it ends"
+  },
+  "co-doll-in-tunnel": {
+   "kind": "doll",
+   "clip": "clips/co-doll-in-tunnel.gif",
+   "clip_start": 1,
+   "clip_frames": 44,
+   "_clip": "animated GIF pin from the board: plays once from its first moving frame, the next photo lands as it ends"
+  },
+  "co-tunnel-window": {
+   "kind": "tunnel",
+   "clip": "clips/co-tunnel-window.gif",
+   "clip_start": 2,
+   "clip_frames": 47,
+   "_clip": "animated GIF pin from the board: plays once from its first moving frame, the next photo lands as it ends"
+  },
+  "co-tunnel-to-other-world": {
+   "kind": "tunnel"
+  },
+  "co-tea-cup-hands": {
+   "kind": "tea"
+  },
+  "co-mouse-circus-name": {
+   "kind": "mice"
+  },
+  "co-button-eyed-doll": {
+   "kind": "doll"
+  },
+  "co-other-kitchen-night": {
+   "kind": "kitchen"
+  },
+  "co-mice-drawing": {
+   "kind": "mice"
+  },
+  "co-acrobat-on-wire": {
+   "kind": "characters",
+   "crop": [
+    0,
+    12,
+    1200,
+    663
+   ],
+   "_crop": "removes the black letterbox bars (12 px top and bottom)"
+  },
+  "co-dragonfly-lights": {
+   "kind": "lights"
+  },
+  "co-small-door-glow": {
+   "kind": "door",
+   "crop": [
+    20,
+    135,
+    736,
+    904
+   ],
+   "_crop": "removes the black border around the film frame"
+  },
+  "co-spiral-staircase": {
+   "kind": "interior"
+  },
+  "co-button-pile": {
+   "kind": "buttons"
+  },
+  "co-stars-on-velvet": {
+   "kind": "stars"
+  },
+  "co-face-at-window": {
+   "kind": "characters"
+  },
+  "co-star-fairy-lights": {
+   "kind": "lights"
+  },
+  "co-pink-palace-night": {
+   "kind": "house"
+  },
+  "co-twisted-tree": {
+   "kind": "tree"
+  },
+  "co-pink-palace-sign": {
+   "kind": "house"
+  },
+  "co-button-box": {
+   "kind": "buttons"
+  }
+ },
+ "not_used": {
+  "pins 6, 9, 15, 25, 28, 34, 42, 46": "soft sources (under 500 px)",
+  "spare photos (star pins, seeing stone, hand on wall, puppets, tea leaves, mice band, opera glasses, fridge, grey kitchen, garden, little door, mantis, gloves, porch, buttons/stars kept to one each per slide)": "left out for length: nine clips need about 20 s on their own"
+ },
+ "slides": [
+  {
+   "type": "inset",
+   "base": {
+    "image": "co-star-fairy-lights",
+    "at": 0.0,
+    "scale": 1.0
+   },
+   "insets": [
+    "co-tunnel-window"
+   ],
+   "tree": 0,
+   "reveal": [
+    [
+     0
+    ]
+   ],
+   "at": [
+    0.61
+   ],
+   "margin": 0.08,
+   "gap": 22
+  },
+  {
+   "type": "inset",
+   "base": {
+    "image": "co-mice-drawing",
+    "at": 2.159,
+    "scale": 1.0
+   },
+   "insets": [
+    "co-blue-tunnel"
+   ],
+   "tree": 0,
+   "reveal": [
+    [
+     0
+    ]
+   ],
+   "at": [
+    2.554
+   ],
+   "margin": 0.2,
+   "gap": 22
+  },
+  {
+   "type": "inset",
+   "base": {
+    "image": "co-spiral-staircase",
+    "at": 7.866,
+    "scale": 1.0
+   },
+   "insets": [
+    "co-pink-palace-glow"
+   ],
+   "tree": 0,
+   "reveal": [
+    [
+     0
+    ]
+   ],
+   "at": [
+    8.249
+   ],
+   "margin": 0.08,
+   "gap": 22
+  },
+  {
+   "type": "inset",
+   "base": {
+    "image": "co-button-box",
+    "at": 11.392,
+    "scale": 1.0
+   },
+   "insets": [
+    "co-hummingbird-flowers"
+   ],
+   "tree": 0,
+   "reveal": [
+    [
+     0
+    ]
+   ],
+   "at": [
+    11.59
+   ],
+   "margin": 0.08,
+   "gap": 22
+  },
+  {
+   "type": "stack",
+   "shots": [
+    {
+     "image": "co-other-kitchen-night",
+     "at": 13.958,
+     "op": "swap",
+     "scale": 1.0
+    },
+    {
+     "image": "co-mouse-circus-name",
+     "at": 14.353,
+     "op": "swap",
+     "scale": 1.0
+    },
+    {
+     "image": "co-tea-cup-hands",
+     "at": 14.742,
+     "op": "swap",
+     "scale": 1.0
+    },
+    {
+     "image": "co-face-at-window",
+     "at": 14.951,
+     "op": "swap",
+     "scale": 1.0
+    }
+   ]
+  },
+  {
+   "type": "inset",
+   "base": {
+    "image": "co-small-door-glow",
+    "at": 15.334,
+    "scale": 1.0
+   },
+   "insets": [
+    "co-yellow-boots"
+   ],
+   "tree": 0,
+   "reveal": [
+    [
+     0
+    ]
+   ],
+   "at": [
+    15.926
+   ],
+   "margin": 0.08,
+   "gap": 22
+  },
+  {
+   "type": "stack",
+   "shots": [
+    {
+     "image": "co-pink-palace-sign",
+     "at": 18.682,
+     "op": "swap",
+     "scale": 1.0
+    },
+    {
+     "image": "co-tunnel-to-other-world",
+     "at": 18.879,
+     "op": "swap",
+     "scale": 1.0
+    },
+    {
+     "image": "co-button-eyed-doll",
+     "at": 19.268,
+     "op": "swap",
+     "scale": 1.0
+    }
+   ]
+  },
+  {
+   "type": "inset",
+   "base": {
+    "image": "co-button-pile",
+    "at": 19.651,
+    "scale": 1.0
+   },
+   "insets": [
+    "co-doll-in-tunnel"
+   ],
+   "tree": 0,
+   "reveal": [
+    [
+     0
+    ]
+   ],
+   "at": [
+    19.86
+   ],
+   "margin": 0.08,
+   "gap": 22
+  },
+  {
+   "type": "stack",
+   "shots": [
+    {
+     "image": "co-twisted-tree",
+     "at": 21.201,
+     "op": "swap",
+     "scale": 0.96
+    }
+   ]
+  },
+  {
+   "type": "inset",
+   "base": {
+    "image": "co-acrobat-on-wire",
+    "at": 21.607,
+    "scale": 1.0
+   },
+   "insets": [
+    "co-cat-eyes"
+   ],
+   "tree": 0,
+   "reveal": [
+    [
+     0
+    ]
+   ],
+   "at": [
+    21.816
+   ],
+   "margin": 0.08,
+   "gap": 22
+  },
+  {
+   "type": "inset",
+   "base": {
+    "image": "co-dragonfly-lights",
+    "at": 22.612,
+    "scale": 1.0
+   },
+   "insets": [
+    "co-house-in-rain"
+   ],
+   "tree": 0,
+   "reveal": [
+    [
+     0
+    ]
+   ],
+   "at": [
+    22.803
+   ],
+   "margin": 0.08,
+   "gap": 22
+  },
+  {
+   "type": "inset",
+   "base": {
+    "image": "co-stars-on-velvet",
+    "at": 23.976,
+    "scale": 1.0
+   },
+   "insets": [
+    "co-garden-friends"
+   ],
+   "tree": 0,
+   "reveal": [
+    [
+     0
+    ]
+   ],
+   "at": [
+    24.185
+   ],
+   "margin": 0.08,
+   "gap": 22
+  },
+  {
+   "type": "stack",
+   "shots": [
+    {
+     "image": "co-pink-palace-night",
+     "at": 25.549,
+     "op": "swap",
+     "scale": 1.0
+    }
+   ]
+  }
+ ]
+}
