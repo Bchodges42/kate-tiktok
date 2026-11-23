@@ -1,0 +1,63 @@
+39 steps, 39 photos, 12 slides, 18.47 s (music ends 18.47 s)
+sync: every change within 0.49 frames of its beat (mean 0.27) -> PASS
+stillness: max held-frame change 0.036 -> PASS
+shape: every photo whole, at its own width-to-height shape -> PASS
+repeats: none -> PASS
+variety: no two photos of the same kind touching, back to back, or across the loop -> PASS
+position: every photo and every arrangement centred on the screen's vertical centre line
+clips: each plays once from its first moving frame, never loops, never freezes, and the next photo lands as it ends -> PASS
+  en-butterfly-wing-plates: 1.20 s of clip, on screen 1.20 s, 0 frame(s) trimmed off the end
+
+screen covered by photos, per slide (finished slide):
+  slide  1 stack   48%
+  slide  2 inset   63%  (frame of base photo 99 px, gap 22 px)
+  slide  3 stack   48%
+  slide  4 inset   57%  (frame of base photo 80 px, gap 22 px)
+  slide  5 stack   67%
+  slide  6 inset   63%  (frame of base photo 99 px, gap 22 px)
+  slide  7 stack   35%
+  slide  8 inset   64%  (frame of base photo 99 px, gap 22 px)
+  slide  9 inset   48%  (frame of base photo 99 px, gap 22 px)
+  slide 10 stack   45%
+  slide 11 inset   47%  (frame of base photo 99 px, gap 22 px)
+  slide 12 stack   47%
+
+ 1.  0.00s  slide 1  swap  en-tortoise-beetles [beetle]
+ 2.  0.61s  slide 1  swap  en-coffee-journal [journal]
+ 3.  0.80s  slide 1  swap  en-rosy-maple-moth [moth]
+ 4.  1.18s  slide 1  cover en-pressed-flowers-wallet [object]
+ 5.  1.57s  slide 2  swap  en-tree-canopy [tree]
+ 6.  1.96s  slide 2  inset en-spotted-leaf-beetle [beetle]
+ 7.  2.55s  slide 3  swap  en-muddy-knees [people]
+ 8.  2.95s  slide 3  swap  en-butterfly-specimen [butterfly]
+ 9.  3.35s  slide 3  swap  en-pine-forest [forest]
+10.  3.76s  slide 3  cover en-dragonfly-on-water [dragonfly]
+11.  4.14s  slide 4  swap  en-mushroom-caps [fungi]
+12.  4.54s  slide 4  inset en-butterfly-wing-plates [specimen plate]
+13.  5.72s  slide 5  swap  en-dewy-spider-webs [web]
+14.  6.10s  slide 5  swap  en-inchworm-finger [larva]
+15.  6.50s  slide 5  cover en-fern-hand-art [art]
+16.  6.90s  slide 6  swap  en-insect-field-book [books]
+17.  7.28s  slide 6  inset en-pink-moth [moth]
+18.  7.87s  slide 7  swap  en-muddy-hands [people]
+19.  8.25s  slide 7  swap  en-jewel-bug [beetle]
+20.  8.65s  slide 7  cover en-snail-on-leaves [snail]
+21.  9.03s  slide 7  swap  en-damselflies-leaf-holes [dragonfly]
+22.  9.64s  slide 7  swap  en-ladybird-in-curls [people]
+23. 10.03s  slide 8  swap  en-grasshopper-field-guide [books]
+24. 10.42s  slide 8  inset en-ants-on-apple [ant]
+25. 11.00s  slide 9  swap  en-leather-notebook [journal]
+26. 11.39s  slide 9  inset en-butterfly-on-knee [butterfly]
+27. 11.97s  slide 10 swap  en-boots-in-a-circle [people]
+28. 12.18s  slide 10 cover en-pink-grub-leaf [larva]
+29. 12.58s  slide 10 swap  en-book-piles [books]
+30. 12.99s  slide 10 cover en-cicada-wings [specimen]
+31. 13.38s  slide 11 swap  en-butterfly-specimen-wall [butterfly]
+32. 13.77s  slide 11 inset en-dragonfly-on-face [dragonfly]
+33. 14.35s  slide 12 swap  en-notebooks-and-plant [journal]
+34. 14.74s  slide 12 swap  en-chrysalises [chrysalis]
+35. 15.13s  slide 12 swap  en-hand-in-stream [people]
+36. 15.53s  slide 12 swap  en-misty-forest-light [forest]
+37. 15.93s  slide 12 swap  en-snail-drawings [art]
+38. 16.32s  slide 12 swap  en-boots-on-log [people]
+39. 16.70s  slide 12 swap  en-hand-of-moths [moth]
