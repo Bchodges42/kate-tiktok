@@ -1,0 +1,60 @@
+27 steps, 27 photos, 13 slides, 34.40 s (music ends 34.40 s)
+sync: every change within 0.00 frames of its beat (mean 0.00) -> PASS
+stillness: max held-frame change 0.824 -> PASS
+shape: every photo whole, at its own width-to-height shape -> PASS
+repeats: none -> PASS
+variety: no two photos of the same kind touching, back to back, or across the loop -> PASS
+position: every photo and every arrangement centred on the screen's vertical centre line
+clips: each plays once from its first moving frame, never loops, never freezes, and the next photo lands as it ends -> PASS
+  co-blue-tunnel: 5.47 s of clip, on screen 5.47 s, 0 frame(s) trimmed off the end
+  co-garden-friends: 1.40 s of clip, on screen 1.40 s, 0 frame(s) trimmed off the end
+  co-yellow-boots: 2.87 s of clip, on screen 2.87 s, 0 frame(s) trimmed off the end
+  co-pink-palace-glow: 3.20 s of clip, on screen 3.20 s, 0 frame(s) trimmed off the end
+  co-cat-eyes: 0.97 s of clip, on screen 0.97 s, 0 frame(s) trimmed off the end
+  co-hummingbird-flowers: 2.40 s of clip, on screen 2.40 s, 0 frame(s) trimmed off the end
+  co-house-in-rain: 1.27 s of clip, on screen 1.27 s, 0 frame(s) trimmed off the end
+  co-doll-in-tunnel: 1.47 s of clip, on screen 1.47 s, 0 frame(s) trimmed off the end
+  co-tunnel-window: 1.57 s of clip, on screen 1.57 s, 0 frame(s) trimmed off the end
+
+screen covered by photos, per slide (finished slide):
+  slide  1 inset   48%  (frame of base photo 80 px, gap 22 px)
+  slide  2 inset   48%  (frame of base photo 199 px, gap 22 px)
+  slide  3 inset   49%  (frame of base photo 80 px, gap 22 px)
+  slide  4 inset   48%  (frame of base photo 79 px, gap 22 px)
+  slide  5 stack   44%
+  slide  6 inset   51%  (frame of base photo 80 px, gap 22 px)
+  slide  7 stack   43%
+  slide  8 inset   48%  (frame of base photo 80 px, gap 22 px)
+  slide  9 stack   44%
+  slide 10 inset   26%  (frame of base photo 43 px, gap 22 px)
+  slide 11 inset   38%  (frame of base photo 64 px, gap 22 px)
+  slide 12 inset   48%  (frame of base photo 80 px, gap 22 px)
+  slide 13 stack   29%
+
+ 1.  0.00s  slide 1  swap  co-star-fairy-lights [lights]
+ 2.  1.00s  slide 1  inset co-tunnel-window [tunnel]
+ 3.  2.57s  slide 2  swap  co-mice-drawing [mice]
+ 4.  3.57s  slide 2  inset co-blue-tunnel [tunnel]
+ 5.  9.03s  slide 3  swap  co-spiral-staircase [interior]
+ 6. 10.03s  slide 3  inset co-pink-palace-glow [house]
+ 7. 13.23s  slide 4  swap  co-button-box [buttons]
+ 8. 14.23s  slide 4  inset co-hummingbird-flowers [garden]
+ 9. 16.63s  slide 5  swap  co-other-kitchen-night [kitchen]
+10. 17.03s  slide 5  swap  co-mouse-circus-name [mice]
+11. 17.43s  slide 5  swap  co-tea-cup-hands [tea]
+12. 17.63s  slide 5  swap  co-face-at-window [characters]
+13. 18.03s  slide 6  swap  co-small-door-glow [door]
+14. 19.03s  slide 6  inset co-yellow-boots [boots]
+15. 21.90s  slide 7  swap  co-pink-palace-sign [house]
+16. 22.10s  slide 7  swap  co-tunnel-to-other-world [tunnel]
+17. 22.50s  slide 7  swap  co-button-eyed-doll [doll]
+18. 22.90s  slide 8  swap  co-button-pile [buttons]
+19. 23.90s  slide 8  inset co-doll-in-tunnel [doll]
+20. 25.37s  slide 9  swap  co-twisted-tree [tree]
+21. 25.77s  slide 10 swap  co-acrobat-on-wire [characters]
+22. 26.77s  slide 10 inset co-cat-eyes [cat]
+23. 27.73s  slide 11 swap  co-dragonfly-lights [lights]
+24. 28.73s  slide 11 inset co-house-in-rain [house]
+25. 30.00s  slide 12 swap  co-stars-on-velvet [stars]
+26. 31.00s  slide 12 inset co-garden-friends [characters]
+27. 32.40s  slide 13 swap  co-pink-palace-night [house]
